@@ -11,6 +11,10 @@ Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado
 - **[Seguridad Marítima](SEGURIDAD.md)**: Material obligatorio, comunicaciones y emergencias.
 - **[Bitácora](BITACORA.md)**: Plantilla para el registro de navegaciones y experiencias.
 
+## Recursos Recomendados
+
+- **[Tarjetas Náuticas de Legal Intermedia S.L.](TARJETAS_NAUTICAS.md)**: Información sobre esta herramienta de estudio y repaso visual. Puedes visitar su tienda directamente en: [www.legalintermedia.es/nauticos](https://www.legalintermedia.es/nauticos).
+
 ## Archivos Principales
 
 - `README.md`: Este archivo, que proporciona una descripción general del proyecto.
