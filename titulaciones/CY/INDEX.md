@@ -19,12 +19,12 @@ El examen es el más técnico y matemático. Consta de **40 preguntas tipo test*
 Se divide en dos módulos independientes:
 
 ### Módulo de Navegación Astronómica (1 hora y 30 minutos)
-*   **Teoría de navegación:** (10 preguntas). Esfera celeste, coordenadas astronómicas, triángulo de posición, movimiento de los astros. *Máximo 5 fallos.*
-*   **Cálculo Astronómico:** (10 preguntas). Uso del sextante, Almanaque Náutico, cálculo de la situación por rectas de altura del Sol y de las Estrellas, corrección total por la Polar. *Máximo 4 fallos (Criterio eliminatorio).*
+*   **[Teoría de navegación](tema_3_teoria_astronomica.md):** (10 preguntas). Esfera celeste, coordenadas astronómicas, triángulo de posición, movimiento de los astros. *Máximo 5 fallos.*
+*   **[Cálculo Astronómico](tema_4_calculos_astronomicos.md):** (10 preguntas). Uso del sextante, Almanaque Náutico, cálculo de la situación por rectas de altura del Sol y de las Estrellas, corrección total por la Polar. *Máximo 4 fallos (Criterio eliminatorio).*
 
 ### Módulo Genérico (1 hora)
-*   **Meteorología:** (10 preguntas). Meteorología oceánica, huracanes y ciclones tropicales, derrota óptima, hielos. *Máximo 5 fallos.*
-*   **Inglés:** (10 preguntas). Comprensión de las "Standard Marine Communication Phrases" (SMCP) de la OMI. Terminología náutica en inglés. *Máximo 5 fallos.*
+*   **[Meteorología](tema_1_meteorologia.md):** (10 preguntas). Meteorología oceánica, huracanes y ciclones tropicales, derrota óptima, hielos. *Máximo 5 fallos.*
+*   **[Inglés](tema_2_ingles_maritimo.md):** (10 preguntas). Comprensión de las "Standard Marine Communication Phrases" (SMCP) de la OMI. Terminología náutica en inglés. *Máximo 5 fallos.*
 
 ## Recursos para Preparar el Examen
 *   **Almanaque Náutico:** Imprescindible para el examen de navegación astronómica.

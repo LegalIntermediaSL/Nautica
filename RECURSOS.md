@@ -20,6 +20,11 @@ El teléfono móvil (o tablet) es una excelente herramienta de apoyo a bordo, si
 *   **[Navionics Boating](https://www.navionics.com/):** Es la aplicación de cartografía náutica más popular del mundo. Convierte tu tablet o teléfono en un plotter muy capaz. Funciona sin cobertura si has descargado los mapas previamente.
 *   **C-MAP:** Otra gran alternativa a Navionics con cartas vectoriales muy precisas y mapas batimétricos.
 
+### Visores Web de Cartas Náuticas (Para consultar en el PC)
+*   **[Navionics ChartViewer](https://webapp.navionics.com/):** Visor web gratuito con la cartografía náutica global.
+*   **[Visor IDEHM (Instituto Hidrográfico de la Marina)](https://idehm.defensa.gob.es/):** Cartografía oficial del Estado Español.
+*   **[OpenSeaMap](https://map.openseamap.org/):** Proyecto libre mundial para cartografía marina.
+
 ### Para Meteorología y Viento
 *   **[Windy](https://www.windy.com/):** Impresionante visualización global de vientos, olas y clima en tiempo real. Permite comparar diferentes modelos meteorológicos (ECMWF, GFS, AROME).
 *   **[Windguru](https://www.windguru.cz/):** Un clásico entre navegantes y surfistas. Proporciona tablas detalladas de viento, rachas y altura de olas para puntos específicos de la costa.
