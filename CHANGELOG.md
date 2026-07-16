@@ -21,3 +21,5 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 - Añadidas secciones de `RECURSOS.md` y `FORMACION_Y_CURSOS.md`.
 - Creación de base de datos automatizada de `faros/` con el listado de todos los faros de España y su señalización.
 - Creación de directorio `puertos/` con un listado estructurado de los principales puertos deportivos por Comunidad Autónoma.
+- **Gran Inyección de Diagramas (Mermaid)**: Inserción de organigramas y esquemas visuales en los principales documentos de teoría (Balizamiento, Seguridad, Nomenclatura, Nudos, Meteorología).
+- Creación del laboratorio virtual en `simulaciones/` con scripts interactivos (estilo Jupyter) para cálculo vectorial náutico en Python (viento aparente y corrección total).

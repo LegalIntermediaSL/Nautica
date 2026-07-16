@@ -1,4 +1,4 @@
-# Nudos de Unión (Ayustes)
+# Nudos de Unión (Ayuste)
 
 Estos nudos sirven para unir o empalmar dos cabos diferentes para formar uno más largo, o para cerrar un cabo sobre sí mismo.
 
@@ -12,12 +12,27 @@ Es el nudo de unión más básico. Sirve para unir dos cabos de la **misma mena*
 **Usos principales:**
 *   Tomar rizos en la vela mayor (de ahí su nombre).
 *   Uniones temporales sin mucha tensión.
-*   *Precaución:* No es seguro si los cabos tienen diferente grosor o si van a estar sometidos a grandes tensiones o tirones secos (puede escurrirse o apretarse demasiado).
-*   **Tutorial en YouTube:** [Nudo Llano (Búsqueda en YouTube)](https://www.youtube.com/results?search_query=como+hacer+nudo+llano)
 
-## 2. Lasca o Vuelta de Escota (Sheet Bend)
+---
 
-Se utiliza para unir dos cabos de **diferente grosor (mena)** o diferente material.
+## 2. Nudo de Escota (Sheet Bend)
+El Nudo de Escota es la solución profesional y segura para **unir dos cabos de diferente grosor (mena)** o diferente rigidez.
 
-*   **Uso:** Empalmar un cabo grueso con uno fino, amarrar la driza a la bandera. Es mucho más seguro que el nudo llano cuando los cabos no son idénticos. Para mayor seguridad, se puede hacer una "Vuelta de escota doble".
-*   **Tutorial en YouTube:** [Vuelta de Escota (Búsqueda en YouTube)](https://www.youtube.com/results?search_query=vuelta+de+escota+nudo)
+![Nudo de Escota](img/escota.jpg)
+
+**Regla de oro:** Se hace una gaza simple (un bucle en forma de "U") con el cabo **más grueso**. El cabo más fino es el que trabaja, entrando por debajo, rodeando el cabo grueso, y metiéndose por debajo de sí mismo para morder.
+
+**Usos principales:**
+*   Unir cabos de diferente mena de forma segura.
+*   Unir una escota a la gaza de una vela.
+
+---
+
+## 3. Nudo de Pescador (Fisherman's Knot)
+Consiste básicamente en dos nudos simples (uno en cada cabo) que se estrangulan mutuamente al tirar de ellos.
+
+![Nudo de Pescador](img/pescador.jpg)
+
+**Usos principales:**
+*   Ideal para cabos finos, mojados o muy resbaladizos (como el nylon o los hilos de pescar).
+*   *Precaución:* Una vez sometido a mucha tensión o mojado, puede ser increíblemente difícil de deshacer.

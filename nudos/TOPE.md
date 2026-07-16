@@ -1,19 +1,16 @@
 # Nudos de Tope
 
-La función de un nudo de tope es crear un bulto o engrosamiento en el extremo o "chicote" de un cabo. De esta forma se evita que el cabo se escape, deslice o pase a través de una polea, cornamusa, ollaos o mordaza.
+Los nudos de tope se realizan al final de un cabo para crear un engrosamiento. Su objetivo principal es evitar que el extremo del cabo se escape (se "despase") al pasar por una polea (motón), una mordaza, o un guiacabos.
 
-## 1. Nudo en Ocho (Figure-Eight Knot)
+## 1. Nudo en Ocho (Figure-eight Knot)
 
-Es el nudo de tope por excelencia en la náutica. Es rápido de hacer, abulta lo suficiente y, lo más importante, no se atasca ni estrangula el cabo, por lo que es fácil de deshacer después de estar sometido a tensión.
+Es el nudo de tope por excelencia en náutica. Aunque el nudo simple (el clásico nudo ciego) también sirve de tope, el **nudo en ocho** es mucho más voluminoso y, sobre todo, **no se aprieta (azoca) tanto**, por lo que es mucho más fácil de deshacer después de haber estado sometido a gran tensión.
 
-![Nudo en Ocho](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Figure-eight_knot.jpg/640px-Figure-eight_knot.jpg)
+![Nudo en Ocho](img/ocho.jpg)
 
-*   **Uso:** Se realiza siempre en los extremos de las escotas (las cuerdas que controlan las velas, como la del foque o la mayor) y drizas, para evitar que al soltarlas accidentalmente se salgan de sus poleas o guías.
-*   **Tutorial en YouTube:** [Cómo hacer el Nudo en Ocho (Búsqueda en YouTube)](https://www.youtube.com/results?search_query=como+hacer+nudo+ocho+nautico)
+**Usos principales:**
+*   Hacer un tope al final de las **escotas** (ej. escotas del foque) para que no se escapen por los carriles o poleas si se sueltan accidentalmente.
+*   Tope en drizas para evitar perderlas en el interior del mástil.
+*   En escalada se usa una variante (el ocho doble) para encordarse al arnés, demostrando su extremada seguridad.
 
-## 2. Nudo Simple o Medio Nudo
-
-Es el nudo más elemental y conocido.
-
-*   **Uso:** Sirve como tope provisional o para evitar que un cabo se deshilache temporalmente.
-*   *Precaución:* No se recomienda como nudo de tope principal en náutica porque bajo gran tensión se aprieta muchísimo ("se azoca") y puede llegar a ser imposible de deshacer, dañando las fibras del cabo. Siempre es preferible usar el Nudo en Ocho.
+**Tutorial en YouTube:** [Cómo hacer el Nudo en Ocho (Búsqueda)](https://www.youtube.com/results?search_query=como+hacer+nudo+ocho)

@@ -8,6 +8,7 @@ Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado
 - **[Cartas Náuticas](cartas_nauticas/INDEX.md)**: Conceptos básicos de cartografía y simbología.
 - **[Faros de España](faros/INDEX.md)**: Libro de faros y listado completo de señales marítimas de España.
 - **[Puertos Deportivos](puertos/INDEX.md)**: Guía de los principales puertos deportivos y marinas.
+- **[Simulaciones en Python](simulaciones/README.md)**: Laboratorio interactivo (Jupyter) para el cálculo de rumbos, corrientes y viento aparente.
 - **[Nudos Náuticos](nudos/INDEX.md)**: Guía ilustrada de los nudos básicos e imprescindibles a bordo.
 - **[Vela y Conceptos Básicos](VELA.md)**: Fundamentos de la navegación a vela, rumbos y maniobras.
 - **[Meteorología Marítima](METEOROLOGIA.md)**: Conceptos clave para interpretar el tiempo y las previsiones.
@@ -18,7 +19,7 @@ Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado
 
 ## Recursos Recomendados
 
-- **[Tarjetas Náuticas de Legal Intermedia S.L.](TARJETAS_NAUTICAS.md)**: Información sobre esta herramienta de estudio y repaso visual. Puedes visitar su tienda directamente en: [www.legalintermedia.es/nauticos](https://www.legalintermedia.es/nauticos).
+- [Tarjetas Náuticas de Legal Intermedia S.L.](TARJETAS_NAUTICAS.md): Tarjetas físicas de verificación digital con código QR oficial. Ideales para llevar tu documentación náutica (título y DNI) siempre a bordo en formato carné plastificado, vinculadas directamente con la base de datos de la Dirección General de la Marina Mercante. Más info en [www.legalintermedia.es/nauticos](https://www.legalintermedia.es/nauticos).
 
 ## Archivos Principales
 
