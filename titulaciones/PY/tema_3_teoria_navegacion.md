@@ -15,7 +15,7 @@ Las mareas son el movimiento vertical del nivel del mar producido por la atracci
 *   **Duración de la vaciante/creciente (D):** Tiempo que transcurre entre una pleamar y la bajamar siguiente (o viceversa). Suele ser de unas 6 horas (mareas semidiurnas).
 *   **Sonda de la Carta (Sc):** La profundidad que marca la carta náutica. Está referida al nivel mínimo histórico posible (Bajamar Escorada).
 *   **Sonda en el Momento (Sm):** La profundidad real que hay bajo la quilla en un momento concreto.
-    \[ Sm = Sc + Altura_{marea} \]
+    $$ Sm = Sc + Altura_{marea} $$
 
 ### Cálculo de la Altura de la Marea en un Instante Cualquiera
 El *Anuario de Mareas* nos da la hora y altura exacta de la PM y la BM. Si llegamos a puerto a una hora intermedia, debemos calcular el nivel del agua.
@@ -23,7 +23,7 @@ El *Anuario de Mareas* nos da la hora y altura exacta de la PM y la BM. Si llega
 1.  Calculamos la Amplitud (A) y la Duración (D) de esa marea en concreto.
 2.  Calculamos el Intervalo (I): Tiempo transcurrido desde la última pleamar/bajamar hasta la hora deseada.
 3.  Aplicamos la **Fórmula Universal (Método Analítico):**
-    \[ Correcci\acute{o}n = A \cdot \sin^2\left(\frac{90^\circ \cdot I}{D}\right) \]
+    $$ Correcci\acute{o}n = A \cdot \sin^2\left(\frac{90^\circ \cdot I}{D}\right) $$
 4.  Si calculamos desde la Bajamar, sumamos la Corrección a la altura de la BM. Si calculamos desde la Pleamar, restamos la Corrección a la altura de la PM.
 
 ---

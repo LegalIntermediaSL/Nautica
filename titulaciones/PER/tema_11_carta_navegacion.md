@@ -20,11 +20,18 @@ Cualquier punto en la carta se define por dos coordenadas:
 En la carta náutica todo está orientado al **Norte Verdadero (Geográfico)**. Sin embargo, nuestro compás en el barco apunta al **Norte Magnético**, que está desplazado. Además, el metal y los motores de nuestro propio barco desvían aún más la brújula.
 
 Fórmula Maestra:
-\[ Rumbo Verdadero (Rv) = Rumbo de Aguja (Ra) + Correcci\acute{o}n Total (Ct) \]
+$$ Rumbo Verdadero (Rv) = Rumbo de Aguja (Ra) + Correcci\acute{o}n Total (Ct) $$
+
+```mermaid
+graph LR
+    A[Norte de Aguja] -- Desvío --> B[Norte Magnético]
+    B -- Declinación Magnética --> C[Norte Verdadero]
+    A -. Corrección Total .-> C
+```
 
 ### ¿Qué es la Corrección Total (Ct)?
 Es la suma de dos errores:
-\[ Ct = Declinaci\acute{o}n Magn\acute{e}tica (dm) + Desv\acute{i}o (\Delta) \]
+$$ Ct = Declinaci\acute{o}n Magn\acute{e}tica (dm) + Desv\acute{i}o (\Delta) $$
 
 *   **Declinación Magnética ($dm$):** La da la propia carta (en la rosa de los vientos) para un año base, y te indica cuánto cambia cada año. (Ej: *dm = $2^\circ 50' W$ en 2005, variación anual $7' E$*). Hay que actualizarla al año del examen. ¡Recuerda que W es negativo (-) y E es positivo (+)!
 *   **Desvío ($\Delta$):** Es el error propio del barco. Te lo dará el enunciado del problema (Ej: $\Delta = +2^\circ$).

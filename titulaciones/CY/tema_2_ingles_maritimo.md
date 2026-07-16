@@ -110,6 +110,40 @@ Avisos a los navegantes sobre peligros para la navegación o partes meteorológi
 *   **Stand by:** Manténgase a la escucha (espere).
 *   **Radio check:** Prueba de radio.
 
+### Navegación y Cartografía (Navigation & Charting)
+*   **Bearing:** Demora / Marcación.
+*   **Fairway / Channel:** Canal navegable.
+*   **Shallows / Shoals:** Bajíos (aguas poco profundas).
+*   **Sounding:** Sonda (profundidad medida).
+*   **Chart:** Carta náutica.
+*   **Pilot:** Práctico (Pilot station = estación de prácticos).
+*   **Tide rip:** Escarceo (aguas turbulentas por corrientes encontradas).
+*   **Eddy:** Remolino.
+*   **Awash:** A flor de agua (una roca o pecio que apenas sobresale).
+
+### Luces y Marcas (Lights & Shapes)
+*   **Beacon:** Baliza.
+*   **Lighthouse:** Faro.
+*   **Flashing (Fl):** Luz de destellos.
+*   **Occulting (Oc):** Luz de ocultaciones.
+*   **Isophase (Iso):** Luz isofásica (igual tiempo de luz que de oscuridad).
+*   **Cardinal mark:** Marca cardinal.
+*   **Safe water mark:** Marca de aguas navegables.
+
+### Mercancías y Carga (Cargo)
+*   **Hold:** Bodega.
+*   **Hatch:** Escotilla de carga.
+*   **Crane:** Grúa.
+*   **Dangerous goods:** Mercancías peligrosas.
+*   **Leaking:** Perdiendo líquido / Fuga.
+
+### Operaciones SAR (Search and Rescue)
+*   **Search pattern:** Patrón de búsqueda.
+*   **Survivor:** Superviviente.
+*   **Wreck:** Pecio (barco hundido).
+*   **Helicopter hoist:** Izado por helicóptero.
+*   **Flare:** Bengala.
+*   **Distress alert:** Alerta de socorro.
 ## 4. Frases de Ejemplo Comunes en Exámenes
 
 En los exámenes de CY, es frecuente que te pongan una frase en inglés y debas traducirla o entender el contexto. Aquí tienes ejemplos clave:

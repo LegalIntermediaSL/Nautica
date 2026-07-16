@@ -22,25 +22,25 @@ Estas fórmulas asumen que para distancias cortas (menos de 300 millas) la Tierr
 Si conocemos nuestra situación de salida ($l_s$, $L_s$), el Rumbo Verdadero ($Rv$) y la Distancia navegada ($D$), calculamos el punto de llegada así:
 
 1.  **Diferencia de Latitud:** 
-    \[ \Delta l = D \cdot \cos(Rv) \]
+    $$ \Delta l = D \cdot \cos(Rv) $$
     *(El resultado sale en minutos de grado, que equivalen a millas. Se suma a la $l_s$ para hallar la Latitud de llegada).*
 
 2.  **Apartamiento:** 
-    \[ A = D \cdot \sin(Rv) \]
+    $$ A = D \cdot \sin(Rv) $$
 
 3.  **Diferencia de Longitud:** 
-    \[ \Delta L = \frac{A}{\cos(l_m)} \]
+    $$ \Delta L = \frac{A}{\cos(l_m)} $$
     *(Se suma a la $L_s$ para hallar la Longitud de llegada).*
 
 ### Cálculo Directo de Rumbo y Distancia
 Si conocemos el punto de salida y el de llegada, y queremos saber qué rumbo directo poner y qué distancia hay:
 
 1.  **Rumbo:**
-    \[ \tan(Rv) = \frac{A}{\Delta l} \]
+    $$ \tan(Rv) = \frac{A}{\Delta l} $$
     *(¡Ojo a los cuadrantes al usar el arco tangente!)*
 
 2.  **Distancia:**
-    \[ D = \frac{\Delta l}{\cos(Rv)} \quad \text{o bien} \quad D = \frac{A}{\sin(Rv)} \]
+    $$ D = \frac{\Delta l}{\cos(Rv)} \quad \text{o bien} \quad D = \frac{A}{\sin(Rv)} $$
 
 ---
 
@@ -53,10 +53,10 @@ El viento empuja lateralmente el barco, desviándolo de la línea hacia donde ap
     *   Si el viento empuja hacia Babor: $Ab$ es negativo (-).
 
 *   **Rumbo de Superficie (Rs):** El rumbo real por el que el barco avanza sobre la superficie del agua.
-    \[ Rs = Rv + Ab \]
+    $$ Rs = Rv + Ab $$
 
 Para hallar el Rumbo de Aguja a poner en el timón conociendo el rumbo sobre el agua deseado:
-    \[ Ra = Rs - Ab - Ct \]
+    $$ Ra = Rs - Ab - Ct $$
 
 ---
 
@@ -69,8 +69,18 @@ La masa de agua entera se mueve, llevándose el barco con ella.
 
 ### Problema Directo de Corrientes (Saber adónde vamos)
 Trazado en la carta:
-1.  Desde nuestro punto de salida, trazamos el **Rumbo Verdadero (Rv)** o de Superficie (Rs si hay viento) y marcamos dónde estaríamos al cabo de 1 hora según nuestra **Velocidad de Máquina (Vb)**.
-2.  Desde ese punto imaginario, trazamos el vector de la corriente: **Rumbo de la Corriente (Rc)** con una longitud igual a su **Intensidad (Ihc)**.
+### Resolución Gráfica (Problema Directo)
+Dado el Rumbo Verdadero, la Velocidad de la corredera, el Rumbo de la Corriente y su Intensidad Horaria:
+
+```mermaid
+graph TD
+    A((Situación Inicial)) -- Rumbo y Velocidad Buque --> B((Punto Estimado sin Corriente))
+    B -- Rumbo e Intensidad Corriente --> C((Situación Efectiva))
+    A -. Rumbo y Velocidad Efectiva .-> C
+```
+
+1.  Trazar el vector de velocidad del barco desde nuestra situación.
+2.  Desde el extremo de ese vector, trazar el vector de la corriente.
 3.  Unimos el punto de salida original con la punta de la flecha de la corriente. Esa línea es nuestro **Rumbo Efectivo (Ref)**, y su longitud es nuestra **Velocidad Efectiva (Vef)**.
 
 ### Problema Inverso de Corrientes (Hallar el rumbo a poner)
