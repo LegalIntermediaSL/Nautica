@@ -2,13 +2,16 @@
 
 Estos nudos sirven para unir o empalmar dos cabos diferentes para formar uno más largo, o para cerrar un cabo sobre sí mismo.
 
-## 1. Nudo Llano o Rizo (Square Knot / Reef Knot)
+## 1. Nudo Llano (Rizo / Square Knot)
+Es el nudo de unión más básico. Sirve para unir dos cabos de la **misma mena** (mismo grosor) y material. Si se usan cabos de distinto grosor, el nudo llano se escurrirá y se deshará bajo tensión.
 
-Sirve para unir dos cabos de la **misma mena (mismo grosor)** y del mismo material.
+![Nudo Llano](img/llano.jpg)
 
-![Nudo Llano](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Reef_knot.jpg/640px-Reef_knot.jpg)
+**Regla de oro:** "El derecho sobre el izquierdo y por debajo; el izquierdo sobre el derecho y por debajo". Ambas partes del cabo deben salir por el mismo lado del lazo; si salen por lados opuestos, habrás hecho un "nudo de la abuela", que es muy inseguro.
 
-*   **Uso:** Originalmente usado para "tomar rizos" (reducir la superficie de la vela mayor atando los matafiones). También se usa para atar vendajes en primeros auxilios.
+**Usos principales:**
+*   Tomar rizos en la vela mayor (de ahí su nombre).
+*   Uniones temporales sin mucha tensión.
 *   *Precaución:* No es seguro si los cabos tienen diferente grosor o si van a estar sometidos a grandes tensiones o tirones secos (puede escurrirse o apretarse demasiado).
 *   **Tutorial en YouTube:** [Nudo Llano (Búsqueda en YouTube)](https://www.youtube.com/results?search_query=como+hacer+nudo+llano)
 

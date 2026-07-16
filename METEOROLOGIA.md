@@ -19,10 +19,40 @@ El viento genera las olas.
 *   **Escala de Douglas:** Mide el estado de la mar según la altura de las olas, del 0 (Calma o mar llana) al 9 (Mar enorme, olas de más de 14 metros).
 *   **Fetch:** Es la distancia de mar abierto sobre la cual sopla el viento en una dirección constante. A mayor fetch, mayor será el oleaje que se puede formar.
 
-### 4. Brisas Costeras (Térmicas)
-Se producen por la diferencia de calentamiento entre la tierra y el mar.
-*   **Virazón (Brisa marina):** Sopla del mar hacia la tierra durante el día. La tierra se calienta más rápido, el aire sube y el aire fresco del mar ocupa su lugar. Suele establecerse al mediodía y decaer al atardecer.
-*   **Terral (Brisa terrestre):** Sopla de la tierra hacia el mar durante la noche. La tierra se enfría más rápido que el mar, creando el efecto inverso.
+### 3. Vientos Locales y Brisas Térmicas
+
+Las brisas térmicas son vientos locales generados por la diferencia de temperatura entre la tierra y el mar a lo largo del día.
+
+```mermaid
+flowchart LR
+    subgraph DÍA
+        direction TB
+        TierraDia(Tierra Caliente) -->|Sube aire caliente| NubeDia(Baja Presión Relativa)
+        MarDia(Mar Frío) -->|Alta Presión Relativa| VientoDia
+        NubeDia --> MarDia
+        VientoDia(Brisas Marinas / Virazón) --> TierraDia
+    end
+
+    subgraph NOCHE
+        direction TB
+        TierraNoche(Tierra Fría) -->|Alta Presión Relativa| VientoNoche
+        MarNoche(Mar Caliente) -->|Sube aire caliente| NubeNoche(Baja Presión Relativa)
+        NubeNoche --> TierraNoche
+        VientoNoche(Brisa Terrestre / Terral) --> MarNoche
+    end
+    
+    style DÍA fill:#fff9c4,stroke:#fbc02d
+    style NOCHE fill:#1a237e,stroke:#3949ab,color:#fff
+    style TierraDia fill:#ffb74d,stroke:#f57c00
+    style MarDia fill:#4fc3f7,stroke:#0288d1
+    style VientoDia fill:#4caf50,color:#fff,stroke:#388e3c,stroke-width:2px
+    style TierraNoche fill:#9e9e9e,stroke:#616161
+    style MarNoche fill:#4fc3f7,stroke:#0288d1
+    style VientoNoche fill:#e53935,color:#fff,stroke:#b71c1c,stroke-width:2px
+```
+
+*   **Virazón (Brisa Marina):** Ocurre durante el día. La tierra se calienta más rápido que el mar. El aire caliente sobre la tierra asciende, creando una baja presión que "aspira" el aire más fresco del mar. El viento sopla **del mar a la tierra**. Es el viento preferido para navegar a vela en verano.
+*   **Terral (Brisa Terrestre):** Ocurre por la noche. La tierra se enfría más rápido que el mar. El mar retiene el calor, por lo que el aire asciende sobre el agua, creando una baja presión que atrae el aire más frío de la tierra. El viento sopla **de la tierra al mar**. Suele ser más débil que la virazón.
 
 ### 5. Previsión Meteorológica
 Antes de salir a navegar, es obligatorio consultar los partes meteorológicos. En España, **AEMET** proporciona información meteorológica marítima detallada (avisos de temporal, estado de la mar, predicciones costeras y de altura).

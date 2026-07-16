@@ -4,6 +4,25 @@ El balizamiento es el "código de circulación" del mar. Utiliza boyas y balizas
 
 España pertenece a la **Región A** del sistema IALA.
 
+```mermaid
+mindmap
+  root((Sistema IALA<br>Región A))
+    Marcas Laterales
+      Estribor Verde
+      Babor Rojo
+    Marcas Cardinales
+      Norte
+      Sur
+      Este
+      Oeste
+    Peligro Aislado
+      Rojo y Negro
+    Aguas Navegables
+      Rojo y Blanco
+    Especiales
+      Amarillo
+```
+
 En todas las marcas debes memorizar tres cosas:
 1.  **Color** (del cuerpo de la boya y de la luz).
 2.  **Marca de Tope** (la figura geométrica que lleva encima).

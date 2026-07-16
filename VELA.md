@@ -14,11 +14,36 @@ La navegación a vela es el arte de propulsar una embarcación utilizando única
 ## Las Velas Principales
 1.  **Vela Mayor:** La vela principal, izada en la parte posterior del mástil y sujeta a la botavara.
 2.  **Foque / Génova:** La vela de proa, izada en el estay (delante del mástil). El Génova es un foque más grande que sobrepasa el mástil hacia popa.
+Para navegar a vela, es imprescindible saber de dónde viene el viento. El barco no puede navegar directamente contra el viento. Dependiendo del ángulo que forma la dirección del barco con el viento, navegaremos en un **rumbo** distinto, lo que exigirá una posición diferente de las velas (cazarlas o amollarlas).
 
-## Rumbos respecto al Viento
-Un velero no puede navegar directamente contra el viento. El "ángulo muerto" es de aproximadamente 45º a cada lado de la dirección del viento.
-*   **Ceñida:** Navegar lo más cerca posible de la dirección del viento (ángulo de ~45º). Las velas van muy cazadas (apretadas).
-*   **Través:** El viento entra por el costado del barco (a 90º). Es un rumbo rápido y cómodo.
+```mermaid
+flowchart TD
+    Viento(("\n 💨 VIENTO \n ")) -->|0°| Proa
+    
+    subgraph Barco
+        Proa[Ángulo Muerto / Facheando]
+        Cenida[Ceñida 45°]
+        Traves[Través 90°]
+        Largo[Largo 135°]
+        Empopada[Empopada 180°]
+    end
+    
+    Proa --- Cenida
+    Cenida --- Traves
+    Traves --- Largo
+    Largo --- Empopada
+    
+    style Viento fill:#fff,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5,color:#000
+    style Proa fill:#ffcdd2,stroke:#f44336,stroke-width:2px,color:#000
+    style Cenida fill:#c8e6c9,stroke:#4caf50,stroke-width:2px,color:#000
+    style Traves fill:#c8e6c9,stroke:#4caf50,stroke-width:2px,color:#000
+    style Largo fill:#c8e6c9,stroke:#4caf50,stroke-width:2px,color:#000
+    style Empopada fill:#fff9c4,stroke:#fbc02d,stroke-width:2px,color:#000
+```
+
+### Principales Rumbos
+*   **Proa al viento (Facheando):** Ángulo muerto (aprox. 45º a cada lado del viento). Las velas flamean y el barco no avanza.
+*   **Ceñida (45º):** El rumbo más cerrado al viento que permite avanzar. Las velas van cazadas al máximo (muy tensas). Es un rumbo rápido y cómodo.
 *   **Aleta:** El viento entra por la parte trasera oblicua del barco (entre 100º y 150º).
 *   **Empopada o Largo:** El viento entra directamente por la popa del barco (180º). Las velas se abren al máximo hacia los lados.
 

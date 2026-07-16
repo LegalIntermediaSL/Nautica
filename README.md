@@ -6,6 +6,8 @@ Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado
 
 - **[Titulaciones Náuticas](TITULOS_NAUTICOS.md)**: Índice de los títulos de recreo en España (Licencia, PNB, PER, PY, CY) y sus temarios.
 - **[Cartas Náuticas](cartas_nauticas/INDEX.md)**: Conceptos básicos de cartografía y simbología.
+- **[Faros de España](faros/INDEX.md)**: Libro de faros y listado completo de señales marítimas de España.
+- **[Puertos Deportivos](puertos/INDEX.md)**: Guía de los principales puertos deportivos y marinas.
 - **[Nudos Náuticos](nudos/INDEX.md)**: Guía ilustrada de los nudos básicos e imprescindibles a bordo.
 - **[Vela y Conceptos Básicos](VELA.md)**: Fundamentos de la navegación a vela, rumbos y maniobras.
 - **[Meteorología Marítima](METEOROLOGIA.md)**: Conceptos clave para interpretar el tiempo y las previsiones.

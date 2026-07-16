@@ -1,6 +1,34 @@
 # Seguridad Marítima
 
-La seguridad es el aspecto más crítico de la navegación. "Un buen navegante no es aquel que sale airoso de un temporal, sino aquel que evita meterse en él".
+La seguridad en la mar es el pilar fundamental de la navegación. Antes de salir, es responsabilidad del patrón comprobar el parte meteorológico, el estado de la embarcación y el equipo de seguridad a bordo.
+
+```mermaid
+flowchart TD
+    Emergencia{¿Existe un peligro<br>grave e inminente<br>para la vida?}
+    
+    Emergencia -->|SÍ| MAYDAY
+    Emergencia -->|NO| Urgencia
+    
+    MAYDAY[Llamada MAYDAY<br>Canal 16 / DSC Canal 70<br>Peligro de hundimiento, fuego, hombre al agua]
+    
+    Urgencia{¿Se requiere<br>asistencia urgente?}
+    Urgencia -->|SÍ| PANPAN
+    Urgencia -->|NO| Info
+    
+    PANPAN[Llamada PAN-PAN<br>Canal 16<br>Avería de motor sin gobierno, herido no crítico]
+    
+    Info{¿Es un aviso a<br>la navegación?}
+    Info -->|SÍ| SECURITE
+    
+    SECURITE[Llamada SÉCURITÉ<br>Aviso de temporal, contenedor a la deriva]
+    
+    style Emergencia fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
+    style MAYDAY fill:#d32f2f,color:#fff,stroke:#b71c1c,stroke-width:3px
+    style Urgencia fill:#ffe0b2,stroke:#f57c00,stroke-width:2px
+    style PANPAN fill:#f57c00,color:#fff,stroke:#e65100,stroke-width:3px
+    style Info fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    style SECURITE fill:#0288d1,color:#fff,stroke:#01579b,stroke-width:3px
+```
 
 ## Equipo de Seguridad Obligatorio
 El material de seguridad obligatorio en España depende de la Zona de Navegación para la que esté despachada la embarcación (de la Zona 1: navegación oceánica, a la Zona 7: aguas protegidas). 

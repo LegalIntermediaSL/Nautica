@@ -1,6 +1,33 @@
 # Nudos Náuticos
 
-Los nudos son una parte fundamental de la marinería. Un buen nudo náutico debe cumplir tres características: ser fácil de hacer, cumplir su función de forma segura, y ser fácil de deshacer incluso después de haber estado sometido a gran tensión o estar mojado.
+En la mar, un nudo mal hecho no solo es un inconveniente, puede ser un peligro mortal. Un buen nudo náutico se define por tres características: es fácil de hacer, cumple su función a la perfección sin escurrirse, y **es fácil de deshacer incluso después de haber estado sometido a gran tensión**.
+
+```mermaid
+flowchart TD
+    Nudos(Tipos de Nudos Náuticos) --> Amarre
+    Nudos --> Union
+    Nudos --> Tope
+    
+    Amarre(De Amarre<br>Fijar a un objeto)
+    Amarre --> As(As de Guía)
+    Amarre --> Ballestrinque(Ballestrinque)
+    Amarre --> Cornamusa(Vuelta de Cornamusa)
+    
+    Union(De Unión / Ayuste<br>Unir dos cabos)
+    Union --> Llano(Nudo Llano)
+    Union --> Escota(Nudo de Escota)
+    Union --> Pescador(Pescador)
+    
+    Tope(De Tope<br>Evitar que un cabo escape)
+    Tope --> Ocho(Nudo en Ocho)
+    
+    style Nudos fill:#bbdefb,stroke:#1976d2,stroke-width:2px
+    style Amarre fill:#c8e6c9,stroke:#388e3c
+    style Union fill:#ffecb3,stroke:#fbc02d
+    style Tope fill:#ffcdd2,stroke:#d32f2f
+```
+
+## Clasificación Principal
 
 Hemos dividido los nudos en tres categorías principales para facilitar su estudio:
 

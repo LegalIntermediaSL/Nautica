@@ -19,3 +19,5 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 - Reestructuración de `titulaciones/` creando una carpeta por título para albergar sus temarios completos.
 - Añadidos primeros temas de ejemplo del PER (Nomenclatura, Amarre, Balizamiento).
 - Añadidas secciones de `RECURSOS.md` y `FORMACION_Y_CURSOS.md`.
+- Creación de base de datos automatizada de `faros/` con el listado de todos los faros de España y su señalización.
+- Creación de directorio `puertos/` con un listado estructurado de los principales puertos deportivos por Comunidad Autónoma.

@@ -23,3 +23,12 @@ El teléfono móvil (o tablet) es una excelente herramienta de apoyo a bordo, si
 ### Para Meteorología y Viento
 *   **[Windy](https://www.windy.com/):** Impresionante visualización global de vientos, olas y clima en tiempo real. Permite comparar diferentes modelos meteorológicos (ECMWF, GFS, AROME).
 *   **[Windguru](https://www.windguru.cz/):** Un clásico entre navegantes y surfistas. Proporciona tablas detalladas de viento, rachas y altura de olas para puntos específicos de la costa.
+
+## Documentación Oficial y Normativa (PDF / BOE)
+
+Para el estudio riguroso y la consulta de la legislación exacta, es imprescindible acudir a las fuentes primarias:
+
+*   **[Real Decreto 875/2014, de 10 de octubre](https://www.boe.es/buscar/act.php?id=BOE-A-2014-10344):** (Enlace al BOE). Es la "Biblia" de las titulaciones náuticas. Regula los títulos, las atribuciones, las esloras y el temario oficial de cada examen.
+*   **[RIPA - Reglamento Internacional para Prevenir Abordajes](https://www.mitma.gob.es/recursos_mfom/pdf/CC6DFCD7-CE5C-4043-AFB8-8D2FF7AFAC13/116744/RIPA_completo_con_enmiendas_10.pdf):** (PDF Oficial). El texto íntegro consolidado del reglamento marítimo internacional. Indispensable para aprobar el Tema 6 del PER.
+*   **[Sistema de Balizamiento IALA (Región A)](https://www.puertos.es/es-es/seguridadmaritima/Documents/Manual%20de%20Señalización%20Marítima/IALA%20MBS%20Region%20A.pdf):** (PDF). Guía oficial con los colores, marcas y destellos de las boyas.
+*   **[Guías de Salvamento Marítimo](https://www.salvamentomaritimo.es/prevencion-y-seguridad):** Manuales gratuitos en PDF muy útiles sobre prevención de accidentes y seguridad en náutica de recreo.

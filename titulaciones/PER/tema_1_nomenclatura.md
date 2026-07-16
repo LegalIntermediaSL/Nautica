@@ -11,8 +11,22 @@ En este tema se estudian las dimensiones, partes y estructura fundamental de una
     *   *Manga máxima:* La anchura máxima del barco en su sección más ancha.
 *   **Puntal:** Es la altura del barco desde la quilla (parte más baja) hasta la cubierta principal.
 *   **Calado:** Es la profundidad que alcanza el barco en el agua (desde la línea de flotación hasta la parte más baja de la quilla). Conocer el calado es vital para no encallar.
+*   **Francobordo:** Es la distancia desde la línea de flotación hasta la cubierta principal (la parte que sobresale del agua). Es la reserva de flotabilidad del barco.
 *   **Asiento:** Es la diferencia entre el calado de popa y el calado de proa. Si el barco está más hundido de popa, tiene asiento apopante (positivo).
 *   **Desplazamiento:** Es el peso del agua que desplaza el barco (y por tanto, el peso del propio barco). Se mide en toneladas métricas.
+
+```mermaid
+flowchart LR
+    A[Fondo del mar] -->|Sonda| B[Superficie del Agua]
+    B -->|Francobordo| C[Cubierta Principal]
+    D[Quilla] -->|Calado| B
+    D -->|Puntal| C
+    
+    style A fill:#d7ccc8,stroke:#5d4037
+    style B fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    style C fill:#f5f5f5,stroke:#9e9e9e
+    style D fill:#424242,stroke:#000,color:#fff
+```
 
 ## Partes del Buque
 
