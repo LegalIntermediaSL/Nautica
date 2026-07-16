@@ -13,3 +13,4 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 - Creación del archivo `BITACORA.md` como plantilla de diario de navegación.
 - Creación del archivo `TITULOS_NAUTICOS.md` como índice de las titulaciones de recreo en España.
 - Creación del directorio `titulaciones/` con documentos específicos detallados para cada título (LN, PNB, PER, PY, CY).
+- Inclusión de nuevo contenido general: `NUDOS_NAUTICOS.md`, `VELA.md`, `METEOROLOGIA.md` y `SEGURIDAD.md`.

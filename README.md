@@ -4,10 +4,12 @@ Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado
 
 ## Contenido del Repositorio
 
-- **Información general**: Conceptos básicos sobre náutica, tipos de embarcaciones y terminología.
-- **Normativa y seguridad**: Reglas de navegación, equipo de seguridad obligatorio y recomendaciones.
-- **Mantenimiento**: Guías prácticas para el cuidado y mantenimiento de embarcaciones.
-- **Bitácora**: Registro de navegaciones, experiencias y lecciones aprendidas.
+- **[Titulaciones Náuticas](TITULOS_NAUTICOS.md)**: Guía sobre los diferentes títulos náuticos de recreo en España (Licencia, PNB, PER, PY, CY).
+- **[Nudos Náuticos](NUDOS_NAUTICOS.md)**: Guía de los nudos básicos e imprescindibles a bordo.
+- **[Vela y Conceptos Básicos](VELA.md)**: Fundamentos de la navegación a vela, rumbos y maniobras.
+- **[Meteorología Marítima](METEOROLOGIA.md)**: Conceptos clave para interpretar el tiempo y las previsiones.
+- **[Seguridad Marítima](SEGURIDAD.md)**: Material obligatorio, comunicaciones y emergencias.
+- **[Bitácora](BITACORA.md)**: Plantilla para el registro de navegaciones y experiencias.
 
 ## Archivos Principales
 
