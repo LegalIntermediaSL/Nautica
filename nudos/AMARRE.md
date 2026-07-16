@@ -41,3 +41,25 @@ Es la forma correcta y marinera de amarrar un cabo (como las amarras del barco o
 **Usos principales:**
 *   Hacer firmes las amarras (esprines, largos, traveses) al llegar a puerto.
 *   Hacer firmes las drizas en el mástil.
+
+---
+
+## 4. Vuelta de Rezón o de Ancla (Anchor Hitch)
+Es un nudo extremadamente resistente, diseñado específicamente para unir un cabo a la argolla (arganeo) de un ancla o rezón.
+
+![Vuelta de Rezón](img/vuelta_rezon.jpg)
+
+**Usos principales:**
+*   Amarrar la línea de fondeo al ancla.
+*   *Ventaja:* Por mucha tensión que sufra bajo el agua o por muchos tirones que dé el barco al fondear, este nudo no se azoca (aprieta) tanto como para ser imposible de deshacer, y no resbala.
+
+---
+
+## 5. Vuelta de Braza (Timber Hitch)
+Es un nudo de amarre por fricción, muy rápido de hacer, pero que solo funciona mientras haya tensión constante.
+
+![Vuelta de Braza](img/vuelta_braza.jpg)
+
+**Usos principales:**
+*   Arrastrar, remolcar o izar objetos cilíndricos alargados (como tablones, troncos o perchas).
+*   *Precaución:* Si la tensión afloja, el nudo se deshace inmediatamente.

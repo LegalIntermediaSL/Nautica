@@ -36,3 +36,14 @@ Consiste básicamente en dos nudos simples (uno en cada cabo) que se estrangulan
 **Usos principales:**
 *   Ideal para cabos finos, mojados o muy resbaladizos (como el nylon o los hilos de pescar).
 *   *Precaución:* Una vez sometido a mucha tensión o mojado, puede ser increíblemente difícil de deshacer.
+
+---
+
+## 4. Nudo de Carrick (Carrick Bend)
+Es uno de los nudos de unión más estéticos, fuertes y seguros que existen para empalmar dos cabos muy gruesos y pesados.
+
+![Nudo de Carrick](img/carrick.jpg)
+
+**Usos principales:**
+*   Unir cabos de gran mena (estachas de remolque, amarras principales de grandes buques).
+*   *Ventaja:* Su patrón entrelazado plano y simétrico permite que, por mucha tensión que reciba, nunca se apriete demasiado, siendo siempre muy fácil de deshacer, incluso cuando las estachas están empapadas de agua salada.

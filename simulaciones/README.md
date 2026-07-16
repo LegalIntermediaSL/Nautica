@@ -11,17 +11,17 @@ El cálculo de rumbos, mareas y vectores de viento es matemáticas pura. Usar Py
 
 ## Instalación y Uso
 
-Los archivos de este directorio están en formato de **Script Interactivo de Python (`.py` con celdas `# %%`)**. Pueden ejecutarse de dos maneras:
-1.  **Como un Jupyter Notebook en VSCode:** Simplemente abre el archivo `.py` en Visual Studio Code (con la extensión de Python y Jupyter instaladas) y haz clic en "Run Cell" encima de las marcas `# %%`.
-2.  **Desde la terminal:** Ejecutando `python 01_calculo_rumbo_verdadero.py`.
+Los archivos de este directorio están en formato **Jupyter Notebook (`.ipynb`)**. Para utilizarlos:
+1.  **En Visual Studio Code:** Simplemente abre el archivo `.ipynb` e instala la extensión "Jupyter" de Microsoft si el editor te lo pide. Podrás ejecutar las celdas una a una.
+2.  **En el navegador:** Puedes instalar JupyterLab ejecutando `pip install jupyterlab` y luego `jupyter lab` en este directorio.
 
 ### Requisitos
-Para usar estos cuadernos, debes tener instalado Python y las dependencias indicadas:
+Para usar estos cuadernos en tu entorno local, asegúrate de instalar las librerías matemáticas y gráficas:
 ```bash
 pip install -r requirements.txt
 ```
 
 ## Simulaciones Disponibles
 
-*   **[`01_calculo_rumbo_verdadero.py`](01_calculo_rumbo_verdadero.py):** Conversión de Rumbo de Aguja (Ra) a Rumbo Verdadero (Rv) aplicando Corrección Total (Declinación Magnética + Desvío). Incluye visualización en gráfico polar.
-*   **[`02_viento_aparente.py`](02_viento_aparente.py):** Cálculo vectorial del viento aparente (el que sienten las velas) a partir del viento real y la velocidad/rumbo del barco.
+*   **[`01_calculo_rumbo_verdadero.ipynb`](01_calculo_rumbo_verdadero.ipynb):** Conversión de Rumbo de Aguja (Ra) a Rumbo Verdadero (Rv) aplicando Corrección Total (Declinación Magnética + Desvío). Incluye visualización en gráfico polar.
+*   **[`02_viento_aparente.ipynb`](02_viento_aparente.ipynb):** Cálculo vectorial del viento aparente (el que sienten las velas) a partir del viento real y la velocidad/rumbo del barco.
