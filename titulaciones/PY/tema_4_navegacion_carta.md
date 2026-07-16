@@ -14,14 +14,14 @@ En Patrón de Yate, la estima no se dibuja en la carta si excede las distancias 
 Si conocemos nuestra situación de salida ($l_s$, $L_s$), el Rumbo Verdadero ($Rv$) y la Distancia navegada por la corredera ($D$), el viaje forma un triángulo rectángulo virtual en el mapa.
 
 1.  **Diferencia de Latitud ($\Delta l$):** Distancia Norte-Sur recorrida.
-    $$ \Delta l = D \cdot \cos(Rv) $$
+    $$ \Delta l = D \cdot \cos(R_v) $$
     *(El resultado sale en minutos de grado, que equivalen a millas. Se suma algebraicamente a la $l_s$ para hallar la Latitud de llegada).*
 
 2.  **Apartamiento ($A$):** La distancia física real Este-Oeste navegada (en millas náuticas). No es la Longitud.
-    $$ A = D \cdot \sin(Rv) $$
+    $$ A = D \cdot \sin(R_v) $$
 
 3.  **Latitud Media ($l_m$):** El promedio exacto de las latitudes de salida y llegada. Necesaria porque los meridianos de la Tierra convergen en los polos, estrechando el grado de Longitud.
-    $$ l_m = \frac{l_{salida} + l_{llegada}}{2} $$
+    $$ l_m = \frac{l_{\text{salida}} + l_{\text{llegada}}}{2} $$
 
 4.  **Diferencia de Longitud ($\Delta L$):** Distancia Este-Oeste en grados angulares de la Tierra.
     $$ \Delta L = \frac{A}{\cos(l_m)} $$
@@ -31,11 +31,11 @@ Si conocemos nuestra situación de salida ($l_s$, $L_s$), el Rumbo Verdadero ($R
 Si recibes un Mayday con unas coordenadas de destino, y conoces las tuyas, debes hallar tu Rumbo y Distancia directos.
 
 1.  **Rumbo:**
-    $$ \tan(Rv) = \frac{A}{\Delta l} $$
+    $$ \tan(R_v) = \frac{A}{\Delta l} $$
     *(Atención: La calculadora te da un ángulo entre 0º y 90º. Debes aplicar el cuadrante. Si vas hacia el SW, el rumbo será $180º + \text{ángulo}$.)*
 
 2.  **Distancia Directa:**
-    $$ D = \frac{\Delta l}{\cos(Rv)} \quad \text{o bien} \quad D = \frac{A}{\sin(Rv)} $$
+    $$ D = \frac{\Delta l}{\cos(R_v)} \quad \text{o bien} \quad D = \frac{A}{\sin(R_v)} $$
 
 ---
 
@@ -48,10 +48,10 @@ El viento empuja el caso (obra muerta) lateralmente. La proa apunta hacia un lad
     *   Si el viento sopla por Estribor, te empuja hacia Babor: **$Ab$ Negativo (-)**.
 
 *   **Rumbo de Superficie ($Rs$):** Es la estela real que dejas en el agua.
-    $$ Rs = Rv + Ab $$
+    $$ R_s = R_v + A_b $$
 
 Cuando quieres trazar tu rumbo real en la carta bajo el viento, dibujas el $Rs$. Cuando quieres saber qué Rumbo de Aguja poner en el timón para conseguir ese $Rs$:
-    $$ Ra = Rs - Ab - Ct $$
+    $$ R_a = R_s - A_b - C_t $$
 
 ---
 

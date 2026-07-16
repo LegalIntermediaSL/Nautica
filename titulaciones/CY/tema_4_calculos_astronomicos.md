@@ -8,8 +8,16 @@ El bloque de cálculo del Capitán de Yate es la prueba definitiva de navegació
 
 Cuando medimos el ángulo vertical de un astro (el Sol, por ejemplo) apoyándolo visualmente sobre la línea del horizonte del mar con el sextante, obtenemos la **Altura Instrumental ($ai$)**. Esta medida está contaminada por varios errores físicos y ópticos que debemos purgar paso a paso para obtener la **Altura Verdadera ($av$)** del centro de la Tierra al centro del astro.
 
-La fórmula general desglosada es:
-$$ av = ai + ei + Dp + C_{ref} + C_{par} + C_{SD} $$
+$$ a_v = a_i + e_i + D_p + C_{\text{ref}} + C_{\text{par}} + C_{\text{SD}} $$
+
+```mermaid
+graph TD
+    A[Altura Instrumental - ai] -->|+- Error de Índice| B(Altura Observada - ao)
+    B -->|- Depresión Horizonte| C(Altura Aparente - aa)
+    C -->|+- Corrección Total Ct| D{Altura Verdadera - av}
+    
+    style D fill:#4CAF50,stroke:#333,stroke-width:2px,color:white
+```
 
 ### Paso 1: De Altura Instrumental ($ai$) a Altura Observada ($ao$)
 1.  **Error de Índice ($ei$):** Es el desajuste mecánico interno de los espejos del sextante. Si al poner el sextante a cero grados el horizonte se ve partido, hay error. Puede ser aditivo o sustractivo (+ o -). 
@@ -26,7 +34,7 @@ Aquí agrupamos tres fenómenos atmosféricos y geométricos. En el Almanaque N�
 5.  **Semidiámetro ($C_{SD}$):** (Solo para Sol y Luna). Como son astros muy grandes, no podemos medir su centro a ojo. Medimos apoyando el "Limbo Inferior" (borde de abajo) en el horizonte, por lo que **hay que sumar (+)** el radio del astro. Si por algún motivo midiéramos el Limbo Superior, se resta (-).
 
 > En los exámenes de CY, lo normal es usar la tabla de corrección total de la página 387 del Almanaque.
-> $$ av = aa + Ct $$
+> $$ a_v = a_a + C_t $$
 
 ## 2. Situación por Rectas de Altura (Método de Marcq St. Hilaire)
 
@@ -39,7 +47,7 @@ Nosotros *creemos* estar en un punto de la carta (Situación de Estima). Usando 
 1.  **Situación de Estima ($le, Le$):** Establecemos nuestra Latitud ($l_e$) y Longitud ($L_e$) estimadas a la hora exacta UTC del disparo del sextante.
 2.  **Cálculo del Horario del Astro en Greenwich ($hG$):** Usando la hora UTC, entramos en las páginas diarias del Almanaque. Obtenemos el $hG$ de la hora entera, y le sumamos la parte proporcional de los minutos y segundos exactos.
 3.  **Ángulo Horario Local ($hL$):**
-    $$ hL = hG + L_e \quad \text{(Sumar si la Longitud es Este, Restar si es Oeste)} $$
+    $$ h_L = h_G + L_e \quad \text{(Sumar si la Longitud es Este, Restar si es Oeste)} $$
     *(Nota: Si hL > 360º, se le restan 360º. Si hL < 0º, se le suman 360º).*
 4.  **Ángulo en el Polo ($P$):** Para la calculadora, se convierte el $hL$ en $P$. 
     *   Si $hL < 180^\circ$, el astro está al Oeste. $P = hL$ (W).
@@ -57,6 +65,16 @@ Nosotros *creemos* estar en un punto de la carta (Situación de Estima). Usando 
 
 ### El Trazado en la Carta
 Desde el punto de Estima, trazas una línea en la dirección del Azimut. Marcas en esa línea la distancia $\Delta a$ (1' = 1 milla). En ese nuevo punto, trazas una recta perpendicular al Azimut. ¡Felicidades, acabas de trazar tu Recta de Altura! Tu barco está en esa línea recta.
+
+```mermaid
+graph LR
+    E((Estima)) -- "Azimut Zv" --> P[Punto Determinativo]
+    E -. "Distancia: Diferencia de Alturas (Δa)" .- P
+    P ---|"Perpendicular (90º)"| R[Recta de Altura]
+    
+    style E fill:#f9f,stroke:#333
+    style R stroke:#f00,stroke-width:4px
+```
 
 ## 3. Situación Verdadera (Corte de dos Rectas)
 

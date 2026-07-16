@@ -13,10 +13,10 @@ Las mareas son movimientos periódicos de ascenso y descenso del nivel del mar p
 *   **Sonda de la Carta ($Sc$):** La profundidad impresa en el papel de la carta. Está referida al Cero Hidrográfico.
 *   **Altura de Marea ($Alt$):** El desnivel vertical del agua en un momento dado por encima del Cero Hidrográfico. Siempre es un valor positivo o cero.
 *   **Sonda en el Momento ($Sm$):** La profundidad real física de la columna de agua bajo la superficie en un instante exacto.
-    $$ Sm = Sc + Alt $$
+    $$ S_m = S_c + \text{Alt} $$
 *   **Calado ($c$):** Lo que se hunde el barco bajo el agua.
 *   **Resguardo bajo la quilla (Clearance):** El colchón de seguridad de agua entre nuestra quilla y el fondo (el fango o roca).
-    $$ Resguardo = Sm - Calado $$
+    $$ \text{Resguardo} = S_m - \text{Calado} $$
 
 ### 1.2. Fórmulas de Cálculo Analítico de Mareas (Método Universal)
 En el *Anuario de Mareas*, buscamos el puerto y la fecha. Obtenemos la hora y altura de la Pleamar (PM) y Bajamar (BM) más cercanas a nuestra llegada. El problema del PY suele ser: *Llego a las 14:15, ¿cuánta agua hay exactamente?*

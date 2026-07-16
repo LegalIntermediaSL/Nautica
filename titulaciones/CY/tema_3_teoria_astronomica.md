@@ -36,7 +36,7 @@ Son las coordenadas absolutas en las que se mueve el astro, similares a las coor
 *   **Declinación (Dec):** Distancia angular desde el Ecuador Celeste hasta el astro. Positiva si está al Norte del Ecuador Celeste, Negativa si está al Sur. Es exactamente el equivalente a la **Latitud** terrestre.
 *   **Ángulo Horario Local (hL):** Es el ángulo (medido de Este a Oeste) desde el meridiano del propio observador hasta el meridiano donde se encuentra el astro actualmente. De 0º a 360º.
 *   **Ángulo Horario en Greenwich (hG):** Ángulo medido desde el Meridiano Cero (Greenwich) hasta el meridiano del astro. Viene dado en las tablas del Almanaque y crece de Este a Oeste según gira la Tierra.
-    $$ hL = hG + Latitud_{Observador} $$ *(Sumar si la Longitud es Este, Restar si es Oeste)*.
+    $$ h_L = h_G + L_{\text{obs}} $$ *(Sumar si la Longitud es Este, Restar si es Oeste)*.
 
 ### 2.3. Coordenadas Uranográficas (Visión Estelar Inmóvil)
 *   **Ascensión Recta (AR):** Es la coordenada de "Longitud" inmutable de las estrellas. Se mide hacia el Este a partir del **Punto de Aries** (el punto astronómico exacto donde el Sol cruza el Ecuador Celeste el 21 de marzo, equinoccio de primavera).
