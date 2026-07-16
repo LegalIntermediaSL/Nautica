@@ -1,55 +1,72 @@
-# Patrón de Yate - Tema 3: Teoría de Navegación (Viento y Mareas)
+# Patrón de Yate - Tema 3: Teoría de Navegación (Mareas, Cinemática y Radar)
 
-Este tema exige dominar el cálculo de mareas para no quedarse varado al entrar a puerto, y comprender la cinemática del viento para gobernar la embarcación con eficacia.
-
----
-
-## 1. Teoría y Cálculo de Mareas
-
-Las mareas son el movimiento vertical del nivel del mar producido por la atracción gravitatoria de la Luna (principalmente) y del Sol. En puertos del Atlántico (como Cádiz, en la zona de examen del Estrecho), la marea puede variar varios metros en unas horas.
-
-### Conceptos Clave
-*   **Pleamar (PM):** Nivel máximo que alcanza el agua en un ciclo.
-*   **Bajamar (BM):** Nivel mínimo.
-*   **Amplitud de Marea (A):** Diferencia de altura entre la Pleamar y la Bajamar ($A = Alt_{PM} - Alt_{BM}$).
-*   **Duración de la vaciante/creciente (D):** Tiempo que transcurre entre una pleamar y la bajamar siguiente (o viceversa). Suele ser de unas 6 horas (mareas semidiurnas).
-*   **Sonda de la Carta (Sc):** La profundidad que marca la carta náutica. Está referida al nivel mínimo histórico posible (Bajamar Escorada).
-*   **Sonda en el Momento (Sm):** La profundidad real que hay bajo la quilla en un momento concreto.
-    $$ Sm = Sc + Altura_{marea} $$
-
-### Cálculo de la Altura de la Marea en un Instante Cualquiera
-El *Anuario de Mareas* nos da la hora y altura exacta de la PM y la BM. Si llegamos a puerto a una hora intermedia, debemos calcular el nivel del agua.
-
-1.  Calculamos la Amplitud (A) y la Duración (D) de esa marea en concreto.
-2.  Calculamos el Intervalo (I): Tiempo transcurrido desde la última pleamar/bajamar hasta la hora deseada.
-3.  Aplicamos la **Fórmula Universal (Método Analítico):**
-    $$ Correcci\acute{o}n = A \cdot \sin^2\left(\frac{90^\circ \cdot I}{D}\right) $$
-4.  Si calculamos desde la Bajamar, sumamos la Corrección a la altura de la BM. Si calculamos desde la Pleamar, restamos la Corrección a la altura de la PM.
+Este tema exige dominar el cálculo riguroso de mareas para no quedarse varado al entrar a puertos de régimen macareo (como Huelva o Cádiz), comprender la cinemática vectorial del viento para gobernar embarcaciones a vela, y dominar el punteo cinemático de radar para evitar abordajes.
 
 ---
 
-## 2. Viento Real y Viento Aparente (Cinemática)
+## 1. Teoría y Cálculo de Mareas (Problemas de Sonda)
 
-El movimiento del barco crea un flujo de aire. Las velas (o nosotros mismos en cubierta) no sienten el viento atmosférico, sino la resultante matemática del viento real y el de nuestra propia velocidad.
+Las mareas son movimientos periódicos de ascenso y descenso del nivel del mar producidos por la atracción gravitatoria conjunta de la Luna y el Sol. En las zonas de examen de PY (Andalucía, Galicia, Cantábrico) son críticas.
 
-*   **Viento Real (Vr):** El viento atmosférico (medido desde tierra).
-*   **Velocidad del Buque (Vb):** Nuestro movimiento de avance. Esto genera un **Viento Relativo** de igual intensidad pero de dirección contraria a nuestro rumbo.
-*   **Viento Aparente (Va):** Es la suma vectorial del Viento Real más el Viento Relativo. Es el viento que marca el anemómetro del barco.
+### 1.1. Conceptos y Tipos de Sonda
+*   **Cero Hidrográfico:** El nivel de referencia absoluto a partir del cual se miden las profundidades en las cartas náuticas. En España coincide con la **Bajamar Escorada** (la marea más baja matemáticamente posible).
+*   **Sonda de la Carta ($Sc$):** La profundidad impresa en el papel de la carta. Está referida al Cero Hidrográfico.
+*   **Altura de Marea ($Alt$):** El desnivel vertical del agua en un momento dado por encima del Cero Hidrográfico. Siempre es un valor positivo o cero.
+*   **Sonda en el Momento ($Sm$):** La profundidad real física de la columna de agua bajo la superficie en un instante exacto.
+    $$ Sm = Sc + Alt $$
+*   **Calado ($c$):** Lo que se hunde el barco bajo el agua.
+*   **Resguardo bajo la quilla (Clearance):** El colchón de seguridad de agua entre nuestra quilla y el fondo (el fango o roca).
+    $$ Resguardo = Sm - Calado $$
 
-### Resolución Gráfica (Triángulo de Velocidades)
-1.  Trazamos un vector que represente el Rumbo y Velocidad del barco.
-2.  Desde el ORIGEN de ese vector, trazamos el vector del Viento Aparente.
-3.  Unimos las puntas de ambos vectores. Ese vector resultante nos da la intensidad y dirección del **Viento Real**.
+### 1.2. Fórmulas de Cálculo Analítico de Mareas (Método Universal)
+En el *Anuario de Mareas*, buscamos el puerto y la fecha. Obtenemos la hora y altura de la Pleamar (PM) y Bajamar (BM) más cercanas a nuestra llegada. El problema del PY suele ser: *Llego a las 14:15, ¿cuánta agua hay exactamente?*
 
-> [!TIP]
-> Recuerda que el Viento Aparente siempre entra más por la proa que el Viento Real. A medida que aceleras, el viento se "aproa".
+1.  **Amplitud ($A$):** Diferencia de altura. $A = Alt_{PM} - Alt_{BM}$
+2.  **Duración ($D$):** Tiempo transcurrido entre BM y PM (suele rondar 6h 15m). Se pasa a minutos para operar.
+3.  **Intervalo ($I$):** Tiempo transcurrido desde la Pleamar o Bajamar (la que usemos de base) hasta nuestra hora de llegada. Se pasa a minutos.
+4.  **Corrección Aditiva/Sustractiva ($C$):** Se calcula con la fórmula universal trigonométrica:
+    $$ C = A \cdot \sin^2\left(\frac{90^\circ \cdot I}{D}\right) $$
+5.  **Cálculo Final:** 
+    *   Si calculamos usando la Bajamar como base: **$Alt_{momento} = Alt_{BM} + C$**
+    *   Si calculamos usando la Pleamar como base: **$Alt_{momento} = Alt_{PM} - C$**
+
+### 1.3. La Corrección por Presión Atmosférica
+Las predicciones del Anuario asumen una presión atmosférica estándar de 1013 milibares. Si el barómetro marca diferente, el agua subirá o bajará físicamente. La regla fundamental es que **el mar funciona como un barómetro de mercurio invertido**.
+*   **Regla:** Por cada milibar de variación respecto a 1013, el nivel del mar varía 1 centímetro en sentido inverso.
+    *   Si hay Altas Presiones (Anticiclón, ej. 1023 mb): El peso del aire "aplasta" el mar. Hay 10 mb extra $\rightarrow$ el nivel real será **10 cm menos** de lo predicho.
+    *   Si hay Bajas Presiones (Borrasca, ej. 993 mb): El mar "se infla". Hay 20 mb menos $\rightarrow$ el nivel real será **20 cm más** de lo predicho.
 
 ---
 
-## 3. Cinemática de Radar (Nociones de Punteo)
+## 2. Viento Real y Viento Aparente (Cinemática Vectorial)
 
-El radar ARPA permite rastrear otros barcos para saber si colisionaremos.
-*   **Movimiento Relativo:** En la pantalla del radar, nuestro barco está quieto en el centro. El eco del otro barco se mueve con un "Rumbo Relativo".
-*   Si trazamos la estela del eco en la pantalla y la línea cruza nuestro centro, hay colisión inminente (Demora Constante).
-*   **CPA (Closest Point of Approach):** Punto de mínima distancia al que pasará el otro barco.
-*   **TCPA (Time to CPA):** Tiempo restante hasta alcanzar ese punto crítico.
+La navegación a vela, o el comportamiento de los olores o humos de un barco a motor, están dictados por el Viento Aparente. El viento atmosférico es modificado por la propia velocidad del barco.
+
+*   **Viento Real ($Vr$):** El viento de la atmósfera (el que sentirías parado en la costa).
+*   **Viento del Buque ($Vb$):** O "Viento Relativo". Al moverte a 10 nudos hacia el Norte, generas un flujo de viento en tu cara de 10 nudos viniendo exactamente del Norte, independientemente de lo que haga la atmósfera.
+*   **Viento Aparente ($Va$):** Es la suma vectorial de $Vr + Vb$. Es el viento que sientes en la cara y que marcan las veletas y anemómetros a bordo de un barco en marcha.
+
+### Leyes Físicas del Viento Aparente
+1.  **Aceleración:** Cuando un barco acelera, el Viento Aparente **aumenta de intensidad y "cae" hacia la proa** (se aproa).
+2.  **Deceleración:** Si frenas, el Viento Aparente **disminuye y "abre" hacia la popa** (se acerca a la dirección del viento real).
+3.  **Límites:** Si tienes viento de popa real de 10 nudos y navegas a 10 nudos a motor, el Viento Aparente será 0 nudos. (Te asarás de calor en cubierta aunque el humo del puro subirá recto).
+
+```mermaid
+graph TD
+    A[Viento Real Vr] --> C[Viento Aparente Va]
+    B[Velocidad Buque Invertida] --> C
+    A -. Suma Vectorial .-> C
+```
+
+---
+
+## 3. Cinemática de Radar (ARPA y Punteo)
+
+La pantalla del radar presenta un **Movimiento Relativo**. Tú estás eternamente quieto en el centro exacto de la pantalla de fósforo. Todo el universo se mueve a tu alrededor.
+Si un eco en la pantalla se mueve trazando una línea recta directa hacia tu centro (Demora constante), significa **rumbo de colisión inminente**.
+
+### Parámetros Críticos (ARPA)
+*   **CPA (Closest Point of Approach - Punto de Máxima Aproximación):** Es la distancia más pequeña a la que pasará el buque objetivo de nosotros si ninguno de los dos altera el rumbo o velocidad. Si CPA es 0, hay abordaje seguro. Si es 0.5 millas, pasará rozando.
+*   **TCPA (Time to CPA):** Es una cuenta atrás matemática. Los minutos y segundos que faltan para alcanzar el punto CPA.
+*   **Movimiento Verdadero:** En radares avanzados, puedes cambiar el modo a "Verdadero". Aquí la pantalla muestra un mapa estático; tú ves tu eco avanzando, el otro barco avanzando, y la tierra quieta.
+*   **Zonas de Guardia:** Anillos virtuales de seguridad programables en el radar. Si un eco cruza la frontera del anillo preestablecido (ej. a 2 millas de nosotros), suena una alarma acústica para despertar al oficial de guardia.
