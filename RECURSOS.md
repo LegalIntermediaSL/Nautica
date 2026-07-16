@@ -1,0 +1,25 @@
+# Recursos y Enlaces Útiles
+
+En esta sección recopilamos las herramientas, páginas web oficiales y aplicaciones móviles más importantes para la navegación de recreo en España.
+
+## Organismos Oficiales
+
+*   **[Dirección General de la Marina Mercante (DGMM)](https://www.mitma.gob.es/maritimo):** El organismo oficial del Ministerio responsable de la ordenación general de la navegación marítima y la expedición de titulaciones. Aquí encontrarás la normativa actualizada.
+*   **[Salvamento Marítimo (SASEMAR)](https://www.salvamentomaritimo.es/):** Sociedad estatal encargada de la seguridad de la vida humana en el mar. Su web contiene abundante información sobre prevención y seguridad. **Teléfono de emergencias: 900 202 202** (o Canal 16 VHF).
+*   **[AEMET Marítima](https://www.aemet.es/es/eltiempo/prediccion/maritima):** Agencia Estatal de Meteorología. Es **obligatorio** consultar el parte meteorológico antes de salir al mar. Ofrecen avisos de temporal, predicción costera y de altura.
+*   **[Puertos del Estado](http://www.puertos.es/):** Información sobre las mareas, red de boyas oceanográficas (para ver la altura real de las olas) y puertos.
+
+## Aplicaciones Móviles Recomendadas
+
+El teléfono móvil (o tablet) es una excelente herramienta de apoyo a bordo, siempre que no dependamos *exclusivamente* de él (recordemos que el agua y la electrónica no se llevan bien).
+
+### Para Seguridad
+*   **[SafeTrx (Salvamento Marítimo)](https://www.salvamentomaritimo.es/safetrx):** Aplicación oficial de Salvamento Marítimo. Permite trazar la ruta de tu viaje y enviar tu posición directamente a sus centros de control si hay una emergencia o si no llegas a destino a la hora prevista.
+
+### Para Cartografía y Navegación
+*   **[Navionics Boating](https://www.navionics.com/):** Es la aplicación de cartografía náutica más popular del mundo. Convierte tu tablet o teléfono en un plotter muy capaz. Funciona sin cobertura si has descargado los mapas previamente.
+*   **C-MAP:** Otra gran alternativa a Navionics con cartas vectoriales muy precisas y mapas batimétricos.
+
+### Para Meteorología y Viento
+*   **[Windy](https://www.windy.com/):** Impresionante visualización global de vientos, olas y clima en tiempo real. Permite comparar diferentes modelos meteorológicos (ECMWF, GFS, AROME).
+*   **[Windguru](https://www.windguru.cz/):** Un clásico entre navegantes y surfistas. Proporciona tablas detalladas de viento, rachas y altura de olas para puntos específicos de la costa.

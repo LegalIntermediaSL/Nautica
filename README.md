@@ -4,11 +4,14 @@ Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado
 
 ## Contenido del Repositorio
 
-- **[Titulaciones Náuticas](TITULOS_NAUTICOS.md)**: Guía sobre los diferentes títulos náuticos de recreo en España (Licencia, PNB, PER, PY, CY).
-- **[Nudos Náuticos](NUDOS_NAUTICOS.md)**: Guía de los nudos básicos e imprescindibles a bordo.
+- **[Titulaciones Náuticas](TITULOS_NAUTICOS.md)**: Índice de los títulos de recreo en España (Licencia, PNB, PER, PY, CY) y sus temarios.
+- **[Cartas Náuticas](cartas_nauticas/INDEX.md)**: Conceptos básicos de cartografía y simbología.
+- **[Nudos Náuticos](nudos/INDEX.md)**: Guía ilustrada de los nudos básicos e imprescindibles a bordo.
 - **[Vela y Conceptos Básicos](VELA.md)**: Fundamentos de la navegación a vela, rumbos y maniobras.
 - **[Meteorología Marítima](METEOROLOGIA.md)**: Conceptos clave para interpretar el tiempo y las previsiones.
 - **[Seguridad Marítima](SEGURIDAD.md)**: Material obligatorio, comunicaciones y emergencias.
+- **[Cursos y Formación](FORMACION_Y_CURSOS.md)**: Guía para preparar los exámenes, por libre o en academia.
+- **[Recursos Útiles](RECURSOS.md)**: Enlaces a organismos oficiales y apps móviles recomendadas.
 - **[Bitácora](BITACORA.md)**: Plantilla para el registro de navegaciones y experiencias.
 
 ## Recursos Recomendados
