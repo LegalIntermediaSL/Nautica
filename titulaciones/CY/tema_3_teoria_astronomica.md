@@ -42,6 +42,15 @@ Son las coordenadas absolutas en las que se mueve el astro, similares a las coor
 *   **Ascensión Recta (AR):** Es la coordenada de "Longitud" inmutable de las estrellas. Se mide hacia el Este a partir del **Punto de Aries** (el punto astronómico exacto donde el Sol cruza el Ecuador Celeste el 21 de marzo, equinoccio de primavera).
 *   **Ángulo Sidéreo (AS):** Exactamente igual que la AR, pero medida en sentido inverso (hacia el Oeste).
 
+```mermaid
+graph TD
+    A[Hora Universal UTC] -->|Almanaque Náutico| B[Ángulo Horario Greenwich - hG]
+    B -->|+/- Longitud Observador| C[Ángulo Horario Local - hL]
+    
+    style A fill:#ffcc00,stroke:#333
+    style C fill:#4CAF50,stroke:#333,color:white
+```
+
 ## 3. El Triángulo de Posición Astronómico (El Santo Grial del CY)
 
 La navegación astronómica no es más que la resolución trigonométrica de un gigantesco triángulo curvado dibujado en la superficie de la bóveda celeste.
@@ -55,6 +64,17 @@ Los tres **Lados** o "Cateros" de este triángulo (medidos en grados angulares) 
 *   **Colatitud (90º - Latitud):** La distancia que hay desde el Polo hasta tu Cenit.
 *   **Codeclinación (90º - Declinación):** La distancia que hay desde el Polo hasta el Astro (también llamada Distancia Polar).
 *   **Distancia Cenital (90º - Altura):** La distancia angular entre tu Cenit y el Astro.
+
+```mermaid
+graph TD
+    Pn((Polo Elevado)) ---|"Colatitud (90-l)"| Z((Cenit))
+    Pn ---|"Codeclinación (90-Dec)"| A((Astro))
+    Z ---|"Distancia Cenital (90-a)"| A
+    
+    style Pn fill:#bbf,stroke:#333,stroke-width:2px
+    style Z fill:#f9f,stroke:#333,stroke-width:2px
+    style A fill:#ff9,stroke:#333,stroke-width:2px
+```
 
 Los **Ángulos** internos de los vértices:
 *   El ángulo en el vértice del Polo es exactamente el **Ángulo Horario Local (hL)** o el Ángulo en el Polo (P).
