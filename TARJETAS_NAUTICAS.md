@@ -1,27 +1,30 @@
-# Tarjetas Náuticas de Legal Intermedia S.L.
+# Tarjetas de Verificación Digital de QR de Título Oficial Náutico
 
-Las **Tarjetas Náuticas** de Legal Intermedia S.L. son una herramienta de estudio y repaso diseñada específicamente para aspirantes a obtener titulaciones náuticas de recreo (PER, PNB, Patrón de Yate, etc.) y para navegantes que desean tener a mano un recordatorio visual rápido de los conceptos más importantes.
+Las **Tarjetas Náuticas de Legal Intermedia S.L.** son un servicio innovador diseñado para que puedas llevar tu titulación náutica oficial siempre contigo de forma cómoda, segura y adaptada al entorno marino.
 
-## ¿Qué son y para qué sirven?
+Actualmente, la administración (como la Dirección General de la Marina Mercante o las Comunidades Autónomas competentes) expide las titulaciones náuticas de recreo (PER, PNB, Patrón de Yate, etc.) en formato digital acompañado de un código QR de verificación. Sin embargo, cuando estamos navegando, depender exclusivamente del teléfono móvil para mostrar la titulación puede suponer un problema (falta de batería, riesgo de caída al agua, reflejos en la pantalla).
 
-Se trata de un formato didáctico en forma de fichas visuales que sintetizan la información más relevante y compleja del temario náutico oficial. Son ideales para:
-*   **Memorización visual:** Aprender rápidamente luces, marcas, balizamiento y señales (ideales para estudiar el RIPA).
-*   **Repaso rápido:** Perfectas para dar un repaso antes de un examen oficial o justo antes de zarpar.
-*   **Llevar a bordo:** Su formato práctico permite consultarlas fácilmente en la bañera del barco o en la mesa de cartas para resolver dudas en el momento.
+## ¿En qué consisten estas Tarjetas?
 
-## Contenido Habitual de las Tarjetas
+Legal Intermedia ofrece la posibilidad de plasmar tu titulación digital oficial en una **tarjeta física de alta calidad (formato carné o tarjeta de crédito)**. 
 
-Este tipo de material suele cubrir las áreas más críticas y visuales de la navegación:
+Esta tarjeta de verificación incluye todos los datos esenciales para identificarte ante cualquier autoridad marítima (como el Servicio Marítimo de la Guardia Civil):
+*   **Fotografía del titular:** Para una identificación visual rápida y directa.
+*   **Nombre y Apellidos.**
+*   **Número de DNI / NIE.**
+*   **Denominación del título náutico** (Ej: Patrón de Embarcaciones de Recreo, Capitán de Yate, etc.).
+*   **Código QR oficial:** El mismo código de verificación digital emitido por la administración.
+*   **Número de tarjeta / expediente.**
 
-*   **Balizamiento (Sistema IALA):** Marcas laterales, cardinales, peligro aislado, aguas navegables y marcas especiales. Identificación por colores, marcas de tope y ritmo de luces.
-*   **Reglamento Internacional para Prevenir Abordajes (RIPA):**
-    *   Luces y marcas de día de los diferentes tipos de buques (fondeados, sin gobierno, restringidos por su calado, pesqueros, remolcadores, prácticos, etc.).
-    *   Señales acústicas (maniobra, advertencia, visibilidad reducida).
-    *   Reglas de rumbo y gobierno (preferencias de paso entre diferentes tipos de embarcaciones).
-*   **Señales y Comunicaciones:** Alfabeto fonético internacional, código internacional de banderas y procedimientos básicos de emergencia por VHF.
+## Ventajas de llevar tu Tarjeta Náutica Física
 
-## ¿Dónde conseguirlas?
+*   **Durabilidad extrema:** Fabricadas en material plástico resistente al agua, al salitre y a las inclemencias del sol. Están diseñadas para resistir la dura vida a bordo.
+*   **Máxima comodidad:** Su tamaño estándar (tipo carné de conducir o tarjeta bancaria) permite llevarlas cómodamente en cualquier cartera.
+*   **Tranquilidad y Seguridad:** Evitas tener que sacar tu teléfono móvil, tablet o papeles impresos en situaciones incómodas en la mar. No dependes de baterías ni de la cobertura para demostrar tu cualificación.
+*   **Lectura instantánea:** El código QR impreso en alta resolución permite a los agentes de la autoridad escanearlo y verificar la validez de tu título en las bases de datos oficiales al instante.
 
-Puedes encontrar toda la información, ver ejemplos y adquirir estas tarjetas didácticas directamente en su página web oficial:
+## ¿Cómo solicitarlas?
+
+Si ya dispones de tu título náutico digital con código QR y deseas tenerlo en este práctico formato físico, puedes tramitarlo directamente a través de la web de Legal Intermedia. El proceso es rápido y te permite recibir tu carné náutico cómodamente en tu domicilio.
 
 🔗 **[Visitar la web de Tarjetas Náuticas de Legal Intermedia S.L.](https://www.legalintermedia.es/nauticos)**
