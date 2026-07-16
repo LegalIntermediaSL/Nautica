@@ -29,7 +29,22 @@ Para cada título necesitas unas prácticas específicas. Por ejemplo, para el *
 *   *Opcional (Prácticas de Vela):* 16 horas. (Solo se hacen una vez y valen para cualquier título futuro).
 *   *Opcional (Ampliación 24 metros y Baleares):* 24 horas continuadas en régimen de travesía.
 
-## 4. Recursos para Estudiar
-*   **Libros Oficiales:** Existen numerosos autores (Jordana, Alfonso Jordana, Simón Quintana...) que editan libros específicamente adaptados al temario oficial de cada título.
-*   **Exámenes de convocatorias anteriores:** La mejor forma de practicar es hacer exámenes reales de años anteriores de tu comunidad autónoma, ya que el estilo de las preguntas suele repetirse.
-*   **Tests Online y Apps:** Hay páginas web y aplicaciones móviles gratuitas y de pago que permiten hacer cientos de test clasificados por temas.
+## 4. Recursos Específicos para Preparar Exámenes
+
+Para asegurar el aprobado, además del material oficial, es muy recomendable utilizar las siguientes herramientas:
+
+### Libros de Texto (Manuales Oficiales)
+*   **Alfonso Jordana:** Sus libros ("El Libro del PER", "El Libro del PNB") son un clásico. Están muy bien explicados y estructurados directamente sobre el BOE.
+*   **Simón Quintana:** Otra alternativa muy consolidada y muy didáctica, especialmente para las asignaturas de carta de navegación y cálculos.
+
+### Aplicaciones y Tests (iOS y Android)
+*   **Test PER / Test PNB:** Apps gratuitas que recopilan miles de preguntas de exámenes oficiales de años pasados de diversas comunidades autónomas (Andalucía, Madrid, Valencia, etc.). Perfectas para estudiar en el transporte público.
+*   **TodoTest Náutica:** Muy conocida por sus test de conducir, también tienen un apartado excelente y muy actualizado para los títulos náuticos.
+
+### Material para la Carta de Navegación (PER y PY)
+*   **Carta Oficial de Enseñanza (Estrecho de Gibraltar 105):** Es la carta obligatoria en la que se basan todos los problemas de examen del PER y PY. Necesitarás copias impresas.
+*   **Regla Paralela, Transportador Náutico y Compás de Puntas:** El kit de herramientas indispensable para trazar sobre la carta.
+
+### Recursos Gratuitos (YouTube y Laboratorios)
+*   **Canales Náuticos en YouTube:** Busca "Problemas de Carta PER" o "Resolución de Mareas Patrón de Yate". Ver a un profesor resolver el problema trazando sobre el papel en vídeo es esencial para comprender la cinemática.
+*   **Simulaciones Interactivas:** Recuerda que en el directorio `simulaciones/` de este repositorio tienes cuadernos Jupyter en Python que te permitirán entender gráficamente y matemáticamente conceptos complejos como el cálculo del *Rumbo Verdadero* o la suma de vectores del *Viento Aparente*.

@@ -1,24 +1,31 @@
 # Patrón de Yate (PY)
 
-El título de Patrón de Yate está diseñado para aquellos navegantes que desean alejarse de la costa y realizar travesías de altura.
+El título de Patrón de Yate da un salto cualitativo hacia la navegación de altura. Requiere poseer previamente el título de PER.
 
 ## Atribuciones
 *   **Eslora máxima:** Hasta 24 metros.
-*   **Distancia máxima a la costa:** 150 millas náuticas paralelas a la costa.
-*   **Navegación:** Diurna y nocturna.
-*   **Motos de agua:** Permite gobernar todo tipo de motos náuticas.
+*   **Zona de navegación:** 150 millas náuticas desde la costa.
+*   **Motos de agua:** Todas.
 
-## Requisitos para su obtención
-1.  **Titulación previa:** Es indispensable estar en posesión del título de Patrón de Embarcaciones de Recreo (PER).
-2.  **Reconocimiento médico:** Examen psicotécnico.
-3.  **Examen teórico:** Superar un examen oficial.
-4.  **Prácticas de seguridad y navegación:** 48 horas, de las cuales al menos 36 horas serán en régimen de travesía, debiendo realizar al menos una guardia de navegación de noche (4 horas).
+## Requisitos
+1.  Estar en posesión del título de Patrón de Embarcaciones de Recreo (PER).
+2.  Aprobar el **examen teórico**.
+3.  Prácticas de seguridad y navegación: 48 horas continuadas (con al menos 36 horas en la mar y régimen de travesía).
 
-*Nota: No es necesario repetir el curso de radio (ROCA) si ya se hizo con el PER.*
+## Temario Oficial y Estructura del Examen
 
-## Temario Teórico Oficial
-El temario da un salto importante respecto al PER, centrándose más en la navegación de altura:
-1.  **Seguridad en la mar:** Estabilidad transversal, equipo de seguridad, emergencias.
-2.  **Meteorología:** Isobaras, frentes, borrascas, anticiclones, vientos, corrientes.
-3.  **Teoría de navegación:** Esfera terrestre, cartas mercatorianas, rumbo, declinación magnética, desvío, mareas.
-4.  **Navegación Carta:** Ejercicios avanzados sobre la carta náutica (estima, corrientes, viento).
+El examen consta de **40 preguntas tipo test**. Duración: 2 horas. 
+Se divide en dos módulos independientes. Puedes presentarte y aprobar los módulos por separado en diferentes convocatorias.
+
+### Módulo Genérico (45 minutos)
+*   **Seguridad en la mar:** (10 preguntas). Estabilidad, supervivencia, equipos radioeléctricos de emergencia. *Máximo 5 fallos.*
+*   **Meteorología:** (10 preguntas). Análisis de mapas isobáricos, frentes, formación de olas, corrientes oceánicas. *Máximo 5 fallos.*
+
+### Módulo de Navegación (1 hora y 15 minutos)
+*   **Teoría de navegación:** (10 preguntas). Mareas (cálculo de la altura de la marea en un instante dado), cinemática de radar, viento real vs aparente. *Máximo 5 fallos.*
+*   **Navegación Carta:** (10 preguntas). Ejercicios sobre la carta del Estrecho. Navegación con corriente, estima, viento y abatimiento. *Máximo 3 fallos (Criterio eliminatorio estricto).*
+
+## Recursos para Preparar el Examen
+*   **Calculadora científica:** Permiten llevarla al examen (no programable) para la trigonometría.
+*   **Anuario de Mareas:** Se usa en el examen para calcular las correcciones aditivas.
+*   **Simuladores Vectoriales:** Utiliza el apartado de `simulaciones/` de este repositorio para estudiar cinemática (viento y corrientes).

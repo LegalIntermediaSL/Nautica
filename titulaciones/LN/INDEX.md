@@ -1,22 +1,24 @@
-# Licencia de Navegación (antiguo "Titulín")
+# Licencia de Navegación (LN)
 
-La Licencia de Navegación es el punto de partida ideal para quienes desean iniciarse en la náutica de recreo de forma rápida y sencilla. 
+La Licencia de Navegación (antiguamente conocida como "Titulín") es la forma más rápida y accesible de iniciarse en la náutica. No requiere la realización de ningún examen oficial, solo la asistencia a un curso teórico-práctico en una escuela homologada.
 
 ## Atribuciones
 *   **Eslora máxima:** Hasta 6 metros.
-*   **Distancia máxima a la costa:** 2 millas náuticas en cualquier dirección de un puerto, marina o lugar de abrigo.
-*   **Navegación:** Solo navegación diurna.
-*   **Motos de agua:** Permite gobernar motos de agua de clase C.
+*   **Distancia máxima a la costa:** 2 millas náuticas navegando de día.
+*   **Motos de agua:** Motos náuticas de clase C (hasta 55 CV).
 
 ## Requisitos para su obtención
-1.  **Reconocimiento médico:** Superar un examen psicotécnico específico en un centro médico homologado.
-2.  **Formación teórica:** Realizar un curso teórico de 2 horas en una escuela náutica homologada.
-3.  **Formación práctica:** Realizar unas prácticas reglamentarias básicas de seguridad y navegación de 4 horas.
+1.  Ser mayor de 16 años (con consentimiento paterno si eres menor de edad).
+2.  Aportar un certificado médico psicotécnico específico para embarcaciones de recreo.
+3.  Asistir a un **curso teórico (2 horas)** y realizar **prácticas de navegación (4 horas)** en una escuela homologada. NO HAY EXAMEN.
 
-*Nota: No es necesario superar ningún examen oficial de la administración para obtener esta licencia, basta con completar la formación obligatoria en la escuela.*
+## Temario Teórico (Curso de 2 horas)
+Aunque no haya examen, las 2 horas teóricas del curso deben cubrir obligatoriamente los siguientes temas según la normativa:
+1.  **Limitaciones a la navegación:** Playas no balizadas, balizadas, canales de acceso.
+2.  **RIPA (Reglamento de Abordajes):** Nociones muy básicas sobre quién tiene preferencia.
+3.  **Balizamiento IALA:** Identificación básica de marcas laterales y cardinales.
+4.  **Nomenclatura básica:** Conocer las partes elementales del barco (proa, popa, babor, estribor).
+5.  **Seguridad:** Elementos de salvamento, uso del chaleco, hombre al agua.
 
-## Temario Teórico (Resumen)
-*   Limitaciones a la navegación.
-*   Reglamento Internacional para Prevenir Abordajes (RIPA) - Nociones básicas.
-*   Balizamiento.
-*   Nociones básicas para el uso de una estación de radio VHF portátil.
+## Recursos de Estudio
+Para la Licencia de Navegación no necesitas comprar libros ni estudiar previamente, ya que el instructor te explicará todo lo necesario durante las 2 horas de teoría y lo aplicaréis directamente en las 4 horas de prácticas en el mar.
