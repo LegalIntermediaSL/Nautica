@@ -1,28 +1,58 @@
-# Patrón de Yate - Tema 2: Meteorología
+# Patrón de Yate - Tema 2: Meteorología Avanzada
 
-La meteorología a nivel Patrón de Yate exige poder interpretar mapas del tiempo, entender la dinámica atmosférica a gran escala y anticipar el estado del mar.
+El Patrón de Yate navega lejos de la costa, donde la predicción meteorológica es su principal red de seguridad. 
 
-## 1. Mapas Meteorológicos (Isobaras)
-*   **Isobaras:** Líneas que unen puntos de igual presión atmosférica.
-*   **Borrascas (Bajas Presiones - B o L):** El viento gira en sentido antihorario en el Hemisferio Norte y convergiendo hacia el centro. Traen inestabilidad, nubes y lluvia.
-*   **Anticiclones (Altas Presiones - A o H):** El viento gira en sentido horario en el Hemisferio Norte y divergiendo del centro. Traen buen tiempo y cielos despejados.
-*   *Ley de Buys-Ballot:* Si nos ponemos de cara al viento, en el Hemisferio Norte tendremos las Bajas Presiones a nuestra derecha (y ligeramente atrás).
+---
 
-## 2. Sistemas Frontales
-Zonas de contacto entre masas de aire de diferente temperatura.
-*   **Frente Frío:** Aire frío (denso) empuja y levanta violentamente al aire cálido. Trae chubascos intensos, ráfagas de viento fuertes, cumulonimbos y caída brusca de temperatura. (Representado con triángulos azules).
-*   **Frente Cálido:** Aire cálido avanza sobre aire frío. Trae lluvias continuas, lloviznas y nubes estratificadas. (Representado con semicírculos rojos).
-*   **Frente Ocluido:** Un frente frío alcanza a un frente cálido, elevándolo por completo de la superficie. (Representado en color morado).
+## 1. La Atmósfera y la Presión
 
-## 3. Formación de Olas
-El estado de la mar (el oleaje) depende de tres factores principales:
-1.  **Intensidad del viento:** Velocidad sostenida del viento.
-2.  **Fetch (Alcance):** Distancia de mar abierto sobre la que sopla el viento sin obstáculos.
-3.  **Persistencia (Tiempo):** Cuánto tiempo lleva soplando ese viento en esa dirección.
+*   **Presión Atmosférica Normal:** 1013,2 milibares (hPa) a nivel del mar.
+*   **Gradiente de Presión:** Diferencia de presión entre dos puntos. Cuanto más juntas estén las isobaras en el mapa, mayor es el gradiente y, por tanto, **más fuerte será el viento**.
+*   **Fuerza de Coriolis:** Debido a la rotación terrestre, los vientos se desvían hacia la derecha en el Hemisferio Norte.
+*   Por la combinación del gradiente y Coriolis, el viento no fluye directamente de Altas a Bajas presiones, sino que fluye *casi paralelo* a las isobaras, girando alrededor de los centros de presión.
 
-*Conceptos adicionales:*
-*   **Mar de Viento:** Olas caóticas generadas directamente por el viento local.
-*   **Mar de Fondo (Swell):** Ondulaciones largas y regulares generadas por borrascas lejanas que viajan miles de millas.
+## 2. Borrascas, Anticiclones y Frentes
 
-## 4. Corrientes Marinas
-*   Estudio de las grandes corrientes oceánicas mundiales (Corriente del Golfo, Corriente de Canarias, etc.) y su influencia en la navegación de altura.
+### Anticiclones (Altas Presiones, > 1013 hPa)
+*   En el Hemisferio Norte, el aire desciende y gira en sentido de las agujas del reloj, divergiendo hacia el exterior.
+*   Generan tiempo estable, cielos despejados, vientos flojos y visibilidad buena (aunque pueden causar brumas/nieblas de radiación o advección).
+
+### Borrascas (Bajas Presiones, < 1013 hPa)
+*   En el Hemisferio Norte, el aire gira en sentido antihorario, convergiendo hacia el centro y ascendiendo.
+*   Al ascender, el aire se enfría, el vapor de agua se condensa y forma nubosidad, precipitaciones y temporales.
+
+### Los Frentes (Anatomía de una Borrasca)
+Las borrascas extratropicales (las de Europa) suelen llevar asociados frentes (fronteras entre masas de aire polar frío y aire tropical cálido).
+
+1.  **Aproximación de Frente Cálido:**
+    *   *Nubes:* Primero aparecen Cirros altos (pinceladas), seguidos de Altoestratos y finalmente Nimboestratos.
+    *   *Clima:* Lluvia persistente, fina y continua.
+    *   *Presión:* Baja lentamente.
+2.  **Paso del Frente Cálido (Sector Cálido):**
+    *   *Clima:* Cesa la lluvia, sube la temperatura, ambiente húmedo y posibles nieblas.
+3.  **Paso del Frente Frío:**
+    *   Es el más violento. El aire frío empuja al cálido abruptamente hacia arriba.
+    *   *Nubes:* Cumulonimbos (tormentas).
+    *   *Clima:* Chubascos muy fuertes, granizo, aparato eléctrico, ráfagas de viento bruscas (role del viento).
+    *   *Presión:* Sube rápidamente tras su paso, la temperatura cae y el cielo se despeja (chubascos post-frontales).
+
+## 3. Estado de la Mar (Escalas y Formación)
+
+### Escala Douglas (Estado del mar)
+Mide la altura de las olas de 0 a 9.
+*   *0: Calma (0 m)*
+*   *3: Marejadilla (0.5 a 1.25 m)*
+*   *4: Marejada (1.25 a 2.5 m)*
+*   *5: Fuerte Marejada (2.5 a 4 m)*
+*   *9: Mar Enorme (más de 14 m)*
+
+### Escala Beaufort (Fuerza del viento)
+Mide la fuerza del viento basándose en los efectos sobre el mar (0 a 12).
+*   *Fuerza 4: Brisa moderada (11-16 nudos). Aparecen borreguillos blancos aislados.*
+*   *Fuerza 6: Brisa fuerte (22-27 nudos). Se forman grandes olas, espuma blanca extensa.*
+*   *Fuerza 8: Temporal (34-40 nudos).*
+
+## 4. Nieblas
+La niebla es una nube a ras de suelo (visibilidad inferior a 1 km).
+*   **Niebla de Advección:** Masa de aire cálido y húmedo se desplaza sobre un mar frío. Muy típica en verano cerca de la costa, densa y persistente.
+*   **Niebla de Radiación:** La tierra se enfría por la noche, enfriando el aire húmedo sobre ella. Suele disiparse al salir el sol y calentar el terreno.

@@ -1,10 +1,8 @@
-# Puertos y Marinas
+# Instalaciones y Puertos
 
-En España, las infraestructuras portuarias se dividen principalmente en **Puertos de Interés General** (gestionados por el Estado a través de las Autoridades Portuarias) y **Puertos Autonómicos** (gestionados por las Comunidades Autónomas).
+Toda travesía náutica empieza y termina en un puerto. Conocer sus instalaciones, protocolos y servicios es vital.
 
-Para la navegación de recreo, los más relevantes son los **Puertos Deportivos** o **Marinas**, que pueden estar integrados en grandes puertos comerciales o ser instalaciones independientes.
-
-## Servicios Habituales en un Puerto Deportivo
+## Servicios en un Puerto Deportivo
 
 Al recalar en un puerto, el navegante puede esperar (o necesitar) los siguientes servicios:
 *   **Capitanía / Marinería:** El centro neurálgico del puerto. A ellos se les contacta (habitualmente por el **Canal 9 de VHF**) para solicitar amarre o asistencia en la maniobra.
@@ -15,6 +13,10 @@ Al recalar en un puerto, el navegante puede esperar (o necesitar) los siguientes
 
 ## Guía de Puertos Deportivos
 
-Dada la extensísima costa española (con más de 300 puertos deportivos), hemos creado un listado de referencia organizado por Comunidades Autónomas.
+Dada la extensísima costa española, hemos creado listados de referencia divididos geográficamente:
 
-👉 **[Directorio de Puertos Deportivos de España](PUERTOS_DEPORTIVOS.md)**
+👉 **[Puertos Deportivos del Mediterráneo](MEDITERRANEO.md)** (Baleares, Cataluña, Valencia, Murcia, Andalucía).
+
+👉 **[Puertos Deportivos del Atlántico y Cantábrico](ATLANTICO.md)** (Galicia, Cantábrico, Golfo de Cádiz, Islas Canarias).
+
+En estos documentos encontrarás las coordenadas de bocana, canales VHF y los servicios disponibles en cada uno.
