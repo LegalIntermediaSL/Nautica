@@ -58,3 +58,66 @@ Avisos a los navegantes sobre peligros para la navegación o partes meteorológi
 *   **Tide:** Marea (High tide / Low tide).
 *   **Current:** Corriente.
 *   **Windward / Leeward:** Barlovento / Sotavento.
+
+### Partes del Buque y Maniobra (Ship's Parts & Maneuvering)
+*   **Hull:** Casco.
+*   **Keel:** Quilla.
+*   **Bridge:** Puente de mando.
+*   **Engine room:** Sala de máquinas.
+*   **Anchor:** Ancla (To drop anchor = fondear / To weigh anchor = levar ancla).
+*   **Mooring lines:** Amarras (Spring = Esprín / Breast line = Través).
+*   **Fender:** Defensa.
+*   **Helm / Wheel:** Timón / Rueda del timón.
+*   **Propeller:** Hélice.
+*   **Fouled propeller:** Hélice enredada (con cabos o redes).
+
+### Emergencias y Averías (Emergencies & Casualties)
+*   **Sinking:** Hundiéndose.
+*   **Flooding / Taking water:** Inundación / Vía de agua.
+*   **Fire:** Incendio.
+*   **Man overboard (MOB):** Hombre al agua.
+*   **Drifting:** A la deriva.
+*   **Aground:** Varado (encallado).
+*   **Collision:** Abordaje (choque).
+*   **Towage / Tug:** Remolque / Remolcador.
+*   **Life raft:** Balsa salvavidas.
+*   **Casualty:** Herido / Víctima.
+
+### Meteorología (Weather)
+*   **Gale / Storm:** Temporal / Tormenta.
+*   **Hurricane / Typhoon:** Huracán / Tifón.
+*   **Fog:** Niebla (Visibility reduced to... = Visibilidad reducida a...).
+*   **Overcast:** Nublado.
+*   **Gusts:** Rachas de viento.
+*   **Swell:** Mar de fondo.
+*   **Sea state:** Estado de la mar (Rough sea = Mar gruesa).
+
+### Vocabulario Médico (Medical)
+*   **Stretcher:** Camilla.
+*   **Painkillers:** Analgésicos.
+*   **Unconscious:** Inconsciente.
+*   **Bleeding:** Sangrando / Hemorragia.
+*   **Burns:** Quemaduras.
+*   **Seasickness:** Mareo.
+*   **Heart attack:** Ataque al corazón.
+
+### Radiocomunicaciones (Radio Comms)
+*   **Over:** Cambio (He terminado de hablar, espero respuesta).
+*   **Out:** Corto (He terminado la comunicación, no espero respuesta. ¡Nunca se dice "Over and Out"!).
+*   **Read you loud and clear:** Te recibo alto y claro.
+*   **Say again:** Repita.
+*   **Spell:** Deletree.
+*   **Stand by:** Manténgase a la escucha (espere).
+*   **Radio check:** Prueba de radio.
+
+## 4. Frases de Ejemplo Comunes en Exámenes
+
+En los exámenes de CY, es frecuente que te pongan una frase en inglés y debas traducirla o entender el contexto. Aquí tienes ejemplos clave:
+
+*   *"My vessel is restricted in her ability to manoeuvre."* $\rightarrow$ Mi buque tiene capacidad de maniobra restringida.
+*   *"I require a tug."* $\rightarrow$ Solicito un remolcador.
+*   *"What is your ETA (Estimated Time of Arrival) at the pilot station?"* $\rightarrow$ ¿Cuál es tu hora estimada de llegada a la estación de prácticos?
+*   *"Keep clear of me."* $\rightarrow$ Manténgase apartado de mí.
+*   *"Do you have a doctor on board?"* $\rightarrow$ ¿Tiene un médico a bordo?
+*   *"I am proceeding to your assistance."* $\rightarrow$ Me dirijo en su auxilio.
+*   *"Vessel adrift in position..."* $\rightarrow$ Buque a la deriva en la posición...

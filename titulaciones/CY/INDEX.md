@@ -20,13 +20,14 @@ Se divide en dos módulos independientes:
 
 ### Módulo de Navegación Astronómica (1 hora y 30 minutos)
 *   **[Teoría de navegación](tema_3_teoria_astronomica.md):** (10 preguntas). Esfera celeste, coordenadas astronómicas, triángulo de posición, movimiento de los astros. *Máximo 5 fallos.*
-*   **[Cálculo Astronómico](tema_4_calculos_astronomicos.md):** (10 preguntas). Uso del sextante, Almanaque Náutico, cálculo de la situación por rectas de altura del Sol y de las Estrellas, corrección total por la Polar. *Máximo 4 fallos (Criterio eliminatorio).*
+*   **[Tema 4: Cálculos Astronómicos](tema_4_calculos_astronomicos.md):** (10 preguntas). Correcciones del sextante y cálculo de la Latitud por Altura Meridiana. *Máximo 4 fallos.*
 
 ### Módulo Genérico (1 hora)
 *   **[Meteorología](tema_1_meteorologia.md):** (10 preguntas). Meteorología oceánica, huracanes y ciclones tropicales, derrota óptima, hielos. *Máximo 5 fallos.*
 *   **[Inglés](tema_2_ingles_maritimo.md):** (10 preguntas). Comprensión de las "Standard Marine Communication Phrases" (SMCP) de la OMI. Terminología náutica en inglés. *Máximo 5 fallos.*
 
-## Recursos para Preparar el Examen
+## Práctica y Recursos
+*   **[Simulacro de Examen](simulacro_examen.md):** Atrévete con el temido examen de trigonometría esférica y SMCP.
+*   **[Guía de Prácticas Reglamentarias](../PRACTICAS.md):** Todo lo que necesitas saber sobre las horas de prácticas oceánicas obligatorias.
 *   **Almanaque Náutico:** Imprescindible para el examen de navegación astronómica.
-*   **Publicaciones del Instituto Hidrográfico:** Tablas de navegación y cuadernos de estrellas.
 *   **Simuladores de Sextante:** Existen apps que simulan el uso de un sextante en la pantalla del móvil para familiarizarse con su manejo.

@@ -23,9 +23,11 @@ Se divide en dos módulos independientes. Puedes presentarte y aprobar los módu
 
 ### Módulo de Navegación (1 hora y 15 minutos)
 *   **[Teoría de navegación](tema_3_teoria_navegacion.md):** (10 preguntas). Mareas (cálculo de la altura de la marea en un instante dado), cinemática de radar, viento real vs aparente. *Máximo 5 fallos.*
-*   **[Navegación Carta](tema_4_navegacion_carta.md):** (10 preguntas). Ejercicios sobre la carta del Estrecho. Navegación con corriente, estima, viento y abatimiento. *Máximo 3 fallos (Criterio eliminatorio estricto).*
+*   **[Tema 4: Navegación Carta](tema_4_navegacion_carta.md)**: (10 preguntas). Estimada analítica y gráfica. Cálculo de corrientes (Rumbo y Velocidad efectiva).
 
-## Recursos para Preparar el Examen
+## Práctica y Recursos
+*   **[Simulacro de Examen](simulacro_examen.md):** Preguntas tipo de cálculo de mareas y estima analítica.
+*   **[Guía de Prácticas Reglamentarias](../PRACTICAS.md):** Todo lo que necesitas saber sobre las 16 horas de prácticas de seguridad y navegación obligatorias.
 *   **Calculadora científica:** Permiten llevarla al examen (no programable) para la trigonometría.
 *   **Anuario de Mareas:** Se usa en el examen para calcular las correcciones aditivas.
 *   **Simuladores Vectoriales:** Utiliza el apartado de `simulaciones/` de este repositorio para estudiar cinemática (viento y corrientes).
