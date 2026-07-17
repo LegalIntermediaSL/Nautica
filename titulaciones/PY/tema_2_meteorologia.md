@@ -55,10 +55,34 @@ El Modelo Noruego clásico describe la evolución de un ciclón extratropical:
     *   *Secuencia nubosa:* Cirros (Ci) a $> 8 \text{ km}$, seguidos de Cirrostratos (Cs, generan halo), Altostratos (As), y Nimbostratos (Ns).
     *   *Meteoro:* Precipitaciones continuas, llovizna densa, caída sostenida del barómetro.
 2.  **Sector Cálido:** Región húmeda inter-frontal. Cese de precipitación intensa, formación de nubes rasas (Estratos y estratocúmulos), neblinas, viento racheado pero constante, y barómetro en estancamiento.
-3.  **Frente Frío:** El aire polar incide bruscamente por detrás como una pala topadora. Su pendiente es muy abrupta, forzando ascensos convectivos extremos del aire del sector cálido.
-    *   *Inestabilidad:* Tormentas y cumulonimbos (Cb) severos, fuerte cizalladura del viento, turbulencia grave, aparato eléctrico intenso y chaparrones granizados.
-    *   *El Role:* El viento cambia repentinamente del SO al NO. La temperatura se desploma, el barómetro registra un "salto" isalobárico positivo.
-4.  **Frente Ocluido:** El frente frío, siendo más rápido, alcanza al frente cálido, elevando el sector cálido entero y estrangulando la borrasca desde abajo. Señala el comienzo del decaimiento del sistema ciclónico (barotropización).
+3.  **Frente Frío:** El aire polar incide bruscamente por detrás como una cuña pesada e hiperdensa. Su pendiente geopotencial es muy abrupta (1:50 a 1:100), forzando ascensos convectivos extremos y adiabáticos del aire del sector cálido prefrontal.
+    *   *Inestabilidad Termodinámica:* Tormentas multicelulares y cumulonimbos (Cb) severos, fuerte cizalladura del viento direccional y de velocidad (shear), turbulencia grave, aparato eléctrico intenso y chaparrones granizados con micro-reventones (microbursts).
+    *   *El Role Baroclínico:* El viento cambia repentinamente del SO al NO (paso frontal). La temperatura termodinámica se desploma y el barómetro registra un "salto" isalobárico positivo (ascenso súbito).
+4.  **Frente Ocluido:** El frente frío, desplazándose más rápido en la troposfera inferior, alcanza y canibaliza al frente cálido, elevando el sector cálido por completo separándolo del suelo oceánico. Este proceso estrangula el gradiente térmico de la borrasca, marcando el comienzo del decaimiento estructural del sistema ciclónico (proceso de barotropización y decaimiento oclusivo).
+    *   *Tipos:* Oclusión de frente cálido y de frente frío, dependiendo de la retro-temperatura de las masas polares subyacentes.
+
+```mermaid
+stateDiagram-v2
+    direction LR
+    [*] --> Génesis_Onda_Baroclínica : Inestabilidad del Jet Stream
+    Génesis_Onda_Baroclínica --> Borrasca_Juventud : Divergencia en Altura
+    Borrasca_Juventud --> Madurez_Sector_Cálido : Formación Frente Cálido y Frío
+    
+    state Madurez_Sector_Cálido {
+        direction TB
+        Frente_Cálido --> Lluvia_Estratiforme_Continua
+        Lluvia_Estratiforme_Continua --> Presión_en_Caída
+        
+        Frente_Frío --> Convección_Explosiva_Cb
+        Convección_Explosiva_Cb --> Role_Viento_y_Subida_Presión
+    }
+    
+    Madurez_Sector_Cálido --> Ciclogénesis_Explosiva : Caída > 24 hPa / 24h
+    Madurez_Sector_Cálido --> Oclusión_Frontal : El Frente Frío alcanza al Cálido
+    Ciclogénesis_Explosiva --> Oclusión_Frontal
+    Oclusión_Frontal --> Decaimiento_Barotrópico : Ciclón aislado en el frío
+    Decaimiento_Barotrópico --> [*] : Disipación Isentrópica
+```
 
 ## 4. Estado de la Mar (Teoría del Espectro Direccional)
 
@@ -103,6 +127,45 @@ Un yate navega a latitud $\phi = 45^\circ\text{ N}$. Un análisis sinóptico de 
 4.  **Conversión a nudos ($1\text{ m/s} = 1.94384\text{ nudos}$):**
     $$ V_g \text{ (kn)} = 59.68 \cdot 1.94384 \approx 116\text{ nudos} $$
     *(Un valor indicativo de una corriente en chorro severa en la capa media).*
+
+**Problema 2: Altura Significativa de Oleaje mediante Análisis Espectral de Esfuerzo de Corte**
+Durante el tránsito del huracán monzónico sobre la cuenca del Atlántico Norte, el viento de superficie registrado ($U_{10}$) se sostiene a $25\text{ m/s}$ a $10\text{ metros}$ sobre el nivel del mar. La transferencia de momento aerodinámico responde a una tensión tangencial (esfuerzo cortante del viento) $\tau = \rho_{\text{aire}} \cdot C_D \cdot U_{10}^2$. Suponga que la densidad del aire en la frontera marina húmeda es $\rho_{\text{aire}} = 1.22\text{ kg/m}^3$ y el coeficiente empírico de arrastre es $C_D = 2.0 \times 10^{-3}$.
+El modelo de ola totalmente desarrollada empírico (Límite de Pierson-Moskowitz) estima que la altura significativa de ola ($H_s$) es proporcional a la energía transferida según la aproximación simplificada en estas condiciones de extremo Fetch:
+$$ H_s = \frac{0.22 \cdot U_{10}^2}{g} $$
+Determine la tensión cortante generada sobre la cubierta de un buque y calcule la altura máxima espectral esperable ($H_{1/1000}$, calculada empíricamente como $1.86 \cdot H_s$). (Use $g = 9.81\text{ m/s}^2$).
+
+*Resolución:*
+1.  **Cálculo de la Tensión Cortante del Viento ($\tau$):**
+    $$ \tau = 1.22 \cdot (2.0 \times 10^{-3}) \cdot (25)^2 = 1.22 \cdot 0.002 \cdot 625 $$
+    $$ \tau = 1.22 \cdot 1.25 = 1.525\text{ N/m}^2 $$
+    *Este nivel de "wind shear" pulveriza la cima de la ola creando aerosoles blanquecinos (Spray ceguera blanca).*
+2.  **Cálculo de la Altura Significativa ($H_s$) del Mar Completamente Desarrollado:**
+    $$ H_s = \frac{0.22 \cdot (25)^2}{9.81} = \frac{0.22 \cdot 625}{9.81} = \frac{137.5}{9.81} \approx 14.02\text{ metros} $$
+    *Esto representa un estado de mar Nivel Douglas 8 a 9 (Mar Arbolada/Enorme).*
+3.  **Cálculo de la Ola Máxima Espectral Individual Esperable ($H_{1/1000}$):**
+    Por probabilidad de Rayleigh estadística, la ola anómala ("freak wave") en la cola de la distribución de Rayleigh de mil olas es un $86\%$ más alta.
+    $$ H_{\text{máx}} \approx 1.86 \cdot 14.02 \approx 26.08\text{ metros} $$
+    *Riesgo catastrófico real de zozobra longitudinal (pitch-poling) para un yate.*
+
+**Problema 3: Termodinámica Adiabática y Elevación de la Base Nubosa (Nivel de Condensación por Ascenso - LCL)**
+El aire oceánico advectado a sotavento de un archipiélago se aproxima a la cadena montañosa litoral. El buque reporta, por estación termo-higrométrica, una Temperatura del Aire de Superficie $T_0 = 28^\circ\text{C}$ y una Temperatura del Punto de Rocío $T_{d0} = 22^\circ\text{C}$.
+Sabiendo que, durante el ascenso orográfico, el gradiente adiabático seco (DALR) enfría la parcela a razón de $\Gamma_d = 9.8^\circ\text{C}/1000\text{ m}$, y el punto de rocío disminuye por expansión volumétrica a un gradiente $\Gamma_w = 1.8^\circ\text{C}/1000\text{ m}$.
+Calcule la altitud geopotencial exacta de la base de los Cumulonimbos incipientes (El Nivel de Condensación por Ascenso, $LCL$ o NCA), lo cual es crítico para las operaciones de helicópteros SAR.
+
+*Resolución:*
+1.  **Planteamiento de Ecuaciones Termodinámicas Lineales:**
+    La parcela ascenderá ($Z$) hasta que su temperatura $T(Z)$ iguale a su punto de rocío $T_d(Z)$.
+    Ecuación de la Temperatura en ascenso: $T(Z) = T_0 - \Gamma_d \cdot Z$
+    Ecuación del Pto. de Rocío en ascenso: $T_d(Z) = T_{d0} - \Gamma_w \cdot Z$
+2.  **Condición de Saturación ($RH = 100\%$):**
+    $$ T_0 - \Gamma_d \cdot Z = T_{d0} - \Gamma_w \cdot Z $$
+    $$ T_0 - T_{d0} = Z \cdot (\Gamma_d - \Gamma_w) $$
+    $$ Z = \frac{T_0 - T_{d0}}{\Gamma_d - \Gamma_w} $$
+3.  **Sustitución en Gradientes Térmicos Atmosféricos:**
+    Gradiente neto de convergencia: $\Gamma_d - \Gamma_w = 9.8 - 1.8 = 8.0^\circ\text{C}/1000\text{ m}$ (ó $0.008^\circ\text{C/m}$).
+    Depresión psicrométrica inicial: $T_0 - T_{d0} = 28^\circ\text{C} - 22^\circ\text{C} = 6^\circ\text{C}$.
+    $$ Z = \frac{6}{0.008} = 750\text{ metros} $$
+    *Respuesta: La cota de niebla orográfica y base nubosa convectiva se asienta sólidamente a $750$ metros MSL. Por encima de esta altitud, el gradiente pasará a ser el adiabático saturado (SALR) y el calor latente liberado alimentará ciclogénesis local explosiva.*
 
 ## Referencias Bibliográficas y Jurisprudencia
 

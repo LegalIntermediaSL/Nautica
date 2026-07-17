@@ -72,6 +72,36 @@ El núcleo del sistema de posicionamiento oceánico radica en calcular la difere
     *   Si $\Delta a$ es **Positivo (+)**: $a_v > a_e$. El astro está "más alto" en la realidad que en la estima, lo que implica que el buque está más cerca del punto geográfico del astro. Se avanza la estima **HACIA** el $Z_v$.
     *   Si $\Delta a$ es **Negativo (-)**: $a_v < a_e$. El barco está más alejado. Se retrasa la estima **EN CONTRA** (rumbo $Z_v \pm 180^\circ$).
 
+```mermaid
+flowchart TD
+    A[Sextante: Altura Instrumental ai] --> B[Correcciones: ei, Dp, Ref, Par, SD]
+    B --> C[Altura Verdadera av]
+    
+    D[Cronómetro: UTC] --> E[Almanaque Náutico]
+    E --> F[Declinación Dec]
+    E --> G[Ángulo Horario Greenwich hG]
+    
+    H[Posición Estima: le, Le] --> I[Ángulo Horario Local hL = hG + Le]
+    
+    F --> J{Triángulo de Posición}
+    I --> J
+    H --> J
+    
+    J --> K[Trigonometría Esférica]
+    K --> L[Altura Estimada ae]
+    K --> M[Azimut Verdadero Zv]
+    
+    C --> N[Delta a = av - ae]
+    L --> N
+    
+    N --> O{¿Signo de Delta a?}
+    O -- Positivo (+) --> P[Trasladar Estima HACIA Zv distancia Delta a]
+    O -- Negativo (-) --> Q[Trasladar Estima OPUESTO a Zv distancia Delta a]
+    
+    P --> R[Trazar perpendicular a Zv: RECTA DE ALTURA]
+    Q --> R
+```
+
 ---
 
 ## 3. Casos Extremos, Especiales y Edge Cases
@@ -125,6 +155,47 @@ $$ Z = \arctan(-1.4804) = -55.96^\circ $$
 Como la Latitud es Norte, contamos el ángulo desde el Norte. Al ser el ángulo horario Oeste ($P$ Oeste), el astro se halla en el cuadrante SW. El azimut cuadrantal es $N 124.04^\circ W$ o matemáticamente $S 55.96^\circ W$ partiendo desde el Sur de la fórmula pura. Sin embargo, aplicando la regla marinera:
 Si $l_e > 0$, el polo elevado es el Norte ($000^\circ$). Al ser la declinación contraria y la cotangente negativa, el azimut supera los $90^\circ$ respecto al polo elevado.
 Azimut verdadero: $Z_v = 360^\circ - 124.04^\circ = 235.96^\circ$.
+
+**Problema 2: Sistema de Ecuaciones para Observaciones Simultáneas de Dos Astros**
+Al crepúsculo náutico, un Capitán de Yate obtiene dos Rectas de Altura simultáneas para las estrellas Vega y Arcturus.
+Estrella 1 (Vega): $\Delta a_1 = +3'$, Azimut $Z_1 = 045^\circ$.
+Estrella 2 (Arcturus): $\Delta a_2 = -4'$, Azimut $Z_2 = 135^\circ$.
+Desde una misma Posición de Estima (P.E.), calcule la corrección matemática de la Latitud ($\Delta l$) y el Apartamiento ($\Delta A = \Delta L \cdot \cos l_e$) para hallar la Situación Verdadera (Situación Observada) puramente por álgebra lineal matricial, sin carta náutica.
+
+*Solución:*
+Las ecuaciones lineales para las rectas de altura en función del incremento de posición son:
+$$ \Delta l \cdot \cos(Z_1) + \Delta A \cdot \sin(Z_1) = \Delta a_1 $$
+$$ \Delta l \cdot \cos(Z_2) + \Delta A \cdot \sin(Z_2) = \Delta a_2 $$
+Sustituyendo los valores trigonométricos de los azimuts:
+$\cos(45^\circ) = 0.7071$, $\sin(45^\circ) = 0.7071$
+$\cos(135^\circ) = -0.7071$, $\sin(135^\circ) = 0.7071$
+Planteamos el sistema matricial (Regla de Cramer o reducción):
+1) $0.7071 \cdot \Delta l + 0.7071 \cdot \Delta A = 3$
+2) $-0.7071 \cdot \Delta l + 0.7071 \cdot \Delta A = -4$
+Sumamos (1) y (2) para despejar $\Delta A$:
+$(0.7071 - 0.7071) \Delta l + (0.7071 + 0.7071) \Delta A = 3 - 4$
+$1.4142 \cdot \Delta A = -1 \implies \Delta A = \frac{-1}{1.4142} = -0.707 \text{ millas náuticas}$.
+Restamos (2) de (1) para despejar $\Delta l$:
+$(0.7071 - (-0.7071)) \Delta l + (0.7071 - 0.7071) \Delta A = 3 - (-4)$
+$1.4142 \cdot \Delta l = 7 \implies \Delta l = \frac{7}{1.4142} = +4.95 \text{ millas náuticas (Minutos de Latitud)}$.
+*Conclusión analítica:* La situación observada se halla a $4.95'$ hacia el Norte ($\Delta l > 0$) y $0.707'$ de apartamiento hacia el Oeste ($\Delta A < 0$) desde el punto de estima inicial.
+
+**Problema 3: Algoritmo Avanzado de Refracción (Fórmula de Bennett)**
+Para evitar descartar alturas solares muy bajas ($a_a = 4^\circ$), el navegante decide utilizar la fórmula empírica de alta precisión de G.G. Bennett (1982) para calcular la Refracción Astronómica ($R_0$) en minutos de arco, con las condiciones atmosféricas estándar. La fórmula es:
+$$ R_0 = \frac{\cot(a_a + \frac{7.31}{a_a + 4.4})}{1} $$
+Calcule la refracción $R_0$ exacta para una altura aparente $a_a = 4.0^\circ$.
+
+*Solución:*
+Primero calculamos el sumando corrector interno:
+$$ C = \frac{7.31}{4.0 + 4.4} = \frac{7.31}{8.4} = 0.8702^\circ $$
+Sumamos esto al argumento de la cotangente:
+$$ Argumento = a_a + C = 4.0^\circ + 0.8702^\circ = 4.8702^\circ $$
+Aplicamos la función trigonométrica:
+$$ R_0 = \cot(4.8702^\circ) = \frac{1}{\tan(4.8702^\circ)} $$
+Calculamos la tangente:
+$\tan(4.8702^\circ) \approx 0.08518$
+$$ R_0 = \frac{1}{0.08518} = 11.739 \text{ minutos de arco} $$
+Por tanto, la corrección de refracción será $C_{\text{ref}} = -11.74'$. Esta fórmula magistral proporciona una precisión astronómica superior a las tablas estándar de interpolación lineal en los umbrales críticos del horizonte.
 
 ---
 

@@ -39,7 +39,7 @@ Consecuencias:
 ### Corrientes en Chorro (Jet Streams) y Ondas de Rossby
 A gran altitud en la tropopausa, las fronteras entre estas células generan vientos a más de 300 km/h:
 *   **Corriente en chorro polar:** Entre Célula Polar y Ferrel. Guía los frentes de borrascas atlánticas.
-*   **Ondas de Rossby:** Meandros gigantes en los *Jet Streams* que dictan patrones climáticos duraderos, creando bloqueos anticiclónicos u olas de frío intenso.
+*   **Ondas de Rossby:** Meandros gigantes en los *Jet Streams* que dictan patrones climáticos duraderos, creando bloqueos anticiclónicos u olas de frío intenso. Analíticamente, el Número de Rossby ($R_o$) define la preponderancia de la inercia frente a Coriolis: $R_o = \frac{U}{L \cdot f}$. A escala sinóptica, $R_o \ll 1$, lo que garantiza el régimen de equilibrio geostrófico.
 
 ```mermaid
 graph TD
@@ -116,10 +116,31 @@ El resultado neto (Transporte de Ekman) es que la masa de agua profunda se mueve
 *   **Corriente Circumpolar Antártica (ACC):** La única corriente ininterrumpida por tierra, impulsada por los Vientos del Oeste.
 
 ### La Gran Cinta Transportadora (Circulación Termohalina)
-Movimiento de densidad impulsado por diferencias de temperatura (termo) y salinidad (halina).
+Movimiento de densidad impulsado por diferencias de temperatura (termo) y salinidad (halina). Regido por las ecuaciones de Navier-Stokes para fluidos baroclínicos en una esfera en rotación, donde la Ecuación de Estado del agua de mar liga densidad, temperatura y salinidad.
 *   En el Atlántico Norte (cerca de Groenlandia), el agua es muy salada y gélida (muy densa). Se hunde (Agua Profunda del Atlántico Norte - NADW).
 *   Viaja por el fondo del océano hacia el Sur, entra en el Índico y Pacífico, donde aflora miles de años después.
 *   Mantiene el equilibrio térmico del planeta. Si se detiene por el deshielo de Groenlandia (agua dulce ligera), Europa sufriría una mini-glaciación.
+
+```mermaid
+stateDiagram-v2
+    direction TB
+    [*] --> Vientos_Dominantes
+    state "Dinámica de Espiral de Ekman" as Ekman {
+        Vientos_Dominantes --> Friccion_Superficial
+        Friccion_Superficial --> Desviacion_Coriolis : + Efecto Rotacional (f)
+        Desviacion_Coriolis --> Transporte_Ekman_Neto : Flujo a 90º del Viento
+    }
+    state "Circulación Meridional de Retorno (AMOC)" as AMOC {
+        Agua_Superf_Caliente_Caribe --> Transporte_Corriente_Golfo
+        Transporte_Corriente_Golfo --> Enfriamiento_Mar_Irminger : Pérdida Calor Latente
+        Enfriamiento_Mar_Irminger --> Subduccion_Convectiva : Densidad > 1028 kg/m³
+        Subduccion_Convectiva --> Formacion_NADW : Agua Profunda
+        Formacion_NADW --> Flujo_Abisal_Sur
+        Flujo_Abisal_Sur --> Afloramiento_IndoPacifico
+        Afloramiento_IndoPacifico --> Agua_Superf_Caliente_Caribe : Cierre del Ciclo
+    }
+    Ekman --> AMOC : Modulación de Salinidad
+```
 
 ### El Niño - Oscilación del Sur (ENSO)
 *   **Condiciones Normales:** Alisios empujan agua caliente a Indonesia; aguas frías afloran en Perú.
@@ -175,6 +196,33 @@ $$ a_c = 2 \cdot (7.292 \times 10^{-5} \text{ rad/s}) \cdot (30 \text{ m/s}) \cd
 Sabiendo que $\sin(60^\circ) = \frac{\sqrt{3}}{2} \approx 0.866$:
 $$ a_c = 2 \cdot 7.292 \times 10^{-5} \cdot 30 \cdot 0.866 = 3.789 \times 10^{-3} \text{ m/s}^2 $$
 Esta sutil aceleración acumulada sobre cientos de kilómetros es la responsable de desviar los vientos y crear el giro ciclónico de las borrascas extratropicales.
+
+**Problema 2: Cálculo Avanzado del Viento Geostrófico (Equilibrio Baroclínico)**
+Determine la velocidad del viento geostrófico $V_g$ a una latitud $\phi = 45^\circ \text{ N}$, dado un gradiente de presión atmosférica horizontal $\frac{\Delta P}{\Delta n} = 3 \text{ hPa / } 100 \text{ km}$. La densidad del aire es $\rho = 1.225 \text{ kg/m}^3$.
+
+*Solución:*
+El viento geostrófico resulta del equilibrio perfecto entre la fuerza del gradiente de presión y la fuerza de Coriolis.
+La ecuación analítica es: $V_g = \frac{1}{\rho \cdot f} \cdot \frac{\Delta P}{\Delta n}$
+Donde $f = 2 \cdot \Omega \cdot \sin(\phi)$ es el parámetro de Coriolis.
+Calculamos $f$ para $45^\circ$: $f = 2 \cdot 7.292 \times 10^{-5} \cdot \sin(45^\circ) = 1.031 \times 10^{-4} \text{ s}^{-1}$.
+Convertimos el gradiente a unidades del SI (Pascales por metro):
+$3 \text{ hPa} = 300 \text{ Pa}$. $100 \text{ km} = 100,000 \text{ m}$.
+Gradiente $= \frac{300}{100000} = 0.003 \text{ Pa/m}$.
+Sustituimos en la ecuación:
+$$ V_g = \frac{0.003}{1.225 \cdot 1.031 \times 10^{-4}} = \frac{0.003}{1.263 \times 10^{-4}} = 23.75 \text{ m/s} $$
+Convertido a nudos ($1 \text{ m/s} = 1.94384 \text{ nudos}$), obtenemos $V_g \approx 46.16 \text{ nudos}$ (Temporal Fuerte, Fuerza 9 Beaufort).
+
+**Problema 3: Ecuación Integral del Transporte de Masa de Ekman**
+Los vientos Alisios ejercen un esfuerzo cortante (wind stress) constante sobre la superficie del océano de $\tau = 0.15 \text{ N/m}^2$ a una latitud de $20^\circ \text{ N}$. Calcule el transporte de masa de Ekman $M_E$ por unidad de longitud (kg/(m·s)).
+
+*Solución:*
+El transporte total de Ekman en la capa límite superficial, integrado sobre la profundidad, viene dado por la relación geométrica entre el estrés del viento y Coriolis:
+$$ M_E = \frac{\tau}{f} $$
+Calculamos el parámetro de Coriolis para $\phi = 20^\circ$:
+$f = 2 \cdot (7.292 \times 10^{-5}) \cdot \sin(20^\circ) = 4.988 \times 10^{-5} \text{ rad/s}$.
+Sustituyendo en la ecuación de transporte:
+$$ M_E = \frac{0.15}{4.988 \times 10^{-5}} = 3007.2 \text{ kg/(m}\cdot\text{s)} $$
+Significa que por cada metro de línea perpendicular al transporte (que fluye a $90^\circ$ del viento), se desplazan $3007 \text{ kg}$ de agua por segundo.
 
 ---
 

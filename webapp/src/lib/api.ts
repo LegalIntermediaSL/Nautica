@@ -11,8 +11,8 @@ export function getCourses() {
   const courses = fs.readdirSync(titulacionesDirectory)
     .filter(name => fs.statSync(path.join(titulacionesDirectory, name)).isDirectory());
   
-  // Sort naturally: PER, PY, CY
-  const order = ['PER', 'PY', 'CY'];
+  // Sort naturally: LN, PNB, PER, PY, CY
+  const order = ['LN', 'PNB', 'PER', 'PY', 'CY'];
   return courses.sort((a, b) => {
     return order.indexOf(a) - order.indexOf(b);
   });
@@ -54,4 +54,32 @@ export function getTopicBySlug(course: string, slug: string) {
     content,
     ...data,
   };
+}
+
+export function getAllSearchableContent() {
+  const courses = getCourses();
+  const allContent = [];
+
+  for (const course of courses) {
+    const topics = getTopics(course);
+    for (const topic of topics) {
+      const fullPath = path.join(titulacionesDirectory, course, `${topic.slug}.md`);
+      if (fs.existsSync(fullPath)) {
+        const fileContents = fs.readFileSync(fullPath, 'utf8');
+        const { data, content } = matter(fileContents);
+        
+        allContent.push({
+          id: `${course}-${topic.slug}`,
+          course,
+          slug: topic.slug,
+          name: topic.name,
+          title: data.title || topic.name,
+          description: data.description || '',
+          content: content
+        });
+      }
+    }
+  }
+
+  return allContent;
 }

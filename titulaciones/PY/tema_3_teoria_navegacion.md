@@ -89,14 +89,33 @@ El ordenador interno del radar resuelve continuamente ecuaciones de extrapolaci�
 *   **TCPA (Time to CPA):** Tiempo restante para alcanzar el punto CPA.
     $$ TCPA = \frac{\text{Distancia al CPA}}{\text{Velocidad Relativa del Eco}} $$
 
-### 3.3 El Triángulo de Movimiento (W-O-A)
-La cinemática del punteo (plotting manual) es el core del control marítimo:
-*   **Vector e-r (nuestro rumbo/velocidad verdadera):** Representa al buque observador.
-*   **Vector e-m (rumbo/velocidad verdadera del blanco):** El movimiento del otro buque respecto al mar.
-*   **Vector r-m (movimiento relativo):** Lo que vemos físicamente en la pantalla.
-    $$ \vec{v}_{\text{relativo}} = \vec{v}_{\text{blanco}} - \vec{v}_{\text{observador}} $$
+### 3.3 El Triángulo de Movimiento (W-O-A / W-A-O) y Cinemática Diferencial
+La cinemática del punteo (plotting manual) o la lógica de los microprocesadores ARPA conforman el epicentro del control y evitación de colisiones. Su base yace en la resolución trigonométrica de un espacio vectorial plano.
+*   **Vector $W-O$ (Way of Own / Nuestro rumbo y velocidad verdadera):** Representa al buque observador en el sistema de referencia terrestre.
+*   **Vector $W-A$ (Way of Another / Rumbo y velocidad verdadera del blanco):** El movimiento absoluto del otro buque con respecto a las coordenadas geográficas inerciales.
+*   **Vector $O-A$ (Movimiento Relativo):** La trayectoria geométrica y velocidad del eco que barre la pantalla PPI respecto al centro de nuestra rosa de los vientos (nosotros fijos en el centro de origen $O$).
+    $$ \vec{V}_{OA} = \vec{V}_{WA} - \vec{V}_{WO} $$
+    En notación cinemática naval tradicional, esto a menudo se traza como el triángulo "e-r-m", donde la base es la cinemática euclidiana del eco.
 
-Para evitar un abordaje, el marino debe resolver el triángulo inverso para determinar un nuevo vector de observador (nuevo rumbo/velocidad) que obligue al CPA resultante a salir fuera del radio de seguridad establecido (ej. desviar la línea relativa 2 millas a estribor).
+Para evitar un abordaje (resolución del problema inverso de colisión), el marino u oficial de derrota debe manipular y transformar temporalmente su propio vector $\vec{V}_{WO}$ (sea alterando la RPM de máquina o metiendo grados de timón). Este acto modifica instantáneamente la dirección y módulo de $\vec{V}_{OA}$ (la nueva línea relativa del eco), forzando que su proyección futura intersecte la perpendicular transversal a una distancia (Nuevo CPA) mayor que el Anillo de Guarda pre-establecido en el protocolo de la naviera (e.g. 2 Millas Náuticas).
+
+```mermaid
+graph TD
+    subgraph Cinemática ARPA: Resolución del Triángulo de Colisión
+    A(("Eco Inicial (A) a t=0")) -->|Vector Movimiento Relativo O-A| B("Eco a t=6 min")
+    B -->|Extrapolación Relativa de Peligro| C{"¿Cruza CPA < Límite Seguro?"}
+    end
+    
+    subgraph Resolución Vectorial Absoluta
+    D["Centro Pantalla (Own Ship)"] -. "Vector Verdadero W-O" .-> W["Centro Geográfico Virtual W"]
+    W -. "Vector Verdadero W-A (Blanco)" .-> B
+    D ==>|"Alteración de Rumbo Evasivo (Nuevo W-O)"| E["Nuevo Own Ship Vector"]
+    E -->|"Desvía O-A hacia Afuera"| F(("Nuevo CPA Seguro > 2NM"))
+    end
+    
+    C -- Sí (Riesgo de Abordaje) --> D
+    C -- No --> G["Mantener Derrota (Stand On)"]
+```
 
 ## Ejemplos Prácticos
 
@@ -125,6 +144,54 @@ Calcule analíticamente la hora más temprana para cruzar sin tocar fondo en mar
 5.  **Hora Límite de Paso:**
     $$ H_{\text{paso}} = H_{BM} + I = 06:20 + 02:18 = 08:38 \text{ UTC} $$
     *(A las 08:38 UTC garantizamos un paso hidrodinámico con sonda suficiente).*
+
+**Problema 2: Cálculo Cinemático Analítico ARPA - Abordaje con Blancos Múltiples**
+Su radar, operando a rumbo Norte verdadero ($R_v = 000^\circ$) con velocidad propia $V_o = 15\text{ kn}$, capta un blanco B que se sitúa a demora verdadera $060^\circ$ a $10\text{ NM}$. Al cabo de 12 minutos, el blanco se encuentra en demora $060^\circ$ a $6\text{ NM}$.
+Calcule algebraicamente el vector cinemático real (Rumbo Verdadero y Velocidad) del buque B, y analice por qué la inmutabilidad de la demora conforma el teorema de colisión de navegación euclidiana.
+
+*Resolución:*
+1.  **Deducción de la Situación y CPA:**
+    La demora verdadera no cambia a lo largo del tiempo ($060^\circ$). Esto significa algebraicamente que el Movimiento Relativo está contenido colinealmente sobre la demora, trazando una recta geométrica directa al origen (nuestro barco).
+    Por el Axioma de Cinemática, $\text{Demora Constante} + \text{Distancia Decreciente} \Rightarrow CPA = 0\text{ NM}$. (Colisión matemática inminente).
+2.  **Cálculo de la Velocidad Relativa del Blanco ($V_{rel}$):**
+    En $\Delta t = 12\text{ minutos}$ ($12/60 = 0.2\text{ horas}$), el blanco ha acortado la distancia en $\Delta d = 10 - 6 = 4\text{ NM}$.
+    $$ V_{rel} = \frac{\Delta d}{\Delta t} = \frac{4\text{ NM}}{0.2\text{ h}} = 20\text{ nudos} $$
+    La dirección del Movimiento Relativo (Rumbo Relativo) es recíproca a la demora, puesto que viene "hacia nosotros" desde el $060^\circ$. Luego $R_{rel} = 240^\circ$.
+3.  **Resolución de los Vectores Verdaderos (Análisis Complejo X-Y):**
+    Nuestra nave vector $\vec{V}_o$ (Norte a 15 kn): $Vx_o = 0, Vy_o = 15$
+    Vector Relativo $\vec{V}_{rel}$ (20 kn hacia el 240º):
+    $$ Vx_{rel} = 20 \cdot \sin(240^\circ) = 20 \cdot (-0.866) = -17.32\text{ kn} $$
+    $$ Vy_{rel} = 20 \cdot \cos(240^\circ) = 20 \cdot (-0.5) = -10.0\text{ kn} $$
+    La suma vectorial de la velocidad absoluta del blanco es $\vec{V}_b = \vec{V}_o + \vec{V}_{rel}$:
+    $$ Vx_b = 0 + (-17.32) = -17.32\text{ kn} $$
+    $$ Vy_b = 15 + (-10.0) = 5.0\text{ kn} $$
+4.  **Cálculo del Rumbo y Velocidad Verdadera del Blanco B:**
+    $$ |\vec{V}_b| = \sqrt{(-17.32)^2 + (5.0)^2} = \sqrt{300 + 25} = \sqrt{325} \approx 18.03\text{ nudos} $$
+    El ángulo trigonométrico es $\arctan(-17.32 / 5.0) = \arctan(-3.464) \approx -73.9^\circ$ en el cuadrante Noroeste (X negativo, Y positivo).
+    Por tanto, el Rumbo Verdadero del blanco es $360^\circ - 73.9^\circ = 286.1^\circ$.
+    *Conclusión Operativa:* El blanco es un crucero muy veloz (18 nudos) cruzando de Este a Oeste al rumbo $286^\circ$. Nuestro buque cruza su línea a gran velocidad hacia el Norte, confluyendo geométricamente en el "Zero-CPA" colision point en exactamente 18 minutos más. Por el COLREG Regla 15, nosotros somos el buque que da paso (blanco por estribor), forzando a la maniobra evasiva obligatoria (meter timón a estribor o parada dramática de la hélice principal).
+
+**Problema 3: Corrección por Nodos Astronómicos y Análisis de Interferencia de Ondas de Marea (Componentes Semidiurnos M2 y S2)**
+El patrón hidrográfico debe modelar la marea equinoccial donde la onda lunar $M_2$ (amplitud $A_{M2} = 1.6\text{ m}$, periodo $12.42\text{ h}$) coincide con la onda solar $S_2$ (amplitud $A_{S2} = 0.7\text{ m}$, periodo $12.00\text{ h}$) en una sicigia colineal perfecta. Asumiendo que ambas alcanzan el cénit en t=0 (Fase 0), formule la función trigonométrica superpuesta del nivel de marea instantáneo $Z(t)$ respecto al Nivel Medio del Mar (NMM) y calcule el momento temporal del primer armónico destructivo (cuadratura instantánea dinámica o interferencia de baja modulación), también conocido como "Beat Period" (Período de Batido).
+
+*Resolución:*
+1.  **Planteamiento de Funciones Ondulatorias Espectrales:**
+    La frecuencia angular en radianes/hora de cada componente es $\omega = \frac{2\pi}{T}$.
+    $$ \omega_{M2} = \frac{2\pi}{12.42} \approx 0.5059\text{ rad/h} $$
+    $$ \omega_{S2} = \frac{2\pi}{12.00} \approx 0.5236\text{ rad/h} $$
+    La marea estática pura es $Z(t) = 1.6 \cdot \cos(0.5059 \cdot t) + 0.7 \cdot \cos(0.5236 \cdot t)$.
+2.  **Marea Viva Inicial (Spring Tide, $t=0$):**
+    $Z(0) = 1.6 + 0.7 = 2.3\text{ metros}$ sobre el Nivel Medio.
+3.  **Cálculo Analítico del Período de Modulación (Batido Neap/Spring):**
+    La envolvente macroscópica está definida por la diferencia de frecuencias y describe la alternancia de mareas Vivas a Muertas.
+    $$ T_{\text{batido}} = \frac{2\pi}{\omega_{S2} - \omega_{M2}} = \frac{2\pi}{0.5236 - 0.5059} = \frac{2\pi}{0.0177} \approx 355.0\text{ horas} $$
+    Esto equivale matemáticamente a $\approx 14.79\text{ días}$, coincidiendo perfectamente con la mitad del ciclo lunar sinódico (Luna Llena a Cuarto Menguante, o Nueva a Creciente).
+4.  **Cuadratura Intersticial de Interferencia Destructiva Máxima (Neap Tide):**
+    Ocurrirá en la mitad del ciclo de batido.
+    $$ t_{\text{cuadratura}} = \frac{355.0}{2} = 177.5\text{ horas} $$
+    En este instante $\approx 7.4\text{ días}$, las fases difieren en $180^\circ$ ($\pi$ radianes). Las ondas se cancelan mutuamente originando una Marea Muerta mínima con elevación en el paso inferior de:
+    $$ Z_{max}(\text{Neap}) = A_{M2} - A_{S2} = 1.6 - 0.7 = 0.9\text{ metros} $$
+    *El resultado refleja a nivel diferencial la física profunda detrás de las tablas simplificadas de la hidrografía naval.*
 
 ## Referencias Bibliográficas y Jurisprudencia
 

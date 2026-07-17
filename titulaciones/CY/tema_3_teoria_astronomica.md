@@ -18,6 +18,33 @@ En la navegación astronómica moderna, **revertimos funcionalmente a la teoría
 *   **Eclíptica:** La trayectoria aparente anual del Sol sobre la Esfera Celeste. Se encuentra inclinada respecto al Ecuador Celeste unos $23^\circ 27'$ (Oblicuidad de la Eclíptica), marcando los Trópicos.
 
 ```mermaid
+stateDiagram-v2
+    direction LR
+    state "Esfera Celeste Absoluta" as EC {
+        EjeDelMundo --> PoloNorteCeleste
+        EjeDelMundo --> PoloSurCeleste
+        PoloNorteCeleste --> EcuadorCeleste : Ortogonal (90º)
+    }
+    state "Dinámica Orbital Terrestre" as Orb {
+        PlanoOrbital --> Ecliptica
+        Ecliptica --> Oblicuidad : Inclinación 23º27'
+        EcuadorCeleste --> Interseccion_Equinoccial
+        Ecliptica --> Interseccion_Equinoccial
+        Interseccion_Equinoccial --> PuntoAries : Nodo Ascendente (Primavera)
+        Interseccion_Equinoccial --> PuntoLibra : Nodo Descendente (Otoño)
+    }
+    state "Topocentrismo del Observador" as Topo {
+        CentroTierra --> Vertical_ZZ
+        Vertical_ZZ --> Cenit_Z
+        Vertical_ZZ --> Horizonte_Racional : Plano Ortogonal
+        EcuadorCeleste --> Altura_Ecuador : 90º - Latitud
+        PoloNorteCeleste --> Altura_Polo : Igual a Latitud
+    }
+    EC --> Orb
+    EC --> Topo
+```
+
+```mermaid
 graph TD
     A[Cenit] ---|Vertical Z-Z'| B(Observador en la Tierra)
     B ---|Vertical Z-Z'| C[Nadir]
@@ -130,6 +157,47 @@ $$ \sin(a_e) = -0.1849 + 0.5187 = 0.3338 $$
 Despejando la altura estimada:
 $$ a_e = \arcsin(0.3338) \approx 19.50^\circ = 19^\circ 30' $$
 La Altura Estimada de Sirio será de $19^\circ 30'$.
+
+**Problema 2: Matriz de Rotación para Transformación de Coordenadas de Nutación Estelar**
+El punto vernal de Aries ($\gamma$) sufre una retrogradación anual (Precesión) y una oscilación (Nutación). Para calcular la Ascensión Recta aparente ($\alpha_{ap}$) de la estrella Capella desde sus coordenadas medias catalogadas ($\alpha_m$, $\delta_m$), debemos aplicar las correcciones astrofísicas.
+Suponga una variación temporal en longitud de nutación $\Delta \psi = 15''$ y una variación en oblicuidad $\Delta \epsilon = -8''$. Si la oblicuidad media de la eclíptica es $\epsilon = 23.43^\circ$ y Capella tiene $\alpha_m = 5^h 16^m 41^s$ ($79.17^\circ$), $\delta_m = +45.99^\circ$.
+Calcule la corrección total en Ascensión Recta ($\Delta \alpha$) por nutación.
+
+*Solución:*
+La fórmula diferencial rigurosa de la trigonometría esférica para la corrección en $\alpha$ debida a la nutación es:
+$$ \Delta \alpha = (\cos \epsilon + \sin \epsilon \cdot \sin \alpha \cdot \tan \delta) \cdot \Delta \psi - (\cos \alpha \cdot \tan \delta) \cdot \Delta \epsilon $$
+Transformando a radianes y grados decimales:
+$\alpha = 79.17^\circ$, $\delta = 45.99^\circ$, $\epsilon = 23.43^\circ$.
+Calculamos los términos trigonométricos:
+$\cos(23.43^\circ) = 0.9175$
+$\sin(23.43^\circ) = 0.3976$
+$\sin(79.17^\circ) = 0.9822$
+$\cos(79.17^\circ) = 0.1879$
+$\tan(45.99^\circ) = 1.0351$
+Sustituyendo en el primer término (factor de $\Delta \psi$):
+$$ F_1 = 0.9175 + (0.3976 \cdot 0.9822 \cdot 1.0351) = 0.9175 + 0.4042 = 1.3217 $$
+Sustituyendo en el segundo término (factor de $\Delta \epsilon$):
+$$ F_2 = 0.1879 \cdot 1.0351 = 0.1945 $$
+Ecuación completa de $\Delta \alpha$:
+$$ \Delta \alpha = (1.3217 \cdot 15'') - (0.1945 \cdot -8'') = 19.825'' + 1.556'' = 21.381'' \text{ de arco} $$
+En tiempo ($\div 15$): $\Delta \alpha_t = +1.425 \text{ segundos de tiempo}$.
+Esta corrección microscópica la asume el Almanaque internamente, pero es esencial para la programación de efemérides en software ECDIS avanzado.
+
+**Problema 3: Ecuación del Tiempo y Hora del Tránsito Superior del Sol**
+Calcule la Hora Civil del Lugar (HCL) y la Hora Universal (UTC) exacta del tránsito superior del Sol (Paso por el Meridiano, donde $Azimut = 180^\circ$ o $000^\circ$ y la altura es máxima) para un buque en Longitud $L = 120^\circ 45' \text{ W}$. La Ecuación del Tiempo ($E$) interpolada para ese día es $E = -14^m 22^s$ (El Sol Verdadero retrasa sobre el Medio).
+
+*Solución:*
+1. **Definición Astronómica:** El Paso por el Meridiano ocurre cuando el Ángulo Horario Local del Sol Verdadero ($h_{L\odot}$) es exactamente $0^\circ$ ($00^h 00^m 00^s$).
+2. **Relación de Tiempos:** La Hora Civil del Lugar (HCL) cuenta el tiempo desde la medianoche inferior del Sol Medio. Por tanto, el Sol Medio cruza el meridiano superior a las $12:00:00 \text{ HCL}$.
+3. **Aplicación de la Ecuación del Tiempo ($E$):**
+Dado que $E = \text{HCL (Medio)} - \text{HVL (Verdadero)}$ (o dependiendo de la convención de signo, el Almanaque náutico define a veces $E$ para sumarlo directamente). Si $E = -14^m 22^s$ y el sol retrasa, la Culminación del Sol Verdadero se producirá $14^m 22^s$ DESPUÉS de las 12:00 HCL.
+Hora de Paso (HCL): $12^h 00^m 00^s + 14^m 22^s = 12^h 14^m 22^s$.
+4. **Cálculo de UTC (Universal Time Coordinated):**
+La longitud determina la diferencia de hora con Greenwich.
+Longitud en tiempo = $120^\circ 45' / 15 = 8^h 03^m 00^s$.
+Como la longitud es Oeste, Greenwich está más adelantado en el tiempo:
+$$ UTC = \text{HCL} + \text{Longitud (W)} = 12^h 14^m 22^s + 8^h 03^m 00^s = 20^h 17^m 22^s $$
+A esa precisa HORA UTC, el observador en el Pacífico levantará el sextante para medir la Latitud directamente sin cálculos trigonométricos.
 
 ---
 

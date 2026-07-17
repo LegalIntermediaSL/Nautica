@@ -4,6 +4,8 @@ import "./globals.css";
 import 'katex/dist/katex.min.css';
 import { getCourses, getTopics } from "@/lib/api";
 
+import SearchBar from "@/components/SearchBar";
+
 export const metadata: Metadata = {
   title: "Nautica - Enciclopedia",
   description: "Tratado Náutico Universitario (PER, PY, CY)",
@@ -37,6 +39,7 @@ export default function RootLayout({
           ))}
         </nav>
         <main className="main-content">
+          <SearchBar />
           {children}
         </main>
       </body>

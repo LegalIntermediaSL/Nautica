@@ -75,11 +75,25 @@ El **Rumbo Efectivo ($R_{ef}$)** es la traza sobre el suelo del fondo oceánico;
 ### 3.2 Geometría del Problema Inverso (Solución Táctica de Intercepción)
 Requerimos innegociablemente navegar sobre una trayectoria geométrica (Rumbo Efectivo deseado para llegar a puerto) bajo fuertes mareas del Estrecho. Debemos hallar el **Rumbo Verdadero (ángulo de cangrejo)** de la proa.
 
-**Método Gráfico en Carta (Ley de los Senos aplicados al Triángulo):**
-1.  Situación de Origen $\rightarrow$ Trazar infinito el segmento del $R_{ef}$ deseado.
-2.  Desde el Origen, situar el vector de corriente $(R_c, I_{hc})$ a escala. El extremo de este vector es el origen virtual de proa.
-3.  Con el compás metálico calibrado a la magnitud modular de nuestra $V_b$, apoyando en el extremo del vector corriente, trazamos un arco que interseque con el rayo infinito del $R_{ef}$.
-4.  La línea que une el extremo del vector corriente con la intersección dicta el ángulo exacto al que debemos poner nuestra proa, compensando isométricamente la deriva de la masa fluida.
+**Método Gráfico Ortodoxo en Carta (Ley de los Senos aplicados al Triángulo):**
+1.  **Punto de Origen Real ($O_R$):** Trazar una línea recta semi-infinita que una nuestra posición actual con el faro de destino. Este es el carril innegociable sobre el fondo, o Derrota Proyectada (Rumbo Efectivo $R_{ef}$).
+2.  **Traslación de Deriva de Marea:** Desde el Origen $O_R$, proyectamos matemáticamente el vector fluido puro de corriente marina $(R_c, I_{hc})$ empleando un escalar de distancia, por ejemplo la corriente sufrida en una hora cronometrada. El extremo terminal de este vector dibuja el "Origen Virtual de Arrastre" ($O_V$).
+3.  **Radio Vector y Enganche:** Utilizando un compás de puntas secas de precisión geodésica, se calibra su apertura exactamente a la magnitud modular de nuestra capacidad propulsora hidrodinámica por hora ($V_b$). Haciendo centro de la punta metálica en el extremo del vector de marea $O_V$, se traza un arco de circunferencia ("Arco Capaz Cinemático").
+4.  **Corte e Identidad Geométrica:** La intersección estricta del arco del compás con el rayo semi-infinito de nuestra ruta anhelada define el Vértice Cinemático final.
+5.  **Alineación Magistral de la Proa:** La línea imaginaria que conecta ininterrumpidamente el Origen Virtual ($O_V$) con el punto de intersección recién tallado en la carta encarna exactamente el **Rumbo de Superficie ($R_s$) o Verdadero** (ángulo de cangrejo/crabbing angle). Aplicar los coeficientes magnéticos a este rumbo asegura nuestro destino sin salirse ni una eslora del $R_{ef}$ marcado en la carta.
+
+```mermaid
+flowchart TD
+    A[Inicio: Determinar Ruta R_ef al Destino] --> B[Graficar Vector de Corriente I_hc a rumbo R_c desde la salida]
+    B --> C[Extremo Vector Corriente = Origen Virtual]
+    C --> D[Apertura Compás = Velocidad de Máquina V_b]
+    D --> E[Apoyar en Origen Virtual, trazar arco cortando la ruta R_ef]
+    E --> F{¿Corta el arco la ruta R_ef?}
+    F -- Sí --> G[Unir Origen Virtual con Corte de Arco]
+    G --> H[Ese segmento paralelo al compás es el **Rumbo Verdadero** necesario]
+    F -- No --> I[Velocidad V_b insuficiente frente a la Corriente. Imposible alcanzar destino]
+    I --> J[Abortar travesía o Capear. Riesgo extremo]
+```
 
 ---
 
@@ -123,6 +137,76 @@ Zarpamos del punto $A$ (situación inicial) a 12 nudos ($V_b = 12\text{ kn}$). R
     Esta $\gamma$ es el ángulo opuesto a $V_{ef}$. Usando la ley del Seno nuevamente:
     $$ \frac{V_{ef}}{\sin(99.7^\circ)} = \frac{12}{\sin(65^\circ)} $$
     $$ V_{ef} = \frac{12 \cdot 0.9857}{0.9063} \approx \frac{11.828}{0.9063} \approx 13.05\text{ nudos} $$
+
+**Problema 2: Estimación Analítica Loxodrómica Inversa y Resolución Diferencial Magnética en una Travesía Transmeridiana**
+Su yate zarpa desde el Faro de Trafalgar (Lat $= 36^\circ 10.9' \text{ N}$, Lon $= 006^\circ 01.5' \text{ W}$) bajo una fuerte precipitación borrascosa. Debe entregar un paquete de emergencia a un dique flotante ubicado precisamente en las coordenadas oceánicas (Lat $= 35^\circ 30.5' \text{ N}$, Lon $= 008^\circ 15.8' \text{ W}$). La Declinación Magnética inscrita en la carta náutica (Época 2018) señala $2^\circ 30' \text{ W}$ con una variación anual hiperbólica de $+7' \text{ E}$. El Desvío del compás tabulado de su puente acusa $\Delta = -4^\circ \text{ (Babor)}$. Considerando el año actual de travesía como 2026, calcule mediante trigonometría Loxodrómica Plana el **Rumbo de Aguja Estricto ($R_a$)** y el número de horas al timón, si su máquina principal empuja a un estricto régimen logístico de $8.5\text{ kn}$.
+
+*Resolución:*
+1.  **Cálculo de Proyecciones Geográficas ($\Delta l, \Delta L$ y Latitud Media $l_m$):**
+    $$ l_{\text{salida}} = 36^\circ 10.9' \text{ N} = 36.1817^\circ $$
+    $$ l_{\text{llegada}} = 35^\circ 30.5' \text{ N} = 35.5083^\circ $$
+    Diferencia Latitud ($\Delta l$): $35.5083 - 36.1817 = -0.6734^\circ = 40.40' \text{ hacia el Sur (S)}$.
+    $$ L_{\text{salida}} = 006^\circ 01.5' \text{ W} = -6.0250^\circ $$
+    $$ L_{\text{llegada}} = 008^\circ 15.8' \text{ W} = -8.2633^\circ $$
+    Diferencia Longitud ($\Delta L$): $-8.2633 - (-6.0250) = -2.2383^\circ = 134.3' \text{ hacia el Oeste (W)}$.
+    $$ l_m = \frac{36.1817 + 35.5083}{2} = 35.845^\circ $$
+2.  **Cálculo del Apartamiento Ecuatorial ($A$):**
+    $$ A = \Delta L \cdot \cos(l_m) = 134.3' \cdot \cos(35.845^\circ) = 134.3 \cdot 0.8106 = 108.86\text{ millas} \text{ (W)} $$
+3.  **Deducción Tangencial del Rumbo Directo Verdadero ($R_v$):**
+    $$ \tan(R_v) = \frac{A}{\Delta l} = \frac{108.86}{40.40} \approx 2.6946 $$
+    $$ \text{Ángulo Loxodrómico} = \arctan(2.6946) \approx 69.6^\circ $$
+    Al ser hacia el Sur y el Oeste, estamos geométricamente en el tercer cuadrante (Sudoeste).
+    $$ R_v (\text{Cuadrantal}) = \text{S } 69.6^\circ \text{ W} $$
+    $$ R_v (\text{Circular}) = 180^\circ + 69.6^\circ = 249.6^\circ \text{ Verdaderos} $$
+4.  **Cálculo de la Distancia Directa (D) Euclidiana y ETA Operacional:**
+    $$ D = \frac{\Delta l}{\cos(69.6^\circ)} = \frac{40.40}{0.3486} \approx 115.9\text{ millas náuticas} $$
+    $$ \text{Tiempo en Marcha} = \frac{115.9}{8.5\text{ kn}} \approx 13.63\text{ horas (13 h y 38 min)} $$
+5.  **Corrección Magnética y Variación Secular hacia la Aguja:**
+    *Años transcurridos:* $2026 - 2018 = 8\text{ años}$.
+    *Variación total:* $8\text{ años} \cdot (+7' \text{ E}) = +56' \text{ E}$.
+    *Declinación Magnética en 2026 ($dm$):* $2^\circ 30' \text{ W} = -2^\circ 30'$.
+    $-2^\circ 30' + 0^\circ 56' = -1^\circ 34' = -1.57^\circ \text{ (Oeste)}$.
+    *Corrección Total ($C_t$):* $C_t = dm + \Delta = (-1.57^\circ) + (-4^\circ) = -5.57^\circ$.
+    $$ R_a = R_v - C_t = 249.6^\circ - (-5.57^\circ) = 255.17^\circ \text{ (Aprox. } 255^\circ \text{ en bitácora)} $$
+
+**Problema 3: Compensación Compleja Aerohidrodinámica (Abatimiento Sumado a Deriva) e Inversión Vectorial**
+Su posición satelital (Fix GPS) lo ubica a $4.5\text{ NM}$ al sur verdadero de Punta Europa. Usted tiene programado el timón en un Rumbo de Aguja $R_a = 095^\circ$, con su máquina dando una velocidad en corredera hidrodinámica $V_b = 9\text{ kn}$. Las condiciones ambientales en el estrecho son extremas: el temporal de levante (Viento del Este franco de amura) ejerce una brutal presión aerodinámica lateral generando un Abatimiento medido y comprobado de $A_b = -12^\circ$ (a Babor). Paralelamente, una intrusión de agua fría del fondo interpone una fuerte Corriente $R_c = 135^\circ$ y una fuerza torrencial de $I_{hc} = 4\text{ kn}$. (Considere para todo el ejercicio una $C_t = -3^\circ$).
+Determine, resolviendo escalonadamente los vectores del mar superficial y del manto oceánico de fondo, cuál será su posición teórica exacta mediante estima combinada al cabo de 2 horas continuas de navegación tortuosa bajo estos forzamientos cruzados (Coordenadas geográficas iniciales referenciales Punta Europa: Lat $= 36^\circ 06.5' \text{ N}$, Lon $= 005^\circ 20.8' \text{ W}$).
+
+*Resolución:*
+1.  **Deducción del Rumbo Real de Superficie con Abatimiento Aerodinámico ($R_s$):**
+    $$ R_v = R_a + C_t = 095^\circ + (-3^\circ) = 092^\circ $$
+    Este es el rumbo de la línea de crujía. El viento viene de proa-estribor empujando el casco y su vela seca transversalmente hacia babor.
+    $$ R_s = R_v + A_b = 092^\circ + (-12^\circ) = 080^\circ $$
+    *Su rastro en el agua superficial va dirigido al 080º, avanzando 9 millas cada hora sobre ese riel líquido.*
+2.  **Descomposición Vectorial Cartesiana ($X=$ Este, $Y=$ Norte) del Movimiento Combinado:**
+    La nave como masa experimenta una adición lineal galileana en el fondo oceánico inamovible (Rumbo Efectivo $R_{ef}$ y Velocidad Efectiva $V_{ef}$).
+    Vector Buque-Superficie (Rumbo $080^\circ$, Vel $9\text{ kn}$):
+    $$ V_{bx} = 9 \cdot \sin(080^\circ) = 9 \cdot 0.9848 = 8.86\text{ kn (E)} $$
+    $$ V_{by} = 9 \cdot \cos(080^\circ) = 9 \cdot 0.1736 = 1.56\text{ kn (N)} $$
+    Vector Corriente (Rumbo $135^\circ$, Vel $4\text{ kn}$):
+    $$ C_x = 4 \cdot \sin(135^\circ) = 4 \cdot 0.7071 = 2.83\text{ kn (E)} $$
+    $$ C_y = 4 \cdot \cos(135^\circ) = 4 \cdot (-0.7071) = -2.83\text{ kn (S)} $$
+    Suma de Vectores Efectivos Absolutos (Fondo oceánico por hora):
+    $$ V_{ef(X)} = 8.86 + 2.83 = 11.69\text{ kn (Total Este por hora)} $$
+    $$ V_{ef(Y)} = 1.56 + (-2.83) = -1.27\text{ kn (Total Sur por hora)} $$
+3.  **Proyección Loxodrómica Directa Tras 2 Horas de Navegación ($\Delta t = 2$):**
+    Apartamiento y Diferencia de Latitud producidos en total:
+    $$ \Delta l \text{ (Total en millas)} = V_{ef(Y)} \cdot 2 = -1.27 \cdot 2 = -2.54' \text{ (Sur)} $$
+    $$ A \text{ (Total en millas)} = V_{ef(X)} \cdot 2 = 11.69 \cdot 2 = 23.38\text{ millas} $$
+4.  **Cálculo de Coordenadas Finales Absolutas de la Estima Compleja:**
+    *Coordenada de Inicio en el Mar (4.5 NM al Sur de Pta Europa):*
+    $l_{\text{salida}} = 36^\circ 06.5' \text{ N} - 4.5' = 36^\circ 02.0' \text{ N} = 36.0333^\circ$
+    $L_{\text{salida}} = 005^\circ 20.8' \text{ W} = -5.3467^\circ$
+    *Nueva Latitud de Llegada:*
+    $$ l_{\text{llegada}} = l_{\text{salida}} + \Delta l = 36^\circ 02.0' - 0^\circ 02.54' = 35^\circ 59.46' \text{ N} $$
+    *Diferencia de Longitud con Latitud Media:*
+    $l_m = (36^\circ 02.0' + 35^\circ 59.46') / 2 \approx 36^\circ 00.7'$ (Tomaremos $36^\circ$ para cálculos trigonométricos eficientes en alta mar).
+    $$ \Delta L = \frac{A}{\cos(36^\circ)} = \frac{23.38}{0.8090} \approx 28.90' \text{ (Este)} = +0^\circ 28.9' $$
+    *Nueva Longitud de Llegada:*
+    $$ L_{\text{llegada}} = 005^\circ 20.8' \text{ W} + 28.9' \text{ E} = (-5^\circ 20.8') + (+0^\circ 28.9') = 004^\circ 51.9' \text{ W} $$
+    **Respuesta Final de Rescate:** Latitud: $35^\circ 59.5' \text{ N}$ | Longitud: $004^\circ 51.9' \text{ W}$.
+    *(Una desviación gigantesca del track planeado originada por las leyes de hidrodinámica inercial que cualquier tribunal admirantazgo tomaría como prueba de mala praxis si no se hubiera anticipado y corregido).*
 
 ## Referencias Bibliográficas y Jurisprudencia
 

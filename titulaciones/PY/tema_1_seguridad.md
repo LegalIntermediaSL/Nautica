@@ -62,12 +62,26 @@ Donde $v \cdot h$ es el momento de traslación de las cuñas de emersión/inmers
 
 La representación de $GZ$ en función de $\theta$ conforma la **Curva de Estabilidad Estática Transversal**.
 
-### 2.1 Estabilidad Dinámica ($E_D$)
+### 2.1 Estabilidad Dinámica ($E_D$) y el Criterio Meteorológico de Rahola
 
 Es el trabajo físico que realiza el par adrizante, o bien la energía requerida por fuerzas externas (rachas de viento, olas rompientes) para escorar el buque hasta un ángulo $\theta$. Se calcula integrando el Momento Adrizante respecto al ángulo de escora, lo cual equivale matemáticamente al área bajo la curva $GZ$.
 $$ E_D = \Delta \cdot \int_{0}^{\theta} GZ \, d\theta $$
 
-El conocimiento de esta energía es crítico para certificar la supervivencia de un yate frente a rachas de viento violentas según el criterio de la OMI (IMO Res. A.749).
+Esta energía representa la reserva termodinámica del buque para absorber impactos de oleaje percusivo sin exceder el Ángulo Límite de Inundación ($\theta_f$) o el Ángulo de Zozobra ($\theta_v$). El conocimiento de esta energía es crítico para certificar la supervivencia de un yate frente a rachas de viento violentas según el criterio de la OMI (IMO Res. A.749). El famoso **Criterio Meteorológico (Severe Wind and Rolling Criterion)** exige que el área bajo la curva GZ entre el ángulo de equilibrio estático ($\theta_0$) y el de inundación progresiva sea sustancialmente mayor (típicamente $\ge 0.030$ m-rad) que el área generada por un momento escorante provocado por una ráfaga racheada extrema.
+
+```mermaid
+graph TD
+    subgraph Dinámica de Grandes Escoras y Criterio OMI
+    A((Buque Adrizado θ=0°)) -->|Impacto Olas/Rachas Extrema| B{Integración de Energía Dinámica}
+    B -->|θ aumenta| C["Ángulo de Escora Transitoria (θ < 40°)"]
+    C -->|GZ Sigue Creciendo| D["Punto de Inflexión: GZ Máximo (Max Righting Arm)"]
+    D -->|Momento Restaurador Cúspide| E{"¿GZ > Momento Escorante M_e?"}
+    E -- Sí, Energía Absorbida --> F((Adrizamiento Violento a θ_0))
+    E -- No, Energía Excedida --> G["Ángulo de Inundación Progresiva (θ_f)"]
+    G --> H["Ángulo Límite Dinámico (θ_v) donde GZ = 0"]
+    H -->|Pérdida Total de Momento| I((¡Zozobra! Vuelco Campana irreversible))
+    end
+```
 
 ### 2.2 El Peligro de las Superficies Libres
 
@@ -130,6 +144,43 @@ Un yate de desplazamiento $\Delta = 120\text{ t}$, $KM = 3.5\text{ m}$ y $KG = 2
     $$ \Delta' \cdot GM' \cdot \sin(\theta) \approx \Delta' \cdot GM' \cdot \tan(\theta) = 7.5 $$
     $$ \tan(\theta) = \frac{7.5}{107.5 \cdot 0.324} = \frac{7.5}{34.83} \approx 0.2153 $$
     $$ \theta = \arctan(0.2153) \approx 12.15^\circ \text{ a Estribor} $$
+
+**Problema 2: Impacto del Trasegado de Líquidos y Superficie Libre Dinámica en Condiciones Baroclínicas Severas**
+Un buque de expedición transoceánica tiene un Desplazamiento ($\Delta$) de $350\text{ t}$ y un $GM$ inicial de $0.95\text{ m}$. Durante un cruce en el Paso de Drake (Estado de la Mar 8), un tanque rectangular de lastre a babor se avería. Las dimensiones de la superficie del tanque son: eslora ($l = 8\text{ m}$), manga ($b = 4\text{ m}$). El tanque contiene agua salada ($\rho = 1.025\text{ t/m}^3$) y su superficie no está restringida por mamparos rompeolas. Adicionalmente, el trasvase asimétrico genera un momento escorante transversal de $45\text{ t}\cdot\text{m}$.
+Calcule la pérdida virtual del $GM$ debida al efecto de superficie libre, el nuevo $GM$ efectivo ($GM_{\text{eff}}$), y el ángulo de escora resultante, evaluando si el buque conserva viabilidad para resistir la mar gruesa ($GM_{\text{eff}} > 0.15\text{ m}$ criterio mínimo OMI).
+
+*Resolución:*
+1.  **Cálculo del Momento de Inercia Transversal del tanque ($i_L$):**
+    Para un tanque de base rectangular, el momento de inercia de la superficie libre respecto al eje longitudinal central del tanque es:
+    $$ i_L = \frac{l \cdot b^3}{12} = \frac{8 \cdot 4^3}{12} = \frac{8 \cdot 64}{12} = 42.667\text{ m}^4 $$
+2.  **Cálculo de la Reducción Virtual de la Altura Metacéntrica ($\Delta GM$):**
+    Dado que el buque navega en agua salada y el tanque contiene agua salada, la densidad del líquido ($\rho_L$) es igual a la del mar ($\rho_C$). Por tanto, la corrección es puramente volumétrica.
+    Volumen de carena del buque ($\nabla$):
+    $$ \nabla = \frac{\Delta}{\rho_C} = \frac{350}{1.025} \approx 341.46\text{ m}^3 $$
+    La pérdida virtual de $GM$ es:
+    $$ \Delta GM = \frac{\rho_L \cdot i_L}{\rho_C \cdot \nabla} = \frac{i_L}{\nabla} = \frac{42.667}{341.46} \approx 0.125\text{ m} $$
+3.  **Cálculo del Nuevo $GM$ Efectivo ($GM_{\text{eff}}$):**
+    $$ GM_{\text{eff}} = GM_{\text{inicial}} - \Delta GM = 0.95 - 0.125 = 0.825\text{ m} $$
+    *El $GM_{\text{eff}}$ sigue siendo muy superior al umbral de $0.15\text{ m}$, el buque no zozobrará inmediatamente por inestabilidad elástica.*
+4.  **Cálculo de la Escora Inducida por el Par Asimétrico:**
+    Bajo el nuevo $GM$ efectivo, se aplica el momento de $45\text{ t}\cdot\text{m}$.
+    $$ \tan(\theta) = \frac{M_{\text{escorante}}}{\Delta \cdot GM_{\text{eff}}} = \frac{45}{350 \cdot 0.825} = \frac{45}{288.75} \approx 0.1558 $$
+    $$ \theta = \arctan(0.1558) \approx 8.86^\circ $$
+    *Conclusión: A pesar del efecto de superficies libres, la arquitectura del casco absorbe el evento con una escora final asumible de casi 9 grados.*
+
+**Problema 3: Integración de la Estabilidad Dinámica con la Ecuación Evoluta de Atwood**
+Para el mismo buque anterior de $\Delta = 350\text{ t}$, en un ángulo de escora crítico de $\theta = 35^\circ$, el análisis integral de las carenas inclinadas revela que el volumen de la cuña de inmersión traslada su centroide generando un momento volumétrico ($v \cdot h$) de $1150\text{ m}^4$. Si la altura del centro de gravedad sobre el de carena inicial es $BG = 1.8\text{ m}$, calcule mediante la fórmula exacta de Atwood el Brazo Adrizante ($GZ$) y el Momento Adrizante ($M_A$) a ese ángulo, para determinar si el buque ha superado su límite de recuperación termodinámica (donde la pendiente de GZ se invierte).
+
+*Resolución:*
+1.  **Evaluación de la Fórmula de Moseley / Atwood:**
+    $$ GZ = \frac{v \cdot h}{\nabla} - BG \cdot \sin(\theta) $$
+2.  **Sustitución en el marco no lineal ($\theta = 35^\circ$):**
+    Recordando $\nabla = 341.46\text{ m}^3$ y $\sin(35^\circ) \approx 0.5736$:
+    $$ GZ = \frac{1150}{341.46} - 1.8 \cdot 0.5736 $$
+    $$ GZ \approx 3.368 - 1.032 = 2.336\text{ metros} $$
+3.  **Cálculo del Momento Adrizante Restaurador a Grandes Escoras:**
+    $$ M_A = \Delta \cdot GZ = 350\text{ t} \cdot 2.336\text{ m} = 817.6\text{ t}\cdot\text{m} $$
+    *Conclusión Geométrica:* El buque opone una resistencia formidable de más de 800 toneladas-metro en este ángulo, indicando que el pico de la Curva GZ de Estabilidad Dinámica aún es positivo y el casco reaccionará violentamente para adrizarse tras el impacto de una ola rompiente masiva.
 
 ## Referencias Bibliográficas y Jurisprudencia
 

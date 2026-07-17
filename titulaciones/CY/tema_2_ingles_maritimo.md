@@ -50,6 +50,18 @@ Para un peligro **grave e inminente** que amenaza la vida o la flotabilidad, req
 
 ### 2. MAYDAY RELAY (Retransmisión de Socorro)
 Si escuchas un Mayday y la estación costera no responde tras 5 minutos, estás **obligado** a retransmitirlo para avisar a otras autoridades.
+
+```mermaid
+flowchart TD
+    A[Recepción de Llamada Distress] --> B{¿Es propia la emergencia?}
+    B -- Sí --> C[Transmitir MAYDAY vía DSC/VHF 16]
+    B -- No --> D{¿Agrade o asiente Estación Costera?}
+    D -- Sí --> E[Mantener escucha y anotar en Diario de Navegación]
+    D -- No --> F{¿Han pasado 5 minutos?}
+    F -- No --> G[Esperar en Silencio Radio]
+    F -- Sí --> H[Transmitir MAYDAY RELAY por GMDSS]
+    H --> I[Asumir rol de Coordinador de Misión SAR en Superficie - OSC si es requerido]
+```
     > **MAYDAY RELAY, MAYDAY RELAY, MAYDAY RELAY.**
     > All stations, all stations, all stations.
     > This is motor yacht ORION, ORION, ORION.
@@ -180,6 +192,42 @@ $$ TCPA = \frac{3.5 \text{ NM}}{14 \text{ NM/h}} = 0.25 \text{ h} $$
 Convirtiendo a minutos:
 $$ TCPA_{\text{min}} = 0.25 \text{ h} \cdot 60 \text{ min/h} = 15 \text{ minutos} $$
 *Intervención SMCP:* "WARNING. You are running into danger. TCPA is one-five minutes."
+
+**Problema 2: Cálculo del Vector de Abatimiento (Leeway) en Operaciones SAR**
+En una operación de rescate, un MRCC le ordena establecer un Datum inicial para una balsa salvavidas. La posición del incidente fue $L = 40^\circ 15' \text{ N}$, $l = 005^\circ 30' \text{ W}$ a las 10:00 UTC. La corriente dominante es $SET = 090^\circ$ a $R_c = 1.5 \text{ nudos}$. El viento es del Noroeste ($NW = 315^\circ$) a 20 nudos. El manual de la OMI establece que el *Leeway* (abatimiento de la balsa) es un $5\%$ de la velocidad del viento, desplazándose directamente a favor del viento (Hacia el $135^\circ$). Calcule el vector de deriva combinada (Total Water Current + Leeway) y la posición del Datum a las 14:00 UTC.
+
+*Solución:*
+1. **Vector Corriente ($V_c$):** $090^\circ$ a $1.5 \text{ nudos}$.
+2. **Vector Leeway ($V_l$):** El viento sopla desde $315^\circ$, empuja hacia $135^\circ$. Velocidad = $0.05 \cdot 20 = 1.0 \text{ nudo}$. Dirección = $135^\circ$.
+3. **Suma Vectorial (Drift Vector):** 
+   Componente X (Este): $X = 1.5 \cdot \sin(90^\circ) + 1.0 \cdot \sin(135^\circ) = 1.5 \cdot 1 + 1.0 \cdot 0.707 = 1.5 + 0.707 = 2.207 \text{ nudos Este}$.
+   Componente Y (Norte): $Y = 1.5 \cdot \cos(90^\circ) + 1.0 \cdot \cos(135^\circ) = 1.5 \cdot 0 + 1.0 \cdot (-0.707) = -0.707 \text{ nudos Norte}$ (es decir, hacia el Sur).
+   Magnitud Resultante (Drift Speed): $v_d = \sqrt{2.207^2 + (-0.707)^2} = \sqrt{4.87 + 0.50} = 2.317 \text{ nudos}$.
+   Dirección Resultante (Drift Direction): $\theta = \arctan(\frac{X}{Y}) = \arctan(\frac{2.207}{-0.707}) = \arctan(-3.12)$. Como $X>0$ y $Y<0$, estamos en el segundo cuadrante (Sudeste). $\theta = 180^\circ - 72.2^\circ = 107.8^\circ$.
+4. **Desplazamiento Total en 4 horas (10:00 a 14:00):** $D = 2.317 \text{ nds} \cdot 4 \text{ h} = 9.268 \text{ millas náuticas}$ en rumbo $107.8^\circ$.
+Esta es la corrección geométrica para plotear el Datum SAR y emitir la alerta de seguridad SMCP.
+
+**Problema 3: Cinemática Radar de Maniobra Evasiva (Resolución de Triángulo de Velocidades)**
+Su buque (A) navega al $000^\circ$ a 12 nudos. En la pantalla ARPA detecta un buque (B) en marcación constante (riesgo de abordaje). El vector relativo indica que B se acerca a una velocidad relativa de 15 nudos desde el $045^\circ$ relativo. Si usted decide alterar su rumbo a estribor cayendo al $060^\circ$ manteniendo 12 nudos, ¿cuál será el nuevo vector de movimiento relativo de B? (Resolución trigonométrica analítica).
+
+*Solución:*
+1. **Vector Propio Original ($V_a$):** Magnitud $12$, Rumbo $000^\circ$. Componentes: $V_{ax} = 0$, $V_{ay} = 12$.
+2. **Vector Relativo Original ($V_{rel}$):** El buque B viene desde el $045^\circ$, así que se mueve hacia el $225^\circ$. Magnitud $15$.
+   Componentes relativas: $V_{rx} = 15 \cdot \sin(225^\circ) = -10.6$, $V_{ry} = 15 \cdot \cos(225^\circ) = -10.6$.
+3. **Vector Verdadero de B ($V_b$):** Sabiendo que $V_{rel} = V_b - V_a$, entonces $V_b = V_{rel} + V_a$.
+   $V_{bx} = -10.6 + 0 = -10.6$
+   $V_{by} = -10.6 + 12 = 1.4$
+4. **Nuevo Vector Propio ($V_{a'}$):** Alterando al $060^\circ$ a $12$ nudos.
+   $V_{a'x} = 12 \cdot \sin(60^\circ) = 10.39$
+   $V_{a'y} = 12 \cdot \cos(60^\circ) = 6$
+5. **Nuevo Vector Relativo ($V_{rel'}$):** $V_{rel'} = V_b - V_{a'}$
+   $V_{r'x} = -10.6 - 10.39 = -20.99$
+   $V_{r'y} = 1.4 - 6 = -4.6$
+6. **Nueva Cinemática de B:**
+   Magnitud (Nueva Velocidad Relativa de acercamiento): $V = \sqrt{(-20.99)^2 + (-4.6)^2} = \sqrt{440.58 + 21.16} = 21.48 \text{ nudos}$.
+   Dirección del movimiento relativo: $\arctan(\frac{-20.99}{-4.6}) = \arctan(4.56) = 77.6^\circ$. Como ambos son negativos, es tercer cuadrante: $180^\circ + 77.6^\circ = 257.6^\circ$.
+Al maniobrar, el blanco pasará seguro por la popa, cambiando el CPA dramáticamente.
+*Intervención SMCP:* "INTENTION. Altering course to zero-six-zero to pass astern of you."
 
 ---
 
