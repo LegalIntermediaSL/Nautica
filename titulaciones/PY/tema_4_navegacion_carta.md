@@ -6,7 +6,7 @@ El bloque de Navegación del Patrón de Yate (PY) es el filtro principal y más 
 
 ## 1. La Navegación por Estima Analítica (El Sistema Matemático)
 
-La Estima (Dead Reckoning) es el método matemático para calcular en qué coordenadas estás sumando al punto de partida el rumbo y la distancia navegada, sin mirar fuera del barco. Es fundamental si hay niebla espesa o de noche sin costa a la vista.
+La Estima (Dead Reckoning) es el método matemático para calcular en qué coordenadas estás sumando al punto de partida el rumbo y la distancia navegada, sin mirar fuera del barco. Es fundamental si hay niebla espesa o de noche sin costa a la vista. (Requiere dominar los conceptos básicos vistos en el [PER Tema 11: Carta de Navegación](../PER/tema_11_carta_navegacion.md)).
 
 En Patrón de Yate, la estima no se dibuja en la carta si excede las distancias cortas, sino que **se calcula analíticamente usando fórmulas trigonométricas de la Loxodrómica (Navegación Plana)**. Asumimos la curvatura de la Tierra como un plano para trayectos menores de 300 millas.
 
@@ -41,7 +41,7 @@ Si recibes un Mayday con unas coordenadas de destino, y conoces las tuyas, debes
 
 ## 2. Abatimiento (El Efecto del Viento)
 
-El viento empuja el caso (obra muerta) lateralmente. La proa apunta hacia un lado, pero el barco resbala hacia otro.
+El viento empuja el caso (obra muerta) lateralmente. La proa apunta hacia un lado, pero el barco resbala hacia otro. *(Para conocer a fondo el origen y predicción del viento, consulta [PY Tema 2: Meteorología](./tema_2_meteorologia.md)).*
 
 *   **Abatimiento ($Ab$):** El ángulo de resbalamiento lateral.
     *   Si el viento sopla por Babor, te empuja hacia Estribor: **$Ab$ Positivo (+)**.
@@ -92,7 +92,7 @@ Quieres ir directo al Puerto B, pero hay una fuerte corriente atravesada. Si apu
 El Patrón de Yate no usa GPS en el examen. Usa geometría visual pura.
 
 ### Demoras Cruzadas Simultáneas
-Si ves dos faros a la vez, mides su Demora de Aguja ($Da$) con tu compás de marcaciones, le aplicas la Corrección Total para sacar la Demora Verdadera ($Dv$), dibujas sus opuestas desde los faros en la carta, y donde se cruzan, estás tú.
+Si ves dos faros a la vez (puedes consultar sus características en [Anexo: Los Faros de España](../PER/tema_13_faros_espana.md)), mides su Demora de Aguja ($D_a$) con tu compás de marcaciones, le aplicas la Corrección Total para sacar la Demora Verdadera ($D_v$), dibujas sus opuestas desde los faros en la carta, y donde se cruzan, estás tú.
 *   **El Triángulo de Error (Somville):** Si tomas tres demoras simultáneas, rara vez se cortan en un punto por los errores de medición. Forman un triángulo. Tu posición más probable está en el interior de ese triángulo.
 
 ### Situación por Demoras No Simultáneas (El Traslado)
@@ -102,6 +102,16 @@ Solo tienes un faro visible y navegas. Tomas una demora. Navegas 2 horas y tomas
 3. Escoges un punto cualquiera de la 1ª Demora, le sumas tu rumbo y distancia de esas 2 horas, y obtienes un "punto trasladado".
 4. Trazas una paralela de la 1ª Demora que pase por ese punto trasladado.
 5. Donde esa paralela (la "1ª Demora Trasladada") corta a la 2ª Demora original, estás tú.
+
+```mermaid
+graph TD
+    A[Faro Único] -->|10:00 - Dv 045º| B(Línea Demora 1)
+    A -->|12:00 - Dv 090º| C(Línea Demora 2)
+    B -->|Traslado Paralelo - Rumbo/Distancia| D[Demora 1 Trasladada]
+    D -->|Corte con Demora 2| E((Tu Situación a las 12:00))
+    
+    style E fill:#f00,stroke:#333,stroke-width:2px,color:white
+```
 
 ### El Arco Capaz (Ángulo Horizontal)
 El método más preciso y blindado a errores magnéticos (no requiere compás).

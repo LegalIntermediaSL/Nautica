@@ -1,16 +1,25 @@
-# PER - Tema 11: Carta de Navegación (Resolución Práctica Analítica)
+# PER - Tema 11: La Carta Náutica y Publicaciones (Resolución Analítica)
 
-El Tema 11 es la "prueba de fuego" y el terror del PER. Es una parte 100% práctica de cartografía que se realiza obligatoriamente sobre la Carta de enseñanza del Estrecho de Gibraltar (Carta 105).
+El Tema 11 es la "prueba de fuego" y el terror del PER. Es una parte 100% práctica de cartografía que se realiza obligatoriamente sobre la Carta de enseñanza del **Estrecho de Gibraltar (Carta 105)**. Dominar este tema significa entender matemáticamente cómo trasladar el mundo físico real a un trozo de papel plano.
 
-Debes llevar al examen material de delineante: regla larga, escuadra y cartabón grandes (o en su defecto un transportador de ángulos cuadrado náutico o reglas paralelas), compás de dibujo (con punta de grafito duro), compás de puntas secas (para medir), y calculadora no programable. **Si fallas más de 2 problemas de los 4 de este bloque, suspendes todo el examen del PER automáticamente**, incluso si has sacado un 10 en toda la teoría.
+Debes llevar al examen material de delineante: regla larga, escuadra y cartabón grandes (o en su defecto un transportador de ángulos cuadrado náutico bretón), compás de dibujo (con punta de grafito duro), compás de puntas secas (para medir), y calculadora no programable. **Si fallas más de 2 problemas de los 4 de este bloque, suspendes todo el examen del PER automáticamente**, incluso si has sacado un 10 en toda la teoría.
 
 ---
 
-## 1. Coordenadas y el Uso Exclusivo del Compás
+## 1. La Proyección Mercator y la Deformación del Mundo
+La carta náutica no es un mapa cualquiera, es una proyección cartográfica cilíndrica inventada por **Gerardus Mercator** en 1569. Su inmenso valor radica en que **mantiene los ángulos reales** (proyección conforme). Una línea recta trazada en una carta Mercator es un rumbo constante (Loxodrómica), lo que permite gobernar el barco con la brújula sin tener que ir virando.
 
-Cualquier punto en la carta náutica (un faro, un naufragio o tu barco) se clava geométricamente cruzando dos líneas rectas:
+Sin embargo, tiene un gran defecto: deforma enormemente las distancias a medida que te alejas del Ecuador. Por eso Groenlandia parece tan grande como África. En la navegación práctica, esto significa que **la escala de la carta no es constante**.
+
+### 1.1 Coordenadas y el Uso Exclusivo del Compás
+
+Cualquier hito en la carta náutica (un faro como los vistos en [Tema 13: Faros de España](./tema_13_faros_espana.md), un naufragio o tu barco) se clava geométricamente cruzando dos líneas rectas:
 *   **Latitud ($l$):** Nos indica la altura vertical. Se lee única y exclusivamente en las escalas métricas verticales (situadas a la izquierda y derecha del papel). En el Estrecho de Gibraltar siempre estamos por encima del ecuador, por lo que se expresa en Grados y Minutos Norte (ej. $36^\circ 15,2' N$).
 *   **Longitud ($L$):** Nos indica el desplazamiento horizontal. Se lee única y exclusivamente en las escalas horizontales (situadas arriba y abajo del papel). En el Estrecho siempre estamos a la izquierda de Greenwich, por lo que se expresa en Grados y Minutos Oeste (ej. $005^\circ 42,6' W$). *(Nota: W es West en inglés, normativa internacional).*
+
+---
+
+
 
 > [!CAUTION]
 > **El Peligro de Medir Distancias:** Las distancias en la carta náutica (Millas Náuticas) se miden con el compás de puntas secas **ÚNICAMENTE en las escalas de Latitud (los márgenes verticales de los lados)**, abriendo el compás justo a la altura del meridiano donde estamos trabajando (porque la proyección Mercator deforma el mapa al ir hacia los polos). **Jamas uses la escala de longitud (arriba/abajo) para medir una distancia.** 
@@ -62,4 +71,25 @@ El examen constará de 4 problemas prácticos que rotan sobre estos cinco escena
 1. Desde el faro X, trazas una línea recta brutal hacia el Sur absoluto ($180^\circ$).
 2. Sabes que has viajado 2 horas a 5 millas/hora. Distancia = 10 millas.
 3. Abres el compás 10 millas en la escala vertical lateral.
-4. Pinchas en el Faro X, cortas tu recta del sur. Ahí está tu situación por estima.
+4. Pinchas en el Faro X, cortas tu recta del sur. Ahí está tu situación por estima. *(Ver matemáticas analíticas de esto en [PY Tema 4: Navegación por Carta](../PY/tema_4_navegacion_carta.md)).*
+
+---
+
+## 4. Publicaciones Náuticas y Cartografía Electrónica (ECDIS)
+
+Más allá de la carta de papel 105, la navegación moderna requiere consultar publicaciones oficiales.
+
+### 4.1. Libro de Faros y Señales de Niebla
+Editado por el Instituto Hidrográfico de la Marina (IHM), detalla absolutamente todas las balizas visuales y acústicas de la costa. Si ves una luz en la noche, consultas este libro para identificarla. (Ver Anexo [Los Faros de España](./tema_13_faros_espana.md) y [Tema 5: Balizamiento](./tema_5_balizamiento.md)).
+
+### 4.2. El Manual INT-1 (Símbolos y Abreviaturas)
+Es la "piedra Rosetta" de las cartas náuticas. Un pequeño libro oficial que estandariza internacionalmente cómo se dibujan los peligros:
+*   Una cruz (`+`) rodeada de puntos significa una roca que siempre está bajo el agua.
+*   Un asterisco (`*`) significa una roca que vela (asoma) durante la bajamar.
+*   El fondo del mar se describe con letras: `S` (Sand/Arena), `M` (Mud/Fango), `R` (Rock/Roca), crítico para elegir zona de fondeo (Ver [Tema 2: Maniobras](./tema_2_amarre_fondeo.md)).
+
+### 4.3. Cartografía Electrónica (ECDIS y Plotters)
+Los buques modernos operan con un **ECDIS (Electronic Chart Display and Information System)**, mientras que las embarcaciones de recreo usan "Plotters" comerciales (Garmin, Raymarine).
+Existen dos tipos fundamentales de cartas electrónicas:
+1.  **Cartas Raster (RNC):** Son literalmente escaneos digitales como "fotos" de las cartas de papel. Al hacer zoom, los píxeles engordan y la letra se vuelve borrosa. Ya no se usan.
+2.  **Cartas Vectoriales (ENC):** Son bases de datos dinámicas. Al hacer zoom, el ordenador dibuja las líneas de nuevo, revelando más información. Si programas el calado de tu barco a 2 metros, el ECDIS te pintará en rojo todas las zonas que tengan menos de esa profundidad.
