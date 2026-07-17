@@ -1,157 +1,165 @@
 # Capitán de Yate - Tema 2: Inglés Marítimo (SMCP)
 
-El nivel de Capitán exige poder comunicarse sin ambigüedades con estaciones costeras (MRCC) y otros buques de cualquier nacionalidad, especialmente en situaciones de peligro.
+El nivel de Capitán de Yate exige poder comunicarse sin ambigüedades con Estaciones Costeras (MRCC), servicios de control de tráfico (VTS), Prácticos, Salvamento Marítimo, helicópteros SAR y otros buques de cualquier nacionalidad, especialmente en situaciones de emergencia, peligro o abordaje inminente.
 
 ---
 
-## 1. El Vocabulario Normalizado (SMCP)
+## 1. El Vocabulario Normalizado (SMCP) y El Sistema GMDSS
 
-Las **Standard Marine Communication Phrases (SMCP)** de la Organización Marítima Internacional (OMI) son un catálogo de frases hechas. No se debe improvisar inglés gramaticalmente complejo por radio.
+Las **Standard Marine Communication Phrases (SMCP)** de la Organización Marítima Internacional (OMI) son un catálogo obligatorio de frases hechas diseñadas para sortear las barreras idiomáticas. La regla fundamental es: **Nunca se debe improvisar inglés gramaticalmente complejo por radio**. Frases pasivas o complejas ("It would be highly appreciated if you could steer clear") causan desastres.
+
+El SMCP opera bajo la cobertura del **GMDSS (Global Maritime Distress and Safety System)**.
 
 ### Marcadores de Mensaje (Message Markers)
-Para evitar malentendidos (ej: no saber si te están preguntando o dando una orden), toda frase clave debe empezar por uno de los 8 marcadores oficiales:
+Todo mensaje crucial debe ser precedido por uno de los 8 marcadores para tipificar legalmente el propósito de la transmisión:
 
-*   **QUESTION:** Solicita información. *(Ej: QUESTION. What is your draft?)*
-*   **ANSWER:** Respuesta a una pregunta previa. *(Ej: ANSWER. My draft is four metres.)*
-*   **INSTRUCTION:** Una orden dada por una autoridad (VTS, Capitanía) que el barco debe acatar.
-*   **ADVICE:** Una recomendación que el capitán es libre de seguir o no.
-*   **WARNING:** Aviso de peligro inminente (ej. banco de niebla).
-*   **INFORMATION:** Hechos o datos (ej. "el buque cisterna saldrá a las 1400").
-*   **INTENTION:** Lo que vas a hacer (ej. "Tengo intención de virar a estribor").
-*   **REQUEST:** Solicitar acción a otra parte (ej. "Solicito remolcador").
+*   **QUESTION:** Solicita información y exige respuesta. *(Ej: QUESTION. What is your draft?)*
+*   **ANSWER:** Respuesta directa. *(Ej: ANSWER. My draft is four decimal five metres.)*
+*   **INSTRUCTION:** Orden vinculante dada por una autoridad legal (VTS, MRCC). *(Ej: INSTRUCTION. Do not enter the fairway.)*
+*   **ADVICE:** Recomendación táctica. El Capitán es responsable de acatarla o no. *(Ej: ADVICE. Alter course to starboard.)*
+*   **WARNING:** Alerta crítica sobre un peligro externo. *(Ej: WARNING. Obstruction in the fairway.)*
+*   **INFORMATION:** Declaración de un hecho. *(Ej: INFORMATION. MV Sirius will depart at one-six-zero-zero UTC.)*
+*   **INTENTION:** Declaración de maniobra inminente del propio buque. *(Ej: INTENTION. I will reduce speed.)*
+*   **REQUEST:** Solicitar servicio. *(Ej: REQUEST. I require two tugs.)*
 
-### Reglas de Pronunciación
-*   **Alfabeto Fonético:** Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu.
-*   **Números:** Se pronuncian dígito a dígito para evitar confusión fonética.
-    *   $15$ no es *fifteen*, es **ONE-FIVE**.
-    *   El Rumbo $150$ es **Heading ONE-FIVE-ZERO**.
-*   Las distancias siempre en Millas Náuticas (Nautical Miles) y la velocidad en Nudos (Knots).
+### Reglas Estrictas de Pronunciación y Deletreo
+*   **Alfabeto Fonético OMI:** Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu.
+*   **Números:** Dígito a dígito.
+    *   $15$ = **ONE-FIVE**.
+    *   $150^\circ$ (Rumbo) = **Heading ONE-FIVE-ZERO**.
+    *   $30.5$ = **THREE-ZERO DECIMAL FIVE**.
+*   Las posiciones siempre en Lat/Lon precisando North/South y East/West.
 
-## 2. Comunicaciones de Emergencia y Socorro
+---
 
-Existen tres niveles de prioridad en el canal 16 de VHF, que deben ser respetados estrictamente.
+## 2. Protocolos de Emergencia y Socorro (Distress, Urgency, Safety)
+
+Las comunicaciones de emergencia se hacen por el Canal 16 VHF, Frecuencias de 2182 kHz (MF) o mediante llamada selectiva digital (DSC - Canal 70).
 
 ### 1. MAYDAY (Socorro / Distress)
-Peligro **grave e inminente** que requiere asistencia inmediata (Fuego incontrolable, vía de agua grave, hundimiento).
-*   *Llamada:* MAYDAY, MAYDAY, MAYDAY. This is (Nombre del barco 3 veces), Callsign (Indicativo).
-*   *Mensaje:* MAYDAY (Nombre). My position is (Latitud/Longitud). I am sinking (Me hundo). I require immediate assistance. X persons on board. Over.
+Para un peligro **grave e inminente** que amenaza la vida o la flotabilidad, requiriendo auxilio instantáneo.
+*   **Estructura del Mensaje (Acotación de tiempo crítico):**
+    > **MAYDAY, MAYDAY, MAYDAY.**
+    > This is motor yacht SEAWOLF, SEAWOLF, SEAWOLF. Callsign Echo-Bravo-Two-One. MMSI 224123456.
+    > **MAYDAY SEAWOLF.**
+    > My position is Latitude Four-Five Degrees, Two-Zero Minutes North; Longitude Zero-Zero-Eight Degrees, One-Five Minutes West.
+    > We have struck a submerged container. Severe flooding in engine room. Vessel is sinking.
+    > I require immediate assistance.
+    > Six persons on board. We are abandoning ship into life rafts.
+    > Over.
 
-### 2. PAN-PAN (Urgencia / Urgency)
-Mensaje muy urgente sobre la seguridad del buque o de una persona, pero sin riesgo inminente de pérdida de vidas o del barco (Hombre al agua si está a la vista, avería de motor quedando a la deriva hacia las rocas, ataque cardíaco a bordo).
-*   *Llamada:* PAN-PAN, PAN-PAN, PAN-PAN. All stations (3 veces). This is (Nombre del barco).
+### 2. MAYDAY RELAY (Retransmisión de Socorro)
+Si escuchas un Mayday y la estación costera no responde tras 5 minutos, estás **obligado** a retransmitirlo para avisar a otras autoridades.
+    > **MAYDAY RELAY, MAYDAY RELAY, MAYDAY RELAY.**
+    > All stations, all stations, all stations.
+    > This is motor yacht ORION, ORION, ORION.
+    > The following received from sailing vessel WINDJAMMER on Channel 16: (Leer el mensaje íntegro de la víctima). Over.
 
-### 3. SÉCURITÉ (Seguridad / Safety)
-Avisos a los navegantes sobre peligros para la navegación o partes meteorológicos.
-*   *Llamada:* SÉCURITÉ, SÉCURITÉ, SÉCURITÉ. All stations. (Aviso de contenedores flotando, temporal inminente, etc.).
+### 3. PAN-PAN (Urgencia / Urgency)
+Mensaje urgente de seguridad sin riesgo inmediato de hundimiento (avería en temporal, asistencia médica urgente).
+    > **PAN-PAN, PAN-PAN, PAN-PAN.**
+    > All stations, all stations, all stations.
+    > This is yacht ALBATROS, ALBATROS, ALBATROS.
+    > Position: Bearing One-Eight-Zero from Cape Finisterre, distance Five miles.
+    > Engine failure, drifting towards the rocks. Require towage. Over.
 
-## 3. Terminología Náutica Común en Inglés (Traducciones Clave)
+### 4. SÉCURITÉ (Seguridad / Safety)
+Avisos a los navegantes, peligros en la mar o temporales inminentes.
+    > **SÉCURITÉ, SÉCURITÉ, SÉCURITÉ.**
+    > All stations. This is Tarifa Traffic.
+    > Navigational warning: Unlit buoy adrift in position...
 
-*   **Vessel / Ship:** Buque.
+---
+
+## 3. Diccionario Completo y Terminología
+
+### 3.1. Arquitectura y Partes del Buque (Ship's Anatomy)
+*   **Hull / Keel / Bilge:** Casco / Quilla / Sentina.
+*   **Bow / Stern / Midships:** Proa / Popa / Centro.
 *   **Port / Starboard:** Babor / Estribor.
-*   **Bow / Stern:** Proa / Popa.
-*   **Draft / Draught:** Calado (profundidad del barco bajo el agua).
-*   **Clearance:** Galibo (altura máxima del barco sobre el agua, crítico para puentes).
-*   **Heading:** Rumbo de aguja.
-*   **Course over ground (COG):** Rumbo efectivo sobre el fondo.
-*   **Speed over ground (SOG):** Velocidad sobre el fondo.
-*   **Way point:** Punto de recalada.
-*   **Tide:** Marea (High tide / Low tide).
-*   **Current:** Corriente.
-*   **Windward / Leeward:** Barlovento / Sotavento.
+*   **Bridge / Wheelhouse:** Puente de mando.
+*   **Engine room / Bulkhead:** Sala de máquinas / Mamparo.
+*   **Propeller / Rudder / Thruster:** Hélice / Timón / Hélice de maniobra (Bow thruster).
+*   **Freeboard / Draft (Draught) / Air draft:** Francobordo / Calado / Calado aéreo (Gálibo).
+*   **Hatch / Hold / Derrick:** Escotilla / Bodega / Pluma de carga.
 
-### Partes del Buque y Maniobra (Ship's Parts & Maneuvering)
-*   **Hull:** Casco.
-*   **Keel:** Quilla.
-*   **Bridge:** Puente de mando.
-*   **Engine room:** Sala de máquinas.
-*   **Anchor:** Ancla (To drop anchor = fondear / To weigh anchor = levar ancla).
-*   **Mooring lines:** Amarras (Spring = Esprín / Breast line = Través).
-*   **Fender:** Defensa.
-*   **Helm / Wheel:** Timón / Rueda del timón.
-*   **Propeller:** Hélice.
-*   **Fouled propeller:** Hélice enredada (con cabos o redes).
+### 3.2. Maniobra y Fondeo (Ship Handling & Anchoring)
+*   **Mooring lines:** Amarras en general.
+    *   **Head line / Stern line:** Largo de proa / Largo de popa.
+    *   **Spring line:** Esprín (impide el avance/retroceso).
+    *   **Breast line:** Través (mantiene pegado al muelle).
+*   **To drop anchor / To weigh anchor:** Fondear / Levar ancla.
+*   **Anchor is dragging:** El ancla garrea (no agarra el fondo).
+*   **Anchor is aweigh:** El ancla ha zarpado (no toca fondo).
+*   **Anchor is foul:** El ancla está enredada.
+*   **Fenders / Bollard / Cleat:** Defensas / Noray / Cornamusa.
+*   **Tug / Towing line:** Remolcador / Cable de remolque.
+*   **Make fast / Let go:** Hacer firme (amarrar) / Soltar amarras.
 
-### Emergencias y Averías (Emergencies & Casualties)
-*   **Sinking:** Hundiéndose.
-*   **Flooding / Taking water:** Inundación / Vía de agua.
-*   **Fire:** Incendio.
-*   **Man overboard (MOB):** Hombre al agua.
-*   **Drifting:** A la deriva.
-*   **Aground:** Varado (encallado).
-*   **Collision:** Abordaje (choque).
-*   **Towage / Tug:** Remolque / Remolcador.
-*   **Life raft:** Balsa salvavidas.
-*   **Casualty:** Herido / Víctima.
+### 3.3. Navegación, Cartografía y Pilotaje
+*   **Heading (HDG) / Course Over Ground (COG):** Rumbo de aguja (adónde apunta la proa) / Rumbo real sobre el fondo.
+*   **Speed Over Ground (SOG) / Speed through water:** Vel. sobre el fondo (GPS) / Vel. en corredera.
+*   **Bearing / Relative Bearing:** Demora verdadera / Marcación (relativa a la proa).
+*   **Fairway / Channel / TSS:** Canal navegable / Dispositivo de Separación de Tráfico.
+*   **Buoy / Beacon / Lighthouse:** Boya / Baliza / Faro.
+*   **Shallows / Shoal / Awash:** Bajíos / Banco de arena / A flor de agua (apenas sobresale).
+*   **Sounding / Depth:** Sonda (medida de la carta) / Profundidad real bajo quilla (Under Keel Clearance - UKC).
+*   **Tide / Ebb / Flood:** Marea / Marea bajante (reflujo) / Marea entrante (flujo).
+*   **Current / Eddy:** Corriente / Remolino.
 
-### Meteorología (Weather)
-*   **Gale / Storm:** Temporal / Tormenta.
-*   **Hurricane / Typhoon:** Huracán / Tifón.
-*   **Fog:** Niebla (Visibility reduced to... = Visibilidad reducida a...).
-*   **Overcast:** Nublado.
-*   **Gusts:** Rachas de viento.
-*   **Swell:** Mar de fondo.
-*   **Sea state:** Estado de la mar (Rough sea = Mar gruesa).
+### 3.4. Meteorología Avanzada (Weather & Sea State)
+*   **Gale / Storm / Hurricane:** Temporal / Tormenta (Fuerza 10) / Huracán (Fuerza 12).
+*   **Squall / Gust:** Turbonada / Racha.
+*   **Fog / Overcast / Restricted Visibility:** Niebla / Cielo cubierto / Visibilidad reducida.
+*   **Swell / Waves / Rough Sea:** Mar de fondo / Olas de viento / Mar gruesa.
+*   **Veering / Backing:** Viento rolando a la derecha (sentido horario) / Rolando a la izquierda.
 
-### Vocabulario Médico (Medical)
-*   **Stretcher:** Camilla.
-*   **Painkillers:** Analgésicos.
-*   **Unconscious:** Inconsciente.
-*   **Bleeding:** Sangrando / Hemorragia.
-*   **Burns:** Quemaduras.
-*   **Seasickness:** Mareo.
-*   **Heart attack:** Ataque al corazón.
+### 3.5. Operaciones de Búsqueda y Salvamento (SAR) y Médicas
+*   **Man Overboard (MOB):** Hombre al agua.
+*   **Search pattern (Expanding square / Sector search):** Patrón de búsqueda (Cuadrado expansivo / Búsqueda por sectores).
+*   **Life raft / Life jacket / Flare:** Balsa salvavidas / Chaleco / Bengala.
+*   **Helicopter hoist operation:** Operación de izado mediante helicóptero (mantener rumbo al viento).
+*   **MEDEVAC (Medical Evacuation):** Evacuación médica.
+*   **Stretcher / Casualty / Unconscious:** Camilla / Herido-Víctima / Inconsciente.
+*   **Severe bleeding / Heart attack:** Hemorragia severa / Infarto.
 
-### Radiocomunicaciones (Radio Comms)
-*   **Over:** Cambio (He terminado de hablar, espero respuesta).
-*   **Out:** Corto (He terminado la comunicación, no espero respuesta. ¡Nunca se dice "Over and Out"!).
-*   **Read you loud and clear:** Te recibo alto y claro.
-*   **Say again:** Repita.
-*   **Spell:** Deletree.
-*   **Stand by:** Manténgase a la escucha (espere).
-*   **Radio check:** Prueba de radio.
+---
 
-### Navegación y Cartografía (Navigation & Charting)
-*   **Bearing:** Demora / Marcación.
-*   **Fairway / Channel:** Canal navegable.
-*   **Shallows / Shoals:** Bajíos (aguas poco profundas).
-*   **Sounding:** Sonda (profundidad medida).
-*   **Chart:** Carta náutica.
-*   **Pilot:** Práctico (Pilot station = estación de prácticos).
-*   **Tide rip:** Escarceo (aguas turbulentas por corrientes encontradas).
-*   **Eddy:** Remolino.
-*   **Awash:** A flor de agua (una roca o pecio que apenas sobresale).
+## 4. Escenarios y Diálogos SMCP de Examen (Scenarios)
 
-### Luces y Marcas (Lights & Shapes)
-*   **Beacon:** Baliza.
-*   **Lighthouse:** Faro.
-*   **Flashing (Fl):** Luz de destellos.
-*   **Occulting (Oc):** Luz de ocultaciones.
-*   **Isophase (Iso):** Luz isofásica (igual tiempo de luz que de oscuridad).
-*   **Cardinal mark:** Marca cardinal.
-*   **Safe water mark:** Marca de aguas navegables.
+Los exámenes de CY evalúan fuertemente la comprensión y respuesta a situaciones dadas, incluyendo el RIPA (Reglamento de Abordajes).
 
-### Mercancías y Carga (Cargo)
-*   **Hold:** Bodega.
-*   **Hatch:** Escotilla de carga.
-*   **Crane:** Grúa.
-*   **Dangerous goods:** Mercancías peligrosas.
-*   **Leaking:** Perdiendo líquido / Fuga.
+### Escenario 1: Abordaje Inminente (RIPA / Collision Avoidance)
+**VTS:** *Motor vessel TANGO. This is VTS. WARNING. You are running into danger. Unknown vessel ahead of you is not responding. Risk of collision.*
+**TANGO:** *This is TANGO. Understood. INTENTION: I will alter course to starboard and reduce speed.*
+**VTS:** *TANGO, VTS. Keep clear of unknown vessel. Do not alter course to port.*
 
-### Operaciones SAR (Search and Rescue)
-*   **Search pattern:** Patrón de búsqueda.
-*   **Survivor:** Superviviente.
-*   **Wreck:** Pecio (barco hundido).
-*   **Helicopter hoist:** Izado por helicóptero.
-*   **Flare:** Bengala.
-*   **Distress alert:** Alerta de socorro.
-## 4. Frases de Ejemplo Comunes en Exámenes
+### Escenario 2: Asistencia Médica (Medical Advice - Radio Medical)
+**YACHT:** *PAN-PAN. This is yacht BLUE HORIZON. REQUEST. I require medical advice. Crew member has severe chest pains and is vomiting. Pulse is weak.*
+**COAST RADIO:** *BLUE HORIZON. This is Coast Radio. Understood. Stand by on this channel. I am connecting you to the medical centre.*
+**DOCTOR:** *This is Doctor. QUESTION. Is the casualty conscious?*
+**YACHT:** *ANSWER. The casualty is unconscious.*
 
-En los exámenes de CY, es frecuente que te pongan una frase en inglés y debas traducirla o entender el contexto. Aquí tienes ejemplos clave:
+### Escenario 3: Interacción con el Práctico (Pilotage)
+**SHIP:** *Pilot Station. This is MV GALAXY. What is your ETA at the pilot boarding ground?*
+**PILOT:** *GALAXY. Pilot boat is proceeding to you. Rig pilot ladder on the port side, one metre above water. Maintain speed of six knots.*
+**SHIP:** *Understood. Pilot ladder on port side, one metre above water. Speed six knots.*
+
+### Escenario 4: Fuego a bordo y Abandono (Fire and Abandonment)
+**YACHT:** *MAYDAY. Yacht STELLA. Fire in engine room. Fire is not under control. CO2 system activated but failed. We are abandoning ship. Over.*
+
+---
+
+## 5. Glosario de Frases y Traducciones Rápidas Clave
+
+Estas frases aparecen literalmente en los test oficiales:
 
 *   *"My vessel is restricted in her ability to manoeuvre."* $\rightarrow$ Mi buque tiene capacidad de maniobra restringida.
-*   *"I require a tug."* $\rightarrow$ Solicito un remolcador.
-*   *"What is your ETA (Estimated Time of Arrival) at the pilot station?"* $\rightarrow$ ¿Cuál es tu hora estimada de llegada a la estación de prácticos?
-*   *"Keep clear of me."* $\rightarrow$ Manténgase apartado de mí.
-*   *"Do you have a doctor on board?"* $\rightarrow$ ¿Tiene un médico a bordo?
-*   *"I am proceeding to your assistance."* $\rightarrow$ Me dirijo en su auxilio.
-*   *"Vessel adrift in position..."* $\rightarrow$ Buque a la deriva en la posición...
+*   *"I am constrained by my draft."* $\rightarrow$ Estoy restringido por mi calado.
+*   *"You are proceeding at a dangerous speed."* $\rightarrow$ Navega usted a velocidad peligrosa.
+*   *"What is your CPA (Closest Point of Approach)?"* $\rightarrow$ ¿Cuál es su punto de máxima aproximación?
+*   *"What is your TCPA (Time to CPA)?"* $\rightarrow$ ¿Cuánto tiempo falta para la máxima aproximación?
+*   *"Visibility is reduced by fog to less than two cables."* $\rightarrow$ La visibilidad está reducida por niebla a menos de dos cables.
+*   *"My propeller is fouled."* $\rightarrow$ Tengo la hélice enredada.
+*   *"I am not under command."* $\rightarrow$ Soy un buque sin gobierno.
+*   *"Hold on!"* $\rightarrow$ ¡Agárrense fuertemente! (Aviso antes de impacto o golpe de mar).

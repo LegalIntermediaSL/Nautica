@@ -1,4 +1,4 @@
-# PER - Tema 5: Balizamiento Marítimo (Sistema IALA Completo)
+# PER - Tema 5: Balizamiento Marítimo (Sistema IALA Completo y Avanzado)
 
 El balizamiento es el código de circulación de las carreteras del mar. Utiliza boyas flotantes, castilletes, espeques y balizas fijas para indicar los canales de navegación seguros, advertir de peligros invisibles bajo el agua y delimitar zonas de uso especial. Un patrón de yate debe tener una reacción instantánea e intuitiva al ver una marca o su luz en la oscuridad.
 
@@ -6,106 +6,110 @@ El examen del PER exige conocer a la perfección la normativa internacional **IA
 
 ---
 
-## Estructura del Sistema IALA
+## 1. Fundamentos Físicos y Ópticos del Balizamiento
+
+### 1.1 Hidrodinámica y Estabilidad de Boyas
+Las boyas no son meros objetos flotantes; su diseño responde a estrictos principios hidrodinámicos para garantizar su verticalidad y visibilidad en estados de la mar adversos (alta energía del oleaje). La fuerza de arrastre hidrodinámico ($F_d$) ejercida por las corrientes se modela mediante la ecuación:
+
+$$ F_d = \frac{1}{2} \rho v^2 C_d A $$
+
+Donde:
+*   $\rho$ es la densidad del agua de mar ($\approx 1025 \, \text{kg/m}^3$).
+*   $v$ es la velocidad de la corriente.
+*   $C_d$ es el coeficiente de arrastre de la geometría de la boya.
+*   $A$ es el área proyectada sumergida (obra viva).
+
+Para evitar que la boya se sumerja por la tensión de la cadena (efecto "garreo" vertical), su volumen de reserva de flotabilidad debe contrarrestar la suma del peso muerto, la tensión de catenaria del fondeo y las fuerzas hidrodinámicas de abatimiento.
+
+### 1.2 Óptica, Alcance Luminoso y Rango Nominal
+En navegación nocturna, la capacidad de avistar una baliza depende de su intensidad luminosa y de la transmisividad atmosférica. El Alcance Luminoso se calcula a través de la Ley de Allard:
+
+$$ E = \frac{I}{D^2} e^{-\sigma D} $$
+
+Donde:
+*   $E$ es la iluminancia en el ojo del observador (umbral de visión $\approx 2 \times 10^{-7} \, \text{lux}$).
+*   $I$ es la intensidad luminosa de la fuente (candelas).
+*   $D$ es la distancia.
+*   $\sigma$ es el coeficiente de extinción atmosférica, directamente relacionado con la visibilidad meteorológica ($V$) mediante la Ley de Koschmieder: $V = \frac{3.912}{\sigma}$.
+
+El Sistema IALA establece que el "Alcance Nominal" de una luz de balizamiento es aquel que corresponde a una visibilidad meteorológica homogénea de 10 millas náuticas ($T \approx 0.74$).
+
+---
+
+## 2. Estructura del Sistema IALA
 
 El sistema se compone de seis tipos de marcas. Para cada una de ellas es obligatorio memorizar cuatro atributos exactos:
-1.  **Significado:** Qué nos está indicando.
-2.  **Color del Cuerpo:** El color de la boya o castillete de día.
+1.  **Significado:** Qué nos está indicando (aguas seguras, canal, peligro).
+2.  **Color del Cuerpo:** El color de la boya o castillete de día (coordenadas de cromaticidad CIE 1931 estandarizadas).
 3.  **Marca de Tope:** La figura geométrica montada en su parte más alta.
 4.  **Ritmo y Color de la Luz:** El parpadeo característico para navegación nocturna.
 
 ---
 
-## 1. Marcas Laterales (El Canal Navegable)
+## 3. Marcas Laterales (El Canal Navegable)
 
-Se utilizan para señalizar los lados (babor y estribor) de los canales balizados (entradas a puerto, ríos, estuarios).
-La clave es el **"Sentido Convencional de Balizamiento"**: las marcas se definen asumiendo que **entramos** al puerto viniendo desde alta mar.
+Se utilizan para señalizar los lados (babor y estribor) de los canales balizados. La clave es el **"Sentido Convencional de Balizamiento"**: las marcas se definen asumiendo que **entramos** al puerto viniendo desde alta mar.
 
-### Marca Lateral de Estribor (Entrando)
-Debes dejar esta boya a tu estribor (a tu derecha) al entrar al puerto.
-*   *Color:* **Verde**.
+### 3.1 Marca Lateral de Estribor (Entrando)
+*   *Color:* **Verde**. (Longitud de onda dominante: 500-530 nm).
 *   *Forma:* Cónica (terminada en punta), castillete o espeque.
 *   *Marca de tope:* Un **cono verde** con el vértice hacia arriba.
-*   *Luz (Noche):* **Verde**. Puede tener cualquier ritmo (destellos, isofásica, ocultaciones) EXCEPTO el ritmo Gp(2+1) que se reserva para canales principales.
+*   *Luz (Noche):* **Verde**. Puede tener cualquier ritmo EXCEPTO el ritmo Gp(2+1).
 
-### Marca Lateral de Babor (Entrando)
-Debes dejar esta boya a tu babor (a tu izquierda) al entrar al puerto.
-*   *Color:* **Rojo**.
-*   *Forma:* Cilíndrica (terminada plana, forma de lata), castillete o espeque.
+### 3.2 Marca Lateral de Babor (Entrando)
+*   *Color:* **Rojo**. (Longitud de onda dominante: 610-630 nm).
+*   *Forma:* Cilíndrica (terminada plana), castillete o espeque.
 *   *Marca de tope:* Un **cilindro rojo**.
 *   *Luz (Noche):* **Roja**. Cualquier ritmo EXCEPTO el Gp(2+1).
 
 > [!TIP]
-> **Regla Mnemotécnica (Solo Región A):** Si entras a puerto de noche, la luz verde de la boya de estribor coincidirá con la luz verde de tu propio barco (que está en tu costado de estribor). Entras como por un pasillo verde-verde y rojo-rojo. (En América/Región B es al revés: "Red Right Returning").
+> **Regla Mnemotécnica (Solo Región A):** Si entras a puerto de noche, la luz verde de la boya de estribor coincidirá con la luz verde de tu barco. Entras como por un pasillo verde-verde y rojo-rojo. (En América/Región B es "Red Right Returning").
 
-### Marcas de Bifurcación (Canal Principal)
-Si un canal se divide en dos (un cruce en "Y"), se coloca una marca lateral modificada. Indica cuál de los dos canales es el "principal" o más profundo.
-*   **Canal Principal a Estribor:** Se usa una marca lateral de Babor (Roja cilíndrica) pero con una **ancha banda horizontal Verde** en el centro. Luz: Roja, con ritmo de grupos de destellos **Gp(2+1)**.
-*   **Canal Principal a Babor:** Se usa una marca lateral de Estribor (Verde cónica) pero con una **ancha banda horizontal Roja** en el centro. Luz: Verde, con ritmo **Gp(2+1)**.
-
----
-
-## 2. Marcas Cardinales (Navegación en Mar Abierto)
-
-No marcan los lados de un canal, sino que rodean un peligro (un bajo de rocas, un pecio hundido). Indican **dónde están las aguas más profundas y seguras** basándose en los puntos cardinales del compás. 
-*Si ves una boya Cardinal Norte, el peligro está al sur de la boya, por lo que tú debes navegar siempre pasando por el NORTE de dicha boya.*
-
-Todas las Marcas Cardinales usan los colores **Amarillo (Y) y Negro (B)** y su marca de tope son siempre **dos conos negros superpuestos**. Sus luces son siempre **Blancas**.
-
-### 2.1 Cardinal Norte (Pasa por mi Norte)
-*   *Marca de tope:* Dos conos negros con los **vértices hacia ARRIBA**. (Apuntan al Norte).
-*   *Colores del cuerpo:* **Negro sobre Amarillo** (El negro va arriba, como los vértices).
-*   *Luz Blanca:* Centelleo Rápido (Q) o Muy Rápido (VQ) **continuo**. (Flash rápido constante).
-
-### 2.2 Cardinal Sur (Pasa por mi Sur)
-*   *Marca de tope:* Dos conos negros con los **vértices hacia ABAJO**. (Apuntan al Sur).
-*   *Colores del cuerpo:* **Amarillo sobre Negro** (El negro va abajo).
-*   *Luz Blanca:* Grupo de **6 centelleos cortos + 1 destello largo** (VQ(6)+LFl) cada 10 o 15 segundos. (El destello largo final es para no confundirla con otras al contar).
-
-### 2.3 Cardinal Este (Pasa por mi Este)
-*   *Marca de tope:* Dos conos negros opuestos por sus bases (Forma de **rombo** o huevo).
-*   *Colores del cuerpo:* Negro con banda central Amarilla (**Negro - Amarillo - Negro**).
-*   *Luz Blanca:* Grupo de **3 centelleos rápidos** (Q(3)) cada 5 o 10 segundos. *(Truco: el Este equivale a las 3 en la esfera del reloj analógico).*
-
-### 2.4 Cardinal Oeste (Pasa por mi Oeste)
-*   *Marca de tope:* Dos conos negros opuestos por sus vértices (Forma de **reloj de arena** o copa).
-*   *Colores del cuerpo:* Amarillo con banda central Negra (**Amarillo - Negro - Amarillo**).
-*   *Luz Blanca:* Grupo de **9 centelleos rápidos** (Q(9)) cada 10 o 15 segundos. *(Truco: el Oeste equivale a las 9 en la esfera del reloj analógico).*
+### 3.3 Marcas de Bifurcación (Canal Principal)
+Si un canal se divide, se coloca una marca modificada que indica el canal "principal" (mayor batimetría).
+*   **Canal Principal a Estribor:** Marca lateral de Babor (Roja) con **banda horizontal Verde**. Luz: Roja, ritmo **Gp(2+1)**.
+*   **Canal Principal a Babor:** Marca lateral de Estribor (Verde) con **banda horizontal Roja**. Luz: Verde, ritmo **Gp(2+1)**.
 
 ---
 
-## 3. Marca de Peligro Aislado
+## 4. Marcas Cardinales (Navegación en Mar Abierto)
 
-Se coloca fondeada **exactamente encima** de un peligro de poca extensión (como un escollo aislado submarino o un barco hundido solitario) que está rodeado por todas partes de aguas perfectamente navegables. Se puede pasar por cualquier lado de esta boya, siempre que no te pegues mucho a ella.
+Indican dónde están las aguas seguras basándose en los puntos cardinales, rodeando un peligro (escollos, pecios). Todas usan colores **Amarillo (Y) y Negro (B)**, tope de **dos conos negros** y luz **Blanca**.
 
-*   *Color:* **Negro** con una o varias bandas anchas horizontales **ROJAS**.
+### 4.1 Cardinal Norte (Pasa por mi Norte)
+*   *Marca de tope:* Dos conos negros con **vértices hacia ARRIBA**.
+*   *Colores:* **Negro sobre Amarillo**.
+*   *Luz Blanca:* Centelleo Rápido (Q) o Muy Rápido (VQ) **continuo**.
+
+### 4.2 Cardinal Sur (Pasa por mi Sur)
+*   *Marca de tope:* Dos conos negros con **vértices hacia ABAJO**.
+*   *Colores:* **Amarillo sobre Negro**.
+*   *Luz Blanca:* Grupo de **6 centelleos cortos + 1 destello largo** (VQ(6)+LFl) cada 10/15s.
+
+### 4.3 Cardinal Este (Pasa por mi Este)
+*   *Marca de tope:* Dos conos opuestos por sus bases (**rombo**).
+*   *Colores:* **Negro - Amarillo - Negro**.
+*   *Luz Blanca:* Grupo de **3 centelleos rápidos** (Q(3)). *(Truco: las 3 del reloj).*
+
+### 4.4 Cardinal Oeste (Pasa por mi Oeste)
+*   *Marca de tope:* Dos conos opuestos por sus vértices (**reloj de arena**).
+*   *Colores:* **Amarillo - Negro - Amarillo**.
+*   *Luz Blanca:* Grupo de **9 centelleos rápidos** (Q(9)). *(Truco: las 9 del reloj).*
+
+---
+
+## 5. Marca de Peligro Aislado
+Colocada fondeada exactamente encima de un peligro de poca extensión rodeado de aguas navegables.
+*   *Color:* **Negro** con bandas anchas horizontales **ROJAS**.
 *   *Marca de tope:* **Dos esferas negras superpuestas**.
-*   *Luz (Noche):* **Blanca**. Ritmo de Grupos de **2 destellos** (Fl(2)). *(Truco: Dos bolas negras = Dos destellos blancos).*
+*   *Luz (Noche):* **Blanca**, Grupo de **2 destellos** (Fl(2)).
 
----
-
-## 4. Marca de Aguas Navegables
-
-Indica que hay aguas seguras y profundas en **todo el entorno** de la marca. Se suele usar para señalizar el eje geométrico de un canal seguro o como "Boya de Recalada" (la primera boya gigante que te encuentras en alta mar y que te alinea para enfilar la entrada lejana de un gran puerto comercial).
-
-*   *Color:* Rayas **verticales Rojas y Blancas**. (Es la única boya del mundo con rayas verticales).
+## 6. Marca de Aguas Navegables
+Indica aguas seguras en todo el entorno (eje de canal, recalada).
+*   *Color:* Rayas **verticales Rojas y Blancas**.
 *   *Marca de tope:* Una **esfera ROJA**.
-*   *Luz (Noche):* **Blanca**. Rítmos característicos muy largos para distinguirla de las Cardinales: Isofásica (Iso), de Ocultaciones (Oc), destello largo de 10s (LFl.10s) o la letra **Morse "A"** (punto-raya).
+*   *Luz (Noche):* **Blanca**. Ritmos largos: Iso, Oc, LFl.10s o **Morse "A"** (punto-raya).
 
----
-
-## 5. Marcas Especiales
-
-No están destinadas principalmente a ayudar a la navegación (es decir, no avisan de peligros físicos), sino que indican zonas con un estatus especial regulado en las cartas náuticas. Ejemplos: Zona militar de tiro, emisario submarino (tuberías cloacales), piscifactorías, reservas marinas, campos de regatas o cables submarinos.
-
-*   *Color:* Totalmente **Amarillo**.
-*   *Marca de tope:* Una **"X" (aspa) Amarilla** (si la lleva).
-*   *Luz (Noche):* **Amarilla**. Puede tener cualquier ritmo que no se confunda con el ritmo de las demás marcas blancas (Ej: destellos individuales, pero nunca de grupos).
-
----
-
-## 6. Nuevos Peligros (Marcas de Emergencia)
-Cuando ocurre un accidente súbito (ej. se hunde un barco cerca de puerto esta misma tarde) y aún no está impreso en las cartas ni se ha avisado por radio, se baliza de emergencia con una marca especial para que nadie choque contra los restos.
-*   Se usan boyas Cardinales o de Peligro Aislado, pero **DUPLICADAS** (dos boyas idénticas fondeadas una junto a la otra).
-*   Si el peligro es muy grave, pueden llevar una Baliza Activa de Radar (RACON) que pinta la letra Morse "D" (raya-punto-punto) en tu pantalla de radar. 
-*   Modernamente se usa la **Boya de Nuevo Peligro**: Rayas verticales Amarillas y Azules, con cruz perpendicular amarilla de tope y luz de destellos Amarillo y Azul alternados.
+## 7. Marcas Especiales y Nuevos Peligros
+*   **Especiales:** Indican zonas reguladas (tuberías, campos de tiro, regatas). Color: **Amarillo**. Tope: **"X"**. Luz: **Amarilla**.
+*   **Nuevos Peligros:** Fondeadas de emergencia ante naufragios recientes. Rayas verticales **Amarillas y Azules**, cruz amarilla, luz destellos Amarillo/Azul alternados.

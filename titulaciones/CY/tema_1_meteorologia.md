@@ -1,32 +1,45 @@
 # Capitán de Yate - Tema 1: Meteorología Oceánica Avanzada
 
-El Capitán de Yate debe enfrentarse a los sistemas climáticos globales y planificar rutas oceánicas (Routing) de varias semanas o meses, donde esquivar los centros de bajas presiones y los ciclones tropicales es vital. A diferencia del PER o PY, donde la meteo es local o costera, aquí estudiamos el planeta entero.
+El Capitán de Yate debe enfrentarse a los sistemas climáticos globales y planificar rutas oceánicas (Routing) de varias semanas o meses, donde esquivar los centros de bajas presiones, los ciclones tropicales y aprovechar los sistemas de corrientes principales es vital. A diferencia del PER o PY, donde la meteorología es local o costera, aquí estudiamos la termodinámica del planeta entero y las fuerzas de la naturaleza a escala sinóptica.
 
 ---
 
 ## 1. Dinámica Atmosférica Global y Células de Circulación
 
-La Tierra no calienta por igual el ecuador y los polos. Esto, sumado a la rotación de la Tierra (Fuerza de Coriolis), crea un sistema de cinturones de presión y de viento permanente que rige la navegación oceánica a vela.
+La Tierra no calienta por igual el ecuador y los polos. Este diferencial térmico, sumado a la rotación de la Tierra (Fuerza de Coriolis), crea un sistema de cinturones de presión y de viento permanente que rige la navegación oceánica.
 
-### El Efecto Coriolis (Teorema Fundamental)
-Cualquier masa de aire o agua que se desplace por la superficie de la Tierra sufrirá una desviación aparente respecto a su trayectoria original debido al giro del planeta.
-*   En el **Hemisferio Norte (HN)**, Coriolis desvía los vientos siempre hacia la **DERECHA** de su trayectoria.
-*   En el **Hemisferio Sur (HS)**, Coriolis desvía los vientos siempre hacia la **IZQUIERDA** de su trayectoria.
-*   En el Ecuador, la fuerza de Coriolis es CERO (por eso los huracanes nunca cruzan el Ecuador).
+### El Efecto Coriolis (Fundamento Físico)
+Cualquier masa de aire o agua que se desplace por la superficie de la Tierra sufrirá una desviación aparente respecto a su trayectoria original debido al giro del planeta. La aceleración de Coriolis $a_c$ viene dada por:
+
+$$ a_c = 2 \cdot \Omega \cdot v \cdot \sin(\phi) $$
+
+Donde:
+*   $\Omega$ es la velocidad angular de la Tierra ($7.292 \times 10^{-5} \text{ rad/s}$).
+*   $v$ es la velocidad de la masa de aire.
+*   $\phi$ es la latitud.
+
+Consecuencias:
+*   En el **Hemisferio Norte (HN)**, Coriolis desvía los fluidos hacia la **DERECHA**.
+*   En el **Hemisferio Sur (HS)**, Coriolis desvía los fluidos hacia la **IZQUIERDA**.
+*   En el Ecuador ($\phi = 0$), la fuerza de Coriolis es cero (por eso los huracanes no cruzan el Ecuador).
 
 ### Células y Vientos Planetarios
 1.  **Célula de Hadley (0º a 30º Latitud):** 
-    *   El aire caliente asciende en el Ecuador Térmico formando un cinturón de bajas presiones llamado **Doldrums** (Calmas Ecuatoriales). Es una zona temida por los veleros por la ausencia total de viento y tremendas tormentas eléctricas locales.
-    *   El aire en altura viaja hacia los polos y desciende frío alrededor de los 30º de latitud, formando los Grandes Anticiclones Subtropicales (Ej: Anticiclón de las Azores, Anticiclón de Santa Elena).
-    *   El aire que regresa por la superficie del océano hacia el Ecuador se desvía por Coriolis, formando los famosos **Vientos Alisios (Trade Winds)**. Soplan constantes del Noreste (NE) en el H. Norte y del Sureste (SE) en el H. Sur.
+    *   El aire caliente asciende en el Ecuador Térmico formando la Zona de Convergencia Intertropical (ZCIT), un cinturón de bajas presiones llamado **Doldrums** (Calmas Ecuatoriales). Es una zona temida por los veleros por la ausencia de viento y tremendas tormentas eléctricas (convectivas).
+    *   El aire en altura viaja hacia los polos y desciende frío en los 30º, formando los Grandes Anticiclones Subtropicales (Ej: Anticiclón de las Azores).
+    *   El retorno en superficie hacia el Ecuador se desvía, formando los **Vientos Alisios (Trade Winds)**: constantes del Noreste (NE) en el HN y del Sureste (SE) en el HS.
 
 2.  **Célula de Ferrel (30º a 60º Latitud):**
-    *   El aire en superficie viaja desde los anticiclones subtropicales (30º) hacia las bajas presiones subpolares (60º).
-    *   Al desviarse por Coriolis, producen los **Vientos del Oeste (Westerlies)**. Soplan desde el Suroeste en el H. Norte y desde el Noroeste en el H. Sur. Son vientos fríos, muy húmedos y portadores de los trenes de borrascas atlánticas frontales. Las latitudes 40º y 50º Sur, donde no hay continentes que frenen el viento, se llaman los *Cuarenta Rugientes* (Roaring Forties) y *Cincuenta Aullantes* (Furious Fifties).
+    *   El aire en superficie viaja desde los anticiclones (30º) a las bajas subpolares (60º).
+    *   Generan los **Vientos del Oeste (Westerlies)** (del Suroeste en el HN y del Noroeste en el HS). Son el motor de las borrascas extratropicales. En el HS (sin continentes) se llaman *Cuarenta Rugientes* (Roaring Forties), *Cincuenta Aullantes* (Furious Fifties) y *Sesenta Bramadores* (Screaming Sixties).
 
 3.  **Célula Polar (60º a 90º Latitud):**
-    *   El aire gélido desciende sobre el Polo Norte / Sur (Anticiclón Polar) y viaja hacia las latitudes subpolares.
-    *   Desviados por Coriolis, forman los **Vientos del Este Polares**.
+    *   El aire gélido desciende (Anticiclón Polar) y viaja a latitudes subpolares formando los **Vientos del Este Polares**.
+
+### Corrientes en Chorro (Jet Streams) y Ondas de Rossby
+A gran altitud en la tropopausa, las fronteras entre estas células generan vientos a más de 300 km/h:
+*   **Corriente en chorro polar:** Entre Célula Polar y Ferrel. Guía los frentes de borrascas atlánticas.
+*   **Ondas de Rossby:** Meandros gigantes en los *Jet Streams* que dictan patrones climáticos duraderos, creando bloqueos anticiclónicos u olas de frío intenso.
 
 ```mermaid
 graph TD
@@ -38,50 +51,110 @@ graph TD
     D -. Vientos del Oeste SW .-> D
 ```
 
-## 2. Los Ciclones Tropicales (Huracanes / Tifones)
+---
 
-Es la peor amenaza para la vida de un navegante. Reciben distintos nombres (Huracán en el Atlántico, Tifón en el Pacífico, Ciclón en Índico) pero son idénticos.
+## 2. Los Ciclones Tropicales Extremos (Huracanes / Tifones)
 
-### Condiciones Matemáticas de Formación
-*   Agua del mar muy caliente: **Mínimo 26.5 ºC** hasta al menos 50 metros de profundidad.
-*   Alta humedad en capas medias y bajas de la atmósfera.
-*   **Separación del Ecuador de al menos 5º de latitud**. Por debajo de 5º, la fuerza de Coriolis es insuficiente para iniciar el giro del aire ascendente en espiral.
+Es la peor amenaza para la vida de un navegante. Su energía térmica equivalente supera con creces el armamento termonuclear mundial.
+*   **Atlántico / Pacífico Este:** Huracán.
+*   **Pacífico Noroeste:** Tifón.
+*   **Índico / Oceanía:** Ciclón Severo.
+
+### Condiciones Termodinámicas Críticas de Formación
+*   Temperatura del agua: **$\ge 26.5^\circ\text{C}$** hasta al menos 50 metros de profundidad, aportando ingentes cantidades de calor latente de evaporación.
+*   Instabilidad atmosférica (CAPE elevado) y alta humedad en troposfera media.
+*   Baja cizalladura del viento en altura (Wind Shear). Si el viento cambia de velocidad o dirección rápidamente con la altura, el "tubo" del huracán se decapita.
+*   **$\phi \ge 5^\circ$ (Separación del Ecuador):** Necesario para que Coriolis genere vorticidad (giro).
+
+### Escala de Saffir-Simpson (Intensidad)
+Mide el viento máximo sostenido (promedio 1 minuto).
+*   **Categoría 1:** 64-82 nudos. Daños mínimos.
+*   **Categoría 3:** 96-112 nudos. Daños devastadores (Major Hurricane).
+*   **Categoría 5:** $\ge 137$ nudos (>252 km/h). Catastrófico. Mar completamente blanca, olas > 15 metros.
 
 ### Estructura del Ciclón
-*   **Ojo (Eye):** Centro del ciclón (20-50 km de diámetro). Sorprendentemente, hay cielo despejado, calmas de viento y la presión atmosférica más baja registrada.
-*   **Pared del Ojo (Eyewall):** El anillo de nubes cumulonimbos gigantes que rodea el ojo. Alberga los vientos más violentos y destructivos y lluvias torrenciales continuas.
-*   **Bandas Espirales:** Nubes de tormenta en forma de brazos que giran hacia el centro, con rachas violentas.
+*   **Ojo (Eye):** Centro de subsidencia (20-50 km). Cielo despejado, calmas y presión atmosférica hundida (puede bajar de 900 mb).
+*   **Pared del Ojo (Eyewall):** Anillo de cumulonimbos convectivos. Vientos máximos, ascenso violento del aire. El lado derecho de la pared en el HN es el sector más letal del planeta.
+*   **Bandas Espirales:** Convección que alimenta el núcleo, con turbonadas y tornados embebidos.
 
-### Navegación Evasiva (Regla del Semicírculo)
-Si el huracán te alcanza en alta mar, no puedes esperar. Debes aplicar reglas matemáticas de escape. Si divides el huracán por la línea de su trayectoria de avance en dos mitades (cortándolo en sentido de su marcha):
+### Navegación Evasiva y Ecuaciones Tácticas
+La "Regla del Semicírculo" es vital. Dividimos el huracán por su eje de traslación.
 
 1.  **Semicírculo Peligroso (El Derecho en el H. Norte):** 
-    *   Es letal. La velocidad de traslación del huracán se *suma* a la velocidad de sus propios vientos giratorios (viento real tremendo).
-    *   Además, la dirección del viento en esta zona tiende a arrastrar el barco *hacia la pared del ojo* (succión directa).
-    *   *Escape Táctico:* Poner el viento por la amura de estribor, a cuartos, capear o navegar a máxima máquina para salir del radio de acción hacia la periferia derecha.
+    *   $V_{\text{total}} = V_{\text{viento}} + V_{\text{traslación}}$. Viento máximo.
+    *   El viento sopla hacia el vórtice, succionando el barco hacia la pared del ojo.
+    *   **Táctica:** Poner el viento por la amura de estribor ($045^\circ - 060^\circ$ relativos), avanzar todo lo posible.
 
 2.  **Semicírculo Manejable (El Izquierdo en el H. Norte):**
-    *   La velocidad de traslación del meteoro se *resta* a la del viento giratorio (vientos algo más flojos que en el semicírculo derecho).
-    *   El viento te expulsa naturalmente hacia fuera del huracán, hacia su cola.
-    *   *Escape Táctico:* Poner el viento por la aleta de estribor y correr el temporal para alejarte del vórtice.
+    *   $V_{\text{total}} = V_{\text{viento}} - V_{\text{traslación}}$.
+    *   El viento tiende a expulsar al buque hacia la periferia.
+    *   **Táctica:** Viento por la aleta de estribor ($130^\circ - 150^\circ$ relativos), correr el temporal alejándose.
 
-## 3. Corrientes Oceánicas y Routing
+**Regla 1-2-3 de Evitación del NHC:**
+Error medio en predicción del vórtice. Un radio de evitación extra de:
+*   100 millas náuticas a 24 horas.
+*   200 millas náuticas a 48 horas.
+*   300 millas náuticas a 72 horas.
+Se dibuja un "Cono de Probabilidad" y el buque JAMÁS debe entrar en él.
 
-El viento constante (como los Alisios) arrastra el agua superficial a gran escala por fricción continuada.
+---
 
-### Giro del Atlántico Norte (La Ruta de los Exploradores)
-En el Atlántico Norte se forma un gigantesco anillo de agua circulante en el sentido de las agujas del reloj:
-1.  **Corriente de Canarias (Sur):** Agua fría bajando por la costa de Portugal y África Occidental.
-2.  **Corriente Norecuatorial (Oeste):** Empujada por los Alisios, atraviesa el océano Atlántico hacia el Caribe.
-3.  **Corriente del Golfo (Gulf Stream) (Noreste):** Agua muy caliente (28ºC), estrecha, profunda y muy rápida (hasta 4 nudos) que sube por la costa este de Florida hacia latitudes altas. Choca con la corriente fría del Labrador en Terranova creando nieblas perpetuas.
-4.  **Corriente del Atlántico Norte (Este):** Cierra el ciclo hacia las costas de Europa (Irlanda/Francia), calentando el clima europeo respecto a las mismas latitudes de Canadá.
+## 3. Circulación Termohalina y Dinámica de Corrientes
 
-### Routing Meteorológico
-Para cruzar el Atlántico de España a América en velero, jamás se hace en línea recta (ortodrómica). 
-*   **Ida:** Se baja primero navegando hacia el Sur hasta Canarias y luego Cabo Verde para "enganchar" los Vientos Alisios y la Corriente Ecuatorial a favor en la popa. 
-*   **Vuelta:** Para volver a Europa, se sube primero hacia el Norte por la costa americana (Nueva York/Bermudas) para coger los Vientos del Oeste (Westerlies) y la Corriente del Golfo a favor en la popa.
+El océano no está quieto. Existen dos flujos superpuestos:
 
-Intentar volver de América a Europa por el Sur a vela es prácticamente un suicidio logístico (el viento y corriente en contra te dejarán parado o empujado hacia atrás).
+### La Espiral de Ekman y Transporte de Ekman
+El viento (ej: Alisios) empuja el agua. Por fricción y Coriolis, el agua superficial se desvía 45º respecto al viento. Las capas inferiores, por arrastre, se desvían aún más y pierden fuerza, trazando una hélice (Espiral de Ekman).
+El resultado neto (Transporte de Ekman) es que la masa de agua profunda se mueve a 90º del viento dominante (a la derecha en el HN, izquierda en el HS).
 
-## 4. Hielos Oceánicos
-El radar detecta grandes Icebergs, pero es inútil frente a "Growlers" (escombros de hielo flotantes casi del tamaño de un coche). Un impacto con un growler a 8 nudos abrirá el casco al instante. Hay que prestar máxima atención a las isotermas del agua del mar medidas por el termómetro de la quilla; una bajada repentina de la temperatura superficial indica posible cercanía de hielos.
+*   **Afloramiento (Upwelling):** Si el transporte de Ekman aleja el agua de la costa, aguas gélidas y ricas en nutrientes suben del fondo (Ej: Costas de Perú, Canarias).
+*   **Hundimiento (Downwelling):** Si el agua se apila contra la costa.
+
+### Corrientes Superficiales Mayores (Giros)
+*   **Corriente del Golfo (Gulf Stream):** Transporta $30 \times 10^6 \text{ m}^3\text{/s}$ (Sverdrups) de agua a $28^\circ\text{C}$ a 4 nudos por la costa Este americana, cruzando hacia Europa (Corriente del Atlántico Norte).
+*   **Kuroshio:** El equivalente de la del Golfo en Japón.
+*   **Corriente Circumpolar Antártica (ACC):** La única corriente ininterrumpida por tierra, impulsada por los Vientos del Oeste.
+
+### La Gran Cinta Transportadora (Circulación Termohalina)
+Movimiento de densidad impulsado por diferencias de temperatura (termo) y salinidad (halina).
+*   En el Atlántico Norte (cerca de Groenlandia), el agua es muy salada y gélida (muy densa). Se hunde (Agua Profunda del Atlántico Norte - NADW).
+*   Viaja por el fondo del océano hacia el Sur, entra en el Índico y Pacífico, donde aflora miles de años después.
+*   Mantiene el equilibrio térmico del planeta. Si se detiene por el deshielo de Groenlandia (agua dulce ligera), Europa sufriría una mini-glaciación.
+
+### El Niño - Oscilación del Sur (ENSO)
+*   **Condiciones Normales:** Alisios empujan agua caliente a Indonesia; aguas frías afloran en Perú.
+*   **El Niño:** Los Alisios colapsan o se invierten. El agua caliente inunda el Pacífico Este (Perú). Diluvios en Sudamérica, sequías catastróficas en Australia.
+*   **La Niña:** Alisios exacerbados, enfriamiento masivo en Perú, más huracanes en el Atlántico.
+
+---
+
+## 4. Ciclogénesis Explosiva y Frentes Extremos
+
+Las borrascas extratropicales (Bajas Presiones) se alimentan del choque de masas de aire térmicamente distintas.
+
+### Frente Frío
+*   Masa de aire polar avanza como una cuña pesada, obligando al aire cálido a ascender violentamente.
+*   **Símbolos:** Línea con triángulos azules.
+*   **Nubes:** Desarrollo vertical abrupto (Cumulonimbus, $Cb$).
+*   **Meteoro:** Lluvias torrenciales cortas, granizo, tornados. Rolada de viento fuerte y caída extrema de presión.
+
+### Frente Cálido
+*   El aire cálido resbala gradualmente sobre el frío.
+*   **Símbolos:** Línea con semicírculos rojos.
+*   **Nubes:** Estratiformes (Cirrus $\rightarrow$ Altostratus $\rightarrow$ Nimbostratus). Lluvia fina y persistente.
+
+### "Bombogénesis" (Ciclogénesis Explosiva)
+Ocurre cuando la presión central de una borrasca cae a un ritmo de al menos **$1 \text{ milibar (hPa)}$ por hora durante 24 horas**. Es equivalente a un huracán extratropical de invierno. Provocan olas "pícaras" gigantes (Rogue Waves) y vientos huracanados. Se dan comúnmente frente a Terranova y el Golfo de Vizcaya (Gale of the Century).
+
+---
+
+## 5. Hielos Oceánicos y Peligros Polares
+
+Navegar en altas latitudes ($> 50^\circ$) conlleva peligros letales asociados al hielo.
+
+*   **Icebergs / Témpanos:** Fragmentos de glaciares. Solo el 10% asoma. Visibles en Radar.
+*   **Growlers (Gruñones) / Bergy Bits:** Trozos del tamaño de un camión, semihundidos. **El mayor terror polar**: invisibles al radar debido al oleaje (clutter), indestructibles. Impactar a 8 nudos parte un casco de fibra o acero.
+*   **Banquisa (Pack Ice):** Agua de mar congelada flotante. Implica quedarse atrapado.
+*   **Icing (Acumulación de Hielo en Superestructuras):** Peligro mortal inmediato. Ocurre con aire a $\le -2^\circ\text{C}$ y agua del mar a $\le 5^\circ\text{C}$. Los rociones de las olas se congelan en la jarcia, barandillas y radar. El buque adquiere toneladas de peso extra en la parte superior, **elevando el Centro de Gravedad ($G$)** drásticamente, lo que causa el vuelco irremediable del barco por pérdida de estabilidad transversal.
+
+*Táctica ante hielos:* Monitorear continuamente el termómetro de agua salada (sea temperature). Una bajada drástica y repentina indica hielos. Navegar a mínima máquina y establecer vigías reforzados en la amura.

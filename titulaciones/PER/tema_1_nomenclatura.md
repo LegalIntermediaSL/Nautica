@@ -1,69 +1,79 @@
-# PER - Tema 1: Nomenclatura Náutica Avanzada
+# PER - Tema 1: Nomenclatura Náutica y Arquitectura Naval Avanzada
 
-Este tema es el diccionario fundamental. Para aprobar el examen del PER (y del PNB) debes memorizar con total precisión las partes de la embarcación, sus dimensiones y los términos direccionales, ya que el resto del temario y las preguntas del examen utilizarán este lenguaje técnico de forma exclusiva.
+Este tema es el diccionario fundamental y el cimiento de la arquitectura naval. Para aprobar el examen del PER (y del PNB) debes memorizar con total precisión las partes de la embarcación. A nivel universitario, esto implica comprender la hidrodinámica, las tensiones estructurales y el contexto histórico de la construcción naval.
 
 ---
 
-## 1. Dimensiones Principales de la Embarcación
+## 1. Dimensiones Principales y Geometría del Buque
 
-Las dimensiones definen el tamaño legal e hidrodinámico del barco.
+Las dimensiones definen no solo el tamaño legal, sino el comportamiento hidrodinámico y la resistencia al avance.
 
 *   **Eslora (Length):** Es la longitud del barco. Se mide de proa a popa.
-    *   *Eslora Máxima o Total:* Medida desde los puntos más extremos (incluyendo púlpitos o botalones).
-    *   *Eslora de Flotación:* La longitud de la parte del barco que realmente toca el agua (obra viva). Es la que determina la velocidad máxima teórica en cascos de desplazamiento.
-    *   *Eslora de Arqueo o de Registro:* La que figura en los papeles oficiales del barco para el pago de impuestos.
-*   **Manga (Beam):** Es la anchura del barco.
-    *   *Manga Máxima:* La anchura en el punto más grueso del barco (suele estar en el tercio central).
-*   **Puntal (Depth):** Es la altura interior del casco. Se mide desde la parte superior de la quilla hasta la cubierta principal.
-*   **Calado (Draft):** Es la profundidad sumergida del barco. Se mide desde la línea de flotación hasta el punto más bajo de la quilla. Es el dato más crítico para evitar encallar.
-*   **Francobordo (Freeboard):** Es la distancia vertical desde la línea de flotación hasta la cubierta principal (la parte que evita que entre el agua). Un francobordo alto da seguridad frente a las olas; un francobordo bajo (común en barcos de regata) reduce el peso pero hace el barco más húmedo.
-    *   *Fórmula fundamental:* `Puntal = Calado + Francobordo`
-*   **Asiento (Trim):** Diferencia entre el calado de popa y el de proa. Si cala más de popa, tiene asiento apopante (positivo). Si cala más de proa, aproante (negativo).
+    *   *Eslora Máxima o Total ($L_{OA}$):* Medida desde los puntos más extremos.
+    *   *Eslora de Flotación ($L_{WL}$):* La longitud de la obra viva. Determina la velocidad máxima teórica en cascos de desplazamiento mediante el Número de Froude. La velocidad del casco (en nudos) se aproxima con la fórmula matemática:
+        $$ V_{max} \approx 1.34 \times \sqrt{L_{WL}} $$
+        donde $L_{WL}$ está en pies.
+    *   *Eslora entre Perpendiculares ($L_{BP}$):* Usada en cálculos de arquitectura naval, medida entre la perpendicular de proa y la de popa.
+*   **Manga (Beam):** Es la anchura del barco. Define la estabilidad transversal inicial.
+*   **Puntal (Depth):** Es la altura interior del casco, desde la quilla hasta la cubierta principal.
+*   **Calado (Draft, $T$):** Profundidad sumergida. Crítico para evitar encallamientos y calcular el desplazamiento ($\Delta = L \times B \times T \times C_B \times \rho$).
+*   **Francobordo (Freeboard):** Distancia vertical desde la línea de flotación hasta la cubierta principal. Un francobordo alto proporciona reserva de flotabilidad.
+    *   *Fórmula fundamental:* $$ \text{Puntal} = \text{Calado} + \text{Francobordo} $$
+*   **Asiento (Trim):** Diferencia entre el calado de popa ($T_A$) y el de proa ($T_F$).
+    $$ \text{Asiento} = T_A - T_F $$
+    Si $T_A > T_F$, tiene asiento apopante (positivo).
 
-## 2. Partes del Casco y Estructura
+### Contexto Histórico
+Históricamente, la evolución de la eslora y la manga estuvo dictada por los materiales. Los galeones de madera del siglo XVI tenían proporciones de eslora/manga de 3:1 para garantizar la integridad estructural bajo el embate de las olas, mientras que los modernos destructores alcanzan 10:1 gracias a aleaciones de acero y titanio.
 
-El casco es el "cuerpo" impermeable del barco.
+## 2. Partes del Casco y Estructura: Tensiones y Resistencia
+
+El casco es la viga principal que soporta cargas dinámicas extremas.
 
 ### Divisiones Visuales del Casco
-*   **Proa:** La parte delantera, diseñada en forma de cuña para cortar el agua.
-*   **Popa:** La parte trasera, donde suele ir el timón y las hélices. Sus formas varían (espejo, noruega, de canoa).
-*   **Babor:** El lado izquierdo mirando de popa hacia proa. (Regla nemotécnica: Babor tiene 5 letras, igual que Izqda/Izquierda si la abrevias; o luz ROJA de babor por el corazón, que está a la izquierda).
-*   **Estribor:** El lado derecho mirando de popa hacia proa. Luz VERDE.
-*   **Línea de Crujía:** Línea imaginaria que divide longitudinalmente el barco en dos mitades simétricas (Babor y Estribor).
-*   **Línea de Flotación:** La línea pintada que separa la parte sumergida de la no sumergida.
-*   **Obra Viva (Carena):** Toda la parte del casco que está *por debajo* del agua. Se pinta con patente (antifouling) para evitar que se peguen algas y moluscos.
-*   **Obra Muerta:** La parte del casco que está *por encima* del agua, desde la línea de flotación hasta la borda.
+*   **Proa:** Parte delantera. Diseñada con ángulos de ataque finos para reducir la resistencia por formación de olas.
+*   **Popa:** Parte trasera. Su diseño de salida de aguas (ej. espejo) minimiza el desprendimiento de vórtices.
+*   **Babor / Estribor:** Izquierda / Derecha mirando a proa. (Babor luz roja, Estribor luz verde).
+*   **Línea de Crujía:** Eje de simetría longitudinal.
+*   **Línea de Flotación:** Separa obra viva de obra muerta.
+*   **Obra Viva (Carena):** Superficie mojada. Aquí la fricción viscosa es crítica y se modela según el Número de Reynolds ($Re = \frac{v L}{\nu}$).
+*   **Obra Muerta:** Expuesta al viento (windage o resistencia aerodinámica), calculada como $R_a = \frac{1}{2} \rho_{aire} V_{rel}^2 C_d A$.
 
 ### Sectores de Orientación
-Imagina que estás en el centro del barco:
-*   **Amura:** Las "mejillas" de la proa. Es la zona comprendida entre la proa y el través. Hay amura de babor y amura de estribor.
-*   **Través:** El punto medio del lateral del barco (perpendicular a la crujía).
-*   **Aleta:** Las "caderas" de la popa. Es la zona comprendida entre el través y la popa.
+*   **Amura:** Proa al través.
+*   **Través:** Punto medio perpendicular a crujía.
+*   **Aleta:** Través a popa.
 
-### Estructura Interna (El "Esqueleto")
-*   **Quilla:** La "columna vertebral" del barco. Es la viga longitudinal que recorre el fondo de proa a popa. En los veleros, lleva un peso enorme (lastre) para evitar el vuelco.
-*   **Roda:** La continuación de la quilla en la proa (hacia arriba). Corta el agua.
-*   **Codaste:** La continuación de la quilla en la popa. Suele soportar la hélice y el timón.
-*   **Cuadernas:** Las "costillas" del barco. Vigas transversales en forma de U o V que se unen a la quilla.
-*   **Baos:** Vigas transversales que unen las puntas superiores de las cuadernas. Soportan la cubierta (el "techo").
-*   **Esloras y Varengas:** Refuerzos longitudinales y transversales en el fondo.
-*   **Sentina:** La parte más baja del interior del casco. Es donde se acumulan los líquidos derramados (agua de mar, lluvia, pequeñas fugas de aceite) para ser expulsados por la bomba de achique.
-*   **Imbornales:** Agujeros en la base de la borda o en la bañera que permiten que el agua de lluvia o de las olas salga directamente al mar (sistema autoachicante).
+### Estructura Interna y Física de Materiales
+El barco actúa como una viga sometida a esfuerzos flectores sobre el oleaje:
+*   **Arrufo (Sagging):** Cuando la proa y popa están sobre crestas de olas y el centro en un seno. La cubierta sufre compresión y la quilla tracción.
+*   **Quebranto (Hogging):** El centro está en la cresta de la ola. La cubierta sufre tracción y la quilla compresión.
+*   **Quilla:** La "columna vertebral". Soporta el momento flector máximo.
+*   **Roda y Codaste:** Continuaciones de la quilla.
+*   **Cuadernas:** Costillas transversales. Absorben esfuerzos cortantes.
+*   **Baos:** Vigas que soportan la cubierta y evitan el colapso lateral (pandeo).
+*   **Esloras y Varengas:** Refuerzos longitudinales.
+*   **Sentina:** Parte más baja del casco donde convergen fluidos.
+*   **Imbornales:** Drenaje.
 
-## 3. Accesorios y Elementos de Cubierta
+## 3. Accesorios, Elementos de Cubierta y Apéndices Hidrodinámicos
 
-*   **Bañera:** La zona abierta en la cubierta (generalmente a popa) donde se sitúa la tripulación y el timonel.
-*   **Pasamanos / Candelabros:** Postes verticales (candelabros) por donde pasan los cables (guardamancebos) para evitar caer por la borda.
-*   **Cornamusas y Bitas:** Piezas de metal con forma de cuernos fijadas a la cubierta, usadas para atar sólidamente los cabos de amarre.
-*   **Guíacabos:** Anillas o piezas abiertas en la borda que dirigen el cabo de amarre hacia la cornamusa para evitar roces (desgaste o "socar") con el casco.
-*   **Escotillas y Portillos:** Las "ventanas" o puertas herméticas del barco. Escotilla suele referirse a las que están en el "techo" (cubierta) y portillos a los de las paredes laterales.
-*   **Púlpito:** Barandilla de acero inoxidable reforzada en la misma proa (púlpito de proa) o popa (púlpito de popa o balcón).
+*   **Timón:** Superficie de control. La fuerza de sustentación (lift) del timón sigue la teoría de perfiles alares:
+    $$ L = \frac{1}{2} \rho v^2 A C_L $$
+    donde el ángulo de ataque entra en pérdida (stall) si supera los 35°.
+*   **Bañera:** Zona abierta para maniobra.
+*   **Pasamanos / Candelabros:** Seguridad de tripulación.
+*   **Cornamusas y Bitas:** Puntos de amarre, diseñados para resistir cargas de rotura altas.
+*   **Guíacabos:** Reducen la concentración de esfuerzos por rozamiento.
+*   **Escotillas y Portillos:** Cierres estancos, críticos para el cálculo de estabilidad en grandes ángulos (curva GZ).
+*   **Púlpito:** Barandillas en proa/popa.
 
-## 4. Conceptos de Movimiento (Rolar vs. Caer)
+## 4. Conceptos de Movimiento en Fluidos (Rolar vs. Caer)
 
-El examen suele intentar confundir con la terminología de movimiento. Es vital usar el verbo correcto.
+En la dinámica de fluidos marítima, la cinemática es esencial:
 
-*   **Rolar:** Lo hace el viento. Cuando el viento cambia de dirección. *("El viento ha rolado al Norte").*
-*   **Caer:** Lo hace el barco. Cuando modificas voluntaria o involuntariamente la dirección de la proa. *("Cae a babor 10 grados").*
-*   **Abatir:** Lo hace el barco. Desplazamiento lateral provocado por la fuerza del **viento** empujando la obra muerta.
-*   **Derivar:** Lo hace el barco. Desplazamiento de todo el barco provocado por la fuerza de la **corriente** del agua.
+*   **Rolar:** Cambio de dirección del viento real.
+*   **Caer:** Modificación del rumbo del barco mediante un par de fuerzas generado por el timón.
+*   **Abatir:** Desplazamiento lateral por fuerza del viento ($F_w$). En veleros, se contrarresta con la sustentación hidrodinámica de la quilla.
+*   **Derivar:** Desplazamiento vectorial absoluto provocado por la corriente ($V_c$).
+El vector de velocidad absoluta del barco ($V_{SOG}$) es la suma del vector de velocidad sobre el agua ($V_{STW}$), el vector viento (abatimiento) y el vector corriente.

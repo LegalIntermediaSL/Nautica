@@ -1,119 +1,98 @@
-# Patrón de Yate - Tema 4: Navegación de Altura (Carta y Estima Analítica)
+# Patrón de Yate - Tema 4: Navegación Avanzada (Loxodrómica, Análisis Vectorial de Corrientes y Trigonometría Costera)
 
-El bloque de Navegación del Patrón de Yate (PY) es el filtro principal y más temido del examen oficial. Requiere precisión milimétrica, limpieza en el trazado de la carta (Carta 105 del Estrecho de Gibraltar) y una fluidez absoluta con la trigonometría plana.
+El examen de Patrón de Yate en la carta del Estrecho de Gibraltar (105) es un ejercicio absoluto de destreza geométrica y álgebra vectorial. La precisión en el trazado se entrelaza con el uso intensivo de trigonometría plana (loxodrómica) para trayectos largos y cálculos de cinemática de derroteros bajo influencia fluida.
 
 ---
 
-## 1. La Navegación por Estima Analítica (El Sistema Matemático)
+## 1. Fundamentos Matemáticos de la Navegación Loxodrómica (Estima Analítica)
 
-La Estima (Dead Reckoning) es el método matemático para calcular en qué coordenadas estás sumando al punto de partida el rumbo y la distancia navegada, sin mirar fuera del barco. Es fundamental si hay niebla espesa o de noche sin costa a la vista. (Requiere dominar los conceptos básicos vistos en el [PER Tema 11: Carta de Navegación](../PER/tema_11_carta_navegacion.md)).
+La Navegación por Estima Analítica ("Dead Reckoning" algorítmica) permite deducir las coordenadas latitud/longitud de llegada a partir de un punto de salida, resolviendo las ecuaciones diferenciales del movimiento sobre un elipsoide simplificado como plano ecuatorial (Trigonometría Plana de Corta Distancia).
 
-En Patrón de Yate, la estima no se dibuja en la carta si excede las distancias cortas, sino que **se calcula analíticamente usando fórmulas trigonométricas de la Loxodrómica (Navegación Plana)**. Asumimos la curvatura de la Tierra como un plano para trayectos menores de 300 millas.
+El Rumbo Loxodrómico es aquel que corta todos los meridianos terrestres con un ángulo de incidencia constante. Sobre la proyección Mercator de la carta, se representa como una línea recta perfecta, aunque físicamente corresponda a una espiral que envuelve el polo sobre la esfera terrestre.
 
-### El Triángulo de Estima (Las Fórmulas Base)
-Si conocemos nuestra situación de salida ($l_s$, $L_s$), el Rumbo Verdadero ($Rv$) y la Distancia navegada por la corredera ($D$), el viaje forma un triángulo rectángulo virtual en el mapa.
+### 1.1 Deducción del Triángulo de Estima
+Si partimos de unas coordenadas iniciales de Salida ($l_s, L_s$), mantenemos un Rumbo Verdadero ($R_v$) y navegamos una Distancia de corredera ($D$) en millas náuticas, el viaje traza la hipotenusa de un triángulo rectángulo diferencial en la superficie.
 
-1.  **Diferencia de Latitud ($\Delta l$):** Distancia Norte-Sur recorrida.
+1.  **Diferencia de Latitud ($\Delta l$):** Proyección polar (Norte/Sur).
+    Integrando el diferencial geográfico $dl = dD \cdot \cos(R_v)$:
     $$ \Delta l = D \cdot \cos(R_v) $$
-    *(El resultado sale en minutos de grado, que equivalen a millas. Se suma algebraicamente a la $l_s$ para hallar la Latitud de llegada).*
+    *El resultado es en minutos de grado (millas náuticas). Algebráico (+ Norte, - Sur). Latitud de llegada = $l_s + \Delta l$.*
 
-2.  **Apartamiento ($A$):** La distancia física real Este-Oeste navegada (en millas náuticas). No es la Longitud.
+2.  **Apartamiento ($A$):** Longitud del arco paralelo (Este/Oeste) medido en millas físicas.
     $$ A = D \cdot \sin(R_v) $$
 
-3.  **Latitud Media ($l_m$):** El promedio exacto de las latitudes de salida y llegada. Necesaria porque los meridianos de la Tierra convergen en los polos, estrechando el grado de Longitud.
-    $$ l_m = \frac{l_{\text{salida}} + l_{\text{llegada}}}{2} $$
+3.  **Latitud Media ($l_m$):** Como la Tierra es esférica, la separación física de los meridianos es máxima en el ecuador y colapsa a 0 en los polos. El apartamiento se ajusta tomando la secante de la latitud promedio de la travesía:
+    $$ l_m = \frac{l_s + l_{\text{llegada}}}{2} $$
 
-4.  **Diferencia de Longitud ($\Delta L$):** Distancia Este-Oeste en grados angulares de la Tierra.
-    $$ \Delta L = \frac{A}{\cos(l_m)} $$
-    *(Se suma algebraicamente a la $L_s$ para hallar la Longitud de llegada).*
+4.  **Diferencia de Longitud ($\Delta L$):** Proyección ecuatorial angular, requerida para calcular el meridiano final.
+    $$ \Delta L = \frac{A}{\cos(l_m)} = A \cdot \sec(l_m) $$
+    *(Resultado en minutos angulares. Algebráico: + Este, - Oeste. Longitud de llegada = $L_s + \Delta L$)*.
 
-### Cálculo Inverso (Rumbo Directo a un Rescate)
-Si recibes un Mayday con unas coordenadas de destino, y conoces las tuyas, debes hallar tu Rumbo y Distancia directos.
-
-1.  **Rumbo:**
+### 1.2 Problema Inverso (Determinación Analítica del Vector Directo)
+Para efectuar operaciones de salvamento hacia unas coordenadas de rescate precisas ($l_{\text{llegada}}, L_{\text{llegada}}$):
+1.  Hallar $\Delta l$ y $\Delta L$ por sustracción algebraica.
+2.  Calcular $l_m$ y despejar Apartamiento: $A = \Delta L \cdot \cos(l_m)$
+3.  Determinar el Rumbo Directo (Tangente):
     $$ \tan(R_v) = \frac{A}{\Delta l} $$
-    *(Atención: La calculadora te da un ángulo entre 0º y 90º. Debes aplicar el cuadrante. Si vas hacia el SW, el rumbo será $180º + \text{ángulo}$.)*
-
-2.  **Distancia Directa:**
-    $$ D = \frac{\Delta l}{\cos(R_v)} \quad \text{o bien} \quad D = \frac{A}{\sin(R_v)} $$
-
----
-
-## 2. Abatimiento (El Efecto del Viento)
-
-El viento empuja el caso (obra muerta) lateralmente. La proa apunta hacia un lado, pero el barco resbala hacia otro. *(Para conocer a fondo el origen y predicción del viento, consulta [PY Tema 2: Meteorología](./tema_2_meteorologia.md)).*
-
-*   **Abatimiento ($Ab$):** El ángulo de resbalamiento lateral.
-    *   Si el viento sopla por Babor, te empuja hacia Estribor: **$Ab$ Positivo (+)**.
-    *   Si el viento sopla por Estribor, te empuja hacia Babor: **$Ab$ Negativo (-)**.
-
-*   **Rumbo de Superficie ($Rs$):** Es la estela real que dejas en el agua.
-    $$ R_s = R_v + A_b $$
-
-Cuando quieres trazar tu rumbo real en la carta bajo el viento, dibujas el $Rs$. Cuando quieres saber qué Rumbo de Aguja poner en el timón para conseguir ese $Rs$:
-    $$ R_a = R_s - A_b - C_t $$
+    *(Se obtiene un ángulo de cuadrante. Si $\Delta l < 0$ y $A > 0$, el rumbo es del 2º Cuadrante, es decir, el $R_v$ final será $180^\circ - \text{ángulo}_{\text{calculado}}$.)*
+4.  Distancia al objetivo (Euclidiana):
+    $$ D = \frac{\Delta l}{\cos(R_v)} $$
 
 ---
 
-## 3. Deriva (El Efecto de las Corrientes Marinas)
+## 2. Abatimiento: Dinámica Aerodinámica Transversal
 
-La corriente es el río de agua en movimiento dentro del mar. Se lleva al barco entero consigo. A diferencia del viento (que desvía la estela), la corriente traslada el barco pero el agua de su alrededor se mueve con él.
+La acción de las partículas de viento sobre la obra muerta del buque genera una fuerza lateral que, conjugada con la resistencia hidrodinámica longitudinal, produce un ángulo de guiñada asimétrica: el **Abatimiento ($A_b$)**.
 
-*   **Rumbo de la Corriente ($Rc$):** Dirección hacia la que fluye el agua (Ej: $135^\circ$).
-*   **Intensidad Horaria ($Ihc$):** Velocidad de la corriente en nudos.
+$$ R_s = R_v + A_b $$
+Donde $R_s$ es el **Rumbo de Superficie**, es decir, el vector estela real sobre el mar.
 
-### Problema Directo de Corrientes (¿Dónde acabaré?)
-Dado tu Rumbo Verdadero, tu Velocidad de máquina, y los datos de la corriente:
+**Convenio de Signos Analítico:**
+*   Viento recibiendo por la aleta o amura de **Babor**: Empuje lateral a Estribor. Abatimiento hacia la derecha. $\Rightarrow \mathbf{A_b > 0}$
+*   Viento recibiendo por la aleta o amura de **Estribor**: Empuje lateral a Babor. Abatimiento hacia la izquierda. $\Rightarrow \mathbf{A_b < 0}$
 
-```mermaid
-graph TD
-    A((Situación Inicial)) -- Rumbo y Vel. Buque (Rv, Vb) --> B((Punto Estimado sin Corriente))
-    B -- Rumbo e Intens. Corriente (Rc, Ihc) --> C((Situación Efectiva P.E.))
-    A -. Rumbo y Vel. Efectiva (Ref, Vef) .-> C
-```
-
-1. Desde tu situación inicial, traza tu vector (Rumbo Verdadero y longitud igual a Velocidad del barco).
-2. Desde la punta de tu vector, engancha la cola del vector de corriente (Rumbo de Corriente y longitud igual a Intensidad Horaria).
-3. Une la situación inicial con la punta del vector de corriente. ¡Ese es tu **Rumbo Efectivo (Ref)** sobre el fondo, y midiendo su longitud sacas tu **Velocidad Efectiva (Vef)** real!
-
-### Problema Inverso de Corrientes (El Cálculo de Táctico)
-Quieres ir directo al Puerto B, pero hay una fuerte corriente atravesada. Si apuntas a B, la corriente te mandará a las rocas. ¿Hacia dónde debes apuntar la proa para que la suma de tu motor + corriente te empuje exactamente en línea recta hacia B?
-
-1. Une tu salida y B. Esa línea es tu **Rumbo Efectivo ($Ref$)** innegociable.
-2. Desde tu salida, dibuja la corriente exactamente como es.
-3. Desde la punta de la flecha de la corriente, abre un compás náutico con una medida igual a tu **Velocidad de Barco ($Vb$)**.
-4. Traza un arco hasta cortar tu línea innegociable del $Ref$.
-5. Une la punta de la corriente con ese corte. Traslada esa dirección al transportador de ángulos. ¡Ese es el **Rumbo Verdadero ($Rv$)** mágico al que debes poner tu proa de cangrejo!
+*(El cálculo magistral del puente dicta que para trazar el Rumbo de Aguja en el compás magistral: $R_a = R_s - A_b - C_t$)*.
 
 ---
 
-## 4. Técnicas Avanzadas de Posicionamiento Costero
+## 3. Cinemática Exacta del Vector Corriente
 
-El Patrón de Yate no usa GPS en el examen. Usa geometría visual pura.
+La corriente oceánica arrastra pasivamente todo el dominio hidro-espacial del barco, introduciendo una componente de traslación inercial galileana pura. Sus componentes son el Rumbo de la Corriente ($R_c$) y la Intensidad Horaria de Corriente ($I_{hc}$ en nudos).
 
-### Demoras Cruzadas Simultáneas
-Si ves dos faros a la vez (puedes consultar sus características en [Anexo: Los Faros de España](../PER/tema_13_faros_espana.md)), mides su Demora de Aguja ($D_a$) con tu compás de marcaciones, le aplicas la Corrección Total para sacar la Demora Verdadera ($D_v$), dibujas sus opuestas desde los faros en la carta, y donde se cruzan, estás tú.
-*   **El Triángulo de Error (Somville):** Si tomas tres demoras simultáneas, rara vez se cortan en un punto por los errores de medición. Forman un triángulo. Tu posición más probable está en el interior de ese triángulo.
+### 3.1 Geometría del Problema Directo (¿Dónde caeremos?)
+Si aplicamos nuestras máquinas para hacer un Rumbo de Superficie ($R_s$) a una Velocidad de Buque ($V_b$), y sufrimos un sistema de corriente ($R_c, I_{hc}$):
 
-### Situación por Demoras No Simultáneas (El Traslado)
-Solo tienes un faro visible y navegas. Tomas una demora. Navegas 2 horas y tomas otra demora al mismo faro.
-1. Dibujas la 1ª Demora y la 2ª Demora.
-2. Dibujas tu Rumbo y calculas las millas navegadas en esas 2 horas.
-3. Escoges un punto cualquiera de la 1ª Demora, le sumas tu rumbo y distancia de esas 2 horas, y obtienes un "punto trasladado".
-4. Trazas una paralela de la 1ª Demora que pase por ese punto trasladado.
-5. Donde esa paralela (la "1ª Demora Trasladada") corta a la 2ª Demora original, estás tú.
+$$ \vec{V}_{\text{efectiva}} = \vec{V}_{\text{buque}} + \vec{V}_{\text{corriente}} $$
 
-```mermaid
-graph TD
-    A[Faro Único] -->|10:00 - Dv 045º| B(Línea Demora 1)
-    A -->|12:00 - Dv 090º| C(Línea Demora 2)
-    B -->|Traslado Paralelo - Rumbo/Distancia| D[Demora 1 Trasladada]
-    D -->|Corte con Demora 2| E((Tu Situación a las 12:00))
-    
-    style E fill:#f00,stroke:#333,stroke-width:2px,color:white
-```
+En el plano vectorial cartesiano ($x=$ Este, $y=$ Norte):
+$$ V_{x, \text{efectivo}} = V_b \cdot \sin(R_s) + I_{hc} \cdot \sin(R_c) $$
+$$ V_{y, \text{efectivo}} = V_b \cdot \cos(R_s) + I_{hc} \cdot \cos(R_c) $$
+$$ R_{\text{efectivo}} = \arctan\left(\frac{V_{x, \text{efectivo}}}{V_{y, \text{efectivo}}}\right) $$
+$$ V_{\text{efectiva}} = \sqrt{V_{x, \text{efectivo}}^2 + V_{y, \text{efectivo}}^2} $$
 
-### El Arco Capaz (Ángulo Horizontal)
-El método más preciso y blindado a errores magnéticos (no requiere compás).
-Mides con un sextante tumbado el ángulo físico que hay entre dos faros ($A$ y $B$). Ese ángulo te permite dibujar un inmenso círculo de probabilidad en el mar (Arco Capaz). Cualquier punto de ese círculo verá los dos faros bajo el mismo ángulo exacto.
-Cortando el Arco Capaz con una sonda batimétrica, o con un segundo Arco Capaz de otros faros, hallas una situación perfecta sin tocar un compás magnético.
+El **Rumbo Efectivo ($R_{ef}$)** es la traza sobre el suelo del fondo oceánico; la **Velocidad Efectiva ($V_{ef}$)** es la celeridad absoluta respecto a un satélite.
+
+### 3.2 Geometría del Problema Inverso (Solución Táctica de Intercepción)
+Requerimos innegociablemente navegar sobre una trayectoria geométrica (Rumbo Efectivo deseado para llegar a puerto) bajo fuertes mareas del Estrecho. Debemos hallar el **Rumbo Verdadero (ángulo de cangrejo)** de la proa.
+
+**Método Gráfico en Carta (Ley de los Senos aplicados al Triángulo):**
+1.  Situación de Origen $\rightarrow$ Trazar infinito el segmento del $R_{ef}$ deseado.
+2.  Desde el Origen, situar el vector de corriente $(R_c, I_{hc})$ a escala. El extremo de este vector es el origen virtual de proa.
+3.  Con el compás metálico calibrado a la magnitud modular de nuestra $V_b$, apoyando en el extremo del vector corriente, trazamos un arco que interseque con el rayo infinito del $R_{ef}$.
+4.  La línea que une el extremo del vector corriente con la intersección dicta el ángulo exacto al que debemos poner nuestra proa, compensando isométricamente la deriva de la masa fluida.
+
+---
+
+## 4. Trigonometría de Situación Costera de Precisión
+
+### 4.1 Triangulación por Demoras (Error de Somville)
+Tres o más Demoras Verdaderas ($D_v$) intersecan idóneamente en un punto euclidiano simple. Sin embargo, debido al error sistemático y accidental (vibración, paralaje, aguja), conforman el **Triángulo de Error**. El lugar geométrico de máxima verosimilitud de la posición baricéntrica, según el axioma de Somville, reside en el incentro/ortocentro del polígono formado, si el error magnético es constante en los tres relevamientos.
+
+### 4.2 Arco Capaz (Técnica Analítica de Ángulos Horizontales)
+Es el método de posicionamiento más resiliente pues resulta matemáticamente indemne frente a errores magnéticos o de desvío del compás. Se efectúa operando un sextante naval en plano paralelo al horizonte, extrayendo el arco angular real ($\alpha$) entre dos faros colineales $A$ y $B$.
+
+El locus geográfico resultante pertenece al **Arco Capaz** geométrico que subtende el segmento $\overline{AB}$.
+Para hallar los centros de la circunferencia en la carta:
+1.  Unimos ambos faros $A$ y $B$. Trazamos su mediatriz de forma analítica (ortogonal de punto medio).
+2.  En el faro $A$ y en el $B$, levantamos sendos rayos a $90^\circ - \alpha$ de la línea base (si el ángulo del sextante $\alpha$ es $< 90^\circ$).
+3.  La intersección del rayo con la mediatriz dicta las coordenadas precisas del Centro ($O$) de la circunferencia isométrica. Apoyando el compás, el trazo englobará A, B, y todas las posibles situaciones del yate en el mar.

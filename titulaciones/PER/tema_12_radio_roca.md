@@ -1,60 +1,57 @@
-# PER - Tema 12: Curso de Radiooperador de Corto Alcance (ROCA)
+# PER - Tema 12: Física y Operación de Radiocomunicaciones (ROCA)
 
-Para expedir tu título de PER (o de PNB), además de aprobar el examen teórico y navegar las prácticas obligatorias de motor, es **estrictamente obligatorio por ley** realizar y superar este curso práctico en una escuela homologada frente a un simulador de equipos de radiocomunicaciones de la OMI.
-
-Este temario avanzado te prepara para dominar la cabina de radio de cualquier yate moderno.
+Para expedir tu título de PER (o de PNB), además de aprobar el examen teórico y navegar las prácticas, es **estrictamente obligatorio por ley** superar el curso de Radiooperador de Corto Alcance (ROCA). Esta formación te prepara para operar de forma responsable la cabina de comunicaciones de un yate basándose en los principios de la radiación electromagnética y los protocolos de la OMI.
 
 ---
 
-## 1. El Ecosistema Mundial de Socorro (SMSSM / GMDSS)
+## 1. El Ecosistema GMDSS y Propagación de Ondas
 
-El *Global Maritime Distress and Safety System* (GMDSS) es la gigantesca red internacional diseñada en los años 90 para garantizar que ningún barco se hunda en silencio. Su principio fundamental es la **redundancia automática**: las llamadas de auxilio deben llegar a los centros de salvamento en tierra y a todos los barcos cercanos de forma autónoma, sin depender de la voz humana.
+El *Global Maritime Distress and Safety System* (GMDSS) es una arquitectura automatizada de auxilio global. Su eficacia se cimienta en las propiedades físicas de las ondas de radio y la ionosfera, definiendo las zonas marítimas en función del comportamiento de la propagación electromagnética (frecuencia, refracción atmosférica, refracción ionosférica y pérdida de espacio libre).
 
-### Las Zonas Marítimas Geográficas del GMDSS
-La Tierra no se divide por paralelos, sino por la cobertura electromagnética de las antenas:
-*   **Zona A1:** Cobertura ininterrumpida de las estaciones costeras (torres terrestres) operando en **VHF con DSC**. Suele alcanzar unas 20-30 millas desde la costa (línea visual). *Esta es la zona genérica de examen y atribución del PER (12-25 millas).*
-*   **Zona A2:** Cobertura de las potentes estaciones costeras de Onda Media (MF) con DSC. Llega hasta unas 150 millas (ideal para cruces a Baleares o Canarias).
-*   **Zona A3:** Cobertura satelital geoestacionaria de la red INMARSAT (cubre todo el globo terrestre desde la latitud $70^\circ N$ a $70^\circ S$).
-*   **Zona A4:** Zonas polares remotas (los satélites no llegan bien), cubiertas solo por la ruidosa radio de Onda Corta (HF) que rebota en la ionosfera.
+### Zonas Marítimas Geográficas
+*   **Zona A1:** Cobertura de las ondas métricas en la banda VHF (30 MHz - 300 MHz). La propagación es puramente por **onda espacial (línea de visión)**. Las ondas VHF penetran la ionosfera y no rebotan; viajan rectilíneas. Su alcance $d$ depende geométricamente del radio de curvatura terrestre y la altura de las antenas, modulado por un ligero factor de refracción atmosférica ($K \approx 1.33$):
+    $$ d (\text{millas}) \approx 2,22 \left( \sqrt{h_{\text{transmisor}}} + \sqrt{h_{\text{receptor}}} \right) $$
+    *(Donde $h$ está en metros. Usualmente confinado a 20-30 millas).*
+*   **Zona A2:** Cobertura de las bandas MF (Onda Media, 300 kHz - 3 MHz). Aquí actúa la propagación por **onda de superficie (ground wave)**, que por difracción viaja pegada a la conductividad salina del mar, alcanzando unas 150-400 millas sin importar si es de día o noche.
+*   **Zona A3:** Cobertura vía enlaces de microondas con satélites Inmarsat geoestacionarios (Latitudes $70^\circ N$ a $70^\circ S$).
+*   **Zona A4:** Zonas polares. Fuera del campo de los geoestacionarios, se requiere HF (Onda Corta, 3 MHz - 30 MHz). Las ondas rebotan en las capas F1 y F2 de la ionosfera excitada por los rayos solares (**onda ionosférica** o *skywave*), permitiendo comunicaciones transoceánicas gracias a múltiples saltos, aunque sometidas a la atenuación de la capa D diurna y desvanecimientos (*fading*).
 
-## 2. La Emisora VHF y el Módem LSD (Canal 70)
+## 2. El Transceptor VHF y el Estándar DSC (Canal 70)
 
-El transceptor VHF (Very High Frequency) es el pulmón del barco. Es obligatorio en Zona 4, y emite en FM marina (frecuencias de 156 MHz a 174 MHz). Funciona por **propagación directa (línea de visión)**: la onda de radio viaja en línea recta y se estrella contra la curvatura del planeta o las montañas. Por eso la antena debe ir instalada en la punta del mástil más alto posible (cuanto más alta la antena, más lejos llega la onda).
+El VHF (Very High Frequency) naval opera en Modulación de Frecuencia (FM) o Modulación de Fase (PM) dentro del espectro 156.000 MHz a 174.000 MHz. A diferencia del AM, la FM proporciona excelente relación señal/ruido e inmunidad a la interferencia por descargas eléctricas.
 
-### 2.1 El Canal 16 Fonía (156.800 MHz)
-Es el canal internacional de voz para **Socorro, Urgencia, Seguridad y Llamada Inicial**.
-*   **Silencio Radio Obligatorio:** Durante los primeros 3 minutos de cada media hora (ej: 10:00 a 10:03, y 10:30 a 10:33) hay que guardar mutismo total. Es el momento en el que el Centro de Salvamento pega la oreja al altavoz para escuchar a náufragos con baterías bajas.
-*   **Uso:** Sirve solo para llamar a otro barco o a la costera y decirle: *"Yate Fortuna, Yate Fortuna, soy el Yate Brisa. Pasamos a trabajar al Canal 06"*. **Jamás se mantiene una conversación en el Canal 16.**
+### 2.1 Fonía: Canal 16 (156.800 MHz)
+Es la frecuencia de guardia internacional prioritaria.
+*   **Silencio Radio:** Exigido por protocolo en los minutos del $00 \rightarrow 03$ y del $30 \rightarrow 33$ de cada hora para facilitar la escucha de señales débiles.
+*   **Potencia de Emisión:** Las radios tienen salidas de impedancia a 50 ohmios. Se operan típicamente a máxima potencia para socorro ($25 \text{ W}$, High Power), atenuando por exigencia legal a ($1 \text{ W}$, Low Power) para maniobras en el interior de puertos (Canales 9, 12, etc.) para evitar el cegado del receptor por saturación de radiofrecuencia (RF).
 
-### 2.2 Llamada Selectiva Digital (LSD / DSC) y el Canal 70
-Todas las radios modernas integran un módem digital acoplado a un GPS. Este sistema envía "WhatsApp náuticos" codificados en el **Canal 70**. 
-*(¡ATENCIÓN! Está prohibidísimo coger el micrófono y hablar por voz en el Canal 70).*
+### 2.2 Módem DSC / LSD: Canal 70 (156.525 MHz)
+Las telecomunicaciones modernas usan *Llamada Selectiva Digital* (Digital Selective Calling). Se codifica un flujo de datos binarios usando FSK (Frequency Shift Keying) a una tasa de 1200 baudios, insertando corrección de errores (FEC - Forward Error Correction).
+*   Al pulsar el botón **DISTRESS**, la ráfaga DSC transmite automáticamente:
+    *   Tu **MMSI** (Identificación de 9 cifras programada en ROM).
+    *   Coordenadas de lat/lon precisas (proporcionadas vía NMEA 0183 / NMEA 2000 desde el GPS).
+    *   Formato de socorro y timestamp UTC.
+    *   La radio sintoniza automáticamente ambos (buque y costera) en el Canal 16 a la espera del seguimiento por fonía.
 
-La radio tiene un **Botón rojo protegido por una tapa plástica**. Si sufres un peligro inminente y letal:
-1. Levantas la tapa.
-2. Pulsas el botón DISTRESS sin soltarlo durante 5 segundos (la radio pitará y contará marcha atrás).
-3. La radio dispara en el Canal 70 un paquete de datos hiper-comprimido, que será captado instantáneamente por los centros de Salvamento de la costa y por todos los radares y radios de los mercantes en 30 millas a la redonda, disparando una alarma atronadora en sus puentes de mando.
-4. Ese paquete transmite mágicamente tu **MMSI** (Número de identidad de 9 cifras de tu barco, tu matrícula electrónica), tus **Coordenadas GPS exactas**, la Hora Universal UTC y la Naturaleza del Peligro (si tuviste tiempo de seleccionarla en la pantalla de cristal líquido).
+## 3. Jerga y Protocolos de Modulación de Voz
 
-## 3. Jerga y Protocolos de Fonía en Emergencias
+Al pasar al Canal 16, la comunicación en banda base de voz (aproximadamente $300 \text{ Hz} - 3000 \text{ Hz}$) exige un estricto protocolo legal para economizar el tiempo en el aire:
 
-Una vez se ha mandado el DSC en el Canal 70, hay que coger el micrófono del VHF, pasarlo al Canal 16, y dar la cara explicando por voz qué pasa. Los mensajes tienen prioridad estricta:
-
-1.  **Prioridad 1 (Socorro Letal): "MAYDAY, MAYDAY, MAYDAY"**
-    *   *Uso:* Peligro grave e inminente (Hundimiento, fuego sin control, infarto a bordo).
-    *   *Señal:* *"Mayday, Mayday, Mayday, aquí Yate Tritón, MMSI xxx. Posición xxx. Tenemos vía de agua incontrolable, nos hundimos. Solicito asistencia inmediata. 4 personas a bordo. Cambio."*
+1.  **Prioridad 1 (Socorro - Vida en Peligro Letal): "MAYDAY, MAYDAY, MAYDAY"**
+    *   Se pronuncia la palabra clave tres veces (del francés *venez m'aider*).
+    *   Estructura: *Mayday x3. Aquí [Nombre del buque] x3, MMSI. Mayday [Nombre], MMSI. Posición por lat/lon o demora a costa. Naturaleza (fuego, explosión, sumersión). Número de personas y tipo de auxilio.*
 2.  **Prioridad 2 (Urgencia): "PAN-PAN, PAN-PAN, PAN-PAN"**
-    *   *Uso:* Seguridad del barco comprometida o herido a bordo que requiere atención pero sin muerte inminente (Motor gripado a la deriva sin rocas cerca, brazo roto).
+    *   Buque a la deriva por fallo mecánico pero estanco, hombre al agua en rescate activo sin ahogo, asistencia médica a bordo.
 3.  **Prioridad 3 (Seguridad): "SECURITÉ, SECURITÉ, SECURITÉ"**
-    *   *Uso:* Avisos generales a la navegación (Troncos grandes flotando, temporal inminente, faros apagados). Lo suelen usar los mercantes y Salvamento Marítimo.
+    *   Para retransmitir la presencia de objetos flotantes letales a 25 nudos (UFOs), cetáceos, temporales u obstrucción de señales de balizamiento marítimo.
 
-## 4. Baterías y Dispositivos de Supervivencia Automáticos
+## 4. Hardware de Supervivencia: EPIRB y SART
 
-El GMDSS exige que la cabina de radio siga emitiendo aunque el barco se quede a oscuras. Las radios están conectadas a una **batería independiente de servicios (o de radio)**, separada de la batería de arranque del motor.
-*   **Voltaje crítico:** Una batería de Plomo-Ácido sana a motor parado debe marcar unos 12.6V - 12.8V. Si baja por debajo de 11.5V, la batería está frita y el VHF no tendrá amperaje para emitir a su potencia máxima (25 W), reduciéndose a la potencia baja local (1 W).
+### EPIRB (Radiobaliza)
+El GMDSS exige hardware que sobreviva al fallo total de tensión general de corriente continua de a bordo:
+*   Módulo estanco operando a **406 MHz**. Emite pulsos modulados digitalmente que portan MMSI y coordenadas al sistema global satelital **COSPAS-SARSAT**.
+*   Simultáneamente activa un oscilador de bajísima potencia a **121.5 MHz** para usar *radiogoniometría (homing)* por parte de los helicópteros SAR durante el último kilómetro de aproximación.
+*   Zafa Hidrostática: Un diafragma de presión de fluido tarado que, al descender el buque 4 metros bajo el nivel del mar ($\sim 0.4 \text{ bar}$ de presión hidrostática), libera un muelle percutor y corta el perno, lanzando el dispositivo a flote.
 
-### Radiobaliza EPIRB (Emergency Position Indicating Radio Beacon)
-Si el barco zozobra brutalmente y no da tiempo a usar la radio VHF:
-*   Va montada en el exterior (junto a la balsa). Lleva una **Zafa Hidrostática** (un muelle y una cuchilla sensible a la presión).
-*   Si el barco se hunde a 4 metros, la presión revienta la zafa, y el cilindro amarillo de la EPIRB sale flotando a la superficie como un cocho.
-*   Al tocar el agua del mar, unos sensores de humedad la encienden solita. Empieza a emitir a los **satélites polares a 406 MHz**, enviando el MMSI y tu posición satelital directamente al cuartel de Salvamento Marítimo. Batería mínima garantizada: 48 horas parpadeando en la mar brava.
+### Respondedor Radar (SART)
+Transpondedor activo de Radar operando en la banda X ($9.2 - 9.5 \text{ GHz}$). Cuando es barrido por el haz magnético pulsante del radar de un carguero mercante, la antena receptora del SART genera un trigger (disparo) que excita su oscilador Gunn interno y responde emitiendo una ráfaga modulada en frecuencia. Esta se pinta en la pantalla CRT/LCD del barco de rescate como una línea recta de 12 puntos intensos indicando la demora exacta al naufragio.

@@ -1,63 +1,62 @@
-# PER - Tema 4: Legislación Nacional Marítima (Análisis Detallado)
+# PER - Tema 4: Jurisprudencia Marítima, Convenios Internacionales y Normativa (Análisis Exhaustivo)
 
-El entorno marítimo está regulado de forma estricta. El mar no es libre albedrío; existen normativas de seguridad, zonas restringidas y leyes contra la contaminación que acarrean multas de cientos de miles de euros. 
+El mar no es una anarquía. El marco legal marítimo (Derecho Internacional Público y Administrativo) impone responsabilidades severas bajo un régimen de responsabilidad objetiva en caso de contaminación y abordajes.
 
 ---
 
-## 1. Zonas de Navegación y Atribuciones
+## 1. Zonas de Navegación, Atribuciones y Real Decreto 875/2014
 
-El Real Decreto 875/2014 regula las titulaciones de recreo en España. Las Zonas de Navegación dictan hasta dónde puede alejarse un barco de la costa, y qué material de seguridad obligatorio debe llevar a bordo (a menor número de zona, mayor exigencia).
+El RD 875/2014 es la piedra angular del marco jurídico recreativo en España, estableciendo las titulaciones y sus habilitaciones operativas, cruzadas con los requerimientos de la Dirección General de la Marina Mercante (DGMM).
 
-### Clasificación de Zonas (De mayor a menor riesgo)
-*   **Zona 1:** Navegación Ilimitada (Oceánica). Sin límite de distancia. Título requerido: **Capitán de Yate (CY)**.
-*   **Zona 2:** Navegación hasta **60 millas** de la costa. Título requerido: **Patrón de Yate (PY)**. Exige balsa salvavidas y radiobaliza (EPIRB).
-*   **Zona 3:** Navegación hasta **25 millas** de la costa. Título requerido: **PER (Con prácticas de ampliación a Baleares)**.
-*   **Zona 4:** Navegación hasta **12 millas** de la costa. Título requerido: **PER (Básico)**. Esta es la zona genérica de examen del PER.
-*   **Zona 5:** Navegación hasta **5 millas** de un abrigo o playa accesible. Título requerido: PNB.
-*   **Zona 6:** Navegación hasta **2 millas** de un abrigo. Título requerido: Licencia de Navegación (Titulín).
-*   **Zona 7:** Navegación en aguas protegidas (rías, bahías cerradas, pantanos).
+### Clasificación Radiológica y de Salvamento (Zonas)
+*   **Zona 1 (Oceánica):** Navegación Ilimitada. Título: **Capitán de Yate (CY)**. Exige INMARSAT, radiobalizas (EPIRB) de categoría I y balsas oceánicas SOLAS A.
+*   **Zona 2 (Offshore):** Hasta **60 millas**. Título: **Patrón de Yate (PY)**.
+*   **Zona 3 (Costera Ampliada):** Hasta **25 millas**. Título: **PER (Con habilitación balear)**.
+*   **Zona 4 (Costera):** Hasta **12 millas**. Título: **PER (Básico)**. Cubre aguas territoriales.
+*   **Zona 5 / 6 / 7:** Aguas protegidas (5 millas abrigo, 2 millas, aguas interiores).
 
 > [!IMPORTANT]
-> El PER básico te permite llevar barcos de hasta **15 metros de eslora** y alejarte **12 millas** de la costa (Zona 4), tanto de día como de noche. Realizando prácticas adicionales (Islas), la eslora se amplía a **24 metros** y se autoriza el salto entre la Península y Baleares (Zona 3).
+> **Atribuciones PER:** Mando de embarcaciones de hasta **15 metros de eslora**, máxima distancia de **12 millas** de costa. Ampliable con prácticas adicionales a **24 metros** y travesías Península-Baleares. Navegación nocturna autorizada. El patrón asume responsabilidad civil (cubierta por RD 607/1999) y penal por negligencia.
 
-## 2. Prevención de la Contaminación (Convenio MARPOL)
+## 2. Prevención de la Contaminación (Convenio MARPOL 73/78)
 
-El Convenio Internacional MARPOL (Marine Pollution) de la OMI (Organización Marítima Internacional) rige las prohibiciones de vertidos. Sus Anexos más críticos para recreo son el Anexo I (Hidrocarburos), IV (Aguas Sucias) y V (Basuras).
+El "International Convention for the Prevention of Pollution from Ships" es ley vinculante. Las multas por infracción (vg. Caso del "Prestige" sentó precedentes) alcanzan los millones de euros en la justicia española (Ley 14/2014 de Navegación Marítima).
 
-### Anexo I - Hidrocarburos (Combustibles y aceites)
-*   **Prohibición absoluta:** Está tajantemente prohibido tirar hidrocarburos, aceites sucios de motor, o aguas de sentina mezcladas con fuel al mar. 
-*   Cualquier vertido debe ser notificado de inmediato a Salvamento Marítimo.
-*   En gasolineras, se deben usar trapos o absorbentes durante el repostaje para evitar derrames.
+### Anexo I - Hidrocarburos
+*   **Prohibición absoluta de descargas (15 ppm):** Solo se permite descargar agua de sentinas si pasa por un separador homologado y el contenido es menor a 15 partes por millón de hidrocarburo. Para recreo, la norma práctica es **retención total** a bordo y descarga en instalaciones portuarias (MARPOL facilities).
+*   En derrames accidentales accidentales: Obligación jurídica de notificar a las autoridades costeras de inmediato.
 
 ### Anexo IV - Aguas Sucias (Fecales)
-*   Está **totalmente prohibido** descargar aguas fecales (aguas negras) en el puerto, rías, bahías, y a menos de 3 millas de la costa.
-*   A partir de 3 millas de la costa, se puede descargar SI el barco dispone de un equipo de desmenuzado y desinfección en marcha.
-*   A partir de 12 millas de la costa, se puede descargar agua sucia almacenada en tanques sin tratar, siempre que el barco vaya navegando a una velocidad de al menos 4 nudos y la descarga sea paulatina, nunca de golpe.
-*   Todo barco con retrete debe tener un Tanque de Aguas Sucias con conexión de descarga a instalaciones de tierra.
+Legislación de vertidos orgánicos para evitar eutrofización y riesgo epidemiológico:
+*   **$< 3$ millas:** Vertido **Estrictamente Prohibido**.
+*   **De 3 a 12 millas:** Descarga permitida *solo* si el buque tiene sistema de tratamiento (desmenuzado y desinfección) homologado OMI en marcha.
+*   **$> 12$ millas:** Se permite vaciar tanques de retención, a velocidad $\geq 4$ nudos, tasa de descarga moderada.
+*   Por RD, toda embarcación con inodoro de descarga directa fabricada post-2003 (Norma CE) debe incorporar tanque de retención (Holding Tank).
 
-### Anexo V - Basuras (Plásticos)
-*   **Prohibición Total:** Está estrictamente prohibido tirar al mar **PLÁSTICOS**, bajo cualquier circunstancia, en cualquier parte del océano del mundo.
-*   A más de 12 millas de la costa (Zona 4): Solo se pueden tirar restos de comida triturados (que pasen por una malla de 25 mm).
+### Anexo V - Basuras
+Regulado severamente debido a la crisis global de microplásticos:
+*   **PLÁSTICOS y CENIZAS:** Descarga **Cero** en cualquier lugar del planeta (Zona Especial o no).
+*   **Restos de comida (Comminuted):** Triturados (malla $< 25$ mm) permitidos más allá de 3 millas (en zonas no especiales) o más allá de 12 millas en Zonas Especiales (como el Mar Mediterráneo).
 
-## 3. Playas y Zonas de Baño
+## 3. Zonas de Baño y Jurisprudencia Litoral (Ley de Costas 22/1988)
 
-La costa está protegida para los bañistas. La interacción barco-bañista es la principal causa de accidentes mortales en verano.
+El conflicto entre el turismo de playa y la náutica de recreo es crítico y fuertemente sancionado.
 
-*   **Zonas Balizadas:** Cuando una playa está marcada con boyas amarillas (normalmente a 200m de la costa), está **totalmente prohibido** navegar o fondear a motor o vela dentro de esa zona. El acceso a la orilla solo puede hacerse por los *canales balizados* (con boyas cilíndricas/cónicas), navegando como máximo a **3 nudos**.
-*   **Zonas NO Balizadas:** Si llegas a una cala sin balizas amarillas, la franja de los primeros **200 metros** desde la costa (o 50 metros en acantilados) se considera "Zona de Baño" por ley. No está prohibido entrar, pero no puedes fondear y tu velocidad máxima es de **3 nudos**, extremando la vigilancia por si hay buceadores libres.
+*   **Zonas Balizadas (Línea de 200m):** Separadas por boyas amarillas. Es un "santuario" exclusivo de bañistas. Entrar a motor o vela es una infracción grave (multas $> 6.000$€).
+    *   Excepción: Entrada por **canales balizados** (boyas cónicas verdes / cilíndricas rojas) estrictamente a **3 nudos** (velocidad de gobierno mínima), prohibido fondear en el canal.
+*   **Zonas NO Balizadas:** Si la cala no está físicamente marcada, la ley impone virtualmente la misma restricción: los primeros **200 m** (playas) y **50 m** (acantilados) son zona de baño "de iure". Prohibición absoluta de fondeo, límite dinámico de $3$ nudos.
 
-## 4. Buceadores (Bandera Alfa)
+## 4. Buceadores (Código Internacional de Señales - CIS)
 
-Si un barco tiene buceadores sumergidos cerca (ya sea buceo autónomo con botellas o pesca submarina a pulmón), el Código Internacional de Señales exige izar la bandera correspondiente:
+La interacción hélices-buceador produce traumatismos mortales. La jurisprudencia impone la culpa por defecto al buque si no respetó el perímetro.
 
-*   **Bandera ALFA (Internacional):** Azul y blanca tragada. Significa: "Tengo buzo sumergido, manténgase alejado y a poca velocidad".
-*   **Bandera ROJA con franja diagonal BLANCA (Nacional):** Usada tradicionalmente en España y USA.
-
+*   **Bandera ALFA (CIS):** Pabellón blanco y azul, corte en corneta. Orden internacional legal: "Tengo buzo sumergido; manténgase bien alejado y a poca velocidad".
+*   **Bandera ROJA con franja diagonal BLANCA:** (Bravo modificada, tradición de buceo US/España).
 > [!WARNING]
-> La ley exige a cualquier embarcación mantenerse a un **resguardo mínimo de 25 metros** (aunque por seguridad y respeto se recomienda al menos 50 a 100 metros) de cualquier boya de buceador o embarcación con la bandera Alfa izada.
+> La Orden Ministerial exige mantener un **resguardo mínimo de 25 metros** (jurisprudencia y capitanías recomiendan $50-100$m) y tránsito cauteloso. Acercarse con motor desembragado o apagado si se requiere asistencia obligatoria.
 
-## 5. Salvamento Marítimo
-En España, la *Sociedad de Salvamento y Seguridad Marítima (SASEMAR)* coordina las emergencias 24/7 a través de los MRCC (Centros de Coordinación).
-*   Se les contacta en el **Canal 16 de VHF**.
-*   Los medios incluyen lanchas de intervención rápida (clase Salvamar), remolcadores de altura (clase María de Maeztu) y helicópteros (Helimer).
-*   En caso de remolque, el propietario del barco remolcado deberá abonar las elevadas tasas de salvamento (habitualmente cubiertas por el seguro obligatorio de responsabilidad civil).
+## 5. Búsqueda y Salvamento (Convenio SAR 1979 / SASEMAR)
+
+El rescate de vidas en el mar es una obligación ancestral y jurídica (Convención de las Naciones Unidas sobre el Derecho del Mar - CONVEMAR Art. 98).
+*   **SASEMAR (Salvamento Marítimo):** Coordina los MRCC. Contacto prioritario: **VHF Canal 16** o el canal DSC 70 (LLamada Selectiva Digital).
+*   **Régimen Económico del Rescate:** La vida humana se rescata gratis (obligación de Estado). El **remolque del buque** para salvar la propiedad tiene un coste tarifado elevado ("No cure, No pay" bajo el LOF o tasas SASEMAR), que será reclamado al armador y su aseguradora (RD 607/1999).

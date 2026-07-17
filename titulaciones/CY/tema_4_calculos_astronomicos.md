@@ -1,101 +1,105 @@
-# Capitán de Yate - Tema 4: Cálculos Astronómicos Avanzados
+# Capitán de Yate - Tema 4: Cálculos Astronómicos Avanzados y Resolución Analítica
 
-El bloque de cálculo del Capitán de Yate es la prueba definitiva de navegación astronómica. Requiere un manejo exquisitamente matemático y ordenado del sextante, del Almanaque Náutico y de las fórmulas de resolución trigonométrica. Un solo error en un signo sumando minutos te sitúa a cientos de millas de tu posición real.
+El cálculo analítico de posición mediante rectas de altura es la destreza reina del Capitán de Yate. Exige un rigor matemático absoluto en aritmética sexagesimal y trigonometría esférica, así como en el manejo detallado del Almanaque Náutico y de la corrección de errores óptico-físicos. Un simple despiste en un signo (+/-) colapsa toda la solución en la carta náutica.
 
 ---
 
-## 1. Correcciones de la Altura del Sextante (El Proceso Completo)
+## 1. Tratamiento Analítico de las Correcciones del Sextante
 
-Cuando medimos el ángulo vertical de un astro (el Sol, por ejemplo) apoyándolo visualmente sobre la línea del horizonte del mar con el sextante, obtenemos la **Altura Instrumental ($ai$)**. Esta medida está contaminada por varios errores físicos y ópticos que debemos purgar paso a paso para obtener la **Altura Verdadera ($av$)** del centro de la Tierra al centro del astro.
+El sextante proporciona un valor angular en crudo, la **Altura Instrumental ($ai$)**. Para llegar a la **Altura Verdadera ($a_v$)** geométrica topocéntrica referida al centro de la Tierra, debemos aplicar correcciones de óptica instrumental, geometría y refracción atmosférica.
 
-$$ a_v = a_i + e_i + D_p + C_{\text{ref}} + C_{\text{par}} + C_{\text{SD}} $$
+La ecuación general de depuración es:
+$$ a_v = a_i + e_i - D_p - C_{\text{ref}} + C_{\text{par}} \pm C_{\text{SD}} $$
 
-```mermaid
-graph TD
-    A[Altura Instrumental - ai] -->|+- Error de Índice| B(Altura Observada - ao)
-    B -->|- Depresión Horizonte| C(Altura Aparente - aa)
-    C -->|+- Corrección Total Ct| D{Altura Verdadera - av}
-    
-    style D fill:#4CAF50,stroke:#333,stroke-width:2px,color:white
-```
+### Paso 1: Error Mecánico (Altura Observada, $a_o$)
+1.  **Error de Índice ($e_i$):** El colimador y el espejo índice no son exactamente paralelos a $0^\circ$. Si medimos $+2'$ sobre cero en el ajuste del horizonte, el error es positivo y la corrección es $-2'$. 
+    $$ a_o = a_i \pm e_i $$
 
-### Paso 1: De Altura Instrumental ($ai$) a Altura Observada ($ao$)
-1.  **Error de Índice ($ei$):** Es el desajuste mecánico interno de los espejos del sextante. Si al poner el sextante a cero grados el horizonte se ve partido, hay error. Puede ser aditivo o sustractivo (+ o -). 
-    *   *Obtenemos:* $ao = ai \pm ei$
+### Paso 2: Geometría de Altura (Altura Aparente, $a_a$)
+2.  **Depresión del Horizonte ($D_p$):** Al elevar el ojo del observador ($e$, en metros) sobre el nivel del mar, la tangente visual hacia el horizonte aparente se hunde bajo el horizonte astronómico. Esto agranda la medida de la altura. Su corrección **siempre es negativa**.
+    Fórmula empírica clásica: $D_p \approx 1.77' \cdot \sqrt{e}$
+    $$ a_a = a_o - D_p $$
 
-### Paso 2: De Altura Observada ($ao$) a Altura Aparente ($aa$)
-2.  **Depresión del Horizonte ($Dp$):** Como el ojo del observador está elevado (por ejemplo, a 3 metros sobre el mar), vemos un horizonte "aparente" que está curvado hacia abajo respecto al horizonte "astronómico" perfecto. Al medir desde ese horizonte más bajo, la altura que medimos es engañosamente más grande. **Siempre se resta (-)**. Se busca en la Tabla C de "Correcciones por Elevación del Observador" en el Almanaque.
-    *   *Obtenemos:* $aa = ao - Dp$
+### Paso 3: Correcciones Astronómicas y Ópticas (Altura Verdadera, $a_v$)
+Las "Tablas Principales" del Almanaque o las fórmulas integran:
+3.  **Refracción Astronómica ($C_{\text{ref}}$):** La atmósfera terrestre actúa como una lente convergente. El rayo de luz del astro se curva hacia la normal, "levantando" virtualmente el astro. Para altas alturas ($>15^\circ$), $C_{\text{ref}} \approx \frac{58.2''}{\tan(a_a)}$. Para alturas menores, la refracción es extrema y el cálculo pierde fiabilidad. **Siempre es negativa**.
+4.  **Paralaje en Altura ($C_{\text{par}}$):** Solo vital en Luna y planetas cercanos. El Almanaque da coordenadas desde el centro de la Tierra (geocéntricas), pero tú mides desde la superficie (topocéntrico). Como miras "desde arriba", el astro se ve más bajo. **Siempre es positiva**.
+    Fórmula: $C_{\text{par}} = HP \cdot \cos(a_a)$, donde $HP$ es el Paralaje Horizontal Ecuatorial.
+5.  **Semidiámetro ($C_{\text{SD}}$):** Para el Sol y la Luna. Medimos el Limbo Inferior (borde de abajo). Hay que **sumar** el semidiámetro aparente (aprox $16'$). Si medimos el Limbo Superior (por estar nublado abajo), se **resta**.
+    **Aumento de la Luna:** Si la Luna está muy alta en el cielo, está $6000 \text{ km}$ (el radio de la Tierra) más cerca de ti que si estuviera en el horizonte, por lo que su semidiámetro aparente aumenta ($+0.3'$ en el cénit).
 
-### Paso 3: De Altura Aparente ($aa$) a Altura Verdadera ($av$)
-Aquí agrupamos tres fenómenos atmosféricos y geométricos. En el Almanaque Náutico, las "Tablas Principales de Correcciones de Altura" nos dan un valor único ($Ct$) que agrupa a los tres.
-3.  **Refracción ($C_{ref}$):** La luz del astro se curva al atravesar las capas de la atmósfera (más densas cerca del agua). El astro parece estar "flotando" más alto de lo que realmente está. **Siempre se resta (-)**.
-4.  **Paralaje ($C_{par}$):** Diferencia de ángulo si observáramos desde la superficie frente al centro matemático de la Tierra. Muy notable en la Luna. **Siempre se suma (+)**.
-5.  **Semidiámetro ($C_{SD}$):** (Solo para Sol y Luna). Como son astros muy grandes, no podemos medir su centro a ojo. Medimos apoyando el "Limbo Inferior" (borde de abajo) en el horizonte, por lo que **hay que sumar (+)** el radio del astro. Si por algún motivo midiéramos el Limbo Superior, se resta (-).
+**Uso en examen:** En el examen se utiliza la Corrección Total ($C_t$) tabulada, que agrupa refracción y semidiámetro para un Sol medio, dejando unas tablas adjuntas para el mes y la luna.
+$$ a_v = a_a + C_t $$
 
-> En los exámenes de CY, lo normal es usar la tabla de corrección total de la página 387 del Almanaque.
-> $$ a_v = a_a + C_t $$
+---
 
-## 2. Situación por Rectas de Altura (Método de Marcq St. Hilaire)
+## 2. Resolución Analítica del Método de Marcq St. Hilaire (1875)
 
-Inventado a finales del siglo XIX, es el método universal para situarse en medio del océano a cualquier hora del día.
+El núcleo del sistema de posicionamiento oceánico radica en calcular la diferencia precisa entre tu "Estimación" y la "Realidad". 
 
-### El Concepto
-Nosotros *creemos* estar en un punto de la carta (Situación de Estima). Usando fórmulas, calculamos qué Altura debería tener el astro exactamente si estuviéramos en esa Estima. Si la altura que calculamos es *menor* que la que acabamos de medir de verdad con el sextante, significa que el astro está más alto en el cielo de lo previsto, ergo, estamos más cerca del astro que nuestra estima original.
+### Fase 1: Extracción de Coordenadas del Almanaque
+1.  **Datos de Partida:** HCL (Hora Civil del Lugar) o HCR (Hora Civil de Reloj) $\rightarrow$ Conversión a **Hora Universal (UTC o $H_{cG}$)** y fecha exacta.
+2.  **Situación Estima:** $l_e$ (Latitud estimada) y $L_e$ (Longitud estimada).
+3.  Entrando en el Almanaque con el UTC exacto:
+    *   **Declinación ($Dec$):** Interpolada para el minuto y segundo, tomando la corrección por variación horaria ($d$).
+    *   **Ángulo Horario de Greenwich ($h_G$):** $h_G = h_G(\text{hora}) + \text{pp}(\text{minutos, segundos})$.
 
-### Resolución Matemática Paso a Paso
-1.  **Situación de Estima ($le, Le$):** Establecemos nuestra Latitud ($l_e$) y Longitud ($L_e$) estimadas a la hora exacta UTC del disparo del sextante.
-2.  **Cálculo del Horario del Astro en Greenwich ($hG$):** Usando la hora UTC, entramos en las páginas diarias del Almanaque. Obtenemos el $hG$ de la hora entera, y le sumamos la parte proporcional de los minutos y segundos exactos.
-3.  **Ángulo Horario Local ($hL$):**
-    $$ h_L = h_G + L_e \quad \text{(Sumar si la Longitud es Este, Restar si es Oeste)} $$
-    *(Nota: Si hL > 360º, se le restan 360º. Si hL < 0º, se le suman 360º).*
-4.  **Ángulo en el Polo ($P$):** Para la calculadora, se convierte el $hL$ en $P$. 
-    *   Si $hL < 180^\circ$, el astro está al Oeste. $P = hL$ (W).
-    *   Si $hL > 180^\circ$, el astro está al Este. $P = 360^\circ - hL$ (E).
-5.  **Declinación ($Dec$):** Se saca del Almanaque para la hora UTC exacta, interpolando los minutos.
-6.  **Cálculo de la Altura Estimada ($a_e$) [Fórmula de la Cosenusa]:**
+### Fase 2: El Triángulo de Posición
+4.  **Ángulo Horario Local ($h_L$):**
+    $$ h_L = h_G + L_e $$
+    *   (Adoptando criterio de signos Longitud: Este $+$, Oeste $-$). Se ajusta al rango $[0^\circ, 360^\circ]$.
+5.  **Ángulo en el Polo ($P$):**
+    *   Si $h_L < 180^\circ \implies P = h_L$ (Astro al Oeste, bajando).
+    *   Si $h_L > 180^\circ \implies P = 360^\circ - h_L$ (Astro al Este, subiendo).
+    *   *Nota analítica:* La fórmula de Borda o la Cosenusa usa $\cos(P)$. A efectos de cálculo puro, $\cos(h_L) = \cos(P)$ en todos los cuadrantes.
+
+### Fase 3: Ecuación Trigonométrica (Cálculo de $a_e$ y $Z$)
+6.  **Altura Estimada ($a_e$) (Cosenusa de Lados):**
     $$ \sin(a_e) = \sin(l_e) \cdot \sin(Dec) + \cos(l_e) \cdot \cos(Dec) \cdot \cos(P) $$
-    *(Crucial: Si $l_e$ y $Dec$ tienen DISTINTO nombre -una Norte y otra Sur-, el primer término se vuelve negativo).*
-7.  **Cálculo del Azimut Verdadero ($Z_v$):**
-    $$ \cot(Z) = \frac{\cos(l_e) \cdot \tan(Dec)}{\sin(P)} - \frac{\sin(l_e)}{\tan(P)} $$
-8.  **Diferencia de Alturas ($\Delta a$):**
+    **ATENCIÓN A LOS SIGNOS:** 
+    Si $l_e$ y $Dec$ están en el mismo hemisferio (mismo "Nombre", ej: N y N), ambas son positivas.
+    Si están en distinto hemisferio (ej: $l_e$ N y $Dec$ S), $\sin(Dec)$ y $\cos(Dec)$ generarán que el primer término de la suma sea de signo opuesto o debes introducir $Dec$ como un valor negativo. 
+    $a_e = \arcsin(\text{resultado})$.
+
+7.  **Azimut Verdadero ($Z_v$):**
+    Fórmula de las Cotangentes (Regla de Neper):
+    $$ \cot(Z) = \frac{\cos(l_e) \cdot \tan(Dec) - \sin(l_e) \cdot \cos(P)}{\sin(P)} $$
+    Al aplicar arcotangente $\arctan(\frac{1}{\cot(Z)})$, obtienes el Azimut Cuadrantal (Ej: $N 45^\circ E$, o $S 130^\circ W$). Hay que convertirlo a Azimut Circular ($0^\circ - 360^\circ$) según en qué cuadrante geográfico se halle el astro (definido por el nombre de la latitud y si $h_L$ indica que está al E o al W).
+
+### Fase 4: La Determinante St. Hilaire
+8.  **Diferencia de Alturas ($\Delta a$ o $\Delta$):**
     $$ \Delta a = a_v - a_e $$
-    *   $\Delta a$ **positivo (+):** Vas Hacia el astro. Se mide la distancia desde la estima hacia el mismo Azimut.
-    *   $\Delta a$ **negativo (-):** Vas En Contra. Se mide en dirección contraria ($Z_v + 180^\circ$).
+    *   Si $\Delta a$ es **Positivo (+)**: $a_v > a_e$. El astro está "más alto" en la realidad que en la estima, lo que implica que el buque está más cerca del punto geográfico del astro. Se avanza la estima **HACIA** el $Z_v$.
+    *   Si $\Delta a$ es **Negativo (-)**: $a_v < a_e$. El barco está más alejado. Se retrasa la estima **EN CONTRA** (rumbo $Z_v \pm 180^\circ$).
 
-### El Trazado en la Carta
-Desde el punto de Estima, trazas una línea en la dirección del Azimut. Marcas en esa línea la distancia $\Delta a$ (1' = 1 milla). En ese nuevo punto, trazas una recta perpendicular al Azimut. ¡Felicidades, acabas de trazar tu Recta de Altura! Tu barco está en esa línea recta.
+---
 
-```mermaid
-graph LR
-    E((Estima)) -- "Azimut Zv" --> P[Punto Determinativo]
-    E -. "Distancia: Diferencia de Alturas (Δa)" .- P
-    P ---|"Perpendicular (90º)"| R[Recta de Altura]
-    
-    style E fill:#f9f,stroke:#333
-    style R stroke:#f00,stroke-width:4px
-```
+## 3. Casos Extremos, Especiales y Edge Cases
 
-## 3. Situación Verdadera (Corte de dos Rectas)
+### A. El Sol de Medianoche y Alturas Circumpolares
+En altas latitudes ($l > 66.5^\circ$), el Sol puede no ocultarse, cruzando el meridiano en tránsito inferior. En este caso:
+*   $h_L = 180^\circ$, por tanto $P = 180^\circ$. El coseno de $180^\circ$ es $-1$.
+*   La Altura Meridiana Inferior es la mínima altura.
+*   Fórmula simplificada: $a_v = l_e + Dec - 90^\circ$ (cuando están en el mismo hemisferio).
 
-Una recta no da una posición aislada, necesitas dos rectas que se crucen en un punto (Situación Verdadera).
+### B. El Paso por el Cénit ($a_v \approx 90^\circ$)
+Si navegas en los trópicos y la Declinación del astro se iguala a tu Latitud ($l_e \approx Dec$), el astro pasará por la vertical de tu cabeza ($a_v = 90^\circ$).
+*   **Problema de Singularidad Matemática:** A medida que la altura tiende a $90^\circ$, el radio del círculo de altura tiende a 0. La Recta de Altura (que es una tangente al círculo de altura proyectada en la carta náutica Mercator) deja de ser recta y se curva severamente, arruinando el teorema de Marcq St. Hilaire y causando enormes errores de ploteo.
+*   **Solución:** No disparar el sextante si el astro tiene $a_v > 85^\circ$, salvo para cálculos de latitud directa por paso meridiano.
 
-*   **Observación Estelar Simultánea:** En el Crepúsculo Náutico, un buen oficial puede "disparar" a tres estrellas diferentes (ej: Vega, Sirio y Arcturus) en un lapso de 5 minutos. Trazas las tres rectas y, donde se cortan formando un pequeño triángulo, ahí estás.
-*   **Traslado de la Recta del Sol (Recta de Mañana y Meridiana):** A las 09:00 disparas al Sol y trazas una recta de altura. Navegas a Rumbo=090º y Velocidad=10 nudos durante 4 horas (hasta las 13:00). A las 13:00, "agarras" físicamente la recta dibujada a las 09:00 y la trasladas 40 millas náuticas enterita en dirección 090º. Luego disparas la Meridiana a las 13:00. Donde se cruza la Meridiana con tu vieja recta trasladada, es tu situación Verdadera de las 13:00.
+### C. Translación Analítica de Rectas de Altura
+Para lograr una Situación Verdadera por dos rectas de Sol separadas horas en el tiempo, debemos "trasladar" la primera recta por el Rumbo y Distancia navegada.
+En lugar de dibujar y arrastrar escuadra y cartabón, analíticamente se calcula el Avance del vector:
+1.  Se halla el $\Delta l$ y el $\Delta L$ navegados (Estima de Loxodrómica o Traverse Tables).
+2.  Se aplica esa nueva estima para el cálculo de la Recta 2, haciendo que el punto Determinativo de la Recta 2 contenga indirectamente el traslado de la nave, o bien se calcula matemáticamente el corte de dos rectas como un sistema de dos ecuaciones lineales (la Ecuación de la Recta de Altura es: $\Delta l \cdot \cos(Z_v) + \Delta L \cdot \cos(l) \cdot \sin(Z_v) = \Delta a$).
 
-## 4. El "Milagro" de la Altura Meridiana
+---
 
-La Latitud por la Altura Meridiana es el cálculo más antiguo, bello y sencillo de la náutica.
-Se realiza en el mediodía verdadero, el preciso instante en el que el Sol cruza por nuestro propio meridiano (Azimut exactamente 000º o 180º). Es cuando el Sol "cuélga" más alto en todo el día.
+## 4. Ecuaciones Extra: Latitud por Altura de la Estrella Polar
 
-En este instante mágico, el triángulo esférico se colapsa en una línea plana, por lo que **no se necesitan logaritmos ni cosenos**.
+La Estrella Polar describe un círculo levógiro diminuto alrededor del Polo Norte Celeste (su $Dec \approx 89^\circ 20'$). No está exactamente en el eje. 
+La latitud exacta ($l_v$) no es igual a su Altura Verdadera, hay que aplicar una corrección tabulada basada en el Ángulo Horario Local de Aries ($h_{L\gamma}$), el cual indica la fase de rotación del Polo.
 
-**Fórmula de la Latitud Meridiana:**
-$$ l_v = Z + Dec $$
-
-Donde:
-*   $a_v$: Altura verdadera medida con el sextante.
-*   $Z$ (Distancia Cenital) = $90^\circ - a_v$. (Llevará signo del punto cardinal donde *no* esté el astro. Si vemos el Sol al Sur, la distancia al Cenit "tira" hacia el Norte, luego $Z$ es Norte).
-*   $Dec$: La sacas del Almanaque.
-
-**Regla de los signos:** Si $Z$ y $Dec$ tienen el mismo nombre (ej: los dos Norte), se suman, y el resultado es Norte. Si tienen distinto nombre (ej: $Z$ Norte y $Dec$ Sur), se restan, y el resultado lleva el nombre de la cifra más grande.
+Fórmula tradicional simplificada del Almanaque:
+$$ l_v = a_v - 1^\circ + \text{Tab. I} + \text{Tab. II} + \text{Tab. III} $$
+Donde las tablas I, II y III purgan la posición angular exacta de Polaris dependiente del $h_{L\gamma}$, la Latitud aproximada y el mes del año. No requiere resolver triángulos complejos, proveyendo una Latitud de extrema precisión instantánea para navegantes del Hemisferio Norte.

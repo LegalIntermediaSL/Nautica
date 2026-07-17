@@ -1,65 +1,71 @@
-# PER - Tema 10: Teoría de Navegación Cartográfica
+# PER - Tema 10: Teoría de Navegación Cartográfica y Geodesia Matemática
 
-Este tema es el cimiento absoluto. Asienta las bases matemáticas, geográficas y magnéticas sin las cuales es físicamente imposible resolver posteriormente un solo ejercicio de trazado sobre la carta de navegación. Todo buen patrón debe entender el mundo en el que navega.
+Este tema es el cimiento absoluto. Asienta las bases matemáticas, geodésicas y magnéticas sin las cuales es físicamente imposible resolver posteriormente un solo ejercicio de trazado sobre la carta de navegación. Todo buen patrón debe entender con rigor científico el mundo sobre el que navega, un mundo que no es plano, sino un elipsoide complejo.
 
 ---
 
-## 1. Geometría de la Esfera Terrestre
+## 1. Geometría de la Esfera Terrestre y Geodesia de Precisión
 
-Aunque nuestro planeta está ligeramente achatado por los polos (Elipsoide), a efectos de navegación clásica básica y cartas Mercator, lo consideramos una esfera perfecta.
+Aunque nuestro planeta está ligeramente achatado por los polos debido a la fuerza centrífuga de su rotación, a efectos de navegación clásica básica y cartas Mercator, lo consideramos una esfera perfecta. Sin embargo, la navegación moderna requiere comprender los **Datums Geodésicos**, como el WGS84 (World Geodetic System 1984), que modela la Tierra como un elipsoide de revolución matemático:
+*   **Semieje Mayor (Ecuatorial, $a$):** $6.378.137,0$ metros.
+*   **Semieje Menor (Polar, $b$):** $6.356.752,3142$ metros.
+*   **Achatamiento ($f$):** $f = \frac{a - b}{a} \approx \frac{1}{298,257223563}$.
 
-*   **Eje Terrestre:** Es la varilla imaginaria que atraviesa el planeta y sobre la cual la Tierra da una vuelta cada 24 horas. Los puntos donde esta varilla sale al exterior son el Polo Norte (Pn) y el Polo Sur (Ps) geográficos.
-*   **Ecuador:** Si cortamos la Tierra por la mitad con un plano perpendicular al Eje Terrestre, obtenemos el círculo más grande posible: el Ecuador. Divide el planeta en Hemisferio Norte y Hemisferio Sur.
-*   **Paralelos:** Son cortes paralelos al Ecuador. Son "anillos" cada vez más pequeños a medida que nos acercamos a los polos.
-*   **Meridianos:** Son grandes círculos verticales que cortan la Tierra de Norte a Sur, pasando siempre por ambos Polos. Es como los gajos de una naranja. Todos los meridianos miden lo mismo y **se cruzan en los polos**. El meridiano elegido por la humanidad como "Cero" es el Meridiano de Greenwich (Londres).
+### 1.1 Elementos de Referencia Clásica
+*   **Eje Terrestre:** Es la varilla imaginaria que atraviesa el planeta y sobre la cual la Tierra da una vuelta completa (aproximadamente 23 horas, 56 minutos y 4 segundos, un día sideral). Los puntos de intersección del eje con la corteza son el Polo Norte (Pn) y Polo Sur (Ps).
+*   **Ecuador:** El círculo máximo perpendicular al Eje Terrestre, fruto del corte de un plano que pasa por el centro del elipsoide terrestre. Divide el planeta en Hemisferios Norte y Sur. En el Ecuador, la aceleración centrípeta reduce ligeramente la gravedad neta ($g \approx 9,78 \text{ m/s}^2$).
+*   **Paralelos:** Son círculos menores paralelos al Ecuador. Su circunferencia decrece al acercarnos a los polos según la relación $C = 2\pi R \cos(l)$.
+*   **Meridianos:** Son grandes semicírculos elípticos de meridiano a meridiano, pasando por ambos Polos. El meridiano primario (Longitud $0^\circ$) es el Meridiano de Greenwich (Londres).
 
-## 2. Coordenadas Geográficas (El DNI de una posición)
+## 2. Coordenadas Geográficas (El DNI Vectorial de una posición)
 
-Para clavar un punto exacto en la inmensidad del océano, usamos un eje de coordenadas basado en los paralelos y los meridianos, medido en Grados ($^\circ$), Minutos (') y décimas de minuto.
+Para clavar un punto exacto en la inmensidad del océano, usamos un sistema de coordenadas esféricas medido en Grados ($^\circ$), Minutos (') y décimas de minuto.
 *(Nota: Un grado tiene 60 minutos. $1^\circ = 60'$)*.
 
-*   **Latitud ($l$):** Nos dice lo arriba o abajo que estamos en el globo. Es el arco medido desde el Ecuador hasta el paralelo del barco.
-    *   Se mide de **$0^\circ$ (Ecuador) a $90^\circ$ (Polos)**.
-    *   Debe indicar siempre si es **Norte (N)** o **Sur (S)**.
-    *   *Propiedad mágica:* **1 minuto de Latitud equivale exactamente a 1 Milla Náutica (1852 metros)** en la superficie del planeta.
-*   **Longitud ($L$):** Nos dice lo a la derecha o izquierda que estamos. Es el arco medido por el Ecuador desde el Meridiano de Greenwich hasta el meridiano del barco.
-    *   Se mide de **$0^\circ$ (Greenwich) a $180^\circ$ (Antimeridiano)**.
-    *   Debe indicar siempre si es **Este (E)** u **Oeste (W - West)**.
-    *   *(En la costa española peninsular, casi siempre navegaremos en Longitud Oeste y Latitud Norte).*
+*   **Latitud ($l$ o $\phi$):** El ángulo formado por la vertical del observador con el plano ecuatorial. Se mide a lo largo del meridiano local, desde el Ecuador hasta el paralelo del barco.
+    *   Se mide de **$0^\circ$ a $90^\circ$** indicando **Norte (N) o Sur (S)**.
+    *   *Propiedad mágica:* La longitud del arco de 1 minuto de latitud varía levísimamente por el achatamiento polar, pero se asume universalmente que **1 minuto de Latitud = 1 Milla Náutica (1852 metros)**. En rigor geodésico, $1 \text{ mn} = \frac{\pi}{10800} R_m$, donde $R_m$ es el radio medio.
+*   **Longitud ($L$ o $\lambda$):** El ángulo diédrico formado por el plano del Meridiano de Greenwich y el plano del meridiano del lugar.
+    *   Se mide de **$0^\circ$ a $180^\circ$** indicando **Este (E) u Oeste (W - West)**.
+    *   El Apartamiento ($A$, distancia física en millas entre dos meridianos a una latitud $l$) decae rápidamente con el coseno: $A = \Delta L \cdot \cos(l)$.
 
-## 3. Direcciones, Rumbos y Magnetismo Terrestre
+## 3. Direcciones, Rumbos y Dinámica del Magnetismo Terrestre
 
-La **Rosa de los Vientos** está dividida en 360 grados, comenzando en el Norte ($000^\circ$) y contando siempre en el sentido de las agujas del reloj (Este=$090^\circ$, Sur=$180^\circ$, Oeste=$270^\circ$).
-El **Rumbo ($R$)** es el ángulo físico que forma la línea central (crujía) de nuestro barco con un "Norte" de referencia. Pero el problema histórico de la navegación es que existen TRES Nortes diferentes:
+La **Rosa de los Vientos** está dividida en 360 grados, contando desde el Norte ($000^\circ$) en sentido levógiro (horario).
+El **Rumbo ($R$)** es el ángulo físico que forma la crujía del buque respecto a una dirección de referencia. La complejidad surge del Geomagnetismo.
 
-### 3.1 Los Tres Nortes
-1.  **Norte Verdadero ($N_v$):** Es el norte geográfico real, el Polo Norte físico, el de los osos polares. Es la línea vertical negra que está **impresa en las cartas náuticas de papel**.
-2.  **Norte Magnético ($N_m$):** El núcleo de hierro líquido de la Tierra genera un campo magnético colosal. Este campo atrae las brújulas hacia un Polo Norte Magnético, pero este punto NO coincide con el Polo Norte geográfico (está en Canadá y se mueve cada año).
-3.  **Norte de Aguja ($N_a$):** Es hacia donde apunta torcidamente la aguja de la brújula (el compás) **instalada a bordo de TU barco**. Está afectada por el campo magnético de la Tierra Y ADEMÁS por el hierro del motor de tu barco, tu emisora VHF y los altavoces de tu cubierta.
+### 3.1 El Campo Magnético y los Tres Nortes
+La geodinamo terrestre, impulsada por las corrientes convectivas de aleaciones de hierro y níquel en el núcleo externo líquido (Efecto Dinamo), genera una magnetosfera que oscila. Esto crea tres vectores de Norte distintos:
+1.  **Norte Verdadero ($N_v$):** La dirección estática hacia el eje de rotación (Polo Norte geográfico). Es el eje-$Y$ positivo sobre la cuadrícula cilíndrica de una carta.
+2.  **Norte Magnético ($N_m$):** Hacia donde confluyen las líneas de flujo del campo geomagnético. Actualmente en movimiento migratorio de Canadá hacia Siberia a una tasa de ~50 km/año.
+3.  **Norte de Aguja ($N_a$):** El vector resultante de sumar vectorialmente el campo magnético terrestre y el campo ferromagnético parásito generado por el propio buque (motores, quilla, alternadores).
 
-## 4. Cálculo de Errores: Declinación, Desvío y Corrección Total
+## 4. Cálculo Vectorial de Errores: Declinación, Desvío y Corrección Total
 
-Para trazar una línea recta en el mapa (Norte Verdadero) basándote en la lectura de la brújula de plástico de tu timón (Norte de Aguja), tienes que calcular y aplicar matemáticamente dos errores.
+Para transformar el dato físico de la brújula en un rumbo loxodrómico traza-ble, se aplica álgebra simple de ángulos.
 
-### Error 1: Declinación Magnética ($dm$)
-Es el ángulo geológico entre el Norte Verdadero y el Norte Magnético. 
-Es culpa del planeta. Viene impresa en la rosa de los vientos de todas las cartas náuticas indicando un año base y lo que varía anualmente (ya que el magma terrestre se mueve).
-*   *Regla de Signos:* Si apunta hacia el **Este (E)** es matemática **Positiva (+)**. Si apunta hacia el **Oeste (W)** es matemática **Negativa (-)**.
+### Error 1: Declinación Magnética ($dm$ o $D$)
+Ángulo entre $N_v$ y $N_m$. Este dato depende de las coordenadas $(l, L)$ y del tiempo ($t$). En las cartas, viene tabulado con un incremento secular. 
+$$ dm_t = dm_0 + \Delta t \cdot (\text{variación anual}) $$
+*   *Convención de Signos:* Este ($+$), Oeste ($-$).
 
 ### Error 2: Desvío de Aguja ($\Delta$)
-Es el ángulo mecánico entre el Norte Magnético y el Norte de Aguja. 
-Es culpa exclusiva de tu barco (de sus hierros). **Varía dependiendo de hacia dónde estés apuntando la proa**. El instalador del compás te entrega un papel llamado "Tablilla de Desvíos" que te dice qué error tienes en cada rumbo.
-*   *Regla de Signos:* Igual que arriba. **Este (+) / Oeste (-)**.
+Ángulo entre $N_m$ y $N_a$. Surge de la interferencia constructiva/destructiva de los hierros "dulces" (magnetismo inducido, dependiente del rumbo) e "imanes duros" (magnetismo permanente del buque) modulados por ecuaciones de Poisson complejas. Se tabula en la "Tablilla de Desvíos".
+*   *Convención de Signos:* Este ($+$), Oeste ($-$).
 
 ### La Corrección Total ($C_t$)
-Es simplemente sumar algebraicamente (respetando los signos menos) los dos errores para convertirlos en un solo paquete de error corregible.
-$$ C_t = d_m + \Delta $$
+Es la sumatoria algebraica de las dos perturbaciones:
+$$ C_t = dm + \Delta $$
 
-### Ecuaciones Fundamentales de Conversión
-Si estás en la bitácora mirando la brújula y quieres llevar esa lectura al mapa de papel:
+### Ecuaciones Fundamentales del Triángulo de Rumbos
+Para plasmar la lectura de la aguja en el mundo real (carta):
 $$ R_v = R_a + C_t $$
 *(Rumbo Verdadero = Rumbo de Aguja + Corrección Total)*
 
-Si has trazado una línea perfecta en tu mapa de papel hacia tu destino y necesitas decirle al timonel qué número poner en la brújula para no estrellarse:
+Para indicarle al timonel qué lectura mantener basándonos en un trazado cartográfico ideal:
 $$ R_a = R_v - C_t $$
 *(Rumbo de Aguja = Rumbo Verdadero - Corrección Total)*
+
+Para las marcaciones y demoras (observaciones de puntos conspicuos de la costa con la pínula):
+$$ D_v = D_a + C_t $$
+De manera análoga, la demora verdadera ($D_v$) corrige el sesgo magnético local de nuestra observación.

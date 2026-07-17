@@ -1,76 +1,108 @@
-# Patrón de Yate - Tema 1: Seguridad y Estabilidad Avanzada
+# Patrón de Yate - Tema 1: Seguridad y Estabilidad Avanzada (Nivel de Arquitectura Naval)
 
-En travesías de altura (hasta 150 millas de la costa), la supervivencia del buque y de la tripulación recae al 100% sobre las decisiones tácticas del patrón y la integridad física del barco. No hay helicópteros que lleguen en 10 minutos.
+En travesías de altura (hasta 150 millas de la costa), la supervivencia del buque y de la tripulación recae al 100% sobre las decisiones tácticas del patrón y la integridad física del barco. No hay helicópteros que lleguen en 10 minutos. Es imprescindible que el patrón comprenda la teoría del buque a nivel de ingeniería para predecir el comportamiento dinámico del casco en la mar.
 
 ---
 
-## 1. Arquitectura y Estabilidad Transversal
+## 1. Arquitectura y Estabilidad Transversal: Fundamentos Matemáticos
 
-La estabilidad es la propiedad de un barco para recuperar su posición de equilibrio (ponerse adrizado) cuando una fuerza externa (el viento o las olas) lo escora. Se rige por el equilibrio de dos fuerzas fundamentales.
+La estabilidad es la propiedad intrínseca de un buque para recuperar su posición de equilibrio (adrizarse) tras ser escorado por una fuerza externa (viento o mar). Este principio obedece a las leyes fundamentales de la hidrostática de fluidos incompresibles.
 
-### Fuerzas y Puntos Críticos (G, C, M)
-*   **Principio de Arquímedes:** El casco sumergido desaloja un volumen de agua cuyo peso es igual al empuje vertical hacia arriba que experimenta el barco.
-*   **Centro de Gravedad (G):** El punto teórico donde se concentra todo el Peso total del barco y su carga, actuando verticalmente hacia abajo.
-    *   *Dinámica de G:* Si subes un peso a cubierta, G sube. Si gastas combustible de los tanques del fondo de la sentina, G sube (porque pierdes peso bajo). Si embarcas agua en la sentina, G baja (favorable) pero pierdes flotabilidad y creas "superficies libres" (muy peligroso).
-*   **Centro de Carena (C):** El centro geométrico exacto del volumen de agua que el casco ha desplazado. Es donde se aplica la fuerza de Empuje, actuando hacia arriba.
-    *   *Dinámica de C:* Cuando el barco escora, la forma del agujero que hace en el agua cambia. Por lo general, el volumen sumergido se desplaza hacia la banda de babor/estribor, así que C se mueve rápidamente hacia la banda escorada.
-*   **Metacentro (M):** Al escorar un ángulo pequeño, si trazamos una línea vertical hacia arriba desde el nuevo Centro de Carena escorado, cruzará la línea central (crujía) del barco en un punto llamado Metacentro. Funciona como el punto de anclaje de un péndulo.
+### 1.1 Fuerzas y Puntos Críticos ($G, C, M$)
 
-### El Par de Estabilidad y el Brazo Adrizante (GZ)
-Cuando el viento escora el barco, G (que sigue en el medio) y el nuevo C (que se ha desplazado hacia el lateral sumergido) ya no están alineados verticalmente. Esto crea un par de fuerzas (un "volante" de rotación).
+*   **Principio de Arquímedes y Desplazamiento ($\Delta$):** El casco sumergido desaloja un volumen de agua ($\nabla$) cuyo peso es igual al empuje vertical hacia arriba que experimenta el barco.
+    $$ \Delta = \nabla \cdot \rho $$
+    Donde $\rho$ es la densidad del agua de mar (aprox. $1.025 \text{ t/m}^3$). El Desplazamiento se mide en toneladas y es constante para un calado dado.
 
-*   **Brazo Adrizante (GZ):** Es la distancia física horizontal entre el Centro de Gravedad y la vertical del Centro de Carena. Cuanto más grande sea GZ, más fuerza hará el barco para ponerse derecho.
-*   **Condición de Equilibrio Estable:** El Metacentro (M) debe estar **POR ENCIMA** del Centro de Gravedad (G). Esto genera un par adrizante positivo.
-*   **Condición de Equilibrio Inestable (Peligro de Vuelco):** Si G sube demasiado (llevas demasiada gente en el flybridge, exceso de pertrechos amarrados al techo de la cabina, depósitos bajos vacíos) y se coloca por encima de M, el par de fuerzas se invierte (Par Escorante) y empujará al barco a escorar aún más hasta dar la vuelta campana.
+*   **Centro de Gravedad ($G$):** El punto teórico donde se concentra el sumatorio de pesos del buque y su carga. Actúa verticalmente hacia abajo. Sus coordenadas ($X_G, Y_G, Z_G$) respecto a las perpendiculares y línea base dictan el comportamiento estático.
+    *   *Dinámica de $G$:* Si añadimos un peso $p$ a una altura $z$, el nuevo $KG'$ (altura de $G$ sobre la quilla $K$) se calcula ponderando momentos:
+        $$ KG' = \frac{\Delta \cdot KG + p \cdot z}{\Delta + p} $$
+
+*   **Centro de Carena ($C$ o $B$ - Center of Buoyancy):** El centroide geométrico del volumen de agua desplazado $\nabla$. Su altura sobre la quilla se denomina $KC$ o $KB$.
+    *   *Dinámica de $C$:* Al escorar un ángulo $\theta$, el volumen sumergido cambia asimétricamente. El nuevo centro $C'$ se desplaza hacia la banda escorada.
+
+*   **Metacentro Transversal ($M$):** Al escorar un ángulo infinitesimal $d\theta$, la nueva vertical de empuje que pasa por $C'$ interseca al plano diametral inicial en el punto $M$.
+
+### 1.2 Radio Metacéntrico ($BM$) e Inercia de Flotación
+
+La distancia entre el Centro de Carena y el Metacentro se denomina radio metacéntrico ($BM$). Según la hidrostática, este valor depende exclusivamente del momento de inercia de la superficie de flotación respecto al eje longitudinal ($I_L$) y del volumen de carena ($\nabla$).
+$$ BM = \frac{I_L}{\nabla} $$
+Por lo tanto, la altura del Metacentro sobre la quilla ($KM$) es un parámetro que depende únicamente del calado y de las formas del casco:
+$$ KM = KB + BM $$
+
+### 1.3 Altura Metacéntrica ($GM$) y Par Adrizante
+
+El parámetro fundamental de estabilidad inicial (para escora $\theta < 10^\circ$) es la Altura Metacéntrica Inicial ($GM$), distancia entre $G$ y $M$.
+$$ GM = KM - KG $$
+
+Cuando el viento escora el barco un ángulo $\theta$, $G$ (invariable) y $C'$ (desplazado) generan un par de fuerzas. La distancia horizontal entre las verticales de $G$ y $C'$ es el **Brazo Adrizante ($GZ$)**.
+Para ángulos pequeños, la fórmula del brazo adrizante es:
+$$ GZ = GM \cdot \sin(\theta) $$
+
+El **Momento Adrizante ($M_A$)** se define como:
+$$ M_A = \Delta \cdot GZ = \Delta \cdot GM \cdot \sin(\theta) $$
+
+*   **Equilibrio Estable:** $GM > 0$ (M por encima de G). El par $M_A$ es restitutivo y endereza el barco.
+*   **Equilibrio Inestable:** $GM < 0$ (G por encima de M). El par se convierte en momento escorante, volcando el barco hasta encontrar un ángulo de equilibrio transversal o zozobrar (dar la vuelta campana).
+*   **Equilibrio Indiferente:** $GM = 0$. El buque se queda en la escora inicial inducida sin fuerza para recuperarse.
 
 ```mermaid
 graph LR
-    A[Viento escora el casco] --> B[C se desplaza a sotavento]
-    B --> C{Posición de G frente a M}
-    C -- G debajo de M --> D[Par Adrizante Positivo: El barco se endereza]
-    C -- G sobre M --> E[Par Escorante Negativo: El barco VUELCA]
+    A[Viento escora el casco] --> B[C se desplaza a sotavento formando C']
+    B --> C{Evaluación de GM}
+    C -- GM > 0 --> D[GZ Positivo: Momento Adrizante restitutivo]
+    C -- GM < 0 --> E[GZ Negativo: Momento Escorante - ¡Vuelco!]
 ```
 
-### El Peligro de las Superficies Libres
-Si tienes un depósito de agua ancho a medio llenar (o agua embarcada moviéndose por el suelo de la cabina), al escorar el barco, toda esa agua corre hacia el lado bajo. Esto desplaza físicamente el Centro de Gravedad hacia ese lado de golpe, reduciendo dramáticamente el Brazo Adrizante (GZ) y pudiendo causar un vuelco instantáneo. Para evitarlo, los tanques llevan rompeolas internos (mamparos longitudinales).
+## 2. Estabilidad Dinámica y a Grandes Ángulos (Curvas de Atwood y Moseley)
 
-> [!WARNING]
-> La Regla de Oro del Patrón de Yate frente a temporales: **Bajar el Centro de Gravedad**. Trincar pertrechos pesados abajo en la sentina, vaciar depósitos altos, rellenar los bajos si es posible, y prohibir el acceso a la cubierta superior.
+Para escoras grandes ($\theta > 10^\circ$), el Metacentro ya no se mantiene fijo en el eje, describiendo la curva evoluta metacéntrica. Se usa la **Fórmula de Atwood** para calcular $GZ$ de forma exacta:
+$$ GZ = \frac{v \cdot h}{\nabla} - BG \cdot \sin(\theta) $$
+Donde $v \cdot h$ es el momento de traslación de las cuñas de emersión/inmersión.
 
-## 2. Abandono de Buque y Supervivencia
+La representación de $GZ$ en función de $\theta$ conforma la **Curva de Estabilidad Estática Transversal**.
 
-### ¿Cuándo abandonar?
-La máxima del mar es clara: **"Jamás debes abandonar el barco hasta que el barco te abandone a ti (hundiéndose literalmente bajo tus pies)"**.
-Se entra en la balsa salvavidas subiendo a ella, nunca bajando (es decir, el barco se ha hundido hasta el nivel del agua). ¿Por qué?
-1. Un barco desarbolado o volcado a medias es infinitamente más visible desde el aire (aviones SAR) que una diminuta balsa naranja entre olas de 5 metros.
-2. La balsa vuelca fácilmente, produce un frío letal, hacinamiento y mareos severos.
-Solo se abandona prematuramente si hay un incendio incontrolable o riesgo inminente de explosión de gas.
+### 2.1 Estabilidad Dinámica ($E_D$)
 
-### Zafas Hidrostáticas (Hammar H20)
-La balsa salvavidas y la radiobaliza (EPIRB) deben instalarse en el exterior con zafas hidrostáticas y atadas al barco.
-Si el barco se hunde en segundos y no da tiempo a soltarlas a mano, cuando la presión del agua alcanza los 2 a 4 metros de profundidad, una cuchilla corta automáticamente la trinca. La balsa/baliza sale flotando a la superficie. En el caso de la balsa, lleva una rabiza de disparo (painter line) unida al barco; al subir, pega el tirón, la balsa se infla, y un eslabón débil (weak link) rompe la rabiza para que el barco que se hunde no arrastre a la balsa al fondo.
+Es el trabajo físico que realiza el par adrizante, o bien la energía requerida por fuerzas externas (rachas de viento, olas rompientes) para escorar el buque hasta un ángulo $\theta$. Se calcula integrando el Momento Adrizante respecto al ángulo de escora, lo cual equivale matemáticamente al área bajo la curva $GZ$.
+$$ E_D = \Delta \cdot \int_{0}^{\theta} GZ \, d\theta $$
 
-### La Bolsa de Supervivencia (Grab Bag)
-Aparte del kit que ya viene dentro de la balsa, en el barco debe haber un petate flotante y estanco listo para llevar:
+El conocimiento de esta energía es crítico para certificar la supervivencia de un yate frente a rachas de viento violentas según el criterio de la OMI (IMO Res. A.749).
+
+### 2.2 El Peligro de las Superficies Libres
+
+Si en el buque hay líquidos con superficie libre (tanques a medio llenar o sentinas inundadas), al escorar, el líquido se trasiega hacia la banda baha. Esto genera un par transversal que reduce artificialmente la altura metacéntrica efectiva.
+La reducción virtual del GM se calcula mediante:
+$$ \Delta GM = \frac{\rho_L \cdot i_L}{\rho_C \cdot \nabla} $$
+Donde $i_L$ es el momento de inercia de la superficie libre del tanque, $\rho_L$ la densidad del líquido del tanque, y $\rho_C$ la densidad del agua de mar.
+Para mitigar este efecto exponencial, es imprescindible el uso de **mamparos rompeolas longitudinales** que fragmentan la inercia $i_L$.
+
+> [!CAUTION]
+> Regla de Arquitectura Naval del PY: **Minimizar $KG$ y anular las superficies libres.** Trincar pesos bajos y llenar o vaciar completamente los tanques antes de enfrentar temporales cruzados.
+
+## 3. Abandono de Buque y Dispositivos de Supervivencia GMDSS
+
+El rigor de la supervivencia depende de aplicar estrictamente los protocolos y dominar los sistemas radioeléctricos modernos.
+
+### 3.1 Criterio de Abandono (El "Punto de No Retorno")
+**"Jamás debes abandonar el barco hasta que el barco te abandone a ti."** Se entra a la balsa subiendo a ella, cuando el mar ya alcanza la cubierta. El casco invertido sigue siendo el blanco radárico (RCS) y visual óptimo, mientras que una balsa es diminuta en un estado de mar Douglas 7. Solo el fuego incontrolable u hundimiento inminente (pérdida de flotabilidad de reserva) justifica la activación prematura.
+
+### 3.2 Zafas Hidrostáticas (Principio de Funcionamiento)
+Los modelos tipo Hammar H20 operan basándose en la presión de la columna de agua. Al sumergirse entre 2 y 4 metros, un diafragma cede venciendo un resorte de tarado de presión, disparando una guillotina o mecanismo que corta la trinca.
+La balsa asciende por flotabilidad positiva. La *rabiza de disparo* unida al barco da el tirón para la inflación por la botella de $CO_2/N_2$. Un *weak link* (eslabón débil con carga de rotura de $2.2 \pm 0.4 \text{ kN}$) se parte posteriormente, impidiendo que el buque que zozobra arrastre la balsa abierta hacia el fondo abisal.
+
+### 3.3 Bolsa de Supervivencia (Grab Bag)
+Adicional al SOLAS pack de la balsa, se porta:
 *   VHF portátil GMDSS estanca.
-*   Baterías de litio de repuesto precintadas.
-*   Documentación (Pasaportes en bolsa zip).
-*   Medicinas de la tripulación y Biodramina (el mareo extremo en balsa puede llevar a deshidratación fatal en 24h).
-*   Gafas graduadas de repuesto.
-*   Agua potable en envases flexibles y comida liofilizada extra.
-*   Mantas térmicas, espejo de señales, linternas impermeables.
+*   Baterías de litio no recargables.
+*   Documentación, pasaportes, EPIRB personal.
+*   Biodramina y medicina táctica. (El mareo grave acelera la deshidratación e hipotermia, pudiendo inducir un shock en 24-48 horas).
 
-## 3. Dispositivos de Salvamento (Aparamenta Oficial)
+### 3.4 Pirotecnia y Salvamento Activo
+*   **Bengalas rojas:** Señalización final. $\sim 15.000 \text{ candelas}$, 60 segundos. Empuñadas a sotavento, indicando posición a un medio de rescate visualizado.
+*   **Cohetes con paracaídas rojas:** Suben $\sim 300 \text{ m}$ quemando a $\sim 30.000 \text{ candelas}$. Velocidad de descenso $< 5 \text{ m/s}$. Rango de 25-35 millas.
+*   **Botes de humo naranjas:** Expansión pirotécnica diurna. $\sim 3 \text{ min}$. Facilita la referenciación del viento relativo al piloto del helo de salvamento SAR.
 
-### Material Pirotécnico
-1.  **Bengalas de Mano (Rojas):** Uso exclusivo nocturno y a corta distancia. Duran unos 60 segundos. Se sostienen extendiendo el brazo a sotavento. Avisan a un buque de rescate que ya está a la vista.
-2.  **Cohetes con Paracaídas (Rojos):** Uso diurno o nocturno para largo alcance (avisan a barcos tras el horizonte). Suben a 300 metros de altura y caen muy despacio. Visibles a 25-35 millas de noche. Disparar ligeramente a sotavento.
-3.  **Botes de Humo (Naranjas):** Uso exclusivo diurno. Se tiran al agua. Crean una nube naranja densa durante 3 minutos. Ideales para que un helicóptero o avión localice el punto exacto y evalúe la dirección del viento en superficie.
-
-### Chalecos Salvavidas (Lifejackets)
-En la zona 2 (60 millas), se exigen chalecos autoinflables de 150 Newtons. Cuentan con un sensor de sal o pastilla celulósica que se disuelve al caer al agua, pinchando la bombona de CO2 en 5 segundos. Llevan silbato, luz intermitente automática y cintas reflectantes.
-
-## 4. Equipo Radioeléctrico GMDSS / SMSSM
-
-*   **EPIRB (Radiobaliza de 406 MHz):** Es la última línea de defensa. Al activarse (manualmente en cubierta o hidrostáticamente), envía un pulso continuo a los satélites polares COSPAS-SARSAT. El satélite triangula su posición por efecto Doppler y retransmite a la estación costera el código hexadecimal (MMSI) del barco, indicando nombre, modelo, eslora y contactos de emergencia (todo registrado en Capitanía). Modelos modernos integran GPS interno para enviar las coordenadas exactas de inmediato, con margen de error de pocos metros. Batería mínima: 48 horas.
-*   **SART (Radar Transponder):** Llevado a la balsa. Responde de forma inteligente. Cuando una fragata de salvamento o un helicóptero SAR barren la zona con su radar de Navegación (Banda X, 9 GHz), el SART capta la radiación y emite una ráfaga. En la pantalla del radar del buque de rescate aparece instantáneamente una línea de 12 puntos o círculos gruesos que le marcan la Demora directa hacia ti. Batería: 96h en standby, 8h emitiendo a pleno rendimiento bajo interrogación.
+### 3.5 Equipamiento Radioeléctrico GMDSS/SMSSM Avanzado
+*   **EPIRB (406 MHz):** Radiobaliza de localización de siniestros. La portadora principal a $406.025 \text{ MHz}$ es interceptada por constelaciones LEOSAR (COSPAS-SARSAT), MEOSAR (Galileo/GPS) y GEOSAR. Envía el código hexadecimal de 15 dígitos que engloba el MID (país) y MMSI del yate, junto con las coordenadas obtenidas del GNSS interno. Precisión < 100 metros. También emiten balizamiento homing en $121.5 \text{ MHz}$.
+*   **SART (Búsqueda y Rescate Respondedor de Radar):** Transpondedor de Banda X (9.2 - 9.5 GHz). Al recibir el barrido del radar de navegación del rescatador, el SART transmite una respuesta de frecuencia de barrido rápido. Resulta en una línea radial de 12 arcos concéntricos en la pantalla del radar del buque de búsqueda, apuntando ineludiblemente a la posición de los náufragos.

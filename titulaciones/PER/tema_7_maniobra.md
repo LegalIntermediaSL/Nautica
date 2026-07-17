@@ -1,54 +1,67 @@
-# PER - Tema 7: Maniobra y Navegación a Motor (Física de la Hélice)
+# PER - Tema 7: Maniobra y Navegación a Motor (Cinemática, Dinámica de Fluidos y Física Aplicada)
 
-El arte de la maniobra exige dominar el barco en distancias muy cortas, como al atracar en un amarre estrecho con fuerte viento cruzado. El examen del PER exige conocer en profundidad la cinemática del buque y la física detrás del empuje de la hélice, porque un barco sin frenos ni asfalto no se comporta como un coche.
+El arte de la maniobra exige dominar el barco en distancias extremadamente cortas, asumiendo fuerzas externas invisibles. Un barco sin frenos ni fricción de asfalto no se comporta como un coche. Este tema aborda las matemáticas y la dinámica de fluidos (Hidrodinámica y Aerodinámica) de la maniobra.
 
 ---
 
-## 1. Fuerzas de la Hélice y el Timón
+## 1. Fuerzas de la Hélice y el Timón (Dinámica de Fluidos)
 
-En un barco de un solo motor (monomotor), la hélice hace mucho más que simplemente empujar el barco hacia adelante o hacia atrás. También empuja la popa hacia los lados. Este efecto secundario es la herramienta principal de un buen patrón para maniobrar.
+La maniobrabilidad depende del principio de Bernoulli y de las leyes de Newton. La pala del timón actúa como un perfil aerodinámico (ala), generando una fuerza de sustentación lateral ($L$, *Lift*) y una resistencia al avance ($D$, *Drag*):
 
-### 1.1 Tipos de Hélice (El Sentido de Giro)
-Mirando el barco desde popa hacia proa, cuando el barco avanza hacia adelante (marcha avante):
-*   **Hélice Dextrógira:** Gira hacia la **derecha** (sentido de las agujas del reloj). Es el estándar absoluto en barcos de recreo monomotor.
-*   **Hélice Levógira:** Gira hacia la **izquierda** (sentido antihorario).
-*   *En barcos bimotores:* Suelen llevar hélices "gemelas de giro opuesto" (una levógira a babor y una dextrógira a estribor) para anular los efectos laterales y avanzar rectos.
+$$ L = \frac{1}{2} \rho v^2 C_L A $$
+$$ D = \frac{1}{2} \rho v^2 C_d A $$
 
-### 1.2 La Presión Lateral de las Palas (Efecto Caída)
-El agua no tiene la misma densidad en la superficie que en el fondo de la hélice. Las palas, al girar por la parte más profunda (donde el agua está más apretada y ofrece más resistencia), "agarran" o "muerden" más fuerte que cuando pasan por arriba. 
-Esto provoca que la hélice funcione como una rueda de coche que estuviera resbalando de lado sobre el suelo marino, desplazando la popa lateralmente.
+Donde $v$ es la velocidad del flujo de agua (Corriente de Expulsión o Aspiración). Si la hélice escupe agua contra el timón metido a una banda, se genera una sustentación masiva instantánea, causando que la popa derrape, permitiendo la "Ciaboga" en el sitio.
 
-*   **Dextrógira marcha avante:** La popa tiende a irse lentamente hacia **Estribor** (por tanto, la proa cae muy levemente a Babor). Como vas deprisa, el timón corrige este efecto casi sin notarlo.
-*   **Dextrógira marcha atrás (ciando):** *¡Este es el efecto crítico!* Al ciar, la hélice gira a la inversa (hacia la izquierda). El muerdo del fondo hace que la popa pegue un "latigazo" muy fuerte hacia **Babor**. (La proa cae a Estribor). A baja velocidad, el timón no tiene agua suficiente para contrarrestar este empuje.
+### 1.1 El Empuje Transversal (Efecto "Propeller Walk" / Rueda de Paletas)
+Una hélice no solo empuja hacia adelante. Debido al gradiente de densidad/presión hidrostática (el agua del fondo está más comprimida y ofrece mayor resistencia), la pala inferior "muerde" con más fuerza. 
+Si la hélice es **Dextrógira** (gira a la derecha avante):
+*   **Avante:** La popa tiende levemente a estribor.
+*   **Ciando (Marcha atrás):** Al invertir el giro, la hélice gira a la izquierda. La diferencia de presiones causa un tirón brutal transversal en la popa hacia **Babor**.
+> **El Truco del Atracado:** Atracar por el lado de babor con hélice dextrógira permite entrar en diagonal y frenar dando un golpe atrás, lo que automáticamente absorbe la popa contra el muelle.
 
-> [!TIP]
-> **El Truco del Atracado:** Si tienes un motor dextrógiro, atracar de costado por el lado de babor (dejando el muelle a tu izquierda) es infinitamente más fácil. Llegas al muelle lentamente en diagonal y, al dar un fuerte golpe de marcha atrás para frenar la inercia del barco, la popa "coleará" sola acercándose y aplastándose suavemente contra el muelle de babor.
+---
 
-### 1.3 Efecto de la Corriente de la Hélice (El "Chorro")
-El timón de un barco a motor solo funciona si hay una masa de agua pasando a gran velocidad a través de su pala, creando sustentación como el ala de un avión.
-*   **Corriente de Aspiración:** El agua que la hélice chupa por delante de ella. Viene de forma caótica. Si vas marcha atrás, es el agua que pasa por el timón, por eso los barcos maniobran tan mal marcha atrás.
-*   **Corriente de Expulsión:** El chorro concentrado y a altísima presión que la hélice escupe hacia atrás. Si damos marcha avante con el timón girado a tope, este chorro choca violentamente contra la pala inclinada del timón, haciendo que la popa derrape de inmediato. Esto permite **girar sobre el sitio (Ciabogar)** dando golpes de "avante" con el timón cruzado.
+## 2. El Centro de Giro (Pivot Point) y Curvas Evolutivas
 
-## 2. Agentes Externos (Viento y Corriente)
+Un barco no gira desde sus ruedas delanteras. Gira alrededor de un eje vertical virtual llamado *Pivot Point* (Centro de Giro).
+*   **Navegando avante:** La proa corta el agua generando un "colchón" de alta presión. El Pivot Point se desplaza hacia el tercio de proa. El barco gira "desplazando mucho la popa" hacia fuera de la curva.
+*   **Ciando:** La presión se concentra en la popa plana. El Pivot Point retrocede hacia el tercio de popa.
 
-*   **Viento (Abatimiento):** Empuja la "obra muerta" (la parte fuera del agua). Los barcos de recreo suelen tener mucha cabina a proa y poco calado en proa (es muy ligera). Por tanto, a baja velocidad, el viento siempre se llevará la proa, haciendo que el barco acabe poniéndose atravesado al viento (Abatiendo de proa).
-*   **Corriente (Deriva):** Arrastra de forma uniforme toda la "obra viva" (casco sumergido y quilla). Es el agente más peligroso porque no puedes verlo venir (el mar parece llano) y te empuja contra el muelle o las rocas enterito, sin girarte.
+### La Curva Evolutiva
+Si metemos el timón a la vía, el buque traza un círculo con tres fases:
+1.  **Avance (Advance):** Distancia recorrida en la dirección original hasta que el barco alcanza 90º de giro.
+2.  **Traslado (Transfer):** Distancia lateral desviada cuando se alcanzan los 90º.
+3.  **Diámetro Táctico:** Diámetro total del círculo final de giro, típicamente de 3 a 5 esloras.
 
-### Reglas de Oro para Atracar (Aproximación)
-*   **Atracar proa a la mar/viento:** Es la regla sagrada. Siempre debes aproximarte al atraque con la proa apuntando contra el viento (o contra la corriente, el más fuerte de los dos). Al ir contra el elemento que te frena, mantienes el gobierno con el timón, tu barco no se acelera solo, y si algo va mal, paras el motor y el viento te aleja del muelle automáticamente hacia zona segura.
-*   **Atracar a favor de la mar/viento (Atracada "a la francesa"):** Solo para expertos. El viento te empuja por detrás hacia el muelle. Debes entrar a muy baja velocidad, porque si vas deprisa y luego tratas de frenar dando marcha atrás fuerte, tu popa derrapará (por el efecto lateral) y chocarás el costado contra el hormigón.
+---
 
-## 3. Fondeo (El Arte de Echar el Ancla)
+## 3. Agentes Externos (Viento y Corriente)
 
-Fondear es la única forma de aparcar gratis, pero requiere conocer la física de las cadenas para no acabar contra las rocas a las 3 de la madrugada. Un ancla no sujeta el barco por su peso, sino porque se entierra. Y para que se entierre y no se arranque (garrear), el tiro (la cuerda) debe tirar de ella totalmente **paralelo al fondo**, nunca hacia arriba. El peso de la propia cadena que yace en el fondo es el que amortigua los tirones del barco.
+La embarcación está sometida a dos medios fluidos con diferentes densidades ($ \rho_{agua} \approx 1025 \, \text{kg/m}^3 $, $ \rho_{aire} \approx 1.2 \, \text{kg/m}^3 $).
+*   **Viento (Abatimiento):** Ejerce fuerza sobre el *Área Vélica* o de *Obra Muerta* ($A_w$). Frecuentemente arrastra la proa (más ligera).
+*   **Corriente (Deriva):** Afecta a la *Obra Viva* sumergida. Obliga a calcular el rumbo verdadero usando composición de vectores.
 
-### Maniobra de Fondeo Paso a Paso
-1.  **Aproximación:** Elegir zona de arena (el fango sujeta menos, las rocas atrapan (enrocan) el ancla, y las praderas de Posidonia están estrictamente prohibidas ecológicamente). Aproximarse siempre **proa al viento**.
-2.  **Soltar el fondeo (Filar):** Cuando el barco se detiene totalmente y empieza a retroceder suavemente empujado por el viento, se empieza a soltar cadena poco a poco (filar), para que no se amontone toda encima del ancla enredándose.
-3.  **Longitud de Fondeo (La Ecuación Vital):** 
-    *   *Sonda* = Profundidad del lugar.
-    *   Fondeo con cadena sola: Filar una longitud igual a **3 o 4 veces la Sonda**. (Si hay 10m de agua, sueltas 40m de cadena).
-    *   Fondeo mixto (cabo y cadena): Filar **5 veces la Sonda**.
-    *   Mal tiempo inminente: Filar **5 o 6 veces la Sonda**.
-4.  **Confirmar el Agarre:** Dar una suave marcha atrás con el motor hasta notar el "tirón" seco de que el ancla ha clavado y la cadena se tensa rígidamente. Tomar **enfilaciones** (alinear dos puntos fijos de la costa visualmente); si la enfilación no cambia, el barco está perfectamente quieto y agarrado.
-5.  **El Círculo de Borneo:** El viento cambiará de dirección. El barco entero girará, atado por la proa, describiendo un gran círculo cuyo radio es la cadena soltada más la eslora del barco. Es obligatorio dejar libre ese espacio vital y no fondear encima del Círculo de Borneo de un barco vecino.
+### Reglas de Oro para Aproximación al Atraque
+*   **Proa al elemento dominante:** Siempre aproximarse proa al viento o a la corriente. Mantienes tensión y control. Si hay un fallo de motor, el elemento te aleja del muelle en vez de aplastarte.
+
+---
+
+## 4. Fondeo: Dinámica de la Catenaria y Tensión de Amarre
+
+El ancla no sujeta por peso, sino por ángulo de tiro. El peso de la cadena forma una curva matemática hiperbólica (Catenaria) cuyo propósito es que el ángulo de tiro en la uña del ancla ($ \theta $) sea exactamente de 0º (paralelo al fondo marino).
+La ecuación de la catenaria se define como:
+
+$$ y = a \cosh\left(\frac{x}{a}\right) $$
+
+Donde $a = T_0 / w$, siendo $T_0$ la tensión horizontal y $w$ el peso lineal de la cadena en el agua.
+
+### Longitud de Fondeo Crítica (Scope Ratio)
+Para asegurar que la catenaria toque fondo tangencialmente:
+1.  **Cadena sola:** Filar (soltar) **3 a 4 veces** la profundidad (sonda).
+2.  **Línea Mixta (Cabo+Cadena):** Filar **5 veces** la sonda.
+3.  **Temporal:** Filar **5 a 7 veces** la sonda.
+
+### El Círculo de Borneo
+Radio del borneadero: $ R = L_{cadena} + Eslora_{barco} $. 
+A causa de rolar el viento, el barco pivota alrededor del ancla. Jamás fondear dentro del área de superposición del radio de otro barco, o habrá abordaje inminente en la madrugada.
