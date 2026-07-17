@@ -84,3 +84,29 @@ La nomenclatura cartográfica está estandarizada por la OHI (Organización Hidr
 El estándar WGS84 se traduce a formato electrónico utilizando dos aproximaciones topológicas:
 1.  **Cartas Raster (RNC):** Matrices de píxeles estáticas georreferenciadas (imágenes escaneadas). Sufren de aliasing al hacer zoom matemático.
 2.  **Cartas Vectoriales (ENC):** Son bases de datos orientadas a objetos espaciales (puntos, polígonos, líneas) con atributos. Si el ECDIS está acoplado al GPS y al calado paramétrico introducido ($Z$), las líneas isobáticas y rocas calculan umbrales booleanos en tiempo real para disparar alarmas anti-colisión.
+
+## Ejemplos Prácticos
+
+**Problema 1: Cálculo Analítico de la Loxodrómica (Meridian Parts)**
+Se desea trazar una derrota desde el punto de salida $P_1(l_1 = 35^\circ 00' \text{N}, L_1 = 006^\circ 00' \text{W})$ hasta el punto de llegada $P_2(l_2 = 36^\circ 00' \text{N}, L_2 = 005^\circ 00' \text{W})$. Asumiendo la Tierra como una esfera perfecta, calcule analíticamente el Rumbo Verdadero ($R_v$) exacto de la loxodrómica utilizando el concepto de Partes Meridionales ($PM$).
+
+**Solución:**
+La fórmula para la Partes Meridionales en una esfera es:
+$$ PM(l) = \frac{10800}{\pi} \ln\left[ \tan\left( 45^\circ + \frac{l}{2} \right) \right] $$
+Calculamos las PM para $l_1 = 35^\circ$ y $l_2 = 36^\circ$:
+$$ PM_1 = \frac{10800}{\pi} \ln\left[ \tan\left( 45^\circ + 17.5^\circ \right) \right] \approx 2244.29 \text{ pm} $$
+$$ PM_2 = \frac{10800}{\pi} \ln\left[ \tan\left( 45^\circ + 18^\circ \right) \right] \approx 2317.84 \text{ pm} $$
+La diferencia de Partes Meridionales ($\Delta PM$) es:
+$$ \Delta PM = PM_2 - PM_1 = 2317.84 - 2244.29 = 73.55 \text{ pm} $$
+La diferencia de Longitud ($\Delta L$) en minutos es:
+$$ \Delta L = L_2 - L_1 = (-5^\circ) - (-6^\circ) = +1^\circ = 60' \text{ (Hacia el Este)} $$
+El rumbo loxodrómico ($R_v$) cumple que:
+$$ \tan(R_v) = \frac{\Delta L}{\Delta PM} = \frac{60}{73.55} \approx 0.8157 $$
+$$ R_v = \arctan(0.8157) \approx 39.2^\circ = 039.2^\circ $$
+El rumbo a gobernar en el compás verdadero es $039.2^\circ$.
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Bibliografía Básica:** Moreu Curbera, J.M. (2010). *Astronomía Náutica y Navegación*. Editorial de la Universidad de Cádiz.
+*   **Convenios OMI:** Normas IHO S-52 y S-57 relativas al rendimiento y especificaciones de las Cartas Electrónicas de Navegación (ENC).
+*   **Jurisprudencia:** *USS Guardian Grounding (2013)* en el Arrecife Tubbataha. Un fallo catastrófico debido a un error geodésico de desplazamiento de 8 millas en las cartas náuticas digitales vectoriales provistas por NGA, demostrando la necesidad imperiosa de cotejar el datum de las cartas rasterizadas/vectoriales y el uso combinado con medios de navegación puramente visuales y de ecosonda.

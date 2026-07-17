@@ -67,3 +67,25 @@ donde $a = \frac{T_H}{w}$, siendo $w$ el peso de la cadena por unidad de longitu
     *   Temporal: $5 \times h$ a $7 \times h$.
 *   **Borneo (Swing Circle):** Área barrida de radio $R \approx L$. Vital calcularlo con GPS para evitar colisiones con otros yates.
 *   **Orinque (Trip Line):** Cabo atado a la cruz para invertir el vector de fuerza de extracción si el ancla se enroca.
+
+## Ejemplos Prácticos
+
+**Problema 1: Dinámica de la Catenaria de Fondeo bajo Tensión Máxima**
+Una embarcación fondea a una profundidad $h = 10 \text{ m}$ (incluyendo la altura del escobén) utilizando una cadena cuyo peso sumergido es $w = 2.5 \text{ kg/m}$ (aproximadamente $24.5 \text{ N/m}$). Para evitar el garreo, se requiere que la fuerza ejercida en la caña del ancla sea estrictamente horizontal ($\theta = 0^\circ$). Durante un temporal, el viento y la corriente ejercen una tracción horizontal sobre la proa de $T_H = 4000 \text{ N}$.
+Calcule la longitud mínima de cadena $L$ necesaria para asegurar que el ancla trabaje en condiciones óptimas sin componente vertical.
+
+*Solución:*
+1. Primero, determinamos el parámetro de la catenaria $a$, que representa la relación entre la tensión horizontal y el peso lineal sumergido de la cadena:
+$$ a = \frac{T_H}{w} = \frac{4000 \text{ N}}{24.5 \text{ N/m}} \approx 163.26 \text{ m} $$
+2. La longitud de cadena suspendida requerida para asegurar que la tangente geométrica al fondo sea cero se define por la ecuación geométrica de la catenaria:
+$$ L = \sqrt{h(h + 2a)} $$
+3. Sustituyendo los valores:
+$$ L = \sqrt{10 \cdot (10 + 2 \cdot 163.26)} = \sqrt{10 \cdot (10 + 326.52)} = \sqrt{10 \cdot 336.52} = \sqrt{3365.2} $$
+$$ L \approx 58 \text{ m} $$
+En conclusión, el patrón deberá filar como mínimo 58 metros de cadena (casi 6 veces la sonda) para prevenir el garreo bajo esa fuerza aerodinámica.
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Bibliografía:** Taylor, D. W. (1910). *The Speed and Power of Ships*. (Manual clásico que fundamenta empíricamente los principios del esfuerzo tractor en amarras).
+*   **Convenios OMI:** *Guidelines for the Preparation of the Towing and Mooring Arrangement Plan (IMO MSC.1/Circ.1620)* – Define la estandarización del SWL en accesorios de amarre.
+*   **Jurisprudencia:** *The "Star Sea" [2001] UKHL 1* (House of Lords) – Caso fundamental que aborda la "seaworthiness" y la negligencia operativa en procedimientos de prevención a bordo, relacionado intrínsecamente con las fallas en los sistemas y accesorios de sujeción (aunque en este caso derivado de un incendio).

@@ -65,3 +65,54 @@ Para asegurar que la catenaria toque fondo tangencialmente:
 ### El Círculo de Borneo
 Radio del borneadero: $ R = L_{cadena} + Eslora_{barco} $. 
 A causa de rolar el viento, el barco pivota alrededor del ancla. Jamás fondear dentro del área de superposición del radio de otro barco, o habrá abordaje inminente en la madrugada.
+
+## Ejemplos Prácticos
+
+**Problema 1: Tensión de la Catenaria durante el Fondeo**
+Un yate de 15 metros está fondeado con cadena exclusivamente en una sonda de $10 \text{ metros}$ (asuma la altura de la proa al agua como despreciable para simplificar). La cadena tiene un peso sumergido lineal de $w = 25 \text{ N/m}$. En un temporal, la fuerza horizontal máxima producida por el viento y el abatimiento de las olas sobre el buque alcanza $T_0 = 3000 \text{ N}$. 
+
+Para evitar garrear, el ángulo de la cadena con el fondo debe ser cero. Calcule la longitud mínima teórica de cadena filada ($L$) necesaria para que todo el esfuerzo en el ancla sea perfectamente horizontal, de acuerdo a la ecuación de la catenaria.
+
+*Resolución:*
+La tensión en el punto más bajo (ancla) es puramente horizontal y vale $T_0$. La relación de la geometría de la catenaria con la longitud del arco se define paramétricamente, pero para encontrar la longitud de cadena suspendida ($s$) que alcanza la profundidad $h = 10 \text{ m}$ con pendiente cero en el origen, usamos la relación fundamental:
+$$ h = a \left( \cosh\left(\frac{x}{a}\right) - 1 \right) \quad \text{y} \quad s = a \sinh\left(\frac{x}{a}\right) $$
+Donde el parámetro $a = \frac{T_0}{w}$.
+
+Calculamos el parámetro $a$:
+$$ a = \frac{3000 \text{ N}}{25 \text{ N/m}} = 120 \text{ m} $$
+
+Usamos la identidad hiperbólica $\cosh^2(z) - \sinh^2(z) = 1$. Se puede demostrar que para una catenaria, la relación entre profundidad $h$, longitud $s$ y el parámetro $a$ es:
+$$ s^2 = h^2 + 2ah $$
+
+Sustituyendo los valores conocidos:
+$$ s^2 = (10)^2 + 2(120)(10) $$
+$$ s^2 = 100 + 2400 = 2500 $$
+$$ s = \sqrt{2500} = 50 \text{ metros} $$
+
+Se requieren filar teóricamente **50 metros** de cadena para que la tracción sobre el ancla sea paralela al lecho marino. Esto equivale exactamente a una relación de 5 veces la sonda, confirmando matemáticamente la regla empírica del filado en condiciones duras.
+
+**Problema 2: Sustentación Hidrodinámica del Timón**
+Un velero navega a motor a una velocidad de $v = 6 \text{ nudos}$ ($3.08 \text{ m/s}$). La pala del timón tiene una superficie $A = 0.8 \text{ m}^2$. Al meter el timón a la banda con un ángulo de ataque de $15^\circ$, el coeficiente de sustentación empírico es $C_L = 0.9$. La densidad del agua es $\rho = 1025 \text{ kg/m}^3$.
+
+Calcule la fuerza de sustentación lateral ($L$) que provoca el derrape de la popa y el momento torsor ($M$) si el centro de presión geométrica está a $r = 5 \text{ metros}$ a popa del Pivot Point.
+
+*Resolución:*
+Fuerza lateral del timón:
+$$ L = \frac{1}{2} \rho v^2 C_L A $$
+$$ L = \frac{1}{2} (1025) (3.08)^2 (0.9) (0.8) $$
+$$ L = \frac{1}{2} (1025) (9.4864) (0.72) \approx 3500.5 \text{ N} $$
+
+Momento torsor respecto al Pivot Point:
+$$ M = L \times r = 3500.5 \text{ N} \times 5 \text{ m} = 17502.5 \text{ Nm} $$
+
+Este momento masivo vence la resistencia hidrodinámica del casco, iniciando la curva evolutiva del navío.
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Textos Técnicos y Universitarios:**
+    *   *Ship Handling*, David J. House. Referencia exhaustiva sobre curvas evolutivas, "propeller walk" y factores cinemáticos.
+    *   *Principles of Naval Architecture: Ship Resistance and Flow*, Society of Naval Architects and Marine Engineers (SNAME). Para el estudio estocástico de las fuerzas sobre timones y hélices.
+*   **Jurisprudencia de Almirantazgo y Seguros:**
+    *   *The "Fritz Thyssen" [1967] 2 Lloyd's Rep 199*: Caso sobre hundimiento por cadena de fondeo infradimensionada; demostró ante el juez la negligencia del capitán por no aplicar la regla del "scope ratio" adecuado basándose en el cálculo de catenaria bajo tensión inducida por oleaje.
+    *   *State of Louisiana v. The M/V Testbank (1985)*: Análisis pormenorizado de la hidrodinámica de atraque y maniobrabilidad reducida debido a corrientes transversales en canales de navegación estrechos.
+

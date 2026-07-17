@@ -55,3 +55,22 @@ El GMDSS exige hardware que sobreviva al fallo total de tensión general de corr
 
 ### Respondedor Radar (SART)
 Transpondedor activo de Radar operando en la banda X ($9.2 - 9.5 \text{ GHz}$). Cuando es barrido por el haz magnético pulsante del radar de un carguero mercante, la antena receptora del SART genera un trigger (disparo) que excita su oscilador Gunn interno y responde emitiendo una ráfaga modulada en frecuencia. Esta se pinta en la pantalla CRT/LCD del barco de rescate como una línea recta de 12 puntos intensos indicando la demora exacta al naufragio.
+
+## Ejemplos Prácticos
+
+**Problema 1: Balística Fotónica del VHF Marino**
+Un velero cuyo mástil aloja una antena VHF a $h_1 = 16 \text{ m}$ sobre el nivel del mar, sufre una vía de agua. Transmite un Mayday en el Canal 16. A qué distancia máxima (teórica) podría recibir esta señal un buque de Salvamento Marítimo cuya antena receptora está a $h_2 = 25 \text{ m}$ de altura, considerando el factor de refracción atmosférica estándar ($K=4/3$)?
+
+**Solución:**
+El alcance radioeléctrico visual máximo ($d$) para frecuencias VHF viene determinado por la fórmula empírica del horizonte radárico, fundamentada en la geometría del círculo y corregida por la curvatura refractiva de la troposfera:
+$$ d = 2.22 \cdot \left( \sqrt{h_1} + \sqrt{h_2} \right) $$
+Donde $d$ se expresa en millas náuticas, y $h_1, h_2$ en metros.
+Sustituyendo los valores:
+$$ d = 2.22 \cdot \left( \sqrt{16} + \sqrt{25} \right) = 2.22 \cdot (4 + 5) = 2.22 \cdot 9 = 19.98 \text{ millas náuticas} $$
+El buque de rescate solo escuchará la llamada de socorro por onda directa si se encuentra dentro de un radio de aproximadamente 20 millas.
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Bibliografía Básica:** Payne, J. C. (2006). *The Marine Electrical and Electronics Bible* (3rd ed.). Sheridan House.
+*   **Convenios OMI:** Sistema Mundial de Socorro y Seguridad Marítimos (SMSSM / GMDSS) - SOLAS Capítulo IV. Reglamento de Radiocomunicaciones (RR) de la Unión Internacional de Telecomunicaciones (UIT).
+*   **Jurisprudencia:** *El hundimiento del "El Faro" (2015)*. Investigación del NTSB (National Transportation Safety Board) donde se analizó extensamente el fracaso de los sistemas GMDSS, concretamente la posición transmitida por la EPIRB y los problemas acústicos para emitir Mayday por VHF/Inmarsat bajo el ruido ensordecedor de un huracán categoría 4.

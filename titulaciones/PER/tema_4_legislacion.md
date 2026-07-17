@@ -60,3 +60,30 @@ La interacción hélices-buceador produce traumatismos mortales. La jurisprudenc
 El rescate de vidas en el mar es una obligación ancestral y jurídica (Convención de las Naciones Unidas sobre el Derecho del Mar - CONVEMAR Art. 98).
 *   **SASEMAR (Salvamento Marítimo):** Coordina los MRCC. Contacto prioritario: **VHF Canal 16** o el canal DSC 70 (LLamada Selectiva Digital).
 *   **Régimen Económico del Rescate:** La vida humana se rescata gratis (obligación de Estado). El **remolque del buque** para salvar la propiedad tiene un coste tarifado elevado ("No cure, No pay" bajo el LOF o tasas SASEMAR), que será reclamado al armador y su aseguradora (RD 607/1999).
+
+## Ejemplos Prácticos
+
+**Problema 1: Cálculo Cinemático de Aproximación Segura a Buceadores**
+La normativa exige una distancia mínima de resguardo de seguridad $D_{min} = 25 \text{ m}$ de una bandera ALFA, pero la jurisprudencia marítima recomienda un enfoque cinemático preventivo considerando el tiempo de respuesta y la inercia.
+Si una embarcación de recreo de $15 \text{ m}$ de eslora navega a una velocidad de aproximación límite permitida en la zona de $V_0 = 3 \text{ nudos}$, y sufre un fallo del inversor del motor de forma que continúa con inercia. Suponiendo una resistencia hidrodinámica que genera una deceleración cuadrática $a(v) = -k \cdot v^2$ (donde empíricamente $k = 0.05 \text{ m}^{-1}$), calcule la distancia de parada inercial hasta que su velocidad se reduzca al $10\%$ ($0.3 \text{ nudos}$) y compárela con el resguardo mínimo para valorar el riesgo objetivo.
+
+*Solución:*
+1. Convertimos la velocidad inicial a unidades del SI:
+$$ V_0 = 3 \text{ nudos} = 3 \cdot 0.5144 \text{ m/s} = 1.5432 \text{ m/s} $$
+La velocidad final objetivo es $V_f = 0.1 \cdot V_0 = 0.1543 \text{ m/s}$.
+2. Utilizando la ecuación diferencial del movimiento $v \frac{dv}{dx} = a(v) = -k \cdot v^2$:
+$$ \frac{dv}{dx} = -k \cdot v $$
+$$ dx = -\frac{1}{k} \frac{dv}{v} $$
+3. Integramos desde $x = 0$ hasta $x = D_{stop}$ y desde $v = V_0$ hasta $v = V_f$:
+$$ \int_0^{D_{stop}} dx = -\frac{1}{k} \int_{V_0}^{V_f} \frac{dv}{v} $$
+$$ D_{stop} = -\frac{1}{k} \left[ \ln(v) \right]_{V_0}^{V_f} = -\frac{1}{k} (\ln(V_f) - \ln(V_0)) = \frac{1}{k} \ln\left(\frac{V_0}{V_f}\right) $$
+4. Sustituyendo los valores conocidos y recordando que $V_0/V_f = 10$:
+$$ D_{stop} = \frac{1}{0.05} \ln(10) = 20 \cdot 2.302 = 46.04 \text{ m} $$
+Dado que $D_{stop} \approx 46 \text{ m} > 25 \text{ m}$, si el fallo ocurre justo en el límite normativo, la inercia llevará al barco al interior del área del buceador. Esto justifica hidrodinámicamente por qué la jurisprudencia exige cautela reforzada (ej. $>50\text{m}$) y desengranar anticipadamente.
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Convenios OMI:** *MARPOL 73/78* (Especialmente los Anexos I, IV y V aplicables a náutica deportiva) y el Reglamento Internacional para Prevenir Abordajes (COLREG).
+*   **Legislación Española:** *Ley 14/2014, de 24 de julio, de Navegación Marítima*. Título IX: De la responsabilidad civil por contaminación.
+*   **Jurisprudencia:** *Tribunal Supremo Español, Sala de lo Penal, Sentencia del Caso Prestige (STS 865/2015)* – Un hito en derecho ambiental marítimo que solidificó la responsabilidad objetiva y el deber de cuidado por contaminación marítima.
+*   **Jurisprudencia Internacional:** *The "Erika" (Cour de Cassation, France, 2012)* – Estableció la responsabilidad penal de entidades certificadoras y armadores, validando un estándar de estricto cumplimiento para buques, aplicable análogamente al principio de cuidado de los capitanes de embarcaciones menores en zonas ecológicas (Zonas de Especial Protección).

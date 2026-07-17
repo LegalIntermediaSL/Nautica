@@ -110,3 +110,35 @@ El horizonte es indispensable para la observación, al igual que las estrellas. 
 *   **Crepúsculo Civil ($0^\circ$ a $-6^\circ$):** El cielo está muy iluminado por dispersión atmosférica de Rayleigh. Las estrellas mayores aún no compiten con el fondo celeste.
 *   **Crepúsculo Náutico ($-6^\circ$ a $-12^\circ$):** **La Ventana Crítica.** Dura de 20 a 45 minutos dependiendo de la latitud. Suficiente oscuridad para identificar estrellas de 1ª y 2ª magnitud, pero con remanente lumínico que permite ver el recorte afilado del horizonte de la mar en los espejos del sextante. Si se dilata la observación a $-11^\circ$, el error en altura se dispara porque el horizonte de la mar real se confunde con las bandas de oscuridad superficial.
 *   **Crepúsculo Astronómico ($-12^\circ$ a $-18^\circ$):** Oscuridad inservible para el sextante marino (aunque existen sextantes de burbuja artificial o visores nocturnos para estos casos extremos, no regulados en CY).
+
+---
+
+## Ejemplos Prácticos
+
+**Problema 1: Teorema del Coseno para el Triángulo de Posición**
+Calcule la Altura Estimada ($a_e$) de la estrella Sirio para un observador situado en la latitud $l_e = 40^\circ 00.0' \text{ N}$. Los datos del Almanaque arrojan que Sirio tiene una declinación $Dec = 16^\circ 42.9' \text{ S}$ y el Ángulo en el Polo es $P = 45^\circ$ hacia el Oeste.
+
+*Solución:*
+Fórmula de la altura estimada:
+$$ \sin(a_e) = \sin(l_e) \cdot \sin(Dec) + \cos(l_e) \cdot \cos(Dec) \cdot \cos(P) $$
+
+Criterio de signos: Al ser la Latitud Norte (+) y la Declinación Sur (-), tomaremos el primer término como negativo en la suma. Para evitar errores, usamos valores con signo: $l_e = +40^\circ$, $Dec = -16.715^\circ$, $P = 45^\circ$.
+
+$$ \sin(a_e) = \sin(40^\circ) \cdot \sin(-16.715^\circ) + \cos(40^\circ) \cdot \cos(-16.715^\circ) \cdot \cos(45^\circ) $$
+$$ \sin(a_e) = (0.6428 \cdot -0.2876) + (0.7660 \cdot 0.9577 \cdot 0.7071) $$
+$$ \sin(a_e) = -0.1849 + 0.5187 = 0.3338 $$
+Despejando la altura estimada:
+$$ a_e = \arcsin(0.3338) \approx 19.50^\circ = 19^\circ 30' $$
+La Altura Estimada de Sirio será de $19^\circ 30'$.
+
+---
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Bibliografía Recomendada:**
+    *   *Astronomía Náutica*, Moreu Curbera. Obra magna de la náutica hispana.
+    *   *The American Practical Navigator (Bowditch)*. Editado por la NGA.
+*   **Convenciones OMI:**
+    *   IMO Model Course 7.03 (Officer in Charge of a Navigational Watch): Detalla las exigencias obligatorias de la navegación celestial astronómica a bordo.
+*   **Jurisprudencia (Admiralty Court):**
+    *   *The "Lady Gwendolen" (1965)*: Aunque se centró en el radar, estableció el precedente legal de que el uso inapropiado o el desconocimiento de los instrumentos y técnicas de posicionamiento clásicos a bordo por parte del mando constituye grave negligencia e incompetencia técnica que rompe la limitación de responsabilidad del armador.

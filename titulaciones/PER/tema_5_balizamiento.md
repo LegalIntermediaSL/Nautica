@@ -113,3 +113,49 @@ Indica aguas seguras en todo el entorno (eje de canal, recalada).
 ## 7. Marcas Especiales y Nuevos Peligros
 *   **Especiales:** Indican zonas reguladas (tuberías, campos de tiro, regatas). Color: **Amarillo**. Tope: **"X"**. Luz: **Amarilla**.
 *   **Nuevos Peligros:** Fondeadas de emergencia ante naufragios recientes. Rayas verticales **Amarillas y Azules**, cruz amarilla, luz destellos Amarillo/Azul alternados.
+
+## Ejemplos Prácticos
+
+**Problema 1: Cálculo del Arrastre Hidrodinámico y Estabilidad de Fondeo**
+Una boya cilíndrica de marca lateral (Región A) está fondeada en un canal expuesto a corrientes de marea. El diámetro del cilindro sumergido (obra viva) es $D = 1.2 \text{ m}$ y su calado es $T = 1.5 \text{ m}$. La corriente máxima esperada durante las mareas vivas de sicigia es de $v = 4 \text{ nudos}$. Considere la densidad del agua de mar $\rho = 1025 \text{ kg/m}^3$ y el coeficiente de arrastre para un cilindro $C_d = 1.05$. 
+
+Determine la fuerza de arrastre hidrodinámico ($F_d$) que la corriente ejerce sobre la boya.
+
+*Resolución:*
+Primero, convertimos la velocidad de la corriente al Sistema Internacional (m/s).
+$$ 1 \text{ nudo} = 0.5144 \text{ m/s} \implies v = 4 \times 0.5144 = 2.0576 \text{ m/s} $$
+
+Calculamos el área proyectada sumergida ($A$), que para un cilindro vertical es el rectángulo formado por su diámetro y su calado:
+$$ A = D \times T = 1.2 \text{ m} \times 1.5 \text{ m} = 1.8 \text{ m}^2 $$
+
+Aplicamos la ecuación fundamental del arrastre hidrodinámico:
+$$ F_d = \frac{1}{2} \rho v^2 C_d A $$
+$$ F_d = \frac{1}{2} (1025 \text{ kg/m}^3) (2.0576 \text{ m/s})^2 (1.05) (1.8 \text{ m}^2) $$
+$$ F_d \approx \frac{1}{2} (1025) (4.2337) (1.05) (1.8) $$
+$$ F_d \approx 4100.8 \text{ N} \approx 4.1 \text{ kN} $$
+
+La cadena de fondeo y el muerto de hormigón deberán estar dimensionados para resistir una componente horizontal continua superior a $4.1 \text{ kN}$ sin producir garreo, además de las fuerzas oscilatorias del oleaje de alta frecuencia.
+
+**Problema 2: Alcance Luminoso y Extinción Atmosférica**
+Una baliza de peligro aislado posee una linterna LED con una intensidad luminosa de $I = 150 \text{ candelas}$. Si durante una noche de niebla ligera la visibilidad meteorológica cae a $V = 4 \text{ millas náuticas}$ ($7.408 \text{ km}$), calcule la iluminancia en el ojo del navegante situado a $D = 2 \text{ millas náuticas}$ ($3.704 \text{ km}$) y determine si la baliza será visible. Umbral de visión $E_{th} = 2 \times 10^{-7} \text{ lux}$.
+
+*Resolución:*
+Calculamos el coeficiente de extinción atmosférica $\sigma$ mediante la Ley de Koschmieder, utilizando kilómetros para mantener las unidades consistentes para iluminancia (lux = lumen/m²).
+$$ \sigma = \frac{3.912}{V} = \frac{3.912}{7408 \text{ m}} = 5.28 \times 10^{-4} \text{ m}^{-1} $$
+
+Aplicamos la Ley de Allard para la distancia $D = 3704 \text{ m}$:
+$$ E = \frac{I}{D^2} e^{-\sigma D} $$
+$$ E = \frac{150}{(3704)^2} e^{-(5.28 \times 10^{-4})(3704)} $$
+$$ E = \frac{150}{13719616} e^{-1.955} \approx (1.093 \times 10^{-5}) \times 0.1415 \approx 1.54 \times 10^{-6} \text{ lux} $$
+
+Dado que $1.54 \times 10^{-6} \text{ lux} > E_{th}$ ($2 \times 10^{-7} \text{ lux}$), la baliza **será visible** a 2 millas a pesar de la niebla ligera.
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Convenios Internacionales:**
+    *   *IALA MBS (Maritime Buoyage System) y otros manuales (NAVGUIDE)*. Organización Internacional de Señalización Marítima. (Revisión 2010 y posteriores).
+*   **Textos de Mecánica y Oceanografía:**
+    *   *Hydrodynamics of Ocean Wave-Energy Utilization*, David V. Evans. Para el cálculo avanzado de coeficientes de arrastre ($C_d$) en estructuras flotantes expuestas a flujos turbulentos.
+    *   *Light and Navigation*, K.H. Craig. Fundamentos de la ley de Allard y cálculo del umbral de visión escotópica.
+*   **Jurisprudencia de Almirantazgo:**
+    *   *The "Torenia" (1982)*: Análisis de responsabilidad civil por fallo catastrófico en fondeos de estructuras debido a fatiga cíclica en cadenas de amarre sometidas a fuerzas $F_d$ no previstas, determinando el estándar de cuidado en la ingeniería costera.

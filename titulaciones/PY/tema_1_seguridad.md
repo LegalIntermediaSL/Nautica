@@ -106,3 +106,39 @@ Adicional al SOLAS pack de la balsa, se porta:
 ### 3.5 Equipamiento Radioeléctrico GMDSS/SMSSM Avanzado
 *   **EPIRB (406 MHz):** Radiobaliza de localización de siniestros. La portadora principal a $406.025 \text{ MHz}$ es interceptada por constelaciones LEOSAR (COSPAS-SARSAT), MEOSAR (Galileo/GPS) y GEOSAR. Envía el código hexadecimal de 15 dígitos que engloba el MID (país) y MMSI del yate, junto con las coordenadas obtenidas del GNSS interno. Precisión < 100 metros. También emiten balizamiento homing en $121.5 \text{ MHz}$.
 *   **SART (Búsqueda y Rescate Respondedor de Radar):** Transpondedor de Banda X (9.2 - 9.5 GHz). Al recibir el barrido del radar de navegación del rescatador, el SART transmite una respuesta de frecuencia de barrido rápido. Resulta en una línea radial de 12 arcos concéntricos en la pantalla del radar del buque de búsqueda, apuntando ineludiblemente a la posición de los náufragos.
+
+## Ejemplos Prácticos
+
+**Problema 1: Desplazamiento del Centro de Gravedad y Ángulo de Escora Permanente**
+Un yate de desplazamiento $\Delta = 120\text{ t}$, $KM = 3.5\text{ m}$ y $KG = 2.8\text{ m}$, sufre una avería que le obliga a bombear $15\text{ t}$ de agua de sentina ($KG_{\text{agua}} = 0.5\text{ m}$) por la borda y además debe izar una embarcación auxiliar de $2.5\text{ t}$ a la cubierta superior ($KG_{\text{aux}} = 5.2\text{ m}$), desplazándola simétricamente $3\text{ m}$ a estribor de la crujía. Calcule el nuevo ángulo de escora permanente en situación de equilibrio.
+
+*Resolución:*
+1.  **Cálculo del GM inicial:**
+    $$ GM_0 = KM - KG = 3.5\text{ m} - 2.8\text{ m} = 0.70\text{ m} $$
+2.  **Cálculo del nuevo Desplazamiento ($\Delta'$):**
+    $$ \Delta' = 120\text{ t} - 15\text{ t} + 2.5\text{ t} = 107.5\text{ t} $$
+3.  **Cálculo del nuevo $KG'$ ponderando momentos verticales:**
+    $$ KG' = \frac{(120 \cdot 2.8) - (15 \cdot 0.5) + (2.5 \cdot 5.2)}{107.5} = \frac{336 - 7.5 + 13}{107.5} \approx 3.176\text{ m} $$
+4.  **Cálculo del nuevo $GM'$:**
+    Asumiendo que $KM$ varía de forma infinitesimal (aproximación isocarena):
+    $$ GM' \approx 3.5\text{ m} - 3.176\text{ m} = 0.324\text{ m} $$
+5.  **Cálculo del momento escorante transversal ($M_{\text{escorante}}$):**
+    El único peso desplazado transversalmente es la auxiliar ($2.5\text{ t}$ a $3\text{ m}$):
+    $$ M_{\text{escorante}} = P \cdot y = 2.5\text{ t} \cdot 3\text{ m} = 7.5\text{ t}\cdot\text{m} $$
+6.  **Cálculo del ángulo de escora ($\theta$):**
+    En equilibrio, $M_{\text{adrizante}} = M_{\text{escorante}}$.
+    $$ \Delta' \cdot GM' \cdot \sin(\theta) \approx \Delta' \cdot GM' \cdot \tan(\theta) = 7.5 $$
+    $$ \tan(\theta) = \frac{7.5}{107.5 \cdot 0.324} = \frac{7.5}{34.83} \approx 0.2153 $$
+    $$ \theta = \arctan(0.2153) \approx 12.15^\circ \text{ a Estribor} $$
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Doctrina Académica:**
+    *   *Basic Ship Theory, Volume 1* (Rawson & Tupper). Capítulo 3: "Transverse Stability". Edición Longman.
+    *   *Ship Stability for Masters and Mates* (C.B. Barrass & D.R. Derrett). Elsevier.
+*   **Convenios IMO:**
+    *   **IMO Res. A.749(18):** Código de Estabilidad Intacta para todos los buques regidos por la OMI (Revisión de la curva de brazos adrizantes $GZ$).
+    *   **SOLAS 1974 (Enmendado), Capítulo III:** Dispositivos y Medios de Salvamento (Especificaciones técnicas GMDSS y zafas hidrostáticas).
+*   **Jurisprudencia Almirantazgo:**
+    *   *The "Toledo" (1995) 1 Lloyd's Rep 40:* Fallo sobre la negligencia en la evaluación del GM y la carga asimétrica con resultado de pérdida de buque por zozobra en mar gruesa.
+    *   *The "Herald of Free Enterprise" (1987) R v. Stanley y otros:* Caso fundamental en el derecho marítimo anglosajón, subrayando la responsabilidad penal del capitán y naviera al permitir superficies libres (agua en la cubierta Ro-Ro) que anularon el Momento Adrizante, provocando un vuelco fulminante.

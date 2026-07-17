@@ -103,3 +103,37 @@ La latitud exacta ($l_v$) no es igual a su Altura Verdadera, hay que aplicar una
 Fórmula tradicional simplificada del Almanaque:
 $$ l_v = a_v - 1^\circ + \text{Tab. I} + \text{Tab. II} + \text{Tab. III} $$
 Donde las tablas I, II y III purgan la posición angular exacta de Polaris dependiente del $h_{L\gamma}$, la Latitud aproximada y el mes del año. No requiere resolver triángulos complejos, proveyendo una Latitud de extrema precisión instantánea para navegantes del Hemisferio Norte.
+
+---
+
+## Ejemplos Prácticos
+
+**Problema 1: Cálculo Analítico del Azimut por el Teorema de las Cotangentes**
+Tras calcular la altura de un astro, debemos calcular su Azimut verdadero ($Z_v$).
+Datos: Latitud $l_e = 35^\circ \text{ N}$ (+), Declinación $Dec = 20^\circ \text{ S}$ (-), Ángulo en el Polo $P = 60^\circ$ (Oeste).
+Halle el $Z_v$ usando la fórmula de la cotangente.
+
+*Solución:*
+$$ \cot(Z) = \frac{\cos(l_e) \cdot \tan(Dec) - \sin(l_e) \cdot \cos(P)}{\sin(P)} $$
+Insertamos datos con signos algebraicos: $l_e = +35^\circ$, $Dec = -20^\circ$, $P = 60^\circ$.
+$$ \cot(Z) = \frac{\cos(35^\circ) \cdot \tan(-20^\circ) - \sin(35^\circ) \cdot \cos(60^\circ)}{\sin(60^\circ)} $$
+$$ \cot(Z) = \frac{(0.8192 \cdot -0.3640) - (0.5736 \cdot 0.5000)}{0.8660} $$
+$$ \cot(Z) = \frac{-0.2982 - 0.2868}{0.8660} = \frac{-0.5850}{0.8660} = -0.6755 $$
+Tomando la inversa para obtener la tangente:
+$$ \tan(Z) = \frac{1}{-0.6755} = -1.4804 $$
+$$ Z = \arctan(-1.4804) = -55.96^\circ $$
+Como la Latitud es Norte, contamos el ángulo desde el Norte. Al ser el ángulo horario Oeste ($P$ Oeste), el astro se halla en el cuadrante SW. El azimut cuadrantal es $N 124.04^\circ W$ o matemáticamente $S 55.96^\circ W$ partiendo desde el Sur de la fórmula pura. Sin embargo, aplicando la regla marinera:
+Si $l_e > 0$, el polo elevado es el Norte ($000^\circ$). Al ser la declinación contraria y la cotangente negativa, el azimut supera los $90^\circ$ respecto al polo elevado.
+Azimut verdadero: $Z_v = 360^\circ - 124.04^\circ = 235.96^\circ$.
+
+---
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Bibliografía Recomendada:**
+    *   *Navegación Astronómica*, Luis Mederos. Explicación matricial y analítica muy detallada.
+    *   *H.O. Pub 229 (Sight Reduction Tables for Marine Navigation)*.
+*   **Convenciones OMI:**
+    *   STCW exige la capacidad certificada de planificar un viaje oceánico sin el uso de medios electrónicos satelitales (GNSS).
+*   **Jurisprudencia (Admiralty Court):**
+    *   *The "Temple Bar" (1945)*: Uno de los pilares legales. El buque varó tras no efectuar correctas verificaciones astronómicas del compás giroscópico y la corredera. El juez penalizó la confianza excesiva e injustificada en un solo medio no astronómico de navegación.

@@ -79,3 +79,24 @@ Un buen patrón no solo mira la pantalla del móvil, también lee la naturaleza 
 *   **El Cielo (Nubes altas):** La invasión en el cielo azul de "colas de caballo" (nubes tipo Cirros de cristales de hielo muy altas, formadas por la deposición directa del vapor) que poco a poco van cubriendo el cielo y bajando de altura, son la vanguardia clásica de un Frente Cálido. El aire caliente trepa lentamente sobre una cuña de aire frío, enfriándose adiabáticamente y trayendo lluvias persistentes en las siguientes 24 horas.
 *   **Halo Solar/Lunar:** Un anillo de arcoíris alrededor del Sol o de la Luna indica refracción de la luz a través de cristales de hielo hexagonales en cirrostratos a 6000-8000 metros de altitud; precede casi infaliblemente a un frente activo.
 *   **Líneas de Turbonada y Frentes Fríos:** Nubes oscuras de desarrollo vertical tremendo (Cumulonimbus) que avanzan como una muralla maciza, indicando que una masa de aire polar densa está arando la superficie como una cuña, obligando al aire caliente a ascender de forma explosiva, desatando el caos atmosférico y rachas de viento brutales.
+
+## Ejemplos Prácticos
+
+**Problema 1: Cálculo del Viento Geostrófico**
+Suponga un gradiente de presión atmosférica horizontal $\nabla P = 2.5 \times 10^{-3} \text{ Pa/m}$ medido perpendicularmente a las isobaras en el Mar Cantábrico a una latitud $\phi = 45^\circ \text{N}$. Considere la densidad del aire en superficie $\rho = 1.225 \text{ kg/m}^3$ y la velocidad angular de la Tierra $\Omega = 7.292 \times 10^{-5} \text{ rad/s}$. Calcule la velocidad del viento geostrófico $V_g$.
+
+**Solución:**
+En equilibrio geostrófico, la fuerza de gradiente de presión equilibra exactamente la fuerza de Coriolis:
+$$ \frac{1}{\rho} \nabla P = f_c \cdot V_g $$
+Donde el parámetro de Coriolis $f_c$ se define como:
+$$ f_c = 2 \Omega \sin(\phi) = 2 (7.292 \times 10^{-5}) \sin(45^\circ) \approx 1.031 \times 10^{-4} \text{ s}^{-1} $$
+Despejando $V_g$:
+$$ V_g = \frac{\nabla P}{\rho \cdot f_c} = \frac{2.5 \times 10^{-3}}{1.225 \cdot 1.031 \times 10^{-4}} \approx 19.8 \text{ m/s} $$
+Convirtiendo a nudos ($1 \text{ m/s} \approx 1.944 \text{ kn}$):
+$$ V_g \approx 19.8 \cdot 1.944 \approx 38.5 \text{ nudos (Fuerza 8 en la escala de Beaufort)} $$
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Bibliografía Básica:** Holton, J. R., & Hakim, G. J. (2012). *An Introduction to Dynamic Meteorology* (5th ed.). Academic Press.
+*   **Convenios OMI:** Convenio Internacional para la Seguridad de la Vida Humana en el Mar (SOLAS), Capítulo V (Seguridad de la Navegación), Regla 5 sobre Servicios e Información Meteorológica.
+*   **Jurisprudencia:** *The "Marchioness" Disaster (1989)*. Sentencia en la que se evaluó la falta de previsión de la tripulación ante la formación súbita de bancos de niebla de advección (limitación de visibilidad no prevista), estableciendo responsabilidades civiles por negligencia en el monitoreo del termómetro de bulbo húmedo.

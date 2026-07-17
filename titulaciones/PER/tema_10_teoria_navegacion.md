@@ -69,3 +69,26 @@ $$ R_a = R_v - C_t $$
 Para las marcaciones y demoras (observaciones de puntos conspicuos de la costa con la pínula):
 $$ D_v = D_a + C_t $$
 De manera análoga, la demora verdadera ($D_v$) corrige el sesgo magnético local de nuestra observación.
+
+## Ejemplos Prácticos
+
+**Problema 1: Cálculo del Desvío de la Aguja mediante Triangulación Astronómica**
+Un buque navegando en latitud $\phi = 36^\circ 00' \text{N}$ y longitud $\lambda = 005^\circ 30' \text{W}$, marca el acimut de aguja de la Estrella Polar ($Z_a$) en $358.5^\circ$. En esa época del año, la declinación magnética tabulada en la carta es $dm = 2^\circ \text{W}$ con un decremento anual de $5'$. Han pasado 6 años desde la edición de la carta. Calcule la Corrección Total ($C_t$) y el Desvío ($\Delta$) del compás del buque. Considere el acimut verdadero de la Polar $Z_v \approx 000^\circ$ (despreciando el radio de la órbita aparente para este ejercicio).
+
+**Solución:**
+Sabemos que la Corrección Total se define geométricamente como:
+$$ C_t = Z_v - Z_a $$
+Sustituyendo los valores angulares:
+$$ C_t = 000^\circ - 358.5^\circ = -358.5^\circ \equiv +1.5^\circ \text{ (Este)} $$
+Ahora calculamos la Declinación Magnética actualizada ($dm_t$). El valor original es $dm_0 = -2^\circ$ (Oeste). La variación es $-5'$ al año, disminuyendo hacia el Oeste, es decir, volviéndose menos negativo (desplazándose al Este).
+$$ \text{Variación Total} = 6 \text{ años} \times (+5'/ \text{año}) = +30' = +0.5^\circ $$
+$$ dm_t = -2.0^\circ + 0.5^\circ = -1.5^\circ \text{ (Oeste)} $$
+Como $C_t = dm_t + \Delta$, despejamos el desvío:
+$$ \Delta = C_t - dm_t = (+1.5^\circ) - (-1.5^\circ) = +3.0^\circ \text{ (Este)} $$
+El desvío propio de los hierros del barco en ese rumbo es de $3^\circ$ a estribor.
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Bibliografía Básica:** Bowditch, N. (2019). *The American Practical Navigator* (Pub. No. 9). National Geospatial-Intelligence Agency.
+*   **Convenios OMI:** Resolución A.382(X) de la OMI: "Magnetic Compasses Carriage and Performance Standards".
+*   **Jurisprudencia:** *The "Lady Gwendolen" (1965)* P. 294. El Almirantazgo británico dictaminó negligencia grave por parte del armador al no garantizar que el capitán tuviera la Tablilla de Desvíos debidamente actualizada tras una reforma estructural del buque que alteró su firma magnética, derivando en una colisión con niebla densa.

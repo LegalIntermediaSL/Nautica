@@ -97,3 +97,44 @@ La cinemática del punteo (plotting manual) es el core del control marítimo:
     $$ \vec{v}_{\text{relativo}} = \vec{v}_{\text{blanco}} - \vec{v}_{\text{observador}} $$
 
 Para evitar un abordaje, el marino debe resolver el triángulo inverso para determinar un nuevo vector de observador (nuevo rumbo/velocidad) que obligue al CPA resultante a salir fuera del radio de seguridad establecido (ej. desviar la línea relativa 2 millas a estribor).
+
+## Ejemplos Prácticos
+
+**Problema 1: Cálculo Universal de Marea Trigonométrica**
+Se desea franquear una barra cuyo fondo es $S_c = 1.20\text{ m}$. Nuestro calado es de $c = 2.10\text{ m}$. Exigimos un Resguardo Bajo la Quilla ($UKC$) mínimo de $0.50\text{ m}$. Las previsiones del Anuario de Mareas para el puerto son:
+*   Bajamar: $06:20 \text{ UTC}$, Altura $= 0.60\text{ m}$
+*   Pleamar: $12:45 \text{ UTC}$, Altura $= 3.40\text{ m}$
+Calcule analíticamente la hora más temprana para cruzar sin tocar fondo en marea entrante.
+
+*Resolución:*
+1.  **Sonda necesaria ($S_m$):**
+    $$ S_m = c + UKC = 2.10\text{ m} + 0.50\text{ m} = 2.60\text{ m} $$
+2.  **Altura de marea mínima requerida ($Alt_{\text{req}}$):**
+    $$ Alt_{\text{req}} = S_m - S_c = 2.60\text{ m} - 1.20\text{ m} = 1.40\text{ m} $$
+3.  **Parámetros armónicos:**
+    $$ A (\text{Amplitud}) = 3.40 - 0.60 = 2.80\text{ m} $$
+    $$ D (\text{Duración}) = 12:45 - 06:20 = 6\text{ h } 25\text{ m} = 385\text{ minutos} $$
+    $$ C (\text{Corrección sobre la BM}) = Alt_{\text{req}} - Alt_{BM} = 1.40 - 0.60 = 0.80\text{ m} $$
+4.  **Inversión Trigonométrica de la Corrección para despejar el Intervalo ($I$):**
+    Sabemos que $C = A \cdot \sin^2\left(\frac{90^\circ \cdot I}{D}\right)$
+    $$ 0.80 = 2.80 \cdot \sin^2\left(\frac{90^\circ \cdot I}{385}\right) $$
+    $$ \sin^2\left(\frac{90^\circ \cdot I}{385}\right) = \frac{0.80}{2.80} \approx 0.2857 $$
+    $$ \sin\left(\frac{90^\circ \cdot I}{385}\right) = \sqrt{0.2857} \approx 0.5345 $$
+    $$ \frac{90^\circ \cdot I}{385} = \arcsin(0.5345) \approx 32.31^\circ $$
+    $$ I = \frac{32.31^\circ \cdot 385}{90^\circ} \approx 138.21\text{ minutos} = 2\text{ h } 18\text{ min} $$
+5.  **Hora Límite de Paso:**
+    $$ H_{\text{paso}} = H_{BM} + I = 06:20 + 02:18 = 08:38 \text{ UTC} $$
+    *(A las 08:38 UTC garantizamos un paso hidrodinámico con sonda suficiente).*
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Doctrina Académica:**
+    *   *Admiralty Manual of Navigation, Vol 1 y 2* (Royal Navy). Fundamental en trigonometría esférica, plana y el comportamiento cinemático.
+    *   *Radar and ARPA Manual* (A.G. Bole & A. Dineley). Elsevier. Aborda rigurosamente los vectores relativos W-O-A.
+*   **Convenios IMO:**
+    *   **COLREGs 1972 (Reglamento Internacional para Prevenir Abordajes):**
+        *   Regla 7: Riesgo de Abordaje (Obligatoriedad del uso óptimo de equipos de radar y ARPA).
+        *   Regla 8: Maniobras para Evitar Abordajes (Aplicación cinemática, las variaciones de rumbo deben ser amplias y no mediante pequeños escarceos).
+*   **Jurisprudencia Almirantazgo:**
+    *   *The "Andrea Doria" y "Stockholm" (1956):* Uno de los litigios y siniestros más paradigmáticos, causado directamente por la mala interpretación del vector de radar relativo (Radar Assisted Collision) y carencia de punteo ARPA automático, cruzando ambos sus proas estribor a estribor ciegas en la niebla.
+    *   *The "Eurasia Dream" (2002) 1 Lloyd's Rep 719:* Discute los estándares requeridos de pericia y "Seamanship", donde la incapacidad del oficial para resolver la estima matemática fue categorizada como *Unseaworthiness* (Falta de navegabilidad) de la nave.

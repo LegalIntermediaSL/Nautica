@@ -158,3 +158,32 @@ Navegar en altas latitudes ($> 50^\circ$) conlleva peligros letales asociados al
 *   **Icing (Acumulación de Hielo en Superestructuras):** Peligro mortal inmediato. Ocurre con aire a $\le -2^\circ\text{C}$ y agua del mar a $\le 5^\circ\text{C}$. Los rociones de las olas se congelan en la jarcia, barandillas y radar. El buque adquiere toneladas de peso extra en la parte superior, **elevando el Centro de Gravedad ($G$)** drásticamente, lo que causa el vuelco irremediable del barco por pérdida de estabilidad transversal.
 
 *Táctica ante hielos:* Monitorear continuamente el termómetro de agua salada (sea temperature). Una bajada drástica y repentina indica hielos. Navegar a mínima máquina y establecer vigías reforzados en la amura.
+
+---
+
+## Ejemplos Prácticos
+
+**Problema 1: Aceleración de Coriolis en el Frente Subpolar**
+Calcule la magnitud de la aceleración de Coriolis que experimenta una masa de aire moviéndose a $v = 30 \text{ m/s}$ (aprox. 58 nudos) en la latitud $\phi = 60^\circ \text{ N}$.
+
+*Solución:*
+La velocidad angular de la Tierra es $\Omega \approx 7.292 \times 10^{-5} \text{ rad/s}$.
+La fórmula de la aceleración de Coriolis es:
+$$ a_c = 2 \cdot \Omega \cdot v \cdot \sin(\phi) $$
+Sustituyendo los valores:
+$$ a_c = 2 \cdot (7.292 \times 10^{-5} \text{ rad/s}) \cdot (30 \text{ m/s}) \cdot \sin(60^\circ) $$
+Sabiendo que $\sin(60^\circ) = \frac{\sqrt{3}}{2} \approx 0.866$:
+$$ a_c = 2 \cdot 7.292 \times 10^{-5} \cdot 30 \cdot 0.866 = 3.789 \times 10^{-3} \text{ m/s}^2 $$
+Esta sutil aceleración acumulada sobre cientos de kilómetros es la responsable de desviar los vientos y crear el giro ciclónico de las borrascas extratropicales.
+
+---
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Bibliografía Recomendada:**
+    *   *Meteorology for Seafarers*, C.R. Burgess. Un estándar indispensable en la Marina Mercante.
+    *   *Heavy Weather Sailing*, Peter Bruce.
+*   **Convenciones OMI:**
+    *   SOLAS (Safety of Life at Sea), Capítulo V (Safety of Navigation): Obligaciones de los buques en la transmisión de mensajes de peligro meteorológico (Ice Patrol, avisos de huracanes).
+*   **Jurisprudencia (Admiralty Court):**
+    *   *The "M/V Toledo" (1995)*: El tribunal dictaminó sobre la negligencia del capitán al no usar debidamente los partes meteorológicos y cartas de superficie (facsímil) para evadir un ciclón extratropical.

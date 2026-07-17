@@ -82,3 +82,36 @@ Las nieblas suponen una reducción de la visibilidad a $< 1 \text{ km}$. Las col
 
 *   **Niebla de Advección (Enfriamiento Diabático):** Requiere vientos flojos pero constantes que desplacen masas de aire cálido y húmedo sobre corrientes oceánicas gélidas (Ej. Grand Banks, costa cantábrica en verano). El contacto rebaja $T$ hasta el $T_d$, condensando espesos mantos estratiformes que la radiación solar no disipa fácilmente (alta refracción albedo).
 *   **Niebla de Radiación:** Formación radiativa nocturna bajo cielos rasos anticiclónicos. En rías o puertos cerrados. El calor de la superficie terrestre escapa en la banda infrarroja de onda larga ($> 4 \mu m$), provocando una marcada Inversión Térmica en superficie, atrapando el vapor condensado cerca del mar. Típicamente disipada tras unas horas de insolación matutina.
+
+## Ejemplos Prácticos
+
+**Problema 1: Cálculo del Viento Geostrófico de Altura**
+Un yate navega a latitud $\phi = 45^\circ\text{ N}$. Un análisis sinóptico de la isohipsa de $500\text{ hPa}$ revela un gradiente de presión transversal de $\Delta P = 8\text{ hPa}$ en una distancia de $200\text{ km}$. Sabiendo que la densidad del aire en ese nivel es $\rho \approx 0.65\text{ kg/m}^3$ y la velocidad angular de la Tierra $\Omega = 7.292 \times 10^{-5}\text{ rad/s}$, calcule la magnitud teórica del Viento Geostrófico ($V_g$).
+
+*Resolución:*
+1.  **Cálculo del parámetro de Coriolis ($f$):**
+    $$ f = 2 \Omega \sin(\phi) = 2 \cdot (7.292 \times 10^{-5}) \cdot \sin(45^\circ) $$
+    $$ f \approx 2 \cdot (7.292 \times 10^{-5}) \cdot 0.7071 \approx 1.031 \times 10^{-4}\text{ s}^{-1} $$
+2.  **Conversión de unidades del Gradiente de Presión:**
+    $$ \Delta P = 8\text{ hPa} = 800\text{ Pa (N/m}^2) $$
+    $$ \Delta n = 200\text{ km} = 200,000\text{ m} $$
+    $$ \frac{\partial P}{\partial n} \approx \frac{\Delta P}{\Delta n} = \frac{800}{200,000} = 0.004\text{ Pa/m} $$
+3.  **Cálculo del Viento Geostrófico:**
+    $$ V_g = \frac{1}{\rho \cdot f} \frac{\partial P}{\partial n} $$
+    $$ V_g = \frac{1}{0.65 \cdot 1.031 \times 10^{-4}} \cdot 0.004 $$
+    $$ V_g = \frac{0.004}{6.7015 \times 10^{-5}} \approx 59.68\text{ m/s} $$
+4.  **Conversión a nudos ($1\text{ m/s} = 1.94384\text{ nudos}$):**
+    $$ V_g \text{ (kn)} = 59.68 \cdot 1.94384 \approx 116\text{ nudos} $$
+    *(Un valor indicativo de una corriente en chorro severa en la capa media).*
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Doctrina Académica:**
+    *   *Meteorology for Seafarers* (C.R. Burgess). Brown, Son & Ferguson.
+    *   *Atmospheric Science: An Introductory Survey* (John M. Wallace & Peter V. Hobbs). Elsevier/Academic Press. Capítulo 7: "Extratropical Synoptic-Scale Disturbances".
+*   **Convenios IMO y OMM:**
+    *   **WMO No. 9 - Vol D:** *Information for Shipping*. Procedimientos GMDSS y emisión de partes METAREA.
+    *   **SOLAS 1974, Capítulo V (Regla 5):** "Meteorological services and warnings", obligación ineludible de los estados miembros de proveer cartografía sinóptica de pronóstico y radioavisos navacionales.
+*   **Jurisprudencia Almirantazgo:**
+    *   *The "Bounty" (1998) - Tribunal Marítimo de Investigación de EE.UU. (USCG):* Un caso crucial donde se culpabilizó a la guardia y al capitán por no evadir un huracán de trayectoria predecible, fallando gravemente en la interpretación de los partes meteorológicos dinámicos.
+    *   *The "Marques" (1984):* Hundimiento de una goleta de entrenamiento en la Tall Ships' Race al verse sorprendida por un *squall line* asociado a un frente frío violento que no fue anticipado. Estableció precedentes en las regulaciones de estabilidad bajo ráfagas racheadas.

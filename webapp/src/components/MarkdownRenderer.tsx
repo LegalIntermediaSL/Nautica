@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
+import remarkGfm from 'remark-gfm';
 import rehypeKatex from 'rehype-katex';
 import mermaid from 'mermaid';
 
@@ -31,7 +32,7 @@ export default function MarkdownRenderer({ content }: { content: string }) {
   return (
     <div className="markdown-body">
       <ReactMarkdown
-        remarkPlugins={[remarkMath]}
+        remarkPlugins={[remarkMath, remarkGfm]}
         rehypePlugins={[rehypeKatex]}
         components={{
           code({ node, inline, className, children, ...props }: any) {

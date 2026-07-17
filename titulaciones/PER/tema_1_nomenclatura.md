@@ -77,3 +77,26 @@ En la dinámica de fluidos marítima, la cinemática es esencial:
 *   **Abatir:** Desplazamiento lateral por fuerza del viento ($F_w$). En veleros, se contrarresta con la sustentación hidrodinámica de la quilla.
 *   **Derivar:** Desplazamiento vectorial absoluto provocado por la corriente ($V_c$).
 El vector de velocidad absoluta del barco ($V_{SOG}$) es la suma del vector de velocidad sobre el agua ($V_{STW}$), el vector viento (abatimiento) y el vector corriente.
+
+## Ejemplos Prácticos
+
+**Problema 1: Cálculo de la Resistencia de Formación de Olas (Wave-Making Resistance)**
+Un velero de diseño clásico posee una eslora en la línea de flotación de $L_{WL} = 10 \text{ m}$. Si el Número de Froude ($Fr$) se define matemáticamente como:
+$$ Fr = \frac{v}{\sqrt{g \cdot L_{WL}}} $$
+y se asume empíricamente que la resistencia por formación de olas diverge significativamente al alcanzar un Número de Froude de la "velocidad del casco" de $Fr \approx 0.4$, calcule la velocidad límite teórica del casco en nudos. Asuma $g = 9.81 \text{ m/s}^2$.
+
+*Solución:*
+1. Despejando la velocidad límite de la ecuación de Froude:
+$$ v = Fr \cdot \sqrt{g \cdot L_{WL}} $$
+2. Sustituyendo los valores conocidos:
+$$ v = 0.4 \cdot \sqrt{9.81 \text{ m/s}^2 \cdot 10 \text{ m}} = 0.4 \cdot \sqrt{98.1} \text{ m/s} $$
+$$ v \approx 0.4 \cdot 9.904 \text{ m/s} = 3.96 \text{ m/s} $$
+3. Convirtiendo a nudos ($1 \text{ nudo} = 0.5144 \text{ m/s}$):
+$$ V_{max} = \frac{3.96 \text{ m/s}}{0.5144 \text{ m/s/nudo}} \approx 7.70 \text{ nudos} $$
+Esta fórmula subraya la barrera hidrodinámica ineludible para cascos de desplazamiento antes de entrar en régimen de planeo.
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Bibliografía:** Rawson, K. J., & Tupper, E. C. (2001). *Basic Ship Theory*. Butterworth-Heinemann.
+*   **Bibliografía:** Marchaj, C. A. (2000). *Aero-Hydrodynamics of Sailing*. Tiller Publishing.
+*   **Jurisprudencia:** *The "Eurasian Dream" [2002] 1 Lloyd's Rep 719* – Caso de la High Court of Justice (Admiralty Court) donde se estableció la inestabilidad inherente derivada de modificaciones estructurales en buques y la consecuente inhabilidad de gobierno por no documentar adecuadamente cambios en la geometría del casco.

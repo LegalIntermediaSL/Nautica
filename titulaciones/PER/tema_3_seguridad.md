@@ -67,3 +67,31 @@ La supervivencia en aguas $< 15^\circ C$ (choque térmico) es de minutos.
 La hidrodinámica del temporal se aborda con dos tácticas primarias:
 *   **Capear (Heave-to):** Tomar viento/mar por la amura ($45^\circ$). El barco entra en cuasi-equilibrio de fuerzas; deriva lentamente formando una gran mancha de turbulencia a barlovento (slick) que rompe la cresta de las olas entrantes.
 *   **Correr el temporal (Running):** Navegar a favor de olas. Riesgo extremo de *guiñada de ronza* (broaching): Si la ola viaja a la velocidad del barco ($V \approx \sqrt{g \lambda / 2\pi}$), la popa pierde sustentación del timón, el barco se atraviesa al mar y zozobra instantáneamente. Solución: usar anclas de capa o amarras por popa (drogues) para inducir drag aerohidrodinámico y frenar el empuje.
+
+## Ejemplos Prácticos
+
+**Problema 1: Cálculo del Momento Adrizante y Altura Metacéntrica ($GM$)**
+Un velero de desplazamiento $\Delta = 5000 \text{ kg}$ (con centro de gravedad a una altura $KG = 1.2 \text{ m}$ respecto a la quilla base) experimenta un corrimiento de carga. Durante una prueba de inclinación, un peso $p = 200 \text{ kg}$ se desplaza transversalmente una distancia $d = 2 \text{ m}$. Esto genera un ángulo de escora permanente $\phi = 5^\circ$.
+Calcule la altura metacéntrica inicial ($GM$) asumiendo pequeños ángulos.
+
+*Solución:*
+1. El momento escorante provocado por el desplazamiento transversal del peso es:
+$$ M_{escorante} = p \cdot g \cdot d \cdot \cos(\phi) \approx p \cdot g \cdot d \quad \text{(para ángulos pequeños, } \cos(5^\circ) \approx 1\text{)} $$
+Consideraremos el momento en términos de masa-distancia por simplicidad:
+$$ M_{escorante} \approx 200 \text{ kg} \cdot 2 \text{ m} = 400 \text{ kg}\cdot\text{m} $$
+2. En la condición de equilibrio, el momento escorante es igual al momento adrizante del buque ($M_{adrizante}$):
+$$ M_{adrizante} = \Delta \cdot GM \cdot \tan(\phi) $$
+Igualando ambos momentos (omitiendo $g$ en ambos lados):
+$$ p \cdot d = \Delta \cdot GM \cdot \tan(\phi) $$
+3. Despejando $GM$:
+$$ GM = \frac{p \cdot d}{\Delta \cdot \tan(\phi)} $$
+4. Sustituyendo los valores conocidos:
+$$ GM = \frac{200 \cdot 2}{5000 \cdot \tan(5^\circ)} = \frac{400}{5000 \cdot 0.0875} = \frac{400}{437.5} $$
+$$ GM \approx 0.91 \text{ m} $$
+El resultado ($0.91 \text{ m} > 0$) indica que el barco goza de una estabilidad inicial positiva y satisfactoria para la navegación costera.
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Convenios OMI:** *Convenio Internacional para la Seguridad de la Vida Humana en el Mar (SOLAS)* – Capítulo II-1: Construcción - Estructura, compartimentado y estabilidad; y Capítulo III: Dispositivos y medios de salvamento.
+*   **Bibliografía:** Derrett, D. R. (1999). *Ship Stability for Masters and Mates*. Butterworth-Heinemann.
+*   **Jurisprudencia:** *The "Toledo" [1995] 1 Lloyd's Rep 40* – Caso de Admiralty en el que se dictaminó sobre la negligencia en la estiba y el incumplimiento de los criterios mínimos de estabilidad intacta (cálculos de la curva GZ), resultando en el hundimiento y las respectivas responsabilidades civiles de la armadora.

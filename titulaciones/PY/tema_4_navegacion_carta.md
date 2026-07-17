@@ -96,3 +96,42 @@ Para hallar los centros de la circunferencia en la carta:
 1.  Unimos ambos faros $A$ y $B$. Trazamos su mediatriz de forma analítica (ortogonal de punto medio).
 2.  En el faro $A$ y en el $B$, levantamos sendos rayos a $90^\circ - \alpha$ de la línea base (si el ángulo del sextante $\alpha$ es $< 90^\circ$).
 3.  La intersección del rayo con la mediatriz dicta las coordenadas precisas del Centro ($O$) de la circunferencia isométrica. Apoyando el compás, el trazo englobará A, B, y todas las posibles situaciones del yate en el mar.
+
+## Ejemplos Prácticos
+
+**Problema 1: Cálculo del Rumbo Efectivo Intersecado (Corriente Fuerte)**
+Zarpamos del punto $A$ (situación inicial) a 12 nudos ($V_b = 12\text{ kn}$). Requerimos seguir a un puerto de refugio $B$ situado geométricamente al $045^\circ$ Verdaderos (este es nuestro Rumbo Efectivo proyectado $R_{ef} = 045^\circ$). Sabemos por el Derrotero que la marea y la corriente de deriva generan un vector combinado $R_c = 110^\circ$ con una $I_{hc} = 3.5\text{ kn}$. Calcule el Rumbo de Superficie ($R_s$) y la Velocidad Efectiva ($V_{ef}$) usando el Teorema del Seno sobre el triángulo cinemático.
+
+*Resolución:*
+1.  **Planteamiento del Triángulo Vectorial (C-O-B):**
+    En el triángulo, los lados son las velocidades ($V_b, I_{hc}, V_{ef}$). Los ángulos opuestos son la clave.
+    *   El ángulo entre el vector Corriente ($R_c = 110^\circ$) y el vector Rumbo Efectivo ($R_{ef} = 045^\circ$) es:
+        $$ \theta_{\text{interno}} = 110^\circ - 45^\circ = 65^\circ $$
+        Este es el ángulo opuesto al vector $V_b$ (12 kn).
+    *   Llamaremos $\delta$ (ángulo de deriva de corrección) al ángulo formado entre el $R_{ef}$ y el $R_s$. Este es el ángulo opuesto al vector Corriente ($I_{hc} = 3.5\text{ kn}$).
+2.  **Aplicación de la Ley de los Senos:**
+    $$ \frac{I_{hc}}{\sin(\delta)} = \frac{V_b}{\sin(\theta_{\text{interno}})} $$
+    $$ \frac{3.5}{\sin(\delta)} = \frac{12}{\sin(65^\circ)} $$
+    $$ \sin(\delta) = \frac{3.5 \cdot \sin(65^\circ)}{12} \approx \frac{3.5 \cdot 0.9063}{12} \approx \frac{3.172}{12} \approx 0.2643 $$
+    $$ \delta = \arcsin(0.2643) \approx 15.3^\circ $$
+3.  **Deducción del Rumbo de Superficie ($R_s$):**
+    La corriente nos empuja hacia la derecha (del $045^\circ$ hacia el $110^\circ$). Por tanto, debemos "apuntar" la proa hacia la izquierda del $R_{ef}$ para compensar el arrastre galileano.
+    $$ R_s = R_{ef} - \delta = 045^\circ - 15.3^\circ = 029.7^\circ \text{ (Aprox. } 030^\circ\text{)} $$
+4.  **Cálculo de la Velocidad Efectiva ($V_{ef}$) - Ley de Cosenos o Ángulo Faltante:**
+    El ángulo restante del triángulo es:
+    $$ \gamma = 180^\circ - 65^\circ - 15.3^\circ = 99.7^\circ $$
+    Esta $\gamma$ es el ángulo opuesto a $V_{ef}$. Usando la ley del Seno nuevamente:
+    $$ \frac{V_{ef}}{\sin(99.7^\circ)} = \frac{12}{\sin(65^\circ)} $$
+    $$ V_{ef} = \frac{12 \cdot 0.9857}{0.9063} \approx \frac{11.828}{0.9063} \approx 13.05\text{ nudos} $$
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Doctrina Académica:**
+    *   *Bowditch's American Practical Navigator* (NGA). La Biblia de la navegación analítica (Capítulo "Dead Reckoning" y "Piloting").
+    *   *The Principles of Navigation* (E.W. Anderson). Para la teoría del elipsoide y proyecciones Mercator.
+*   **Convenios IMO:**
+    *   **STCW 2010 (Enmiendas de Manila):** Sección A-II/1. Establece los requisitos de competencia matemática estricta para navegación costera y de estima.
+    *   **SOLAS 1974, Cap. V, Reg. 34:** "Viaje Seguro", obligación del capitán de realizar el *Passage Planning* desde el atraque de origen al atraque de destino, lo cual incluye el cálculo previo del efecto de mareas y rumbos de aguja.
+*   **Jurisprudencia Almirantazgo:**
+    *   *The "Torrey Canyon" (1967):* Uno de los peores desastres ecológicos, donde la negligencia en la actualización de la estima y no percatarse del abatimiento de corriente condujo al superpetrolero al encallamiento fatal en los arrecifes de Seven Stones.
+    *   *The "Tasman Spirit" (2003):* Resolución basada en la incapacidad de la oficialidad y el práctico para compensar analíticamente el vector viento (abatimiento) y el vector corriente de marea cruzada, resultando en el fraccionamiento del buque portuario.

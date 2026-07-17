@@ -163,3 +163,34 @@ Estas frases aparecen literalmente en los test oficiales:
 *   *"My propeller is fouled."* $\rightarrow$ Tengo la hélice enredada.
 *   *"I am not under command."* $\rightarrow$ Soy un buque sin gobierno.
 *   *"Hold on!"* $\rightarrow$ ¡Agárrense fuertemente! (Aviso antes de impacto o golpe de mar).
+
+---
+
+## Ejemplos Prácticos
+
+**Problema 1: Cálculo del TCPA (Time to Closest Point of Approach) a partir del radar ARPA**
+Un buque propio (Own Ship) y un blanco (Target) presentan un riesgo de abordaje. El sistema ARPA arroja que la distancia al CPA (Distancia de mínima aproximación) se alcanzará tras recorrer la distancia relativa $D_{\text{rel}} = 3.5 \text{ NM}$ a una velocidad relativa $V_{\text{rel}} = 14 \text{ nudos}$. Calcule el $TCPA$ en minutos.
+
+*Solución:*
+Sabemos que la velocidad relativa es $V_{\text{rel}} = \frac{D_{\text{rel}}}{TCPA}$.
+Despejando $TCPA$:
+$$ TCPA = \frac{D_{\text{rel}}}{V_{\text{rel}}} $$
+Sustituyendo los valores:
+$$ TCPA = \frac{3.5 \text{ NM}}{14 \text{ NM/h}} = 0.25 \text{ h} $$
+Convirtiendo a minutos:
+$$ TCPA_{\text{min}} = 0.25 \text{ h} \cdot 60 \text{ min/h} = 15 \text{ minutos} $$
+*Intervención SMCP:* "WARNING. You are running into danger. TCPA is one-five minutes."
+
+---
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Bibliografía Recomendada:**
+    *   *IMO Standard Marine Communication Phrases (SMCP)* (Resolución A.918(22)).
+    *   *Maritime English*, C. Blakey.
+*   **Convenciones OMI:**
+    *   STCW (Standards of Training, Certification and Watchkeeping for Seafarers): Exige competencia estandarizada en inglés para oficiales de puente.
+    *   Reglamento Internacional para Prevenir Abordajes (RIPA/COLREGs).
+*   **Jurisprudencia (Admiralty Court):**
+    *   *The "Estonia" Disaster (1994)*: La falta de comprensión clara y barreras idiomáticas en el tráfico de socorro (Mayday) agravó enormemente la respuesta SAR, provocando cambios fundamentales en el estándar GMDSS y el uso de frases tipo.
+    *   *The "Scandinavian Star" (1990)*: El fallo masivo en la comunicación en inglés a bordo entre la tripulación (multinacional) durante la evacuación conllevó graves condenas judiciales sobre la seguridad naval.

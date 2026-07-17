@@ -97,3 +97,47 @@ En niebla, la atenuación acústica es severa, exigiendo periodos estrictos:
 
 ### Señales de Socorro (Anexo IV)
 Exclusivas para peligro de vida: Bengalas rojas, llamas, humo naranja, SOS Morse, "MAYDAY" en Canal 16 VHF (156.800 MHz), brazos en cruz.
+
+## Ejemplos Prácticos
+
+**Problema 1: Cálculo Cinemático de Abordaje (CPA y TCPA)**
+Navegamos en un buque propio (Own Ship, OS) a rumbo $R_1 = 045^\circ$ con una velocidad de $v_1 = 12 \text{ nudos}$. En nuestra pantalla de radar ARPA fijamos un blanco (Target, T) situado a una marcación inicial $\theta = 315^\circ$ (demora verdadera de $360^\circ$ o Norte directo) a una distancia inicial $d = 8 \text{ millas náuticas}$. El ARPA indica que el buque T navega a rumbo $R_2 = 135^\circ$ a una velocidad $v_2 = 15 \text{ nudos}$. 
+
+Determine vectorialmente la velocidad relativa, el TCPA (Time to Closest Point of Approach) y la distancia del CPA, verificando si existe riesgo de abordaje inminente (Regla 7).
+
+*Resolución:*
+Establecemos un sistema de coordenadas cartesianas alineado con el Norte ($y$) y el Este ($x$).
+Velocidad del buque propio $\mathbf{v}_1$:
+$$ \mathbf{v}_1 = \langle 12 \sin(45^\circ), 12 \cos(45^\circ) \rangle = \langle 12 \times 0.707, 12 \times 0.707 \rangle = \langle 8.485, 8.485 \rangle \text{ nudos} $$
+
+Velocidad del blanco $\mathbf{v}_2$:
+$$ \mathbf{v}_2 = \langle 15 \sin(135^\circ), 15 \cos(135^\circ) \rangle = \langle 15 \times 0.707, -15 \times 0.707 \rangle = \langle 10.605, -10.605 \rangle \text{ nudos} $$
+
+Vector de Velocidad Relativa $\mathbf{v}_{rel} = \mathbf{v}_2 - \mathbf{v}_1$:
+$$ \mathbf{v}_{rel} = \langle 10.605 - 8.485, -10.605 - 8.485 \rangle = \langle 2.12, -19.09 \rangle \text{ nudos} $$
+Magnitud de la velocidad relativa $\|\mathbf{v}_{rel}\| = \sqrt{2.12^2 + (-19.09)^2} \approx 19.2 \text{ nudos}$.
+
+Vector de posición inicial relativa $\Delta\mathbf{p}_0$ (el blanco está al Norte a 8 millas):
+$$ \Delta\mathbf{p}_0 = \langle 0, 8 \rangle \text{ millas} $$
+
+Cálculo del TCPA:
+$$ TCPA = - \frac{\Delta\mathbf{p}_0 \cdot \mathbf{v}_{rel}}{\|\mathbf{v}_{rel}\|^2} = - \frac{(0)(2.12) + (8)(-19.09)}{19.2^2} = - \frac{-152.72}{368.64} \approx 0.414 \text{ horas} $$
+$$ TCPA = 0.414 \times 60 \approx 24.8 \text{ minutos} $$
+
+Cálculo de la posición en el CPA y la distancia $D_{CPA}$:
+$$ \Delta\mathbf{p}_{CPA} = \Delta\mathbf{p}_0 + \mathbf{v}_{rel} \times TCPA = \langle 0, 8 \rangle + \langle 2.12, -19.09 \rangle \times 0.414 $$
+$$ \Delta\mathbf{p}_{CPA} = \langle 0 + 0.878, 8 - 7.903 \rangle = \langle 0.878, 0.097 \rangle \text{ millas} $$
+$$ D_{CPA} = \sqrt{0.878^2 + 0.097^2} \approx 0.88 \text{ millas} $$
+
+Dado que $D_{CPA}$ es menor de 1 milla náutica y el TCPA es positivo (ocurrirá en el futuro), se concluye que **HAY RIESGO DE ABORDAJE**. Según la Regla 15 (Cruce), nosotros vemos al blanco por babor y él nos ve por estribor, por lo que **el buque T debe ceder el paso**.
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Convenios Internacionales:**
+    *   *Reglamento Internacional para Prevenir Abordajes (COLREGs 1972)*, enmendado. Organización Marítima Internacional.
+*   **Textos Académicos:**
+    *   *Farwell's Rules of the Nautical Road*, Craig H. Allen. El tratado fundamental sobre la aplicación legal y matemática del RIPA.
+    *   *Marine Radar and ARPA*, A. Bole, A. Dineley. Para los cálculos cinemáticos rigurosos y tolerancia de sensores de a bordo.
+*   **Jurisprudencia de Almirantazgo:**
+    *   *The "Boleslaw Chrobry" [1974] 2 Lloyd's Rep. 308*: Estableció precedentes sobre la obligación de usar radar y trazar correctamente las posiciones relativas (TCPA/CPA), penalizando la mera observación en pantalla sin cálculo vectorial.
+    *   *The "Volvox Hollandia" [1988] 2 Lloyd's Rep. 361*: Fallo sobre la Regla 2 (Negligencia y Agonía del Momento) donde se dictamina que la acción evasiva tardía por parte del buque con derecho de paso también constituye culpabilidad en la colisión.

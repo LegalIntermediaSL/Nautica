@@ -69,3 +69,25 @@ Cuando los sistemas GNSS sufren "spoofing", interferencias solares o pérdida to
     *   Luz Blanca: Canal seguro y mar profundo.
     *   Luz Roja / Verde: Sector angular de peligro, rocas perimetrales o bajo calado.
 3.  **Looming vs. Range:** Un observador podría divisar los fotones del faro colisionando y reflejándose elásticamente contra estratocúmulos a media altura (Looming o Resplandor), anticipando la posición visual mucho antes de que se produzca la intercepción trigonométrica del foco de luz en línea recta sobre el horizonte aparente del observador (Range). No se deben tomar demoras matemáticas a un looming, sólo al bulbo directo de luz focalizada.
+
+## Ejemplos Prácticos
+
+**Problema 1: Límite Termodinámico y Geométrico del Haz de un Faro**
+A bordo de un buque mercantil, el observador tiene los ojos situados a una altura $e = 15 \text{ m}$ sobre el nivel del mar. Se aproxima de noche a un faro costero cuya elevación focal es $E = 81 \text{ m}$ y su alcance nominal tabulado (intensidad óptica pura) es $D_N = 20 \text{ millas}$. Calcule a qué distancia real ($d_{\text{real}}$) aparecerá el destello del faro tangencial sobre el horizonte en una noche de atmósfera estándar.
+
+**Solución:**
+El alcance fotométrico es $D_N = 20 \text{ millas}$. 
+Ahora calculamos el límite geométrico interpuesto por el esferoide terrestre. La fórmula del alcance geográfico en millas náuticas, corregida por refracción atmosférica, es:
+$$ d_{\text{geo}} = 2.08 \cdot \left( \sqrt{E} + \sqrt{e} \right) $$
+Sustituyendo los valores de las elevaciones en metros:
+$$ d_{\text{geo}} = 2.08 \cdot \left( \sqrt{81} + \sqrt{15} \right) $$
+$$ d_{\text{geo}} = 2.08 \cdot (9 + 3.873) = 2.08 \cdot 12.873 \approx 26.77 \text{ millas náuticas} $$
+El alcance de avistamiento real obedece al principio de restricción fundamental: la luz no puede ser vista más allá de lo que permite su potencia óptica, ni antes de sortear la curvatura de la Tierra.
+$$ d_{\text{real}} = \min(D_N, d_{\text{geo}}) = \min(20, 26.77) = 20 \text{ millas} $$
+El navegante avistará el faro a 20 millas, condicionado estrictamente por la debilidad de la candela luminosa (Alcance Nominal) y no por la obstrucción del horizonte de la Tierra.
+
+## Referencias Bibliográficas y Jurisprudencia
+
+*   **Bibliografía Básica:** IALA-AISM. (2014). *Navguide - Guía de la IALA sobre Ayudas a la Navegación*. International Association of Marine Aids to Navigation and Lighthouse Authorities.
+*   **Convenios OMI:** Libro de Faros y Señales de Niebla del Instituto Hidrográfico de la Marina (IHM), y regulaciones estándar de la Organización Hidrográfica Internacional (OHI).
+*   **Jurisprudencia:** *The "Norman Atlantic" (2014)* y colisiones afines cerca de enfilaciones. Decisiones de Cortes de Almirantazgo que analizan la responsabilidad del oficial de guardia por confundir la característica lumínica de faros principales con luminarias civiles de fondo (background lighting) en zonas densamente pobladas, un factor mitigable mediante el correcto cálculo de distancias trigonométricas y arcos de visibilidad.
