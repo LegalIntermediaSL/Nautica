@@ -50,9 +50,29 @@ El mareo (conflicto sensorial entre el líquido del oído interno y lo que ven l
 *   **Prevención Médica:** Biodramina (Dimenhidrinato) $30 \text{ min}$ antes de embarcar. Parches de Escopolamina (detrás de la oreja) en navegaciones muy largas.
 *   **Tratamiento de Choque:** Si el tripulante entra en fase de vómito incontrolable, se arriesga a deshidratación severa. Tumbarlo boca arriba en el punto de menor balanceo (cerca de crujía, abajo y a popa), cerrar sus ojos o que mire al horizonte fijo exterior. Suministrar suero oral a sorbos diminutos.
 
-### 3.5. Quemaduras Químicas Térmicas
-*   **Quemaduras por Motor/Aceite/Gasoil:** Muy comunes trabajando en el pozo de anclas, en las baterías o en sentinas confinadas.
-*   **Tratamiento:** Refrigerar el tejido con suero salino o agua dulce a raudales de 10 a 20 minutos. **Nunca** arrancar ropa pegada. Aplicar gasa de gel especial para quemaduras (Linitul, BurnFree) y vendaje nada compresivo.
+### 3.5. Shock y Anafilaxia (Reacción Alérgica Severa)
+Una picadura de abeja/avispa, consumo de frutos secos ocultos o marisco puede desencadenar un choque anafiláctico a bordo. El cierre de las vías respiratorias mata en minutos.
+*   **Síntomas:** Hinchazón extrema de cara y labios, ronchas rojas, asfixia pavorosa, pérdida de consciencia rápida.
+*   **Tratamiento de Choque:** Administrar **ADRENALINA** inmediatamente (inyección intramuscular en la cara exterior del muslo, incluso a través de la ropa) usando un autoinyector tipo *EpiPen* o *Altellus*. Acompañar de corticoides/antihistamínicos, tumbar al paciente levantando las piernas (Posición Antishock) e iniciar llamada de MAYDAY.
+
+### 3.6. Quemaduras, Incendios Químicos y Eléctricos
+*   **Quemaduras Térmicas (Motor/Aceite/Gasoil):** Muy comunes trabajando en el pozo de anclas, en las baterías o en sentinas confinadas. Refrigerar el tejido con suero salino o agua dulce a raudales durante 20 minutos. **Nunca** arrancar ropa pegada a la piel. Aplicar gasa de gel especial para quemaduras (Linitul, BurnFree) y vendaje muy suave.
+*   **Quemaduras por Fricción (Escotas):** Si un cabo corre descontrolado por las manos sin guantes, quemará la epidermis al instante. Lavar con clorhexidina y vendar.
+
+### 3.7. Intoxicaciones Peligrosas a Bordo
+*   **Monóxido de Carbono (El asesino silencioso):** Un escape de gases del motor diésel o del generador en un camarote cerrado sin ventilación mata sin aviso, inodoro e incoloro. Síntomas de la tripulación: dolor de cabeza frontal, náuseas, confusión, labios/piel con tono rojo cereza. **Acción:** Evacuar a cubierta inmediatamente, administrar oxígeno puro (si hay en botiquín Zona 1) y RCP si es necesario.
+*   **Ciguatera / Intoxicación Alimentaria:** Consumir pesca tropical de arrecife contaminada. Produce diarreas explosivas, parálisis o inversión térmica (sentir quemazón al tocar cosas frías). Hidratación masiva con sueros orales, aislar vía aérea si vomita inconsciente.
+
+### 3.8. Picaduras y Fauna Marina Tóxica
+*   **Medusas (Carabela Portuguesa, Pelagia):** Dolor urticante atroz. **JAMÁS** lavar con agua dulce (rompe los nematocistos inyectando más veneno). Lavar SOLO con agua de mar. Aplicar hielo envuelto en un paño (nunca directo) y administrar analgésicos.
+*   **Pez Araña (Salvar el ancla a pulmón):** Se entierra en la arena y pincha al pisarlo. Inyecta veneno termolábil. **Tratamiento mágico:** Sumergir el miembro afectado en agua lo más caliente que soporte el paciente (45ºC) durante 30-60 minutos; el calor destruye la neurotoxina casi instantáneamente.
+*   **Erizos de Mar:** No intentar arrancar las púas con pinzas (son calcáreas y se romperán bajo la piel, infectándose). Ablandar con vinagre y extraer superficialmente con aguja estéril.
+
+### 3.9. Heridas Graves y Cierres (En Alta Mar)
+Si alguien se produce un tajo profundo y restallante, no se puede esperar al hospital para cerrar la herida.
+1.  **Limpieza:** Irrigar la herida a presión con abundante suero fisiológico (arrastrar bacterias y grasa).
+2.  **Cierre:** Si no sabes dar puntos de sutura con aguja e hilo quirúrgico, usa **Puntos Americanos (Steri-Strips)** o **Pegamento Tisular (Dermabond)** juntando fuertemente los bordes.
+3.  **Vendaje:** Colocar vendaje compresivo estéril y pautar antibióticos de amplio espectro por radio-consejo del Centro Radio Médico.
 
 ---
 
