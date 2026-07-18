@@ -26,9 +26,11 @@ Se divide en dos módulos independientes:
 *   **[Meteorología](tema_1_meteorologia.md):** (10 preguntas). Meteorología oceánica, huracanes y ciclones tropicales, derrota óptima, hielos. *Máximo 5 fallos.*
 *   **[Inglés](tema_2_ingles_maritimo.md):** (10 preguntas). Comprensión de las "Standard Marine Communication Phrases" (SMCP) de la OMI. Terminología náutica en inglés. *Máximo 5 fallos.*
 
-## Práctica y Recursos
-*   **[Consejos Generales de Examen](../CONSEJOS_EXAMEN.md):** Guía de supervivencia, tiempos y eliminatorias.
-*   **[Simulacro de Examen](simulacro_examen.md):** Atrévete con el temido examen de trigonometría esférica y SMCP.
+## Entrenamiento y Exámenes
+* **[Simulacro: Módulo de Navegación](simulacro_modulo_navegacion.md)** (Astronomía y Cálculos).
+* **[Simulacro: Módulo Genérico](simulacro_modulo_generico.md)** (Meteorología Oceánica e Inglés SMCP).
+* **[Simulación Jupyter: Determinante de Marcq St. Hilaire](../../simulaciones/09_marcq_st_hilaire.ipynb)**.
+* **[Consejos para el Examen Oficial](../CONSEJOS_EXAMEN.md)**
 *   **[Guía de Prácticas Reglamentarias](../PRACTICAS.md):** Todo lo que necesitas saber sobre las horas de prácticas oceánicas obligatorias.
 *   **Almanaque Náutico:** Imprescindible para el examen de navegación astronómica.
 *   **Simuladores de Sextante:** Existen apps que simulan el uso de un sextante en la pantalla del móvil para familiarizarse con su manejo.
