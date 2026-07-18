@@ -27,6 +27,7 @@ Se divide en dos módulos independientes:
 *   **[Inglés](tema_2_ingles_maritimo.md):** (10 preguntas). Comprensión de las "Standard Marine Communication Phrases" (SMCP) de la OMI. Terminología náutica en inglés. *Máximo 5 fallos.*
 
 ## Práctica y Recursos
+*   **[Consejos Generales de Examen](../CONSEJOS_EXAMEN.md):** Guía de supervivencia, tiempos y eliminatorias.
 *   **[Simulacro de Examen](simulacro_examen.md):** Atrévete con el temido examen de trigonometría esférica y SMCP.
 *   **[Guía de Prácticas Reglamentarias](../PRACTICAS.md):** Todo lo que necesitas saber sobre las horas de prácticas oceánicas obligatorias.
 *   **Almanaque Náutico:** Imprescindible para el examen de navegación astronómica.

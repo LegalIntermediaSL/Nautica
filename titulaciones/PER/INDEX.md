@@ -31,6 +31,7 @@ El examen consta de **45 preguntas tipo test**. Duración: 1 hora y 30 minutos.
 11. **[Carta de navegación](tema_11_carta_navegacion.md):** (4 preguntas prácticas sobre la carta del Estrecho de Gibraltar). *Eliminatorio: Máximo 2 fallos.* Problemas de situación, cálculo de rumbo, distancia y tiempo.
 
 ## Recursos para Preparar el Examen
+*   **[Consejos Generales de Examen](../CONSEJOS_EXAMEN.md):** Guía de supervivencia, tiempos y eliminatorias.
 *   **[Simulacro de Examen](simulacro_examen.md):** Preguntas oficiales trampa con soluciones paso a paso.
 *   **Material imprescindible:** Carta Náutica de enseñanza del Estrecho de Gibraltar, compás de dibujo, transportador de ángulos y regla.
 *   **Laboratorio de Simulaciones:** Revisa nuestro directorio `simulaciones/` (en Python) para entender los cálculos de rumbo verdadero y viento aparente.

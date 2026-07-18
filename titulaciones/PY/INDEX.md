@@ -26,6 +26,7 @@ Se divide en dos módulos independientes. Puedes presentarte y aprobar los módu
 *   **[Tema 4: Navegación Carta](tema_4_navegacion_carta.md)**: (10 preguntas). Estimada analítica y gráfica. Cálculo de corrientes (Rumbo y Velocidad efectiva).
 
 ## Práctica y Recursos
+*   **[Consejos Generales de Examen](../CONSEJOS_EXAMEN.md):** Guía de supervivencia, tiempos y eliminatorias.
 *   **[Simulacro de Examen](simulacro_examen.md):** Preguntas tipo de cálculo de mareas y estima analítica.
 *   **[Guía de Prácticas Reglamentarias](../PRACTICAS.md):** Todo lo que necesitas saber sobre las 16 horas de prácticas de seguridad y navegación obligatorias.
 *   **Calculadora científica:** Permiten llevarla al examen (no programable) para la trigonometría.
