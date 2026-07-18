@@ -43,6 +43,36 @@ $$ D_{\text{radio}} \approx 2.22 \cdot \left( \sqrt{h_t} + \sqrt{h_r} \right) $$
 
 Donde $h_t$ y $h_r$ representan las cotas de elevación en metros de las antenas transmisora y receptora respectivamente. Para una lancha de 5 metros, la cota de antena portátil apenas supera $1.5 \, \text{m}$, lo que constriñe severamente el radio de propagación.
 
+### Árbol de Decisión: Protocolo VHF de Emergencia (Canal 16)
+
+```mermaid
+graph TD
+    A[Identificación de Incidencia a Bordo] --> B{¿Peligro grave e inminente<br/>para la vida o el buque?}
+    
+    B -->|SÍ| C[Llamada de SOCORRO]
+    C --> C1[Señal: MAYDAY x3]
+    C1 --> C2[Identidad: Nombre Embarcación x3<br/>MMSI / Indicativo de Llamada]
+    C2 --> C3[Posición: Lat/Lon o marcación a punto notable]
+    C3 --> C4[Naturaleza: Vía de agua, incendio, abandono]
+    C4 --> C5[Ayuda requerida y N.º Personas]
+    
+    B -->|NO| D{¿Seguridad del buque<br/>o persona comprometida?}
+    
+    D -->|SÍ| E[Llamada de URGENCIA]
+    E --> E1[Señal: PAN-PAN x3]
+    E1 --> E2[Mismo formato que Socorro<br/>Ej: Avería de motor a la deriva, herido leve]
+    
+    D -->|NO| F{¿Información vital<br/>para la navegación?}
+    
+    F -->|SÍ| G[Llamada de SEGURIDAD]
+    G --> G1[Señal: SECURITÉ x3]
+    G1 --> G2[Avisos a los navegantes, temporales, troncos a la deriva]
+    
+    style C fill:#cc0000,stroke:#333,stroke-width:2px,color:#fff
+    style E fill:#ff9900,stroke:#333,stroke-width:2px,color:#fff
+    style G fill:#0066cc,stroke:#333,stroke-width:2px,color:#fff
+```
+
 ## Ejemplos Prácticos
 
 **Problema 1: Evaluación Diferencial del Tiempo hasta la Colisión (TTC)**

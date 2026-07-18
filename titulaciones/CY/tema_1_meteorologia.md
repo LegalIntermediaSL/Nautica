@@ -182,6 +182,10 @@ Navegar en altas latitudes ($> 50^\circ$) conlleva peligros letales asociados al
 
 ---
 
+## Recursos Audiovisuales (Videotutoriales de Apoyo)
+
+*   📺 **Escuela Náutica Navarra:** [Meteorología - Capitán de Yate Online](https://www.youtube.com/watch?v=CVUD7SKst30&list=PLMXOwDG__-d7AufNnb1GmUaO1nA5kT2mI&index=11) (Clase teórica en profundidad sobre anticiclones, borrascas, frentes, y modelos de predicción atmosférica).
+
 ## Ejemplos Prácticos
 
 **Problema 1: Aceleración de Coriolis en el Frente Subpolar**

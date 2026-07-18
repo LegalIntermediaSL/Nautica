@@ -98,6 +98,10 @@ En niebla, la atenuación acústica es severa, exigiendo periodos estrictos:
 ### Señales de Socorro (Anexo IV)
 Exclusivas para peligro de vida: Bengalas rojas, llamas, humo naranja, SOS Morse, "MAYDAY" en Canal 16 VHF (156.800 MHz), brazos en cruz.
 
+## Recursos Audiovisuales (Videotutoriales de Apoyo)
+
+*   📺 **Escuela Náutica Neptuno:** [Examen PER y PNB - RIPA - Tema 6](https://www.youtube.com/results?search_query=Examen+PER+y+PNB+-+RIPA+-+Tema+6+Escuela+Nautica+Neptuno) (Estudio dinámico de luces, marcas y maniobras para evitar el abordaje).
+
 ## Ejemplos Prácticos
 
 **Problema 1: Cálculo Cinemático de Abordaje (CPA y TCPA)**

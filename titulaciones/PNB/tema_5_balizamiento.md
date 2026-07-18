@@ -48,6 +48,10 @@ $$
 T = t_{d1} + t_{o1} + t_{d2} + t_{o2}
 $$
 
+## Recursos Audiovisuales (Videotutoriales de Apoyo)
+
+*   📺 **Escuela Náutica Neptuno:** [Examen PER y PNB - BALIZAMIENTO - Tema 5](https://www.youtube.com/results?search_query=Examen+PER+y+PNB+-+BALIZAMIENTO+-+Tema+5+Escuela+Nautica+Neptuno) (Repaso visual completo sobre marcas cardinales y laterales del Sistema IALA).
+
 ## Ejemplos Prácticos
 
 ### Problema 1: Frecuencia de una Marca Cardinal Sur

@@ -114,6 +114,10 @@ Indica aguas seguras en todo el entorno (eje de canal, recalada).
 *   **Especiales:** Indican zonas reguladas (tuberías, campos de tiro, regatas). Color: **Amarillo**. Tope: **"X"**. Luz: **Amarilla**.
 *   **Nuevos Peligros:** Fondeadas de emergencia ante naufragios recientes. Rayas verticales **Amarillas y Azules**, cruz amarilla, luz destellos Amarillo/Azul alternados.
 
+## Recursos Audiovisuales (Videotutoriales de Apoyo)
+
+*   📺 **Escuela Náutica Neptuno:** [Examen PER y PNB - BALIZAMIENTO - Tema 5](https://www.youtube.com/results?search_query=Examen+PER+y+PNB+-+BALIZAMIENTO+-+Tema+5+Escuela+Nautica+Neptuno) (Repaso visual completo sobre marcas cardinales y laterales del Sistema IALA).
+
 ## Ejemplos Prácticos
 
 **Problema 1: Cálculo del Arrastre Hidrodinámico y Estabilidad de Fondeo**

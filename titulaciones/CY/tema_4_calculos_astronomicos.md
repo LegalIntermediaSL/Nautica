@@ -136,6 +136,10 @@ Donde las tablas I, II y III purgan la posición angular exacta de Polaris depen
 
 ---
 
+## Recursos Audiovisuales (Videotutoriales de Apoyo)
+
+*   📺 **Escuela Náutica Navarra:** [Uso del Sextante y Recta de Altura - Capitán de Yate Online](https://www.youtube.com/watch?v=LZ6ZI4COyLg&list=PLMXOwDG__-d7AufNnb1GmUaO1nA5kT2mI) (Lista de reproducción esencial: Observación real desde una embarcación, ploteo analítico sobre carta náutica y trazado práctico del Método de Marcq St. Hilaire).
+
 ## Ejemplos Prácticos
 
 **Problema 1: Cálculo Analítico del Azimut por el Teorema de las Cotangentes**

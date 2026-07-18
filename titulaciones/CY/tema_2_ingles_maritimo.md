@@ -23,7 +23,7 @@ Todo mensaje crucial debe ser precedido por uno de los 8 marcadores para tipific
 *   **REQUEST:** Solicitar servicio. *(Ej: REQUEST. I require two tugs.)*
 
 ### Reglas Estrictas de Pronunciación y Deletreo
-*   **Alfabeto Fonético OMI:** Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu.
+*   **Alfabeto Fonético OMI:** Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu. [(Ver Banderas Náuticas y Alfabeto)](https://cheatography.com/jorgejuan007/cheat-sheets/alfabeto-nautico/)
 *   **Números:** Dígito a dígito.
     *   $15$ = **ONE-FIVE**.
     *   $150^\circ$ (Rumbo) = **Heading ONE-FIVE-ZERO**.

@@ -66,6 +66,10 @@ $$
 M_A = \Delta \cdot GZ = \Delta \cdot \overline{GM} \cdot \sin(\theta)
 $$
 
+## Recursos Audiovisuales (Videotutoriales de Apoyo)
+
+*   📺 **Escuela Náutica Neptuno:** [Examen PER y PNB - NOMENCLATURA NÁUTICA - Tema 1](https://www.youtube.com/watch?v=FIjt7RyDYQg) (Excelente repaso visual de las partes del casco, estructura, equipo de fondeo, timón y dimensiones).
+
 ## Ejemplos Prácticos
 
 ### Problema 1: Cálculo del Momento Adrizante

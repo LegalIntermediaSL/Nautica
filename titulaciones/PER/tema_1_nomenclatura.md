@@ -78,6 +78,10 @@ En la dinámica de fluidos marítima, la cinemática es esencial:
 *   **Derivar:** Desplazamiento vectorial absoluto provocado por la corriente ($V_c$).
 El vector de velocidad absoluta del barco ($V_{SOG}$) es la suma del vector de velocidad sobre el agua ($V_{STW}$), el vector viento (abatimiento) y el vector corriente.
 
+## Recursos Audiovisuales (Videotutoriales de Apoyo)
+
+*   📺 **Escuela Náutica Neptuno:** [Examen PER y PNB - NOMENCLATURA NÁUTICA - Tema 1](https://www.youtube.com/watch?v=FIjt7RyDYQg) (Excelente repaso visual de las partes del casco, estructura, equipo de fondeo, timón y dimensiones).
+
 ## Ejemplos Prácticos
 
 **Problema 1: Cálculo de la Resistencia de Formación de Olas (Wave-Making Resistance)**

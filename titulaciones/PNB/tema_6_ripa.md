@@ -42,6 +42,10 @@ Las tres situaciones canónicas de encuentro entre dos buques de propulsión mec
 
 En una situación de cruce, la función matemática de alteración de rumbo $\Delta \theta$ debe asegurar que el mínimo CPA (Closest Point of Approach) sea mayor que un umbral de seguridad estipulado.
 
+## Recursos Audiovisuales (Videotutoriales de Apoyo)
+
+*   📺 **Escuela Náutica Neptuno:** [Examen PER y PNB - RIPA - Tema 6](https://www.youtube.com/results?search_query=Examen+PER+y+PNB+-+RIPA+-+Tema+6+Escuela+Nautica+Neptuno) (Estudio dinámico de luces, marcas y maniobras para evitar el abordaje).
+
 ## Ejemplos Prácticos
 
 ### Problema 1: Cálculo del Tiempo hasta el Abordaje (TCPA)
