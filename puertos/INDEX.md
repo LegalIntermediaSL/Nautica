@@ -19,4 +19,6 @@ Dada la extensísima costa española, hemos creado listados de referencia dividi
 
 👉 **[Puertos Deportivos del Atlántico y Cantábrico](ATLANTICO.md)** (Galicia, Cantábrico, Golfo de Cádiz, Islas Canarias).
 
+👉 **[Puertos del Mundo y Rutas Oceánicas](INTERNACIONALES.md)** (Canal de Panamá, Suez, Caribe, Hubs transatlánticos).
+
 En estos documentos encontrarás las coordenadas de bocana, canales VHF y los servicios disponibles en cada uno.

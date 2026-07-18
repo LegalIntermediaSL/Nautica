@@ -28,6 +28,13 @@ El teléfono móvil (o tablet) es una excelente herramienta de apoyo a bordo, si
 ### Para Meteorología y Viento
 *   **[Windy](https://www.windy.com/):** Impresionante visualización global de vientos, olas y clima en tiempo real. Permite comparar diferentes modelos meteorológicos (ECMWF, GFS, AROME).
 *   **[Windguru](https://www.windguru.cz/):** Un clásico entre navegantes y surfistas. Proporciona tablas detalladas de viento, rachas y altura de olas para puntos específicos de la costa.
+*   **[PredictWind](https://www.predictwind.com/):** La herramienta definitiva para navegación oceánica. Ofrece ruteo isocrónico (Weather Routing): le dices a dónde vas y te traza la ruta más rápida y segura esquivando tormentas, basándose en las curvas polares de tu barco.
+*   **[Squid Sailing](https://www.squid-sailing.com/):** Software muy utilizado en regatas oceánicas para descargar archivos GRIB pesados mediante conexión por satélite (Iridium GO).
+
+### Recursos Globales y Aduanas (Para Cruceristas Internacionales)
+*   **[Noonsite](https://www.noonsite.com/):** Considerada la "Biblia" de los cruceristas. Mantenida por la comunidad, ofrece información estrictamente actualizada sobre aduanas, visados, puertos de entrada, piratería y normativas de cualquier país del mundo.
+*   **[MarineTraffic](https://www.marinetraffic.com/) / [VesselFinder](https://www.vesselfinder.com/):** Redes globales de receptores AIS costeros y por satélite. Permiten rastrear cualquier barco comercial o yate del mundo en tiempo real (útil para que tus familiares sepan dónde estás).
+*   **[Cruisers Forum](https://www.cruisersforum.com/):** El mayor foro internacional de habla inglesa. Una mina de oro de conocimientos sobre mecánica, rutas y estilo de vida a bordo.
 
 ## Documentación Oficial y Normativa (PDF / BOE)
 

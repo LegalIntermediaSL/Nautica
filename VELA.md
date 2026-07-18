@@ -64,9 +64,57 @@ Es una maniobra **muy violenta y peligrosa** con vientos fuertes, porque la bota
 
 ---
 
-## 5. Glosario de Trimado (Ajuste de Velas)
+## 5. El Equilibrio del Barco: Centro Vélico y Centro de Deriva
+
+Un velero navega recto cuando sus fuerzas están equilibradas. Existen dos centros imaginarios de fuerza:
+*   **Centro Vélico (CV):** Es el centro geométrico donde se concentra toda la fuerza de empuje de las velas. Se mueve hacia adelante o atrás dependiendo de qué velas tengas izadas.
+*   **Centro de Deriva (CD):** Es el punto de pivote submarino, dictado por la posición de la orza/quilla y el timón.
+
+La relación entre estos dos puntos define el "carácter" del barco al timón:
+*   **Barco Ardiente (Weather Helm):** El CV está por detrás del CD. El barco tiende a aproarse (girar hacia el viento) por sí solo. Es la configuración más segura; si el timonel se desmaya y suelta la caña, el barco se pondrá proa al viento y se detendrá. Casi todos los veleros modernos se diseñan ligeramente ardientes.
+*   **Barco Blando (Lee Helm):** El CV está por delante del CD. El barco tiende a alejarse del viento (arribar). Es muy peligroso, porque en una racha fuerte el barco girará hacia la empopada y podría trasluchar violentamente.
+
+---
+
+## 6. Inventario de Velas: El Motor del Barco
+
+No todas las velas sirven para lo mismo. Se dividen en velas de ceñida (planas) y velas de portantes (globosas).
+
+### Velas de Ceñida (Upwind)
+*   **Vela Mayor:** La vela principal que va sujeta al mástil y a la botavara. Proporciona el equilibrio principal.
+*   **Foque (Jib):** Vela de proa pequeña. Su tamaño no sobrepasa el mástil hacia atrás. Ideal para vientos fuertes y ceñidas cerradas.
+*   **Génova (Genoa):** Vela de proa grande que se superpone ("solapa") al mástil, llegando a veces casi hasta la popa (Génova 150%). Genera una enorme potencia acelerando el viento a través del canal que forma con la vela mayor (Efecto Venturi).
+*   **Tormentín:** Un foque minúsculo, durísimo, de color naranja fosforito, usado solo para sobrevivir en temporales (Fuerza 8+).
+
+### Velas Portantes (Downwind)
+Diseñadas para vientos de aleta o empopada. Son como paracaídas inmensos.
+*   **Spinnaker (Spi) Simétrico:** Un globo gigante y redondo. Requiere un tangón (palo horizontal que lo separa del mástil). Es muy complejo de maniobrar pero es el rey absoluto en rumbos de empopada pura ($180^\circ$).
+*   **Gennaker (Spinnaker Asimétrico):** Un híbrido entre el génova y el spi. Se amura (engancha) directamente en la punta de la proa (o en un botalón), sin tangón. Es más fácil de usar para tripulaciones reducidas y excelente para vientos de aleta ($120^\circ-150^\circ$).
+
+---
+
+## 7. Glosario de Trimado (Ajuste de Velas)
 
 *   **Cazar:** Tirar de un cabo para cerrar (acercar al centro) la vela.
 *   **Lascar:** Soltar un cabo para abrir la vela. 
     *   *Regla de oro:* "Ante la duda, lasca". Si la vela flamea (tiembla en el grátil), estás lascando demasiado o vas demasiado ceñido. Caza un poco hasta que deje de flamear.
 *   **Rizar (Tomar Rizos):** Reducir el área o tamaño de la vela mayor porque hace demasiado viento y el barco escora peligrosamente. (Se debe rizar *antes* de que sea necesario, no cuando ya es tarde).
+
+---
+
+## 8. Precauciones de Seguridad en Maniobras
+
+La fuerza que ejerce el viento sobre las velas y las escotas se mide en toneladas, no en kilos. Un error de sincronización durante una maniobra puede causar lesiones graves.
+
+### El Peligro de la Botavara
+La botavara es un perfil de aluminio o carbono pesado que barre la bañera a la altura de las cabezas.
+*   **Trasluchada Involuntaria:** Ocurre navegando de empopada si el caña se despista y el viento coge la vela por el lado contrario. La botavara cruzará el barco a una velocidad letal. **Prevención:** Instalar siempre una **Retenida de Botavara** (un cabo que ata la botavara a la proa para impedir que cruce sola).
+*   **Avisos Claros:** El patrón nunca debe iniciar un giro sin gritar *"¡Preparados para virar/trasluchar!"* y recibir el *"¡Listos!"* de la tripulación.
+
+### Manejo de Winches y Cabos
+*   **Regla del Pulgar:** Jamás enrolles un cabo en tensión alrededor de tu mano para tirar de él. Si una racha repentina tira del cabo, te amputará los dedos.
+*   **Cazar en el Winch:** Siempre mantén las manos al menos a 20 centímetros del tambor del winch. Usa la técnica de "mano sobre mano".
+*   **Orden de los Cabos:** Una bañera llena de cabos enredados ("spaghetti") es peligrosa en una emergencia. Los cabos que no se están usando deben estar adujados (enrollados) y colgados ordenadamente.
+
+### Cargas en las Cornamusas
+*   Al soltar una driza bajo tensión (ej. para bajar la vela mayor), nunca la quites de golpe de la cornamusa. Mantén una vuelta mordida y suelta fricción poco a poco, o la vela caerá de golpe descontrolada, quemándote las manos por la fricción del cabo.
