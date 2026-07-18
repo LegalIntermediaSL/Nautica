@@ -9,6 +9,7 @@ Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado
 - **[Aparejos, Tipos de Veleros y Nomenclatura](VELA_TIPOS_Y_APAREJOS.md)**: Clasificación de veleros (Sloop, Ketch, Goleta), nombres de los mástiles y el glosario estricto de la jarcia (drizas, escotas, estays).
 - **[Meteorología Marítima General](METEOROLOGIA.md)**: Isobaras, frentes térmicos, brisas costeras y escalas de viento (Beaufort) y mar (Douglas).
 - **[Seguridad Reglamentaria y Pirotecnia](SEGURIDAD.md)**: Las 7 zonas de navegación, balsas salvavidas (zafa hidrostática), chalecos (Newtons) y uso de bengalas.
+- **[Reglamento de Abordajes (RIPA) y Balizamiento](RIPA_Y_BALIZAMIENTO.md)**: Prioridades de paso, luces de buques, marcas diurnas, señales acústicas y boyas IALA.
 - **[Gestiones y Documentación](GESTIONES_Y_DOCUMENTACION.md)**: Papelería, certificados, LEB y seguros obligatorios para salir a navegar.
 - **[Cartas Náuticas](cartas_nauticas/INDEX.md)**: Conceptos básicos de cartografía y simbología.
 - **[Faros de España](faros/INDEX.md)**: Libro de faros y listado completo de señales marítimas de España.
@@ -26,6 +27,7 @@ Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivi
 - **[Sanidad Marítima y Primeros Auxilios](PRIMEROS_AUXILIOS.md)**: Radioconsulta a Centro Radio Médico, manejo de shock anafiláctico, RCP en cubierta, quemaduras graves, rescate horizontal, cinetosis, e intoxicaciones.
 - **[Comunicaciones, SMCP y Banderas](COMUNICACIONES_Y_BANDERAS.md)**: El Código Internacional de Señales (Banderas A-Z), uso estricto del VHF (MAYDAY, PAN-PAN, SECURITE) y Standard Marine Communication Phrases.
 - **[Tutorial de Vela Práctico (Paso a Paso)](VELA_TUTORIAL_PRACTICO.md)**: Guía física de maniobras en la bañera: cómo izar la mayor, virada por avante en equipo, toma de rizos para tormentas y atraque a motor.
+- **[Nudos Marineros y Cabullería](nudos/INDEX.md)**: Colección de manuales prácticos de nudos de tope (As de Guía, Nudo de Ocho), amarre (Ballestrinque, Cornamusa) y unión.
 ## Recursos Recomendados
 
 - [Tarjetas Náuticas de Legal Intermedia S.L.](TARJETAS_NAUTICAS.md): Tarjetas físicas de verificación digital con código QR oficial. Ideales para llevar tu documentación náutica (título y DNI) siempre a bordo en formato carné plastificado, vinculadas directamente con la base de datos de la Dirección General de la Marina Mercante. Más info en [www.legalintermedia.es/nauticos](https://www.legalintermedia.es/nauticos).

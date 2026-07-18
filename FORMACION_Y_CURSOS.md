@@ -22,8 +22,10 @@ Si decides apuntarte a una escuela, no mires solo el precio. Ten en cuenta:
 2.  **Calidad de las embarcaciones de prácticas:** Vas a pasar entre 8 y 48 horas en ese barco. Pregunta qué modelo es, su tamaño y cuántos alumnos van por barco (lo máximo legal suelen ser 11, pero escuelas con 6-8 alumnos ofrecen una mejor experiencia).
 3.  **Opiniones de otros alumnos:** Revisa reseñas en internet sobre la calidad de sus profesores teóricos.
 
+> **💡 Consejo Extra:** Hemos preparado una guía extendida con los mejores **[Consejos para afrontar los Exámenes Náuticos](titulaciones/CONSEJOS_EXAMEN.md)** (test, gestión del tiempo y trucos).
+
 ## 3. Prácticas Homologadas
-Para cada título necesitas unas prácticas específicas. Por ejemplo, para el **PER** necesitas:
+Para cada título necesitas unas prácticas específicas. Para conocer el detalle profundo de lo que se hace a bordo, revisa nuestra **[Guía de Prácticas Homologadas](titulaciones/PRACTICAS.md)**. Por ejemplo, para el **PER** necesitas:
 *   Prácticas Básicas de Seguridad y Navegación (Motor): 16 horas.
 *   Curso de Radio-operador de Corto Alcance (ROCA): 12 horas (4 de teoría, 8 de simulador).
 *   *Opcional (Prácticas de Vela):* 16 horas. (Solo se hacen una vez y valen para cualquier título futuro).
