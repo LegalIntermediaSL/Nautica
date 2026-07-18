@@ -10,16 +10,34 @@ La clasificación principal de los veleros viene dictada por el número de mást
 
 ### Veleros de Un Solo Mástil
 *   **Balandro (Sloop):** Es el velero moderno por excelencia (el 95% de los barcos de recreo actuales). Tiene un solo mástil (Palo Mayor) y dos velas: la Vela Mayor detrás del mástil, y un Foque o Génova por delante. Es el diseño más eficiente para ceñir (navegar contra el viento).
+    
+    ![Balandro (Sloop)](assets/images/sloop.jpg)
+
 *   **Cúter (Cutter):** Tiene un solo mástil, pero a diferencia del balandro, el mástil está situado un poco más a popa. Esto permite llevar *dos* velas en proa simultáneamente (ej. un yanqui y una trinqueta). Es el aparejo preferido de los navegantes oceánicos clásicos por la versatilidad para reducir vela en temporales.
+
+    ![Cúter (Cutter)](assets/images/cutter.jpg)
 
 ### Veleros de Dos Mástiles
 *   **Queche (Ketch):** Tiene dos mástiles. El delantero es el más grande (Palo Mayor) y el trasero es más pequeño (Palo de Mesana). La característica clave del queche es que el palo de mesana está situado **por delante** de la rueda del timón. Muy usado para cruceros largos porque divide la superficie vélica, haciendo las velas más pequeñas y fáciles de manejar por una sola persona.
+    
+    ![Queche (Ketch)](assets/images/ketch.jpg)
+
 *   **Yola (Yawl):** Visualmente casi idéntico al queche (palo mayor delante, mesana pequeño detrás). La diferencia técnica es que en la yola, el palo de mesana está **por detrás** de la rueda del timón (a veces literalmente colgado en el extremo de la popa). La vela de mesana aquí no aporta mucho empuje, se usa principalmente como un "timón de viento" para mantener el barco equilibrado.
+    
+    ![Yola (Yawl)](assets/images/yawl.jpg)
+
 *   **Goleta (Schooner):** Tiene dos (o más) mástiles, pero a diferencia del queche, el mástil delantero (Palo Trinquete) es **más pequeño o igual** que el mástil trasero (Palo Mayor). Es el aparejo clásico de los barcos piratas y grandes veleros tradicionales. Excelente para vientos de través, pero ciñen muy mal.
+    
+    ![Goleta (Schooner)](assets/images/schooner.jpg)
 
 ### Multicascos
 *   **Catamarán:** Dos cascos unidos por una estructura central. No tienen orza profunda con lastre (no tienen quilla de plomo), su estabilidad viene de la gran anchura (manga) entre los dos cascos. Son rapidísimos, no escoran (no se tumban), pero si vuelcan, no pueden adrizarse solos.
+    
+    ![Catamarán](assets/images/catamaran.jpg)
+
 *   **Trimarán:** Un casco central principal y dos cascos flotadores laterales estabilizadores (amas). Son las máquinas de vela más rápidas del océano.
+    
+    ![Trimarán](assets/images/trimaran.jpg)
 
 ---
 
