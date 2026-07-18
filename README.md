@@ -19,10 +19,11 @@ Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado
 - **[Bitácora](BITACORA.md)**: Plantilla para el registro de navegaciones y experiencias.
 
 ## Manuales de A Bordo (Supervivencia y Mantenimiento)
-Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivir en crisis. Estos 5 manuales maestros cubren la realidad del mar:
+Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivir en crisis. Estos 6 manuales maestros cubren la realidad del mar:
+- **[Maniobras de Puerto y Fondeo](MANIOBRAS_Y_FONDEO.md)**: Cinemática del barco (Prop Walk), uso táctico de esprines para desatracar, regla de oro de la cadena de fondeo, tipos de anclas y el cálculo del Círculo de Borneo.
 - **[Mecánica Naval y Mantenimiento](MECANICA_Y_MANTENIMIENTO.md)**: Motores diésel intraborda, sistemas de refrigeración (impeller), electricidad (baterías y 12V/220V), averías y protocolo de invernaje.
 - **[Electrónica e Instrumentación](ELECTRONICA_NAVAL.md)**: Cómo funciona el GPS, uso táctico del AIS (Clase A vs B), radares de estado sólido, sondas y la red NMEA 2000.
-- **[Sanidad Marítima y Primeros Auxilios](PRIMEROS_AUXILIOS.md)**: Radioconsulta a Centro Radio Médico, RCP en cubierta, tratamiento vital de la hipotermia y rescate horizontal, cinetosis, y operaciones de helicóptero MEDEVAC.
+- **[Sanidad Marítima y Primeros Auxilios](PRIMEROS_AUXILIOS.md)**: Radioconsulta a Centro Radio Médico, manejo de shock anafiláctico, RCP en cubierta, quemaduras graves, rescate horizontal, cinetosis, e intoxicaciones.
 - **[Comunicaciones, SMCP y Banderas](COMUNICACIONES_Y_BANDERAS.md)**: El Código Internacional de Señales (Banderas A-Z), uso estricto del VHF (MAYDAY, PAN-PAN, SECURITE) y Standard Marine Communication Phrases.
 - **[Tutorial de Vela Práctico (Paso a Paso)](VELA_TUTORIAL_PRACTICO.md)**: Guía física de maniobras en la bañera: cómo izar la mayor, virada por avante en equipo, toma de rizos para tormentas y atraque a motor.
 ## Recursos Recomendados
