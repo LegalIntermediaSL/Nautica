@@ -13,6 +13,7 @@ Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado
 - **[Vela y Conceptos Básicos](VELA.md)**: Fundamentos de la navegación a vela, rumbos y maniobras.
 - **[Meteorología Marítima](METEOROLOGIA.md)**: Conceptos clave para interpretar el tiempo y las previsiones.
 - **[Seguridad Marítima](SEGURIDAD.md)**: Material obligatorio, comunicaciones y emergencias.
+- **[Gestiones y Documentación](GESTIONES_Y_DOCUMENTACION.md)**: Papelería, certificados, LEB y seguros obligatorios para salir a navegar.
 - **[Cursos y Formación](FORMACION_Y_CURSOS.md)**: Guía para preparar los exámenes, por libre o en academia.
 - **[Recursos Útiles](RECURSOS.md)**: Enlaces a organismos oficiales y apps móviles recomendadas.
 - **[Bitácora](BITACORA.md)**: Plantilla para el registro de navegaciones y experiencias.

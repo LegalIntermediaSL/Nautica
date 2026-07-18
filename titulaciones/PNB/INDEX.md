@@ -25,7 +25,7 @@ Duración máxima: 45 minutos.
 1.  **[Nomenclatura náutica](../PER/tema_1_nomenclatura.md):** (4 preguntas). Partes del barco, dimensiones, estructura.
 2.  **[Elementos de amarre y fondeo](../PER/tema_2_amarre_y_fondeo.md):** (2 preguntas). Tipos de anclas, cabos, nudos básicos.
 3.  **Seguridad en la mar:** (4 preguntas). Estabilidad, equipo de salvamento, hombre al agua, remolque.
-4.  **[Legislación](../PER/tema_4_legislacion.md):** (2 preguntas). Zonas de baño, protección del medio marino, documentación obligatoria.
+4.  **[Legislación](../PER/tema_4_legislacion.md):** (2 preguntas). Zonas de baño, protección del medio marino.
 5.  **[Balizamiento (IALA)](../PER/tema_5_balizamiento.md):** (5 preguntas). *Criterio eliminatorio: Máximo 2 fallos permitidos.* Marcas laterales, cardinales, peligro aislado, aguas navegables, marcas especiales.
 6.  **[RIPA (Reglamento Abordajes)](../PER/tema_6_ripa.md):** (10 preguntas). *Criterio eliminatorio: Máximo 5 fallos permitidos.* Reglas de rumbo y gobierno, luces y marcas diurnas, señales acústicas.
 
