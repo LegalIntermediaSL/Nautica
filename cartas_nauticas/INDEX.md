@@ -4,9 +4,10 @@ La carta náutica es la representación gráfica a escala de una zona marítima 
 
 En esta sección abordaremos los conocimientos básicos para su uso:
 
-*   **[Conceptos Básicos](CONCEPTOS_BASICOS.md)**: Coordenadas, latitud, longitud, la milla náutica y las correcciones del compás magnético (Declinación y Desvío).
-*   **[Simbología Náutica](SIMBOLOGIA.md)**: Explicación de los símbolos estándar utilizados en las cartas náuticas.
-*   **[Cálculos de Navegación y Corrientes](CALCULOS_DE_NAVEGACION.md)**: Deriva, Abatimiento (viento), Estima Analítica, Loxodromia, Ortodromia y cálculo de mareas.
+- [Conceptos Básicos](CONCEPTOS_BASICOS.md): Coordenadas, latitud, longitud, la milla náutica y las correcciones del compás magnético (Declinación y Desvío).
+- [Simbología Náutica](SIMBOLOGIA.md): Explicación de los símbolos estándar utilizados en las cartas náuticas.
+- [Cálculos de Navegación y Corrientes](CALCULOS_DE_NAVEGACION.md): Deriva, Abatimiento (viento), Estima Analítica, Loxodromia, Ortodromia y cálculo de mareas.
+- [Uso del Anuario y Publicaciones Oficiales](USO_DEL_ANUARIO.md): Cómo leer el Anuario de Mareas (IHM) para puertos principales y secundarios, y cómo usar el Almanaque Náutico (ROA) para astronomía.
 
 ## Cartas Náuticas en la Web (Visores Digitales)
 
