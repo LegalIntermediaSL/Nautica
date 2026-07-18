@@ -21,6 +21,7 @@ Se divide en dos módulos independientes:
 ### Módulo de Navegación Astronómica (1 hora y 30 minutos)
 *   **[Teoría de navegación](tema_3_teoria_astronomica.md):** (10 preguntas). Esfera celeste, coordenadas astronómicas, triángulo de posición, movimiento de los astros. *Máximo 5 fallos.*
 *   **[Tema 4: Cálculos Astronómicos](tema_4_calculos_astronomicos.md):** (10 preguntas). Correcciones del sextante y cálculo de la Latitud por Altura Meridiana. *Máximo 4 fallos.*
+*   **[Tema 5: Navegación Polar y Ortodrómica](tema_5_navegacion_polar_y_ortodromica.md):** Extensión avanzada sobre rutas en círculo máximo, navegación mixta para evitar hielo y singularidades de altas latitudes.
 
 ### Módulo Genérico (1 hora)
 *   **[Meteorología](tema_1_meteorologia.md):** (10 preguntas). Meteorología oceánica, huracanes y ciclones tropicales, derrota óptima, hielos. *Máximo 5 fallos.*
@@ -30,6 +31,7 @@ Se divide en dos módulos independientes:
 * **[Simulacro: Módulo de Navegación](simulacro_modulo_navegacion.md)** (Astronomía y Cálculos).
 * **[Simulacro: Módulo Genérico](simulacro_modulo_generico.md)** (Meteorología Oceánica e Inglés SMCP).
 * **[Simulación Jupyter: Determinante de Marcq St. Hilaire](../../simulaciones/09_marcq_st_hilaire.ipynb)**.
+* **[Simulación Jupyter: Identificador de Astros (Star Finder)](../../simulaciones/10_identificacion_astros.ipynb)**.
 * **[Consejos para el Examen Oficial](../CONSEJOS_EXAMEN.md)**
 *   **[Guía de Prácticas Reglamentarias](../PRACTICAS.md):** Todo lo que necesitas saber sobre las horas de prácticas oceánicas obligatorias.
 *   **Almanaque Náutico:** Imprescindible para el examen de navegación astronómica.

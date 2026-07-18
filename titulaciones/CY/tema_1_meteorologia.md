@@ -186,6 +186,33 @@ Navegar en altas latitudes ($> 50^\circ$) conlleva peligros letales asociados al
 
 *   📺 **Escuela Náutica Navarra:** [Meteorología - Capitán de Yate Online](https://www.youtube.com/watch?v=CVUD7SKst30&list=PLMXOwDG__-d7AufNnb1GmUaO1nA5kT2mI&index=11) (Clase teórica en profundidad sobre anticiclones, borrascas, frentes, y modelos de predicción atmosférica).
 
+---
+
+## 6. Enrutamiento Meteorológico Avanzado (Weather Routing)
+
+La navegación comercial y de regata no utiliza loxodrómicas simples; emplea **Weather Routing** para calcular la derrota óptima (la ruta más rápida y segura) superponiendo la climatología pronosticada a las capacidades cinemáticas del barco.
+
+### 6.1. Las Polares del Barco
+Para poder calcular una ruta, el software necesita conocer el rendimiento del barco en cualquier condición. Las "Curvas Polares" (Polar Curves) son gráficos paramétricos que devuelven la velocidad teórica del barco para cada combinación de:
+*   Velocidad del viento real (TWS).
+*   Ángulo del viento real respecto a la proa (TWA).
+
+### 6.2. El Método de las Isocronas
+Es el algoritmo base inventado en los años 50 para trazar rutas meteorológicas:
+1.  Desde el punto de partida (T0), se lanzan múltiples rumbos radiales simulados (ej: cada 10º).
+2.  Para un incremento de tiempo $\Delta t$ (ej. 24 horas), el software lee el pronóstico de viento (GRIB file) en esa zona y consulta las curvas polares para calcular cuántas millas avanza el barco en cada rumbo.
+3.  Al unir los puntos finales de todos esos rumbos a las 24h, se obtiene una curva de contorno llamada **Isocrona** (línea de igual tiempo de viaje).
+4.  El proceso se repite iterativamente desde los puntos de la Isocrona 1 para hallar la Isocrona 2 (a las 48h), y así sucesivamente hasta que una isocrona alcance el destino.
+5.  La **Derrota Óptima** es la trayectoria perpendicular a las isocronas que retrocede desde el punto de llegada hasta la salida.
+
+### 6.3. Evitación Dinámica (Avoidance Routing)
+El Routing no solo busca velocidad. Los algoritmos de cost-function añaden penalizaciones matemáticas si una rama de la isocrona entra en zonas donde:
+*   La altura de ola significativa ($H_s$) supera los 6 metros.
+*   El viento supera los 45 nudos.
+*   Se cruzan los campos de hielo límite marcados por la *Ice Patrol*.
+
+El Capitán debe monitorizar el **Ensemble Forecast** (predicción por conjuntos), que en lugar de arrojar una única ruta, lanza 50 simulaciones con ligeras variaciones iniciales para ver si todas las rutas convergen (alta fiabilidad) o se dispersan caóticamente (baja fiabilidad del pronóstico a más de 3 días).
+
 ## Ejemplos Prácticos
 
 **Problema 1: Aceleración de Coriolis en el Frente Subpolar**

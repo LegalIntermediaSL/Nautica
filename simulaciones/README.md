@@ -28,3 +28,4 @@ pip install -r requirements.txt
 *   **[`07_cinematica_radar.ipynb`](07_cinematica_radar.ipynb)**: Rosa de Maniobras, cálculo de CPA y TCPA.
 *   **[`08_generador_mareas.ipynb`](08_generador_mareas.ipynb)**: Análisis armónico de mareas y cálculo de sondas en puertos (PY/CY).
 *   **[`09_marcq_st_hilaire.ipynb`](09_marcq_st_hilaire.ipynb)**: Cálculo del Determinante (Diferencia de Alturas y Azimut) para la Recta de Altura (CY).
+*   **[`10_identificacion_astros.ipynb`](10_identificacion_astros.ipynb)**: Star Finder electrónico. Resuelve el triángulo esférico inverso para identificar estrellas desconocidas a partir de altura y azimut (CY).
