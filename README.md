@@ -4,19 +4,19 @@ Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado
 
 ## Contenido del Repositorio
 
-- **[Titulaciones Náuticas](TITULOS_NAUTICOS.md)**: Índice de los títulos de recreo en España (Licencia, PNB, PER, PY, CY) y sus temarios.
+- **[Titulaciones Náuticas (El Organigrama Español)](TITULOS_NAUTICOS.md)**: Atribuciones, esloras, y límites de navegación del PNB, PER, PY y CY.
+- **[Navegación a Vela y Aerodinámica](VELA.md)**: Principio de Bernoulli, viento aparente, rumbos, trimado avanzado y seguridad de botavara.
+- **[Aparejos, Tipos de Veleros y Nomenclatura](VELA_TIPOS_Y_APAREJOS.md)**: Clasificación de veleros (Sloop, Ketch, Goleta), nombres de los mástiles y el glosario estricto de la jarcia (drizas, escotas, estays).
+- **[Meteorología Marítima General](METEOROLOGIA.md)**: Isobaras, frentes térmicos, brisas costeras y escalas de viento (Beaufort) y mar (Douglas).
+- **[Seguridad Reglamentaria y Pirotecnia](SEGURIDAD.md)**: Las 7 zonas de navegación, balsas salvavidas (zafa hidrostática), chalecos (Newtons) y uso de bengalas.
+- **[Gestiones y Documentación](GESTIONES_Y_DOCUMENTACION.md)**: Papelería, certificados, LEB y seguros obligatorios para salir a navegar.
 - **[Cartas Náuticas](cartas_nauticas/INDEX.md)**: Conceptos básicos de cartografía y simbología.
 - **[Faros de España](faros/INDEX.md)**: Libro de faros y listado completo de señales marítimas de España.
 - **[Puertos Deportivos](puertos/INDEX.md)**: Guía de los principales puertos deportivos y marinas.
 - **[Simulaciones en Python](simulaciones/README.md)**: Laboratorio interactivo (Jupyter) para el cálculo de rumbos, corrientes y viento aparente.
-- **[Nudos Náuticos](nudos/INDEX.md)**: Guía ilustrada de los nudos básicos e imprescindibles a bordo.
-- **[Vela y Conceptos Básicos](VELA.md)**: Fundamentos de la navegación a vela, rumbos y maniobras.
-- **[Meteorología Marítima](METEOROLOGIA.md)**: Conceptos clave para interpretar el tiempo y las previsiones.
-- **[Seguridad Marítima](SEGURIDAD.md)**: Material obligatorio, comunicaciones y emergencias.
-- **[Gestiones y Documentación](GESTIONES_Y_DOCUMENTACION.md)**: Papelería, certificados, LEB y seguros obligatorios para salir a navegar.
 - **[Cursos y Formación](FORMACION_Y_CURSOS.md)**: Guía para preparar los exámenes, por libre o en academia.
 - **[Recursos Útiles](RECURSOS.md)**: Enlaces a organismos oficiales y apps móviles recomendadas.
-- [Bitácora](BITACORA.md): Plantilla para el registro de navegaciones y experiencias.
+- **[Bitácora](BITACORA.md)**: Plantilla para el registro de navegaciones y experiencias.
 
 ## Manuales de A Bordo (Supervivencia y Mantenimiento)
 Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivir en crisis. Estos 5 manuales maestros cubren la realidad del mar:
