@@ -107,6 +107,39 @@ Las nieblas suponen una reducción de la visibilidad a $< 1 \text{ km}$. Las col
 *   **Niebla de Advección (Enfriamiento Diabático):** Requiere vientos flojos pero constantes que desplacen masas de aire cálido y húmedo sobre corrientes oceánicas gélidas (Ej. Grand Banks, costa cantábrica en verano). El contacto rebaja $T$ hasta el $T_d$, condensando espesos mantos estratiformes que la radiación solar no disipa fácilmente (alta refracción albedo).
 *   **Niebla de Radiación:** Formación radiativa nocturna bajo cielos rasos anticiclónicos. En rías o puertos cerrados. El calor de la superficie terrestre escapa en la banda infrarroja de onda larga ($> 4 \mu m$), provocando una marcada Inversión Térmica en superficie, atrapando el vapor condensado cerca del mar. Típicamente disipada tras unas horas de insolación matutina.
 
+## 6. Lectura Práctica de un Mapa Isobárico (Análisis Sinóptico de Examen)
+
+Más allá de la ecuación del viento geostrófico (apartado 2.1), el examen del PY exige interpretar visualmente un mapa de superficie (el que emite AEMET, el Met Office o el NWS) en segundos. El procedimiento se reduce a cuatro pasos sistemáticos:
+
+1.  **Localizar los centros de presión:** identificar las letras **A** (anticiclón, alta presión) y **B** (borrasca, baja presión) y sus valores centrales en hPa.
+2.  **Determinar el sentido de giro (Ley de Buys-Ballot):** en el Hemisferio Norte, el viento circula en sentido **horario y divergente** alrededor de un A, y en sentido **antihorario y convergente** alrededor de una B. Regla práctica: de espaldas al viento, la Baja queda a la izquierda; de cara al viento, a la derecha (con un ángulo de $10^\circ$-$30^\circ$ hacia el centro por la fricción de superficie, ver apartado 2.2).
+3.  **Medir el gradiente de presión (separación de isobaras):** isobaras muy juntas (el "collado" entre un A y una B) indican viento fuerte; isobaras muy separadas (centro de un anticiclón) indican viento flojo o calma.
+4.  **Identificar los frentes por su simbología estándar OMI:** línea con **triángulos azules** apuntando en la dirección de avance = frente frío; línea con **semicírculos rojos** = frente cálido; línea que alterna ambos símbolos en color morado = frente ocluido.
+
+| Símbolo | Tipo de frente | Meteoro asociado al paso |
+| :--- | :--- | :--- |
+| Triángulos azules | Frío | Turbonada breve y violenta, chubascos, rolada brusca del viento, mejora rápida posterior |
+| Semicírculos rojos | Cálido | Lluvia fina y persistente, visibilidad reducida, barómetro en descenso lento y sostenido |
+| Alternancia morada | Ocluido | Combinación de ambos, sistema en fase de decaimiento |
+
+> [!NOTE]
+> Este resumen es autocontenido para el examen. Para el desarrollo completo con ejemplo gráfico paso a paso sobre un mapa real del Atlántico Norte, consulta **[METEOROLOGIA.md, sección 7 "Cómo Leer un Mapa Isobárico"](../../METEOROLOGIA.md#7-cómo-leer-un-mapa-isobárico-paso-a-paso)**.
+
+## 7. Corrientes Oceánicas Principales
+
+Además del oleaje de viento local, el patrón de altura debe conocer los grandes sistemas de corrientes superficiales permanentes, generados por el arrastre sostenido de los vientos planetarios (alisios, vientos del oeste) y desviados por el efecto Coriolis (Espiral y Transporte de Ekman: el flujo neto de agua se desvía unos $90^\circ$ a la derecha del viento en el Hemisferio Norte). Su desconocimiento en el planeamiento de una travesía de 150 millas puede suponer horas de retraso o consumo de combustible extra al navegar en contra.
+
+| Corriente | Zona | Sentido / Régimen | Relevancia para el PY |
+| :--- | :--- | :--- | :--- |
+| **Corriente del Golfo (Gulf Stream)** | Costa Este de EE.UU. hacia Europa (Atlántico Norte) | Cálida, hasta 4 nudos | Genera mar muy dura y peligrosa cuando el viento sopla en contra de la corriente (wind-against-current) |
+| **Corriente de Canarias** | Costa Atlántica de la Península hacia Canarias | Fría, procedente del Atlántico Norte, débil (~0.5-1 nudo) hacia el SO | Afecta a travesías Península-Canarias; favorable en ese sentido |
+| **Corriente del Labrador** | Atlántico Norte, frente a Terranova | Fría, hacia el Sur | Contribuye a la niebla de advección de los Grandes Bancos (ver apartado 5) |
+| **Corriente Circumpolar Antártica** | Rodea la Antártida sin interrupción de tierra | Impulsada por los vientos del oeste (Cuarenta Rugientes) | Relevante solo en travesías oceánicas de gran altura, mencionada para contexto |
+| **Corriente de Canal / Mareal del Estrecho de Gibraltar** | Estrecho de Gibraltar | Superficial entrante (Atlántico → Mediterráneo, ~2-4 nudos) y profunda saliente | La más relevante en el examen práctico sobre la Carta 105: debe combinarse vectorialmente con la corriente de marea semidiurna |
+
+> [!TIP]
+> **Efecto "viento contra corriente":** cuando el viento sopla en sentido opuesto a una corriente fuerte (típico en el Golfo de Cádiz con levante duro contra la corriente entrante de Gibraltar), la ola se hace más corta, empinada y rompiente que lo que indicaría el Beaufort por sí solo. Es una pregunta recurrente de examen relacionar este efecto con el estado de la mar del apartado 4.
+
 ## Ejemplos Prácticos
 
 **Problema 1: Cálculo del Viento Geostrófico de Altura**

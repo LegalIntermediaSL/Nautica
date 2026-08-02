@@ -110,3 +110,19 @@ El litoral mediterráneo español es uno de los destinos náuticos más populare
 | **Puerto de Estepona** | Estepona (Mál) | 36° 24.9' N - 005° 09.3' W | Ch 9 | 447 | 4,0 m | ⛽ 🏗️ 🚿 🛠️ |
 | **Puerto de la Duquesa** | Manilva (Mál) | 36° 21.4' N - 005° 13.8' W | Ch 9 | 328 | 3,0 m | ⛽ 🏗️ 🚿 |
 | **RCM de Sotogrande** | San Roque (Cádiz) | 36° 17.4' N - 005° 16.3' W | Ch 9 | 834 | 4,0 m | ⛽ 🏗️ 🚿 |
+
+---
+
+## Calas y Fondeos de Interés
+
+A diferencia de los puertos deportivos con amarre fijo listados arriba, el Mediterráneo español cuenta con numerosos fondeaderos naturales donde es tradición pasar la noche o el día fondeados en vez de amarrados. Esta sección no repite la técnica de fondeo (círculo de borneo, tipos de ancla, reglas de cadena) ni la normativa de Posidonia, ya explicadas en detalle en **[Maniobras de Puerto y Fondeo](../MANIOBRAS_Y_FONDEO.md)** y **[Medioambiente y Fondeo Responsable](../MEDIOAMBIENTE.md)** — consulta ambas antes de fondear en cualquiera de estos enclaves.
+
+| Fondeadero | Zona / Isla | Tipo de Fondo | Nota Práctica |
+| :--- | :--- | :--- | :--- |
+| **Cala Macarelleta / Cala Macarella** | Costa sur de Menorca (Ciutadella) | Arena con manchones de posidonia en los laterales | Dos de las calas más fotografiadas de Baleares; muy masificadas en julio-agosto, tanto por mar como por senderistas del Camí de Cavalls. Abrigo aceptable de componente norte pero muy expuesta a vientos y mar de componente sur. Conviene fondear en el manchón de arena central y evitar horas punta. |
+| **Es Vedrà** | Suroeste de Ibiza, frente a Cala d'Hort | Fondo rocoso e irregular, con calados que aumentan rápido cerca del islote | Islote protegido (Reserva Natural de Es Vedrà, Es Vedranell i els Illots de Ponent d'Eivissa) con corrientes notables y fondeo delicado por la roca y la profundidad; la mayoría de navegantes fondean sobre arena en la vecina Cala d'Hort para contemplarlo en vez de fondear junto al propio islote. |
+| **Cala Galdana** | Costa sur de Menorca (Ferreries) | Arena | Bahía cerrada y bien abrigada de vientos del norte, cómoda para pernoctar; muy concurrida en temporada alta por la urbanización turística que la rodea. |
+| **Cala Portitxol (Portitxol)** | Jávea/Xàbia (Alicante), junto al Cabo de San Antonio | Alterna arena y roca, con un islote frente a la cala | Fondeadero de día muy popular por su cercanía al puerto de Jávea; el islote ofrece abrigo parcial pero la cala queda expuesta a vientos y mar del cuarto cuadrante. |
+| **Islas Medas** | Frente a L'Estartit (Girona), Parc Natural del Montgrí, les Illes Medes i el Baix Ter | Fondos rocosos protegidos | Fondeo libre **prohibido** en la práctica totalidad del perímetro de las islas; el acceso se canaliza mediante campo de boyas de uso regulado y cupo diario de visitantes. Ver el detalle normativo de esta Zona Marina Protegida en [Medioambiente y Fondeo Responsable](../MEDIOAMBIENTE.md). |
+| **Isla de Tabarca** | Frente a Santa Pola (Alicante) | Variable: manchones de arena, roca y praderas de posidonia | Primera reserva marina española (1986). Distingue zonas de reserva integral donde el fondeo y la pesca están prohibidos de zonas de uso compartido con boyas de amarre ecológico de pago gestionadas por la Cofradía de Pescadores; úsalas siempre que estén disponibles. |
+| **Cala Fornells** | Costa noroeste de Mallorca, cerca de Peguera/Paguera (Calvià) | Arena | Bahía pequeña y bien resguardada, popular como fondeo nocturno por su cercanía a Puerto de Andratx y Port Adriano; se llena con rapidez en los meses de verano. |

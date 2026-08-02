@@ -94,6 +94,21 @@ Para mitigar este efecto exponencial, es imprescindible el uso de **mamparos rom
 > [!CAUTION]
 > Regla de Arquitectura Naval del PY: **Minimizar $KG$ y anular las superficies libres.** Trincar pesos bajos y llenar o vaciar completamente los tanques antes de enfrentar temporales cruzados.
 
+### 2.3 Lectura Rápida del GM: Tabla de Referencia para el Examen
+
+Para las preguntas tipo test (10 preguntas, máx. 5 fallos) conviene memorizar la relación cualitativa entre la magnitud de $GM$ y el comportamiento dinámico del buque, más allá de la fórmula:
+
+| Valor de $GM$ | Comportamiento del buque | Riesgo asociado |
+| :--- | :--- | :--- |
+| $GM$ muy alto (buque "duro" o *stiff*) | Balance rápido, seco y violento (periodo de balance corto, $T \propto 1/\sqrt{GM}$) | Fatiga estructural, riesgo para la tripulación y el aparejo (desarbolado), aceleraciones peligrosas para la carga |
+| $GM$ moderado (óptimo) | Balance suave y amplio, buen comportamiento en la mar | Ninguno relevante; es el objetivo de diseño |
+| $GM$ bajo (buque "blando" o *tender*) | Balance lento y perezoso, se adriza con desgana | Riesgo de escora permanente ante viento/carga asimétrica |
+| $GM \approx 0$ | Ángulo de amuramiento (*angle of loll*): el buque se queda escorado a una banda sin fuerza para adrizarse, oscilando entre dos posiciones de equilibrio | Confusión con avería grave; **maniobra de rescate**: nunca corregir el lastre bruscamente al lado contrario, puede provocar vuelco al pasar por $\theta=0$ |
+| $GM < 0$ | Equilibrio inestable, el buque busca un ángulo de equilibrio distinto de $0^\circ$ | Zozobra si no se corrige de inmediato (achicar superficies libres, bajar pesos) |
+
+> [!TIP]
+> Pregunta clásica de examen: *"¿Qué ángulo adopta un buque con $GM$ negativo cuando el par escorante es nulo?"* Respuesta: el **ángulo de amuramiento (angle of loll)**, que no debe confundirse con una avería de estabilidad positiva; el procedimiento correcto es bajar pesos altos o vaciar tanques altos progresivamente por ambas bandas, nunca escorar más para "comprobar" el lado contrario.
+
 ## 3. Abandono de Buque y Dispositivos de Supervivencia GMDSS
 
 El rigor de la supervivencia depende de aplicar estrictamente los protocolos y dominar los sistemas radioeléctricos modernos.
@@ -120,6 +135,46 @@ Adicional al SOLAS pack de la balsa, se porta:
 ### 3.5 Equipamiento Radioeléctrico GMDSS/SMSSM Avanzado
 *   **EPIRB (406 MHz):** Radiobaliza de localización de siniestros. La portadora principal a $406.025 \text{ MHz}$ es interceptada por constelaciones LEOSAR (COSPAS-SARSAT), MEOSAR (Galileo/GPS) y GEOSAR. Envía el código hexadecimal de 15 dígitos que engloba el MID (país) y MMSI del yate, junto con las coordenadas obtenidas del GNSS interno. Precisión < 100 metros. También emiten balizamiento homing en $121.5 \text{ MHz}$.
 *   **SART (Búsqueda y Rescate Respondedor de Radar):** Transpondedor de Banda X (9.2 - 9.5 GHz). Al recibir el barrido del radar de navegación del rescatador, el SART transmite una respuesta de frecuencia de barrido rápido. Resulta en una línea radial de 12 arcos concéntricos en la pantalla del radar del buque de búsqueda, apuntando ineludiblemente a la posición de los náufragos.
+
+**Tabla comparativa rápida (frecuente en el test):**
+
+| Equipo | Frecuencia | Vía de alerta | Activación | Autonomía típica |
+| :--- | :--- | :--- | :--- | :--- |
+| **EPIRB** | 406 MHz (+121.5 MHz homing) | Satélite (Cospas-Sarsat), llega al MRCC | Automática (zafa hidrostática) o manual | ≥ 48 h |
+| **PLB** | 406 MHz | Satélite (Cospas-Sarsat) | Siempre manual | ≥ 24 h |
+| **SART** | 9 GHz (Banda X) | Radar del buque que busca (visual en pantalla, no hay "mensaje") | Manual | ≥ 96 h en espera / 8 h transmitiendo |
+| **AIS-SART / MOB** | VHF/AIS | Plotter de los buques cercanos (icono de socorro) | Manual o automática (con el chaleco) | ≥ 96 h en espera |
+
+> [!NOTE]
+> Este resumen es autocontenido para el examen. Para el detalle de protocolos NMEA, falsas alarmas y su desactivación, integración con AIS o comparativa con sistemas de comunicación satelital (Iridium, Starlink), consulta la guía completa **[Electrónica Naval, sección 7](../../ELECTRONICA_NAVAL.md#7-balizas-de-emergencia-por-satélite-epirb-plb-y-ais-sart)**.
+
+### 3.6 Supervivencia Prolongada en la Balsa: Racionamiento y Señalización
+
+Superada la fase crítica del abandono, la supervivencia se convierte en un problema de gestión de recursos y visibilidad frente a los medios de búsqueda. El equipamiento SOLAS de una balsa homologada (Pack B, offshore) incluye una dotación mínima por persona que el patrón debe saber administrar:
+
+**Racionamiento de agua:**
+*   Dotación mínima SOLAS: $1.5 \text{ litros}$ de agua potable por persona (envasada en raciones individuales de $500 \text{ ml}$).
+*   **Regla de oro:** no beber nada durante las primeras 24 horas (el cuerpo dispone de reservas), y a partir de entonces racionar a un máximo de $500 \text{ ml/persona/día}$ en clima templado, reduciendo a la mitad si hay sombra y calma.
+*   Nunca beber agua de mar (acelera la deshidratación por ósmosis renal) ni orina. Si llueve, extender la propia balsa o la vela de recuperación como colector y almacenar en los envases vacíos.
+*   Los kits avanzados incorporan desalinizadores manuales de ósmosis inversa (ej. PUR-06) como reserva táctica cuando la lluvia no es fiable.
+
+**Racionamiento de alimento:**
+*   Galletas de alta energía (~$10.000 \text{ kJ}$ por persona en el pack), diseñadas para no generar sed (bajas en proteína y sal).
+*   **Norma crítica:** no consumir alimento sólido si el agua disponible es escasa o nula; digerir proteínas consume agua corporal y acelera la deshidratación. Es preferible el ayuno breve a comer sin poder hidratarse.
+*   Los peces o aves capturados (anzuelos del kit de pesca SOLAS) deben consumirse crudos únicamente si hay agua suficiente para compensar la digestión.
+
+**Señalización activa y pasiva (más allá de la pirotecnia del apartado 3.4):**
+
+| Medio | Alcance / eficacia | Uso táctico |
+| :--- | :--- | :--- |
+| **Espejo de señales (heliógrafo)** | Hasta 10-15 millas en día despejado | Apuntar el reflejo solar hacia el objetivo (avión, buque) barriendo el horizonte; es el medio pasivo más eficaz de día |
+| **Colorante fluorescente (sea dye marker)** | Mancha visible varios cientos de metros desde el aire | Verter en el agua alrededor de la balsa al detectar un avión de búsqueda SAR |
+| **Silbato** | Corto alcance (decenas de metros) | Señalización acústica entre náufragos dispersos o hacia un buque muy próximo en niebla |
+| **Reflector radárico pasivo (integrado en la balsa)** | Aumenta el eco radárico de la balsa (RCS muy bajo por sí sola) | Mantenerlo desplegado en su posición más alta permanente, no solo ante un contacto |
+| **Linterna estanca / cyalume** | Visual nocturno de corto-medio alcance | Código Morse improvisado (SOS: 3 cortos, 3 largos, 3 cortos) hacia luces detectadas |
+
+> [!CAUTION]
+> Orden de prioridad ante un medio de rescate detectado: **1)** confirmar que se dirige realmente hacia la zona (no malgastar pirotecnia con un contacto lejano o que se aleja); **2)** combinar señal pasiva continua (reflector, colorante) con señal activa puntual (bengala) solo cuando el medio esté dentro de un rango de detección realista.
 
 ## Ejemplos Prácticos
 

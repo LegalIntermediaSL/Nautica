@@ -64,6 +64,9 @@ Si aplicamos nuestras máquinas para hacer un Rumbo de Superficie ($R_s$) a una 
 
 $$ \vec{V}_{\text{efectiva}} = \vec{V}_{\text{buque}} + \vec{V}_{\text{corriente}} $$
 
+> [!NOTE]
+> El planteamiento vectorial del Rumbo y la Velocidad Efectiva es idéntico al que usa el PER en su forma básica y al que reutiliza el CY en aguas oceánicas. Un resumen conciso con el mismo ejemplo tipo examen (deriva por corriente y por abatimiento combinados) está en **[CALCULOS_DE_NAVEGACION.md, sección 1 "El Triángulo de Velocidades"](../../cartas_nauticas/CALCULOS_DE_NAVEGACION.md#1-el-triángulo-de-velocidades-deriva-y-corrientes)**.
+
 En el plano vectorial cartesiano ($x=$ Este, $y=$ Norte):
 $$ V_{x, \text{efectivo}} = V_b \cdot \sin(R_s) + I_{hc} \cdot \sin(R_c) $$
 $$ V_{y, \text{efectivo}} = V_b \cdot \cos(R_s) + I_{hc} \cdot \cos(R_c) $$
@@ -207,6 +210,45 @@ Determine, resolviendo escalonadamente los vectores del mar superficial y del ma
     $$ L_{\text{llegada}} = 005^\circ 20.8' \text{ W} + 28.9' \text{ E} = (-5^\circ 20.8') + (+0^\circ 28.9') = 004^\circ 51.9' \text{ W} $$
     **Respuesta Final de Rescate:** Latitud: $35^\circ 59.5' \text{ N}$ | Longitud: $004^\circ 51.9' \text{ W}$.
     *(Una desviación gigantesca del track planeado originada por las leyes de hidrodinámica inercial que cualquier tribunal admirantazgo tomaría como prueba de mala praxis si no se hubiera anticipado y corregido).*
+
+**Problema 4: Estima Analítica y Gráfica Combinada, Paso a Paso (Formato de Examen)**
+
+Este problema resuelve simultáneamente el trazado sobre el papel (lo que se hace físicamente en la Carta 105 con regla paralela, compás de puntas secas y transportador) y su verificación analítica, tal como se exige en el examen del PY. Es el mismo tipo de ejercicio que el del PER (ver `titulaciones/PER/tema_11_carta_navegacion.md`), pero un peldaño más exigente al incorporar corrección total y comprobación trigonométrica completa.
+
+**Enunciado:** Zarpamos a las $08{:}00\text{h}$ desde una situación fijada con exactitud en $36^\circ 00.0' \text{N} - 005^\circ 30.0' \text{W}$ (aguas centrales del Estrecho). El timonel gobierna al Rumbo de Aguja $R_a = 070^\circ$. La declinación magnética de la carta, ya extrapolada al año en curso, es $dm = 2^\circ \text{W}$, y el desvío tabulado para rumbos próximos al ENE es $\Delta = +1^\circ \text{E}$. Navegamos a una velocidad constante de corredera $V_b = 7.5\text{ kn}$ durante $1\text{ h } 30\text{ min}$. Calcule el Rumbo Verdadero a trazar en la carta y la situación de estima a las $09{:}30\text{h}$, describiendo también el procedimiento gráfico sobre el papel.
+
+*Resolución:*
+
+1.  **Cálculo de la Corrección Total ($C_t$):**
+    $$ C_t = dm + \Delta = (-2^\circ) + (+1^\circ) = -1^\circ $$
+
+2.  **Obtención del Rumbo Verdadero ($R_v$) — Ecuación Maestra:**
+    $$ R_v = R_a + C_t = 070^\circ + (-1^\circ) = 069^\circ $$
+
+3.  **Procedimiento gráfico en la carta:** apoyamos la regla paralela sobre la rosa de los vientos verdadera más próxima al punto de salida, la orientamos exactamente a $069^\circ$ y, mediante desplazamientos paralelos sucesivos ("caminando" la regla), la trasladamos hasta hacerla pasar por el punto de salida $36^\circ 00.0' \text{N} - 005^\circ 30.0' \text{W}$, trazando con lápiz fino la loxodrómica de rumbo.
+
+4.  **Cálculo de la distancia navegada:**
+    $$ D = V_b \times t = 7.5\text{ kn} \times 1.5\text{ h} = 11.25\text{ millas} $$
+
+5.  **Procedimiento gráfico de la distancia:** abrimos el compás de puntas secas exactamente $11.25$ millas, leyéndolas en la escala lateral de latitud a la altura de trabajo (unos $36^\circ \text{N}$, nunca en la escala de longitud). Pinchando una punta en el punto de salida, marcamos la otra punta sobre la línea de rumbo $069^\circ$ ya trazada: ese es el punto de estima.
+
+6.  **Comprobación analítica (estima algebraica) de la misma situación, coherente con el trazado gráfico:**
+    $$ \Delta l = D \cdot \cos(R_v) = 11.25 \cdot \cos(069^\circ) = 11.25 \cdot 0.3584 \approx +4.03' \text{ (Norte)} $$
+    $$ A \text{ (Apartamiento)} = D \cdot \sin(R_v) = 11.25 \cdot \sin(069^\circ) = 11.25 \cdot 0.9336 \approx 10.50' \text{ (Este)} $$
+    Latitud media de trabajo (aproximando la llegada para el cálculo de la secante):
+    $$ l_m \approx 36^\circ 00.0' + \frac{4.03'}{2} \approx 36^\circ 02.0' $$
+    $$ \Delta L = \frac{A}{\cos(l_m)} = \frac{10.50}{\cos(36^\circ 02.0')} \approx \frac{10.50}{0.8087} \approx 12.99' \text{ (Este)} $$
+
+7.  **Coordenadas finales de la estima (sumando algebraicamente a la salida):**
+    $$ \text{Latitud: } 36^\circ 00.0' \text{N} + 4.0' = 36^\circ 04.0' \text{N} $$
+    $$ \text{Longitud: } 005^\circ 30.0' \text{W} - 13.0' = 005^\circ 17.0' \text{W} $$
+
+8.  **Anotación normalizada en la carta:** junto al punto marcado con el compás en el paso 5, se dibuja el símbolo cartográfico de una situación de estima (semicírculo) con la hora $09{:}30$ escrita a su lado. Este punto de estima, obtenido gráficamente, debe coincidir (con la tolerancia del grosor del lápiz) con las coordenadas calculadas analíticamente en el paso 7 — es la comprobación cruzada que se exige resolver en el examen del PY para validar el trazado.
+
+**Resultado final:** A las $09{:}30\text{h}$ la situación de estima es $36^\circ 04.0' \text{N} - 005^\circ 17.0' \text{W}$, al Rumbo Verdadero $069^\circ$ y $11.25$ millas recorridas desde la salida.
+
+> [!TIP]
+> Si además hubiera corriente o abatimiento actuando durante la travesía, este mismo resultado (estima "en el agua") pasaría a usarse como el vector propio del buque para la composición vectorial de la sección 3 de este tema, obteniendo entonces la estima "sobre el fondo" (Rumbo y Velocidad Efectiva).
 
 ## Referencias Bibliográficas y Jurisprudencia
 

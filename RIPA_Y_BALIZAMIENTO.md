@@ -43,6 +43,9 @@ Para poder aplicar el RIPA de noche, hay que identificar el tipo de buque y su r
 
 *(Un velero navegando a vela pura lleva las luces roja/verde y la blanca de popa, pero APAGA la luz blanca de tope. Así sabemos que es un velero).*
 
+![Configuración de luces de un buque de motor visto desde distintos ángulos](assets/images/balizamiento/luces_navegacion_buque_motor.png)
+*Combinación de luces visibles según el ángulo de aproximación a un buque de motor de menos de 50m. Fuente: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Propmec50.PNG), autor Claudio Elias, dominio público.*
+
 ### Identificación de Buques Especiales
 Se usan luces "Todo Horizonte" ($360^\circ$) en el mástil.
 

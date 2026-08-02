@@ -30,6 +30,11 @@ Aunque no haya examen, las 2 horas teóricas del curso deben cubrir obligatoriam
 *   **[Balizamiento](../PER/tema_5_balizamiento.md):** Identificación básica de las boyas laterales (rojas y verdes).
 *   **Emergencias:** Qué hacer en caso de emergencia y cómo contactar con Salvamento Marítimo por radio (VHF Canal 16).
 
+## Material de Estudio Ampliado (para curiosos)
+Aunque el curso de 2 horas no exige más que lo básico, si quieres profundizar un poco más allá de lo mínimo (por ejemplo, porque luego piensas sacarte el PNB o el PER), estos dos temas específicos de la Licencia de Navegación desarrollan con más detalle la nomenclatura, la estabilidad, el RIPA y las comunicaciones VHF adaptados al nivel de una embarcación de hasta 6 metros:
+*   **[Tema 1: Nomenclatura Náutica y Dinámica de Seguridad](tema_1_nomenclatura_seguridad.md).**
+*   **[Tema 2: Cinemática del RIPA y Fenomenología de las Comunicaciones](tema_2_ripa_comunicaciones.md).**
+
 ## Recursos de Estudio
 Para la Licencia de Navegación no necesitas comprar libros ni estudiar previamente, ya que el instructor te explicará todo lo necesario durante las 2 horas de teoría y lo aplicaréis directamente en las 4 horas de prácticas en el mar.
 

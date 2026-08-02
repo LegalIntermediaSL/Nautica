@@ -21,6 +21,7 @@ Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado
 - **[Medioambiente y Buenas Prácticas](MEDIOAMBIENTE.md)**: Posidonia oceánica, fondeo ecológico, gestión de residuos MARPOL, distancia de seguridad con cetáceos y tortugas, y Zonas Marinas Protegidas (Cabrera, Tabarca, Illes Medes).
 - **[Pesca Marítima de Recreo](PESCA_RECREATIVA.md)**: Licencias autonómicas, tallas mínimas, vedas y buenas prácticas para quien pesca desde la embarcación.
 - **[Chárter Náutico (Alquiler de Embarcaciones)](CHARTER.md)**: Bareboat, con patrón y flotilla, titulación exigida, check-in/check-out, fianza y franquicia del seguro.
+- **[Normativa de Drones desde Embarcaciones](NORMATIVA_DRONES.md)**: Categorías de operación AESA (Abierta A1/A2/A3), registro de operador, distancias de seguridad en el entorno marino y consejos de vuelo desde cubierta.
 - **[Motos de Agua (Motos Náuticas)](MOTOS_DE_AGUA.md)**: Clasificación por clase de potencia y titulación exigida (Licencia de Navegación, PNB, PER), normativa de navegación específica, cabo de hombre muerto, riesgo del chorro de agua a presión y protocolo de vuelco.
 - **[Cartas Náuticas](cartas_nauticas/INDEX.md)**: Conceptos básicos de cartografía y simbología.
 - **[Faros de España](faros/INDEX.md)**: Libro de faros y listado completo de señales marítimas de España.
@@ -42,11 +43,13 @@ Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivi
 - **[Mantenimiento de Velas y Jarcia](MANTENIMIENTO_DE_VELAS_Y_JARCIA.md)**: Materiales de vela (Dacron, laminadas, Cuben Fiber), cuidado e invernaje, tipos de cabo moderno (Dyneema, Nylon), jarcia firme y mantenimiento de winches.
 - **[Protocolo de Hombre al Agua (MOB)](PROTOCOLO_HOMBRE_AL_AGUA.md)**: Secuencia inmediata, maniobras Quick-Stop y Lifesling, izado a bordo y prevención.
 - **[Vida a Bordo en Travesía Larga](VIDA_A_BORDO.md)**: Gestión de agua dulce, provisioning, sistema de guardias, residuos y convivencia en espacio reducido.
+- **[Averías en Travesía: Checklist de Campo](AVERIAS_EN_TRAVESIA.md)**: Qué hacer en el momento ante un fallo total de electrónica, rotura de jarcia o vela, vía de agua no localizada o fallo de gobierno, con los medios limitados a bordo y lejos de un taller.
 
 ## Cultura Náutica
 
 - **[Historia de la Navegación](HISTORIA_DE_LA_NAVEGACION.md)**: De la estima primitiva al GPS, pasando por el astrolabio, el sextante y el cronómetro marino de Harrison.
 - **[Regatas y Clubes: Cultura y Organización de la Vela Deportiva](REGATAS_Y_CLUBES.md)**: La RFEV y la licencia federativa, clases Optimist/ILCA/420/470/Snipe/ORC, el club náutico, el Comité de Regatas y de Protestas, y las grandes regatas oceánicas (Ocean Race, Vendée Globe, ARC).
+- **[Táctica Meteorológica de Regata](TACTICA_METEOROLOGICA_REGATA.md)**: Rachas persistentes vs. oscilantes, regla favorable/desfavorable en ceñida, efecto de la costa, sesgo de la línea de salida y efecto táctico de las corrientes.
 
 ## Recursos Recomendados
 
@@ -56,7 +59,7 @@ Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivi
 
 - `README.md`: Este archivo, que proporciona una descripción general del proyecto.
 - [`TITULOS_NAUTICOS.md`](TITULOS_NAUTICOS.md): Guía sobre los diferentes títulos náuticos de recreo en España y sus atribuciones.
-- `CHANGELOG.md`: Registro de todos los cambios notables realizados en el proyecto.
+- [`CHANGELOG.md`](CHANGELOG.md): Registro de todos los cambios notables realizados en el proyecto.
 - `BITACORA.md`: Diario o cuaderno de bitácora para registrar salidas al mar y anotaciones relevantes.
 
 ## Contribución

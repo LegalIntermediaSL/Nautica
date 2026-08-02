@@ -151,4 +151,99 @@ En caso de colisión (con otro barco, un contenedor a la deriva o un bajo), el s
 
 ---
 
+## 9. Abandono de Buque: Cuándo y Cómo
+
+Abandonar el barco es la decisión más grave que puede tomar un patrón, y la estadística de rescates marítimos es clara sobre el error más letal: abandonar demasiado pronto. La regla de oro es tajante:
+
+> **Solo se abandona un barco que se hunde para subir a otro que flota.**
+
+Un casco de fibra o acero, aunque esté escorado, ardiendo parcialmente o con una vía de agua activa, casi siempre ofrece más flotabilidad, más espacio, más visibilidad para los equipos de rescate y más protección frente al frío que una balsa de goma de dos metros. Numerosos naufragios reales terminan con la tripulación muerta en la balsa mientras el barco, "abandonado" a su suerte, es hallado días después todavía a flote. **No se abandona un barco a flote por muy dañado que esté**, salvo que exista un riesgo inminente y cierto para la vida (explosión inminente, incendio ya incontrolable invadiendo toda la cubierta, hundimiento en curso irreversible). Mientras el barco flote y sea mínimamente gobernable, se queda y se lucha: se achica, se ataja la vía de agua, se combate el fuego.
+
+### Secuencia de Abandono Ordenado
+
+Cuando la decisión de abandonar ya es innegociable, el abandono se ejecuta como una maniobra, no como una huida:
+
+1.  **Emitir el mensaje de socorro antes de abandonar.** Con el barco todavía a flote y la instalación eléctrica operativa, transmitir MAYDAY por VHF canal 16 (posición, naturaleza de la emergencia, número de personas a bordo). Es mucho más fácil emitir esta llamada desde el puesto de radio del barco que desde una balsa a la deriva; retrasar el abandono unos segundos para dar este aviso puede ser la diferencia entre ser rescatado en horas o en días.
+2.  **Activar el EPIRB manualmente.** No confiar solo en que la zafa hidrostática lo dispare al hundirse el barco: extraerlo de su soporte y activarlo a mano antes de abandonar, para que la señal de socorro empiece a emitirse cuanto antes y llevarlo con la tripulación a la balsa.
+3.  **Vestir trajes de inmersión o la máxima ropa de abrigo posible**, y ponerse el chaleco salvavidas correctamente ajustado. El frío, no el ahogamiento, es la principal causa de muerte en supervivencia en balsa; vestirse adecuadamente antes de salir es tan importante como la propia balsa.
+4.  **Coger el "grab bag"** (la bolsa de emergencia preparada de antemano, ver sección 11) de camino a cubierta.
+5.  **Subir a la balsa sin saltar al agua si es posible.** La balsa debe arrojarse al agua, inflarse y amarrarse firmemente junto al costado del barco (mientras este siga a flote) para que la tripulación puese pasar directamente de cubierta a la balsa "escalón a escalón", en lugar de saltar al mar y nadar hasta ella; nadar en el agua con ropa de abrigo empapada agota y enfría mucho más rápido de lo esperado, y siempre existe el riesgo de no poder subirse después a la balsa por el propio esfuerzo.
+6.  **Contar a toda la tripulación** en cuanto estén en la balsa y, en cuanto se confirme que todos están a bordo de ella, cortar o soltar la boza para alejarse del buque, que puede hundirse arrastrando o golpeando la balsa, o liberar restos y objetos flotantes peligrosos a su alrededor.
+
+---
+
+## 10. Supervivencia en Balsa Salvavidas
+
+Una balsa homologada (ISO 9650 o SOLAS) no es un simple flotador: lleva un equipo de supervivencia estibado en una bolsa interior, pensado para mantener con vida a la tripulación durante días hasta la llegada del rescate.
+
+### Contenido del Equipo Estándar
+
+*   **Agua envasada:** Raciones individuales selladas (normalmente en torno a 1,5 litros por persona), pensadas para racionar, no para beber libremente.
+*   **Raciones alimenticias:** Barritas o galletas energéticas de alta densidad calórica y bajo contenido en sal (la sal aumenta la sed y acelera la deshidratación).
+*   **Señales pirotécnicas:** Un juego reducido de bengalas de mano y, en balsas mayores, algún cohete, para señalizar en cuanto se avista un barco o avión.
+*   **Kit de pesca:** Sedal, anzuelos y algún señuelo, como recurso de supervivencia a medio plazo si el rescate se demora más de lo previsto.
+*   **Esponja de achique:** Imprescindible para mantener seco el suelo de la balsa; el agua que entra con la tripulación o por el oleaje enfría el cuerpo mucho más rápido que el aire, aunque haga el mismo frío.
+*   **Ancla flotante (drogue):** Un pequeño paracaídas submarino unido a la balsa por un cabo, para reducir la deriva y mantener la orientación frente al oleaje (ver más abajo).
+*   Además, suele incluir: fuelle o bomba de aire de repuesto para mantener la presión de las cámaras, un pequeño botiquín, linterna, espejo de señales y un cuchillo de seguridad de hoja roma (para no pinchar accidentalmente la propia balsa).
+
+### Racionamiento de Agua
+
+La deshidratación mata más despacio de lo que instintivamente se cree, y el error más común es beberse toda el agua disponible el primer día por pánico o sed. La pauta realista de supervivencia:
+
+*   **Primeras 24 horas:** No beber, o beber una cantidad mínima simbólica. El cuerpo tiene reservas suficientes y beber de más en las primeras horas solo adelanta el momento en que el agua se agote.
+*   **Días siguientes:** Racionar a sorbos pequeños y espaciados, en torno a medio litro por persona y día, ajustando según la disponibilidad real y el número de tripulantes.
+*   **Jamás beber agua de mar**, por mucha sed que se tenga: el exceso de sal obliga al riñón a gastar más agua corporal de la que aporta, acelerando la deshidratación hasta ser mortal en poco tiempo.
+*   Recoger agua de lluvia con cualquier superficie disponible (la propia capota de la balsa, lonas) siempre que sea posible, para alargar las raciones envasadas.
+
+### Mantenerse Juntos si Hay Más de una Embarcación de Supervivencia
+
+Si el abandono obliga a repartir a la tripulación entre varias balsas o embarcaciones auxiliares, **deben amarrarse entre sí con un cabo** en cuanto sea seguro hacerlo, formando un único conjunto a la deriva en lugar de dispersarse. Un grupo de balsas unidas presenta un objetivo mucho mayor y más fácil de localizar visualmente o por radar que varias balsas pequeñas y separadas, permite repartir agua y víveres entre unidades si alguna se ha perdido o dañado, y sostiene mucho mejor la moral de la tripulación que la incertidumbre de una separación.
+
+### El Ancla Flotante (Drogue)
+
+Desplegada desde la proa de la balsa, el ancla flotante cumple dos funciones críticas:
+
+*   **Minimizar la deriva:** Frena el desplazamiento de la balsa empujado por el viento, manteniéndola más cerca del último punto de posición conocido (el que consta en el MAYDAY y en el EPIRB), lo que reduce drásticamente el área de búsqueda de los equipos de rescate.
+*   **Mantener la orientación frente al oleaje:** Sin ancla flotante, una balsa ligera tiende a colocarse de costado al oleaje (a través de la mar), la posición de mayor riesgo de vuelco. El ancla flotante actúa de freno en la proa y mantiene la balsa orientada de cara a las olas, mucho más estable y con muchísimo menor riesgo de volcar.
+
+---
+
+## 11. El "Grab Bag" (Bolsa de Emergencia)
+
+El "grab bag" es una bolsa de emergencia preparada con antelación, estanca y con flotabilidad propia (para no hundirse si cae al agua durante el abandono), que se mantiene siempre accesible cerca de la salida de cabina o del puesto de gobierno durante cualquier travesía oceánica. En el momento de abandonar el barco no hay tiempo para pensar ni para buscar objetos por el interior: coger esta bolsa forma parte de la propia secuencia de abandono (sección 9).
+
+Contenido recomendado:
+
+*   **Copia de la documentación náutica:** Rol de despacho, seguro, permiso de navegación y documentación de identidad de la tripulación, preferiblemente plastificada o en funda estanca.
+*   **PLB personal (Personal Locator Beacon):** Un radiofaro individual adicional al EPIRB del barco, que cada tripulante puede activar por separado si el grupo llegara a dispersarse.
+*   **Agua embotellada extra:** Un suplemento a las raciones ya incluidas en la balsa, especialmente importante si la travesía es larga o la tripulación numerosa.
+*   **Botiquín compacto:** Una versión reducida y esencial del botiquín de a bordo (analgésicos, gasas, vendaje, medicación crónica de algún tripulante).
+*   **Linterna estanca:** Con pilas de repuesto en bolsa separada, imprescindible para señalizar de noche además de la luz propia de la balsa.
+*   **Silbato:** Señal acústica que no depende de baterías y que permite mantener el contacto entre tripulantes en caso de niebla o de separación en el agua.
+*   **Manta térmica (manta de supervivencia):** Ligera, compacta y muy eficaz reteniendo el calor corporal como complemento a la ropa de abrigo o traje de inmersión.
+
+*Recomendación práctica:* revisar y actualizar el grab bag antes de cada travesía oceánica (caducidad de la documentación, pilas, medicación) y asegurarse de que toda la tripulación sabe exactamente dónde está estibado.
+
+---
+
+## 12. Diagrama de Decisión: Quedarse a Bordo o Abandonar
+
+```mermaid
+flowchart TD
+    A["Vía de agua grave / incendio incontrolable"] --> B{"¿El barco sigue flotando y es controlable?"}
+    B -- "Sí" --> C["Quedarse y luchar: achicar, atajar la vía de agua o atacar el fuego"]
+    C --> D["MAYDAY informativo con posición y situación"]
+    D --> E["Reevaluar la situación cada pocos minutos"]
+    E --> B
+    B -- "No, riesgo inminente para la vida" --> F["Activar el EPIRB manualmente"]
+    F --> G["Emitir MAYDAY con posición antes de abandonar"]
+    G --> H["Vestir trajes de inmersión / chalecos salvavidas"]
+    H --> I["Coger el grab bag"]
+    I --> J["Abandono ordenado: subir a la balsa sin saltar al agua"]
+    J --> K["Alejarse del buque y desplegar el ancla flotante"]
+    K --> L["Racionar agua, mantenerse unidos si hay más de una embarcación"]
+```
+
+---
+
 Para la emergencia de "hombre al agua" (MOB), que requiere un protocolo propio de maniobra y rescate, consulta la guía dedicada: [Protocolo de Hombre al Agua](./PROTOCOLO_HOMBRE_AL_AGUA.md).

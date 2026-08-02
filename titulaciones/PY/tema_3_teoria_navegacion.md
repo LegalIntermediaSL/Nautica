@@ -47,6 +47,17 @@ Asumiendo un factor casi isostático, $1 \text{ mb}$ induce una variación inver
 *   $P = 980 \text{ mb}$ (Borrasca profunda) $\Rightarrow +33 \text{ cm}$ de agua de marea metereológica ("Surge" o marea de tempestad).
 *   $P = 1030 \text{ mb}$ (Potente anticiclón) $\Rightarrow -17 \text{ cm}$. ¡Peligro crudo de varada sorpresiva!
 
+### 1.4 Método Alternativo Simplificado: la Regla de los Doceavos
+
+El método trigonométrico del apartado 1.2 es el más preciso, pero en el examen (y en la práctica a bordo sin calculadora científica a mano) es habitual resolver el mismo problema mediante la **Regla de los Doceavos**, que aproxima la sinusoide de marea dividiendo la Duración ($D$) en 6 intervalos iguales y repartiendo la Amplitud ($A$) en fracciones de doceavos según la secuencia $1$-$2$-$3$-$3$-$2$-$1$:
+
+$$ \frac{D}{6} \Rightarrow +\frac{A}{12},\ +\frac{2A}{12},\ +\frac{3A}{12},\ +\frac{3A}{12},\ +\frac{2A}{12},\ +\frac{A}{12} $$
+
+Es decir, en la primera y sexta hora sube (o baja) solo $1/12$ de la amplitud total, en la segunda y quinta $2/12$, y en la tercera y cuarta (el tramo central, de máxima pendiente de la curva) $3/12$ cada una. Al sumar los seis tramos se recupera la amplitud completa ($1+2+3+3+2+1 = 12$ doceavos).
+
+> [!NOTE]
+> Este resumen es autocontenido para el examen. Para la deducción completa y un ejemplo numérico resuelto paso a paso con el Anuario de Mareas del I.H.M., consulta **[USO_DEL_ANUARIO.md, apartado "El Cálculo Práctico"](../../cartas_nauticas/USO_DEL_ANUARIO.md#el-cálculo-práctico-sonda-en-el-momento-t)**.
+
 ---
 
 ## 2. Cinemática Vectorial del Viento (Real, Buque y Aparente)
@@ -74,6 +85,23 @@ graph TD
     A -. "Suma Vectorial Teorema Pitágoras/Coseno" .-> C
 ```
 
+### 2.2 Ejemplo Numérico Resuelto: Cálculo del Viento Aparente
+
+**Enunciado:** Un yate navega a Rumbo Verdadero $R_v = 000^\circ$ (Norte puro) a una velocidad $V_b = 8\text{ kn}$. El anemómetro y las estaciones meteorológicas costeras confirman un Viento Real $V_r = 18\text{ kn}$ soplando desde el $270^\circ$ (viento de a Oeste, entrando por el través de babor, $\alpha = 90^\circ$ respecto a la proa). Calcule la Intensidad y la Dirección del Viento Aparente que leerá la veleta en cubierta.
+
+*Resolución (método vectorial cartesiano, $x=$Este, $y=$Norte):*
+1.  **Vector Viento Real** (procede del $270^\circ$, por tanto *sopla hacia* el $090^\circ$):
+    $$ V_{rx} = 18 \cdot \sin(090^\circ) = 18.0\text{ kn (E)} \qquad V_{ry} = 18 \cdot \cos(090^\circ) = 0\text{ kn} $$
+2.  **Vector Viento de Marcha** (igual y opuesto al rumbo del buque, $000^\circ + 180^\circ = 180^\circ$):
+    $$ V_{bx} = 8 \cdot \sin(180^\circ) = 0\text{ kn} \qquad V_{by} = 8 \cdot \cos(180^\circ) = -8.0\text{ kn (S)} $$
+3.  **Suma vectorial (Viento Aparente):**
+    $$ V_{ax} = 18.0 + 0 = 18.0\text{ kn} \qquad V_{ay} = 0 + (-8.0) = -8.0\text{ kn} $$
+4.  **Módulo e Intensidad:**
+    $$ |\vec{V}_a| = \sqrt{18.0^2 + (-8.0)^2} = \sqrt{324 + 64} = \sqrt{388} \approx 19.7\text{ kn} $$
+5.  **Dirección (de dónde sopla):** el vector resultante *hacia* donde sopla el aire tiene ángulo $\arctan(18.0 / -8.0)$ en el cuadrante SE, es decir, sopla hacia el $114^\circ$ aprox., luego **procede del $294^\circ$** aproximadamente — el viento aparente ha "avanzado" hacia la proa respecto al viento real ($270^\circ \rightarrow 294^\circ$), tal como predice la Consecuencia Cinemática 1 del apartado 2.1.
+
+*Verifica este resultado y experimenta con otros ángulos de forma interactiva en la simulación* **[`simulaciones/02_viento_aparente.ipynb`](../../simulaciones/02_viento_aparente.ipynb)**.
+
 ---
 
 ## 3. Punteo Cinemático de Radar (Plotting ARPA)
@@ -88,6 +116,10 @@ El ordenador interno del radar resuelve continuamente ecuaciones de extrapolaci�
 *   **CPA (Closest Point of Approach):** Distancia mínima transversal calculada a la que el blanco cruzará el centro del display (nuestro navío). Es la altura del triángulo rectángulo formado por el vector de movimiento relativo. Si $CPA < 1.0 \text{ NM}$ en altamar, el sistema activa alertas visuales/acústicas.
 *   **TCPA (Time to CPA):** Tiempo restante para alcanzar el punto CPA.
     $$ TCPA = \frac{\text{Distancia al CPA}}{\text{Velocidad Relativa del Eco}} $$
+
+**Mini-ejemplo directo de CPA/TCPA:** si un eco se sitúa a $D_0 = 8\text{ NM}$ de distancia con demora constante y se acerca con una Velocidad Relativa $V_{rel} = 16\text{ kn}$ (obtenida por dos marcaciones sucesivas como en el Problema 2 más abajo), entonces:
+$$ TCPA = \frac{8\text{ NM}}{16\text{ kn}} = 0.5\text{ h} = 30\text{ minutos} $$
+Y como la demora permanece constante, $CPA = 0\text{ NM}$: colisión matemática segura si ninguno de los dos buques maniobra. Practica la construcción completa del triángulo W-O-A de forma interactiva en **[`simulaciones/07_cinematica_radar.ipynb`](../../simulaciones/07_cinematica_radar.ipynb)**.
 
 ### 3.3 El Triángulo de Movimiento (W-O-A / W-A-O) y Cinemática Diferencial
 La cinemática del punteo (plotting manual) o la lógica de los microprocesadores ARPA conforman el epicentro del control y evitación de colisiones. Su base yace en la resolución trigonométrica de un espacio vectorial plano.

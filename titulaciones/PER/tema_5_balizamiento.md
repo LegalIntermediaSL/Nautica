@@ -87,12 +87,12 @@ Indican dónde están las aguas seguras basándose en los puntos cardinales, rod
 *   *Luz Blanca:* Grupo de **6 centelleos cortos + 1 destello largo** (VQ(6)+LFl) cada 10/15s.
 
 ### 4.3 Cardinal Este (Pasa por mi Este)
-*   *Marca de tope:* Dos conos opuestos por sus bases (**rombo**).
+*   *Marca de tope:* Dos conos opuestos por sus bases (**rombo**, también descrito como "forma de huevo").
 *   *Colores:* **Negro - Amarillo - Negro**.
 *   *Luz Blanca:* Grupo de **3 centelleos rápidos** (Q(3)). *(Truco: las 3 del reloj).*
 
 ### 4.4 Cardinal Oeste (Pasa por mi Oeste)
-*   *Marca de tope:* Dos conos opuestos por sus vértices (**reloj de arena**).
+*   *Marca de tope:* Dos conos opuestos por sus vértices (**reloj de arena**, también descrito como "copa de vino").
 *   *Colores:* **Amarillo - Negro - Amarillo**.
 *   *Luz Blanca:* Grupo de **9 centelleos rápidos** (Q(9)). *(Truco: las 9 del reloj).*
 

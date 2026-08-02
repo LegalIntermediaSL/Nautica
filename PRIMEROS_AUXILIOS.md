@@ -11,6 +11,16 @@ El contenido obligatorio del botiquín está dictado por las zonas de navegació
 *   **Zona 2/3 (Navegación Costera < 60 millas):** Botiquín tipo B.
 *   **Recomendaciones Extra:** Adrenalina precargada (EpiPen) para anafilaxias extremas por picaduras o alergias, vendajes de inmovilización (Sam Splints) y torniquetes tácticos (CAT) por amputaciones con cabos en tensión.
 
+**Lo legal vs. lo sensato:** El contenido mínimo exigido (Botiquín tipo A, B o C, según corresponda) está fijado por la Zona de Navegación despachada del barco — consulta el detalle completo de zonas y equipamiento obligatorio en [SEGURIDAD.md](./SEGURIDAD.md). Más allá de ese mínimo legal, el sentido común aconseja llevar siempre a bordo, sea cual sea la zona:
+*   Analgésicos y antiinflamatorios de uso común (paracetamol, ibuprofeno).
+*   Un antihistamínico oral (para alergias y picaduras leves, sin sustituir a la adrenalina en una anafilaxia real).
+*   Suero fisiológico en cantidad (limpieza de heridas, ojos y quemaduras).
+*   Vendas, gasas estériles, esparadrapo y tiritas de varios tamaños.
+*   Tijeras de punta roma, pinzas, guantes desechables de un solo uso y termómetro.
+*   Una manta térmica (aislamiento en hipotermia o shock, ver apartado 3.2 y 3.5).
+*   Biodramina (dimenhidrinato) para la cinetosis (ver apartado 3.4).
+*   Antiséptico de amplio uso (clorhexidina o povidona yodada).
+
 ---
 
 ## 2. Radioconsulta Médica en Alta Mar (Centro Radio Médico)
@@ -64,15 +74,36 @@ Una picadura de abeja/avispa, consumo de frutos secos ocultos o marisco puede de
 *   **Ciguatera / Intoxicación Alimentaria:** Consumir pesca tropical de arrecife contaminada. Produce diarreas explosivas, parálisis o inversión térmica (sentir quemazón al tocar cosas frías). Hidratación masiva con sueros orales, aislar vía aérea si vomita inconsciente.
 
 ### 3.8. Picaduras y Fauna Marina Tóxica
-*   **Medusas (Carabela Portuguesa, Pelagia):** Dolor urticante atroz. **JAMÁS** lavar con agua dulce (rompe los nematocistos inyectando más veneno). Lavar SOLO con agua de mar. Aplicar hielo envuelto en un paño (nunca directo) y administrar analgésicos.
-*   **Pez Araña (Salvar el ancla a pulmón):** Se entierra en la arena y pincha al pisarlo. Inyecta veneno termolábil. **Tratamiento mágico:** Sumergir el miembro afectado en agua lo más caliente que soporte el paciente (45ºC) durante 30-60 minutos; el calor destruye la neurotoxina casi instantáneamente.
-*   **Erizos de Mar:** No intentar arrancar las púas con pinzas (son calcáreas y se romperán bajo la piel, infectándose). Ablandar con vinagre y extraer superficialmente con aguja estéril.
+*   **Medusas (Carabela Portuguesa, Pelagia):** Dolor urticante atroz. **JAMÁS** lavar con agua dulce (rompe los nematocistos inyectando más veneno). Si quedan restos de tentáculo pegados a la piel, **rasparlos** con el canto de una tarjeta rígida o un guante (nunca frotar ni tocar con los dedos desnudos, para no activar más nematocistos). Lavar SOLO con agua de mar; el agua de mar caliente (no hirviendo) suele aliviar mejor que el hielo en la mayoría de especies mediterráneas, aunque el vinagre solo es recomendable para algunas especies concretas y puede empeorar la picadura de otras (como la Carabela Portuguesa) — si no se identifica la especie, usar agua de mar caliente como opción más segura. Aplicar hielo envuelto en un paño (nunca directo) y administrar analgésicos si persiste el dolor.
+*   **Pez Araña / Escórpora (típico en el Mediterráneo):** Se entierra en la arena y pincha al pisarlo o al manipular el sedal de pesca. Inyecta un veneno termolábil que produce un **dolor intensísimo y desproporcionado** al tamaño de la herida. **Tratamiento mágico:** Sumergir el miembro afectado en agua lo más caliente que soporte el paciente (45ºC) durante 30-60 minutos; el calor destruye la neurotoxina casi instantáneamente.
+*   **Erizos de Mar:** No intentar arrancar las púas con pinzas (son calcáreas y se romperán bajo la piel, infectándose). Ablandar con vinagre y extraer superficialmente con aguja estéril. Las púas que queden clavadas bajo la piel suponen un **riesgo real de infección**: vigilar la zona los días siguientes por si aparece enrojecimiento, calor o supuración, y consultar por radio si hay signos de infección.
 
 ### 3.9. Heridas Graves y Cierres (En Alta Mar)
 Si alguien se produce un tajo profundo y restallante, no se puede esperar al hospital para cerrar la herida.
 1.  **Limpieza:** Irrigar la herida a presión con abundante suero fisiológico (arrastrar bacterias y grasa).
 2.  **Cierre:** Si no sabes dar puntos de sutura con aguja e hilo quirúrgico, usa **Puntos Americanos (Steri-Strips)** o **Pegamento Tisular (Dermabond)** juntando fuertemente los bordes.
 3.  **Vendaje:** Colocar vendaje compresivo estéril y pautar antibióticos de amplio espectro por radio-consejo del Centro Radio Médico.
+
+### 3.10. Fracturas y Esguinces a Bordo: Inmovilización Improvisada
+A bordo no hay radiografías: ante la duda, toda lesión de una extremidad se trata como una fractura hasta que se demuestre lo contrario.
+*   **Fractura cerrada vs. abierta:** En la fractura **cerrada** la piel está intacta aunque haya deformidad, hinchazón o hematoma — inmovilizar y evacuar sin urgencia extrema. En la fractura **abierta** (el hueso rasga la piel o queda a la vista) el riesgo de infección y hemorragia es mucho mayor: cubrir la herida con un apósito estéril húmedo **sin intentar recolocar el hueso**, controlar la hemorragia por presión alrededor de la herida (nunca directamente sobre el hueso expuesto) y priorizar la evacuación.
+*   **Esguinces:** Protocolo de Reposo, Inmovilización, Compresión (venda elástica sin cortar la circulación) y Elevación del miembro, con frío local los primeros $20$ minutos (nunca hielo directo sobre la piel).
+*   **Inmovilización improvisada con material de a bordo:**
+    *   **Tablas y remos:** Sirven de férula rígida atada a ambos lados de la extremidad, inmovilizando siempre la articulación por encima y por debajo de la fractura.
+    *   **Cabos como cabestrillo:** Un cabo fino, una driza o una escota pueden improvisar un cabestrillo pasado por el cuello para sujetar un brazo o una clavícula fracturados contra el pecho.
+    *   **Acolchado y comprobación de circulación:** Acolchar entre la férula y la piel con un cojín, ropa o vela doblada, y comprobar el pulso y el color de la piel por debajo de la lesión tras cada vuelta de cabo, aflojando si se enfría o pierde color.
+*   **Cuándo NO mover a la víctima:** Tras una caída por una escotilla, un golpe fuerte de botavara en la espalda o la cabeza, o cualquier caída desde altura sobre cubierta dura, **sospechar lesión de columna** si hay dolor de cuello o espalda, hormigueo, o pérdida de sensibilidad o fuerza en brazos o piernas. En ese caso, **no mover ni sentar al paciente**: mantener alineados cabeza, cuello y tronco sujetándolos manualmente, acuñar con mantas o cojines a ambos lados para impedir el movimiento, e iniciar radioconsulta/MEDEVAC de inmediato. Mover a un paciente con lesión de columna sin inmovilizar puede convertir una lesión reversible en una parálisis permanente.
+
+### 3.11. Ahogamiento y Semi-ahogamiento
+*(Para la secuencia inmediata y la maniobra de recuperación de un tripulante caído al agua, ver [PROTOCOLO_HOMBRE_AL_AGUA.md](./PROTOCOLO_HOMBRE_AL_AGUA.md). Este apartado cubre exclusivamente el tratamiento médico una vez el náufrago ya está a bordo.)*
+
+Tras sacar del agua a alguien que ha tragado agua, ha tosido con dificultad para respirar o ha estado inconsciente, el peligro no termina al subirlo a cubierta:
+1.  **Consciente y respira con normalidad:** Retirar la ropa mojada, abrigar (ver hipotermia, apartado 3.2) y vigilar estrechamente. No dejarlo solo ni asumir que "ya está bien" solo porque tose y recupera el color.
+2.  **Inconsciente pero respira:** Colocar en **Posición Lateral de Seguridad** (de costado, cabeza ligeramente extendida hacia atrás y boca apuntando al suelo) para que, si vomita agua o contenido gástrico, no lo aspire hacia los pulmones. Vigilar la respiración sin interrupción.
+3.  **No respira o no tiene pulso:** Iniciar RCP inmediatamente (ver apartado 3.1) sin perder tiempo intentando "sacarle el agua de los pulmones" — las compresiones y ventilaciones son la prioridad absoluta.
+
+*   **Ahogamiento secundario (el peligro invisible):** Aunque la persona parezca recuperarse por completo tras toser y respirar con normalidad, el agua que ha entrado en los pulmones puede seguir inflamando el tejido pulmonar durante las siguientes **24-72 horas**, provocando un fallo respiratorio tardío. **Vigilar durante varias horas** cualquier tos persistente, dificultad respiratoria, somnolencia excesiva o dolor torácico.
+*   **Regla de oro:** Cualquier persona que haya estado inconsciente en el agua o haya tragado una cantidad significativa de agua **debe evacuarse siempre a un centro médico**, aunque su aspecto externo sea normal a las pocas horas. Solicitar radioconsulta al Centro Radio Médico (apartado 2) para valorar la necesidad de MEDEVAC.
 
 ---
 

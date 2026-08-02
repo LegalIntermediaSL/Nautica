@@ -6,6 +6,17 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 
 ## [Unreleased]
 
+### Añadido (Ampliación Ronda 4: profundización, nuevos huecos y auditoría de calidad)
+- **Averías en travesía:** nuevo `AVERIAS_EN_TRAVESIA.md` (checklist de decisión en el momento ante fallo total de electrónica/instrumentos, rotura de jarcia o vela, vía de agua no localizada y fallo de gobierno/timón, con navegación de respaldo y criterios para desviarse a puerto o pedir asistencia), enlazado desde `README.md`.
+- **Drones:** nuevo `NORMATIVA_DRONES.md` (categorías de operación AESA/UE, registro de operador, restricciones en el entorno marino, consejos de vuelo desde cubierta, seguro de RC específico).
+- **Táctica de regata:** nuevo `TACTICA_METEOROLOGICA_REGATA.md` (rachas persistentes vs. oscilantes, regla favorable/desfavorable en ceñida, efecto de costa, sesgo de línea de salida, efecto táctico de corrientes).
+- **Titulación PY:** los 4 temas ampliados a nivel intermedio entre PER y CY (supervivencia en balsa, corrientes oceánicas, Regla de los Doceavos, problema completo de estima analítica y gráfica).
+- **Seguridad y sanidad:** `SEGURIDAD.md` ampliado (abandono de buque, supervivencia en balsa, grab bag); `PRIMEROS_AUXILIOS.md` ampliado (fracturas/esguinces, ahogamiento y semi-ahogamiento, botiquín mínimo recomendado).
+- **Puertos:** `puertos/MEDITERRANEO.md` y `puertos/ATLANTICO.md` ampliados con una sección de calas y fondeos de interés (Macarelleta, Es Vedrà, Cíes, Ons...), remitiendo a `MEDIOAMBIENTE.md` para la normativa de acceso restringido.
+- **Imágenes:** diagrama de configuración de luces de navegación de un buque de motor (dominio público) en `RIPA_Y_BALIZAMIENTO.md`.
+- **Auditoría de calidad y coherencia:** revisión cruzada de los ~105 archivos Markdown del repositorio. Corregidos 6 enlaces de temario de `titulaciones/PNB/INDEX.md` que apuntaban por error a `PER/` en vez de a los archivos propios de PNB; enlazados 2 archivos huérfanos de `titulaciones/LN/`; añadido enlace de temario completo desde `TITULOS_NAUTICOS.md` a cada `INDEX.md` de titulación; corregida una contradicción legal en `TITULOS_NAUTICOS.md` sobre la atribución del PER en Baleares (el PER base permite saltos entre islas del archipiélago, no el cruce Península-Baleares, que exige el "PER Ampliado"); unificada la terminología de las marcas cardinales Este/Oeste entre `RIPA_Y_BALIZAMIENTO.md`/PNB y PER (rombo/huevo, reloj de arena/copa de vino).
+- README.md y CHANGELOG.md actualizados.
+
 ### Añadido (Ampliación Ronda 3: nuevos huecos temáticos)
 - **Nudos:** nuevo `nudos/EMPALMES.md` (splicing en cabo de 3 cordones y trenzado moderno/Dyneema, forrado), enlazado desde `nudos/INDEX.md`.
 - **Motos de agua:** nueva guía `MOTOS_DE_AGUA.md` (clasificación por clase de potencia y titulación exigida, normativa de navegación, cabo de hombre muerto, riesgo del chorro a presión, protocolo de vuelco), enlazada desde `README.md` y `titulaciones/LN/INDEX.md`.
