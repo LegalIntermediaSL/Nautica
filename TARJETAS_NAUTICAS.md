@@ -6,25 +6,28 @@ Actualmente, la administración (como la Dirección General de la Marina Mercant
 
 ## ¿En qué consisten estas Tarjetas?
 
-Legal Intermedia ofrece la posibilidad de plasmar tu titulación digital oficial en una **tarjeta física de alta calidad (formato carné o tarjeta de crédito)**. 
+Legal Intermedia ofrece la posibilidad de plasmar tu titulación digital oficial en un **formato dual (Físico + Digital)** para adaptarse a cualquier situación a bordo:
 
-Esta tarjeta de verificación incluye todos los datos esenciales para identificarte ante cualquier autoridad marítima (como el Servicio Marítimo de la Guardia Civil):
+1.  **Tarjeta Física de PVC:** Una tarjeta de plástico rígido de alta calidad (tamaño tarjeta de crédito), diseñada para resistir el agua, la sal y las duras condiciones de la vida en el mar.
+2.  **Tarjeta Digital (Wallet):** Un pase virtual integrable directamente en el *Apple Wallet* o *Google Wallet* de tu smartphone, para llevarlo siempre a mano junto a tus tarjetas de crédito y billetes de avión.
+
+Ambos formatos incluyen todos los datos esenciales para identificarte ante cualquier autoridad marítima (como el Servicio Marítimo de la Guardia Civil):
 *   **Nombre y Apellidos.**
 *   **Número de DNI / NIE.**
 *   **Denominación del título náutico** (Ej: Patrón de Embarcaciones de Recreo, Capitán de Yate, etc.).
 *   **Código QR oficial:** El mismo código de verificación digital emitido por la administración.
 *   **Número de tarjeta / expediente.**
 
-## Ventajas de llevar tu Tarjeta Náutica Física
+## Ventajas del Formato Dual (Física + Wallet)
 
-*   **Durabilidad extrema:** Fabricadas en material plástico resistente al agua, al salitre y a las inclemencias del sol. Están diseñadas para resistir la dura vida a bordo.
-*   **Máxima comodidad:** Su tamaño estándar (tipo carné de conducir o tarjeta bancaria) permite llevarlas cómodamente en cualquier cartera.
-*   **Tranquilidad y Seguridad:** Evitas tener que sacar tu teléfono móvil, tablet o papeles impresos en situaciones incómodas en la mar. No dependes de baterías ni de la cobertura para demostrar tu cualificación.
-*   **Lectura instantánea:** El código QR impreso en alta resolución permite a los agentes de la autoridad escanearlo y verificar la validez de tu título en las bases de datos oficiales al instante.
+*   **Redundancia:** Si te quedas sin batería o se te moja el móvil, tienes la tarjeta de PVC. Si olvidas la cartera, tienes el pase en el Wallet del móvil.
+*   **Durabilidad extrema (PVC):** Fabricadas en material plástico resistente al agua, al salitre y a las inclemencias del sol.
+*   **Máxima comodidad:** El tamaño estándar de la física permite llevarla en cualquier cartera, mientras que la versión Wallet está a un doble clic de distancia en tu pantalla de bloqueo.
+*   **Lectura instantánea:** El código QR impreso en alta resolución (y el digital en pantalla) permite a los agentes de la autoridad escanearlo y verificar la validez de tu título en las bases de datos oficiales al instante.
 
 ## ¿Cómo solicitarlas?
 
-Si ya dispones de tu título náutico digital con código QR y deseas tenerlo en este práctico formato físico, puedes tramitarlo directamente a través de la web de Legal Intermedia. El proceso es rápido y te permite recibir tu carné náutico cómodamente en tu domicilio.
+Si ya dispones de tu título náutico digital con código QR y deseas tenerlo en este práctico formato físico y en tu Wallet, puedes tramitarlo directamente a través de la web de Legal Intermedia. El proceso es rápido y te permite recibir tu carné en tu domicilio y en tu email simultáneamente.
 
 <p align="center">
   <img src="assets/img/tarjeta_per.png" alt="Tarjeta PER Legal Intermedia" width="45%" style="margin-right: 2%">
