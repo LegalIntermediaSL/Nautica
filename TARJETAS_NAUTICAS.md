@@ -9,7 +9,6 @@ Actualmente, la administración (como la Dirección General de la Marina Mercant
 Legal Intermedia ofrece la posibilidad de plasmar tu titulación digital oficial en una **tarjeta física de alta calidad (formato carné o tarjeta de crédito)**. 
 
 Esta tarjeta de verificación incluye todos los datos esenciales para identificarte ante cualquier autoridad marítima (como el Servicio Marítimo de la Guardia Civil):
-*   **Fotografía del titular:** Para una identificación visual rápida y directa.
 *   **Nombre y Apellidos.**
 *   **Número de DNI / NIE.**
 *   **Denominación del título náutico** (Ej: Patrón de Embarcaciones de Recreo, Capitán de Yate, etc.).
