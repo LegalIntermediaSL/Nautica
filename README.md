@@ -47,8 +47,11 @@ Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivi
 - **[Vida a Bordo en Travesía Larga](VIDA_A_BORDO.md)**: Gestión de agua dulce, provisioning, sistema de guardias, residuos y convivencia en espacio reducido.
 - **[Averías en Travesía: Checklist de Campo](AVERIAS_EN_TRAVESIA.md)**: Qué hacer en el momento ante un fallo total de electrónica, rotura de jarcia o vela, vía de agua no localizada o fallo de gobierno, con los medios limitados a bordo y lejos de un taller.
 
-## Cultura Náutica
+## Cultura y Práctica Náutica
 
+- **[Pilotaje Costero Práctico](PILOTAJE_COSTERO.md)**: Navegación visual, uso táctico de enfilaciones (transits), navegación por veriles (isóbatas) y peligros del zoom en cartas electrónicas.
+- **[Navegación Nocturna](NAVEGACION_NOCTURNA.md)**: Tácticas de reconocimiento, rodopsina y visión ocular, luces y recaladas a oscuras.
+- **[Casos de Estudio y Siniestros](casos_de_estudio/INDEX.md)**: Análisis forense de accidentes marinos (Fastnet 1979, Varadas por garreo, etc.) para extraer lecciones de supervivencia.
 - **[Historia de la Navegación](HISTORIA_DE_LA_NAVEGACION.md)**: De la estima primitiva al GPS, pasando por el astrolabio, el sextante y el cronómetro marino de Harrison.
 - **[Regatas y Clubes: Cultura y Organización de la Vela Deportiva](REGATAS_Y_CLUBES.md)**: La RFEV y la licencia federativa, clases Optimist/ILCA/420/470/Snipe/ORC, el club náutico, el Comité de Regatas y de Protestas, y las grandes regatas oceánicas (Ocean Race, Vendée Globe, ARC).
 - **[Táctica Meteorológica de Regata](TACTICA_METEOROLOGICA_REGATA.md)**: Rachas persistentes vs. oscilantes, regla favorable/desfavorable en ceñida, efecto de la costa, sesgo de la línea de salida y efecto táctico de las corrientes.
