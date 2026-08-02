@@ -32,10 +32,12 @@ Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado
 - **[Bitácora](BITACORA.md)**: Plantilla para el registro de navegaciones y experiencias.
 
 ## Manuales de A Bordo (Supervivencia y Mantenimiento)
-Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivir en crisis. Estos 8 manuales maestros cubren la realidad del mar:
+Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivir en crisis. Estos 10 manuales maestros cubren la realidad del mar:
 - **[Checklists de Emergencia y Pre-Zarpe (SOPs)](checklists/INDEX.md)**: Tablas de acción rápida listas para plastificar (Incendio, Abandono de Buque, Hombre al Agua y chequeo WABER del motor).
 - **[Maniobras de Puerto y Fondeo](MANIOBRAS_Y_FONDEO.md)**: Cinemática del barco (Prop Walk), uso táctico de esprines para desatracar, regla de oro de la cadena de fondeo, tipos de anclas y el cálculo del Círculo de Borneo.
 - **[Navegación con Mal Tiempo](NAVEGACION_CON_MAL_TIEMPO.md)**: Tácticas de supervivencia (Capear vs Correr el temporal), evitar el pitchpoling y uso de anclas de capa.
+- **[Dinámica y Maniobra de Catamaranes](MANIOBRA_CATAMARAN.md)**: Atraque bimotor sin usar timón, fondeo con pata de gallo (bridle) y el grave riesgo de vuelco irreversible sin lastre en multicascos.
+- **[Energía a Bordo y Sistemas (Central Flotante)](ENERGIA_A_BORDO.md)**: Banco de servicios LiFePO4 vs Plomo, auditoría de consumos, eficiencia de paneles solares (MPPT), inversores de onda pura e hidrogeneradores.
 - **[Mecánica Naval y Mantenimiento](MECANICA_Y_MANTENIMIENTO.md)**: Motores diésel intraborda, sistemas de refrigeración (impeller), electricidad (baterías y 12V/220V), averías y protocolo de invernaje.
 - **[Electrónica e Instrumentación](ELECTRONICA_NAVAL.md)**: Cómo funciona el GPS, uso táctico del AIS (Clase A vs B), radares de estado sólido, sondas y la red NMEA 2000.
 - **[Sanidad Marítima y Primeros Auxilios](PRIMEROS_AUXILIOS.md)**: Radioconsulta a Centro Radio Médico, manejo de shock anafiláctico, RCP en cubierta, quemaduras graves, rescate horizontal, cinetosis, e intoxicaciones.
@@ -44,13 +46,15 @@ Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivi
 - **[Nudos Marineros y Cabullería](nudos/INDEX.md)**: Colección de manuales prácticos de nudos de tope (As de Guía, Nudo de Ocho), amarre (Ballestrinque, Cornamusa), unión y empalmes (splicing).
 - **[Mantenimiento de Velas y Jarcia](MANTENIMIENTO_DE_VELAS_Y_JARCIA.md)**: Materiales de vela (Dacron, laminadas, Cuben Fiber), cuidado e invernaje, tipos de cabo moderno (Dyneema, Nylon), jarcia firme y mantenimiento de winches.
 - **[Protocolo de Hombre al Agua (MOB)](PROTOCOLO_HOMBRE_AL_AGUA.md)**: Secuencia inmediata, maniobras Quick-Stop y Lifesling, izado a bordo y prevención.
-- **[Vida a Bordo en Travesía Larga](VIDA_A_BORDO.md)**: Gestión de agua dulce, provisioning, sistema de guardias, residuos y convivencia en espacio reducido.
+- **[Vida a Bordo y Autonomía (Travesía Larga)](VIDA_A_BORDO.md)**: Gestión de agua dulce, sistemas de guardias, residuos y convivencia en espacio reducido.
+- **[La "Galley": Cocina y Provisionamiento Oceánico](PROVISIONAMIENTO_CRUCERO.md)**: Tácticas para almacenar comida sin nevera, plagas (gorgojos) y la técnica para cocinar bajo escoras de 30º usando el cardán y la cinta (bum strap).
 - **[Averías en Travesía: Checklist de Campo](AVERIAS_EN_TRAVESIA.md)**: Qué hacer en el momento ante un fallo total de electrónica, rotura de jarcia o vela, vía de agua no localizada o fallo de gobierno, con los medios limitados a bordo y lejos de un taller.
 
 ## Cultura y Práctica Náutica
 
 - **[Pilotaje Costero Práctico](PILOTAJE_COSTERO.md)**: Navegación visual, uso táctico de enfilaciones (transits), navegación por veriles (isóbatas) y peligros del zoom en cartas electrónicas.
 - **[Navegación Nocturna](NAVEGACION_NOCTURNA.md)**: Tácticas de reconocimiento, rodopsina y visión ocular, luces y recaladas a oscuras.
+- **[Sextante Práctico (Navegación Astronómica)](SEXTANTE_PRACTICO.md)**: Anatomía del sextante, calibración del error de índice, técnica física de balanceo ("swinging the arc") para "bajar" el Sol y medición de la estrella Polar.
 - **[Casos de Estudio y Siniestros](casos_de_estudio/INDEX.md)**: Análisis forense de accidentes marinos (Fastnet 1979, Varadas por garreo, etc.) para extraer lecciones de supervivencia.
 - **[Historia de la Navegación](HISTORIA_DE_LA_NAVEGACION.md)**: De la estima primitiva al GPS, pasando por el astrolabio, el sextante y el cronómetro marino de Harrison.
 - **[Regatas y Clubes: Cultura y Organización de la Vela Deportiva](REGATAS_Y_CLUBES.md)**: La RFEV y la licencia federativa, clases Optimist/ILCA/420/470/Snipe/ORC, el club náutico, el Comité de Regatas y de Protestas, y las grandes regatas oceánicas (Ocean Race, Vendée Globe, ARC).
