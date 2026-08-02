@@ -62,7 +62,12 @@ Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivi
 
 ## Recursos Recomendados
 
-- [Tarjetas Náuticas de Legal Intermedia S.L.](TARJETAS_NAUTICAS.md): Tarjetas físicas de verificación digital con código QR oficial. Ideales para llevar tu documentación náutica (título y DNI) siempre a bordo en formato carné plastificado, vinculadas directamente con la base de datos de la Dirección General de la Marina Mercante. Más info en [www.legalintermedia.es/nauticos](https://www.legalintermedia.es/nauticos).
+- [Tarjetas Náuticas de Legal Intermedia S.L.](TARJETAS_NAUTICAS.md): Tarjetas físicas de verificación digital con código QR oficial. Ideales para llevar tu documentación náutica (título y DNI) siempre a bordo en formato carné plastificado, vinculadas directamente con la base de datos de la Dirección General de la Marina Mercante. Más info en [legalintermedia.com/nauticos](https://legalintermedia.com/nauticos/).
+
+<p align="center">
+  <img src="assets/img/tarjeta_per.png" alt="Tarjeta PER Legal Intermedia" width="45%" style="margin-right: 2%">
+  <img src="assets/img/tarjeta_cy.png" alt="Wallet CY Legal Intermedia" width="20%">
+</p>
 
 ## Archivos Principales
 
