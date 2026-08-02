@@ -27,12 +27,18 @@ flowchart TD
     
     Otros(Especiales<br>Acortar o tensar)
     Otros --> Margarita(Margarita)
+
+    Empalmes(Empalmes<br>Unión permanente trenzando fibras)
+    Empalmes --> Gaza3(Gaza en Cabo de 3 Cordones)
+    Empalmes --> GazaDyneema(Gaza Enterrada en Dyneema)
+    Empalmes --> Forrado(Forrado / Whipping)
     
     style Nudos fill:#bbdefb,stroke:#1976d2,stroke-width:2px
     style Amarre fill:#c8e6c9,stroke:#388e3c
     style Union fill:#ffecb3,stroke:#fbc02d
     style Tope fill:#ffcdd2,stroke:#d32f2f
     style Otros fill:#e1bee7,stroke:#8e24aa
+    style Empalmes fill:#b2dfdb,stroke:#00695c
 ```
 
 ## Clasificación Principal
@@ -43,3 +49,5 @@ Hemos dividido los nudos en cuatro categorías principales para facilitar su est
 2.  **[Nudos de Unión (Ayustes)](UNION.md)**: Sirven para unir dos cabos entre sí, ya sean del mismo o de distinto grosor. *Ej: Nudo Llano, Nudo de Escota.*
 3.  **[Nudos de Tope](TOPE.md)**: Se hacen al final del cabo para evitar que se escape por una polea o pasacabos. *Ej: Nudo en Ocho.*
 4.  **[Nudos Especiales (Otros)](OTROS.md)**: Nudos para acortar cabos, hacer tensores o aislar zonas dañadas. *Ej: Nudo de Margarita.*
+
+Además, cuando la unión debe ser **permanente** y conservar el máximo de resistencia (muy por encima de lo que ofrece cualquier nudo), se recurre a la técnica del **[Empalme (Splicing)](EMPALMES.md)**: en vez de anudar el cabo, se trenzan sus propias fibras internas. *Ej: Gaza empalmada, Empalme enterrado en Dyneema.*

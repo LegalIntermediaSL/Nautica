@@ -12,6 +12,9 @@ El "Rey de los Nudos". Es un nudo extremadamente seguro que crea una gaza (un la
 *   Amarrar las escotas a la vela (foque).
 *   Encapillar una amarra en un noray.
 *   Izado de personas.
+
+**Uso práctico a bordo:** Si hay que rescatar a alguien caído al agua, el as de guía es el nudo que haces en segundos en el extremo del cabo salvavidas para lanzarle una gaza fija: sabes que no se cerrará sobre la persona por mucha fuerza que haga, y que después podrás deshacerlo aunque haya soportado todo su peso.
+
 *   **Tutorial en YouTube:** [Cómo hacer el As de Guía (Búsqueda en YouTube)](https://www.youtube.com/results?search_query=como+hacer+nudo+as+de+guia)
 
 ---
@@ -26,6 +29,9 @@ Es un nudo rápido de hacer y ajustar, pero tiene un defecto crítico: si la ten
 *   Amarrar las defensas a los guardamancebos (ya que permite ajustar la altura rápidamente).
 *   Amarre temporal a un poste o pilote cilíndrico.
 *   *Precaución:* Puede aflojarse si la tensión no es constante o si el cabo gira. Suele rematarse con un par de cotes de seguridad para evitar que se deshaga.
+
+**Uso práctico a bordo:** Al atracar brevemente en un pantalán para repostar o hacer una gestión rápida, el ballestrinque te permite hacer firme el barco a un pilote o poste en un par de segundos; como es solo para unos minutos y vas a estar pendiente, no hace falta rematarlo con cotes adicionales.
+
 *   **Tutorial en YouTube:** [Cómo hacer el Ballestrinque (Búsqueda en YouTube)](https://www.youtube.com/results?search_query=como+hacer+nudo+ballestrinque)
 
 ---
@@ -41,6 +47,8 @@ Es la forma correcta y marinera de amarrar un cabo (como las amarras del barco o
 **Usos principales:**
 *   Hacer firmes las amarras (esprines, largos, traveses) al llegar a puerto.
 *   Hacer firmes las drizas en el mástil.
+
+**Uso práctico a bordo:** Al llegar a puerto y lanzar la amarra al personal de muelle, la aseguras en la cornamusa de cubierta con esta vuelta: aguanta toda la tensión del atraque, no se desliza, y puedes soltarla en un segundo tirando del chicote aunque el barco esté tirando con fuerza.
 
 ---
 

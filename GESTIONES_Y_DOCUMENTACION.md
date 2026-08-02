@@ -31,6 +31,19 @@ No basta con llevar el equipo, hay que demostrar que funciona.
 *   **Radiobaliza (EPIRB/SART):** Certificado de revisión anual y cambio de batería/zafa hidrostática (cada 4 años).
 *   **Extintores:** Factura/Etiqueta de revisión anual obligatoria por empresa homologada.
 
+### 1.6. ¿Existe la "Libreta de Familia Marítima" para el recreo?
+Es habitual que este nombre genere confusión, así que conviene aclararlo: la **Libreta de Familia Marítima** no es un documento que exista, como tal, en la náutica de recreo. Lo que sí existe y a veces se confunde con ella son dos documentos distintos:
+*   **La Libreta de Inscripción Marítima:** Es el documento identificativo del **marino profesional** (enrolado en la Marina Mercante), equivalente a su "cartilla militar" de navegación. No la necesita el patrón de un barco de recreo, salvo que además sea profesional enrolado (por ejemplo, un patrón de chárter con Rol de Despacho, ver 1.7).
+*   **El Certificado de Navegabilidad:** Es el documento que sí importa para el recreo, ya descrito en el punto **1.2**: certifica que **el barco** (no la persona) cumple las condiciones técnicas y de seguridad para navegar. No lo confundas con la titulación náutica del patrón (PER, PNB, PY, CY), que es un documento distinto sobre la persona, no sobre el barco (ver **[TITULOS_NAUTICOS.md](TITULOS_NAUTICOS.md)**).
+
+En resumen: si navegas en Lista 7ª (uso privado), lo único que necesitas de este bloque es el Certificado de Navegabilidad del punto 1.2; la Libreta de Inscripción Marítima solo entra en juego si hay una tripulación profesional enrolada a bordo.
+
+### 1.7. El Rol de Despacho de Buques de Recreo
+El **Rol de Despacho** (o Rol de la Dotación) es la relación oficial, sellada por la Capitanía Marítima, de todas las personas que forman la dotación profesional de un buque: patrón, marineros y demás tripulación enrolada, con su titulación y su categoría a bordo. No debe confundirse con la **Lista de Tripulantes** (ver punto 3), que es un simple listado de personas embarcadas sin implicar relación laboral ni enrolamiento.
+*   **Cuándo es obligatorio:** El Rol es preceptivo para las embarcaciones de recreo en **explotación comercial (Lista 6ª)** —chárter, escuela náutica, alquiler— con independencia de su eslora, porque llevan tripulación profesional enrolada. También se exige a partir de determinadas esloras o arqueos que la normativa marca para el recreo en Lista 7ª *(verificar cifra exacta y vigencia en la normativa actual, el umbral de eslora/GT que obliga a llevar Rol ha variado en distintas Órdenes Ministeriales)*.
+*   **Cuándo NO hace falta:** El patrón particular de un barco pequeño en Lista 7ª que navega él solo o con amigos, sin ánimo de lucro y sin tripulación profesional enrolada, no necesita Rol: le basta con su titulación náutica personal y la documentación del barco.
+*   **Dónde se tramita:** Se solicita y sella en la Capitanía o Distrito Marítimo del puerto base, y debe renovarse/actualizarse cada vez que cambia la composición de la dotación profesional.
+
 ## 2. Los Diarios a Bordo (Bitácora y Navegación)
 
 Llevar un registro escrito es una exigencia legal para ciertas navegaciones y la mayor defensa legal del Capitán en caso de accidente.

@@ -7,6 +7,64 @@ description: "Análisis estructural, geométrico y dinámico del buque para emba
 
 El estudio de la nomenclatura náutica para el Patrón de Navegación Básica (PNB) requiere una comprensión profunda de la geometría de masas y la hidrostática del casco. Aunque limitadas a esloras de $8\text{ metros}$, las embarcaciones de recreo obedecen a las mismas ecuaciones fundamentales de la arquitectura naval.
 
+## Vocabulario Básico: Partes del Barco
+
+Antes de entrar en fórmulas, el examen exige memorizar con precisión el vocabulario elemental que identifica cada zona del barco. Es la base de las 4 preguntas de este tema.
+
+### Orientación General
+*   **Proa:** Parte delantera de la embarcación, la que corta el agua al avanzar.
+*   **Popa:** Parte trasera.
+*   **Babor:** Lado izquierdo del barco mirando hacia proa (de noche, luz roja).
+*   **Estribor:** Lado derecho mirando hacia proa (de noche, luz verde).
+*   **Línea de Crujía:** Eje longitudinal imaginario que divide el barco en dos mitades simétricas (babor/estribor).
+
+### Sectores de Orientación (para marcar la posición de otros objetos o barcos)
+*   **Amura:** Zona entre la proa y el través, hacia proa.
+*   **Través:** Dirección perpendicular a la crujía (a 90° del rumbo).
+*   **Aleta:** Zona entre el través y la popa, hacia popa.
+
+### Casco y Cubierta
+*   **Casco:** Cuerpo estanco que proporciona flotabilidad.
+*   **Obra Viva (Carena):** Parte del casco sumergida, por debajo de la línea de flotación.
+*   **Obra Muerta:** Parte del casco por encima de la línea de flotación, expuesta al aire.
+*   **Línea de Flotación:** Línea que separa la obra viva de la obra muerta; marca el nivel del agua en reposo.
+*   **Quilla:** Pieza estructural longitudinal en la parte más baja del casco; le da rigidez y, en veleros, contrarresta el abatimiento y aporta lastre.
+*   **Roda:** Prolongación de la quilla en la proa.
+*   **Codaste:** Prolongación de la quilla en la popa, donde se apoyan el timón y, a menudo, la hélice.
+*   **Cubierta:** Superficie que cierra el casco por arriba.
+*   **Bañera (Cockpit):** Zona hundida en cubierta, a popa, desde donde se gobierna el barco.
+*   **Borda:** Borde superior del costado del barco.
+*   **Amurada:** Parte del costado que sobresale por encima de la cubierta.
+*   **Timón:** Superficie orientable en popa que gobierna el rumbo del barco.
+*   **Hélice:** Sistema de propulsión que convierte el giro del motor en empuje.
+
+## Tipos de Casco
+
+El examen puede preguntar por la forma o el número de cascos de una embarcación:
+
+*   **Por el número de cascos:**
+    *   **Monocasco:** Un único casco (la mayoría de veleros y lanchas).
+    *   **Multicasco:** Dos o más cascos unidos por una estructura. *Catamarán* (dos cascos) y *trimarán* (tres cascos) ofrecen mayor estabilidad transversal (mayor manga efectiva) a costa de maniobrabilidad en espacios reducidos.
+*   **Por la forma de las cuadernas (sección transversal):**
+    *   **Casco redondeado (en V suave):** Buen comportamiento en la mar, típico de veleros y barcos de desplazamiento.
+    *   **Casco en V profunda:** Corta bien el oleaje a velocidad, propio de lanchas rápidas.
+    *   **Casco plano:** Muy estable en aguas tranquilas y de poco calado, típico de embarcaciones fluviales o de playa, pero incómodo con mar picada.
+*   **Por el régimen de navegación:**
+    *   **Casco de desplazamiento:** Navega "dentro" del agua, desplazándola; su velocidad máxima está limitada por su eslora de flotación.
+    *   **Casco planeador:** A partir de cierta velocidad, se eleva y desliza sobre la superficie del agua, reduciendo la resistencia. Típico de lanchas motoras de recreo.
+
+## Dimensiones Principales (Resumen para Examen)
+
+| Dimensión | Definición | Importancia práctica |
+| :--- | :--- | :--- |
+| **Eslora ($L$)** | Longitud del barco de proa a popa. | Determina el título necesario (PNB: hasta 8 m) y la maniobrabilidad. |
+| **Manga ($B$)** | Anchura máxima del barco. | Afecta a la estabilidad transversal: a mayor manga, más estable inicialmente. |
+| **Puntal ($D$)** | Altura del casco medida desde la quilla hasta la cubierta principal. | Define el volumen interior y la reserva de flotabilidad. |
+| **Calado ($T$)** | Profundidad de la parte sumergida del casco (de la línea de flotación hacia abajo). | Crítico para no encallar en bajos o zonas someras. |
+| **Francobordo** | Altura desde la línea de flotación hasta la cubierta ($\text{Puntal} - \text{Calado}$). | A mayor francobordo, más reserva de flotabilidad y seguridad frente a olas. |
+
+*Regla mnemotécnica:* Eslora (largo), Manga (ancho), Puntal (alto interior), Calado (profundidad sumergida). Las cuatro dimensiones básicas que cualquier patrón debe conocer de su propio barco antes de zarpar.
+
 ## Geometría del Casco y Coeficientes de Afinado
 
 La descripción de la forma del casco se define mediante los planos de referencia y coeficientes de afinado.

@@ -6,6 +6,38 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 
 ## [Unreleased]
 
+### Añadido (Ampliación Ronda 3: nuevos huecos temáticos)
+- **Nudos:** nuevo `nudos/EMPALMES.md` (splicing en cabo de 3 cordones y trenzado moderno/Dyneema, forrado), enlazado desde `nudos/INDEX.md`.
+- **Motos de agua:** nueva guía `MOTOS_DE_AGUA.md` (clasificación por clase de potencia y titulación exigida, normativa de navegación, cabo de hombre muerto, riesgo del chorro a presión, protocolo de vuelco), enlazada desde `README.md` y `titulaciones/LN/INDEX.md`.
+- **Regatas y clubes:** nuevo `REGATAS_Y_CLUBES.md` (RFEV, licencia federativa, clases Optimist/ILCA/420/470/Snipe/ORC, club náutico, Comité de Regatas/Protestas, grandes regatas oceánicas).
+- **Mantenimiento de velamen:** nuevo `MANTENIMIENTO_DE_VELAS_Y_JARCIA.md` (materiales de vela, cuidado e invernaje, cabo moderno Dyneema/Nylon, jarcia firme, winches).
+- **Titulación LN:** ampliada con glosario básico ilustrado, consejos del curso y "las 3 cosas que debes saber del RIPA" para un principiante absoluto.
+- **Comunicaciones:** `COMUNICACIONES_Y_BANDERAS.md` ampliado con DSC/tecla DISTRESS, protocolo de uso del Canal 16 y gestión de falsas alarmas MMSI.
+- **Meteorología:** imágenes de la escala de Beaufort completa y de los símbolos estándar de frentes (Wikimedia Commons, con atribución).
+- README.md y CHANGELOG.md actualizados.
+
+### Añadido (Ampliación Fases 1-5)
+- **Fase 1 (Fundamentos):** `GLOSARIO.md` (glosario náutico ES-EN de 150+ términos), nuevo itinerario `titulaciones/PPER/` (Patrón Profesional de Embarcaciones de Recreo, construido sobre CY según normativa vigente), `titulaciones/BANCO_PREGUNTAS.md` (repaso cruzado por materia de todos los simulacros) y auditoría/corrección de enlaces externos rotos en `RECURSOS.md` y `cartas_nauticas/INDEX.md`.
+- **Fase 2 (Profundización):** Ampliación de `SEGURIDAD.md` (lucha contraincendios, vías de agua) con nuevo manual `PROTOCOLO_HOMBRE_AL_AGUA.md`; ampliación de `MECANICA_Y_MANTENIMIENTO.md` (diagnóstico de averías, energía solar/eólica/watermaker, gas GLP); ampliación de `ELECTRONICA_NAVAL.md` (EPIRB/PLB/AIS-SART, Starlink/Iridium, NMEA 2000); ampliación de `METEOROLOGIA.md` (lectura de GRIB, mapas isobáricos, ciclones tropicales); ampliación de `VELA.md` (Reglamento de Regatas RRV) y `VELA_TIPOS_Y_APAREJOS.md` (spinnaker/gennaker, multicascos).
+- **Fase 3 (Nuevas secciones transversales):** `CHARTER.md`, `FISCALIDAD_Y_MATRICULACION.md`, `MEDIOAMBIENTE.md`, `PESCA_RECREATIVA.md`, `FAQ.md`.
+- **Fase 4 (Laboratorio):** Notebooks `14_lectura_grib.ipynb`, `15_consumo_combustible_autonomia.ipynb`, `16_curva_polar_velero.ipynb` y `17_generador_test_aleatorio.ipynb`.
+- **Fase 5 (Calidad):** `CONTRIBUTING.md` con las convenciones de estilo del repositorio.
+- **Imágenes libres de derechos (Wikimedia Commons):** cartas estelares de navegación (Bowditch, dominio público) y tabla de las 57 estrellas de navegación en `titulaciones/CY/tema_3_teoria_astronomica.md`; mapa de regiones IALA A/B en `RIPA_Y_BALIZAMIENTO.md`; Código Internacional de Señales completo (banderas, semáforo, Morse) en `COMUNICACIONES_Y_BANDERAS.md`; tipos de ancla en `MANIOBRAS_Y_FONDEO.md`; esquema de sextante en `titulaciones/CY/tema_4_calculos_astronomicos.md`. Todas con atribución de autor y licencia junto a la imagen.
+- **Stellarium:** referencia al planetario de código abierto en `RECURSOS.md` y en `titulaciones/CY/tema_3_teoria_astronomica.md` como herramienta de estudio para identificación de estrellas de navegación.
+- README.md actualizado enlazando todo el contenido nuevo.
+
+### Añadido (Ampliación Ronda 2: profundización y nuevas guías)
+- **Faros:** `faros/FAROS_ESPAÑA.md` reescrito con un directorio real por Comunidad Autónoma (antes estaba prácticamente vacío).
+- **Vela práctica:** `VELA_TUTORIAL_PRACTICO.md` ampliado con fondeo a vela, atraque a vela sin motor, ejecución física del MOB a vela y navegación segura en popa redonda.
+- **Puertos:** `puertos/INTERNACIONALES.md` ampliado con Gibraltar y Azores/Cabo Verde como hubs oceánicos.
+- **Cartas náuticas:** los 4 documentos de `cartas_nauticas/` ampliados con proyección Mercator, más simbología IALA/INT1, y problemas resueltos paso a paso de deriva por viento, estima analítica completa y Regla de los Doceavos.
+- **Nudos:** añadido el As de Guía por Seno y ampliado uso práctico en `TOPE.md`/`AMARRE.md`; nuevo Nudo Zeppelin en `UNION.md`; nuevo Nudo Constrictor en `OTROS.md`.
+- **Gestiones y seguros:** `GESTIONES_Y_DOCUMENTACION.md` ampliado (Rol de Despacho, Libreta de Inscripción Marítima, zarpe internacional); nuevo `SEGUROS_NAUTICOS.md`.
+- **Nuevas guías:** `VIENTOS_LOCALES_ESPAÑA.md` (Tramontana, Mistral, Levante, Siroco, Terral, Galerna...), `COMPRA_VENTA_EMBARCACION.md` (survey, documentación, transmisión), `VIDA_A_BORDO.md` (agua, provisioning, guardias, convivencia), `HISTORIA_DE_LA_NAVEGACION.md` (de la estima primitiva al GPS).
+- **Carta de examen PER:** `titulaciones/PER/tema_11_carta_navegacion.md` ampliado con 3 problemas completos resueltos paso a paso sobre la Carta 105 del Estrecho de Gibraltar.
+- **Más imágenes Wikimedia Commons:** rosa de rumbos respecto al viento y diagrama numerado de partes de un velero en `VELA.md`/`VELA_TIPOS_Y_APAREJOS.md`, con atribución.
+- README.md y CHANGELOG.md actualizados.
+
 ### Añadido
 - Creación de la estructura básica del repositorio.
 - Actualización del archivo `README.md` con descripción general y estructura del proyecto.

@@ -7,6 +7,71 @@ description: "Cinemática naval, resolución de colisiones y vectores de movimie
 
 El RIPA es el marco normativo y cinemático absoluto en la mar. Para embarcaciones de PNB, la interpretación de las reglas de rumbo y gobierno requiere un análisis exhaustivo de vectores de movimiento relativo.
 
+> **Importante:** RIPA es la materia con más peso del examen PNB y también es **eliminatoria** (máximo **5 fallos** permitidos de 10 preguntas). Esta sección resume, de forma autocontenida, prioridades de paso, luces/marcas diurnas y señales acústicas. Para el desarrollo exhaustivo y trucos mnemotécnicos adicionales, consulta **[RIPA_Y_BALIZAMIENTO.md](../../RIPA_Y_BALIZAMIENTO.md)**.
+
+## Resumen Autocontenido: Prioridades de Paso
+
+Regla de oro: **la maniobra evasiva debe ser amplia, clara y con antelación**, y **nunca se debe alterar el rumbo hacia babor** en una situación de cruce con otro buque de motor.
+
+### Orden de Prioridad Absoluta (el que menos capacidad de maniobra tiene, pasa primero)
+1.  **Buque sin gobierno** (avería de motor o timón).
+2.  **Buque con capacidad de maniobra restringida** (dragas, tendecables, balizadores).
+3.  **Buque restringido por su calado** (grandes buques que no pueden salir del canal).
+4.  **Buque dedicado a la pesca** (con artes caladas; no aplica a un pesquero de caña).
+5.  **Buque de vela** (navegando exclusivamente a vela; si lleva el motor encendido, aunque tenga vela izada, cuenta como buque de propulsión mecánica).
+6.  **Buque de propulsión mecánica** (lanchas, yates, veleros a motor, mercantes en general).
+
+### Las Tres Situaciones entre Buques de Motor
+
+| Situación | Regla | Maniobra |
+| :--- | :--- | :--- |
+| **Vuelta encontrada** (rumbos opuestos, de frente) | Regla 14 | Ambos caen a **estribor**, pasan babor con babor. |
+| **Cruce** (rumbos que se cortan) | Regla 15 | El que ve al otro por su **estribor** (le ve el costado rojo/babor del otro) cede el paso. Si ves el verde (estribor del otro), mantienes rumbo y velocidad. |
+| **Alcance** (demora a más de 22.5° a popa del través) | Regla 13 | El que alcanza **siempre** se aparta, sea cual sea el tipo de buque alcanzado. El alcanzado mantiene rumbo y velocidad. |
+
+### Cruce entre Veleros
+1.  **Distinto bordo:** tiene preferencia el velero amurado a **estribor** (el viento le entra por estribor).
+2.  **Mismo bordo:** tiene preferencia el velero de **sotavento**.
+3.  **Duda sobre el bordo del otro velero estando tú amurado a babor:** te apartas tú.
+
+## Resumen Autocontenido: Luces de Navegación y Marcas Diurnas
+
+### Luces básicas de un buque de motor en movimiento
+*   **Babor:** roja, arco de 112.5° desde la proa.
+*   **Estribor:** verde, arco de 112.5° desde la proa.
+*   **Tope (mástil):** blanca, arco de 225° hacia proa.
+*   **Alcance (popa):** blanca, arco de 135° hacia popa.
+
+*Un velero a vela pura lleva roja/verde y blanca de popa, pero apaga la luz blanca de tope: así se distingue de un buque de motor de noche.*
+
+### Buques Especiales: Luces de Todo Horizonte y Marcas Diurnas
+
+| Tipo de Buque | Luces (mástil, todo horizonte) | Marca diurna (negra) |
+| :--- | :--- | :--- |
+| **Sin gobierno** | Roja sobre roja | Dos bolas verticales |
+| **Maniobra restringida** | Roja - Blanca - Roja (vertical) | Bola - Diamante - Bola |
+| **Pesquero de arrastre** | Verde sobre blanca | Dos conos por los vértices |
+| **Pesquero (no arrastre)** | Roja sobre blanca | Dos conos por los vértices |
+| **Remolcador** | Amarilla sobre blanca de popa | Diamante (si el remolque mide más de 200 m) |
+| **Restringido por calado** | Tres rojas verticales | Cilindro |
+| **Fondeado** | Una blanca (todo horizonte) | Una bola |
+| **Varado** | Blanca + dos rojas verticales | Tres bolas verticales |
+
+*Trucos mnemotécnicos:* "Rojo sobre rojo, sin gobierno"; "Rojo sobre blanco, pesquero faenando"; "Verde sobre blanco, arrastrero faenando".
+
+## Resumen Autocontenido: Señales Acústicas (Pitadas)
+
+Se usan para anunciar maniobras a corta distancia o navegar con niebla/visibilidad reducida.
+
+| Señal | Significado |
+| :--- | :--- |
+| **1 pitada corta** ( • ) | "Caigo a mi estribor" |
+| **2 pitadas cortas** ( •• ) | "Caigo a mi babor" |
+| **3 pitadas cortas** ( ••• ) | "Doy marcha atrás" |
+| **5 pitadas cortas o más** ( ••••• ) | "Peligro / No comprendo tu maniobra" (señal de duda o desacuerdo) |
+
+*Nota:* en niebla o con visibilidad restringida, los buques emiten señales largas (prolongadas) a intervalos regulares en lugar de las pitadas cortas de maniobra descritas arriba.
+
 ## Cinemática del Abordaje (Regla 7: Riesgo de Abordaje)
 
 El riesgo de abordaje existe si la marcación o demora de un buque que se aproxima no varía apreciablemente. 

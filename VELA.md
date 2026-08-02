@@ -35,6 +35,9 @@ El concepto más difícil para el principiante es que el viento que se siente en
 
 No puedes navegar directo contra el ojo del viento (zona muerta, aprox. $45^\circ$ a cada lado de la proa).
 
+![Rumbos respecto al viento (points of sail)](assets/images/vela/rumbos_puntos_de_vela.svg)
+*Rosa de rumbos: desde la zona muerta ("no-go zone") hasta la empopada pura. Fuente: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Points_of_sail.svg), autor Andrew c, licencia CC BY-SA 3.0.*
+
 1.  **Ceñida (Close Hauled):** A $45^\circ$ del viento. Vas lo más "contra" el viento posible. Velas cazadas a tope, barco muy escorado (tumbado). Es el rumbo de mayor Lift.
 2.  **Descuartelar (Close Reach):** A unos $60^\circ$. Más cómodo, menos escora y más rápido que la ceñida.
 3.  **Través (Beam Reach):** A $90^\circ$ del viento (entra por un costado). Es el rumbo más rápido de un velero, máximo aprovechamiento de vectores.
@@ -118,3 +121,31 @@ La botavara es un perfil de aluminio o carbono pesado que barre la bañera a la 
 
 ### Cargas en las Cornamusas
 *   Al soltar una driza bajo tensión (ej. para bajar la vela mayor), nunca la quites de golpe de la cornamusa. Mantén una vuelta mordida y suelta fricción poco a poco, o la vela caerá de golpe descontrolada, quemándote las manos por la fricción del cabo.
+
+---
+
+## 9. Reglamento de Regatas a Vela (RRV / World Sailing)
+
+> **Aviso importante:** Lo que sigue es el **Reglamento de Regatas a Vela (RRV)**, redactado por World Sailing (antes ISAF). Es un reglamento **deportivo**, que solo se aplica entre embarcaciones que están compitiendo oficialmente en una regata bajo bandera de club. **No sustituye ni deroga el RIPA** (Reglamento Internacional para Prevenir Abordajes), que es la ley general de navegación aplicable siempre, en todo momento y a todo tipo de embarcación. Consulta [RIPA_Y_BALIZAMIENTO.md](RIPA_Y_BALIZAMIENTO.md) para las reglas generales de derecho de vía fuera de regata. Fuera del campo de regatas (o frente a un barco que no compite), rige siempre el RIPA.
+
+El RRV es, de hecho, **más estricto** que el RIPA en muchos aspectos: obliga a maniobrar con mucha más antelación y añade situaciones (como el adelantamiento o el paso de una marca) que el RIPA general no contempla con tanto detalle.
+
+### Las Tres Reglas Fundamentales de Paso en Regata
+Cuando dos veleros en regata se aproximan y existe riesgo de colisión, se aplican en este orden:
+
+1.  **Amuras Opuestas (Regla 10):** Si un barco recibe el viento por babor y el otro por estribor, el amurado a **babor cede el paso** al amurado a **estribor**. Es la regla más básica y se aplica siempre que el bordo sea distinto, sin importar quién va delante o detrás.
+2.  **Mismas Amuras, Barlovento/Sotavento (Regla 11):** Si ambos barcos navegan amurados al mismo lado (mismo bordo), el barco que está a **barlovento cede el paso** al barco que está a **sotavento**. El de sotavento tiene preferencia porque es el que "manda" el aire al de barlovento.
+3.  **Alcanzar (Regla 12):** Cuando ambos barcos navegan al mismo bordo y no están claramente ni a barlovento ni a sotavento (uno viene por detrás), el barco que **alcanza cede el paso** al barco alcanzado, sea cual sea su amura. El barco alcanzado mantiene su rumbo.
+
+*Nota:* Estas tres reglas son análogas en espíritu a las reglas de cruce entre veleros del RIPA, pero el RRV las desarrolla con mucho más detalle (zonas de las boyas, obligación de dar espacio, protestas, etc.), por lo que **solo son válidas dentro del campo de regatas** y entre barcos que compiten.
+
+### Señales de Banderas del Comité de Regatas
+El Comité de Regatas comunica el desarrollo de la salida y la prueba mediante banderas izadas en el barco comité, acompañadas siempre de una señal sonora (bocina o cañonazo):
+
+*   **Bandera de Clase (Señal de Atención):** Iza la bandera de la clase que va a salir. Marca el inicio de la cuenta atrás (normalmente 5 minutos antes de la salida).
+*   **Bandera P (Preparatoria):** Se iza junto (o poco después) de la de clase, normalmente a 4 minutos de la salida. Indica que los barcos deben empezar a maniobrar para colocarse en la línea de salida; a partir de aquí ciertas reglas de regata se activan de forma más estricta.
+*   **Postergación / AP (Answering Pennant o "Bandera de Respuesta"):** Anuncia que la salida se **pospone**. Se arría (baja) cuando la nueva secuencia de salida está a punto de reanudarse. Suele indicar que hay un problema (viento insuficiente, campo mal orientado, espera de otra flota).
+*   **Recall Individual (Bandera X):** Se iza justo después de la salida cuando **uno o varios barcos concretos** se han adelantado (OCS - On Course Side, "barco sobre la línea"). Esos barcos deben volver a cruzar la línea de salida correctamente antes de seguir la regata, o serán descalificados.
+*   **Recall General (Primer Sustituto):** Se iza cuando **un número indeterminado o excesivo** de barcos se ha adelantado en la salida, o hubo un error en la línea. Anula la salida completa: **toda la flota** debe repetir la secuencia de salida desde el principio.
+
+---

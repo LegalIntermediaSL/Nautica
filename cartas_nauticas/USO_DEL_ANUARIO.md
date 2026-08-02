@@ -25,6 +25,46 @@ Si abres la página de tu mes y día actual, verás filas con horas y sondas (al
 ### El Cálculo Práctico (Sonda en el Momento 'T')
 Si quieres saber cuánta agua hay a una hora intermedia (ej. 14:00h, entre la PM y la BM), debes usar la tabla de mareas que viene en las últimas páginas del anuario. Entras con la Amplitud (diferencia de altura entre PM y BM) y el intervalo de tiempo transcurrido desde la última pleamar/bajamar para obtener la corrección aditiva.
 
+### Ejemplo Numérico Resuelto: La Regla de los Doceavos
+
+Cuando no se dispone de la tabla de corrección del anuario a mano, existe un método rápido y muy usado en los exámenes de Patrón de Yate y Capitán de Yate para estimar la altura de marea en un instante intermedio: la **Regla de los Doceavos (Rule of Twelfths)**.
+
+**Fundamento:** se asume que la curva de marea (una sinusoide) sube o baja repartiendo la Amplitud total en 12 partes iguales ("doceavos"), distribuidas de forma no lineal a lo largo de las 6 horas que dura el ciclo BM→PM (o PM→BM), siguiendo la proporción **1 - 2 - 3 - 3 - 2 - 1** doceavos por cada hora sucesiva (la marea sube/baja despacio al principio y al final, y rápido en las horas centrales).
+
+**Datos del problema:**
+*   Bajamar (BM) a las **08:00h**, con una sonda de **1,20 m**.
+*   Pleamar (PM) a las **14:00h**, con una sonda de **5,40 m**.
+*   Duración BM→PM: 6 horas.
+*   **Pregunta:** ¿Qué altura de marea habrá a las **12:00h**?
+
+**Resolución paso a paso:**
+
+1.  **Amplitud (A):** diferencia entre PM y BM.
+    `A = 5,40 - 1,20 = 4,20 m`
+
+2.  **Valor de 1 doceavo:**
+    `1/12 de A = 4,20 / 12 = 0,35 m`
+
+3.  **Reparto horario según la Regla de los Doceavos** (creciente, de BM a PM):
+
+    | Hora | Horas desde BM | Doceavos de esa hora | Doceavos acumulados | Altura (m) |
+    | :--- | :---: | :---: | :---: | :---: |
+    | 08:00 (BM) | 0h | — | 0/12 | 1,20 |
+    | 09:00 | 1h | 1 | 1/12 | 1,55 |
+    | 10:00 | 2h | 2 | 3/12 | 2,25 |
+    | 11:00 | 3h | 3 | 6/12 | 3,30 |
+    | **12:00** | **4h** | **3** | **9/12** | **4,35** |
+    | 13:00 | 5h | 2 | 11/12 | 5,05 |
+    | 14:00 (PM) | 6h | 1 | 12/12 | 5,40 |
+
+4.  **Cálculo directo para las 12:00h** (4 horas después de la BM, doceavos acumulados = 1+2+3+3 = 9/12):
+    `Altura = Sonda BM + (doceavos acumulados × valor de 1 doceavo)`
+    `Altura(12:00h) = 1,20 + (9 × 0,35) = 1,20 + 3,15 = 4,35 m`
+
+**Resultado:** a las 12:00h habrá una altura de marea de **4,35 metros** sobre el Nivel de Reducción de Sondas. Sumando este valor a la sonda impresa en la carta en ese punto se obtiene la profundidad real de agua disponible en ese instante.
+
+*Nota de examen:* si la duración real entre BM y PM no es exactamente de 6 horas (lo habitual, suele rondar las 6h 12min), cada intervalo de la tabla debe calcularse como Duración/6 en lugar de asumir una hora exacta, mantenimiento la misma proporción de doceavos 1-2-3-3-2-1.
+
 ---
 
 ## 2. El Almanaque Náutico (ROA)

@@ -6,6 +6,9 @@ El cálculo analítico de posición mediante rectas de altura es la destreza rei
 
 ## 1. Tratamiento Analítico de las Correcciones del Sextante
 
+![Esquema de un sextante marino](../../assets/images/navegacion/sextante_marino.svg)
+*Partes de un sextante: espejo índice, espejo del horizonte, alidada, limbo graduado y anteojo. Fuente: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Marine_sextant.svg), autor Joaquim Alves Gaspar, licencia CC BY-SA 3.0.*
+
 El sextante proporciona un valor angular en crudo, la **Altura Instrumental ($ai$)**. Para llegar a la **Altura Verdadera ($a_v$)** geométrica topocéntrica referida al centro de la Tierra, debemos aplicar correcciones de óptica instrumental, geometría y refracción atmosférica.
 
 La ecuación general de depuración es:

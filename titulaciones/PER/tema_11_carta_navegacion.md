@@ -105,6 +105,78 @@ $$ \tan(R_v) = \frac{\Delta L}{\Delta PM} = \frac{60}{73.55} \approx 0.8157 $$
 $$ R_v = \arctan(0.8157) \approx 39.2^\circ = 039.2^\circ $$
 El rumbo a gobernar en el compás verdadero es $039.2^\circ$.
 
+---
+
+**Problema 2: Situación por Corte de Dos Marcaciones (Cruce de Demoras)**
+
+Navegando en el Estrecho de Gibraltar sobre la Carta 105, a las 09:15h tomamos con la alidada dos demoras verdaderas simultáneas a dos puntos notables de tierra perfectamente identificados en la carta:
+*   Al **Faro de Tarifa** (posición cartográfica: $36^\circ 00.3' \text{N} - 005^\circ 36.5' \text{W}$): Demora Verdadera $D_{v1} = 250^\circ$.
+*   Al **Faro de Punta Europa**, en Gibraltar (posición cartográfica: $36^\circ 06.5' \text{N} - 005^\circ 20.5' \text{W}$): Demora Verdadera $D_{v2} = 056^\circ$.
+
+Determina gráficamente, mediante el trazado sobre la carta, la situación (posición) del barco en el momento de la observación.
+
+**Solución:**
+1.  Localizamos en la Carta 105 los dos puntos de referencia mediante sus coordenadas: el Faro de Tarifa en la costa española y el Faro de Punta Europa en el Peñón de Gibraltar.
+2.  La demora tomada con la alidada es la dirección **desde el barco hacia el faro**. Para dibujar la Línea de Posición (LDP) sobre el papel necesitamos la dirección recíproca, es decir, desde el faro hacia el barco: $D_v \pm 180^\circ$.
+    *   Recíproca de Tarifa: $250^\circ - 180^\circ = 070^\circ$.
+    *   Recíproca de Punta Europa: $056^\circ + 180^\circ = 236^\circ$.
+3.  Apoyamos la regla de Cras (o el transportador) sobre la rosa de los vientos verdadera más próxima, la orientamos a $070^\circ$ y, mediante las reglas paralelas, trasladamos esa dirección hasta hacerla pasar físicamente por el Faro de Tarifa, trazando una recta larga con lápiz fino.
+4.  Repetimos la operación con la segunda recíproca: orientamos $236^\circ$ en la rosa y trasladamos la línea hasta el Faro de Punta Europa, trazándola igualmente.
+5.  El punto donde ambas rectas se cruzan sobre el papel es la solución del sistema de dos ecuaciones lineales: la situación del barco en el instante de la observación.
+6.  Leemos las coordenadas de ese punto de corte: la latitud en la escala lateral vertical (a la altura del punto) y la longitud en la escala horizontal superior o inferior.
+
+**Resultado final:** A las 09:15h el barco se encuentra situado en $36^\circ 03.0' \text{N} - 005^\circ 27.0' \text{W}$, en aguas centrales del Estrecho, prácticamente a mitad de camino entre la costa española y el Peñón. Junto al punto se anota la hora (09:15) con un pequeño círculo, símbolo cartográfico normalizado de una situación por marcaciones.
+
+---
+
+**Problema 3: Estima Analítica con Corrección Total**
+
+Zarpamos a las 10:00h desde un punto fijado con exactitud a la altura del Faro de Tarifa, en la posición $36^\circ 01.0' \text{N} - 005^\circ 30.0' \text{W}$. El timonel gobierna al Rumbo de Aguja $R_a = 060^\circ$. La declinación magnética ($dm$) extraída de la rosa de la Carta 105, ya extrapolada al año en curso, es de $3^\circ W$, y la tabla de desvíos de nuestro compás indica que para rumbos próximos al NE el desvío ($\Delta$) es de $+1^\circ E$. Navegamos a una velocidad constante de 8 nudos durante 45 minutos. Calcula el Rumbo Verdadero a trazar en la carta y la situación de estima del barco a las 10:45h.
+
+**Solución:**
+1.  Calculamos la Corrección Total ($C_t$), con la misma lógica automatizada en la simulación `01_calculo_rumbo_verdadero.ipynb` (Oeste negativo, Este positivo):
+    $$ C_t = dm + \Delta = (-3^\circ) + (+1^\circ) = -2^\circ $$
+2.  Aplicamos la Ecuación Maestra para obtener el Rumbo Verdadero:
+    $$ R_v = R_a + C_t = 060^\circ + (-2^\circ) = 058^\circ $$
+3.  Sobre la carta, apoyamos la regla paralela en la rosa de los vientos verdadera más cercana, la orientamos a $058^\circ$ y la "caminamos" mediante desplazamientos paralelos sucesivos hasta hacerla pasar por el punto de salida ($36^\circ 01.0' \text{N} - 005^\circ 30.0' \text{W}$), trazando la loxodrómica.
+4.  Calculamos la distancia navegada en el intervalo: $D = V \times t = 8 \text{ nudos} \times 0.75 \text{ h} = 6.0$ millas.
+5.  Abrimos el compás de puntas secas 6.0 millas en la escala lateral de latitud (a la altura de trabajo, unos $36^\circ$N) y, pinchando en el punto de salida, marcamos ese segmento sobre la línea de rumbo $058^\circ$ ya trazada.
+6.  Comprobación analítica mediante las fórmulas de estima (coherente con `cartas_nauticas/CALCULOS_DE_NAVEGACION.md`):
+    $$ \Delta l = D \cos(R_v) = 6.0 \times \cos(58^\circ) \approx +3.2' \text{ (Norte)} $$
+    $$ \text{Apartamiento} = D \sin(R_v) = 6.0 \times \sin(58^\circ) \approx 5.1' \text{ (Este)} $$
+    $$ \Delta L = \frac{\text{Apartamiento}}{\cos(l_m)} = \frac{5.1}{\cos(36^\circ 03')} \approx \frac{5.1}{0.809} \approx 6.3' \text{ (Este)} $$
+7.  Sumamos los diferenciales a la posición de salida:
+    *   Latitud: $36^\circ 01.0' \text{N} + 3.2' = 36^\circ 04.2' \text{N}$
+    *   Longitud: $005^\circ 30.0' \text{W} - 6.3' = 005^\circ 23.7' \text{W}$
+
+**Resultado final:** A las 10:45h la situación de estima, marcada en la carta con el símbolo normalizado (semicírculo con la hora), es $36^\circ 04.2' \text{N} - 005^\circ 23.7' \text{W}$, en pleno canal de separación de tráfico del Estrecho, rumbo hacia la Bahía de Algeciras.
+
+---
+
+**Problema 4: Cálculo de Tiempo y Distancia (Problema Directo e Inverso)**
+
+Salimos a las 12:00h desde el a través del Faro de Tarifa, gobernando al Rumbo Verdadero constante $R_v = 100^\circ$ y a una velocidad de 9 nudos.
+
+a) Sabiendo que la distancia medida en la carta (con el compás de puntas secas abierto sobre la escala de latitudes) desde el punto de salida hasta el través del Faro de Punta Almina (Ceuta) es de 18.0 millas, calcula a qué hora pasaremos por dicho través.
+
+b) A las 13:45h se avería el GPS y el patrón necesita conocer la distancia recorrida por estima desde la salida hasta ese instante, para poder situarse a ojo sobre la línea de rumbo ya trazada en la carta.
+
+**Solución:**
+
+*Apartado a) — Problema Directo (hallar el tiempo):*
+1.  Partimos de la ecuación del Movimiento Rectilíneo Uniforme náutico: $D = V \times t$, y despejamos el tiempo: $t = D / V$.
+2.  $t = 18.0 \text{ millas} / 9 \text{ nudos} = 2.0$ horas exactas.
+3.  Sumamos el tiempo de navegación a la hora de salida mediante suma sexagesimal: $12{:}00\text{h} + 2\text{h}\,00\text{min} = 14{:}00\text{h}$.
+
+**Resultado a):** Pasaremos por el través del Faro de Punta Almina a las **14:00h**.
+
+*Apartado b) — Problema Inverso (hallar la distancia dado el tiempo):*
+1.  Calculamos el tiempo transcurrido desde la salida (12:00h) hasta la avería (13:45h): $\Delta t = 1\text{h}\,45\text{min} = 1.75$ horas.
+2.  Aplicamos de nuevo $D = V \times t = 9 \text{ nudos} \times 1.75 \text{ h} = 15.75$ millas.
+3.  Con el compás de puntas secas abierto 15.75 millas en la escala de latitud, pinchamos en el punto de salida y marcamos el punto sobre la loxodrómica al $100^\circ$ ya dibujada, obteniendo la situación de estima a las 13:45h.
+
+**Resultado b):** El barco ha recorrido **15.75 millas náuticas** desde la salida, y su situación de estima a las 13:45h se marca sobre la línea de rumbo $100^\circ$ a esa distancia del punto de partida (aún a 2.25 millas del través de Punta Almina).
+
 ## Referencias Bibliográficas y Jurisprudencia
 
 *   **Bibliografía Básica:** Moreu Curbera, J.M. (2010). *Astronomía Náutica y Navegación*. Editorial de la Universidad de Cádiz.

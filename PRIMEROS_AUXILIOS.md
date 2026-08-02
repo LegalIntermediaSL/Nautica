@@ -33,7 +33,7 @@ Si alguien colapsa en cubierta y no respira.
 *   **Ritmo:** 30 compresiones / 2 ventilaciones a $100-120 \text{ compresiones/minuto}$. Seguir hasta que llegue el helo.
 
 ### 3.2. Hipotermia y Rescate del Agua
-Al rescatar a un hombre al agua (MOB) con temperatura corporal inferior a $35^\circ\text{C}$ (temblores extremos, confusión o pérdida de consciencia).
+Al rescatar a un hombre al agua (MOB) con temperatura corporal inferior a $35^\circ\text{C}$ (temblores extremos, confusión o pérdida de consciencia). *(Para la maniobra de recuperación y el protocolo completo de hombre al agua, ver [PROTOCOLO_HOMBRE_AL_AGUA.md](./PROTOCOLO_HOMBRE_AL_AGUA.md)).*
 *   **Peligro Crítico - "Rescue Collapse":** NO subir al náufrago en posición vertical (arrancándolo desde los hombros). Al sacarlo del agua en vertical, la presión hidrostática del mar desaparece de golpe y la sangre fría acumulada en las extremidades inunda el corazón provocando un fallo cardíaco letal fulminante (Fibrilación Ventricular). **Subirlo SIEMPRE horizontalmente** empleando una red, vela o *Jason's Cradle*.
 *   **Tratamiento Calórico:** 
     *   **INCORRECTO:** Dar alcohol, friccionar las extremidades con fuerza, meter en ducha ardiendo (dilataría los capilares fríos, mandando sangre helada al corazón = Muerte).

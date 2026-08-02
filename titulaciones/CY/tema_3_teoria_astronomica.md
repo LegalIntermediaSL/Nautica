@@ -140,6 +140,109 @@ El horizonte es indispensable para la observación, al igual que las estrellas. 
 
 ---
 
+## 6. Las 57 Estrellas de Navegación (Selected Stars) y las Cartas de Bowditch
+
+Para no depender del Almanaque Náutico para el Sol, la Luna y los planetas cada vez que se navega de noche, los navegantes memorizan la posición relativa de un conjunto reducido de estrellas brillantes y bien distribuidas por toda la bóveda celeste: las **57 Estrellas de Navegación** (más Polaris, usada aparte para la latitud directa). Es la misma selección que emplea el *Nautical Almanac* angloamericano y el *American Practical Navigator* de Bowditch, obra de referencia de la NGA (National Geospatial-Intelligence Agency) estadounidense.
+
+Estas cartas estelares (proyección polar y proyección ecuatorial) permiten identificar de un vistazo qué estrella se está observando según su altura y azimut aproximados, algo esencial para el **Crepúsculo Náutico** (ver apartado 5), donde solo hay unos 20-30 minutos para tomar varias rectas de altura antes de que el horizonte de la mar deje de ser visible.
+
+| Nº | Estrella | Constelación / Bayer | Magnitud aparente |
+|---|---|---|---|
+| 1 | Alpheratz | α Andromedae | 2.06 |
+| 2 | Ankaa | α Phoenicis | 2.37 |
+| 3 | Schedar | α Cassiopeiae | 2.25 |
+| 4 | Diphda | β Ceti | 2.04 |
+| 5 | Achernar | α Eridani | 0.50 |
+| 6 | Hamal | α Arietis | 2.00 |
+| 7 | Acamar | θ Eridani | 3.2 |
+| 8 | Menkar | α Ceti | 2.5 |
+| 9 | Mirfak | α Persei | 1.82 |
+| 10 | Aldebaran | α Tauri | 0.85 var |
+| 11 | Rigel | β Orionis | 0.12 |
+| 12 | Capella | α Aurigae | 0.71 |
+| 13 | Bellatrix | γ Orionis | 1.64 |
+| 14 | Elnath | β Tauri | 1.68 |
+| 15 | Alnilam | ε Orionis | 1.70 |
+| 16 | Betelgeuse | α Orionis | 0.58 var |
+| 17 | Canopus | α Carinae | −0.72 |
+| 18 | Sirius | α Canis Majoris | −1.47 |
+| 19 | Adhara | ε Canis Majoris | 1.51 |
+| 20 | Procyon | α Canis Minoris | 0.34 |
+| 21 | Pollux | β Geminorum | 1.15 |
+| 22 | Avior | ε¹ Carinae | 2.4 |
+| 23 | Suhail | λ Velorum | 2.23 |
+| 24 | Miaplacidus | β Carinae | 1.70 |
+| 25 | Alphard | α Hydrae | 2.00 |
+| 26 | Regulus | α Leonis | 1.35 |
+| 27 | Dubhe | α¹ Ursae Majoris | 1.87 |
+| 28 | Denebola | β Leonis | 2.14 |
+| 29 | Gienah | γ Corvi | 2.80 |
+| 30 | Acrux | α¹ Crucis | 1.40 |
+| 31 | Gacrux | γ Crucis | 1.63 |
+| 32 | Alioth | ε Ursae Majoris | 1.76 |
+| 33 | Spica | α Virginis | 1.04 |
+| 34 | Alkaid | η Ursae Majoris | 1.85 |
+| 35 | Hadar | β Centauri | 0.60 |
+| 36 | Menkent | θ Centauri | 2.06 |
+| 37 | Arcturus | α Bootis | −0.04 var |
+| 38 | Rigil Kentaurus | α¹ Centauri | −0.01 |
+| 39 | Zubenelgenubi | α Librae | 3.28 |
+| 40 | Kochab | β Ursae Minoris | 2.08 |
+| 41 | Alphecca | α Coronae Borealis | 2.24 |
+| 42 | Antares | α Scorpii | 1.09 |
+| 43 | Atria | α Trianguli Australis | 1.92 |
+| 44 | Sabik | η Ophiuchi | 2.43 |
+| 45 | Shaula | λ Scorpii | 1.62 |
+| 46 | Rasalhague | α Ophiuchi | 2.10 |
+| 47 | Eltanin | γ Draconis | 2.23 |
+| 48 | Kaus Australis | ε Sagittarii | 1.80 |
+| 49 | Vega | α Lyrae | 0.03 |
+| 50 | Nunki | σ Sagittarii | 2.06 |
+| 51 | Altair | α Aquilae | 0.77 |
+| 52 | Peacock | α Pavonis | 1.91 |
+| 53 | Deneb | α Cygni | 1.25 |
+| 54 | Enif | ε Pegasi | 2.40 |
+| 55 | Al Na'ir | α Gruis | 1.74 |
+| 56 | Fomalhaut | α Piscis Austrini | 1.16 |
+| 57 | Markab | α Pegasi | 2.49 |
+| ★ | **Polaris** | α Ursae Minoris | 2.01 var |
+
+### Cartas de Identificación (Star Finder Diagrams)
+
+Las siguientes cartas, adaptadas del *American Practical Navigator* (Bowditch), agrupan las 57 estrellas por zona del cielo. Son de dominio público (publicación oficial del Gobierno de EE. UU., NGA/Defense Mapping Agency).
+
+**Estrellas ecuatoriales, hemisferio 180°–360°** (de Alpheratz a Denebola, incluye Orión y Sirio):
+
+![Estrellas ecuatoriales 180-360](../../assets/images/astronomia/bowditch_estrellas_180-360.svg)
+
+**Estrellas ecuatoriales, hemisferio 0°–180°** (de Gienah a Markab, incluye Arcturus):
+
+![Estrellas ecuatoriales 0-180](../../assets/images/astronomia/bowditch_estrellas_0-180.svg)
+
+**Estrellas boreales, declinación > 30° N** (proyección polar; Casiopea, Lira, Cisne):
+
+![Estrellas boreales sobre 30N](../../assets/images/astronomia/estrellas_norte_30N.svg)
+
+**Estrellas australes, declinación > 30° S** (proyección polar; Canopus, Rigil Kentaurus, Cruz del Sur):
+
+![Estrellas australes bajo 30S](../../assets/images/astronomia/estrellas_sur_30S.svg)
+
+> *Créditos de imagen: cartas derivadas de las figuras 1532a/1532b de "The American Practical Navigator" (Bowditch), obra del Gobierno de EE. UU., de dominio público. Adaptación a SVG por el usuario Haus (Wikimedia Commons). [Ver ficha original en Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Navigational_star_charts).*
+
+Para practicar la identificación inversa (a partir de una altura y azimut medidos, deducir qué estrella es), consulta el laboratorio [`simulaciones/10_identificacion_astros.ipynb`](../../simulaciones/10_identificacion_astros.ipynb).
+
+### Stellarium: Planetario Gratuito para Practicar
+
+**[Stellarium](https://stellarium.org/)** es un software de planetario de **código abierto** (gratuito, sin registro, disponible para Windows/Mac/Linux y también como versión web) que resulta extraordinariamente útil para preparar este tema:
+*   Permite fijar cualquier **fecha, hora y posición geográfica** y ver exactamente el cielo que se observaría desde el puente de un barco esa noche, incluyendo la posición real de las 57 estrellas de navegación.
+*   Tiene un **modo "buscador"** que superpone el nombre de cada estrella y constelación al apuntar el ratón, ideal para memorizar la disposición relativa de las estrellas antes de un examen o una travesía real.
+*   Incluye una **simulación de horizonte y crepúsculo** con la que se puede comprobar visualmente la ventana del Crepúsculo Náutico (apartado 5) para una fecha y latitud dadas: qué estrellas ya son visibles y si el horizonte de la mar todavía se distingue.
+*   Muestra en tiempo real la **altura y el azimut** de cualquier astro seleccionado, permitiendo comprobar a mano los resultados de la Fórmula de la Cosenusa del apartado 4 antes de fiarse de una calculadora programada.
+
+> *Recomendación práctica:* instala Stellarium unas semanas antes del examen y practica identificando, para tu latitud aproximada de examen y la fecha de la convocatoria, cuáles de las 57 estrellas estarán disponibles durante el crepúsculo náutico civil.
+
+---
+
 ## Ejemplos Prácticos
 
 **Problema 1: Teorema del Coseno para el Triángulo de Posición**

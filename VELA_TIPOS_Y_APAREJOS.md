@@ -43,6 +43,9 @@ La clasificación principal de los veleros viene dictada por el número de mást
 
 ## 2. Nomenclatura de los Palos (Mástiles)
 
+![Diagrama numerado de las partes de un velero](assets/images/vela/partes_velero_numerado.svg)
+*Diagrama de referencia de la jarcia y aparejo de un velero de un solo mástil (balandro/sloop). Fuente: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sailingboat-lightning-num.svg), autor Jimmy P. Renzi, dominio público.*
+
 Dependiendo de cuántos mástiles tenga el barco, estos reciben un nombre específico, ordenados siempre de proa a popa:
 
 1.  **Palo Trinquete:** El mástil situado más a proa (delante). (Solo existe en barcos con dos o más mástiles donde el delantero es el más bajo, como las Goletas).
@@ -82,3 +85,47 @@ Son todas las "cuerdas" (de poliéster o dyneema) de las que tiramos para subir,
 *   **Baluma:** El borde trasero de una vela (por donde "sale" el viento).
 *   **Pujamen:** El borde inferior de una vela.
 *   **Catavientos (Telltales):** Unos hilitos de lana pegados en la vela. Si van paralelos hacia atrás, el flujo aerodinámico es perfecto. Si caen o se agitan de forma turbulenta, estás mal trimado.
+
+---
+
+## 5. Velas de Popa: Spinnaker, Gennaker y Código 0
+
+Además de la vela mayor y el génova (velas "de serie" para ceñir), muchos veleros llevan a bordo velas de tejido más ligero y globoso, pensadas específicamente para rumbos portantes (a partir del través y hacia la empopada). No son intercambiables entre sí: cada una tiene su ángulo de viento óptimo.
+
+### Spinnaker Simétrico
+*   **Forma:** Un globo grande, simétrico (igual por ambos lados), muy redondeado.
+*   **Amure:** Necesita un **tangón** (palo horizontal que sale del mástil) para sujetar el puño de amura al lado de barlovento, separándolo del génova/mayor y manteniéndolo "abierto" al viento.
+*   **Cuándo se usa:** Es el rey en rumbos de empopada pura, con el viento entrando casi directo por la popa ($150^\circ$-$180^\circ$). Genera su fuerza principalmente por Drag (empuje puro, "efecto paracaídas") más que por Lift.
+*   **Complejidad:** Es la vela portante más difícil de maniobrar: requiere gestionar el tangón, tres cabos (driza, escota y braza) y coordinación fina de la tripulación.
+
+### Spinnaker Asimétrico (Gennaker)
+*   **Forma:** Un híbrido entre el génova y el spinnaker simétrico: asimétrico (una cara distinta de la otra), como un génova muy grande y globoso.
+*   **Amure:** No lleva tangón. Se amura directamente en la proa, normalmente en un **bauprés retráctil** (un palo corto que sale de la proa y se puede recoger cuando no se usa) o, en barcos más sencillos, en el propio tamborete de proa.
+*   **Cuándo se usa:** Excelente en rumbos de aleta o través portante, aproximadamente entre $80^\circ$ y $150^\circ$ del viento. Al ser asimétrico, se comporta más como un ala (genera Lift) que como un paracaídas, por lo que es más rápido que el simétrico en esos ángulos, aunque no rinde tan bien en empopada pura.
+*   **Complejidad:** Se maniobra de forma mucho más parecida al génova (cazar/lascar una escota a cada banda) y no necesita tangón, por lo que es la opción preferida en tripulaciones reducidas o cruceros de dos personas.
+
+### Código 0
+*   **Forma:** Visualmente parecido a un gennaker, pero mucho más plano y con un grátil casi recto, reforzado con un cabo antitorsión (que permite enrollarlo como un génova).
+*   **Cuándo se usa:** Es una vela "híbrida" pensada para vientos muy flojos y ángulos cerrados (ceñida amplia a través, $60^\circ$-$90^\circ$), rellenando el hueco entre el génova grande y el gennaker. No sustituye a ninguno de los dos en sus rangos propios; existe específicamente para navegar cuando hay poco viento y el barco necesita más superficie vélica de la que da el génova sin perder capacidad de ceñir.
+*   **Ventaja práctica:** Al llevar cabo antitorsión, se enrolla y desenrolla como un génova (mucho más simple y seguro que arriar un spinnaker a mano).
+
+### Maniobra Básica de Izado y Arriado
+1.  **Izado:** La vela sube envuelta dentro de una funda o "calcetín" (sock) o enrollada, para evitar que se llene de viento antes de tiempo (lo que la haría incontrolable). Una vez arriba, se suelta el calcetín o se desenrolla, y el viento la infla de golpe.
+2.  **Arriado:** Es la maniobra más delicada. La técnica habitual es "matar" la vela metiéndola detrás de la vela mayor (que le tapa el viento), recoger el calcetín tirando de su cabo, o enrollarla, antes de bajarla a cubierta de forma controlada.
+
+### El Peligro: Voleo (Broach)
+El **voleo o broach** es el gran peligro de navegar con velas de portante grandes: si una racha de viento fuerte coge la vela con el barco mal controlado (o el timonel se despista), el barco puede escorar y girar bruscamente hacia el viento sin control, tumbándose de lado con la vela pegada al agua. Es difícil de corregir una vez iniciado y puede dañar la jarcia o la propia vela. **Prevención:** rizar o arriar a tiempo cuando refresca, mantener siempre a alguien atento al timón y a la escota, y no navegar con estas velas en exceso de viento para su tamaño.
+
+---
+
+## 6. Multicascos: Catamarán y Trimarán
+
+El catamarán y el trimarán (ya presentados en la sección 1) se comportan de forma radicalmente distinta a un monocasco, hasta el punto de que requieren una técnica de navegación diferente:
+
+*   **Estabilidad por forma, no por peso:** Un monocasco es estable porque su quilla lastrada (con plomo) actúa como un péndulo que siempre intenta devolver el barco a la vertical. Un multicasco no lleva ese lastre: su estabilidad viene de la **forma**, es decir, de la enorme separación entre los cascos (manga), que genera un "brazo de palanca" muy largo para resistir el vuelco.
+*   **Ausencia de escora significativa:** Como consecuencia, un multicasco apenas escora navegando (rara vez más de $5^\circ$-$10^\circ$), frente a los $20^\circ$-$30^\circ$ habituales de un monocasco en ceñida. Esto los hace mucho más cómodos y rápidos para moverse a bordo, pero también engañosos: al no escorar, es fácil no notar que se está llevando demasiado trapo hasta que es tarde.
+*   **Mayor velocidad:** Al no "gastar" energía en escorar ni en generar resistencia por la forma de una quilla profunda, y con cascos muy finos y ligeros, los multicascos son sensiblemente más rápidos que un monocasco equivalente, llegando a navegar a velocidades cercanas o superiores a la del viento real.
+*   **Riesgo de volcada irreversible:** Es la contrapartida más seria. Un monocasco que se tumba (incluso a $90^\circ$) normalmente se adriza solo gracias al peso de su quilla. Un multicasco **no tiene quilla lastrada**: si vuelca por completo (por una racha fuerte, una ola o un exceso de vela), se queda invertido y **no puede adrizarse por sí solo**. Por eso la gestión del exceso de vela (rizar a tiempo) es aún más crítica que en un monocasco.
+*   **Técnica de navegación en olas:** Un monocasco "corta" la ola con su casco profundo y su peso. Un multicasco, al ser mucho más ligero y con cascos finos, tiende a "cabalgar" sobre las olas en vez de atravesarlas, lo que exige vigilar mucho más el asiento (trim) de proa a popa (para no clavar una proa en una ola, lo que se conoce como *pitchpoling* o vuelco por proa) y ajustar el rumbo con antelación ante mar de a través o de popa.
+
+Las imágenes de referencia de ambos tipos de embarcación están disponibles en la sección 1 de este documento (`assets/images/catamaran.jpg` y `assets/images/trimaran.jpg`).

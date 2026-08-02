@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="500" height="370" viewBox="0 0 500 370">
+<desc>Weather front – symbol</desc>
+<g id="cold_front">
+	<path style="fill:blue; stroke:none; stroke-width:0;" d="M20,60 h10 l25,-35 l25,35 h20 l25,-35 l25,35 h20 l25,-35 l25,35 h20 l25,-35 l25,35 h20 l25,-35 l25,35 h20 l25,-35 l25,35 h10 v5 h-420 z"/>
+</g>
+<g id="warm_front" transform="translate(0,80)">
+	<path style="fill:red; stroke:none; stroke-width:0;" d="M20,60 h10 a25,25 0 0,1 50,0 h20 a25,25 0 0,1 50,0 h20 a25,25 0 0,1 50,0 h20 a25,25 0 0,1 50,0 h20 a25,25 0 0,1 50,0 h20 a25,25 0 0,1 50,0 h10 v5 h-420 z"/>
+</g>
+<g id="occluded_front" transform="translate(0,160)">
+	<path style="fill:darkviolet; stroke:none; stroke-width:0;" d="M50,60 h10 l25,-35 l25,35 a25,25 0 0,1 50,0 h20 l25,-35 l25,35 a25,25 0 0,1 50,0 h20 l25,-35 l25,35 a25,25 0 0,1 50,0 h10 v5 h-360 z"/>
+</g>
+<g id="stationary_front" transform="translate(0,240)">
+	<path style="fill:red; stroke:none; stroke-width:0;" d="M20,60 h10 a25,25 0 0,1 50,0 h10 v5 h-70 v-5 z m140,0  h10 a25,25 0 0,1 50,0 h10 v5 h-70 v-5 z m140,0  h10 a25,25 0 0,1 50,0 h10 v5 h-70 v-5 z"/>
+	<path style="fill:blue; stroke:none; stroke-width:0;" d="M90,60 v5 h10 l25,35 l25,-35 h10 v-5 h-70 z m140,0 v5 h10 l25,35 l25,-35 h10 v-5 h-70 z  m140,0 v5 h10 l25,35 l25,-35 h10 v-5 h-70 z"/>
+</g>
+<g font-family="sans-serif" font-size="30" font-weight="bold" transform="translate(460,70)">
+	<text y="0">1</text>
+	<text y="80">2</text>
+	<text y="160">3</text>
+	<text y="240">4</text>
+</g>
+</svg>

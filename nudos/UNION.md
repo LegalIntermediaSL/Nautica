@@ -47,3 +47,16 @@ Es uno de los nudos de unión más estéticos, fuertes y seguros que existen par
 **Usos principales:**
 *   Unir cabos de gran mena (estachas de remolque, amarras principales de grandes buques).
 *   *Ventaja:* Su patrón entrelazado plano y simétrico permite que, por mucha tensión que reciba, nunca se apriete demasiado, siendo siempre muy fácil de deshacer, incluso cuando las estachas están empapadas de agua salada.
+
+---
+
+## 5. Nudo Zeppelin (Zeppelin Bend)
+
+Alternativa moderna al Carrick para unir dos cabos, muy apreciada en náutica y en escalada por una cualidad poco común: **por muy cargado que haya estado, sigue siendo fácil de deshacer a mano** sin necesidad de hacer palanca con una pica o un destornillador.
+
+**Regla de oro:** Se forman dos gazas simples (una con cada chicote) enfrentadas y giradas en sentido contrario, se superponen, y cada chicote se pasa por dentro de ambas gazas. El resultado es visualmente muy similar al Carrick, pero con una topología ligeramente distinta que evita el "bloqueo" bajo carga extrema.
+
+**Usos principales:**
+*   Unir dos cabos que van a estar sometidos a mucha tensión y que después habrá que separar rápidamente (remolques, líneas de fondeo dobles).
+*   Preferido frente al nudo llano o el as de guía doblado cuando existe riesgo de que el nudo se cargue con fuerza y deba deshacerse igualmente rápido.
+*   *Origen:* debe su nombre a que era el nudo estándar usado para amarrar los dirigibles Zeppelin a sus mástiles de atraque, precisamente por no bloquearse bajo la enorme tensión del viento sobre la aeronave.

@@ -43,6 +43,15 @@ Son los "campamentos base" de los navegantes oceánicos. Última parada antes de
 ### Papeete, Tahití (Polinesia Francesa - Pacífico Sur)
 *   Tras el salto oceánico más largo del planeta (desde Panamá o Galápagos, unos 3.000 millas náuticas a las Islas Marquesas), Tahití es el primer gran polo civilizado en el Pacífico Sur para repostar gasoil, conseguir víveres frescos occidentales y arreglar roturas.
 
+### Gibraltar (La Puerta entre Dos Mares)
+*   El Peñón marca la frontera física entre el Mediterráneo y el Atlántico, en el punto más estrecho del Estrecho (apenas 14 km hasta Marruecos). Es zona de paso obligado del tráfico mercante mundial y punto de referencia constante en el examen de carta del PER (ver [Carta 105](../titulaciones/PER/tema_11_carta_navegacion.md)).
+*   *Ventaja fiscal:* Al ser puerto franco, el combustible (diésel duty-free) es sensiblemente más barato que en España, por lo que muchos veleros que cruzan el Estrecho aprovechan para repostar aquí.
+*   *Peligro táctico:* La combinación de corriente entrante constante desde el Atlántico, el tráfico mercante del Estrecho (uno de los más densos del mundo, con dispositivos de separación de tráfico obligatorios) y los vientos de Levante/Poniente (ver [Vientos Locales de España](../VIENTOS_LOCALES_ESPAÑA.md)) hacen de este cruce uno de los más exigentes de la náutica de recreo en aguas españolas.
+
+### Azores (Portugal) y Cabo Verde: Las Paradas Técnicas del Atlántico
+*   **Azores (Horta, isla de Faial):** Parada clásica en la ruta de vuelta de un crucero atlántico (la llamada "vuelta por el Norte" tras cruzar el Atlántico hacia el Caribe), aprovechando los vientos del oeste de latitudes medias para regresar a Europa. La Marina de Horta es célebre por la tradición de que cada tripulación pinte un mural en el muelle antes de zarpar; según la creencia marinera local, no hacerlo trae mala suerte a la travesía siguiente.
+*   **Cabo Verde:** Punto de paso intermedio en la ruta clásica de descenso hacia el Caribe o Brasil, alternativa a partir desde Canarias con una etapa más corta y aprovechando antes los Alisios. Infraestructura portuaria más limitada que Canarias, por lo que conviene planificar el avituallamiento con margen.
+
 ---
 
 ## 3. Protocolos de Llegada (Port of Entry)

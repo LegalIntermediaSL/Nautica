@@ -54,6 +54,9 @@ Fondear no es tirar un hierro al agua; es crear una cadena de amortiguación par
 *   **Bruce (Uña de garra):** Sin partes móviles, muy robusta. Buena en roca y arena.
 *   **Rezón (Grampín):** Tipo paraguas, de cuatro uñas. Solo se usa en embarcaciones menores o neumáticas para fondos rocosos.
 
+![Tipos de anclas](assets/images/maniobra/tipos_de_ancla.jpg)
+*Distintos diseños de ancla (Danforth, Hall, CQR, Stockless, entre otros). Fuente: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Anchor_types.jpg), dominio público.*
+
 ### La Regla de Oro: La Longitud de Cadena (Filare)
 El ancla no sujeta el barco por su peso, sino porque **tracciona horizontalmente** contra el fondo. Si el barco tira hacia arriba (ángulo), el ancla se desclava. Para que el tiro sea horizontal, necesitas echar muchos metros de cadena (su propio peso la mantiene pegada al fondo).
 
@@ -69,3 +72,5 @@ El barco fondeado nunca está quieto; gira impulsado por el viento en un círcul
 
 ### Fondos Prohibidos: La Posidonia
 La Posidonia Oceánica no es un alga, es una planta superior que forma praderas submarinas (el "pulmón del Mediterráneo"). **Está terminantemente prohibido por ley** echar el ancla sobre ella, ya que la cadena arrasa hectáreas de este ecosistema protegido al bornear. Fondea siempre en los manchones de arena clara (se ven de color turquesa brillante desde la cubierta, a diferencia de la Posidonia que se ve negra).
+
+Para la normativa detallada por comunidad autónoma y las técnicas de fondeo ecológico, consulta [Medioambiente y Fondeo Responsable](MEDIOAMBIENTE.md).

@@ -66,9 +66,22 @@ La cúspide de la náutica de recreo. Habilita para cruzar océanos. Requiere te
 
 ---
 
+## 6. PPER (Patrón Profesional de Embarcaciones de Recreo)
+No es un escalón más de eslora o distancia, sino el salto de **uso particular a uso profesional**. Mientras que el PER, el PY y el CY solo habilitan a navegar por afición (sin cobrar), el PPER habilita para patronear cobrando: chárter náutico, patroneo remunerado para terceros o instrucción de prácticas de PNB y PER. Se construye sobre el **Capitán de Yate (CY)**, no sobre el PER.
+
+*   **Eslora máxima:** 24 metros (igual que PY/CY, el límite legal de "recreo").
+*   **Zona de Navegación:** Hasta **60 millas** de la costa con la atribución base; ampliable a la zona de cabotaje y **150 millas** acreditando periodo de embarque como patrón. *(Verificar mecanismo exacto de la ampliación en la normativa vigente).*
+*   **Pasaje:** Hasta 12 personas a bordo con fines profesionales.
+*   **Requisitos:**
+    *   Estar en posesión del título de Capitán de Yate (CY).
+    *   Declaración responsable de experiencia de navegación (mínimo 50 días y 2.500 millas, incluyendo travesías de altura). *(Verificar cifra exacta en la normativa vigente).*
+    *   Superar el examen teórico oficial (30 preguntas tipo test, 1 hora, 60% de aciertos), convocado anualmente por la DGMM y centrado en legislación marítimo-administrativa (matriculación, seguros, MARPOL, radiocomunicaciones, Derecho Civil aplicable a bordo), sin contenido de navegación ni carta.
+
+---
+
 ## Habilitaciones Complementarias Transversales
 
 Independientemente del título que poseas (desde PNB hasta CY), la ley requiere "ampliaciones" para ciertos vehículos o prácticas comerciales:
 
 1.  **Habilitación a Vela:** Ninguno de los títulos anteriores autoriza por defecto a gobernar veleros. Para ello, hay que realizar unas **prácticas de vela de 16 horas** (se hacen una sola vez en la vida y sirven para todos los títulos).
-2.  **Habilitación Comercial (PRO):** El PER, PY y CY pueden utilizarse profesionalmente (llevar pasajeros cobrando) cumpliendo ciertos requisitos de la Marina Mercante, como realizar el curso STCW de Formación Básica en Seguridad Marítima y obtener el certificado médico del ISM (Instituto Social de la Marina).
+2.  **Habilitación Comercial (PRO):** El PER, PY y CY solo habilitan para el uso **particular** de la embarcación. Para patronear cobrando (chárter, transporte remunerado de pasajeros) hace falta el certificado de especialidad de **[Patrón Profesional de Embarcaciones de Recreo (PPER)](titulaciones/PPER/INDEX.md)**, que se obtiene a partir del CY, junto con los requisitos adicionales de la Marina Mercante (certificado médico del ISM y, según el puesto a desempeñar, cursos STCW de Formación Básica en Seguridad Marítima).

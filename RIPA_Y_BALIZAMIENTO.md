@@ -77,6 +77,9 @@ Con niebla o para anunciar maniobras a corta distancia.
 
 El IALA Región A aplica en Europa, África y casi toda Asia/Oceanía. (En América es la Región B, donde los colores rojo/verde están invertidos).
 
+![Mapa de las regiones IALA A y B](assets/images/balizamiento/iala_regiones_a_b.svg)
+*Región A (rojo, España incluida) vs. Región B (verde). Fuente: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:IALA_Maritime_Buoyage_System_Regions.svg), autor Korakys, licencia CC BY 4.0.*
+
 ### Marcas Laterales (Canales de entrada a puerto)
 Indican el camino a seguir al entrar desde el mar hacia puerto.
 *   **Babor:** Boyas de color **ROJO**, forma cilíndrica o castillete, luz ROJA (destellos regulares).

@@ -8,6 +8,16 @@ author: "Escuadrón LN"
 
 El Reglamento Internacional para Prevenir Abordajes (RIPA) es la normativa fundamental de convivencia marítima. Para embarcaciones menores, operando bajo la Licencia de Navegación (hasta 6 metros de eslora, luz diurna, 2 millas de la costa), la detección del riesgo de abordaje exige un análisis exhaustivo de la cinemática en el plano de navegación bidimensional.
 
+## Las 3 cosas que un principiante DEBE saber sobre el RIPA
+
+Olvídate por un momento de las matemáticas. Si es tu primera vez en el mar, con quedarte con estas 3 ideas ya navegas de forma segura y respetuosa con los demás:
+
+1.  **Si tienes dudas, cede el paso.** El mar no tiene semáforos ni carriles pintados, así que la norma de oro es: ante la duda, frena o desvíate tú. Es como cuando en un cruce de calles sin señales no sabes quién tiene preferencia: lo más seguro es dejar pasar al otro antes que arriesgarte.
+2.  **Nunca te cruces por delante de un barco grande.** Los barcos grandes (cargueros, ferris, pesqueros) pesan muchísimo y necesitan mucha distancia para frenar o girar, aunque parezca que van "despacio" desde lejos. Es como cruzar la vía justo delante de un tren: aunque el tren esté "lejos", en realidad se acerca mucho más rápido de lo que parece y no puede parar en seco. Mantente siempre alejado de su trayectoria y dales todo el margen posible.
+3.  **En caso de emergencia, llama por el Canal 16 de VHF.** El Canal 16 es el "112" del mar: es el canal de socorro que escuchan Salvamento Marítimo y el resto de barcos cercanos. Si tienes un problema grave, coges la radio, pulsas para hablar, dices "MAYDAY, MAYDAY, MAYDAY", el nombre de tu barco y dónde estás. No hace falta que lo digas perfecto, lo importante es pedir ayuda cuanto antes.
+
+Con estas 3 ideas claras ya tienes cubierto lo esencial del RIPA para navegar con la Licencia de Navegación. El resto de reglas de cruce y prioridades detalladas son propias de titulaciones superiores (PER, PNB), no de este curso de 2 horas.
+
 ## Velocidad Relativa y Marcación Constante
 
 El riesgo inminente de abordaje se verifica analíticamente si la demora o marcación de un buque que se aproxima permanece inalterada a lo largo del tiempo, mientras su distancia se reduce progresivamente (fenómeno conocido en la doctrina náutica anglosajona como CBDR: *Constant Bearing, Decreasing Range*).

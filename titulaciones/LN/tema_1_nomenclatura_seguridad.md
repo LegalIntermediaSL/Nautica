@@ -8,6 +8,21 @@ author: "Escuadrón LN"
 
 El estudio de la nomenclatura náutica trasciende la mera memorización de términos; implica una comprensión profunda de la física de medios continuos y la hidrostática aplicada a cascos de pequeña eslora (hasta 6 metros), diseñados típicamente para navegaciones diurnas a un máximo de 2 millas de un abrigo o playa accesible.
 
+## Glosario Básico: Tus Primeras 8 Palabras en el Mar
+
+Si nunca has pisado un barco, empieza por aquí. Estas son las palabras que el instructor usará constantemente durante las prácticas, así que conviene tenerlas claras antes de subir a bordo. Piensa en el barco como si fuera tu propio cuerpo: tiene una parte de delante, una de detrás, una izquierda y una derecha.
+
+*   🔵 **Proa:** La parte delantera del barco, la que "corta" el agua al avanzar. Es como la punta de tu zapato cuando caminas hacia adelante.
+*   🔵 **Popa:** La parte de atrás del barco, por donde suele estar el motor. Es lo último que ves alejarse si el barco se va sin ti.
+*   🔵 **Babor:** El lado izquierdo del barco, mirando siempre hacia la proa (hacia adelante), igual que cuando dices que algo está "a tu izquierda" mirando hacia donde caminas.
+*   🔵 **Estribor:** El lado derecho del barco, mirando hacia la proa. Es justo el contrario de babor. Un truco que usan muchos patrones: en las cartas de navegación y en las luces del barco, estribor siempre va asociado al color verde, y babor al rojo. Si te acostumbras a esa pareja de colores, luego identificar los lados es automático.
+*   🔵 **Casco:** El "cuerpo" exterior del barco, la carcasa que flota y separa el agua de dentro del barco. Es como la carrocería de un coche, pero pensada para flotar en vez de rodar.
+*   🔵 **Cubierta:** El "suelo" que pisas cuando estás de pie en el barco. Es como el piso de tu casa, solo que este se mueve con las olas.
+*   🔵 **Timón:** La pieza que gira para cambiar la dirección del barco. Funciona parecido al volante de un coche, aunque en muchas lanchas pequeñas el propio manillar del motor hace esta función.
+*   🔵 **Ancla:** Un peso metálico (normalmente en forma de gancho) que se lanza al fondo del mar atado con una cadena o cabo, para que el barco se quede quieto en un sitio sin irse a la deriva. Es el "freno de mano" del barco.
+
+**Consejo práctico:** No hace falta memorizar esto de golpe. Durante las prácticas en el mar, el instructor señalará cada parte mientras la nombra, y en cuestión de minutos estas palabras te saldrán solas.
+
 ## Análisis del Equilibrio y Flotabilidad
 
 La flotabilidad de una embarcación menor se rige por el Principio de Arquímedes. El desplazamiento $\Delta$ de la nave en condiciones de carga máxima (considerando el límite estructural para pequeñas esloras) se define mediante la ecuación de equilibrio hidrostático:
