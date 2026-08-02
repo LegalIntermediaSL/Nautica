@@ -120,23 +120,29 @@ Un buque de propulsión mecánica $A$ navega a rumbo verdadero $Rv_A = 090^\circ
 
 **Solución:**
 1. Componentes (Norte, Este):
+
 $$
 \vec{V}_A = (0, 10)
 $$
+
 $$
 \vec{V}_B = (-14.14, 0)
 $$
+
 Vector relativo $\vec{V}_{BA} = \vec{V}_B - \vec{V}_A = (-14.14, -10)$.
 
 El módulo de velocidad relativa es:
+
 $$
 |\vec{V}_{BA}| = \sqrt{(-14.14)^2 + (-10)^2} = \sqrt{200 + 100} = \sqrt{300} \approx 17.32\text{ nudos}
 $$
 
 El rumbo relativo de aproximación de $B$ hacia $A$ viene dado por:
+
 $$
 \tan(\theta) = \frac{-10}{-14.14} \approx 0.707 \implies \theta \approx 215^\circ \text{ (hacia el Suroeste)}
 $$
+
 La recíproca es $035^\circ$. Como la demora verdadera inicial de B es $045^\circ$, no es exactamente antiparalelo, por lo que el CPA no es 0 estricto, pero es un encuentro muy cerrado.
 
 Vamos a calcular el CPA exacto:

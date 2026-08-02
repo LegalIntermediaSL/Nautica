@@ -12,16 +12,27 @@ El cálculo analítico de posición mediante rectas de altura es la destreza rei
 El sextante proporciona un valor angular en crudo, la **Altura Instrumental ($ai$)**. Para llegar a la **Altura Verdadera ($a_v$)** geométrica topocéntrica referida al centro de la Tierra, debemos aplicar correcciones de óptica instrumental, geometría y refracción atmosférica.
 
 La ecuación general de depuración es:
-$$ a_v = a_i + e_i - D_p - C_{\text{ref}} + C_{\text{par}} \pm C_{\text{SD}} $$
+
+$$
+a_v = a_i + e_i - D_p - C_{\text{ref}} + C_{\text{par}} \pm C_{\text{SD}}
+$$
 
 ### Paso 1: Error Mecánico (Altura Observada, $a_o$)
 1.  **Error de Índice ($e_i$):** El colimador y el espejo índice no son exactamente paralelos a $0^\circ$. Si medimos $+2'$ sobre cero en el ajuste del horizonte, el error es positivo y la corrección es $-2'$. 
-    $$ a_o = a_i \pm e_i $$
+    
+
+$$
+a_o = a_i \pm e_i
+$$
 
 ### Paso 2: Geometría de Altura (Altura Aparente, $a_a$)
 2.  **Depresión del Horizonte ($D_p$):** Al elevar el ojo del observador ($e$, en metros) sobre el nivel del mar, la tangente visual hacia el horizonte aparente se hunde bajo el horizonte astronómico. Esto agranda la medida de la altura. Su corrección **siempre es negativa**.
     Fórmula empírica clásica: $D_p \approx 1.77' \cdot \sqrt{e}$
-    $$ a_a = a_o - D_p $$
+    
+
+$$
+a_a = a_o - D_p
+$$
 
 ### Paso 3: Correcciones Astronómicas y Ópticas (Altura Verdadera, $a_v$)
 Las "Tablas Principales" del Almanaque o las fórmulas integran:
@@ -32,7 +43,10 @@ Las "Tablas Principales" del Almanaque o las fórmulas integran:
     **Aumento de la Luna:** Si la Luna está muy alta en el cielo, está $6000 \text{ km}$ (el radio de la Tierra) más cerca de ti que si estuviera en el horizonte, por lo que su semidiámetro aparente aumenta ($+0.3'$ en el cénit).
 
 **Uso en examen:** En el examen se utiliza la Corrección Total ($C_t$) tabulada, que agrupa refracción y semidiámetro para un Sol medio, dejando unas tablas adjuntas para el mes y la luna.
-$$ a_v = a_a + C_t $$
+
+$$
+a_v = a_a + C_t
+$$
 
 ---
 
@@ -49,7 +63,12 @@ El núcleo del sistema de posicionamiento oceánico radica en calcular la difere
 
 ### Fase 2: El Triángulo de Posición
 4.  **Ángulo Horario Local ($h_L$):**
-    $$ h_L = h_G + L_e $$
+    
+
+$$
+h_L = h_G + L_e
+$$
+
     *   (Adoptando criterio de signos Longitud: Este $+$, Oeste $-$). Se ajusta al rango $[0^\circ, 360^\circ]$.
 5.  **Ángulo en el Polo ($P$):**
     *   Si $h_L < 180^\circ \implies P = h_L$ (Astro al Oeste, bajando).
@@ -58,7 +77,12 @@ El núcleo del sistema de posicionamiento oceánico radica en calcular la difere
 
 ### Fase 3: Ecuación Trigonométrica (Cálculo de $a_e$ y $Z$)
 6.  **Altura Estimada ($a_e$) (Cosenusa de Lados):**
-    $$ \sin(a_e) = \sin(l_e) \cdot \sin(Dec) + \cos(l_e) \cdot \cos(Dec) \cdot \cos(P) $$
+    
+
+$$
+\sin(a_e) = \sin(l_e) \cdot \sin(Dec) + \cos(l_e) \cdot \cos(Dec) \cdot \cos(P)
+$$
+
     **ATENCIÓN A LOS SIGNOS:** 
     Si $l_e$ y $Dec$ están en el mismo hemisferio (mismo "Nombre", ej: N y N), ambas son positivas.
     Si están en distinto hemisferio (ej: $l_e$ N y $Dec$ S), $\sin(Dec)$ y $\cos(Dec)$ generarán que el primer término de la suma sea de signo opuesto o debes introducir $Dec$ como un valor negativo. 
@@ -66,12 +90,22 @@ El núcleo del sistema de posicionamiento oceánico radica en calcular la difere
 
 7.  **Azimut Verdadero ($Z_v$):**
     Fórmula de las Cotangentes (Regla de Neper):
-    $$ \cot(Z) = \frac{\cos(l_e) \cdot \tan(Dec) - \sin(l_e) \cdot \cos(P)}{\sin(P)} $$
+    
+
+$$
+\cot(Z) = \frac{\cos(l_e) \cdot \tan(Dec) - \sin(l_e) \cdot \cos(P)}{\sin(P)}
+$$
+
     Al aplicar arcotangente $\arctan(\frac{1}{\cot(Z)})$, obtienes el Azimut Cuadrantal (Ej: $N 45^\circ E$, o $S 130^\circ W$). Hay que convertirlo a Azimut Circular ($0^\circ - 360^\circ$) según en qué cuadrante geográfico se halle el astro (definido por el nombre de la latitud y si $h_L$ indica que está al E o al W).
 
 ### Fase 4: La Determinante St. Hilaire
 8.  **Diferencia de Alturas ($\Delta a$ o $\Delta$):**
-    $$ \Delta a = a_v - a_e $$
+    
+
+$$
+\Delta a = a_v - a_e
+$$
+
     *   Si $\Delta a$ es **Positivo (+)**: $a_v > a_e$. El astro está "más alto" en la realidad que en la estima, lo que implica que el buque está más cerca del punto geográfico del astro. Se avanza la estima **HACIA** el $Z_v$.
     *   Si $\Delta a$ es **Negativo (-)**: $a_v < a_e$. El barco está más alejado. Se retrasa la estima **EN CONTRA** (rumbo $Z_v \pm 180^\circ$).
 
@@ -134,7 +168,11 @@ La Estrella Polar describe un círculo levógiro diminuto alrededor del Polo Nor
 La latitud exacta ($l_v$) no es igual a su Altura Verdadera, hay que aplicar una corrección tabulada basada en el Ángulo Horario Local de Aries ($h_{L\gamma}$), el cual indica la fase de rotación del Polo.
 
 Fórmula tradicional simplificada del Almanaque:
-$$ l_v = a_v - 1^\circ + \text{Tab. I} + \text{Tab. II} + \text{Tab. III} $$
+
+$$
+l_v = a_v - 1^\circ + \text{Tab. I} + \text{Tab. II} + \text{Tab. III}
+$$
+
 Donde las tablas I, II y III purgan la posición angular exacta de Polaris dependiente del $h_{L\gamma}$, la Latitud aproximada y el mes del año. No requiere resolver triángulos complejos, proveyendo una Latitud de extrema precisión instantánea para navegantes del Hemisferio Norte.
 
 ---
@@ -151,14 +189,35 @@ Datos: Latitud $l_e = 35^\circ \text{ N}$ (+), Declinación $Dec = 20^\circ \tex
 Halle el $Z_v$ usando la fórmula de la cotangente.
 
 *Solución:*
-$$ \cot(Z) = \frac{\cos(l_e) \cdot \tan(Dec) - \sin(l_e) \cdot \cos(P)}{\sin(P)} $$
+
+$$
+\cot(Z) = \frac{\cos(l_e) \cdot \tan(Dec) - \sin(l_e) \cdot \cos(P)}{\sin(P)}
+$$
+
 Insertamos datos con signos algebraicos: $l_e = +35^\circ$, $Dec = -20^\circ$, $P = 60^\circ$.
-$$ \cot(Z) = \frac{\cos(35^\circ) \cdot \tan(-20^\circ) - \sin(35^\circ) \cdot \cos(60^\circ)}{\sin(60^\circ)} $$
-$$ \cot(Z) = \frac{(0.8192 \cdot -0.3640) - (0.5736 \cdot 0.5000)}{0.8660} $$
-$$ \cot(Z) = \frac{-0.2982 - 0.2868}{0.8660} = \frac{-0.5850}{0.8660} = -0.6755 $$
+
+$$
+\cot(Z) = \frac{\cos(35^\circ) \cdot \tan(-20^\circ) - \sin(35^\circ) \cdot \cos(60^\circ)}{\sin(60^\circ)}
+$$
+
+$$
+\cot(Z) = \frac{(0.8192 \cdot -0.3640) - (0.5736 \cdot 0.5000)}{0.8660}
+$$
+
+$$
+\cot(Z) = \frac{-0.2982 - 0.2868}{0.8660} = \frac{-0.5850}{0.8660} = -0.6755
+$$
+
 Tomando la inversa para obtener la tangente:
-$$ \tan(Z) = \frac{1}{-0.6755} = -1.4804 $$
-$$ Z = \arctan(-1.4804) = -55.96^\circ $$
+
+$$
+\tan(Z) = \frac{1}{-0.6755} = -1.4804
+$$
+
+$$
+Z = \arctan(-1.4804) = -55.96^\circ
+$$
+
 Como la Latitud es Norte, contamos el ángulo desde el Norte. Al ser el ángulo horario Oeste ($P$ Oeste), el astro se halla en el cuadrante SW. El azimut cuadrantal es $N 124.04^\circ W$ o matemáticamente $S 55.96^\circ W$ partiendo desde el Sur de la fórmula pura. Sin embargo, aplicando la regla marinera:
 Si $l_e > 0$, el polo elevado es el Norte ($000^\circ$). Al ser la declinación contraria y la cotangente negativa, el azimut supera los $90^\circ$ respecto al polo elevado.
 Azimut verdadero: $Z_v = 360^\circ - 124.04^\circ = 235.96^\circ$.
@@ -171,8 +230,15 @@ Desde una misma Posición de Estima (P.E.), calcule la corrección matemática d
 
 *Solución:*
 Las ecuaciones lineales para las rectas de altura en función del incremento de posición son:
-$$ \Delta l \cdot \cos(Z_1) + \Delta A \cdot \sin(Z_1) = \Delta a_1 $$
-$$ \Delta l \cdot \cos(Z_2) + \Delta A \cdot \sin(Z_2) = \Delta a_2 $$
+
+$$
+\Delta l \cdot \cos(Z_1) + \Delta A \cdot \sin(Z_1) = \Delta a_1
+$$
+
+$$
+\Delta l \cdot \cos(Z_2) + \Delta A \cdot \sin(Z_2) = \Delta a_2
+$$
+
 Sustituyendo los valores trigonométricos de los azimuts:
 $\cos(45^\circ) = 0.7071$, $\sin(45^\circ) = 0.7071$
 $\cos(135^\circ) = -0.7071$, $\sin(135^\circ) = 0.7071$
@@ -189,19 +255,39 @@ $1.4142 \cdot \Delta l = 7 \implies \Delta l = \frac{7}{1.4142} = +4.95 \text{ m
 
 **Problema 3: Algoritmo Avanzado de Refracción (Fórmula de Bennett)**
 Para evitar descartar alturas solares muy bajas ($a_a = 4^\circ$), el navegante decide utilizar la fórmula empírica de alta precisión de G.G. Bennett (1982) para calcular la Refracción Astronómica ($R_0$) en minutos de arco, con las condiciones atmosféricas estándar. La fórmula es:
-$$ R_0 = \frac{\cot(a_a + \frac{7.31}{a_a + 4.4})}{1} $$
+
+$$
+R_0 = \frac{\cot(a_a + \frac{7.31}{a_a + 4.4})}{1}
+$$
+
 Calcule la refracción $R_0$ exacta para una altura aparente $a_a = 4.0^\circ$.
 
 *Solución:*
 Primero calculamos el sumando corrector interno:
-$$ C = \frac{7.31}{4.0 + 4.4} = \frac{7.31}{8.4} = 0.8702^\circ $$
+
+$$
+C = \frac{7.31}{4.0 + 4.4} = \frac{7.31}{8.4} = 0.8702^\circ
+$$
+
 Sumamos esto al argumento de la cotangente:
-$$ Argumento = a_a + C = 4.0^\circ + 0.8702^\circ = 4.8702^\circ $$
+
+$$
+Argumento = a_a + C = 4.0^\circ + 0.8702^\circ = 4.8702^\circ
+$$
+
 Aplicamos la función trigonométrica:
-$$ R_0 = \cot(4.8702^\circ) = \frac{1}{\tan(4.8702^\circ)} $$
+
+$$
+R_0 = \cot(4.8702^\circ) = \frac{1}{\tan(4.8702^\circ)}
+$$
+
 Calculamos la tangente:
 $\tan(4.8702^\circ) \approx 0.08518$
-$$ R_0 = \frac{1}{0.08518} = 11.739 \text{ minutos de arco} $$
+
+$$
+R_0 = \frac{1}{0.08518} = 11.739 \text{ minutos de arco}
+$$
+
 Por tanto, la corrección de refracción será $C_{\text{ref}} = -11.74'$. Esta fórmula magistral proporciona una precisión astronómica superior a las tablas estándar de interpolación lineal en los umbrales críticos del horizonte.
 
 ---

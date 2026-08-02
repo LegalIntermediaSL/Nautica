@@ -24,11 +24,21 @@ Un barco navega en un fluido dinámico sujeto a oscilaciones no lineales:
 *   **Centro de Carena (B):** Centroide geométrico del volumen sumergido, origen de la fuerza de empuje (Principio de Arquímedes).
 *   **Metacentro (M):** Intersección de las líneas de empuje al escorar ángulos pequeños.
 La **Altura Metacéntrica ($GM$)** es crítica:
-$$ GM = KB + BM - KG $$
+
+$$
+GM = KB + BM - KG
+$$
+
 donde $BM = \frac{I}{V}$ (Inercia de la superficie de flotación entre Volumen sumergido).
 *   Si $GM > 0$: Equilibrio estable.
 *   El **Brazo Adrizante (GZ)** dicta la fuerza de restitución:
-    $$ GZ = GM \cdot \sin(\phi) $$ (para pequeños ángulos).
+    
+
+$$
+GZ = GM \cdot \sin(\phi)
+$$
+
+ (para pequeños ángulos).
     *Nunca* elevar pesos (ej. tripulación en el techo) ya que incrementa $KG$, reduce $GM$ peligrosamente y lleva al barco a la zozobra.
 
 ## 2. Equipamiento de Salvamento (SOLAS y Normativa Nacional - Zona 4, 12 Millas)
@@ -76,18 +86,45 @@ Calcule la altura metacéntrica inicial ($GM$) asumiendo pequeños ángulos.
 
 *Solución:*
 1. El momento escorante provocado por el desplazamiento transversal del peso es:
-$$ M_{escorante} = p \cdot g \cdot d \cdot \cos(\phi) \approx p \cdot g \cdot d \quad \text{(para ángulos pequeños, } \cos(5^\circ) \approx 1\text{)} $$
+
+$$
+M_{escorante} = p \cdot g \cdot d \cdot \cos(\phi) \approx p \cdot g \cdot d \quad \text{(para ángulos pequeños, } \cos(5^\circ) \approx 1\text{)}
+$$
+
 Consideraremos el momento en términos de masa-distancia por simplicidad:
-$$ M_{escorante} \approx 200 \text{ kg} \cdot 2 \text{ m} = 400 \text{ kg}\cdot\text{m} $$
+
+$$
+M_{escorante} \approx 200 \text{ kg} \cdot 2 \text{ m} = 400 \text{ kg}\cdot\text{m}
+$$
+
 2. En la condición de equilibrio, el momento escorante es igual al momento adrizante del buque ($M_{adrizante}$):
-$$ M_{adrizante} = \Delta \cdot GM \cdot \tan(\phi) $$
+
+$$
+M_{adrizante} = \Delta \cdot GM \cdot \tan(\phi)
+$$
+
 Igualando ambos momentos (omitiendo $g$ en ambos lados):
-$$ p \cdot d = \Delta \cdot GM \cdot \tan(\phi) $$
+
+$$
+p \cdot d = \Delta \cdot GM \cdot \tan(\phi)
+$$
+
 3. Despejando $GM$:
-$$ GM = \frac{p \cdot d}{\Delta \cdot \tan(\phi)} $$
+
+$$
+GM = \frac{p \cdot d}{\Delta \cdot \tan(\phi)}
+$$
+
 4. Sustituyendo los valores conocidos:
-$$ GM = \frac{200 \cdot 2}{5000 \cdot \tan(5^\circ)} = \frac{400}{5000 \cdot 0.0875} = \frac{400}{437.5} $$
-$$ GM \approx 0.91 \text{ m} $$
+
+$$
+GM = \frac{200 \cdot 2}{5000 \cdot \tan(5^\circ)} = \frac{400}{5000 \cdot 0.0875} = \frac{400}{437.5}
+$$
+
+$$
+GM \approx 0.91 \text{ m}
+$$
+
 El resultado ($0.91 \text{ m} > 0$) indica que el barco goza de una estabilidad inicial positiva y satisfactoria para la navegación costera.
 
 ## Referencias Bibliográficas y Jurisprudencia

@@ -11,7 +11,9 @@ El examen del PER exige conocer a la perfección la normativa internacional **IA
 ### 1.1 Hidrodinámica y Estabilidad de Boyas
 Las boyas no son meros objetos flotantes; su diseño responde a estrictos principios hidrodinámicos para garantizar su verticalidad y visibilidad en estados de la mar adversos (alta energía del oleaje). La fuerza de arrastre hidrodinámico ($F_d$) ejercida por las corrientes se modela mediante la ecuación:
 
-$$ F_d = \frac{1}{2} \rho v^2 C_d A $$
+$$
+F_d = \frac{1}{2} \rho v^2 C_d A
+$$
 
 Donde:
 *   $\rho$ es la densidad del agua de mar ($\approx 1025 \, \text{kg/m}^3$).
@@ -24,7 +26,9 @@ Para evitar que la boya se sumerja por la tensión de la cadena (efecto "garreo"
 ### 1.2 Óptica, Alcance Luminoso y Rango Nominal
 En navegación nocturna, la capacidad de avistar una baliza depende de su intensidad luminosa y de la transmisividad atmosférica. El Alcance Luminoso se calcula a través de la Ley de Allard:
 
-$$ E = \frac{I}{D^2} e^{-\sigma D} $$
+$$
+E = \frac{I}{D^2} e^{-\sigma D}
+$$
 
 Donde:
 *   $E$ es la iluminancia en el ojo del observador (umbral de visión $\approx 2 \times 10^{-7} \, \text{lux}$).
@@ -127,16 +131,34 @@ Determine la fuerza de arrastre hidrodinámico ($F_d$) que la corriente ejerce s
 
 *Resolución:*
 Primero, convertimos la velocidad de la corriente al Sistema Internacional (m/s).
-$$ 1 \text{ nudo} = 0.5144 \text{ m/s} \implies v = 4 \times 0.5144 = 2.0576 \text{ m/s} $$
+
+$$
+1 \text{ nudo} = 0.5144 \text{ m/s} \implies v = 4 \times 0.5144 = 2.0576 \text{ m/s}
+$$
 
 Calculamos el área proyectada sumergida ($A$), que para un cilindro vertical es el rectángulo formado por su diámetro y su calado:
-$$ A = D \times T = 1.2 \text{ m} \times 1.5 \text{ m} = 1.8 \text{ m}^2 $$
+
+$$
+A = D \times T = 1.2 \text{ m} \times 1.5 \text{ m} = 1.8 \text{ m}^2
+$$
 
 Aplicamos la ecuación fundamental del arrastre hidrodinámico:
-$$ F_d = \frac{1}{2} \rho v^2 C_d A $$
-$$ F_d = \frac{1}{2} (1025 \text{ kg/m}^3) (2.0576 \text{ m/s})^2 (1.05) (1.8 \text{ m}^2) $$
-$$ F_d \approx \frac{1}{2} (1025) (4.2337) (1.05) (1.8) $$
-$$ F_d \approx 4100.8 \text{ N} \approx 4.1 \text{ kN} $$
+
+$$
+F_d = \frac{1}{2} \rho v^2 C_d A
+$$
+
+$$
+F_d = \frac{1}{2} (1025 \text{ kg/m}^3) (2.0576 \text{ m/s})^2 (1.05) (1.8 \text{ m}^2)
+$$
+
+$$
+F_d \approx \frac{1}{2} (1025) (4.2337) (1.05) (1.8)
+$$
+
+$$
+F_d \approx 4100.8 \text{ N} \approx 4.1 \text{ kN}
+$$
 
 La cadena de fondeo y el muerto de hormigón deberán estar dimensionados para resistir una componente horizontal continua superior a $4.1 \text{ kN}$ sin producir garreo, además de las fuerzas oscilatorias del oleaje de alta frecuencia.
 
@@ -145,12 +167,24 @@ Una baliza de peligro aislado posee una linterna LED con una intensidad luminosa
 
 *Resolución:*
 Calculamos el coeficiente de extinción atmosférica $\sigma$ mediante la Ley de Koschmieder, utilizando kilómetros para mantener las unidades consistentes para iluminancia (lux = lumen/m²).
-$$ \sigma = \frac{3.912}{V} = \frac{3.912}{7408 \text{ m}} = 5.28 \times 10^{-4} \text{ m}^{-1} $$
+
+$$
+\sigma = \frac{3.912}{V} = \frac{3.912}{7408 \text{ m}} = 5.28 \times 10^{-4} \text{ m}^{-1}
+$$
 
 Aplicamos la Ley de Allard para la distancia $D = 3704 \text{ m}$:
-$$ E = \frac{I}{D^2} e^{-\sigma D} $$
-$$ E = \frac{150}{(3704)^2} e^{-(5.28 \times 10^{-4})(3704)} $$
-$$ E = \frac{150}{13719616} e^{-1.955} \approx (1.093 \times 10^{-5}) \times 0.1415 \approx 1.54 \times 10^{-6} \text{ lux} $$
+
+$$
+E = \frac{I}{D^2} e^{-\sigma D}
+$$
+
+$$
+E = \frac{150}{(3704)^2} e^{-(5.28 \times 10^{-4})(3704)}
+$$
+
+$$
+E = \frac{150}{13719616} e^{-1.955} \approx (1.093 \times 10^{-5}) \times 0.1415 \approx 1.54 \times 10^{-6} \text{ lux}
+$$
 
 Dado que $1.54 \times 10^{-6} \text{ lux} > E_{th}$ ($2 \times 10^{-7} \text{ lux}$), la baliza **será visible** a 2 millas a pesar de la niebla ligera.
 

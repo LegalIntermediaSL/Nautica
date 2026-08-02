@@ -24,12 +24,20 @@ El ángulo en el polo es la diferencia de longitudes ($\Delta L = L_B - L_A$).
 ### 1.2. Fórmulas Fundamentales
 **1. Cálculo de la Distancia Ortodrómica ($D$):**
 Utilizando la fórmula de la cosenusa (similar a la de la altura estimada en astronomía):
-$$ \cos(D) = \sin(l_A) \cdot \sin(l_B) + \cos(l_A) \cdot \cos(l_B) \cdot \cos(\Delta L) $$
+
+$$
+\cos(D) = \sin(l_A) \cdot \sin(l_B) + \cos(l_A) \cdot \cos(l_B) \cdot \cos(\Delta L)
+$$
+
 El resultado ($D$) es un ángulo. Para pasarlo a millas náuticas, simplemente multiplicamos los grados por 60 y sumamos los minutos.
 
 **2. Cálculo del Rumbo Inicial ($R_i$):**
 Utilizando el teorema de las cotangentes o de los senos. Es el rumbo exacto al que debes poner la proa en el momento de zarpar:
-$$ \cot(R_i) = \frac{\cos(l_A) \cdot \tan(l_B) - \sin(l_A) \cdot \cos(\Delta L)}{\sin(\Delta L)} $$
+
+$$
+\cot(R_i) = \frac{\cos(l_A) \cdot \tan(l_B) - \sin(l_A) \cdot \cos(\Delta L)}{\sin(\Delta L)}
+$$
+
 (Se nombra cardinalmente igual que el Azimut: Desde el polo de salida geográfico hacia el Este o el Oeste según el destino).
 
 ### 1.3. Resolución Completa del Triángulo: Paralelismo con el Triángulo de Posición Astronómico
@@ -45,13 +53,24 @@ El triángulo esférico $P$-$A$-$B$ del apartado 1.1 no es una herramienta exclu
 *   Ángulo en $B$ $= R_f$ (Rumbo de llegada, el rumbo con el que "se entra" al puerto B).
 
 **Paso 1 — Ley de Cosenos aplicada al lado $AB$:**
-$$ \cos(D) = \cos(90^\circ - l_A)\cos(90^\circ - l_B) + \sin(90^\circ - l_A)\sin(90^\circ - l_B)\cos(\Delta L) $$
+
+$$
+\cos(D) = \cos(90^\circ - l_A)\cos(90^\circ - l_B) + \sin(90^\circ - l_A)\sin(90^\circ - l_B)\cos(\Delta L)
+$$
+
 Como $\cos(90^\circ - l) = \sin(l)$ y $\sin(90^\circ - l) = \cos(l)$, esta expresión se reduce exactamente a la fórmula del apartado 1.2:
-$$ \cos(D) = \sin(l_A)\sin(l_B) + \cos(l_A)\cos(l_B)\cos(\Delta L) $$
+
+$$
+\cos(D) = \sin(l_A)\sin(l_B) + \cos(l_A)\cos(l_B)\cos(\Delta L)
+$$
+
 Es idéntica en estructura a $\sin(a_e) = \sin(l_e)\sin(Dec) + \cos(l_e)\cos(Dec)\cos(P)$ del Tema 3: en ambos casos se resuelve el lado desconocido de un triángulo esférico conociendo los otros dos lados y el ángulo comprendido entre ellos.
 
 **Paso 2 — Ley de Senos para obtener $R_i$ de forma directa:**
-$$ \frac{\sin(\Delta L)}{\sin(D)} = \frac{\sin(R_i)}{\sin(90^\circ - l_B)} \quad\Rightarrow\quad \sin(R_i) = \frac{\cos(l_B)\cdot\sin(\Delta L)}{\sin(D)} $$
+
+$$
+\frac{\sin(\Delta L)}{\sin(D)} = \frac{\sin(R_i)}{\sin(90^\circ - l_B)} \quad\Rightarrow\quad \sin(R_i) = \frac{\cos(l_B)\cdot\sin(\Delta L)}{\sin(D)}
+$$
 
 > [!NOTE]
 > La Ley de Senos, por su propia naturaleza, entrega un ángulo ambiguo: $R_i$ y $180^\circ - R_i$ comparten el mismo seno, y ambos son matemáticamente compatibles con los datos. Por eso, para resolver el cuadrante correcto sin ambigüedad, en la práctica se recurre a la fórmula de la cotangente del apartado 1.2 (equivalente a la fórmula de las cuatro partes de Napier). Es exactamente el mismo problema — y la misma solución — que aparece al despejar el Azimut $Z$ en el triángulo de posición astronómico del Tema 3: la Ley de Senos orienta, pero solo la cotangente (o una comprobación de cuadrante con los signos de latitud y $\Delta L$) resuelve el rumbo real de forma unívoca.
@@ -74,7 +93,10 @@ La solución operativa universal —empleada tanto en la navegación clásica de
 
 ### Cálculo de los Puntos Intermedios
 Para cada longitud intermedia elegida $L_x$ (comprendida entre $L_A$ y $L_B$), la latitud del punto correspondiente sobre el círculo máximo se obtiene con la fórmula clásica de Bowditch para puntos intermedios de la ortodrómica:
-$$ \tan(l_x) = \frac{\tan(l_A)\cdot\sin(L_B - L_x) + \tan(l_B)\cdot\sin(L_x - L_A)}{\sin(L_B - L_A)} $$
+
+$$
+\tan(l_x) = \frac{\tan(l_A)\cdot\sin(L_B - L_x) + \tan(l_B)\cdot\sin(L_x - L_A)}{\sin(L_B - L_A)}
+$$
 
 Uniendo sucesivamente estos puntos con segmentos de rumbo constante, la derrota resultante en la carta Mercator dibuja una **poligonal que aproxima visualmente la curva cóncava de la ortodrómica verdadera**. La pérdida de eficiencia frente al círculo máximo teórico es insignificante (unas pocas millas, tanto más pequeña cuanto más corto y numeroso es el tramo elegido), a cambio de una ganancia práctica enorme: cada tramo se gobierna con un rumbo de aguja fijo y se traza en la carta con la regla paralela, exactamente igual que cualquier derrota costera.
 
@@ -95,7 +117,11 @@ Consiste en establecer un **Paralelo Límite ($l_{lim}$)** que el barco tiene pr
 
 ### Cálculo Analítico mediante las Reglas de Napier
 En los puntos $V_1$ y $V_2$, la ortodrómica es ortogonal al meridiano local (son vértices geométricos), formando **Triángulos Esféricos Rectángulos**. Esto simplifica drásticamente el cálculo utilizando la Regla del Pentágono de Napier:
-$$ \sin(\text{parte central}) = \tan(\text{adyacentes}) \cdot \tan(\text{adyacentes}) = \cos(\text{opuestos}) \cdot \cos(\text{opuestos}) $$
+
+$$
+\sin(\text{parte central}) = \tan(\text{adyacentes}) \cdot \tan(\text{adyacentes}) = \cos(\text{opuestos}) \cdot \cos(\text{opuestos})
+$$
+
 Con Napier, es extremadamente rápido hallar las longitudes de tangencia ($L_{V1}$ y $L_{V2}$) y la distancia total del recorrido mixto.
 
 ---
@@ -173,19 +199,38 @@ Un buque parte de un punto $A$ situado a $l_A = 45^\circ 00' \text{ N}$, $L_A = 
 *Solución:*
 
 **a) Distancia Ortodrómica ($D$)**, con $l_A = l_B = 45^\circ$ y $\Delta L = 60^\circ$:
-$$ \cos(D) = \sin(45^\circ)\sin(45^\circ) + \cos(45^\circ)\cos(45^\circ)\cos(60^\circ) $$
-$$ \cos(D) = (0.70711 \cdot 0.70711) + (0.70711 \cdot 0.70711 \cdot 0.5) = 0.5 + 0.25 = 0.75 $$
-$$ D = \arccos(0.75) = 41.4096^\circ \quad\Rightarrow\quad D = 41.4096^\circ \cdot 60 = \mathbf{2484.6 \text{ millas náuticas}} $$
+
+$$
+\cos(D) = \sin(45^\circ)\sin(45^\circ) + \cos(45^\circ)\cos(45^\circ)\cos(60^\circ)
+$$
+
+$$
+\cos(D) = (0.70711 \cdot 0.70711) + (0.70711 \cdot 0.70711 \cdot 0.5) = 0.5 + 0.25 = 0.75
+$$
+
+$$
+D = \arccos(0.75) = 41.4096^\circ \quad\Rightarrow\quad D = 41.4096^\circ \cdot 60 = \mathbf{2484.6 \text{ millas náuticas}}
+$$
 
 **b) Rumbo Inicial Ortodrómico ($R_i$)**, con la fórmula de la cotangente del apartado 1.2 (usando $\Delta L = 60^\circ$ hacia el Oeste):
-$$ \cot(R_i) = \frac{\cos(45^\circ) \cdot \tan(45^\circ) - \sin(45^\circ) \cdot \cos(60^\circ)}{\sin(60^\circ)} = \frac{(0.70711 \cdot 1) - (0.70711 \cdot 0.5)}{0.86603} = \frac{0.35355}{0.86603} = 0.40825 $$
-$$ R_i = \text{arccot}(0.40825) = 67^\circ 47' \quad\text{(cuadrantal, medido desde el Norte hacia el Oeste)} $$
+
+$$
+\cot(R_i) = \frac{\cos(45^\circ) \cdot \tan(45^\circ) - \sin(45^\circ) \cdot \cos(60^\circ)}{\sin(60^\circ)} = \frac{(0.70711 \cdot 1) - (0.70711 \cdot 0.5)}{0.86603} = \frac{0.35355}{0.86603} = 0.40825
+$$
+
+$$
+R_i = \text{arccot}(0.40825) = 67^\circ 47' \quad\text{(cuadrantal, medido desde el Norte hacia el Oeste)}
+$$
+
 Es decir, $R_i = \text{N } 67^\circ 47' \text{ W}$, que en rumbo verdadero circular equivale a $360^\circ - 67^\circ 47' = \mathbf{292^\circ 13' \text{ (T)}}$.
 
 *(Verificación cruzada mediante la Ley de Senos del apartado 1.3: $\sin(R_i) = \dfrac{\cos(l_B)\sin(\Delta L)}{\sin(D)} = \dfrac{0.70711 \cdot 0.86603}{0.66144} = 0.9259 \Rightarrow R_i = 67.79^\circ$, coincidente).*
 
 **c) Comparación con la Loxodrómica directa:**
 Como $l_A = l_B$, la diferencia de latitud es nula ($\Delta l = 0$), y la fórmula de estima analítica ($\Delta l = D_{loxo}\cdot\cos(R)$) solo se cumple con $\cos(R)=0$: el rumbo loxodrómico entre A y B es, por tanto, **exactamente $270^\circ$ (Oeste puro)**, navegando todo el tramo sobre el propio paralelo de $45^\circ$N. Su distancia es:
-$$ D_{loxo} = \Delta L(\text{en minutos}) \cdot \cos(l_m) = 3600' \cdot \cos(45^\circ) = 3600 \cdot 0.70711 = \mathbf{2545.6 \text{ millas náuticas}} $$
+
+$$
+D_{loxo} = \Delta L(\text{en minutos}) \cdot \cos(l_m) = 3600' \cdot \cos(45^\circ) = 3600 \cdot 0.70711 = \mathbf{2545.6 \text{ millas náuticas}}
+$$
 
 **Conclusión:** aunque el sentido común indica "poner rumbo 270° y navegar recto por el paralelo", el rumbo verdaderamente óptimo de salida es $292^\circ 13'$, **casi $22^\circ$ al Norte de la ruta loxodrómica directa**. El buque debe proyectar la proa visiblemente hacia el Noroeste al zarpar, remontar hasta el vértice —cuya latitud es $l_v = \arccos(\cos(l_A)\cdot\sin(R_i)) = \arccos(0.70711 \cdot 0.9259) = \arccos(0.6547) \approx 49^\circ 05' \text{ N}$— y descender simétricamente hasta B con un rumbo de aproximación final de $\text{S } 67^\circ 47' \text{ W} = 180^\circ + 67^\circ47' = \mathbf{247^\circ 47' \text{ (T)}}$, es decir, $22^\circ$ al Sur del rumbo directo (270°) en la llegada, simétrico respecto al de salida. El ahorro de distancia es de $2545.6 - 2484.6 \approx \mathbf{61 \text{ millas}}$ (un 2,4%), modesto en este caso porque $60^\circ$ de longitud es una separación moderada, pero el desvío de casi $22^\circ$ en el rumbo inicial —pese a partir y llegar en la misma latitud— ilustra bien por qué en rutas reales de este tipo (ver apartado 4.5, Gran Círculo del Atlántico Norte) el buque se ve empujado varios grados más al Norte de lo intuitivo, acercándose a las zonas de hielo y mal tiempo del apartado 4.

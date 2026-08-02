@@ -40,7 +40,12 @@ A diferencia de la corriente (que empuja todo el barco en masa), el viento choca
 **Resolución:**
 1. El viento entra por Babor → empuja el barco hacia Estribor → el abatimiento es **positivo**, según la regla de signos de este apartado.
 2. Aplicamos la fórmula de corrección:
-   $$ Rs = Rv + Ab = 090° + 6° = 096° $$
+   
+
+$$
+Rs = Rv + Ab = 090° + 6° = 096°
+$$
+
 3. **Conclusión:** Aunque la proa apunte a $090°$, el barco se está deslizando lateralmente y su rumbo de superficie real es $096°$. Si no se corrige, el barco terminará más al Sur de lo previsto en la carta (si no hay corriente adicional que combinar).
 
 *Nota:* Si a este resultado se le sumara además una corriente, el Rs de $096°$ pasaría a usarse como el rumbo del vector propio del barco para la composición vectorial con la corriente (ver apartado 1), nunca al revés.
@@ -72,19 +77,53 @@ Al sumar los diferenciales a nuestra posición de salida, obtenemos nuestra posi
 
 **Resolución:**
 1. **Distancia navegada:**
-   $$ D = Vb \times t = 8 \text{ nudos} \times 2.5\text{ h} = 20 \text{ millas náuticas} $$
+   
+
+$$
+D = Vb \times t = 8 \text{ nudos} \times 2.5\text{ h} = 20 \text{ millas náuticas}
+$$
+
 2. **Diferencia de latitud** (con $R = 60°$ respecto al Norte, cuadrante NE):
-   $$ \Delta l = D \times \cos(R) = 20 \times \cos(60°) = 20 \times 0.5 = 10.0' \ (\text{hacia el N, mismo signo que la componente N del rumbo}) $$
+   
+
+$$
+\Delta l = D \times \cos(R) = 20 \times \cos(60°) = 20 \times 0.5 = 10.0' \ (\text{hacia el N, mismo signo que la componente N del rumbo})
+$$
+
 3. **Apartamiento:**
-   $$ A = D \times \sin(R) = 20 \times \sin(60°) = 20 \times 0.866 = 17.3' \ (\text{hacia el E}) $$
+   
+
+$$
+A = D \times \sin(R) = 20 \times \sin(60°) = 20 \times 0.866 = 17.3' \ (\text{hacia el E})
+$$
+
 4. **Latitud de llegada:**
-   $$ l_{llegada} = 36° 00.0' N + 10.0' = 36° 10.0' N $$
+   
+
+$$
+l_{llegada} = 36° 00.0' N + 10.0' = 36° 10.0' N
+$$
+
 5. **Latitud media** (para corregir la convergencia de meridianos):
-   $$ l_m = \frac{36°00.0' + 36°10.0'}{2} = 36° 05.0' N $$
+   
+
+$$
+l_m = \frac{36°00.0' + 36°10.0'}{2} = 36° 05.0' N
+$$
+
 6. **Diferencia de longitud:**
-   $$ \Delta L = \frac{A}{\cos(l_m)} = \frac{17.3'}{\cos(36°05.0')} = \frac{17.3'}{0.8078} \approx 21.4' \ (\text{hacia el E, porque el rumbo tiene componente Este}) $$
+   
+
+$$
+\Delta L = \frac{A}{\cos(l_m)} = \frac{17.3'}{\cos(36°05.0')} = \frac{17.3'}{0.8078} \approx 21.4' \ (\text{hacia el E, porque el rumbo tiene componente Este})
+$$
+
 7. **Longitud de llegada** (la longitud de salida es W, y avanzamos hacia el E, por lo que el valor W disminuye):
-   $$ L_{llegada} = 005° 30.0' W - 21.4' = 005° 08.6' W $$
+   
+
+$$
+L_{llegada} = 005° 30.0' W - 21.4' = 005° 08.6' W
+$$
 
 **Posición estimada de llegada:** $36° 10.0' N$, $005° 08.6' W$.
 

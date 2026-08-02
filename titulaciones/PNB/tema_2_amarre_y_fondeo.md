@@ -86,16 +86,21 @@ Una embarcación de $7.5\text{ m}$ de eslora está fondeada en $10\text{ m}$ de 
 
 **Solución:**
 Utilizamos la ecuación de la catenaria para tracción horizontal:
+
 $$
 L_c = \sqrt{h^2 + 2h \cdot \frac{T_0}{w}}
 $$
+
 Sustituyendo valores:
+
 $$
 L_c = \sqrt{10^2 + 2(10) \cdot \frac{1200}{25}}
 $$
+
 $$
 L_c = \sqrt{100 + 20 \cdot 48} = \sqrt{100 + 960} = \sqrt{1060} \approx 32.55\text{ m}
 $$
+
 La longitud mínima teórica es de $32.55\text{ m}$. Esto justifica la regla de fondear al menos $3\text{-}4$ veces la profundidad ($30\text{-}40\text{ m}$).
 
 ## Referencias Bibliográficas y Jurisprudencia

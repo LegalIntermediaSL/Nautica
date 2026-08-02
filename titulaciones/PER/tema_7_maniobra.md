@@ -8,8 +8,13 @@ El arte de la maniobra exige dominar el barco en distancias extremadamente corta
 
 La maniobrabilidad depende del principio de Bernoulli y de las leyes de Newton. La pala del timón actúa como un perfil aerodinámico (ala), generando una fuerza de sustentación lateral ($L$, *Lift*) y una resistencia al avance ($D$, *Drag*):
 
-$$ L = \frac{1}{2} \rho v^2 C_L A $$
-$$ D = \frac{1}{2} \rho v^2 C_d A $$
+$$
+L = \frac{1}{2} \rho v^2 C_L A
+$$
+
+$$
+D = \frac{1}{2} \rho v^2 C_d A
+$$
 
 Donde $v$ es la velocidad del flujo de agua (Corriente de Expulsión o Aspiración). Si la hélice escupe agua contra el timón metido a una banda, se genera una sustentación masiva instantánea, causando que la popa derrape, permitiendo la "Ciaboga" en el sitio.
 
@@ -52,7 +57,9 @@ La embarcación está sometida a dos medios fluidos con diferentes densidades ($
 El ancla no sujeta por peso, sino por ángulo de tiro. El peso de la cadena forma una curva matemática hiperbólica (Catenaria) cuyo propósito es que el ángulo de tiro en la uña del ancla ($ \theta $) sea exactamente de 0º (paralelo al fondo marino).
 La ecuación de la catenaria se define como:
 
-$$ y = a \cosh\left(\frac{x}{a}\right) $$
+$$
+y = a \cosh\left(\frac{x}{a}\right)
+$$
 
 Donde $a = T_0 / w$, siendo $T_0$ la tensión horizontal y $w$ el peso lineal de la cadena en el agua.
 
@@ -75,19 +82,38 @@ Para evitar garrear, el ángulo de la cadena con el fondo debe ser cero. Calcule
 
 *Resolución:*
 La tensión en el punto más bajo (ancla) es puramente horizontal y vale $T_0$. La relación de la geometría de la catenaria con la longitud del arco se define paramétricamente, pero para encontrar la longitud de cadena suspendida ($s$) que alcanza la profundidad $h = 10 \text{ m}$ con pendiente cero en el origen, usamos la relación fundamental:
-$$ h = a \left( \cosh\left(\frac{x}{a}\right) - 1 \right) \quad \text{y} \quad s = a \sinh\left(\frac{x}{a}\right) $$
+
+$$
+h = a \left( \cosh\left(\frac{x}{a}\right) - 1 \right) \quad \text{y} \quad s = a \sinh\left(\frac{x}{a}\right)
+$$
+
 Donde el parámetro $a = \frac{T_0}{w}$.
 
 Calculamos el parámetro $a$:
-$$ a = \frac{3000 \text{ N}}{25 \text{ N/m}} = 120 \text{ m} $$
+
+$$
+a = \frac{3000 \text{ N}}{25 \text{ N/m}} = 120 \text{ m}
+$$
 
 Usamos la identidad hiperbólica $\cosh^2(z) - \sinh^2(z) = 1$. Se puede demostrar que para una catenaria, la relación entre profundidad $h$, longitud $s$ y el parámetro $a$ es:
-$$ s^2 = h^2 + 2ah $$
+
+$$
+s^2 = h^2 + 2ah
+$$
 
 Sustituyendo los valores conocidos:
-$$ s^2 = (10)^2 + 2(120)(10) $$
-$$ s^2 = 100 + 2400 = 2500 $$
-$$ s = \sqrt{2500} = 50 \text{ metros} $$
+
+$$
+s^2 = (10)^2 + 2(120)(10)
+$$
+
+$$
+s^2 = 100 + 2400 = 2500
+$$
+
+$$
+s = \sqrt{2500} = 50 \text{ metros}
+$$
 
 Se requieren filar teóricamente **50 metros** de cadena para que la tracción sobre el ancla sea paralela al lecho marino. Esto equivale exactamente a una relación de 5 veces la sonda, confirmando matemáticamente la regla empírica del filado en condiciones duras.
 
@@ -98,12 +124,24 @@ Calcule la fuerza de sustentación lateral ($L$) que provoca el derrape de la po
 
 *Resolución:*
 Fuerza lateral del timón:
-$$ L = \frac{1}{2} \rho v^2 C_L A $$
-$$ L = \frac{1}{2} (1025) (3.08)^2 (0.9) (0.8) $$
-$$ L = \frac{1}{2} (1025) (9.4864) (0.72) \approx 3500.5 \text{ N} $$
+
+$$
+L = \frac{1}{2} \rho v^2 C_L A
+$$
+
+$$
+L = \frac{1}{2} (1025) (3.08)^2 (0.9) (0.8)
+$$
+
+$$
+L = \frac{1}{2} (1025) (9.4864) (0.72) \approx 3500.5 \text{ N}
+$$
 
 Momento torsor respecto al Pivot Point:
-$$ M = L \times r = 3500.5 \text{ N} \times 5 \text{ m} = 17502.5 \text{ Nm} $$
+
+$$
+M = L \times r = 3500.5 \text{ N} \times 5 \text{ m} = 17502.5 \text{ Nm}
+$$
 
 Este momento masivo vence la resistencia hidrodinámica del casco, iniciando la curva evolutiva del navío.
 

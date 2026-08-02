@@ -29,13 +29,21 @@ El impedimento definitivo de la visibilidad no es la fotonesfera, sino la litosf
 El cálculo del alcance en navegación costera utiliza trigonometría asumiendo una refracción atmosférica estándar (la luz tiende a "doblarse" ligeramente hacia la tierra por el gradiente de densidad térmica, agrandando el horizonte en torno al 8%).
 
 La distancia en millas marinas $d$ a la que un objeto de altura $E$ es tangente al horizonte visible para un observador en un punto elevado $e$ se calcula analíticamente derivando el Teorema de Pitágoras sobre el elipsoide expandido para refracción:
-$$ d_{\text{geo}} = 2,08 \cdot \left(\sqrt{E} + \sqrt{e}\right) $$
+
+$$
+d_{\text{geo}} = 2,08 \cdot \left(\sqrt{E} + \sqrt{e}\right)
+$$
+
 Donde $d_{\text{geo}}$ es el resultado en millas, $E$ es la elevación focal del faro y $e$ es la altura del ojo del observador (ambas variables insertadas obligatoriamente en metros).
 
 > [!TIP]
 > **Umbral Lógico de Avistamiento:**
 > La detección ocular ($d_{\text{real}}$) estará gobernada por la función MÍNIMA entre lo que permite la termodinámica atmosférica ($D_L$, Alcance Luminoso) y la trigonometría terrestre ($d_{\text{geo}}$):
-> $$ d_{\text{real}} = \min(D_L, d_{\text{geo}}) $$
+> 
+
+$$
+d_{\text{real}} = \min(D_L, d_{\text{geo}})
+$$
 
 ## 3. Catálogo Monumental e Hitos de Geoposicionamiento
 
@@ -78,12 +86,27 @@ A bordo de un buque mercantil, el observador tiene los ojos situados a una altur
 **Solución:**
 El alcance fotométrico es $D_N = 20 \text{ millas}$. 
 Ahora calculamos el límite geométrico interpuesto por el esferoide terrestre. La fórmula del alcance geográfico en millas náuticas, corregida por refracción atmosférica, es:
-$$ d_{\text{geo}} = 2.08 \cdot \left( \sqrt{E} + \sqrt{e} \right) $$
+
+$$
+d_{\text{geo}} = 2.08 \cdot \left( \sqrt{E} + \sqrt{e} \right)
+$$
+
 Sustituyendo los valores de las elevaciones en metros:
-$$ d_{\text{geo}} = 2.08 \cdot \left( \sqrt{81} + \sqrt{15} \right) $$
-$$ d_{\text{geo}} = 2.08 \cdot (9 + 3.873) = 2.08 \cdot 12.873 \approx 26.77 \text{ millas náuticas} $$
+
+$$
+d_{\text{geo}} = 2.08 \cdot \left( \sqrt{81} + \sqrt{15} \right)
+$$
+
+$$
+d_{\text{geo}} = 2.08 \cdot (9 + 3.873) = 2.08 \cdot 12.873 \approx 26.77 \text{ millas náuticas}
+$$
+
 El alcance de avistamiento real obedece al principio de restricción fundamental: la luz no puede ser vista más allá de lo que permite su potencia óptica, ni antes de sortear la curvatura de la Tierra.
-$$ d_{\text{real}} = \min(D_N, d_{\text{geo}}) = \min(20, 26.77) = 20 \text{ millas} $$
+
+$$
+d_{\text{real}} = \min(D_N, d_{\text{geo}}) = \min(20, 26.77) = 20 \text{ millas}
+$$
+
 El navegante avistará el faro a 20 millas, condicionado estrictamente por la debilidad de la candela luminosa (Alcance Nominal) y no por la obstrucción del horizonte de la Tierra.
 
 ## Referencias Bibliográficas y Jurisprudencia

@@ -9,7 +9,12 @@ Para el Patrón de Yate de Altura, la meteorología trasciende la simple lectura
 La atmósfera actúa como un fluido compresible cuyo comportamiento termodinámico está gobernado por la **Ley de los Gases Ideales**.
 
 *   **Ecuación de Estado Atmosférico:**
-    $$ P = \rho \cdot R_d \cdot T $$
+    
+
+$$
+P = \rho \cdot R_d \cdot T
+$$
+
     Donde $P$ es la presión (Pa), $\rho$ es la densidad del aire, $R_d$ la constante específica del aire seco ($287.05 \text{ J/kg}\cdot\text{K}$) y $T$ la temperatura absoluta en Kelvin.
 *   **Presión Atmosférica Estándar (ISA):** $1013.25 \text{ hPa}$ a nivel medio del mar, con un gradiente térmico de $-6.5^\circ\text{C}$ cada $1000 \text{ metros}$.
 
@@ -22,7 +27,9 @@ La cantidad de vapor de agua depende de la presión de vapor de saturación ($e_
 
 El viento no es solo aire moviéndose de la alta a la baja; es el balance complejo de múltiples fuerzas vectoriales en un sistema de coordenadas en rotación. La aceleración de una parcela de aire está dictada por la ecuación del momento de Navier-Stokes simplificada:
 
-$$ \frac{d\vec{V}}{dt} = -\frac{1}{\rho}\vec{\nabla}P - 2\vec{\Omega} \times \vec{V} + \vec{g} + \vec{F}_r $$
+$$
+\frac{d\vec{V}}{dt} = -\frac{1}{\rho}\vec{\nabla}P - 2\vec{\Omega} \times \vec{V} + \vec{g} + \vec{F}_r
+$$
 
 1.  **Fuerza del Gradiente de Presión ($-\frac{1}{\rho}\vec{\nabla}P$):** Empuja el aire perpendicular a las isobaras, desde la Alta a la Baja.
 2.  **Fuerza de Coriolis ($-2\vec{\Omega} \times \vec{V}$):** Aceleración aparente por la rotación del planeta ($\Omega$). Desvía el flujo $90^\circ$ a la derecha del movimiento en el Hemisferio Norte.
@@ -30,7 +37,11 @@ $$ \frac{d\vec{V}}{dt} = -\frac{1}{\rho}\vec{\nabla}P - 2\vec{\Omega} \times \ve
 
 ### 2.1 Viento Geostrófico y Viento del Gradiente
 A niveles superiores de la atmósfera ($\sim 500 \text{ hPa}$), la fricción es despreciable ($\vec{F}_r = 0$). Cuando el flujo alcanza el estado estacionario y isobaras rectas, la fuerza del gradiente equilibra exactamente a Coriolis. Este es el **Viento Geostrófico ($V_g$)**, que fluye paralelo a las isobaras:
-$$ V_g = \frac{1}{\rho \cdot f} \cdot \frac{\partial P}{\partial n} $$
+
+$$
+V_g = \frac{1}{\rho \cdot f} \cdot \frac{\partial P}{\partial n}
+$$
+
 Donde $f = 2\Omega\sin(\phi)$ es el parámetro de Coriolis (siendo $\phi$ la latitud) y $\frac{\partial P}{\partial n}$ el gradiente de presión.
 
 ### 2.2 Viento de Superficie y Espiral de Ekman
@@ -88,7 +99,11 @@ stateDiagram-v2
 
 La interacción aire-mar genera oleaje, gobernado por transferencia de momento.
 La altura significativa de las olas ($H_s$, promedio del tercio más alto) es función de:
-$$ H_s \propto f(V_{\text{viento}}, F, T_d) $$
+
+$$
+H_s \propto f(V_{\text{viento}}, F, T_d)
+$$
+
 Donde $F$ es el **Fetch** (distancia libre de obstáculos), y $T_d$ es la **Duración** del soplo ininterrumpido. Un mar se considera "completamente desarrollado" cuando el viento no puede añadirle más energía y se ha alcanzado la saturación espectral (Ecuación de Pierson-Moskowitz).
 
 *   **Mar de Viento (Sea):** Olas asimétricas, periodo corto, y con longitud de onda corta ($\lambda$), altamente escarpadas. Frecuentemente presentan crestas rompientes (whitecaps).
@@ -147,37 +162,106 @@ Un yate navega a latitud $\phi = 45^\circ\text{ N}$. Un análisis sinóptico de 
 
 *Resolución:*
 1.  **Cálculo del parámetro de Coriolis ($f$):**
-    $$ f = 2 \Omega \sin(\phi) = 2 \cdot (7.292 \times 10^{-5}) \cdot \sin(45^\circ) $$
-    $$ f \approx 2 \cdot (7.292 \times 10^{-5}) \cdot 0.7071 \approx 1.031 \times 10^{-4}\text{ s}^{-1} $$
+    
+
+$$
+f = 2 \Omega \sin(\phi) = 2 \cdot (7.292 \times 10^{-5}) \cdot \sin(45^\circ)
+$$
+
+    
+
+$$
+f \approx 2 \cdot (7.292 \times 10^{-5}) \cdot 0.7071 \approx 1.031 \times 10^{-4}\text{ s}^{-1}
+$$
+
 2.  **Conversión de unidades del Gradiente de Presión:**
-    $$ \Delta P = 8\text{ hPa} = 800\text{ Pa (N/m}^2) $$
-    $$ \Delta n = 200\text{ km} = 200,000\text{ m} $$
-    $$ \frac{\partial P}{\partial n} \approx \frac{\Delta P}{\Delta n} = \frac{800}{200,000} = 0.004\text{ Pa/m} $$
+    
+
+$$
+\Delta P = 8\text{ hPa} = 800\text{ Pa (N/m}^2)
+$$
+
+    
+
+$$
+\Delta n = 200\text{ km} = 200,000\text{ m}
+$$
+
+    
+
+$$
+\frac{\partial P}{\partial n} \approx \frac{\Delta P}{\Delta n} = \frac{800}{200,000} = 0.004\text{ Pa/m}
+$$
+
 3.  **Cálculo del Viento Geostrófico:**
-    $$ V_g = \frac{1}{\rho \cdot f} \frac{\partial P}{\partial n} $$
-    $$ V_g = \frac{1}{0.65 \cdot 1.031 \times 10^{-4}} \cdot 0.004 $$
-    $$ V_g = \frac{0.004}{6.7015 \times 10^{-5}} \approx 59.68\text{ m/s} $$
+    
+
+$$
+V_g = \frac{1}{\rho \cdot f} \frac{\partial P}{\partial n}
+$$
+
+    
+
+$$
+V_g = \frac{1}{0.65 \cdot 1.031 \times 10^{-4}} \cdot 0.004
+$$
+
+    
+
+$$
+V_g = \frac{0.004}{6.7015 \times 10^{-5}} \approx 59.68\text{ m/s}
+$$
+
 4.  **Conversión a nudos ($1\text{ m/s} = 1.94384\text{ nudos}$):**
-    $$ V_g \text{ (kn)} = 59.68 \cdot 1.94384 \approx 116\text{ nudos} $$
+    
+
+$$
+V_g \text{ (kn)} = 59.68 \cdot 1.94384 \approx 116\text{ nudos}
+$$
+
     *(Un valor indicativo de una corriente en chorro severa en la capa media).*
 
 **Problema 2: Altura Significativa de Oleaje mediante Análisis Espectral de Esfuerzo de Corte**
 Durante el tránsito del huracán monzónico sobre la cuenca del Atlántico Norte, el viento de superficie registrado ($U_{10}$) se sostiene a $25\text{ m/s}$ a $10\text{ metros}$ sobre el nivel del mar. La transferencia de momento aerodinámico responde a una tensión tangencial (esfuerzo cortante del viento) $\tau = \rho_{\text{aire}} \cdot C_D \cdot U_{10}^2$. Suponga que la densidad del aire en la frontera marina húmeda es $\rho_{\text{aire}} = 1.22\text{ kg/m}^3$ y el coeficiente empírico de arrastre es $C_D = 2.0 \times 10^{-3}$.
 El modelo de ola totalmente desarrollada empírico (Límite de Pierson-Moskowitz) estima que la altura significativa de ola ($H_s$) es proporcional a la energía transferida según la aproximación simplificada en estas condiciones de extremo Fetch:
-$$ H_s = \frac{0.22 \cdot U_{10}^2}{g} $$
+
+$$
+H_s = \frac{0.22 \cdot U_{10}^2}{g}
+$$
+
 Determine la tensión cortante generada sobre la cubierta de un buque y calcule la altura máxima espectral esperable ($H_{1/1000}$, calculada empíricamente como $1.86 \cdot H_s$). (Use $g = 9.81\text{ m/s}^2$).
 
 *Resolución:*
 1.  **Cálculo de la Tensión Cortante del Viento ($\tau$):**
-    $$ \tau = 1.22 \cdot (2.0 \times 10^{-3}) \cdot (25)^2 = 1.22 \cdot 0.002 \cdot 625 $$
-    $$ \tau = 1.22 \cdot 1.25 = 1.525\text{ N/m}^2 $$
+    
+
+$$
+\tau = 1.22 \cdot (2.0 \times 10^{-3}) \cdot (25)^2 = 1.22 \cdot 0.002 \cdot 625
+$$
+
+    
+
+$$
+\tau = 1.22 \cdot 1.25 = 1.525\text{ N/m}^2
+$$
+
     *Este nivel de "wind shear" pulveriza la cima de la ola creando aerosoles blanquecinos (Spray ceguera blanca).*
 2.  **Cálculo de la Altura Significativa ($H_s$) del Mar Completamente Desarrollado:**
-    $$ H_s = \frac{0.22 \cdot (25)^2}{9.81} = \frac{0.22 \cdot 625}{9.81} = \frac{137.5}{9.81} \approx 14.02\text{ metros} $$
+    
+
+$$
+H_s = \frac{0.22 \cdot (25)^2}{9.81} = \frac{0.22 \cdot 625}{9.81} = \frac{137.5}{9.81} \approx 14.02\text{ metros}
+$$
+
     *Esto representa un estado de mar Nivel Douglas 8 a 9 (Mar Arbolada/Enorme).*
 3.  **Cálculo de la Ola Máxima Espectral Individual Esperable ($H_{1/1000}$):**
     Por probabilidad de Rayleigh estadística, la ola anómala ("freak wave") en la cola de la distribución de Rayleigh de mil olas es un $86\%$ más alta.
-    $$ H_{\text{máx}} \approx 1.86 \cdot 14.02 \approx 26.08\text{ metros} $$
+    
+
+$$
+H_{\text{máx}} \approx 1.86 \cdot 14.02 \approx 26.08\text{ metros}
+$$
+
     *Riesgo catastrófico real de zozobra longitudinal (pitch-poling) para un yate.*
 
 **Problema 3: Termodinámica Adiabática y Elevación de la Base Nubosa (Nivel de Condensación por Ascenso - LCL)**
@@ -191,13 +275,33 @@ Calcule la altitud geopotencial exacta de la base de los Cumulonimbos incipiente
     Ecuación de la Temperatura en ascenso: $T(Z) = T_0 - \Gamma_d \cdot Z$
     Ecuación del Pto. de Rocío en ascenso: $T_d(Z) = T_{d0} - \Gamma_w \cdot Z$
 2.  **Condición de Saturación ($RH = 100\%$):**
-    $$ T_0 - \Gamma_d \cdot Z = T_{d0} - \Gamma_w \cdot Z $$
-    $$ T_0 - T_{d0} = Z \cdot (\Gamma_d - \Gamma_w) $$
-    $$ Z = \frac{T_0 - T_{d0}}{\Gamma_d - \Gamma_w} $$
+    
+
+$$
+T_0 - \Gamma_d \cdot Z = T_{d0} - \Gamma_w \cdot Z
+$$
+
+    
+
+$$
+T_0 - T_{d0} = Z \cdot (\Gamma_d - \Gamma_w)
+$$
+
+    
+
+$$
+Z = \frac{T_0 - T_{d0}}{\Gamma_d - \Gamma_w}
+$$
+
 3.  **Sustitución en Gradientes Térmicos Atmosféricos:**
     Gradiente neto de convergencia: $\Gamma_d - \Gamma_w = 9.8 - 1.8 = 8.0^\circ\text{C}/1000\text{ m}$ (ó $0.008^\circ\text{C/m}$).
     Depresión psicrométrica inicial: $T_0 - T_{d0} = 28^\circ\text{C} - 22^\circ\text{C} = 6^\circ\text{C}$.
-    $$ Z = \frac{6}{0.008} = 750\text{ metros} $$
+    
+
+$$
+Z = \frac{6}{0.008} = 750\text{ metros}
+$$
+
     *Respuesta: La cota de niebla orográfica y base nubosa convectiva se asienta sólidamente a $750$ metros MSL. Por encima de esta altitud, el gradiente pasará a ser el adiabático saturado (SALR) y el calor latente liberado alimentará ciclogénesis local explosiva.*
 
 ## Referencias Bibliográficas y Jurisprudencia

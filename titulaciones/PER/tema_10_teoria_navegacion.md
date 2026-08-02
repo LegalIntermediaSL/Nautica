@@ -46,7 +46,11 @@ Para transformar el dato físico de la brújula en un rumbo loxodrómico traza-b
 
 ### Error 1: Declinación Magnética ($dm$ o $D$)
 Ángulo entre $N_v$ y $N_m$. Este dato depende de las coordenadas $(l, L)$ y del tiempo ($t$). En las cartas, viene tabulado con un incremento secular. 
-$$ dm_t = dm_0 + \Delta t \cdot (\text{variación anual}) $$
+
+$$
+dm_t = dm_0 + \Delta t \cdot (\text{variación anual})
+$$
+
 *   *Convención de Signos:* Este ($+$), Oeste ($-$).
 
 ### Error 2: Desvío de Aguja ($\Delta$)
@@ -55,19 +59,34 @@ $$ dm_t = dm_0 + \Delta t \cdot (\text{variación anual}) $$
 
 ### La Corrección Total ($C_t$)
 Es la sumatoria algebraica de las dos perturbaciones:
-$$ C_t = dm + \Delta $$
+
+$$
+C_t = dm + \Delta
+$$
 
 ### Ecuaciones Fundamentales del Triángulo de Rumbos
 Para plasmar la lectura de la aguja en el mundo real (carta):
-$$ R_v = R_a + C_t $$
+
+$$
+R_v = R_a + C_t
+$$
+
 *(Rumbo Verdadero = Rumbo de Aguja + Corrección Total)*
 
 Para indicarle al timonel qué lectura mantener basándonos en un trazado cartográfico ideal:
-$$ R_a = R_v - C_t $$
+
+$$
+R_a = R_v - C_t
+$$
+
 *(Rumbo de Aguja = Rumbo Verdadero - Corrección Total)*
 
 Para las marcaciones y demoras (observaciones de puntos conspicuos de la costa con la pínula):
-$$ D_v = D_a + C_t $$
+
+$$
+D_v = D_a + C_t
+$$
+
 De manera análoga, la demora verdadera ($D_v$) corrige el sesgo magnético local de nuestra observación.
 
 ## Ejemplos Prácticos
@@ -77,14 +96,33 @@ Un buque navegando en latitud $\phi = 36^\circ 00' \text{N}$ y longitud $\lambda
 
 **Solución:**
 Sabemos que la Corrección Total se define geométricamente como:
-$$ C_t = Z_v - Z_a $$
+
+$$
+C_t = Z_v - Z_a
+$$
+
 Sustituyendo los valores angulares:
-$$ C_t = 000^\circ - 358.5^\circ = -358.5^\circ \equiv +1.5^\circ \text{ (Este)} $$
+
+$$
+C_t = 000^\circ - 358.5^\circ = -358.5^\circ \equiv +1.5^\circ \text{ (Este)}
+$$
+
 Ahora calculamos la Declinación Magnética actualizada ($dm_t$). El valor original es $dm_0 = -2^\circ$ (Oeste). La variación es $-5'$ al año, disminuyendo hacia el Oeste, es decir, volviéndose menos negativo (desplazándose al Este).
-$$ \text{Variación Total} = 6 \text{ años} \times (+5'/ \text{año}) = +30' = +0.5^\circ $$
-$$ dm_t = -2.0^\circ + 0.5^\circ = -1.5^\circ \text{ (Oeste)} $$
+
+$$
+\text{Variación Total} = 6 \text{ años} \times (+5'/ \text{año}) = +30' = +0.5^\circ
+$$
+
+$$
+dm_t = -2.0^\circ + 0.5^\circ = -1.5^\circ \text{ (Oeste)}
+$$
+
 Como $C_t = dm_t + \Delta$, despejamos el desvío:
-$$ \Delta = C_t - dm_t = (+1.5^\circ) - (-1.5^\circ) = +3.0^\circ \text{ (Este)} $$
+
+$$
+\Delta = C_t - dm_t = (+1.5^\circ) - (-1.5^\circ) = +3.0^\circ \text{ (Este)}
+$$
+
 El desvío propio de los hierros del barco en ese rumbo es de $3^\circ$ a estribor.
 
 ## Referencias Bibliográficas y Jurisprudencia

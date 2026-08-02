@@ -27,7 +27,9 @@ Si nunca has pisado un barco, empieza por aquí. Estas son las palabras que el i
 
 La flotabilidad de una embarcación menor se rige por el Principio de Arquímedes. El desplazamiento $\Delta$ de la nave en condiciones de carga máxima (considerando el límite estructural para pequeñas esloras) se define mediante la ecuación de equilibrio hidrostático:
 
-$$ \Delta = \rho_{\text{agua}} \cdot g \cdot \nabla $$
+$$
+\Delta = \rho_{\text{agua}} \cdot g \cdot \nabla
+$$
 
 Donde:
 * $\Delta$ es la fuerza de empuje o desplazamiento expresada en Newtons ($\text{N}$).
@@ -37,11 +39,15 @@ Donde:
 
 Para asegurar la estabilidad estática transversal en ángulos de escora pequeños (esencial en embarcaciones de recreo propensas a la traslación de pesos en cubierta), el momento adrizante $M_R$ se cuantifica con la siguiente aproximación en régimen lineal:
 
-$$ M_R = \Delta \cdot GZ \approx \Delta \cdot GM \cdot \sin(\theta) $$
+$$
+M_R = \Delta \cdot GZ \approx \Delta \cdot GM \cdot \sin(\theta)
+$$
 
 Siendo $GM$ la altura metacéntrica, la cual determina el diferencial termodinámico de la estabilidad de la nave:
 
-$$ GM = KB + BM - KG $$
+$$
+GM = KB + BM - KG
+$$
 
 ### Diagrama de Fuerzas de Estabilidad
 
@@ -60,7 +66,9 @@ graph TD
 
 Las embarcaciones limitadas a navegaciones cortas están sujetas a esfuerzos mecánicos transitorios derivados del oleaje de alta frecuencia cerca de la costa. La tensión longitudinal máxima $T_{\text{max}}$ sobre una cornamusa de amarre durante un fondeo de emergencia puede modelarse teóricamente basándose en la disipación de la energía cinética:
 
-$$ T_{\text{max}} = \sqrt{ \frac{k \cdot m \cdot v^2}{L} } $$
+$$
+T_{\text{max}} = \sqrt{ \frac{k \cdot m \cdot v^2}{L} }
+$$
 
 Donde $k$ representa la constante elástica de rigidez de la línea de fondeo, $m$ la masa inercial de la embarcación, $v$ la velocidad de oscilación o deriva frente a la racha de viento, y $L$ la longitud efectiva del cabo desplegado.
 
@@ -76,21 +84,54 @@ Determine analíticamente la altura metacéntrica $GM$ y el momento adrizante $M
 
 1. **Cálculo del Desplazamiento ($\Delta$):**
    Utilizando la ecuación del equilibrio hidrostático:
-   $$ \Delta = \rho_{\text{agua}} \cdot g \cdot \nabla $$
-   $$ \Delta = (1025 \, \text{kg/m}^3) \cdot (9.81 \, \text{m/s}^2) \cdot (1.2 \, \text{m}^3) $$
-   $$ \Delta = 12066.3 \, \text{N} $$
+   
+
+$$
+\Delta = \rho_{\text{agua}} \cdot g \cdot \nabla
+$$
+
+   
+
+$$
+\Delta = (1025 \, \text{kg/m}^3) \cdot (9.81 \, \text{m/s}^2) \cdot (1.2 \, \text{m}^3)
+$$
+
+   
+
+$$
+\Delta = 12066.3 \, \text{N}
+$$
 
 2. **Determinación de la Altura Metacéntrica ($GM$):**
    A partir de la geometría de masas del casco:
-   $$ GM = BM - BG $$
-   $$ GM = 1.1 \, \text{m} - 0.4 \, \text{m} = 0.7 \, \text{m} $$
+   
+
+$$
+GM = BM - BG
+$$
+
+   
+
+$$
+GM = 1.1 \, \text{m} - 0.4 \, \text{m} = 0.7 \, \text{m}
+$$
+
    Dado que $GM > 0$, concluimos matemáticamente que la embarcación goza de un equilibrio inicial inherentemente estable.
 
 3. **Cálculo del Brazo Adrizante ($GZ$) y Momento Adrizante ($M_R$):**
    Aplicando la condición de linealidad para ángulos moderados ($\theta \le 15^\circ$):
-   $$ GZ \approx GM \cdot \sin(10^\circ) = 0.7 \cdot 0.1736 \approx 0.1215 \, \text{m} $$
+   
+
+$$
+GZ \approx GM \cdot \sin(10^\circ) = 0.7 \cdot 0.1736 \approx 0.1215 \, \text{m}
+$$
+
    El momento restaurador resultante será:
-   $$ M_R = \Delta \cdot GZ = 12066.3 \, \text{N} \cdot 0.1215 \, \text{m} \approx 1466.05 \, \text{N}\cdot\text{m} $$
+   
+
+$$
+M_R = \Delta \cdot GZ = 12066.3 \, \text{N} \cdot 0.1215 \, \text{m} \approx 1466.05 \, \text{N}\cdot\text{m}
+$$
 
 ## Referencias Bibliográficas y Jurisprudencia
 

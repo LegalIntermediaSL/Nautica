@@ -87,13 +87,23 @@ Relativas a la posición y horizonte del navegante.
 *   **Declinación ($\delta$ o $Dec$):** Distancia angular desde el Ecuador Celeste. Va de $0^\circ$ a $90^\circ$ Norte (+) o Sur (-). Equivalente cósmico de la **Latitud**.
 *   **Ángulo Horario Local ($hL$):** Ángulo de $0^\circ$ a $360^\circ$ hacia el **Oeste**, medido desde el meridiano superior del observador hasta el semicírculo horario del astro.
 *   **Ángulo Horario en Greenwich ($hG$):** Exactamente igual pero medido desde el Meridiano Principal (Greenwich).
-    $$ hL = hG + L_{\text{observador}} $$ (Adoptando longitud Este +, Oeste -).
+    
+
+$$
+hL = hG + L_{\text{observador}}
+$$
+
+ (Adoptando longitud Este +, Oeste -).
 
 ### 3.3. Coordenadas Ecuatoriales Uranográficas (Fijas en las Estrellas)
 Para catalogar estrellas estáticas, se usa el "Greenwich de las Estrellas", que es el **Punto Vernal o Primer Punto de Aries ($\gamma$)** (donde el Sol cruza al Norte del ecuador en Primavera).
 *   **Ángulo Sidéreo ($AS$):** Ángulo medido de Este a **Oeste** desde el Meridiano de Aries hasta la estrella.
 *   **Ascensión Recta ($AR$ o $\alpha$):** Se mide de Oeste a **Este**. Por tanto, $AR = 360^\circ - AS$. Se suele medir en horas (0 a 24h).
-    $$ hG_{\text{estrella}} = hG_{\text{Aries}} + AS_{\text{estrella}} $$
+    
+
+$$
+hG_{\text{estrella}} = hG_{\text{Aries}} + AS_{\text{estrella}}
+$$
 
 ---
 
@@ -119,11 +129,15 @@ La navegación es la resolución pura del gigantesco triángulo curvado dibujado
 
 Para resolver este triángulo y hallar la Altura Estimada ($a_e$) y el Azimut ($Z$), utilizamos la **Ley de los Cosenos para lados esféricos** (conocida en náutica como *Fórmula de la Cosenusa*):
 
-$$ \cos(z) = \cos(c) \cdot \cos(\Delta) + \sin(c) \cdot \sin(\Delta) \cdot \cos(P) $$
+$$
+\cos(z) = \cos(c) \cdot \cos(\Delta) + \sin(c) \cdot \sin(\Delta) \cdot \cos(P)
+$$
 
 Sustituyendo por Lat, Dec y $a_e$:
 
-$$ \sin(a_e) = \sin(l_e) \cdot \sin(Dec) + \cos(l_e) \cdot \cos(Dec) \cdot \cos(P) $$
+$$
+\sin(a_e) = \sin(l_e) \cdot \sin(Dec) + \cos(l_e) \cdot \cos(Dec) \cdot \cos(P)
+$$
 
 ---
 
@@ -250,15 +264,31 @@ Calcule la Altura Estimada ($a_e$) de la estrella Sirio para un observador situa
 
 *Solución:*
 Fórmula de la altura estimada:
-$$ \sin(a_e) = \sin(l_e) \cdot \sin(Dec) + \cos(l_e) \cdot \cos(Dec) \cdot \cos(P) $$
+
+$$
+\sin(a_e) = \sin(l_e) \cdot \sin(Dec) + \cos(l_e) \cdot \cos(Dec) \cdot \cos(P)
+$$
 
 Criterio de signos: Al ser la Latitud Norte (+) y la Declinación Sur (-), tomaremos el primer término como negativo en la suma. Para evitar errores, usamos valores con signo: $l_e = +40^\circ$, $Dec = -16.715^\circ$, $P = 45^\circ$.
 
-$$ \sin(a_e) = \sin(40^\circ) \cdot \sin(-16.715^\circ) + \cos(40^\circ) \cdot \cos(-16.715^\circ) \cdot \cos(45^\circ) $$
-$$ \sin(a_e) = (0.6428 \cdot -0.2876) + (0.7660 \cdot 0.9577 \cdot 0.7071) $$
-$$ \sin(a_e) = -0.1849 + 0.5187 = 0.3338 $$
+$$
+\sin(a_e) = \sin(40^\circ) \cdot \sin(-16.715^\circ) + \cos(40^\circ) \cdot \cos(-16.715^\circ) \cdot \cos(45^\circ)
+$$
+
+$$
+\sin(a_e) = (0.6428 \cdot -0.2876) + (0.7660 \cdot 0.9577 \cdot 0.7071)
+$$
+
+$$
+\sin(a_e) = -0.1849 + 0.5187 = 0.3338
+$$
+
 Despejando la altura estimada:
-$$ a_e = \arcsin(0.3338) \approx 19.50^\circ = 19^\circ 30' $$
+
+$$
+a_e = \arcsin(0.3338) \approx 19.50^\circ = 19^\circ 30'
+$$
+
 La Altura Estimada de Sirio será de $19^\circ 30'$.
 
 **Problema 2: Matriz de Rotación para Transformación de Coordenadas de Nutación Estelar**
@@ -268,7 +298,11 @@ Calcule la corrección total en Ascensión Recta ($\Delta \alpha$) por nutación
 
 *Solución:*
 La fórmula diferencial rigurosa de la trigonometría esférica para la corrección en $\alpha$ debida a la nutación es:
-$$ \Delta \alpha = (\cos \epsilon + \sin \epsilon \cdot \sin \alpha \cdot \tan \delta) \cdot \Delta \psi - (\cos \alpha \cdot \tan \delta) \cdot \Delta \epsilon $$
+
+$$
+\Delta \alpha = (\cos \epsilon + \sin \epsilon \cdot \sin \alpha \cdot \tan \delta) \cdot \Delta \psi - (\cos \alpha \cdot \tan \delta) \cdot \Delta \epsilon
+$$
+
 Transformando a radianes y grados decimales:
 $\alpha = 79.17^\circ$, $\delta = 45.99^\circ$, $\epsilon = 23.43^\circ$.
 Calculamos los términos trigonométricos:
@@ -278,11 +312,23 @@ $\sin(79.17^\circ) = 0.9822$
 $\cos(79.17^\circ) = 0.1879$
 $\tan(45.99^\circ) = 1.0351$
 Sustituyendo en el primer término (factor de $\Delta \psi$):
-$$ F_1 = 0.9175 + (0.3976 \cdot 0.9822 \cdot 1.0351) = 0.9175 + 0.4042 = 1.3217 $$
+
+$$
+F_1 = 0.9175 + (0.3976 \cdot 0.9822 \cdot 1.0351) = 0.9175 + 0.4042 = 1.3217
+$$
+
 Sustituyendo en el segundo término (factor de $\Delta \epsilon$):
-$$ F_2 = 0.1879 \cdot 1.0351 = 0.1945 $$
+
+$$
+F_2 = 0.1879 \cdot 1.0351 = 0.1945
+$$
+
 Ecuación completa de $\Delta \alpha$:
-$$ \Delta \alpha = (1.3217 \cdot 15'') - (0.1945 \cdot -8'') = 19.825'' + 1.556'' = 21.381'' \text{ de arco} $$
+
+$$
+\Delta \alpha = (1.3217 \cdot 15'') - (0.1945 \cdot -8'') = 19.825'' + 1.556'' = 21.381'' \text{ de arco}
+$$
+
 En tiempo ($\div 15$): $\Delta \alpha_t = +1.425 \text{ segundos de tiempo}$.
 Esta corrección microscópica la asume el Almanaque internamente, pero es esencial para la programación de efemérides en software ECDIS avanzado.
 
@@ -299,7 +345,11 @@ Hora de Paso (HCL): $12^h 00^m 00^s + 14^m 22^s = 12^h 14^m 22^s$.
 La longitud determina la diferencia de hora con Greenwich.
 Longitud en tiempo = $120^\circ 45' / 15 = 8^h 03^m 00^s$.
 Como la longitud es Oeste, Greenwich está más adelantado en el tiempo:
-$$ UTC = \text{HCL} + \text{Longitud (W)} = 12^h 14^m 22^s + 8^h 03^m 00^s = 20^h 17^m 22^s $$
+
+$$
+UTC = \text{HCL} + \text{Longitud (W)} = 12^h 14^m 22^s + 8^h 03^m 00^s = 20^h 17^m 22^s
+$$
+
 A esa precisa HORA UTC, el observador en el Pacífico levantará el sextante para medir la Latitud directamente sin cálculos trigonométricos.
 
 ---

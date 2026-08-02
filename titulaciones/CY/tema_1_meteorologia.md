@@ -11,7 +11,9 @@ La Tierra no calienta por igual el ecuador y los polos. Este diferencial térmic
 ### El Efecto Coriolis (Fundamento Físico)
 Cualquier masa de aire o agua que se desplace por la superficie de la Tierra sufrirá una desviación aparente respecto a su trayectoria original debido al giro del planeta. La aceleración de Coriolis $a_c$ viene dada por:
 
-$$ a_c = 2 \cdot \Omega \cdot v \cdot \sin(\phi) $$
+$$
+a_c = 2 \cdot \Omega \cdot v \cdot \sin(\phi)
+$$
 
 Donde:
 *   $\Omega$ es la velocidad angular de la Tierra ($7.292 \times 10^{-5} \text{ rad/s}$).
@@ -221,11 +223,23 @@ Calcule la magnitud de la aceleración de Coriolis que experimenta una masa de a
 *Solución:*
 La velocidad angular de la Tierra es $\Omega \approx 7.292 \times 10^{-5} \text{ rad/s}$.
 La fórmula de la aceleración de Coriolis es:
-$$ a_c = 2 \cdot \Omega \cdot v \cdot \sin(\phi) $$
+
+$$
+a_c = 2 \cdot \Omega \cdot v \cdot \sin(\phi)
+$$
+
 Sustituyendo los valores:
-$$ a_c = 2 \cdot (7.292 \times 10^{-5} \text{ rad/s}) \cdot (30 \text{ m/s}) \cdot \sin(60^\circ) $$
+
+$$
+a_c = 2 \cdot (7.292 \times 10^{-5} \text{ rad/s}) \cdot (30 \text{ m/s}) \cdot \sin(60^\circ)
+$$
+
 Sabiendo que $\sin(60^\circ) = \frac{\sqrt{3}}{2} \approx 0.866$:
-$$ a_c = 2 \cdot 7.292 \times 10^{-5} \cdot 30 \cdot 0.866 = 3.789 \times 10^{-3} \text{ m/s}^2 $$
+
+$$
+a_c = 2 \cdot 7.292 \times 10^{-5} \cdot 30 \cdot 0.866 = 3.789 \times 10^{-3} \text{ m/s}^2
+$$
+
 Esta sutil aceleración acumulada sobre cientos de kilómetros es la responsable de desviar los vientos y crear el giro ciclónico de las borrascas extratropicales.
 
 **Problema 2: Cálculo Avanzado del Viento Geostrófico (Equilibrio Baroclínico)**
@@ -240,7 +254,11 @@ Convertimos el gradiente a unidades del SI (Pascales por metro):
 $3 \text{ hPa} = 300 \text{ Pa}$. $100 \text{ km} = 100,000 \text{ m}$.
 Gradiente $= \frac{300}{100000} = 0.003 \text{ Pa/m}$.
 Sustituimos en la ecuación:
-$$ V_g = \frac{0.003}{1.225 \cdot 1.031 \times 10^{-4}} = \frac{0.003}{1.263 \times 10^{-4}} = 23.75 \text{ m/s} $$
+
+$$
+V_g = \frac{0.003}{1.225 \cdot 1.031 \times 10^{-4}} = \frac{0.003}{1.263 \times 10^{-4}} = 23.75 \text{ m/s}
+$$
+
 Convertido a nudos ($1 \text{ m/s} = 1.94384 \text{ nudos}$), obtenemos $V_g \approx 46.16 \text{ nudos}$ (Temporal Fuerte, Fuerza 9 Beaufort).
 
 **Problema 3: Ecuación Integral del Transporte de Masa de Ekman**
@@ -248,11 +266,19 @@ Los vientos Alisios ejercen un esfuerzo cortante (wind stress) constante sobre l
 
 *Solución:*
 El transporte total de Ekman en la capa límite superficial, integrado sobre la profundidad, viene dado por la relación geométrica entre el estrés del viento y Coriolis:
-$$ M_E = \frac{\tau}{f} $$
+
+$$
+M_E = \frac{\tau}{f}
+$$
+
 Calculamos el parámetro de Coriolis para $\phi = 20^\circ$:
 $f = 2 \cdot (7.292 \times 10^{-5}) \cdot \sin(20^\circ) = 4.988 \times 10^{-5} \text{ rad/s}$.
 Sustituyendo en la ecuación de transporte:
-$$ M_E = \frac{0.15}{4.988 \times 10^{-5}} = 3007.2 \text{ kg/(m}\cdot\text{s)} $$
+
+$$
+M_E = \frac{0.15}{4.988 \times 10^{-5}} = 3007.2 \text{ kg/(m}\cdot\text{s)}
+$$
+
 Significa que por cada metro de línea perpendicular al transporte (que fluye a $90^\circ$ del viento), se desplazan $3007 \text{ kg}$ de agua por segundo.
 
 ---

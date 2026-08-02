@@ -186,11 +186,23 @@ Un buque propio (Own Ship) y un blanco (Target) presentan un riesgo de abordaje.
 *Solución:*
 Sabemos que la velocidad relativa es $V_{\text{rel}} = \frac{D_{\text{rel}}}{TCPA}$.
 Despejando $TCPA$:
-$$ TCPA = \frac{D_{\text{rel}}}{V_{\text{rel}}} $$
+
+$$
+TCPA = \frac{D_{\text{rel}}}{V_{\text{rel}}}
+$$
+
 Sustituyendo los valores:
-$$ TCPA = \frac{3.5 \text{ NM}}{14 \text{ NM/h}} = 0.25 \text{ h} $$
+
+$$
+TCPA = \frac{3.5 \text{ NM}}{14 \text{ NM/h}} = 0.25 \text{ h}
+$$
+
 Convirtiendo a minutos:
-$$ TCPA_{\text{min}} = 0.25 \text{ h} \cdot 60 \text{ min/h} = 15 \text{ minutos} $$
+
+$$
+TCPA_{\text{min}} = 0.25 \text{ h} \cdot 60 \text{ min/h} = 15 \text{ minutos}
+$$
+
 *Intervención SMCP:* "WARNING. You are running into danger. TCPA is one-five minutes."
 
 **Problema 2: Cálculo del Vector de Abatimiento (Leeway) en Operaciones SAR**

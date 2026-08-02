@@ -32,7 +32,9 @@ Cinemáticamente, esto se modela calculando el CPA (Closest Point of Approach) y
 Sean $\mathbf{v}_1$ y $\mathbf{v}_2$ los vectores de velocidad (Rumbo y Velocidad de Superficie) de dos buques, y $\Delta\mathbf{p}_0$ el vector de posición relativa inicial. La velocidad relativa es $\mathbf{v}_{rel} = \mathbf{v}_2 - \mathbf{v}_1$.
 El tiempo hasta el CPA es:
 
-$$ TCPA = - \frac{\Delta\mathbf{p}_0 \cdot \mathbf{v}_{rel}}{\|\mathbf{v}_{rel}\|^2} $$
+$$
+TCPA = - \frac{\Delta\mathbf{p}_0 \cdot \mathbf{v}_{rel}}{\|\mathbf{v}_{rel}\|^2}
+$$
 
 Si $TCPA > 0$ y la distancia en el CPA ($D_{CPA} = \|\Delta\mathbf{p}_0 + \mathbf{v}_{rel} \times TCPA\|$) es inferior a un umbral de seguridad, la Regla 7 dicta que **HAY RIESGO**.
 
@@ -112,26 +114,54 @@ Determine vectorialmente la velocidad relativa, el TCPA (Time to Closest Point o
 *Resolución:*
 Establecemos un sistema de coordenadas cartesianas alineado con el Norte ($y$) y el Este ($x$).
 Velocidad del buque propio $\mathbf{v}_1$:
-$$ \mathbf{v}_1 = \langle 12 \sin(45^\circ), 12 \cos(45^\circ) \rangle = \langle 12 \times 0.707, 12 \times 0.707 \rangle = \langle 8.485, 8.485 \rangle \text{ nudos} $$
+
+$$
+\mathbf{v}_1 = \langle 12 \sin(45^\circ), 12 \cos(45^\circ) \rangle = \langle 12 \times 0.707, 12 \times 0.707 \rangle = \langle 8.485, 8.485 \rangle \text{ nudos}
+$$
 
 Velocidad del blanco $\mathbf{v}_2$:
-$$ \mathbf{v}_2 = \langle 15 \sin(135^\circ), 15 \cos(135^\circ) \rangle = \langle 15 \times 0.707, -15 \times 0.707 \rangle = \langle 10.605, -10.605 \rangle \text{ nudos} $$
+
+$$
+\mathbf{v}_2 = \langle 15 \sin(135^\circ), 15 \cos(135^\circ) \rangle = \langle 15 \times 0.707, -15 \times 0.707 \rangle = \langle 10.605, -10.605 \rangle \text{ nudos}
+$$
 
 Vector de Velocidad Relativa $\mathbf{v}_{rel} = \mathbf{v}_2 - \mathbf{v}_1$:
-$$ \mathbf{v}_{rel} = \langle 10.605 - 8.485, -10.605 - 8.485 \rangle = \langle 2.12, -19.09 \rangle \text{ nudos} $$
+
+$$
+\mathbf{v}_{rel} = \langle 10.605 - 8.485, -10.605 - 8.485 \rangle = \langle 2.12, -19.09 \rangle \text{ nudos}
+$$
+
 Magnitud de la velocidad relativa $\|\mathbf{v}_{rel}\| = \sqrt{2.12^2 + (-19.09)^2} \approx 19.2 \text{ nudos}$.
 
 Vector de posición inicial relativa $\Delta\mathbf{p}_0$ (el blanco está al Norte a 8 millas):
-$$ \Delta\mathbf{p}_0 = \langle 0, 8 \rangle \text{ millas} $$
+
+$$
+\Delta\mathbf{p}_0 = \langle 0, 8 \rangle \text{ millas}
+$$
 
 Cálculo del TCPA:
-$$ TCPA = - \frac{\Delta\mathbf{p}_0 \cdot \mathbf{v}_{rel}}{\|\mathbf{v}_{rel}\|^2} = - \frac{(0)(2.12) + (8)(-19.09)}{19.2^2} = - \frac{-152.72}{368.64} \approx 0.414 \text{ horas} $$
-$$ TCPA = 0.414 \times 60 \approx 24.8 \text{ minutos} $$
+
+$$
+TCPA = - \frac{\Delta\mathbf{p}_0 \cdot \mathbf{v}_{rel}}{\|\mathbf{v}_{rel}\|^2} = - \frac{(0)(2.12) + (8)(-19.09)}{19.2^2} = - \frac{-152.72}{368.64} \approx 0.414 \text{ horas}
+$$
+
+$$
+TCPA = 0.414 \times 60 \approx 24.8 \text{ minutos}
+$$
 
 Cálculo de la posición en el CPA y la distancia $D_{CPA}$:
-$$ \Delta\mathbf{p}_{CPA} = \Delta\mathbf{p}_0 + \mathbf{v}_{rel} \times TCPA = \langle 0, 8 \rangle + \langle 2.12, -19.09 \rangle \times 0.414 $$
-$$ \Delta\mathbf{p}_{CPA} = \langle 0 + 0.878, 8 - 7.903 \rangle = \langle 0.878, 0.097 \rangle \text{ millas} $$
-$$ D_{CPA} = \sqrt{0.878^2 + 0.097^2} \approx 0.88 \text{ millas} $$
+
+$$
+\Delta\mathbf{p}_{CPA} = \Delta\mathbf{p}_0 + \mathbf{v}_{rel} \times TCPA = \langle 0, 8 \rangle + \langle 2.12, -19.09 \rangle \times 0.414
+$$
+
+$$
+\Delta\mathbf{p}_{CPA} = \langle 0 + 0.878, 8 - 7.903 \rangle = \langle 0.878, 0.097 \rangle \text{ millas}
+$$
+
+$$
+D_{CPA} = \sqrt{0.878^2 + 0.097^2} \approx 0.88 \text{ millas}
+$$
 
 Dado que $D_{CPA}$ es menor de 1 milla náutica y el TCPA es positivo (ocurrirá en el futuro), se concluye que **HAY RIESGO DE ABORDAJE**. Según la Regla 15 (Cruce), nosotros vemos al blanco por babor y él nos ve por estribor, por lo que **el buque T debe ceder el paso**.
 

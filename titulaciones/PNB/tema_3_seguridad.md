@@ -61,6 +61,7 @@ La pérdida de energía interna $U$ a lo largo del tiempo lleva a un descenso de
 $$
 \frac{dU}{dt} = -q = m \cdot c_p \cdot \frac{dT_{cuerpo}}{dt}
 $$
+
 Donde $m$ es la masa y $c_p$ el calor específico del cuerpo humano.
 
 ### Diagrama de Árbol de Fallos de Seguridad
@@ -94,22 +95,29 @@ Un tripulante de $80\text{ kg}$ cae al mar ($T_{agua} = 10^\circ\text{C}$). Asum
 
 **Solución:**
 1. Ecuación diferencial:
+
 $$
 \frac{dT}{dt} = \frac{-q}{m \cdot c_p}
 $$
+
 Sustituyendo valores:
+
 $$
 \frac{dT}{dt} = \frac{-800}{80 \cdot 3470} = -0.00288\text{ K/s}
 $$
+
 En minutos:
+
 $$
 \frac{dT}{dt} = -0.00288 \cdot 60 = -0.173\text{ K/min}
 $$
 
 2. Tiempo necesario para descender $\Delta T = 5\text{ K}$:
+
 $$
 t = \frac{\Delta T}{|\frac{dT}{dt}|} = \frac{5}{0.173} \approx 28.9\text{ minutos}
 $$
+
 Esto subraya la urgencia extrema en la maniobra de recogida de hombre al agua.
 
 ## Referencias Bibliográficas y Jurisprudencia

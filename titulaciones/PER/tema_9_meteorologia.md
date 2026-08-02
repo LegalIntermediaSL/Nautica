@@ -15,7 +15,11 @@ El motor de la meteorología es la **Presión Atmosférica**, que es literalment
 ### 1.1 Física Isobárica y Termodinámica de Masas de Aire
 
 El comportamiento del aire no es puramente mecánico; responde a la ecuación de estado de los gases ideales:
-$$ P \cdot V = n \cdot R \cdot T $$
+
+$$
+P \cdot V = n \cdot R \cdot T
+$$
+
 Donde la presión ($P$) y la temperatura ($T$) dictan la densidad de la masa de aire. Cuando una masa de aire asciende (borrasca), experimenta una expansión adiabática (sin intercambio de calor con el entorno), lo que provoca su enfriamiento.
 
 **Gradiente Termo-Adiabático (Adiabatic Lapse Rates):**
@@ -24,7 +28,11 @@ El aire ascendente se enfría a un ritmo conocido matemáticamente como el Gradi
 ### 1.2 Isobaras (El Mapa del Tiempo)
 Son las curvas cerradas que dibujan los meteorólogos en los mapas uniendo los puntos geográficos que tienen exactamente la misma presión atmosférica (suelen dibujarse de 4 en 4 milibares).
 *   **Gradiente de Presión:** Al igual que las curvas de nivel en un mapa de montaña indican la pendiente, las isobaras indican el "desnivel" del aire. El vector de fuerza de gradiente de presión ($\vec{F}_p$) empuja perpendicularmente a las isobaras, desde altas a bajas presiones:
-$$ \vec{F}_p = -\frac{1}{\rho} \nabla P $$
+
+$$
+\vec{F}_p = -\frac{1}{\rho} \nabla P
+$$
+
 Donde $\rho$ es la densidad del aire y $\nabla P$ es el gradiente de presión. Cuanto **más juntas** están las isobaras en el mapa, mayor es la fuerza impulsora.
 
 ## 2. Dinámica del Viento y el Efecto Coriolis
@@ -35,9 +43,17 @@ El viento es el desplazamiento físico de las masas de aire intentando rellenar 
 A nivel de la costa, la rotación de la Tierra genera una aceleración aparente sobre el fluido en movimiento conocida como el **Efecto Coriolis**. Esta fuerza desvía los vientos hacia la **derecha en el Hemisferio Norte** y hacia la izquierda en el Hemisferio Sur.
 
 La aceleración de Coriolis ($\vec{a}_c$) se define matemáticamente mediante el producto vectorial de la velocidad angular de la Tierra ($\vec{\Omega}$) y el vector velocidad del viento ($\vec{v}$):
-$$ \vec{a}_c = -2 \vec{\Omega} \times \vec{v} $$
+
+$$
+\vec{a}_c = -2 \vec{\Omega} \times \vec{v}
+$$
+
 Su magnitud escalar en la superficie horizontal depende de la latitud ($\phi$):
-$$ f_c = 2 \Omega \cdot v \cdot \sin(\phi) $$
+
+$$
+f_c = 2 \Omega \cdot v \cdot \sin(\phi)
+$$
+
 Donde $\Omega \approx 7.292 \times 10^{-5} \text{ rad/s}$.
 Esto significa que en el Ecuador el efecto Coriolis es nulo, pero a latitudes medias, el viento no viaja perpendicular a las isobaras, sino casi paralelo a ellas (Viento Geostrófico).
 
@@ -87,13 +103,28 @@ Suponga un gradiente de presión atmosférica horizontal $\nabla P = 2.5 \times 
 
 **Solución:**
 En equilibrio geostrófico, la fuerza de gradiente de presión equilibra exactamente la fuerza de Coriolis:
-$$ \frac{1}{\rho} \nabla P = f_c \cdot V_g $$
+
+$$
+\frac{1}{\rho} \nabla P = f_c \cdot V_g
+$$
+
 Donde el parámetro de Coriolis $f_c$ se define como:
-$$ f_c = 2 \Omega \sin(\phi) = 2 (7.292 \times 10^{-5}) \sin(45^\circ) \approx 1.031 \times 10^{-4} \text{ s}^{-1} $$
+
+$$
+f_c = 2 \Omega \sin(\phi) = 2 (7.292 \times 10^{-5}) \sin(45^\circ) \approx 1.031 \times 10^{-4} \text{ s}^{-1}
+$$
+
 Despejando $V_g$:
-$$ V_g = \frac{\nabla P}{\rho \cdot f_c} = \frac{2.5 \times 10^{-3}}{1.225 \cdot 1.031 \times 10^{-4}} \approx 19.8 \text{ m/s} $$
+
+$$
+V_g = \frac{\nabla P}{\rho \cdot f_c} = \frac{2.5 \times 10^{-3}}{1.225 \cdot 1.031 \times 10^{-4}} \approx 19.8 \text{ m/s}
+$$
+
 Convirtiendo a nudos ($1 \text{ m/s} \approx 1.944 \text{ kn}$):
-$$ V_g \approx 19.8 \cdot 1.944 \approx 38.5 \text{ nudos (Fuerza 8 en la escala de Beaufort)} $$
+
+$$
+V_g \approx 19.8 \cdot 1.944 \approx 38.5 \text{ nudos (Fuerza 8 en la escala de Beaufort)}
+$$
 
 ## Referencias Bibliográficas y Jurisprudencia
 

@@ -10,7 +10,12 @@ El *Global Maritime Distress and Safety System* (GMDSS) es una arquitectura auto
 
 ### Zonas Marítimas Geográficas
 *   **Zona A1:** Cobertura de las ondas métricas en la banda VHF (30 MHz - 300 MHz). La propagación es puramente por **onda espacial (línea de visión)**. Las ondas VHF penetran la ionosfera y no rebotan; viajan rectilíneas. Su alcance $d$ depende geométricamente del radio de curvatura terrestre y la altura de las antenas, modulado por un ligero factor de refracción atmosférica ($K \approx 1.33$):
-    $$ d (\text{millas}) \approx 2,22 \left( \sqrt{h_{\text{transmisor}}} + \sqrt{h_{\text{receptor}}} \right) $$
+    
+
+$$
+d (\text{millas}) \approx 2,22 \left( \sqrt{h_{\text{transmisor}}} + \sqrt{h_{\text{receptor}}} \right)
+$$
+
     *(Donde $h$ está en metros. Usualmente confinado a 20-30 millas).*
 *   **Zona A2:** Cobertura de las bandas MF (Onda Media, 300 kHz - 3 MHz). Aquí actúa la propagación por **onda de superficie (ground wave)**, que por difracción viaja pegada a la conductividad salina del mar, alcanzando unas 150-400 millas sin importar si es de día o noche.
 *   **Zona A3:** Cobertura vía enlaces de microondas con satélites Inmarsat geoestacionarios (Latitudes $70^\circ N$ a $70^\circ S$).
@@ -63,10 +68,18 @@ Un velero cuyo mástil aloja una antena VHF a $h_1 = 16 \text{ m}$ sobre el nive
 
 **Solución:**
 El alcance radioeléctrico visual máximo ($d$) para frecuencias VHF viene determinado por la fórmula empírica del horizonte radárico, fundamentada en la geometría del círculo y corregida por la curvatura refractiva de la troposfera:
-$$ d = 2.22 \cdot \left( \sqrt{h_1} + \sqrt{h_2} \right) $$
+
+$$
+d = 2.22 \cdot \left( \sqrt{h_1} + \sqrt{h_2} \right)
+$$
+
 Donde $d$ se expresa en millas náuticas, y $h_1, h_2$ en metros.
 Sustituyendo los valores:
-$$ d = 2.22 \cdot \left( \sqrt{16} + \sqrt{25} \right) = 2.22 \cdot (4 + 5) = 2.22 \cdot 9 = 19.98 \text{ millas náuticas} $$
+
+$$
+d = 2.22 \cdot \left( \sqrt{16} + \sqrt{25} \right) = 2.22 \cdot (4 + 5) = 2.22 \cdot 9 = 19.98 \text{ millas náuticas}
+$$
+
 El buque de rescate solo escuchará la llamada de socorro por onda directa si se encuentra dentro de un radio de aproximadamente 20 millas.
 
 ## Referencias Bibliográficas y Jurisprudencia

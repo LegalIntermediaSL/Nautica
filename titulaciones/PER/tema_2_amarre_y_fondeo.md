@@ -10,7 +10,11 @@ La cabuyería moderna utiliza polímeros avanzados (Dyneema, Kevlar, Poliéster)
 
 ### Física de los Cabos
 La carga de rotura (Breaking Load, $BL$) y la carga de trabajo segura (Safe Working Load, $SWL$) están definidas empíricamente. Generalmente:
-$$ SWL = \frac{BL}{FS} $$
+
+$$
+SWL = \frac{BL}{FS}
+$$
+
 donde $FS$ es el factor de seguridad (habitualmente 5 o 6).
 *   **Chicote:** Extremo del cabo.
 *   **Firme:** Parte principal que soporta tensión axial.
@@ -42,7 +46,11 @@ Fondear (anchoring) es un problema clásico de estática de cables flexibles (ca
 
 ### Matemáticas de la Catenaria
 La forma que adopta una cadena pesada suspendida bajo su propio peso es una catenaria. La tensión horizontal ($T_H$) en el fondo y la longitud mínima de cadena apoyada en el fondo determinan el garreo. La ecuación de la curva es:
-$$ y = a \cosh\left(\frac{x}{a}\right) $$
+
+$$
+y = a \cosh\left(\frac{x}{a}\right)
+$$
+
 donde $a = \frac{T_H}{w}$, siendo $w$ el peso de la cadena por unidad de longitud en el agua.
 
 ### Tipos de Anclas Recreativas y Penetración del Lecho
@@ -60,7 +68,12 @@ donde $a = \frac{T_H}{w}$, siendo $w$ el peso de la cadena por unidad de longitu
 *   **Garrear (Dragging):** Falla el agarre por superar la resistencia al corte del suelo marino ($\tau = c + \sigma \tan \phi$).
 *   **Longitud Recomendada (Scope):** 
     Para garantizar que la tracción en el ancla sea paralela al fondo (ángulo 0°), se calcula la longitud $L$ necesaria de cadena:
-    $$ L \geq \sqrt{h(h + 2a)} $$
+    
+
+$$
+L \geq \sqrt{h(h + 2a)}
+$$
+
     donde $h$ es la profundidad total (sonda + altura de proa).
     Reglas prácticas:
     *   Arena, buen tiempo: $3 \times h$
@@ -76,12 +89,27 @@ Calcule la longitud mínima de cadena $L$ necesaria para asegurar que el ancla t
 
 *Solución:*
 1. Primero, determinamos el parámetro de la catenaria $a$, que representa la relación entre la tensión horizontal y el peso lineal sumergido de la cadena:
-$$ a = \frac{T_H}{w} = \frac{4000 \text{ N}}{24.5 \text{ N/m}} \approx 163.26 \text{ m} $$
+
+$$
+a = \frac{T_H}{w} = \frac{4000 \text{ N}}{24.5 \text{ N/m}} \approx 163.26 \text{ m}
+$$
+
 2. La longitud de cadena suspendida requerida para asegurar que la tangente geométrica al fondo sea cero se define por la ecuación geométrica de la catenaria:
-$$ L = \sqrt{h(h + 2a)} $$
+
+$$
+L = \sqrt{h(h + 2a)}
+$$
+
 3. Sustituyendo los valores:
-$$ L = \sqrt{10 \cdot (10 + 2 \cdot 163.26)} = \sqrt{10 \cdot (10 + 326.52)} = \sqrt{10 \cdot 336.52} = \sqrt{3365.2} $$
-$$ L \approx 58 \text{ m} $$
+
+$$
+L = \sqrt{10 \cdot (10 + 2 \cdot 163.26)} = \sqrt{10 \cdot (10 + 326.52)} = \sqrt{10 \cdot 336.52} = \sqrt{3365.2}
+$$
+
+$$
+L \approx 58 \text{ m}
+$$
+
 En conclusión, el patrón deberá filar como mínimo 58 metros de cadena (casi 6 veces la sonda) para prevenir el garreo bajo esa fuerza aerodinámica.
 
 ## Referencias Bibliográficas y Jurisprudencia

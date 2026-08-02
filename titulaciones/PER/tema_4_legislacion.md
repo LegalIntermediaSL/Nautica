@@ -69,16 +69,38 @@ Si una embarcación de recreo de $15 \text{ m}$ de eslora navega a una velocidad
 
 *Solución:*
 1. Convertimos la velocidad inicial a unidades del SI:
-$$ V_0 = 3 \text{ nudos} = 3 \cdot 0.5144 \text{ m/s} = 1.5432 \text{ m/s} $$
+
+$$
+V_0 = 3 \text{ nudos} = 3 \cdot 0.5144 \text{ m/s} = 1.5432 \text{ m/s}
+$$
+
 La velocidad final objetivo es $V_f = 0.1 \cdot V_0 = 0.1543 \text{ m/s}$.
 2. Utilizando la ecuación diferencial del movimiento $v \frac{dv}{dx} = a(v) = -k \cdot v^2$:
-$$ \frac{dv}{dx} = -k \cdot v $$
-$$ dx = -\frac{1}{k} \frac{dv}{v} $$
+
+$$
+\frac{dv}{dx} = -k \cdot v
+$$
+
+$$
+dx = -\frac{1}{k} \frac{dv}{v}
+$$
+
 3. Integramos desde $x = 0$ hasta $x = D_{stop}$ y desde $v = V_0$ hasta $v = V_f$:
-$$ \int_0^{D_{stop}} dx = -\frac{1}{k} \int_{V_0}^{V_f} \frac{dv}{v} $$
-$$ D_{stop} = -\frac{1}{k} \left[ \ln(v) \right]_{V_0}^{V_f} = -\frac{1}{k} (\ln(V_f) - \ln(V_0)) = \frac{1}{k} \ln\left(\frac{V_0}{V_f}\right) $$
+
+$$
+\int_0^{D_{stop}} dx = -\frac{1}{k} \int_{V_0}^{V_f} \frac{dv}{v}
+$$
+
+$$
+D_{stop} = -\frac{1}{k} \left[ \ln(v) \right]_{V_0}^{V_f} = -\frac{1}{k} (\ln(V_f) - \ln(V_0)) = \frac{1}{k} \ln\left(\frac{V_0}{V_f}\right)
+$$
+
 4. Sustituyendo los valores conocidos y recordando que $V_0/V_f = 10$:
-$$ D_{stop} = \frac{1}{0.05} \ln(10) = 20 \cdot 2.302 = 46.04 \text{ m} $$
+
+$$
+D_{stop} = \frac{1}{0.05} \ln(10) = 20 \cdot 2.302 = 46.04 \text{ m}
+$$
+
 Dado que $D_{stop} \approx 46 \text{ m} > 25 \text{ m}$, si el fallo ocurre justo en el límite normativo, la inercia llevará al barco al interior del área del buceador. Esto justifica hidrodinámicamente por qué la jurisprudencia exige cautela reforzada (ej. $>50\text{m}$) y desengranar anticipadamente.
 
 ## Referencias Bibliográficas y Jurisprudencia

@@ -87,7 +87,13 @@ No mezcles convenciones: un archivo temático nuevo en la raíz va en mayúscula
   ```
 
 - Usa listas numeradas para procedimientos con un orden estricto (una maniobra, los pasos de una prueba) y listas con viñetas para enumeraciones sin orden obligatorio.
-- Puedes usar fórmulas en LaTeX (`$...$` o `$$...$$`) para cálculos de navegación, como ya se hace en `titulaciones/CY/` y en `cartas_nauticas/CALCULOS_DE_NAVEGACION.md`.
+- Puedes usar fórmulas en LaTeX (`$...$` o `
+
+$$
+...
+$$
+
+`) para cálculos de navegación, como ya se hace en `titulaciones/CY/` y en `cartas_nauticas/CALCULOS_DE_NAVEGACION.md`.
 
 ---
 

@@ -137,15 +137,19 @@ Una embarcación de PNB tiene un desplazamiento $\Delta = 2500\text{ kg}$, una a
 
 **Solución:**
 1. Cálculo de $\nabla$:
+
 $$
 \nabla = \frac{\Delta}{\rho} = \frac{2500\text{ kg}}{1025\text{ kg/m}^3} \approx 2.439\text{ m}^3
 $$
 
 2. Cálculo del momento adrizante $M_A$:
+
 $$
 M_A = \Delta \cdot g \cdot \overline{GM} \cdot \sin(5^\circ)
 $$
+
 (Notar que $\Delta$ suele expresarse como masa, por lo que multiplicamos por la gravedad $g = 9.81\text{ m/s}^2$ para obtener el momento en Newtons-metro).
+
 $$
 M_A = 2500 \cdot 9.81 \cdot 0.8 \cdot 0.08715 \approx 1709.8\text{ N}\cdot\text{m}
 $$

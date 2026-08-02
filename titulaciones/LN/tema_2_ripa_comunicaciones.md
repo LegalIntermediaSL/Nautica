@@ -24,11 +24,15 @@ El riesgo inminente de abordaje se verifica analíticamente si la demora o marca
 
 Si expresamos $\vec{v}_P$ como el vector velocidad del buque propio y $\vec{v}_A$ como el del buque ajeno (o contacto), el vector de la velocidad relativa $\vec{v}_{\text{rel}}$ observado desde nuestro sistema de referencia no inercial se define por el álgebra vectorial:
 
-$$ \vec{v}_{\text{rel}} = \vec{v}_A - \vec{v}_P $$
+$$
+\vec{v}_{\text{rel}} = \vec{v}_A - \vec{v}_P
+$$
 
 En coordenadas polares relativas, definiendo la posición del buque A respecto al nuestro como el vector $\vec{r} = R \cdot \hat{u}_r$, el sistema converge asintóticamente a un abordaje si, y solo si, se cumplen simultáneamente estas dos derivadas temporales:
 
-$$ \frac{d\alpha}{dt} = 0 \quad \text{y} \quad \frac{dR}{dt} < 0 $$
+$$
+\frac{d\alpha}{dt} = 0 \quad \text{y} \quad \frac{dR}{dt} < 0
+$$
 
 Donde $\alpha$ es el ángulo de demora verdadera (azimut) y $R$ es la métrica de distancia espacial entre los dos navíos.
 
@@ -49,7 +53,9 @@ A pesar de que el plan de estudios de la Licencia de Navegación no impone la ob
 
 El horizonte radioeléctrico cinemático, $D_{\text{radio}}$, expresado en millas náuticas, sufre una perturbación por refracción en la baja troposfera y puede modelizarse con la siguiente aproximación empírica:
 
-$$ D_{\text{radio}} \approx 2.22 \cdot \left( \sqrt{h_t} + \sqrt{h_r} \right) $$
+$$
+D_{\text{radio}} \approx 2.22 \cdot \left( \sqrt{h_t} + \sqrt{h_r} \right)
+$$
 
 Donde $h_t$ y $h_r$ representan las cotas de elevación en metros de las antenas transmisora y receptora respectivamente. Para una lancha de 5 metros, la cota de antena portátil apenas supera $1.5 \, \text{m}$, lo que constriñe severamente el radio de propagación.
 
@@ -97,17 +103,41 @@ Calcule la magnitud del vector de la velocidad relativa de aproximación $\left|
 
 1. **Definición de las Derivadas Fundamentales:**
    Por la invarianza angular, sabemos que la velocidad relativa se proyecta íntegramente sobre el eje radial. El diferencial de tiempo transcurrido es:
-   $$ \Delta t = 5 \, \text{minutos} \cdot \left( \frac{1 \, \text{hora}}{60 \, \text{minutos}} \right) = \frac{1}{12} \, \text{horas} $$
+   
+
+$$
+\Delta t = 5 \, \text{minutos} \cdot \left( \frac{1 \, \text{hora}}{60 \, \text{minutos}} \right) = \frac{1}{12} \, \text{horas}
+$$
 
 2. **Obtención del Módulo de la Velocidad Relativa ($\left| \vec{v}_{\text{rel}} \right|$):**
    Evaluando el límite finito de la contracción de la distancia:
-   $$ \left| \vec{v}_{\text{rel}} \right| = - \frac{\Delta R}{\Delta t} = - \frac{R_1 - R_0}{\Delta t} $$
-   $$ \left| \vec{v}_{\text{rel}} \right| = - \frac{1 \, \text{milla} - 2 \, \text{millas}}{\frac{1}{12} \, \text{horas}} = \frac{1}{\frac{1}{12}} = 12 \, \text{nudos} $$
+   
+
+$$
+\left| \vec{v}_{\text{rel}} \right| = - \frac{\Delta R}{\Delta t} = - \frac{R_1 - R_0}{\Delta t}
+$$
+
+   
+
+$$
+\left| \vec{v}_{\text{rel}} \right| = - \frac{1 \, \text{milla} - 2 \, \text{millas}}{\frac{1}{12} \, \text{horas}} = \frac{1}{\frac{1}{12}} = 12 \, \text{nudos}
+$$
+
    La tasa de aproximación es contante a $12 \, \text{millas/hora}$.
 
 3. **Proyección del Tiempo Restante de Impacto ($t_{\text{impacto}}$):**
-   $$ t_{\text{impacto}} = \frac{R_1}{\left| \vec{v}_{\text{rel}} \right|} = \frac{1 \, \text{milla}}{12 \, \text{nudos}} $$
-   $$ t_{\text{impacto}} = \frac{1}{12} \, \text{horas} = 5 \, \text{minutos} $$
+   
+
+$$
+t_{\text{impacto}} = \frac{R_1}{\left| \vec{v}_{\text{rel}} \right|} = \frac{1 \, \text{milla}}{12 \, \text{nudos}}
+$$
+
+   
+
+$$
+t_{\text{impacto}} = \frac{1}{12} \, \text{horas} = 5 \, \text{minutos}
+$$
+
    El patrón dispone de un tiempo de respuesta crítico de $300 \, \text{segundos}$ para iniciar maniobras evasivas según dictamina el RIPA.
 
 ## Referencias Bibliográficas y Jurisprudencia

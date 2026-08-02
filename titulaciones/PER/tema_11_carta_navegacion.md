@@ -11,7 +11,11 @@ Si fallas más de 2 problemas de los 4 de este bloque, suspendes todo el examen 
 La carta náutica no es un mapa pictórico, es una proyección cartográfica cilíndrica ecuatorial inventada por **Gerardus Mercator** en 1569. Su inmenso valor operativo radica en su propiedad isogonal: **es una proyección conforme** (conserva los ángulos locales). 
 
 Matemáticamente, la latitud mercatoriana (partes meridionales, $PM$) sufre una expansión que sigue la integral de la secante de la latitud:
-$$ PM = \int_{0}^{l} \sec(\phi) \, d\phi = \ln\left( \tan\left( \frac{\pi}{4} + \frac{l}{2} \right) \right) $$
+
+$$
+PM = \int_{0}^{l} \sec(\phi) \, d\phi = \ln\left( \tan\left( \frac{\pi}{4} + \frac{l}{2} \right) \right)
+$$
+
 Esta alteración exponencial del eje $Y$ provoca que las distancias a medida que nos alejamos del Ecuador (altas latitudes) se dilaten drásticamente en el papel (Groenlandia parece gigantesca). En consecuencia, **la escala de la carta Mercator es una variable dependiente de la latitud**, $E(l) = E_0 \sec(l)$. 
 
 La línea recta que se traza sobre una carta Mercator corta a todos los meridianos con el mismo ángulo. Esta curva espacial sobre la Tierra se llama **Loxodrómica**.
@@ -32,11 +36,17 @@ Cualquier hito en la carta se ancla geométricamente en dos ejes perpendiculares
 En la carta náutica, toda la cartografía está referenciada matemáticamente al **Norte Verdadero ($N_v$)**. Sin embargo, la plataforma dinámica del buque navega basándose en un compás que percibe un entorno ferromagnético distorsionado (**Norte de Aguja, $N_a$**).
 
 La Ecuación Maestra de Transferencia Angular del PER es:
-$$ R_v = R_a + C_t $$
+
+$$
+R_v = R_a + C_t
+$$
 
 ### 2.1 Desglose Geofísico de la Corrección Total ($C_t$)
 Es la suma de la declinación magnética local ($dm$) y la anomalía del propio barco ($\Delta$):
-$$ C_t = dm + \Delta $$
+
+$$
+C_t = dm + \Delta
+$$
 
 *   **Declinación Magnética ($dm$):** Dato del campo geomagnético. En un examen, requiere extrapolar la variación secular lineal desde la fecha base de la carta (ej. 2005) hasta el año actual usando sumas/restas de minutos ($'$), teniendo un cuidado extremo con cruzar el cero a la hora de restar minutos occidentales y orientales.
 *   **Desvío ($\Delta$):** El tensor magnético del buque. Tabulado directamente.
@@ -92,17 +102,43 @@ Se desea trazar una derrota desde el punto de salida $P_1(l_1 = 35^\circ 00' \te
 
 **Solución:**
 La fórmula para la Partes Meridionales en una esfera es:
-$$ PM(l) = \frac{10800}{\pi} \ln\left[ \tan\left( 45^\circ + \frac{l}{2} \right) \right] $$
+
+$$
+PM(l) = \frac{10800}{\pi} \ln\left[ \tan\left( 45^\circ + \frac{l}{2} \right) \right]
+$$
+
 Calculamos las PM para $l_1 = 35^\circ$ y $l_2 = 36^\circ$:
-$$ PM_1 = \frac{10800}{\pi} \ln\left[ \tan\left( 45^\circ + 17.5^\circ \right) \right] \approx 2244.29 \text{ pm} $$
-$$ PM_2 = \frac{10800}{\pi} \ln\left[ \tan\left( 45^\circ + 18^\circ \right) \right] \approx 2317.84 \text{ pm} $$
+
+$$
+PM_1 = \frac{10800}{\pi} \ln\left[ \tan\left( 45^\circ + 17.5^\circ \right) \right] \approx 2244.29 \text{ pm}
+$$
+
+$$
+PM_2 = \frac{10800}{\pi} \ln\left[ \tan\left( 45^\circ + 18^\circ \right) \right] \approx 2317.84 \text{ pm}
+$$
+
 La diferencia de Partes Meridionales ($\Delta PM$) es:
-$$ \Delta PM = PM_2 - PM_1 = 2317.84 - 2244.29 = 73.55 \text{ pm} $$
+
+$$
+\Delta PM = PM_2 - PM_1 = 2317.84 - 2244.29 = 73.55 \text{ pm}
+$$
+
 La diferencia de Longitud ($\Delta L$) en minutos es:
-$$ \Delta L = L_2 - L_1 = (-5^\circ) - (-6^\circ) = +1^\circ = 60' \text{ (Hacia el Este)} $$
+
+$$
+\Delta L = L_2 - L_1 = (-5^\circ) - (-6^\circ) = +1^\circ = 60' \text{ (Hacia el Este)}
+$$
+
 El rumbo loxodrómico ($R_v$) cumple que:
-$$ \tan(R_v) = \frac{\Delta L}{\Delta PM} = \frac{60}{73.55} \approx 0.8157 $$
-$$ R_v = \arctan(0.8157) \approx 39.2^\circ = 039.2^\circ $$
+
+$$
+\tan(R_v) = \frac{\Delta L}{\Delta PM} = \frac{60}{73.55} \approx 0.8157
+$$
+
+$$
+R_v = \arctan(0.8157) \approx 39.2^\circ = 039.2^\circ
+$$
+
 El rumbo a gobernar en el compás verdadero es $039.2^\circ$.
 
 ---
@@ -135,16 +171,41 @@ Zarpamos a las 10:00h desde un punto fijado con exactitud a la altura del Faro d
 
 **Solución:**
 1.  Calculamos la Corrección Total ($C_t$), con la misma lógica automatizada en la simulación `01_calculo_rumbo_verdadero.ipynb` (Oeste negativo, Este positivo):
-    $$ C_t = dm + \Delta = (-3^\circ) + (+1^\circ) = -2^\circ $$
+    
+
+$$
+C_t = dm + \Delta = (-3^\circ) + (+1^\circ) = -2^\circ
+$$
+
 2.  Aplicamos la Ecuación Maestra para obtener el Rumbo Verdadero:
-    $$ R_v = R_a + C_t = 060^\circ + (-2^\circ) = 058^\circ $$
+    
+
+$$
+R_v = R_a + C_t = 060^\circ + (-2^\circ) = 058^\circ
+$$
+
 3.  Sobre la carta, apoyamos la regla paralela en la rosa de los vientos verdadera más cercana, la orientamos a $058^\circ$ y la "caminamos" mediante desplazamientos paralelos sucesivos hasta hacerla pasar por el punto de salida ($36^\circ 01.0' \text{N} - 005^\circ 30.0' \text{W}$), trazando la loxodrómica.
 4.  Calculamos la distancia navegada en el intervalo: $D = V \times t = 8 \text{ nudos} \times 0.75 \text{ h} = 6.0$ millas.
 5.  Abrimos el compás de puntas secas 6.0 millas en la escala lateral de latitud (a la altura de trabajo, unos $36^\circ$N) y, pinchando en el punto de salida, marcamos ese segmento sobre la línea de rumbo $058^\circ$ ya trazada.
 6.  Comprobación analítica mediante las fórmulas de estima (coherente con `cartas_nauticas/CALCULOS_DE_NAVEGACION.md`):
-    $$ \Delta l = D \cos(R_v) = 6.0 \times \cos(58^\circ) \approx +3.2' \text{ (Norte)} $$
-    $$ \text{Apartamiento} = D \sin(R_v) = 6.0 \times \sin(58^\circ) \approx 5.1' \text{ (Este)} $$
-    $$ \Delta L = \frac{\text{Apartamiento}}{\cos(l_m)} = \frac{5.1}{\cos(36^\circ 03')} \approx \frac{5.1}{0.809} \approx 6.3' \text{ (Este)} $$
+    
+
+$$
+\Delta l = D \cos(R_v) = 6.0 \times \cos(58^\circ) \approx +3.2' \text{ (Norte)}
+$$
+
+    
+
+$$
+\text{Apartamiento} = D \sin(R_v) = 6.0 \times \sin(58^\circ) \approx 5.1' \text{ (Este)}
+$$
+
+    
+
+$$
+\Delta L = \frac{\text{Apartamiento}}{\cos(l_m)} = \frac{5.1}{\cos(36^\circ 03')} \approx \frac{5.1}{0.809} \approx 6.3' \text{ (Este)}
+$$
+
 7.  Sumamos los diferenciales a la posición de salida:
     *   Latitud: $36^\circ 01.0' \text{N} + 3.2' = 36^\circ 04.2' \text{N}$
     *   Longitud: $005^\circ 30.0' \text{W} - 6.3' = 005^\circ 23.7' \text{W}$

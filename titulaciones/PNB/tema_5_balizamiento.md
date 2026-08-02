@@ -126,21 +126,29 @@ Si el destello rápido dura $0.3\text{ s}$, el intervalo entre ellos es de $0.3\
 **Solución:**
 1. Desglose del ciclo de luz $T = 15\text{ s}$.
 2. Suma de tiempos de los 6 destellos rápidos y sus 5 intervalos internos:
+
 $$
 T_{rapidos} = 6 \cdot 0.3 + 5 \cdot 0.3 = 1.8 + 1.5 = 3.3\text{ s}
 $$
+
 3. Tiempo del intervalo previo al destello largo (supongamos también $0.3\text{ s}$) y el destello largo:
+
 $$
 T_{largo} = 0.3 + 2.0 = 2.3\text{ s}
 $$
+
 4. Tiempo total emitido antes del eclipse:
+
 $$
 T_{activo} = 3.3 + 2.3 = 5.6\text{ s}
 $$
+
 5. Ecuación de periodo:
+
 $$
 t_{eclipse\_final} = T - T_{activo} = 15 - 5.6 = 9.4\text{ s}
 $$
+
 El navegante debe observar un periodo de total oscuridad de $9.4\text{ segundos}$ para validar la marca como Cardinal Sur.
 
 ## Referencias Bibliográficas y Jurisprudencia

@@ -8,7 +8,9 @@ Las emergencias marítimas combinan un medio hostil (el agua salada a baja tempe
 
 Un MOB es una crisis contrarreloj. En aguas frías, el tiempo de supervivencia viene dado por la Ley del Enfriamiento de Newton para la hipotermia severa:
 
-$$ T(t) = T_a + (T_0 - T_a)e^{-kt} $$
+$$
+T(t) = T_a + (T_0 - T_a)e^{-kt}
+$$
 
 Donde la transferencia de calor en el agua es 25 veces superior que en el aire. El colapso cardíaco o ahogamiento reflejo ocurre en menos de 20 minutos en aguas por debajo de 10ºC.
 
@@ -53,7 +55,9 @@ El fuego es una oxidación exotérmica súbita (Pirólisis).
 
 Una grieta bajo la línea de flotación no gotea, *escupe agua a presión* según el Teorema de Torricelli. La velocidad de entrada de agua $v$ depende de la presión de la columna de agua $h$ sobre la grieta y la gravedad $g$:
 
-$$ v = \sqrt{2gh} $$
+$$
+v = \sqrt{2gh}
+$$
 
 El caudal de inundación será $ Q = v \cdot Area $. Una grieta a 1.5 metros de profundidad puede inyectar cientos de litros por segundo, superando a las bombas eléctricas instantáneamente.
 **Protocolo:**
@@ -71,20 +75,44 @@ La hipotermia clínica grave con fibrilación ventricular inminente y pérdida d
 
 *Resolución:*
 Usamos la Ley del Enfriamiento de Newton:
-$$ T(t) = T_a + (T_0 - T_a)e^{-kt} $$
+
+$$
+T(t) = T_a + (T_0 - T_a)e^{-kt}
+$$
 
 Sustituyendo los valores conocidos:
-$$ 28 = 12 + (37 - 12)e^{-0.045t} $$
-$$ 28 = 12 + 25 e^{-0.045t} $$
+
+$$
+28 = 12 + (37 - 12)e^{-0.045t}
+$$
+
+$$
+28 = 12 + 25 e^{-0.045t}
+$$
 
 Despejamos la exponencial:
-$$ 16 = 25 e^{-0.045t} $$
-$$ e^{-0.045t} = \frac{16}{25} = 0.64 $$
+
+$$
+16 = 25 e^{-0.045t}
+$$
+
+$$
+e^{-0.045t} = \frac{16}{25} = 0.64
+$$
 
 Aplicamos logaritmo neperiano a ambos lados:
-$$ \ln(0.64) = -0.045t $$
-$$ -0.44628 = -0.045t $$
-$$ t = \frac{0.44628}{0.045} \approx 9.91 \text{ minutos} $$
+
+$$
+\ln(0.64) = -0.045t
+$$
+
+$$
+-0.44628 = -0.045t
+$$
+
+$$
+t = \frac{0.44628}{0.045} \approx 9.91 \text{ minutos}
+$$
 
 El tripulante dispone de **menos de 10 minutos** antes de alcanzar la hipotermia severa, demostrando la extrema urgencia de aplicar el botón MOB y la maniobra de Williamson inmediatamente.
 
@@ -95,16 +123,34 @@ Calcule la velocidad de ingreso del agua ($v$) y el caudal masivo ($Q$) en litro
 
 *Resolución:*
 Aplicamos el Teorema de Torricelli con el coeficiente de descarga:
-$$ v = C_d \sqrt{2gh} $$
-$$ v = 0.65 \sqrt{2 \times 9.81 \times 1.2} $$
-$$ v = 0.65 \sqrt{23.544} \approx 0.65 \times 4.852 \approx 3.15 \text{ m/s} $$
+
+$$
+v = C_d \sqrt{2gh}
+$$
+
+$$
+v = 0.65 \sqrt{2 \times 9.81 \times 1.2}
+$$
+
+$$
+v = 0.65 \sqrt{23.544} \approx 0.65 \times 4.852 \approx 3.15 \text{ m/s}
+$$
 
 Calculamos el caudal volumétrico:
-$$ Q = v \times A = 3.15 \text{ m/s} \times 0.02 \text{ m}^2 = 0.063 \text{ m}^3\text{/s} $$
+
+$$
+Q = v \times A = 3.15 \text{ m/s} \times 0.02 \text{ m}^2 = 0.063 \text{ m}^3\text{/s}
+$$
 
 Convertimos a litros por minuto:
-$$ 0.063 \text{ m}^3\text{/s} = 63 \text{ litros/s} $$
-$$ Q = 63 \times 60 = 3780 \text{ litros/minuto} $$
+
+$$
+0.063 \text{ m}^3\text{/s} = 63 \text{ litros/s}
+$$
+
+$$
+Q = 63 \times 60 = 3780 \text{ litros/minuto}
+$$
 
 Una bomba de sentina eléctrica comercial de alta capacidad puede evacuar típicamente unos 100-150 litros/minuto. La tasa de ingreso es unas 25 veces superior a la capacidad máxima de achique, haciendo obligatoria la obturación de la brecha desde el exterior mediante un espiche o vela de colisión, y justificando la activación del EPIRB/DSC inmediatamente.
 

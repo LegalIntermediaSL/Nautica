@@ -11,16 +11,31 @@ Las dimensiones definen no solo el tamaño legal, sino el comportamiento hidrodi
 *   **Eslora (Length):** Es la longitud del barco. Se mide de proa a popa.
     *   *Eslora Máxima o Total ($L_{OA}$):* Medida desde los puntos más extremos.
     *   *Eslora de Flotación ($L_{WL}$):* La longitud de la obra viva. Determina la velocidad máxima teórica en cascos de desplazamiento mediante el Número de Froude. La velocidad del casco (en nudos) se aproxima con la fórmula matemática:
-        $$ V_{max} \approx 1.34 \times \sqrt{L_{WL}} $$
+        
+
+$$
+V_{max} \approx 1.34 \times \sqrt{L_{WL}}
+$$
+
         donde $L_{WL}$ está en pies.
     *   *Eslora entre Perpendiculares ($L_{BP}$):* Usada en cálculos de arquitectura naval, medida entre la perpendicular de proa y la de popa.
 *   **Manga (Beam):** Es la anchura del barco. Define la estabilidad transversal inicial.
 *   **Puntal (Depth):** Es la altura interior del casco, desde la quilla hasta la cubierta principal.
 *   **Calado (Draft, $T$):** Profundidad sumergida. Crítico para evitar encallamientos y calcular el desplazamiento ($\Delta = L \times B \times T \times C_B \times \rho$).
 *   **Francobordo (Freeboard):** Distancia vertical desde la línea de flotación hasta la cubierta principal. Un francobordo alto proporciona reserva de flotabilidad.
-    *   *Fórmula fundamental:* $$ \text{Puntal} = \text{Calado} + \text{Francobordo} $$
+    *   *Fórmula fundamental:* 
+
+$$
+\text{Puntal} = \text{Calado} + \text{Francobordo}
+$$
+
 *   **Asiento (Trim):** Diferencia entre el calado de popa ($T_A$) y el de proa ($T_F$).
-    $$ \text{Asiento} = T_A - T_F $$
+    
+
+$$
+\text{Asiento} = T_A - T_F
+$$
+
     Si $T_A > T_F$, tiene asiento apopante (positivo).
 
 ### Contexto Histórico
@@ -59,7 +74,12 @@ El barco actúa como una viga sometida a esfuerzos flectores sobre el oleaje:
 ## 3. Accesorios, Elementos de Cubierta y Apéndices Hidrodinámicos
 
 *   **Timón:** Superficie de control. La fuerza de sustentación (lift) del timón sigue la teoría de perfiles alares:
-    $$ L = \frac{1}{2} \rho v^2 A C_L $$
+    
+
+$$
+L = \frac{1}{2} \rho v^2 A C_L
+$$
+
     donde el ángulo de ataque entra en pérdida (stall) si supera los 35°.
 *   **Bañera:** Zona abierta para maniobra.
 *   **Pasamanos / Candelabros:** Seguridad de tripulación.
@@ -86,17 +106,36 @@ El vector de velocidad absoluta del barco ($V_{SOG}$) es la suma del vector de v
 
 **Problema 1: Cálculo de la Resistencia de Formación de Olas (Wave-Making Resistance)**
 Un velero de diseño clásico posee una eslora en la línea de flotación de $L_{WL} = 10 \text{ m}$. Si el Número de Froude ($Fr$) se define matemáticamente como:
-$$ Fr = \frac{v}{\sqrt{g \cdot L_{WL}}} $$
+
+$$
+Fr = \frac{v}{\sqrt{g \cdot L_{WL}}}
+$$
+
 y se asume empíricamente que la resistencia por formación de olas diverge significativamente al alcanzar un Número de Froude de la "velocidad del casco" de $Fr \approx 0.4$, calcule la velocidad límite teórica del casco en nudos. Asuma $g = 9.81 \text{ m/s}^2$.
 
 *Solución:*
 1. Despejando la velocidad límite de la ecuación de Froude:
-$$ v = Fr \cdot \sqrt{g \cdot L_{WL}} $$
+
+$$
+v = Fr \cdot \sqrt{g \cdot L_{WL}}
+$$
+
 2. Sustituyendo los valores conocidos:
-$$ v = 0.4 \cdot \sqrt{9.81 \text{ m/s}^2 \cdot 10 \text{ m}} = 0.4 \cdot \sqrt{98.1} \text{ m/s} $$
-$$ v \approx 0.4 \cdot 9.904 \text{ m/s} = 3.96 \text{ m/s} $$
+
+$$
+v = 0.4 \cdot \sqrt{9.81 \text{ m/s}^2 \cdot 10 \text{ m}} = 0.4 \cdot \sqrt{98.1} \text{ m/s}
+$$
+
+$$
+v \approx 0.4 \cdot 9.904 \text{ m/s} = 3.96 \text{ m/s}
+$$
+
 3. Convirtiendo a nudos ($1 \text{ nudo} = 0.5144 \text{ m/s}$):
-$$ V_{max} = \frac{3.96 \text{ m/s}}{0.5144 \text{ m/s/nudo}} \approx 7.70 \text{ nudos} $$
+
+$$
+V_{max} = \frac{3.96 \text{ m/s}}{0.5144 \text{ m/s/nudo}} \approx 7.70 \text{ nudos}
+$$
+
 Esta fórmula subraya la barrera hidrodinámica ineludible para cascos de desplazamiento antes de entrar en régimen de planeo.
 
 ## Referencias Bibliográficas y Jurisprudencia

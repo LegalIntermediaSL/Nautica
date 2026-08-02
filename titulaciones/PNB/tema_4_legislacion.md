@@ -64,9 +64,11 @@ Un patrón de PNB es avistado navegando en un buque a motor a una distancia rect
 
 **Solución:**
 1. Cálculo de la distancia euclídea al lugar de abrigo:
+
 $$
 D_p = \sqrt{4^2 + 3.5^2} = \sqrt{16 + 12.25} = \sqrt{28.25} \approx 5.315\text{ millas}
 $$
+
 2. Verificación de la condición de atribución:
 Condición: $D_p \le 5\text{ millas}$.
 Evaluación: $5.315 \le 5$ es FALSO.
