@@ -32,8 +32,10 @@ Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado
 - **[Bitácora](BITACORA.md)**: Plantilla para el registro de navegaciones y experiencias.
 
 ## Manuales de A Bordo (Supervivencia y Mantenimiento)
-Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivir en crisis. Estos 6 manuales maestros cubren la realidad del mar:
+Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivir en crisis. Estos 8 manuales maestros cubren la realidad del mar:
+- **[Checklists de Emergencia y Pre-Zarpe (SOPs)](checklists/INDEX.md)**: Tablas de acción rápida listas para plastificar (Incendio, Abandono de Buque, Hombre al Agua y chequeo WABER del motor).
 - **[Maniobras de Puerto y Fondeo](MANIOBRAS_Y_FONDEO.md)**: Cinemática del barco (Prop Walk), uso táctico de esprines para desatracar, regla de oro de la cadena de fondeo, tipos de anclas y el cálculo del Círculo de Borneo.
+- **[Navegación con Mal Tiempo](NAVEGACION_CON_MAL_TIEMPO.md)**: Tácticas de supervivencia (Capear vs Correr el temporal), evitar el pitchpoling y uso de anclas de capa.
 - **[Mecánica Naval y Mantenimiento](MECANICA_Y_MANTENIMIENTO.md)**: Motores diésel intraborda, sistemas de refrigeración (impeller), electricidad (baterías y 12V/220V), averías y protocolo de invernaje.
 - **[Electrónica e Instrumentación](ELECTRONICA_NAVAL.md)**: Cómo funciona el GPS, uso táctico del AIS (Clase A vs B), radares de estado sólido, sondas y la red NMEA 2000.
 - **[Sanidad Marítima y Primeros Auxilios](PRIMEROS_AUXILIOS.md)**: Radioconsulta a Centro Radio Médico, manejo de shock anafiláctico, RCP en cubierta, quemaduras graves, rescate horizontal, cinetosis, e intoxicaciones.
