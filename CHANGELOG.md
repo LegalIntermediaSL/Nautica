@@ -6,6 +6,11 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 
 ## [Unreleased]
 
+### Añadido (Ampliación Ronda 7: SOPs médicos, mecánica de supervivencia y meteorología local)
+- **Medicina avanzada:** nuevo `MEDICINA_Y_PRIMEROS_AUXILIOS.md` (SOPs para RCP en mar, evacuación aeromédica Helimer, gestión de botiquines según zona, hipotermia y mareo severo).
+- **Mecánica de emergencia:** nuevo `MECANICA_DIESEL_MARINO.md` (SOPs para purgado del circuito de gasoil, cambio del rodete de refrigeración/impeller y diagnóstico rápido por color de humo).
+- **Meteorología Local:** nuevo `METEOROLOGIA_LOCAL_IBERICA.md` (Vientos característicos de la península, brisas térmicas terral/virazón, e interpretación del barómetro y el cielo para predecir turbonadas).
+
 ### Añadido (Ampliación Ronda 4: profundización, nuevos huecos y auditoría de calidad)
 - **Averías en travesía:** nuevo `AVERIAS_EN_TRAVESIA.md` (checklist de decisión en el momento ante fallo total de electrónica/instrumentos, rotura de jarcia o vela, vía de agua no localizada y fallo de gobierno/timón, con navegación de respaldo y criterios para desviarse a puerto o pedir asistencia), enlazado desde `README.md`.
 - **Drones:** nuevo `NORMATIVA_DRONES.md` (categorías de operación AESA/UE, registro de operador, restricciones en el entorno marino, consejos de vuelo desde cubierta, seguro de RC específico).

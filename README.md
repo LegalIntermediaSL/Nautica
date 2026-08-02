@@ -12,6 +12,7 @@ Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado
 - **[Aparejos, Tipos de Veleros y Nomenclatura](VELA_TIPOS_Y_APAREJOS.md)**: Clasificación de veleros (Sloop, Ketch, Goleta), nombres de los mástiles y el glosario estricto de la jarcia (drizas, escotas, estays).
 - **[Meteorología Marítima General](METEOROLOGIA.md)**: Isobaras, frentes térmicos, brisas costeras y escalas de viento (Beaufort) y mar (Douglas).
 - **[Vientos Locales de España](VIENTOS_LOCALES_ESPAÑA.md)**: Tramontana, Mistral, Levante, Siroco, Terral y Galerna: origen, zona afectada y riesgos de cada viento regional.
+- **[Meteorología Local Ibérica y Mediterránea](METEOROLOGIA_LOCAL_IBERICA.md)**: Guía práctica de observación visual, uso del barómetro a bordo para predecir borrascas y brisas térmicas (terral/virazón).
 - **[Seguridad Reglamentaria y Pirotecnia](SEGURIDAD.md)**: Las 7 zonas de navegación, balsas salvavidas (zafa hidrostática), chalecos (Newtons) y uso de bengalas.
 - **[Reglamento de Abordajes (RIPA) y Balizamiento](RIPA_Y_BALIZAMIENTO.md)**: Prioridades de paso, luces de buques, marcas diurnas, señales acústicas y boyas IALA.
 - **[Gestiones y Documentación](GESTIONES_Y_DOCUMENTACION.md)**: Papelería, certificados, LEB, Rol de Despacho y documentación obligatoria a bordo.
@@ -39,8 +40,10 @@ Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivi
 - **[Dinámica y Maniobra de Catamaranes](MANIOBRA_CATAMARAN.md)**: Atraque bimotor sin usar timón, fondeo con pata de gallo (bridle) y el grave riesgo de vuelco irreversible sin lastre en multicascos.
 - **[Energía a Bordo y Sistemas (Central Flotante)](ENERGIA_A_BORDO.md)**: Banco de servicios LiFePO4 vs Plomo, auditoría de consumos, eficiencia de paneles solares (MPPT), inversores de onda pura e hidrogeneradores.
 - **[Mecánica Naval y Mantenimiento](MECANICA_Y_MANTENIMIENTO.md)**: Motores diésel intraborda, sistemas de refrigeración (impeller), electricidad (baterías y 12V/220V), averías y protocolo de invernaje.
+- **[Mecánica de Emergencia: El Motor Diésel Marino](MECANICA_DIESEL_MARINO.md)**: SOPs de purgado de gasoil, cambio de rodete de refrigeración y diagnóstico por color de humo.
 - **[Electrónica e Instrumentación](ELECTRONICA_NAVAL.md)**: Cómo funciona el GPS, uso táctico del AIS (Clase A vs B), radares de estado sólido, sondas y la red NMEA 2000.
 - **[Sanidad Marítima y Primeros Auxilios](PRIMEROS_AUXILIOS.md)**: Radioconsulta a Centro Radio Médico, manejo de shock anafiláctico, RCP en cubierta, quemaduras graves, rescate horizontal, cinetosis, e intoxicaciones.
+- **[Medicina y Primeros Auxilios a Bordo (SOPs)](MEDICINA_Y_PRIMEROS_AUXILIOS.md)**: Botiquines por zonas, inmovilización de traumatismos, hipotermia, mareo severo y protocolos de evacuación aeromédica (Helimer).
 - **[Comunicaciones, SMCP y Banderas](COMUNICACIONES_Y_BANDERAS.md)**: El Código Internacional de Señales (Banderas A-Z), uso estricto del VHF (MAYDAY, PAN-PAN, SECURITE) y Standard Marine Communication Phrases.
 - **[Tutorial de Vela Práctico (Paso a Paso)](VELA_TUTORIAL_PRACTICO.md)**: Guía física de maniobras en la bañera: cómo izar la mayor, virada por avante en equipo, toma de rizos para tormentas y atraque a motor.
 - **[Nudos Marineros y Cabullería](nudos/INDEX.md)**: Colección de manuales prácticos de nudos de tope (As de Guía, Nudo de Ocho), amarre (Ballestrinque, Cornamusa), unión y empalmes (splicing).
