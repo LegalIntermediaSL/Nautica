@@ -6,6 +6,13 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 
 ## [Unreleased]
 
+### Añadido (Ampliación Ronda 9: Laboratorio Computacional Náutico)
+- **Simulaciones (31-40):** Creación de 10 nuevos simuladores Python orientados a Ingeniería Naval, Logística y SAR.
+  - Diseño y Teoría del buque: `36_calculo_areas_velicas_ce_cv.ipynb` (Centro Vélico/Deriva), `40_calculo_velocidad_maxima_casco.ipynb` (Hull Speed/Froude), `33_calculo_calados_carga_estiba.ipynb` (TPC e inmersión), `34_simulador_esfuerzo_jarcia_firme.ipynb` (Fatiga del mástil).
+  - Logística y Operaciones: `32_simulador_coste_combustible_ruta.ipynb` (Optimización económica de crucero), `38_calculo_consumo_agua_dulce.ipynb` (Autonomía y potabilizadora).
+  - Seguridad y Reglamentos (RIPA/GMDSS): `35_simulador_senales_acusticas_niebla.ipynb`, `39_simulador_frecuencias_vhf_gmdss.ipynb` (Zonas A1-A4).
+  - Búsqueda y Navegación Visual: `37_simulador_rescate_hombre_al_agua.ipynb` (Patrón SAR Expanding Square), `31_calculo_distancia_horizonte_visual.ipynb` (Alcance faros).
+
 ### Añadido (Ampliación Ronda 8: Gran Expansión de Simuladores Jupyter)
 - **Simulaciones (22-30):** Inyección masiva de 9 nuevos simuladores interactivos en Python en el directorio `simulaciones/`.
   - Cinemática y Vectores: `25_calculo_deriva_abatimiento.ipynb` (Rumbo Efectivo) y `23_navegacion_ortodromica_derrotero.ipynb` (Círculo Máximo).
