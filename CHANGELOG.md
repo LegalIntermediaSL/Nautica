@@ -6,6 +6,13 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 
 ## [Unreleased]
 
+### Añadido (Ampliación Ronda 8: Gran Expansión de Simuladores Jupyter)
+- **Simulaciones (22-30):** Inyección masiva de 9 nuevos simuladores interactivos en Python en el directorio `simulaciones/`.
+  - Cinemática y Vectores: `25_calculo_deriva_abatimiento.ipynb` (Rumbo Efectivo) y `23_navegacion_ortodromica_derrotero.ipynb` (Círculo Máximo).
+  - Reglamentos: `28_simulador_luces_ripa.ipynb` (identificación cruzada de sectores).
+  - Mareas y Física: `29_prediccion_mareas_armonicas.ipynb` (modelo M2/S2) y `30_calculo_calado_aguas_someras.ipynb` (Efecto Squat).
+  - Maniobra y Sistemas: `24_simulador_fuerza_viento_velas.ipynb` (fuerza aerodinámica y rizos), `26_simulador_baterias_lifepo4.ipynb` (curva SOC y efecto Peukert), `27_maniobra_fondeo_calculo_cadena.ipynb` (Catenaria), `22_calculo_desvio_aguja.ipynb`.
+
 ### Añadido (Ampliación Ronda 7: SOPs médicos, mecánica de supervivencia y meteorología local)
 - **Medicina avanzada:** nuevo `MEDICINA_Y_PRIMEROS_AUXILIOS.md` (SOPs para RCP en mar, evacuación aeromédica Helimer, gestión de botiquines según zona, hipotermia y mareo severo).
 - **Mecánica de emergencia:** nuevo `MECANICA_DIESEL_MARINO.md` (SOPs para purgado del circuito de gasoil, cambio del rodete de refrigeración/impeller y diagnóstico rápido por color de humo).
