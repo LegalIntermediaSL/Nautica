@@ -6,6 +6,11 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 
 ## [Unreleased]
 
+### Añadido (Ampliación Ronda 10: La Trilogía Final)
+- **Documentación de Supervivencia:** Nuevo manual maestro `ABANDONO_Y_SUPERVIVENCIA.md` sobre tácticas SOLAS de abandono de buque, despliegue de balsa y supervivencia fisiológica.
+- **Simuladores (41-50):** 10 simuladores matemáticos avanzados (Velocidad VMG, Efecto Hélice, Tendencia Barométrica, Consumo Eléctrico 220V, Hora Meridiana, Curva Evolutiva, Error Girocompás).
+- **Simulador de Examen PER (51):** Nuevo motor evaluador oficial `51_simulador_examen_oficial_per.ipynb` que reproduce la estricta corrección del BOE (RD 875/2014) para tolerancias de fallos en RIPA, Carta y Balizamiento.
+
 ### Añadido (Ampliación Ronda 9: Laboratorio Computacional Náutico)
 - **Simulaciones (31-40):** Creación de 10 nuevos simuladores Python orientados a Ingeniería Naval, Logística y SAR.
   - Diseño y Teoría del buque: `36_calculo_areas_velicas_ce_cv.ipynb` (Centro Vélico/Deriva), `40_calculo_velocidad_maxima_casco.ipynb` (Hull Speed/Froude), `33_calculo_calados_carga_estiba.ipynb` (TPC e inmersión), `34_simulador_esfuerzo_jarcia_firme.ipynb` (Fatiga del mástil).

@@ -41,6 +41,7 @@ Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivi
 - **[Energía a Bordo y Sistemas (Central Flotante)](ENERGIA_A_BORDO.md)**: Banco de servicios LiFePO4 vs Plomo, auditoría de consumos, eficiencia de paneles solares (MPPT), inversores de onda pura e hidrogeneradores.
 - **[Mecánica Naval y Mantenimiento](MECANICA_Y_MANTENIMIENTO.md)**: Motores diésel intraborda, sistemas de refrigeración (impeller), electricidad (baterías y 12V/220V), averías y protocolo de invernaje.
 - **[Mecánica de Emergencia: El Motor Diésel Marino](MECANICA_DIESEL_MARINO.md)**: SOPs de purgado de gasoil, cambio de rodete de refrigeración y diagnóstico por color de humo.
+- **[ABANDONO_Y_SUPERVIVENCIA.md](ABANDONO_Y_SUPERVIVENCIA.md)**: Manual Táctico: Protocolos de abandono de buque, zafarrancho, despliegue de balsa y supervivencia extrema en el mar.
 - **[Electrónica e Instrumentación](ELECTRONICA_NAVAL.md)**: Cómo funciona el GPS, uso táctico del AIS (Clase A vs B), radares de estado sólido, sondas y la red NMEA 2000.
 - **[Sanidad Marítima y Primeros Auxilios](PRIMEROS_AUXILIOS.md)**: Radioconsulta a Centro Radio Médico, manejo de shock anafiláctico, RCP en cubierta, quemaduras graves, rescate horizontal, cinetosis, e intoxicaciones.
 - **[Medicina y Primeros Auxilios a Bordo (SOPs)](MEDICINA_Y_PRIMEROS_AUXILIOS.md)**: Botiquines por zonas, inmovilización de traumatismos, hipotermia, mareo severo y protocolos de evacuación aeromédica (Helimer).
