@@ -1,8 +1,6 @@
 # Náutica de Recreo
 
-Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado a recopilar, organizar y compartir información, recursos y herramientas relacionadas con la navegación de recreo.
-
-La Empresa Legal Intermedia, colaboradora en este proyecto aportando información pero no es responsable del contenido de este repositorio. Consulte el apartado aviso legal. La información contenida en este repositorio ha sido recopilada de diversas fuentes, entre ellas internet, no se garantiza la exactitud ni fiabilidad de ella.
+Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado a recopilar, organizar y compartir información, recursos y herramientas relacionadas con la navegación de recreo. Contiene manuales teóricos, calculadoras, utilidades y más de **65 simuladores interactivos en Python** para preparar titulaciones náuticas (PER, Patrón de Yate, Capitán de Yate). La Empresa Legal Intermedia, colaboradora en este proyecto aportando información pero no es responsable del contenido de este repositorio. Consulte el apartado aviso legal. La información contenida en este repositorio ha sido recopilada de diversas fuentes, entre ellas internet, no se garantiza la exactitud ni fiabilidad de ella.
 
 ## Contenido del Repositorio
 
@@ -55,11 +53,16 @@ Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivi
 - **[Vida a Bordo y Autonomía (Travesía Larga)](manuales/VIDA_A_BORDO.md)**: Gestión de agua dulce, sistemas de guardias, residuos y convivencia en espacio reducido.
 - **[La "Galley": Cocina y Provisionamiento Oceánico](manuales/PROVISIONAMIENTO_CRUCERO.md)**: Tácticas para almacenar comida sin nevera, plagas (gorgojos) y la técnica para cocinar bajo escoras de 30º usando el cardán y la cinta (bum strap).
 - **[Averías en Travesía: Checklist de Campo](manuales/AVERIAS_EN_TRAVESIA.md)**: Qué hacer en el momento ante un fallo total de electrónica, rotura de jarcia o vela, vía de agua no localizada o fallo de gobierno, con los medios limitados a bordo y lejos de un taller.
+- **[Navegación Electrónica Avanzada](manuales/NAVEGACION_ELECTRONICA_AVANZADA.md)**: Integración táctica de NMEA 2000, AIS, radares Broadband y uso de tablets/multiplexores WiFi.
+- **[Psicología del Capitán y Liderazgo](manuales/PSICOLOGIA_DEL_CAPITAN_Y_LIDERAZGO.md)**: Gestión de crisis, dinámica de tripulación, fatiga extrema y control de la cinetosis a bordo.
+- **[Planificación de Travesía Oceánica](manuales/TRAVESIA_OCEANICA_PLANIFICACION.md)**: Routing meteorológico, repuestos críticos, energía, agua y preparación integral para cruzar el Atlántico.
 
 ## Cultura y Práctica Náutica
 
 - **[Navegación Astronómica Avanzada](manuales/NAVEGACION_ASTRONOMICA_AVANZADA.md)**: La esfera celeste, el triángulo de posición y la recta de altura (Marcq St. Hilaire).
 - **[Cartografía Electrónica y ECDIS](manuales/CARTOGRAFIA_Y_ECDIS.md)**: Diferencias entre ECS y ECDIS, cartas ENC vs RNC y peligros del sobreescalado.
+- **[Prevención Práctica de Abordajes](manuales/PREVENCION_ABORDAJES_PRACTICA.md)**: Uso del radar/ARPA (TCPA/CPA), marcaciones relativas vs verdaderas y casos tácticos del RIPA.
+- **[Astilleros y Materiales de Construcción](manuales/ASTILLEROS_Y_MATERIALES_DE_CONSTRUCCION.md)**: Fibra de vidrio, aluminio, acero, carbono, y el problema de la ósmosis y corrosión galvánica.
 - **[Trimado Avanzado de Velas](manuales/TRIMADO_AVANZADO_VELA.md)**: Aerodinámica de ceñida, control de la bolsa, twist de baluma y uso del carro de escota.
 - **[Radiocomunicaciones y SMSSM](manuales/RADIOCOMUNICACIONES_SMSSM.md)**: El Sistema Mundial de Socorro, uso del VHF DSC, EPIRB, SART y mensajes de emergencia.
 - **[Pilotaje Costero Práctico](manuales/PILOTAJE_COSTERO.md)**: Navegación visual, uso táctico de enfilaciones (transits), navegación por veriles (isóbatas) y peligros del zoom en cartas electrónicas.
