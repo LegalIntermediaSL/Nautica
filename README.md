@@ -2,7 +2,7 @@
 
 Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado a recopilar, organizar y compartir información, recursos y herramientas relacionadas con la navegación de recreo.
 
-La Empresa Legal Intermedia, colaboradora en este proyecto aportando información pero no es responsable del contenido de este repositorio. Consulte el apartado aviso legal.
+La Empresa Legal Intermedia, colaboradora en este proyecto aportando información pero no es responsable del contenido de este repositorio. Consulte el apartado aviso legal. La información contenida en este repositorio ha sido recopilada de diversas fuentes, entre ellas internet, no se garantiza la exactitud ni fiabilidad de ella.
 
 ## Contenido del Repositorio
 
