@@ -2,6 +2,8 @@
 
 Bienvenido al repositorio de **Náutica de Recreo**. Este espacio está dedicado a recopilar, organizar y compartir información, recursos y herramientas relacionadas con la navegación de recreo.
 
+La Empresa Legal Intermedia, colaboradora en este proyecto aportando información pero no es responsable del contenido de este repositorio. Consulte el apartado aviso legal.
+
 ## Contenido del Repositorio
 
 - **[Titulaciones Náuticas (El Organigrama Español)](manuales/TITULOS_NAUTICOS.md)**: Atribuciones, esloras, y límites de navegación del PNB, PER, PY, CY y PPER (habilitación profesional).
