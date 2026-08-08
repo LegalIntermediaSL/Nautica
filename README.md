@@ -95,6 +95,6 @@ Si deseas contribuir con información, correcciones o mejoras, no dudes en crear
 > - **No es formación oficial:** Este material no sustituye a la formación teórica/práctica impartida por escuelas homologadas ni al criterio profesional.
 > - **Peligro en Navegación Real:** Los simuladores (Jupyter Notebooks) no están certificados. **Bajo ningún concepto deben utilizarse para la navegación real** ni la toma de decisiones en la mar. Para navegar, emplee siempre cartas oficiales actualizadas y equipos homologados (SOLAS/IHM).
 > - **Cambios normativos:** Las leyes y normativas marítimas están sujetas a modificaciones constantes por parte de la DGMM y la OMI.
-> - **Exención de responsabilidad:** El autor, los colaboradores y la Empresa Legal Intermedia declinan expresamente cualquier responsabilidad frente a posibles errores, omisiones, daños materiales, lesiones, accidentes o sanciones legales que pudieran derivarse, directa o indirectamente, del uso o interpretación de este repositorio.
+> - **Exención de responsabilidad:** El autor, los colaboradores y la Empresa Legal Intermedia declinan expresamente cualquier responsabilidad frente a posibles errores, omisiones, daños materiales, lesiones, accidentes o sanciones legales que pudieran derivarse, directa o indirectamente, del uso o interpretación de la información contenida en este repositorio o sus simulaciones.
 > 
 > **En la mar, la seguridad y la responsabilidad absoluta recaen siempre y de forma intransferible sobre el Patrón de la embarcación.** Navegue con prudencia.
