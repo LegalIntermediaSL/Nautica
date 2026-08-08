@@ -54,7 +54,7 @@ Los partes meteorológicos (VHF Navtex, AEMET) siempre usan terminología estand
 ### Escala de Viento (Escala Beaufort)
 Va del 0 al 12 (Huracán). En náutica de recreo:
 
-![Escala de Beaufort completa (0-12)](assets/images/meteorologia/escala_beaufort.svg)
+![Escala de Beaufort completa (0-12)](../assets/images/meteorologia/escala_beaufort.svg)
 *Fuente: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Beaufort_diagram.svg), autor Ixfd64, licencia CC BY 4.0.*
 
 *   **Fuerza 3 - 4 (11-16 nudos):** Brisa moderada. La mejor para navegar a vela cómodamente. "Borreguitos" aislados blancos en el mar.
@@ -153,7 +153,7 @@ Del centro de la borrasca suelen salir dos líneas frontales, con la simbología
 *   **Frente cálido:** línea roja con **semicírculos** apuntando hacia la dirección de avance.
 *   **Frente ocluido:** línea morada que alterna triángulos y semicírculos (el frente frío ha alcanzado al cálido).
 
-![Símbolos estándar de frentes meteorológicos](assets/images/meteorologia/simbolos_frentes.svg)
+![Símbolos estándar de frentes meteorológicos](../assets/images/meteorologia/simbolos_frentes.svg)
 *Frente frío, cálido, ocluido y estacionario tal como aparecen en un mapa de superficie. Fuente: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Weather_fronts.svg), autor -xfi-, licencia CC BY-SA 3.0.*
 
 En nuestro ejemplo: el frente frío se extiende hacia el suroeste desde la B (el aire polar avanza empujando), mientras el frente cálido se extiende hacia el sureste (el aire tropical húmedo precede a la borrasca). Un velero situado al este de Irlanda vería primero pasar el frente cálido (lluvia fina persistente, visibilidad reducida) y horas o un día después el frente frío (turbonada violenta, rolada de viento y despeje rápido).
@@ -168,7 +168,7 @@ En nuestro ejemplo: el frente frío se extiende hacia el suroeste desde la B (el
 
 ## 8. Ciclones Tropicales: Formación y Vigilancia
 
-Aunque el ciclón tropical es sobre todo materia de la titulación de Capitán de Yate (ver [tema_1_meteorologia.md](titulaciones/CY/tema_1_meteorologia.md) para la termodinámica y las tácticas de evasión oceánica en detalle), todo navegante de recreo que se mueva en zonas cálidas en temporada de huracanes/tifones debe reconocer los fundamentos y saber vigilar la amenaza.
+Aunque el ciclón tropical es sobre todo materia de la titulación de Capitán de Yate (ver [tema_1_meteorologia.md](../titulaciones/CY/tema_1_meteorologia.md) para la termodinámica y las tácticas de evasión oceánica en detalle), todo navegante de recreo que se mueva en zonas cálidas en temporada de huracanes/tifones debe reconocer los fundamentos y saber vigilar la amenaza.
 
 ### Condiciones necesarias para su formación
 Un ciclón tropical no se forma en cualquier sitio ni en cualquier momento; necesita coincidir varios ingredientes:

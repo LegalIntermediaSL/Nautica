@@ -9,7 +9,7 @@ La seguridad en la mar para el PNB exige la comprensión de los límites operati
 
 ## Equipo de Salvamento Obligatorio (Zona de Navegación del PNB)
 
-El PNB navega, como máximo, hasta **5 millas de la costa**, lo que en el régimen de despachos de las capitanías marítimas corresponde a la **Zona de Navegación 5** (o zonas más restrictivas, 6 y 7, si el barco está despachado así). El detalle completo de zonas, normativa y equipo por categoría está en **[SEGURIDAD.md](../../SEGURIDAD.md)**; para el examen basta con retener este resumen:
+El PNB navega, como máximo, hasta **5 millas de la costa**, lo que en el régimen de despachos de las capitanías marítimas corresponde a la **Zona de Navegación 5** (o zonas más restrictivas, 6 y 7, si el barco está despachado así). El detalle completo de zonas, normativa y equipo por categoría está en **[SEGURIDAD.md](../../manuales/SEGURIDAD.md)**; para el examen basta con retener este resumen:
 
 | Equipo | Exigencia en Zona 5 (hasta 5 millas) |
 | :--- | :--- |
@@ -24,7 +24,7 @@ El PNB navega, como máximo, hasta **5 millas de la costa**, lo que en el régim
 
 ## Hombre al Agua (MOB): Maniobra Básica
 
-La secuencia inmediata y las técnicas completas de recuperación (Quick-Stop, Lifesling, izado a bordo) están desarrolladas paso a paso en **[PROTOCOLO_HOMBRE_AL_AGUA.md](../../PROTOCOLO_HOMBRE_AL_AGUA.md)**. Para el examen PNB, memoriza el orden de la reacción inmediata ante una caída al agua:
+La secuencia inmediata y las técnicas completas de recuperación (Quick-Stop, Lifesling, izado a bordo) están desarrolladas paso a paso en **[PROTOCOLO_HOMBRE_AL_AGUA.md](../../manuales/PROTOCOLO_HOMBRE_AL_AGUA.md)**. Para el examen PNB, memoriza el orden de la reacción inmediata ante una caída al agua:
 
 1.  **Gritar "¡Hombre al agua!"** para alertar a toda la tripulación.
 2.  **Lanzar el aro salvavidas** hacia el náufrago de inmediato.

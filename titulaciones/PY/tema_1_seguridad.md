@@ -182,7 +182,7 @@ Adicional al SOLAS pack de la balsa, se porta:
 | **AIS-SART / MOB** | VHF/AIS | Plotter de los buques cercanos (icono de socorro) | Manual o automática (con el chaleco) | ≥ 96 h en espera |
 
 > [!NOTE]
-> Este resumen es autocontenido para el examen. Para el detalle de protocolos NMEA, falsas alarmas y su desactivación, integración con AIS o comparativa con sistemas de comunicación satelital (Iridium, Starlink), consulta la guía completa **[Electrónica Naval, sección 7](../../ELECTRONICA_NAVAL.md#7-balizas-de-emergencia-por-satélite-epirb-plb-y-ais-sart)**.
+> Este resumen es autocontenido para el examen. Para el detalle de protocolos NMEA, falsas alarmas y su desactivación, integración con AIS o comparativa con sistemas de comunicación satelital (Iridium, Starlink), consulta la guía completa **[Electrónica Naval, sección 7](../../manuales/ELECTRONICA_NAVAL.md#7-balizas-de-emergencia-por-satélite-epirb-plb-y-ais-sart)**.
 
 ### 3.6 Supervivencia Prolongada en la Balsa: Racionamiento y Señalización
 

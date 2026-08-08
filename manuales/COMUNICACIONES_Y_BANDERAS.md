@@ -8,7 +8,7 @@ El lenguaje del mar es universal para evitar colisiones idiomáticas entre buque
 
 Izadas en una driza visible de babor o estribor, las banderas envían mensajes sin necesidad de radio. Se leen de arriba hacia abajo. En caso de no tener banderas físicas, los buques las dictan en inglés por VHF ("I am flying flag Alfa").
 
-![Código Internacional de Señales: banderas, semáforo y Morse](assets/images/comunicaciones/codigo_internacional_senales.svg)
+![Código Internacional de Señales: banderas, semáforo y Morse](../assets/images/comunicaciones/codigo_internacional_senales.svg)
 *Set completo de banderas del C.I.S., semáforo de brazos y alfabeto Morse. Fuente: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:International_Code_of_Signals.svg), autor Michi83, licencia CC BY-SA 4.0.*
 
 ### Banderas de la 'A' a la 'Z' y sus Significados de Letra Única
@@ -133,7 +133,7 @@ En cuanto dos estaciones se han localizado mutuamente en el Canal 16, la norma i
 >
 > *(Ambas estaciones sintonizan el Canal 9 y continúan allí la conversación real: "Motovelero Alfa, aquí Puerto Base, indíqueme calado y eslora para asignarle amarre..."; el Canal 16 queda libre de nuevo en segundos.)*
 
-En los puertos deportivos españoles, el canal de trabajo habitual para contactar con Capitanía/Marinería tras la llamada inicial es el **Canal 9** (ver también **[puertos/INDEX.md](puertos/INDEX.md)**), aunque cada puerto puede publicar otro canal en su ficha o en el Anuario de Faros y Señales.
+En los puertos deportivos españoles, el canal de trabajo habitual para contactar con Capitanía/Marinería tras la llamada inicial es el **Canal 9** (ver también **[puertos/INDEX.md](../puertos/INDEX.md)**), aunque cada puerto puede publicar otro canal en su ficha o en el Anuario de Faros y Señales.
 
 ---
 

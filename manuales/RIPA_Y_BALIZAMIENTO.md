@@ -43,7 +43,7 @@ Para poder aplicar el RIPA de noche, hay que identificar el tipo de buque y su r
 
 *(Un velero navegando a vela pura lleva las luces roja/verde y la blanca de popa, pero APAGA la luz blanca de tope. Así sabemos que es un velero).*
 
-![Configuración de luces de un buque de motor visto desde distintos ángulos](assets/images/balizamiento/luces_navegacion_buque_motor.png)
+![Configuración de luces de un buque de motor visto desde distintos ángulos](../assets/images/balizamiento/luces_navegacion_buque_motor.png)
 *Combinación de luces visibles según el ángulo de aproximación a un buque de motor de menos de 50m. Fuente: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Propmec50.PNG), autor Claudio Elias, dominio público.*
 
 ### Identificación de Buques Especiales
@@ -80,7 +80,7 @@ Con niebla o para anunciar maniobras a corta distancia.
 
 El IALA Región A aplica en Europa, África y casi toda Asia/Oceanía. (En América es la Región B, donde los colores rojo/verde están invertidos).
 
-![Mapa de las regiones IALA A y B](assets/images/balizamiento/iala_regiones_a_b.svg)
+![Mapa de las regiones IALA A y B](../assets/images/balizamiento/iala_regiones_a_b.svg)
 *Región A (rojo, España incluida) vs. Región B (verde). Fuente: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:IALA_Maritime_Buoyage_System_Regions.svg), autor Korakys, licencia CC BY 4.0.*
 
 ### Marcas Laterales (Canales de entrada a puerto)

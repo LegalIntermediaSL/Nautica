@@ -55,7 +55,7 @@ La cabuyería moderna ha desplazado casi por completo a las fibras naturales (c�
 | **Dyneema / Spectra** | Prácticamente nula | Altísima (muy superior al acero en igual peso) | Buena | Alto | Escotas y drizas de regata, donde la ausencia de estiramiento es crítica para mantener el trimado de la vela; cada vez más presente también en cruceros por su ligereza |
 | **Kevlar / Aramida** | Muy baja | Muy alta | Baja: se degrada rápido con el sol si no va forrado o protegido | Alto | Jarcia firme textil de alta gama (estays y obenques sintéticos), siempre con una funda protectora que lo aísle del UV y de la abrasión |
 
-**Sobre las uniones:** en cabos modernos de alto rendimiento (Dyneema, Kevlar) la unión permanente de referencia no es el nudo, sino el **empalme**, que conserva un porcentaje mucho mayor de la resistencia original del cabo y no se afloja con el tiempo. Consulta [Empalmes (Splicing)](nudos/EMPALMES.md) para el procedimiento detallado de empalme en cabo trenzado y en trenza hueca de Dyneema.
+**Sobre las uniones:** en cabos modernos de alto rendimiento (Dyneema, Kevlar) la unión permanente de referencia no es el nudo, sino el **empalme**, que conserva un porcentaje mucho mayor de la resistencia original del cabo y no se afloja con el tiempo. Consulta [Empalmes (Splicing)](../nudos/EMPALMES.md) para el procedimiento detallado de empalme en cabo trenzado y en trenza hueca de Dyneema.
 
 ---
 

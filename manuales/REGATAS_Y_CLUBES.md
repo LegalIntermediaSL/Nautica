@@ -103,7 +103,7 @@ Más allá del club y el campeonato local, existe un puñado de regatas que form
 
 *   **The Ocean Race (antes Volvo Ocean Race, y antes Whitbread Round the World Race):** La "Vuelta al Mundo" a vela por etapas, con tripulaciones completas a bordo de monocascos oceánicos de última generación. Una de las pruebas más duras del deporte mundial, con etapas de varias semanas cruzando los mares del Sur.
 *   **Vendée Globe:** La regata oceánica más extrema que existe: vuelta al mundo **en solitario, sin escalas y sin asistencia**, a bordo de un IMOCA 60. Sale de Les Sables-d'Olonne (Francia) cada cuatro años y dura entre 70 y 100 días. Es el equivalente, en el imaginario de la vela, a una expedición al Everest.
-*   **ARC (Atlantic Rally for Cruisers):** El gran cruce transatlántico "social" de cruceros de recreo, con salida desde Las Palmas de Gran Canaria rumbo al Caribe aprovechando los alisios. Ya se menciona en detalle en [puertos/INTERNACIONALES.md](puertos/INTERNACIONALES.md), en la sección sobre Las Palmas de Gran Canaria.
+*   **ARC (Atlantic Rally for Cruisers):** El gran cruce transatlántico "social" de cruceros de recreo, con salida desde Las Palmas de Gran Canaria rumbo al Caribe aprovechando los alisios. Ya se menciona en detalle en [puertos/INTERNACIONALES.md](../puertos/INTERNACIONALES.md), en la sección sobre Las Palmas de Gran Canaria.
 
 Estas pruebas no tienen relación directa con el club náutico de barrio ni con la RFEV en el día a día, pero son la referencia cultural que casi todo aficionado a la vela conoce y sigue, y muchas veces son la chispa que anima a un regatista de Optimist a soñar con navegar algún día un océano entero.
 

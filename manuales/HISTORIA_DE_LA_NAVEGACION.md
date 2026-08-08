@@ -2,7 +2,7 @@
 
 Cada vez que un patrón consulta el GPS del salpicadero para saber dónde está, está usando la última respuesta a una pregunta que la humanidad lleva más de tres mil años intentando resolver: **¿dónde estoy exactamente, en medio de una superficie sin marcas?** Este documento repasa esa historia —de la observación de las aves y las estrellas hasta la constelación de satélites— no como un tratado técnico, sino como lo que es: una de las grandes aventuras del ingenio humano.
 
-Para quien prepare el examen de **Capitán de Yate (CY)** y quiera entender *por qué* se sigue estudiando trigonometría esférica y sextante en pleno siglo XXI, este relato es el complemento narrativo de los temas técnicos [`titulaciones/CY/tema_3_teoria_astronomica.md`](titulaciones/CY/tema_3_teoria_astronomica.md) y [`titulaciones/CY/tema_4_calculos_astronomicos.md`](titulaciones/CY/tema_4_calculos_astronomicos.md), a los que se enlaza al final para quien quiera bajar a las matemáticas.
+Para quien prepare el examen de **Capitán de Yate (CY)** y quiera entender *por qué* se sigue estudiando trigonometría esférica y sextante en pleno siglo XXI, este relato es el complemento narrativo de los temas técnicos [`titulaciones/CY/tema_3_teoria_astronomica.md`](../titulaciones/CY/tema_3_teoria_astronomica.md) y [`titulaciones/CY/tema_4_calculos_astronomicos.md`](../titulaciones/CY/tema_4_calculos_astronomicos.md), a los que se enlaza al final para quien quiera bajar a las matemáticas.
 
 ---
 
@@ -112,7 +112,7 @@ De la Casa de Contratación de Sevilla al Observatorio de San Fernando hay casi 
 
 Este documento es, deliberadamente, un relato histórico y no un manual de cálculo. Quien quiera entender **cómo** se resuelven hoy en día, paso a paso, los mismos problemas que Harrison y sus contemporáneos resolvían a mano —la esfera celeste, el triángulo de posición, las correcciones del sextante y el método de Marcq St. Hilaire— tiene toda esa trigonometría esférica desarrollada en detalle en:
 
-- [`titulaciones/CY/tema_3_teoria_astronomica.md`](titulaciones/CY/tema_3_teoria_astronomica.md): la esfera celeste, los sistemas de coordenadas astronómicas y el triángulo esférico de posición.
-- [`titulaciones/CY/tema_4_calculos_astronomicos.md`](titulaciones/CY/tema_4_calculos_astronomicos.md): las correcciones del sextante y la resolución analítica completa de una recta de altura.
+- [`titulaciones/CY/tema_3_teoria_astronomica.md`](../titulaciones/CY/tema_3_teoria_astronomica.md): la esfera celeste, los sistemas de coordenadas astronómicas y el triángulo esférico de posición.
+- [`titulaciones/CY/tema_4_calculos_astronomicos.md`](../titulaciones/CY/tema_4_calculos_astronomicos.md): las correcciones del sextante y la resolución analítica completa de una recta de altura.
 
 *(Algunas fechas y episodios de este relato —especialmente los más antiguos, como la circunnavegación fenicia de África o el carácter exacto de los primeros usos marítimos de la brújula china— siguen siendo objeto de debate historiográfico. Se han señalado con expresiones aproximadas ("hacia", "a mediados de", "la tradición señala") precisamente para no presentar como certeza absoluta lo que la propia historiografía todavía discute.)*

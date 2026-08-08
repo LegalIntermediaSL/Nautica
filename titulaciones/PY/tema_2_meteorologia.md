@@ -138,7 +138,7 @@ Más allá de la ecuación del viento geostrófico (apartado 2.1), el examen del
 | Alternancia morada | Ocluido | Combinación de ambos, sistema en fase de decaimiento |
 
 > [!NOTE]
-> Este resumen es autocontenido para el examen. Para el desarrollo completo con ejemplo gráfico paso a paso sobre un mapa real del Atlántico Norte, consulta **[METEOROLOGIA.md, sección 7 "Cómo Leer un Mapa Isobárico"](../../METEOROLOGIA.md#7-cómo-leer-un-mapa-isobárico-paso-a-paso)**.
+> Este resumen es autocontenido para el examen. Para el desarrollo completo con ejemplo gráfico paso a paso sobre un mapa real del Atlántico Norte, consulta **[METEOROLOGIA.md, sección 7 "Cómo Leer un Mapa Isobárico"](../../manuales/METEOROLOGIA.md#7-cómo-leer-un-mapa-isobárico-paso-a-paso)**.
 
 ## 7. Corrientes Oceánicas Principales
 

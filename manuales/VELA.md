@@ -35,7 +35,7 @@ El concepto más difícil para el principiante es que el viento que se siente en
 
 No puedes navegar directo contra el ojo del viento (zona muerta, aprox. $45^\circ$ a cada lado de la proa).
 
-![Rumbos respecto al viento (points of sail)](assets/images/vela/rumbos_puntos_de_vela.svg)
+![Rumbos respecto al viento (points of sail)](../assets/images/vela/rumbos_puntos_de_vela.svg)
 *Rosa de rumbos: desde la zona muerta ("no-go zone") hasta la empopada pura. Fuente: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Points_of_sail.svg), autor Andrew c, licencia CC BY-SA 3.0.*
 
 1.  **Ceñida (Close Hauled):** A $45^\circ$ del viento. Vas lo más "contra" el viento posible. Velas cazadas a tope, barco muy escorado (tumbado). Es el rumbo de mayor Lift.

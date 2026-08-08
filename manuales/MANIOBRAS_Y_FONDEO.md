@@ -54,7 +54,7 @@ Fondear no es tirar un hierro al agua; es crear una cadena de amortiguación par
 *   **Bruce (Uña de garra):** Sin partes móviles, muy robusta. Buena en roca y arena.
 *   **Rezón (Grampín):** Tipo paraguas, de cuatro uñas. Solo se usa en embarcaciones menores o neumáticas para fondos rocosos.
 
-![Tipos de anclas](assets/images/maniobra/tipos_de_ancla.jpg)
+![Tipos de anclas](../assets/images/maniobra/tipos_de_ancla.jpg)
 *Distintos diseños de ancla (Danforth, Hall, CQR, Stockless, entre otros). Fuente: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Anchor_types.jpg), dominio público.*
 
 ### La Regla de Oro: La Longitud de Cadena (Filare)

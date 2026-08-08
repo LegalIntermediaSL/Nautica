@@ -106,7 +106,7 @@ Mantener informados a familiares o al equipo de apoyo en tierra durante una trav
 
 *   **Parte diario a familiares:** establece antes de zarpar una rutina fija (por ejemplo, un mensaje diario a la misma hora vía satélite, radio SSB/pactor o el sistema de a bordo disponible) indicando posición, estado de la tripulación y del barco, y previsión para las próximas 24 horas. Acuerda también qué hacer si un día falla el parte (un protocolo de "si no tienes noticias en X horas, contacta con..." evita alarmas innecesarias por un simple problema de cobertura).
 *   **SafeTrx y aplicaciones de seguimiento:** aplicaciones como SafeTrx (de la Federación Internacional de Salvamento Marítimo) permiten compartir la posición del barco en tiempo real con contactos de confianza y, en caso de emergencia, alertar directamente a los servicios de rescate con la última posición conocida. En travesías con cobertura de datos o vía satélite, complementan (no sustituyen) el parte de voz o mensaje a la familia.
-*   **Uso de la bitácora:** al margen de la comunicación con tierra, cada jornada de travesía debe quedar registrada en el cuaderno de a bordo con posición, rumbo, condiciones y cualquier incidencia. La plantilla y el uso del cuaderno de bitácora están detallados en **[Bitácora](BITACORA.md)**; en travesía larga, mantener esta disciplina diaria es también lo que permite reconstruir con precisión lo ocurrido si después hace falta (una avería, un parte meteorológico relevante, un cambio de plan de derrota).
+*   **Uso de la bitácora:** al margen de la comunicación con tierra, cada jornada de travesía debe quedar registrada en el cuaderno de a bordo con posición, rumbo, condiciones y cualquier incidencia. La plantilla y el uso del cuaderno de bitácora están detallados en **[Bitácora](../BITACORA.md)**; en travesía larga, mantener esta disciplina diaria es también lo que permite reconstruir con precisión lo ocurrido si después hace falta (una avería, un parte meteorológico relevante, un cambio de plan de derrota).
 
 ---
 
@@ -123,4 +123,4 @@ Convivir semanas seguidas en los pocos metros cuadrados habitables de un barco, 
 
 ---
 
-*Esta guía es un complemento práctico de vida a bordo. Para la técnica de mecánica y generación de energía consulta [Mecánica y Mantenimiento](MECANICA_Y_MANTENIMIENTO.md), para la normativa ambiental y de residuos [Medioambiente](MEDIOAMBIENTE.md), para primeros auxilios [Primeros Auxilios](PRIMEROS_AUXILIOS.md), y para el registro de las travesías [Bitácora](BITACORA.md).*
+*Esta guía es un complemento práctico de vida a bordo. Para la técnica de mecánica y generación de energía consulta [Mecánica y Mantenimiento](MECANICA_Y_MANTENIMIENTO.md), para la normativa ambiental y de residuos [Medioambiente](MEDIOAMBIENTE.md), para primeros auxilios [Primeros Auxilios](PRIMEROS_AUXILIOS.md), y para el registro de las travesías [Bitácora](../BITACORA.md).*

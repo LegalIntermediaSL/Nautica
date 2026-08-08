@@ -24,7 +24,7 @@ El examen no pregunta por la dinámica de la catenaria, pero sí exige reconocer
 
 ## Maniobra Básica de Fondeo
 
-La técnica y las reglas prácticas de filado (3-5 veces la profundidad, círculo de borneo, tipos de ancla, respeto a la Posidonia) están desarrolladas con detalle en **[MANIOBRAS_Y_FONDEO.md](../../MANIOBRAS_Y_FONDEO.md)**. Para el examen PNB basta con conocer la secuencia básica de la maniobra:
+La técnica y las reglas prácticas de filado (3-5 veces la profundidad, círculo de borneo, tipos de ancla, respeto a la Posidonia) están desarrolladas con detalle en **[MANIOBRAS_Y_FONDEO.md](../../manuales/MANIOBRAS_Y_FONDEO.md)**. Para el examen PNB basta con conocer la secuencia básica de la maniobra:
 
 1.  **Elegir el fondeadero:** Comprobar en la carta o app que el fondo es de arena (nunca sobre Posidonia u otras praderas protegidas) y que hay espacio suficiente para el círculo de borneo sin riesgo de chocar con la costa u otros barcos.
 2.  **Aproximación:** Situar el barco proa al viento (o a la corriente, la que sea dominante) y detener la arrancada justo en el punto elegido.

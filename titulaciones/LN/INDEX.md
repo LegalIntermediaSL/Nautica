@@ -7,7 +7,7 @@ La Licencia de Navegación (antiguamente conocida como "Titulín") es la forma m
 *   **Distancia máxima a la costa:** 2 millas náuticas navegando de día.
 *   **Motos de agua:** Motos náuticas de clase C (hasta 55 CV).
 
-> **¿Y las motos de agua?** La Licencia de Navegación no es solo para barcos: con este mismo título también puedes patronear una moto de agua de clase C (hasta 55 CV), que es la potencia habitual de las motos de agua de alquiler y de uso recreativo. No necesitas sacarte un título aparte para esto; la LN ya te cubre. Consulta la guía específica **[Motos de Agua](../../MOTOS_DE_AGUA.md)** para normativa de navegación, equipo de seguridad obligatorio y riesgos particulares.
+> **¿Y las motos de agua?** La Licencia de Navegación no es solo para barcos: con este mismo título también puedes patronear una moto de agua de clase C (hasta 55 CV), que es la potencia habitual de las motos de agua de alquiler y de uso recreativo. No necesitas sacarte un título aparte para esto; la LN ya te cubre. Consulta la guía específica **[Motos de Agua](../../manuales/MOTOS_DE_AGUA.md)** para normativa de navegación, equipo de seguridad obligatorio y riesgos particulares.
 
 ## Requisitos para su obtención
 1.  Ser mayor de 16 años (con consentimiento paterno si eres menor de edad).

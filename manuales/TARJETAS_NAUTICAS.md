@@ -30,8 +30,8 @@ Ambos formatos incluyen todos los datos esenciales para identificarte ante cualq
 Si ya dispones de tu título náutico digital con código QR y deseas tenerlo en este práctico formato físico y en tu Wallet, puedes tramitarlo directamente a través de la web de Legal Intermedia. El proceso es rápido y te permite recibir tu carné en tu domicilio y en tu email simultáneamente.
 
 <p align="center">
-  <img src="assets/img/tarjeta_per.png" alt="Tarjeta PER Legal Intermedia" width="45%" style="margin-right: 2%">
-  <img src="assets/img/tarjeta_cy.png" alt="Wallet CY Legal Intermedia" width="20%">
+  <img src="../assets/img/tarjeta_per.png" alt="Tarjeta PER Legal Intermedia" width="45%" style="margin-right: 2%">
+  <img src="../assets/img/tarjeta_cy.png" alt="Wallet CY Legal Intermedia" width="20%">
 </p>
 
 🔗 **[Visitar la web de Tarjetas Náuticas de Legal Intermedia S.L.](https://www.legalintermedia.es/nauticos)**

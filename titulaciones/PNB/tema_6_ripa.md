@@ -7,7 +7,7 @@ description: "Cinemática naval, resolución de colisiones y vectores de movimie
 
 El RIPA es el marco normativo y cinemático absoluto en la mar. Para embarcaciones de PNB, la interpretación de las reglas de rumbo y gobierno requiere un análisis exhaustivo de vectores de movimiento relativo.
 
-> **Importante:** RIPA es la materia con más peso del examen PNB y también es **eliminatoria** (máximo **5 fallos** permitidos de 10 preguntas). Esta sección resume, de forma autocontenida, prioridades de paso, luces/marcas diurnas y señales acústicas. Para el desarrollo exhaustivo y trucos mnemotécnicos adicionales, consulta **[RIPA_Y_BALIZAMIENTO.md](../../RIPA_Y_BALIZAMIENTO.md)**.
+> **Importante:** RIPA es la materia con más peso del examen PNB y también es **eliminatoria** (máximo **5 fallos** permitidos de 10 preguntas). Esta sección resume, de forma autocontenida, prioridades de paso, luces/marcas diurnas y señales acústicas. Para el desarrollo exhaustivo y trucos mnemotécnicos adicionales, consulta **[RIPA_Y_BALIZAMIENTO.md](../../manuales/RIPA_Y_BALIZAMIENTO.md)**.
 
 ## Resumen Autocontenido: Prioridades de Paso
 

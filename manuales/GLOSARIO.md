@@ -174,7 +174,7 @@ No pretende sustituir al vocabulario SMCP oficial (ver [Ver también](#ver-tambi
 
 ## 7. Comunicaciones (VHF y SMCP)
 
-Esta sección recoge únicamente los términos y llamadas de socorro más comunes en el uso diario del VHF. Para el vocabulario SMCP completo, los marcadores de mensaje, escenarios de examen y frases normalizadas de la OMI, consulta [titulaciones/CY/tema_2_ingles_maritimo.md](titulaciones/CY/tema_2_ingles_maritimo.md).
+Esta sección recoge únicamente los términos y llamadas de socorro más comunes en el uso diario del VHF. Para el vocabulario SMCP completo, los marcadores de mensaje, escenarios de examen y frases normalizadas de la OMI, consulta [titulaciones/CY/tema_2_ingles_maritimo.md](../titulaciones/CY/tema_2_ingles_maritimo.md).
 
 | Español | English | Nota / Contexto |
 | :--- | :--- | :--- |
@@ -222,5 +222,5 @@ Esta sección recoge únicamente los términos y llamadas de socorro más comune
 
 ## Ver también
 
-* [titulaciones/CY/tema_2_ingles_maritimo.md](titulaciones/CY/tema_2_ingles_maritimo.md) — SMCP completo, marcadores de mensaje, protocolos de emergencia (MAYDAY, PAN-PAN, SÉCURITÉ), escenarios de examen y jurisprudencia relacionada.
+* [titulaciones/CY/tema_2_ingles_maritimo.md](../titulaciones/CY/tema_2_ingles_maritimo.md) — SMCP completo, marcadores de mensaje, protocolos de emergencia (MAYDAY, PAN-PAN, SÉCURITÉ), escenarios de examen y jurisprudencia relacionada.
 * [COMUNICACIONES_Y_BANDERAS.md](COMUNICACIONES_Y_BANDERAS.md) — Código Internacional de Señales (banderas), alfabeto fonético y uso táctico del VHF.

@@ -7,7 +7,7 @@ description: "Modelos topológicos y algoritmos de navegación basados en el bal
 
 El Sistema de Balizamiento Marítimo de la Asociación Internacional de Autoridades de Señalización Marítima (IALA), región A, define la topología de la navegación en canales y aguas restringidas, estableciendo grafos de trayectorias seguras mediante señales visuales y lumínicas.
 
-> **Importante:** El Balizamiento es materia **eliminatoria** en el examen PNB (máximo **2 fallos** permitidos de 5 preguntas). Esta sección resume, de forma autocontenida, todo lo necesario para repasar sin saltar a otro documento. Para el detalle exhaustivo y ejemplos adicionales, consulta **[RIPA_Y_BALIZAMIENTO.md](../../RIPA_Y_BALIZAMIENTO.md)**.
+> **Importante:** El Balizamiento es materia **eliminatoria** en el examen PNB (máximo **2 fallos** permitidos de 5 preguntas). Esta sección resume, de forma autocontenida, todo lo necesario para repasar sin saltar a otro documento. Para el detalle exhaustivo y ejemplos adicionales, consulta **[RIPA_Y_BALIZAMIENTO.md](../../manuales/RIPA_Y_BALIZAMIENTO.md)**.
 
 ## Resumen Autocontenido: Las 5 Familias de Marcas IALA (Región A)
 

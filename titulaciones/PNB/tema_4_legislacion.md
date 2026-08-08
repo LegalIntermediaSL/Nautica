@@ -19,7 +19,7 @@ Es materia frecuente de examen porque afecta directamente a la navegación de re
 
 ## Protección del Medio Marino (Nociones Básicas)
 
-El patrón de recreo tiene obligaciones legales de protección ambiental que se examinan a nivel básico en el PNB. El desarrollo completo de normativa autonómica, sanciones y buenas prácticas está en **[MEDIOAMBIENTE.md](../../MEDIOAMBIENTE.md)**; para el examen retén estas ideas:
+El patrón de recreo tiene obligaciones legales de protección ambiental que se examinan a nivel básico en el PNB. El desarrollo completo de normativa autonómica, sanciones y buenas prácticas está en **[MEDIOAMBIENTE.md](../../manuales/MEDIOAMBIENTE.md)**; para el examen retén estas ideas:
 
 *   **Posidonia Oceánica:** Planta protegida que forma praderas submarinas en el Mediterráneo. **Prohibido fondear sobre ella**; hay que fondear siempre sobre fondos de arena (se distinguen por su color turquesa claro, frente al verde oscuro de la pradera).
 *   **MARPOL - Vertidos prohibidos:** Prohibición absoluta de arrojar **plásticos y basura** al mar en cualquier punto. Los hidrocarburos (aceite, sentina contaminada) no pueden verterse nunca; deben retenerse a bordo y entregarse en los puntos limpios portuarios.

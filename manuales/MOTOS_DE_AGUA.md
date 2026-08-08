@@ -26,9 +26,9 @@ La atribución para pilotar una moto de agua **no depende de la eslora** (las mo
 
 | Clase de Potencia | Potencia | Título Exigido | Referencia |
 | :--- | :--- | :--- | :--- |
-| **Clase C** | Hasta 55 CV | **Licencia de Navegación (LN)** — o superior | [`titulaciones/LN/INDEX.md`](titulaciones/LN/INDEX.md) |
-| **Clase B** | Más de 55 CV | **PNB** o superior | [`titulaciones/PNB/INDEX.md`](titulaciones/PNB/INDEX.md) |
-| **Clase A** | Sin límite superior / alta potencia | **PER** o superior | [`titulaciones/PER/INDEX.md`](titulaciones/PER/INDEX.md) |
+| **Clase C** | Hasta 55 CV | **Licencia de Navegación (LN)** — o superior | [`titulaciones/LN/INDEX.md`](../titulaciones/LN/INDEX.md) |
+| **Clase B** | Más de 55 CV | **PNB** o superior | [`titulaciones/PNB/INDEX.md`](../titulaciones/PNB/INDEX.md) |
+| **Clase A** | Sin límite superior / alta potencia | **PER** o superior | [`titulaciones/PER/INDEX.md`](../titulaciones/PER/INDEX.md) |
 
 > [!WARNING]
 > *(Dato pendiente de verificar en fuente oficial: la denominación exacta y los umbrales precisos de "Clase A/B/C" para motos náuticas pueden variar ligeramente según la Orden Ministerial vigente y el año de homologación de la moto. El repositorio confirma con certeza el umbral de la Licencia de Navegación —hasta 55 CV, Clase C— porque figura explícitamente en `titulaciones/LN/INDEX.md`; para el resto de umbrales, contrasta siempre con la ficha técnica/matrícula de la moto y la normativa vigente en el momento del examen o la compra.)*
@@ -48,11 +48,11 @@ En la práctica esto significa dos cosas:
 
 ## 3. Normativa Específica de Navegación
 
-Las motos de agua comparten buena parte de la normativa general de navegación de recreo (zonas de baño, balizamiento, RIPA — ver [`titulaciones/PER/tema_4_legislacion.md`](titulaciones/PER/tema_4_legislacion.md) para el régimen general de zonas de baño y resguardos), pero tienen capas adicionales de restricción propias, pensadas para su mayor maniobrabilidad y su perfil de riesgo frente a bañistas.
+Las motos de agua comparten buena parte de la normativa general de navegación de recreo (zonas de baño, balizamiento, RIPA — ver [`titulaciones/PER/tema_4_legislacion.md`](../titulaciones/PER/tema_4_legislacion.md) para el régimen general de zonas de baño y resguardos), pero tienen capas adicionales de restricción propias, pensadas para su mayor maniobrabilidad y su perfil de riesgo frente a bañistas.
 
 *   **Distancia mínima a la costa y a bañistas:** las motos de agua están sujetas, en general, a una franja de exclusión respecto a la costa y a las zonas de baño **más restrictiva** que la aplicable a embarcaciones convencionales en la misma zona, y en muchos tramos de litoral se les exige aproximarse a la costa exclusivamente por **canales balizados específicos**, sin poder cruzar libremente la franja de baño como sí podría hacerlo (con matices) una lancha en tránsito.
 *   **Zonas balizadas de uso específico:** en numerosos puntos de costa española existen **zonas balizadas exclusivas para la práctica de motonáutica**, delimitadas por las autoridades locales/autonómicas (a menudo gestionadas junto con las Capitanías Marítimas y los ayuntamientos costeros), donde se concentra el uso de motos de agua precisamente para separarlas de la zona de baño general y del resto del tráfico náutico.
-*   **Navegación nocturna:** la **Licencia de Navegación no habilita para navegar de noche** en general (ver [`titulaciones/LN/INDEX.md`](titulaciones/LN/INDEX.md), que limita la LN a navegación diurna), por lo que una moto de agua de Clase C pilotada con LN tampoco puede navegar de noche. Los títulos superiores (PNB, PER) sí habilitan navegación nocturna.
+*   **Navegación nocturna:** la **Licencia de Navegación no habilita para navegar de noche** en general (ver [`titulaciones/LN/INDEX.md`](../titulaciones/LN/INDEX.md), que limita la LN a navegación diurna), por lo que una moto de agua de Clase C pilotada con LN tampoco puede navegar de noche. Los títulos superiores (PNB, PER) sí habilitan navegación nocturna.
 *   **Límites de velocidad cerca de la costa:** al igual que el resto de embarcaciones, las motos de agua deben respetar los límites de velocidad de gobierno reducida en canales de acceso y proximidad a la costa/zonas de baño.
 
 > [!WARNING]
@@ -125,7 +125,7 @@ La diferencia de fondo es clara: **la propiedad exige título siempre**; el **al
 ## Resumen
 
 *   Una moto de agua se regula de forma distinta a una embarcación convencional: se titula por **clase de potencia matriculada** (no por eslora), exige **chaleco puesto siempre** y tiene normativa de distancia a costa/bañistas propia.
-*   **Clase C (hasta 55 CV) → Licencia de Navegación.** Potencias superiores → PNB o PER, según el caso (ver [`titulaciones/LN/INDEX.md`](titulaciones/LN/INDEX.md), [`titulaciones/PNB/INDEX.md`](titulaciones/PNB/INDEX.md) y [`titulaciones/PER/INDEX.md`](titulaciones/PER/INDEX.md)).
+*   **Clase C (hasta 55 CV) → Licencia de Navegación.** Potencias superiores → PNB o PER, según el caso (ver [`titulaciones/LN/INDEX.md`](../titulaciones/LN/INDEX.md), [`titulaciones/PNB/INDEX.md`](../titulaciones/PNB/INDEX.md) y [`titulaciones/PER/INDEX.md`](../titulaciones/PER/INDEX.md)).
 *   Lo que importa es la **clase matriculada**, no la potencia real de fábrica ni si el motor está limitado.
 *   El **cabo de hombre muerto** enganchado a la muñeca es, junto con el chaleco puesto, el elemento de seguridad más importante y más decisivo de una moto de agua.
 *   El chorro de propulsión a presión es un riesgo real de lesión interna, no solo un riesgo de golpe o colisión.
