@@ -88,5 +88,13 @@ Si deseas contribuir con información, correcciones o mejoras, no dudes en crear
 
 ---
 
-> **Aviso Legal**
-> Toda la información contenida en este repositorio se suministra "tal cual" (*as is*) y tiene una finalidad única y exclusivamente **instructiva y educativa**. No sustituye a la formación oficial ni al criterio profesional. Las normativas y recomendaciones náuticas pueden estar sujetas a cambios. El autor y los contribuyentes no asumen ninguna responsabilidad por posibles errores, omisiones o por cualquier daño o incidencia derivada del uso de esta información. En el mar, la seguridad es responsabilidad del patrón de la embarcación.
+> **Aviso Legal y Descargo de Responsabilidad**
+> 
+> Toda la información, simuladores, cálculos y recursos contenidos en este repositorio se suministran "tal cual" (*as is*) y tienen una finalidad única y exclusivamente **instructiva, educativa y divulgativa**. 
+> 
+> - **No es formación oficial:** Este material no sustituye a la formación teórica/práctica impartida por escuelas homologadas ni al criterio profesional.
+> - **Peligro en Navegación Real:** Los simuladores (Jupyter Notebooks) no están certificados. **Bajo ningún concepto deben utilizarse para la navegación real** ni la toma de decisiones en la mar. Para navegar, emplee siempre cartas oficiales actualizadas y equipos homologados (SOLAS/IHM).
+> - **Cambios normativos:** Las leyes y normativas marítimas están sujetas a modificaciones constantes por parte de la DGMM y la OMI.
+> - **Exención de responsabilidad:** El autor, los colaboradores y la Empresa Legal Intermedia declinan expresamente cualquier responsabilidad frente a posibles errores, omisiones, daños materiales, lesiones, accidentes o sanciones legales que pudieran derivarse, directa o indirectamente, del uso o interpretación de este repositorio.
+> 
+> **En la mar, la seguridad y la responsabilidad absoluta recaen siempre y de forma intransferible sobre el Patrón de la embarcación.** Navegue con prudencia.
