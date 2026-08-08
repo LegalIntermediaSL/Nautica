@@ -49,7 +49,7 @@ Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivi
 - **[Medicina y Primeros Auxilios a Bordo (SOPs)](manuales/MEDICINA_Y_PRIMEROS_AUXILIOS.md)**: Botiquines por zonas, inmovilización de traumatismos, hipotermia, mareo severo y protocolos de evacuación aeromédica (Helimer).
 - **[Comunicaciones, SMCP y Banderas](manuales/COMUNICACIONES_Y_BANDERAS.md)**: El Código Internacional de Señales (Banderas A-Z), uso estricto del VHF (MAYDAY, PAN-PAN, SECURITE) y Standard Marine Communication Phrases.
 - **[Tutorial de Vela Práctico (Paso a Paso)](manuales/VELA_TUTORIAL_PRACTICO.md)**: Guía física de maniobras en la bañera: cómo izar la mayor, virada por avante en equipo, toma de rizos para tormentas y atraque a motor.
-- **[Nudos Marineros y Cabullería](nudos/INDEX.md)**: Colección de manuales prácticos de nudos de tope (As de Guía, Nudo de Ocho), amarre (Ballestrinque, Cornamusa), unión y empalmes (splicing).
+- **[Nudos Marineros y Cabullería](manuales/NUDOS_MARINEROS_Y_CABULLERIA.md)**: Nudos esenciales, cabos modernos (Dyneema, Poliéster) y mantenimiento de cabullería.
 - **[Mantenimiento de Velas y Jarcia](manuales/MANTENIMIENTO_DE_VELAS_Y_JARCIA.md)**: Materiales de vela (Dacron, laminadas, Cuben Fiber), cuidado e invernaje, tipos de cabo moderno (Dyneema, Nylon), jarcia firme y mantenimiento de winches.
 - **[Protocolo de Hombre al Agua (MOB)](manuales/PROTOCOLO_HOMBRE_AL_AGUA.md)**: Secuencia inmediata, maniobras Quick-Stop y Lifesling, izado a bordo y prevención.
 - **[Vida a Bordo y Autonomía (Travesía Larga)](manuales/VIDA_A_BORDO.md)**: Gestión de agua dulce, sistemas de guardias, residuos y convivencia en espacio reducido.
@@ -58,6 +58,10 @@ Más allá de aprobar exámenes, un marino debe dominar la práctica y sobrevivi
 
 ## Cultura y Práctica Náutica
 
+- **[Navegación Astronómica Avanzada](manuales/NAVEGACION_ASTRONOMICA_AVANZADA.md)**: La esfera celeste, el triángulo de posición y la recta de altura (Marcq St. Hilaire).
+- **[Cartografía Electrónica y ECDIS](manuales/CARTOGRAFIA_Y_ECDIS.md)**: Diferencias entre ECS y ECDIS, cartas ENC vs RNC y peligros del sobreescalado.
+- **[Trimado Avanzado de Velas](manuales/TRIMADO_AVANZADO_VELA.md)**: Aerodinámica de ceñida, control de la bolsa, twist de baluma y uso del carro de escota.
+- **[Radiocomunicaciones y SMSSM](manuales/RADIOCOMUNICACIONES_SMSSM.md)**: El Sistema Mundial de Socorro, uso del VHF DSC, EPIRB, SART y mensajes de emergencia.
 - **[Pilotaje Costero Práctico](manuales/PILOTAJE_COSTERO.md)**: Navegación visual, uso táctico de enfilaciones (transits), navegación por veriles (isóbatas) y peligros del zoom en cartas electrónicas.
 - **[Navegación Nocturna](manuales/NAVEGACION_NOCTURNA.md)**: Tácticas de reconocimiento, rodopsina y visión ocular, luces y recaladas a oscuras.
 - **[Sextante Práctico (Navegación Astronómica)](manuales/SEXTANTE_PRACTICO.md)**: Anatomía del sextante, calibración del error de índice, técnica física de balanceo ("swinging the arc") para "bajar" el Sol y medición de la estrella Polar.
