@@ -88,6 +88,5 @@ Si deseas contribuir con información, correcciones o mejoras, no dudes en crear
 
 ---
 
-> [!WARNING]
-> **Aviso de Responsabilidad**
+> **Aviso Legal**
 > Toda la información contenida en este repositorio se suministra "tal cual" (*as is*) y tiene una finalidad única y exclusivamente **instructiva y educativa**. No sustituye a la formación oficial ni al criterio profesional. Las normativas y recomendaciones náuticas pueden estar sujetas a cambios. El autor y los contribuyentes no asumen ninguna responsabilidad por posibles errores, omisiones o por cualquier daño o incidencia derivada del uso de esta información. En el mar, la seguridad es responsabilidad del patrón de la embarcación.
